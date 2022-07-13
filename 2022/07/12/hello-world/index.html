@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="Hello World, whilesunny">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>Hello World | whilesunny</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -43,7 +43,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Hexo</span>
+                    <span class="logo-span">whilesunny</span>
                 </a>
             </div>
             
@@ -142,7 +142,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Hexo</div>
+        <div class="logo-name">whilesunny</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -513,7 +513,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">whilesunny</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -536,7 +536,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">whilesunny</a>
                     !
                 </span>
             </div>
@@ -720,6 +720,52 @@
     
 
     
+        <style>
+    .mvaline-card {
+        margin: 1.5rem auto;
+    }
+
+    .mvaline-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+</style>
+
+<div class="card mvaline-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="mvcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/minivaline/MiniValine.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'agL96VH94I4TqRM1kObc5fec-gzGzoHsz',
+        appKey: 'VKBguqBp8iYvvN1jvYF3fiN9',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
+    });
+</script>
+
+    
 
     
 
@@ -754,7 +800,7 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            whilesunny
                             
                         </span>
                     </div>
@@ -791,7 +837,7 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            whilesunny
                             
                         </span>
                     </div>
@@ -806,6 +852,43 @@
 
 </div>
 
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: whilesunny<br />'
+            + '文章作者: whilesunny<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
 
 
 <!-- 代码块功能依赖 -->
@@ -990,7 +1073,7 @@
                 <span id="year">2019-2022</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
+            <a href="/about" target="_blank">whilesunny</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
