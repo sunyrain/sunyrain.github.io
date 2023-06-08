@@ -52,6 +52,26 @@
       </tags>
   </entry>
   <entry>
+    <title>奇怪的经历</title>
+    <url>/2023/06/05/qi-guai-de-jing-li/</url>
+    <content><![CDATA[<p>23.6.5</p>
+<p>在基物课上做基物编程作业，想着快速解决这十个编程题，但又反复纠结该咋提交这一大堆东西。</p>
+<p>突然想到可以用jupyter notebook，每个题分个格子，太酷啦。</p>
+<p>于是光速写完代码，突然发现一运行内核就崩溃。</p>
+<p>迅速改本地运行，但是调用matplotlib画不了图。</p>
+<p>于是乎谷歌、百度、CSDN、GPT4齐上。</p>
+<p>经过一段时间……</p>
+<p>终于在一个网络的角落发现了，升级numpy可解。</p>
+<p>绝了……</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇怪的经历</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>春归</title>
     <url>/2022/12/24/xiao-shi/</url>
     <content><![CDATA[<p>春归</p>
@@ -70,23 +90,16 @@
       </tags>
   </entry>
   <entry>
-    <title>奇怪的经历</title>
-    <url>/2023/06/05/qi-guai-de-jing-li/</url>
-    <content><![CDATA[<p>23.6.5</p>
-<p>在基物课上做基物编程作业，想着快速解决这十个编程题，但又反复纠结该咋提交这一大堆东西。</p>
-<p>突然想到可以用jupyter notebook，每个题分个格子，太酷啦。</p>
-<p>于是光速写完代码，突然发现一运行内核就崩溃。</p>
-<p>迅速改本地运行，但是调用matplotlib画不了图。</p>
-<p>于是乎谷歌、百度、CSDN、GPT4齐上。</p>
-<p>经过一段时间……</p>
-<p>终于在一个网络的角落发现了，升级numpy可解。</p>
-<p>绝了……</p>
+    <title>Azusa</title>
+    <url>/2023/05/22/qing-yin-shao-nu/</url>
+    <content><![CDATA[<p>阿梓喵！</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>けいおん！</category>
       </categories>
       <tags>
-        <tag>奇怪的经历</tag>
+        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
@@ -113,16 +126,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Azusa</title>
-    <url>/2023/05/22/qing-yin-shao-nu/</url>
-    <content><![CDATA[<p>阿梓喵！</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
-]]></content>
+    <title>跨越时空的共鸣</title>
+    <url>/2023/06/08/kua-yue-shi-kong-de-gong-ming/</url>
+    <content><![CDATA[<p>23.6.8</p>
+<p>焦急复习材科基中……</p>
+<span id="more"></span>
+
+<p>对着答案尝试理解习题，突然发现旁边有个注释对答案提出了异议，却和我的想法不谋而合。于是喜不自禁，正准备继续做时，无意间发现这条注释来自于十二年之前，也是一个期末周的中午。思绪不由地回到那年夏天，留下这行字的人，又是谁呢。</p>
+<p>等我成为研究生&#x2F;博士生以后，我也要当材科基的助教！立誓于此，拭目以待。</p>
+<p>首先从期末考试A-及以上开始！</p>
+<p>附图如下：</p>
+<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230608155314202.png" alt="image-20230608155314202" style="zoom:50%;" />]]></content>
       <categories>
-        <category>けいおん！</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>他乡</tag>
+        <tag>奇怪的经历</tag>
       </tags>
   </entry>
 </search>
