@@ -144,4 +144,28 @@
         <tag>奇怪的经历</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Cheat Engine 告别风灵月影</title>
+    <url>/2023/06/10/cheatengine/</url>
+    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新版校园卡</title>
+    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
+    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>呓语</tag>
+      </tags>
+  </entry>
 </search>
