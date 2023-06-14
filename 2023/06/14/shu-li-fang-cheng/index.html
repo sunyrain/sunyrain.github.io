@@ -20,15 +20,20 @@
     var CONFIG = {"hostname":"sunyrain.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="whilesunny">
-<meta property="og:url" content="https://sunyrain.github.io/categories/%E6%AE%8B%E7%AB%A0/index.html">
+  <meta name="description" content="级数解  高次项系数化为1，判断展开点类型，为常点还是奇点 回到原式中带入级数解进行计算  坐标系  极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$ 柱坐标下拉普拉斯：$\frac{1}{r}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数理方程特殊函数部分以及其他">
+<meta property="og:url" content="https://sunyrain.github.io/2023/06/14/shu-li-fang-cheng/index.html">
 <meta property="og:site_name" content="whilesunny">
+<meta property="og:description" content="级数解  高次项系数化为1，判断展开点类型，为常点还是奇点 回到原式中带入级数解进行计算  坐标系  极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$ 柱坐标下拉普拉斯：$\frac{1}{r}">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-14T10:50:37.749Z">
+<meta property="article:modified_time" content="2023-06-14T10:53:11.925Z">
 <meta property="article:author" content="whilesunny">
+<meta property="article:tag" content="时光">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://sunyrain.github.io/categories/%E6%AE%8B%E7%AB%A0/">
+<link rel="canonical" href="https://sunyrain.github.io/2023/06/14/shu-li-fang-cheng/">
 
 
 <script id="page-configurations">
@@ -36,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: 残章 | whilesunny</title>
+  <title>数理方程特殊函数部分以及其他 | whilesunny</title>
   
 
 
@@ -185,51 +190,213 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">残章
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/06/14/shu-li-fang-cheng/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数理方程特殊函数部分以及其他
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-06-14 18:50:37 / 修改时间：18:53:11" itemprop="dateCreated datePublished" datetime="2023-06-14T18:50:37+08:00">2023-06-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <p>级数解</p>
+<ul>
+<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
+<li>回到原式中带入级数解进行计算</li>
+</ul>
+<p>坐标系</p>
+<ul>
+<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
+<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
+<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
+</ul>
+<p>Bessel方程</p>
+<ul>
+<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
+<li>解记作$J_{\pm v(x)}$</li>
+<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
+<li><del>第三类柱函数</del></li>
+<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
+<li>基本递推关系</li>
+</ul>
+<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
+<ul>
+<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
+</ul>
+<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
+<ul>
+<li><p>特征为$l(l+1)$</p>
+</li>
+<li><p>解为$ j_l, n_l$</p>
+</li>
+</ul>
+<p>渐进行为</p>
+<ul>
+<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
+<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
+<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
+<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
+<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
+<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
+</ul>
+<p>Legendre方程和连带Legendre方程的形式</p>
+<ul>
+<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
+</li>
+<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
+</ul>
+</li>
+<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
+<ul>
+<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
+<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
+</ul>
+</li>
+<li><p>Legendre多项式的生成函数</p>
+<ul>
+<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
+<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
+</ul>
+</li>
+<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
+</li>
+<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
+</li>
+</ul>
+</li>
+<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
+<ul>
+<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
+<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
+<li>球谐函数的模长<ul>
+<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><del>递推公式、连带Legendre函数模方</del></p>
+</li>
+</ul>
+<p>傅里叶变换和逆变换形式</p>
+<p> Laplace变换和逆变换形式</p>
+<p>傅里叶变换的卷积公式</p>
+<p>Laplace变换的卷积公式</p>
+<p>方程标准型特征方程</p>
+<ul>
+<li><p>特征方程法</p>
+<ul>
+<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
+</li>
+<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
+</li>
+<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
+</li>
+<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
+</li>
+<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
+</li>
+<li><p>利用变换系数公式求解方程各项系数</p>
+</li>
+</ul>
+</li>
+<li><p>配方法</p>
+<ul>
+<li><del>变系数配方法</del></li>
+<li>常系数配方法，将二次项配方后，换元即可</li>
+</ul>
+</li>
+</ul>
+<p>格林函数</p>
+<ul>
+<li>电像法</li>
+<li>本征函数展开法<ul>
+<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
+<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
+</ul>
+</li>
+<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
+</ul>
+</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-12-24T22:53:06+08:00"
-              content="2022-12-24">
-          12-24
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%97%B6%E5%85%89/" rel="tag"># 时光</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/24/que-ta-zhi/" itemprop="url">
-            <span itemprop="name">鹊踏枝</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/06/13/markdown-yu-fa/" rel="prev" title="Markdown实用语法">
+      <i class="fa fa-chevron-left"></i> Markdown实用语法
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
