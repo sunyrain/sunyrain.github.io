@@ -13,6 +13,53 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown实用语法</title>
+    <url>/2023/06/13/markdown-yu-fa/</url>
+    <content><![CDATA[<ul>
+<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
+<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
+<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
+<li>\rho $\rho$ ，\pm $\pm$</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一之濑怜</title>
+    <url>/2023/05/28/yi-zhi-lai-lian/</url>
+    <content><![CDATA[<p>一之濑怜</p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%B8%80%E4%B9%8B%E6%BF%91%E6%80%9C.png" alt="一之濑怜"></p>
+]]></content>
+      <categories>
+        <category>IDOLY PRIDE</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>不遇</title>
     <url>/2022/12/24/bu-yu/</url>
     <content><![CDATA[<p>开头删了又写，写了又删，总找不到一种合适的语气，三年前如此，现在亦如此，倒比不上十年前的你我了。</p>
@@ -37,20 +84,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一之濑怜</title>
-    <url>/2023/05/28/yi-zhi-lai-lian/</url>
-    <content><![CDATA[<p>一之濑怜</p>
-<hr>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%B8%80%E4%B9%8B%E6%BF%91%E6%80%9C.png" alt="一之濑怜"></p>
-]]></content>
-      <categories>
-        <category>IDOLY PRIDE</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>伊吹渚</title>
     <url>/2023/05/28/yi-chui-zhu/</url>
     <content><![CDATA[<p>伊吹渚</p>
@@ -64,41 +97,33 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown实用语法</title>
-    <url>/2023/06/13/markdown-yu-fa/</url>
-    <content><![CDATA[<ul>
-<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
-<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
-<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
-<li>\rho $\rho$ ，\pm $\pm$</li>
-</ul>
-</li>
-</ul>
+    <title>春归</title>
+    <url>/2022/12/24/xiao-shi/</url>
+    <content><![CDATA[<p>春归</p>
+<p>春归何日？秋雨霏霏。繁霜重降，百卉具腓。我心忧矣，不知所届。春之去矣，伊谁之非？</p>
+<p>昔女往矣，期于桃木。灼灼其叶，殁于恶土。我徂西山，瞻彼荒原。憯憯日瘁，三其寒暑。</p>
+<p>春归何日？冬阳厉厉。冻雪其雱，折木以炀。我心忧矣，不知所望。春之去矣，亦民之伤。</p>
+<p>昔女往矣，期于菀柳。依依其枝，寒天杌之。执柳为信，待其飞鸿。跂矣断矣，疢如疾首。</p>
+<p>初春何如，惊蛰彭彭，草木苍苍；盛春何如，芳华灿灿，河水汤汤。其忆孔嘉，其逢如之何？</p>
 ]]></content>
       <categories>
-        <category>工具</category>
+        <category>诗云</category>
       </categories>
       <tags>
-        <tag>奇遇</tag>
+        <tag>诗云</tag>
+        <tag>残章</tag>
       </tags>
   </entry>
   <entry>
-    <title>跨越时空的共鸣</title>
-    <url>/2023/06/08/kua-yue-shi-kong-de-gong-ming/</url>
-    <content><![CDATA[<p>23.6.8</p>
-<p>焦急复习材科基中……</p>
-<span id="more"></span>
-
-<p>对着答案尝试理解习题，突然发现旁边有个注释对答案提出了异议，却和我的想法不谋而合。于是喜不自禁，正准备继续做时，无意间发现这条注释来自于十二年之前，也是一个期末周的中午。思绪不由地回到那年夏天，留下这行字的人，又是谁呢。</p>
-<p>等我成为研究生&#x2F;博士生以后，我也要当材科基的助教！立誓于此，拭目以待。</p>
-<p>首先从期末考试A-及以上开始！</p>
-<p>附图如下：</p>
-<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230608155314202.png" alt="image-20230608155314202" style="zoom:50%;" />]]></content>
+    <title>新版校园卡</title>
+    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
+    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
+]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
-        <tag>奇怪的经历</tag>
+        <tag>呓语</tag>
       </tags>
   </entry>
   <entry>
@@ -122,21 +147,17 @@
       </tags>
   </entry>
   <entry>
-    <title>春归</title>
-    <url>/2022/12/24/xiao-shi/</url>
-    <content><![CDATA[<p>春归</p>
-<p>春归何日？秋雨霏霏。繁霜重降，百卉具腓。我心忧矣，不知所届。春之去矣，伊谁之非？</p>
-<p>昔女往矣，期于桃木。灼灼其叶，殁于恶土。我徂西山，瞻彼荒原。憯憯日瘁，三其寒暑。</p>
-<p>春归何日？冬阳厉厉。冻雪其雱，折木以炀。我心忧矣，不知所望。春之去矣，亦民之伤。</p>
-<p>昔女往矣，期于菀柳。依依其枝，寒天杌之。执柳为信，待其飞鸿。跂矣断矣，疢如疾首。</p>
-<p>初春何如，惊蛰彭彭，草木苍苍；盛春何如，芳华灿灿，河水汤汤。其忆孔嘉，其逢如之何？</p>
+    <title>平凡的好累的一天</title>
+    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
+    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
+<p>6.17，基础物理考试的前两天</p>
+<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
 ]]></content>
       <categories>
-        <category>诗云</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>诗云</tag>
-        <tag>残章</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -276,28 +297,22 @@
       </tags>
   </entry>
   <entry>
-    <title>新版校园卡</title>
-    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
-    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
-]]></content>
+    <title>跨越时空的共鸣</title>
+    <url>/2023/06/08/kua-yue-shi-kong-de-gong-ming/</url>
+    <content><![CDATA[<p>23.6.8</p>
+<p>焦急复习材科基中……</p>
+<span id="more"></span>
+
+<p>对着答案尝试理解习题，突然发现旁边有个注释对答案提出了异议，却和我的想法不谋而合。于是喜不自禁，正准备继续做时，无意间发现这条注释来自于十二年之前，也是一个期末周的中午。思绪不由地回到那年夏天，留下这行字的人，又是谁呢。</p>
+<p>等我成为研究生&#x2F;博士生以后，我也要当材科基的助教！立誓于此，拭目以待。</p>
+<p>首先从期末考试A-及以上开始！</p>
+<p>附图如下：</p>
+<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230608155314202.png" alt="image-20230608155314202" style="zoom:50%;" />]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
-        <tag>呓语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Azusa</title>
-    <url>/2023/05/22/qing-yin-shao-nu/</url>
-    <content><![CDATA[<p>阿梓喵！</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
-]]></content>
-      <categories>
-        <category>けいおん！</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
+        <tag>奇怪的经历</tag>
       </tags>
   </entry>
   <entry>
@@ -324,31 +339,61 @@
       </tags>
   </entry>
   <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
-<span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+    <title>Azusa</title>
+    <url>/2023/05/22/qing-yin-shao-nu/</url>
+    <content><![CDATA[<p>阿梓喵！</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>けいおん！</category>
       </categories>
       <tags>
-        <tag>奇遇</tag>
+        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
-    <title>平凡的好累的一天</title>
-    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
-    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
-<p>6.17，基础物理考试的前两天</p>
-<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
+    <title></title>
+    <url>/2023/07/06/deep-learning-with-pytorch/</url>
+    <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查询显卡状态</span></span><br><span class="line">torch.cuda.is_available()</span><br><span class="line"><span class="comment">#将张量转移至显卡进行计算,利用tensor的.to方法</span></span><br><span class="line">a=a.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line"><span class="comment">#如果在不同设备进行计算，则会报错</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Chapter2-P2"><a href="#Chapter2-P2" class="headerlink" title="Chapter2 P2"></a>Chapter2 P2</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#在out的第2个（参数1代表第2个）维度选取最大值，函数返回值有两个，分别为最大值和最大值位置，不需要的话以_占位即可</span></span><br><span class="line">_, index = torch.<span class="built_in">max</span>(out,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
+
 ]]></content>
+  </entry>
+  <entry>
+    <title>和声学学习</title>
+    <url>/2023/09/12/he-sheng/</url>
+    <content><![CDATA[<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="和弦（和弦音）"><a href="#和弦（和弦音）" class="headerlink" title="和弦（和弦音）"></a>和弦（和弦音）</h2><h4 id="和声、和音、和弦"><a href="#和声、和音、和弦" class="headerlink" title="和声、和音、和弦"></a>和声、和音、和弦</h4><ul>
+<li><p>和声学：研究和音的结构以及它们如何连接</p>
+</li>
+<li><p>和弦中各音的名称</p>
+<ul>
+<li>和弦按三度关系排列后，最低的音为根音，向上依次为三、五、七、九……名称不随排列位置改变而改变。</li>
+</ul>
+</li>
+<li><p>和弦音</p>
+</li>
+<li><p>和弦外音</p>
+<ul>
+<li>延留音，出现在强拍或次强拍，使得音高与自己接近的和弦音延迟出现。除了延留音，其他的和弦外音都出现在弱拍上。</li>
+<li>经过音，和弦音上下级之间的过渡。</li>
+<li>辅助音，和弦音与其重复音之间的连接</li>
+<li>先现音，后一和弦音在弱拍上提前出现</li>
+</ul>
+</li>
+<li><p>非三度结构的和音</p>
+</li>
+</ul>
+<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h3 id="大三和弦与小三和弦、四部和声"><a href="#大三和弦与小三和弦、四部和声" class="headerlink" title="大三和弦与小三和弦、四部和声"></a>大三和弦与小三和弦、四部和声</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4>]]></content>
       <categories>
-        <category>生活</category>
+        <category>Parallel Life</category>
       </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>Parallel Life</tag>
       </tags>
   </entry>
 </search>
