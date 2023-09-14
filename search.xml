@@ -13,38 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/07/06/deep-learning-with-pytorch/</url>
-    <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查询显卡状态</span></span><br><span class="line">torch.cuda.is_available()</span><br><span class="line"><span class="comment">#将张量转移至显卡进行计算,利用tensor的.to方法</span></span><br><span class="line">a=a.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line"><span class="comment">#如果在不同设备进行计算，则会报错</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Chapter2-P2"><a href="#Chapter2-P2" class="headerlink" title="Chapter2 P2"></a>Chapter2 P2</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#在out的第2个（参数1代表第2个）维度选取最大值，函数返回值有两个，分别为最大值和最大值位置，不需要的话以_占位即可</span></span><br><span class="line">_, index = torch.<span class="built_in">max</span>(out,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>Markdown实用语法</title>
-    <url>/2023/06/13/markdown-yu-fa/</url>
-    <content><![CDATA[<ul>
-<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
-<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
-<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
-<li>\rho $\rho$ ，\pm $\pm$</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>windows系统时间同步</title>
     <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
     <content><![CDATA[<p>实在是太可恶了……</p>
@@ -56,20 +24,6 @@
       </categories>
       <tags>
         <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一之濑怜</title>
-    <url>/2023/05/28/yi-zhi-lai-lian/</url>
-    <content><![CDATA[<p>一之濑怜</p>
-<hr>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%B8%80%E4%B9%8B%E6%BF%91%E6%80%9C.png" alt="一之濑怜"></p>
-]]></content>
-      <categories>
-        <category>IDOLY PRIDE</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
@@ -97,6 +51,38 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown实用语法</title>
+    <url>/2023/06/13/markdown-yu-fa/</url>
+    <content><![CDATA[<ul>
+<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
+<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
+<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
+<li>\rho $\rho$ ，\pm $\pm$</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/07/06/deep-learning-with-pytorch/</url>
+    <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查询显卡状态</span></span><br><span class="line">torch.cuda.is_available()</span><br><span class="line"><span class="comment">#将张量转移至显卡进行计算,利用tensor的.to方法</span></span><br><span class="line">a=a.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line"><span class="comment">#如果在不同设备进行计算，则会报错</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Chapter2-P2"><a href="#Chapter2-P2" class="headerlink" title="Chapter2 P2"></a>Chapter2 P2</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#在out的第2个（参数1代表第2个）维度选取最大值，函数返回值有两个，分别为最大值和最大值位置，不需要的话以_占位即可</span></span><br><span class="line">_, index = torch.<span class="built_in">max</span>(out,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
     <title>伊吹渚</title>
     <url>/2023/05/28/yi-chui-zhu/</url>
     <content><![CDATA[<p>伊吹渚</p>
@@ -107,6 +93,38 @@
       </categories>
       <tags>
         <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一之濑怜</title>
+    <url>/2023/05/28/yi-zhi-lai-lian/</url>
+    <content><![CDATA[<p>一之濑怜</p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%B8%80%E4%B9%8B%E6%BF%91%E6%80%9C.png" alt="一之濑怜"></p>
+]]></content>
+      <categories>
+        <category>IDOLY PRIDE</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>春归</title>
+    <url>/2022/12/24/xiao-shi/</url>
+    <content><![CDATA[<p>春归</p>
+<p>春归何日？秋雨霏霏。繁霜重降，百卉具腓。我心忧矣，不知所届。春之去矣，伊谁之非？</p>
+<p>昔女往矣，期于桃木。灼灼其叶，殁于恶土。我徂西山，瞻彼荒原。憯憯日瘁，三其寒暑。</p>
+<p>春归何日？冬阳厉厉。冻雪其雱，折木以炀。我心忧矣，不知所望。春之去矣，亦民之伤。</p>
+<p>昔女往矣，期于菀柳。依依其枝，寒天杌之。执柳为信，待其飞鸿。跂矣断矣，疢如疾首。</p>
+<p>初春何如，惊蛰彭彭，草木苍苍；盛春何如，芳华灿灿，河水汤汤。其忆孔嘉，其逢如之何？</p>
+]]></content>
+      <categories>
+        <category>诗云</category>
+      </categories>
+      <tags>
+        <tag>诗云</tag>
+        <tag>残章</tag>
       </tags>
   </entry>
   <entry>
@@ -149,12 +167,34 @@
 <li><p>三和弦的旋律位置</p>
 </li>
 </ul>
+<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="正三和弦的功能体系"><a href="#正三和弦的功能体系" class="headerlink" title="正三和弦的功能体系"></a>正三和弦的功能体系</h3><ul>
+<li>主、副、属</li>
+<li>建立在音阶的Ⅰ级，也就是主音上的三和弦叫做主三和弦，在大调中用T表示，小调中用t表示</li>
+<li>进行、进行的公式<ul>
+<li>和弦的连续构成了和声进行，最简单的和声进行逻辑基础就是</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>Parallel Life</category>
       </categories>
       <tags>
         <tag>Parallel Life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>平凡的好累的一天</title>
+    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
+    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
+<p>6.17，基础物理考试的前两天</p>
+<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -175,38 +215,6 @@
       </categories>
       <tags>
         <tag>奇怪的经历</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>春归</title>
-    <url>/2022/12/24/xiao-shi/</url>
-    <content><![CDATA[<p>春归</p>
-<p>春归何日？秋雨霏霏。繁霜重降，百卉具腓。我心忧矣，不知所届。春之去矣，伊谁之非？</p>
-<p>昔女往矣，期于桃木。灼灼其叶，殁于恶土。我徂西山，瞻彼荒原。憯憯日瘁，三其寒暑。</p>
-<p>春归何日？冬阳厉厉。冻雪其雱，折木以炀。我心忧矣，不知所望。春之去矣，亦民之伤。</p>
-<p>昔女往矣，期于菀柳。依依其枝，寒天杌之。执柳为信，待其飞鸿。跂矣断矣，疢如疾首。</p>
-<p>初春何如，惊蛰彭彭，草木苍苍；盛春何如，芳华灿灿，河水汤汤。其忆孔嘉，其逢如之何？</p>
-]]></content>
-      <categories>
-        <category>诗云</category>
-      </categories>
-      <tags>
-        <tag>诗云</tag>
-        <tag>残章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>平凡的好累的一天</title>
-    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
-    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
-<p>6.17，基础物理考试的前两天</p>
-<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -379,7 +387,7 @@
 <li>演奏法方面的记号</li>
 <li>装饰音记号</li>
 </ul>
-<h1 id="第四讲-节奏与节拍"><a href="#第四讲-节奏与节拍" class="headerlink" title="第四讲 节奏与节拍"></a>第四讲 节奏与节拍</h1>]]></content>
+<h1 id="第四讲-节奏与节拍"><a href="#第四讲-节奏与节拍" class="headerlink" title="第四讲 节奏与节拍"></a>第四讲 节奏与节拍</h1><h1 id="第五讲-音乐的速度与力度"><a href="#第五讲-音乐的速度与力度" class="headerlink" title="第五讲 音乐的速度与力度"></a>第五讲 音乐的速度与力度</h1><h3 id="速度在音乐表现中的意义"><a href="#速度在音乐表现中的意义" class="headerlink" title="速度在音乐表现中的意义"></a>速度在音乐表现中的意义</h3><h3 id="音乐速度的标记"><a href="#音乐速度的标记" class="headerlink" title="音乐速度的标记"></a>音乐速度的标记</h3><h3 id="力度在音乐表现中的意义"><a href="#力度在音乐表现中的意义" class="headerlink" title="力度在音乐表现中的意义"></a>力度在音乐表现中的意义</h3><h3 id="音乐力度的标记"><a href="#音乐力度的标记" class="headerlink" title="音乐力度的标记"></a>音乐力度的标记</h3><h1 id="第六讲-音程"><a href="#第六讲-音程" class="headerlink" title="第六讲 音程"></a>第六讲 音程</h1>]]></content>
       <categories>
         <category>Parallel Life</category>
       </categories>
@@ -429,19 +437,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Azusa</title>
-    <url>/2023/05/22/qing-yin-shao-nu/</url>
-    <content><![CDATA[<p>阿梓喵！</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
-]]></content>
-      <categories>
-        <category>けいおん！</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>鹊踏枝</title>
     <url>/2022/12/24/que-ta-zhi/</url>
     <content><![CDATA[<p>翻过五代词的卷首语，就仿佛翻过了整整一个时代——告别了行吟于诗国晚辉中的杜牧、李商隐，一种全新的体裁在一片全新的时代土壤上展苞待放。</p>
@@ -462,6 +457,19 @@
       </categories>
       <tags>
         <tag>残章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Azusa</title>
+    <url>/2023/05/22/qing-yin-shao-nu/</url>
+    <content><![CDATA[<p>阿梓喵！</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
+]]></content>
+      <categories>
+        <category>けいおん！</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
       </tags>
   </entry>
 </search>
