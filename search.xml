@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>每日日记</title>
+    <url>/2023/09/17/2023.9.17/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="9e029af1c500634e6d5a6c78bbe4a4f9bdc4ad659b52318549d99e1bfda34d4d">53f66a3aa74f3dd76de140013caf8af6b4b48a5b1819a4a604f44c56b7c10dc351e01366d3e539b42f840be1d55c59075c2cbe16ff4cb22818f90403b2a42ee4ef7c4f951df2a8ffdf19e0b7aadf7ee5db7b5a933eedf81dad9765db1b46d88a2a0fcfa7518a509ec428bbca00f5fb06816cce135fbfb63441fc5fd88cfc50e11cd22667c0463590ef57b610be79649e5342793cef7b31ca83aa39741ab1605228c9d91cac0692133d019a14dc1a97b144393eb8cae5f55fe2d55360e5d072a3731c0e8b7947876ca9086693bfb0ce0e2c79f0a383dce7b50bba50994eb726e4f05a26f737194e91a36f576757ea1c229aba813b31c848baa6ab7682a2a67da9dcd6f4598f6221de69de95577e91d065f9c8828f6344e975eac30e4c0e93ff66c721ad7a44ae10f64c5061c68be8976e33e57c1142116dff83c549a8cb85daf73596c4cd867c53cd06469405db72b84faaed19347bbd4c89bbc04eda7678e725a617f3b7218f43c1fd76d70f6fa38d8a12cb081efc984b124fb6a662a479aae677dc0c4a8648d2625b490af6f76b8bddd7a6a2106bfa9500d1989729d7c1e756a9eabeb85e2e438678427ffb8f771913ed7ba2f594241150683ff8f631625e2db68aeb120666a80f7b7002dbbb6b086ab206a50642da68359735098f18c27853</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cheat Engine 告别风灵月影</title>
     <url>/2023/06/10/cheatengine/</url>
     <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
@@ -10,44 +32,6 @@
       </categories>
       <tags>
         <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
-<span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>不遇</title>
-    <url>/2022/12/24/bu-yu/</url>
-    <content><![CDATA[<p>开头删了又写，写了又删，总找不到一种合适的语气，三年前如此，现在亦如此，倒比不上十年前的你我了。</p>
-<span id="more"></span>
-
-<p>转念一想，你可能永远也不知道这里有一篇为你而留的文字，那我便放心大胆的写啦。</p>
-<p>说来也奇怪，这几年的回忆，反而模糊不清，有些迫切想解释的，遗憾未完成的，都如云烟般散去。其实我只想让你知道，在三年未见的时光里，我只在等你。</p>
-<p>风言风语对当时的你我也许还是过于锋利了，只记得那年夏天没吃到你的生日蛋糕，之后，就只能在别人的朋友圈里看到你了。</p>
-<p>回想初三那一年，一见封谶的字条墨迹未干，久别重逢在我头上敲的那一下依旧有点疼:( 深秋我们在为数不多的夜里走着，我说，我们看似走的更近了，其实在渐行渐远。你说，我们再也回不去小时候了。我想牵牵你的手，故意说“我们连牵手都没牵过，以后也算不上分手”，没想到，却一句话说到了最后。</p>
-<p>那段时间，是我辜负了你纯真而又热烈的情感，回过头来，我真想将那些数学作业撕个粉碎，从五楼扬下去。当时的你在我的梦里总是带着泪光，而我，也只能在梦里拥抱你。</p>
-<p>大学里聊起谈恋爱的话题，大家都怨恨老天欠我们一个青梅竹马。只有我默默不说话，我知道，老天让我在一年级的时候就遇到了你。近乎自然而然，又仿佛一种羁绊，六年的小学生活，至少你就是我眼里最耀眼最可爱的那个女生。当时的我们真像书中那些温暖的文字所说 ，青梅竹马，两小无猜。我还记得我们一起四手联弹，我总是弹不好，被我爸嘲笑。记得在东恒盛大厅的沙发上看电视，你还摔了一跤。记得在机房里，你让我为你系上纽扣，我一下子脸红让你自己系。记得那些似乎无穷无尽的周六周日，我们一起学习玩耍的日子。记得你抱着我家狗狗，记得和你玩双人小游戏。快乐多么简单啊，数学试卷发下来比我高一分你就会高兴好久（而我会难过好久）。学语文时互批，我们总是想找茬让对方低几分。有太多回忆我好想一直一直写下去，因为这些都是我所无比珍视的，我想把它们带进我的坟墓。</p>
-<p>不知道现在的你还好吗，故人，挚友，陌路。也许现在的你我，就像书中所说，“最熟悉的陌生人”。中考结束，约好一起去看老师，我却终未成行。高中三年，从见面时的尴尬到最后形同陌路。</p>
-<p>也许看到这篇文字的你，会想起一些美好的回忆罢。如此便足矣。</p>
-]]></content>
-      <categories>
-        <category>故人</category>
-      </categories>
-      <tags>
-        <tag>故人</tag>
-        <tag>挚友</tag>
-        <tag>陌路</tag>
       </tags>
   </entry>
   <entry>
@@ -70,6 +54,19 @@
       </tags>
   </entry>
   <entry>
+    <title>伊吹渚</title>
+    <url>/2023/05/28/yi-chui-zhu/</url>
+    <content><![CDATA[<p>伊吹渚</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%BC%8A%E5%90%B9%E6%B8%9A.png" alt="伊吹渚"></p>
+]]></content>
+      <categories>
+        <category>IDOLY PRIDE</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/07/06/deep-learning-with-pytorch/</url>
     <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
@@ -83,16 +80,17 @@
 ]]></content>
   </entry>
   <entry>
-    <title>伊吹渚</title>
-    <url>/2023/05/28/yi-chui-zhu/</url>
-    <content><![CDATA[<p>伊吹渚</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%BC%8A%E5%90%B9%E6%B8%9A.png" alt="伊吹渚"></p>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
 ]]></content>
       <categories>
-        <category>IDOLY PRIDE</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>他乡</tag>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -107,6 +105,52 @@
       </categories>
       <tags>
         <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不遇</title>
+    <url>/2022/12/24/bu-yu/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="0aa5231a1221a5088098a6a6af05bac785d54aef4a219c856ad4723b40ca10f8">18363a58ea4c366463ee079546de5729939caa987abbc861019ffecce95702a95f7beff5b10e1aae40f308e6be34c51590b44b5c4db081cbbe6c12a7e6bd34e40e89bc1e60fcdb29f5ee0ac7a8d044932a0e65072913fdc2efb0264532ad2167c2a22c956b9e7401d6673e4a66ab8f4067e033894a6ae524e3b22afb5772e9af2ad20fb2dcf669e379a58ce240a4ea215f1c01a5d809e159bbe73e76aacc0c5be6958ff53dae269cb22122c738beb5be73931d81af55acfd3b84e38c608af2550fa71b39e9ca010da5386387b3fba412c81b477beff47506c31c3ee44bc62791b6df4d57e6e309e498f8a9276588e5b8e36752e56909c97a7a461dad4c10b34e2e24ec30cd13c5e9af5d999fa3e9c93f604214e93f3ab0819c1b223b0c2bbd15b80c4fbe4b627f90065fffd59fdc97c2296bae7d58360863a8e7eb8bc2e24a6d16ddbb86b60867142e78ceae71b492df19c56ea454dd43d91eaac553fedbab42096d3aafb3c3ef736f310ecdf05d71f523fef9722824131629795c1826e968574f681e0e84b922bae9395bc4428a7e6971c61e70aa9f9a49e18975d98d6e1462c5b09169aed55efcfa512f8519426ad93979b061135e314971a72ff41b8e165a0718875146d546aff0086d67c113d8f433ff67fbd47de0522a073f36d053d9755b1025b2ba79ed23124a8bc70c1032dc2ef03331cf8a24f05aa4c64f7f7050b3270b2d72c95b393c82ac542da4b04d348da4fe56d2d42ddc023b697ff46a998e93d398032f8597fbc1dcb315587c7eafc126a5cade83d6775dc6ffb20475d23832e293636a7addbabae4d343547a21fffbbc68f94959e74d32e4d09a65bd30febddc826683e27339ddee2672f10a366ed07b0e35dffe3461fa5c1dee27e67fd47af8b8255690445986e6eec717ea0808b775c5ca8507667f3edbd9ef65ee2ab6285f89b94115ec84c6945c382849593833e31303bf3272e0dbfb3d5e07171c7b7455f1b3e59b5cd3c575b2f01a3f13ce90e1fa4c212fc9bc85daf808482d7ff805ba8339a7445b4328f99f3643bd2942509fd3adf8857c2a9be11610ad53bdc23e05f37d4eb6a859b535bf4d51caa63932a6d8e77f5810ce2ac80f6f40af7e84509a97b72b0ab0bd2c78cb3d872fa28bb9ad7576229ca6b7832e9e60b31163af9eb4e09e1519ac9bf1e34af658e32bed2491e39e84b0e43d8c0ca714ce03ccfcd360aff17f9aa7898c38db693b1d51c34ce931b5897be5c4df73362cd573eb9ccae417d891de5be0aff8c7ed4a0652fd21b2f9cfa9f340600c1bcaadb62cb11e2239fa7e30b63487f289c8811af5d3c57423bd2a27abf74f285ff59027d7e7f05f92ac84548de0bb9a31b0385062e256a061e47dbf5d0b9a27f66e00576d7e61bc96021023b06d1020825381efe30aacf0f2b01c3cfbc81f062b8ae4f18f72bf3b8acea2503f52783626fb13cfe19548e41de025ca00ed008ed94523776650ff3b0115303fe76486fdb28f39656a64f9421aed73842746ceb142064aba6b8bc0a2af25796cf26118f81691f56fb7f15761f09396eabd8a940ef96736d623cd45577a5302affb829872078e9f75ed70e5a9e18f7bd75dadb0df6a78e3a8b1eb234732311a313fc9a9899c2cc7180eb3a27d5cc85503f6e9732b9a972607320a1b8f5c4ce48b24c7cb6eff8aca31dec15bc2929fd07679950c18c36f289b5422f7865eaccba3631a21aef38adb7664a406d41307eaba39118e9f44426dc6ed0bd215a4a5b4a82c31725b0f361c10d66dc48f1118808716ca1f04265a8609ea24dd4c10ee69b1bf3ce02d21af08939a63694df2532bda1981547d585a7ed6a740fecfb3f84ace4c63cf4ca85d7258f237e93ba812b3a72634384fedff3a74498a9d90693aea36db78bc4913114b5a2afcae35d8d7ca42da3c1c4e0f94387916f80f48d2b7cd6a1e4869da286b9b1b670316d85a2507176e75e1ed717d33ad5f8560378804594ee12f18f9ff4d73669e28acbfe667df466deae143c9998d257a3786b3c4857734becc7e4d078e30c44eb98370b849cdd239cf374104fac5b38cb5e8a733a5515b0938bb3e76f82da87fba66a43e1e9b84ee1211c98f41c50f3adfcaa0c3bfe4312428eaf18e7733cfeba3f92627cfecc6f932eee4382d285f2f4567c975b48bb627bff0bd993d380a085db9af0cbb2a0f70c7a4fab27ba6db2bda2b624d8d686c5d416b39995f4874a0835d1992568cca65494032cc5acad24e6eb2a4f2118ac5431a80b58cbc92a34708d5b631fa18481eb217652f953ca8b8282d7596ce1cb4e832a60f41ed5455db0b20851008cad1a024dc501018104002258841952bdf23b5019b623d86319b81b0371f5f1c917697e3d215ef31de4ca4f5f0e4d494b17474236804e6a8e34fd46ff92fd49eaabb12cfacd773cce07eb7d3c4527eed8fcdb85df525be088fd3180c62364ebb136db292066c7b6e1aaaef05fbaf6a5960adce31af534a38b9c0785ef880151db8ea83f97560aafe465b04ed4ba3f13f93a5e206ec0851396c6cf399501b6fee8c18a151960e82c3d65eae9e6dc9a513eb3686ec127ed3e1f1e49e4cbcc4bf3802acaf172c25ab2fa76dfc847bad04c7b32129caaf3bfa6881aaa5307d2d6f8393f2f53d60dfa11bd3e35555334a1a4ee87c3fa1dbb10afc9b1b0472d6ad11d468a1cd1727d12d8b11d31cc3a7e541d29c2a2bab54f24726bd478763001f5fa958ae63e184acdb5f99883b1fe4889cbc0fff758ef93dd42fa3c7aac1cf90c50e8be503cbee28ccf3f92984e75fe09b6574ec7a83933e002a976663d3e7f4cfecad0b45c878ec4d4a9b76ae15f3258f3045ac42ea30889b55cca45612a76d5e493b2882e6d7c5149c4c40cd61578c328b998dbd88d782235f7cea9cf41ff12ea9a76f2fa28775dc9ec8aa4fe709297044ab9a856a6ea63813704a95d54413d66b1f4e7531d9562fff6e6656f0ab1ff91b1506b402ca108cafeb9947281d7cd53ef59ec922a9597e23d6a764148100c20e91f19f8d86e900f3fdb9e5a11193e3415addf81abfc4c49ce4d0708ee2c84b757018ac56ce90a438423072171a79d8653bc2f14109cfe7f956c1683eca587cf98861b6cddbf2d713d42b967ca2b83dfb3b795c6714d6e93d664503225cc3518b8f2aabf373c248bcc4867ff769b11369502ee56d6495f6bb3ce3821b8f6dca5c0fc5c67bc566e6062bcec7c64d860ba577c77e80338d772f2ce9f8f43ea142c2e29be4d186a12d4cae44b65f1a59a10fd6c09072cf4c3a52ea91d6a6260afffc0bfc18c70ab1bfad05081ed96606b68b8cebd8f21cf6a2dcaf370bfac8eef7f7c0ec38c84b356496f60836134fccd269f8e820d365596c0fc736296cf115f33812a6d51e08ca784a57ebdcbf949ebf75fba7835c6e502a637f563ba2bf6926c18bb85552905367609250871f14ce94035d2716932c15965851ddcc9b83b7df5101259cd4a14491ac3ef6d69f4f755201461060408eb774f04d764638d023157fe213d7f2135b25f053fee756b33a6211d13e630c833e0c5ad2d42d266ac5c09a93761651f43cdfb3bde9f50e360727f506bbb1d11c2137ac547c5875af5367529ed697e21ab0778acd5cb3d4e50343797797c315ef19ccb0145ef1fe4edc8f1acbaf105998a02d07871d4b21db0cada62ba5660fc9e52d4e17a288919d34ef94180c2933ede6a15ade6d028488c0c70405707405e277c4141c4815a43a011a22f81e656e4eaa79119999cf6b57ebb6a4be2a78957be4f0a94745b937efbf54b7d54cbc42b7195b411186d97b84cfa00dd8d07a3cee4833e516f99327c679b6b65dcdd9c2df8c29df5e0f08e39e1c9f73e5c6483bd6677802b7cf0b9a5b9531f37e74716c6f9b0913a4730854c87783477cb8241afc3133a00d716c8f91f0d6a15a5b80379bff25fffa0c7a323b1ea35e766d2e805dd12e314a28534b3d2a371cce142552f7e2d56273aa829540</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>故人</category>
+      </categories>
+      <tags>
+        <tag>故人</tag>
+        <tag>挚友</tag>
+        <tag>陌路</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>和声学学习</title>
+    <url>/2023/09/12/he-sheng/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ecbd97412b1b07436600ab7fa29d50ae60c832ccd62b4bd6e18a9b9fa4009aaf">0d9f1ba55b15365430749f4a47080a6d828c62781ff65fe7adcc6855cca1fd1cf85bcc36f5688b4a0da56f34a8dea5e0dc472c35388d58949e5a44c52ba51e030e738206dda9311b892853f5667056242d8a27824250902455f6758feb4b2c7ac39ec0d4b21afb23e50346df3165c9fd8e9f208ec2f1498a43ea9ad9f2365343cb231a6ff05f0322b472d2f7304eca5f694f2424c3e86ecd2b3f91ad0a674e96f88842f5da7b0f629fae3e4469b1cc511d734bc8033598e3e0c1aa49d974b6e3cf4dd9783dc7f8b0d611e6c890086a82d266ddb578b6523ad8a10bfce8f8864ec2589a19524aa3faefc8b243c899f8f9dfebe8b5d79d80b7770e724601b34bd1b38ee374987b6d0ff956d96cfaac551bdf05d9685a3a64aedced17c85f0d575cdebaf90cda1f8c3e79cbb8dd7b518c1f2c817a7906798957279e592311c8176653f0805807a8b268deacfd5a3b224d621dcd770c676beaba172a200270692084642af10f1fb438b44bddbfe0d94b4240f4c7e6401bcc5df4df7b66793cc20764c74015dd7f70251c4b4c87a8a54caf5d313048450731bd17708dd0e3a4218e96f8b69fa4b1340e9c7385d056d4d40a8b6358744f9f3fcfd9b7e16e3f2969cb829356f5a0d333b9e70a94cb5cd1bfa23303af77ab093c90abf6efed8dc30935499a5ca28967b9bd62be003958c70b6541cfa03bd6732521e0216d8d2a60003089695ff24c68ee7c9f52db6f8de5125448d6307dd08e03d5c7ec4802d811292087713099597af5881f2d2738eb5f20c059389c9cf4bef79b2442376fceb43dc22ed8cb9574f36f604d282b2948eb33f64226223b2f1cd4cd2f78f276bd68be06a46569a4dade5f29230555915fac09aa830c20e90a1b557c24d372a4e8cb70b20367bc9e8848488cf171ae27fe6cd0ebfe7a6154b27936dd3130d75a474dc509fe3c3e4947fbf3f74b949745f0c6da1a273a7da6a932d9a36d24d936d3883ce39a222b077e00933c51ea81f9646bfc9488d5460ac6919bc1b36ed3eb67f8b409c9aa33bcac9031dab8627630e2516c1d120026d05c84429885d3ed579166012d0ba44f5153f0eaa8c02d248e6af8c6619b4ffcc0918e3ba71f652408d14e1d15c58b38866fdfb129a3a558e651ceea7bc7c723dba3f15847d5a5719bee929a0971f64c25a79ae2de4a37161fd06b210d2e4c046decda4430ea3046256a6fe7d0b85613ba438ce2db94536ffb3ef1db583bb390b447215a0e4ac0e74e15790cf16781a40577b05370e262c197f00c71ea749a0e19b52a300422939ba73693f7904d6364d11071bff4dedbbebae8ce0f51789147f5544f261838fb86cb69b659f7cdbcf92ea144b83cbb8c0d470c9cd95c405c3a6af1e40f6b3c3f3a7f9cfbb1b7b8c3887e4f9005e947b13f7d4a60c0e5dc5a359d0f1b7ba60fdd222a8c6bfd565d1a4ec541445a3c0241b12f645896fe2e745ee90d31ea96698ef5cbb3171e1e8c9bfd2ac78e28eeb3106cf9c6b662874d9a06545bd9200898badde2bf91830f930fcddcbc7a2e44efd56b1df77ff171bf3eb39adff6d40a0389e9007f99d5ae747e4b99836f5b8f1925112ac239c709e8d502728d3a7d0d79af4040e6cecf98024f5a7d2f0b0242ef916c4101b92463a8d394f19fb0045e56ffd0414445b2e9157522764d4da97eec27f85fa2566e8dc7cd798c60a56f05f91265eba01ffa19ccb0a78b9daeaf0d41d3c9ebba4287a824cca51fe29313f4ad565485ba81b3e6516dfe995e2d866b480623f24873b3712293503499665f782a35488553ba676f8c85e91f6825ee6921ad1ce6892b70861438f43ebe7d4966c57d2930bf4903faf0626d3eb8d5dfe78603a50ad4eb581af749b08a59f3df773c8d0d3e0b57dbe96e94a6bcc5a99e63a1f153c30c594b4a5131ca48e8c9535064d7c1a7eb93f750930c6d0622497dacbf980719e57fc9bfaee2880f1c8d5463695c3830f9a32d153abce732be1f35543957e2eceabb214a3b329550cb05e6d7c8c6c5186c284f944d1c3a5f7762a0a5c4d72080be9f49ef0683c4c885c738e03adf263537489b59c66b74453273818d4c3e10d01b92686637d05e93f7eeaea044a6773241e3f73b3ebdd5d0a75ba0b96bf04c00702d2de7e204b78c36d3b926987623eccfef5dfe965648e32a5fa49860a8bea5e0e45dfc65289d54c1b1d55fbd880518719fad3b5f24eed83ba9c9ba8ff88de9ba4ab2131c9445c7ff49d0c6e9fe593e037eaf977abc49a6c0d673ca4ed2d5d71cc7a25b58f4e3a7cbcd40522ff7a81a4451afad808bbe7a6a4ef60d86f2b12a05f5cd63cf24f7fc02cfb03494383be68920b4fca70b9caccb32a248aee565793e8b8fdc5ca22290e06a81fcaa9409be54595edccfaf9c717a3cf68bc9627e9566ec82f6b6d7f4a7732f30beee96bc1797b5fb92e7c07df6350bef976c4775d28e1d30ea054a7102443208663e758cdeda2506edb34b35d7ba0abfb1b929c0b1fc295b78c7a4e50fd31656b610cd73271e74d49b3387c46a45c6fc9bca0eb840ef84816b7d7a5ca2ef49ae74ec2f12665919ad3ffa1c2805fae53363957096210639c97eeb8c199de9084aa792ed0e62d0ff4ff7c277bb19a87a229f08224faf7162b317dd31eb2340f97e5a1632149f11c983f8b988dae8f748f255af2a293846e4ceec6b8c04ab321c6202fc40a73931699757a1bba83c1d47269c887fb93c14267f93bfe88b087890cb8c8cc455116860e9e666027bf82287517058215223766d129f753bb51782a71050bd5d49a59e99f94a80aa2b6a8421730ace511ee0cbf14f9c6da60c4ed2f098b5d88a26b73553b002395668e710221a1a8366fc38c42ed2b52f6d65c5d7b27b680b2d8e78fe365336ca03adc93b13fdb6911d653f4faf7a09a8ce71a5e9ff52d26e7381339ac1adaf6fd7399031f9a84f6288c3406a8999eb1d9317a8543c6dc5c41a08503b1f7a50f52fc683af9de79ed269bc08da517c11ec756c77edc8b3d8760762511320c5266fe85f7484eaf430bbbad772526ff9273b3119dccbb223b922d94446fb2a5e025264b10e25dd51c4fae76ad0167630f6527beb53cac2f2115065c6647466e60b404786159a5ae00c001801290176b362e679a865ade6f6b00bfd8d9f983ab49402cdcabbbc83eb983f373b9baff8445628c55fcdc5ce7c30eac29aa0bc593f1631d3e9f79cef6a07856c51638522389ba56f86cdacb3163576359792675d9770a8fdfb59eb44ff7a02ee397140f904514944d177e3df111a84a66d01ea28b4c6ddd7c07b368ce2319d6adaf9557a537f9fc6328627269dbaa6d7e414c0ff48d1034e8eafb523969a8883eef4867516128415e1bfb3c629c5e38c29ef7852018e41defc81b13783194a6b533379b74ba879df30efff79d827999b5ea22e677e48b91dcb1c598d0c1d07d8a8e83d16f44e8a2f1e1da7dcdbd7273596cc52a056ca1a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Parallel Life</category>
+      </categories>
+      <tags>
+        <tag>Parallel Life</tag>
       </tags>
   </entry>
   <entry>
@@ -128,73 +172,15 @@
       </tags>
   </entry>
   <entry>
-    <title>和声学学习</title>
-    <url>/2023/09/12/he-sheng/</url>
-    <content><![CDATA[<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="和弦（和弦音）"><a href="#和弦（和弦音）" class="headerlink" title="和弦（和弦音）"></a>和弦（和弦音）</h2><h4 id="和声、和音、和弦"><a href="#和声、和音、和弦" class="headerlink" title="和声、和音、和弦"></a>和声、和音、和弦</h4><ul>
-<li><p>和声学：研究和音的结构以及它们如何连接</p>
-</li>
-<li><p>和弦中各音的名称</p>
-<ul>
-<li>和弦按三度关系排列后，最低的音为根音，向上依次为三、五、七、九……名称不随排列位置改变而改变。</li>
-</ul>
-</li>
-<li><p>和弦音</p>
-</li>
-<li><p>和弦外音</p>
-<ul>
-<li>延留音，出现在强拍或次强拍，使得音高与自己接近的和弦音延迟出现。除了延留音，其他的和弦外音都出现在弱拍上。</li>
-<li>经过音，和弦音上下级之间的过渡。</li>
-<li>辅助音，和弦音与其重复音之间的连接</li>
-<li>先现音，后一和弦音在弱拍上提前出现</li>
-</ul>
-</li>
-<li><p>非三度结构的和音</p>
-</li>
-</ul>
-<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h3 id="大三和弦与小三和弦、四部和声"><a href="#大三和弦与小三和弦、四部和声" class="headerlink" title="大三和弦与小三和弦、四部和声"></a>大三和弦与小三和弦、四部和声</h3><ul>
-<li><p>定义</p>
-<ul>
-<li>大三和弦，大三度+小三度（基于根音的大三度+纯五度）</li>
-<li>小三和弦，小三度+大三度（基于根音的小三度+纯五度）</li>
-<li>增减（两个大三度、两个小三度）</li>
-</ul>
-</li>
-<li><p>四部和声</p>
-<ul>
-<li>四声部，高音、中音、次中音、低音</li>
-</ul>
-</li>
-<li><p>三和弦的旋律位置</p>
-</li>
-</ul>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="正三和弦的功能体系"><a href="#正三和弦的功能体系" class="headerlink" title="正三和弦的功能体系"></a>正三和弦的功能体系</h3><ul>
-<li>主、副、属</li>
-<li>建立在音阶的Ⅰ级，也就是主音上的三和弦叫做主三和弦，在大调中用T表示，小调中用t表示</li>
-<li>进行、进行的公式<ul>
-<li>和弦的连续构成了和声进行，最简单的和声进行逻辑基础就是</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Parallel Life</category>
-      </categories>
-      <tags>
-        <tag>Parallel Life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>平凡的好累的一天</title>
-    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
-    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
-<p>6.17，基础物理考试的前两天</p>
-<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
+    <title>新版校园卡</title>
+    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
+    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
 ]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>呓语</tag>
       </tags>
   </entry>
   <entry>
@@ -215,6 +201,20 @@
       </categories>
       <tags>
         <tag>奇怪的经历</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>平凡的好累的一天</title>
+    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
+    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
+<p>6.17，基础物理考试的前两天</p>
+<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -354,18 +354,6 @@
       </tags>
   </entry>
   <entry>
-    <title>新版校园卡</title>
-    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
-    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>呓语</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基本乐理学习</title>
     <url>/2023/09/12/li-chong-guang-ji-ben-le-li/</url>
     <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
@@ -392,7 +380,40 @@
         <category>Parallel Life</category>
       </categories>
       <tags>
-        <tag>Parallel Life</tag>
+        <tag>Life</tag>
+        <tag>Parallel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>跨越时空的共鸣</title>
+    <url>/2023/06/08/kua-yue-shi-kong-de-gong-ming/</url>
+    <content><![CDATA[<p>23.6.8</p>
+<p>焦急复习材科基中……</p>
+<span id="more"></span>
+
+<p>对着答案尝试理解习题，突然发现旁边有个注释对答案提出了异议，却和我的想法不谋而合。于是喜不自禁，正准备继续做时，无意间发现这条注释来自于十二年之前，也是一个期末周的中午。思绪不由地回到那年夏天，留下这行字的人，又是谁呢。</p>
+<p>等我成为研究生&#x2F;博士生以后，我也要当材科基的助教！立誓于此，拭目以待。</p>
+<p>首先从期末考试A-及以上开始！</p>
+<p>附图如下：</p>
+<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230608155314202.png" alt="image-20230608155314202" style="zoom:50%;" />]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇怪的经历</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Azusa</title>
+    <url>/2023/05/22/qing-yin-shao-nu/</url>
+    <content><![CDATA[<p>阿梓喵！</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
+]]></content>
+      <categories>
+        <category>けいおん！</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
@@ -418,58 +439,25 @@
       </tags>
   </entry>
   <entry>
-    <title>跨越时空的共鸣</title>
-    <url>/2023/06/08/kua-yue-shi-kong-de-gong-ming/</url>
-    <content><![CDATA[<p>23.6.8</p>
-<p>焦急复习材科基中……</p>
-<span id="more"></span>
-
-<p>对着答案尝试理解习题，突然发现旁边有个注释对答案提出了异议，却和我的想法不谋而合。于是喜不自禁，正准备继续做时，无意间发现这条注释来自于十二年之前，也是一个期末周的中午。思绪不由地回到那年夏天，留下这行字的人，又是谁呢。</p>
-<p>等我成为研究生&#x2F;博士生以后，我也要当材科基的助教！立誓于此，拭目以待。</p>
-<p>首先从期末考试A-及以上开始！</p>
-<p>附图如下：</p>
-<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230608155314202.png" alt="image-20230608155314202" style="zoom:50%;" />]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇怪的经历</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>鹊踏枝</title>
     <url>/2022/12/24/que-ta-zhi/</url>
-    <content><![CDATA[<p>翻过五代词的卷首语，就仿佛翻过了整整一个时代——告别了行吟于诗国晚辉中的杜牧、李商隐，一种全新的体裁在一片全新的时代土壤上展苞待放。</p>
-<p>就好像一个四处漂泊的游子，他游天姥，攀蜀道，下江陵；见过了大漠孤烟，长河落日，星垂平野，月涌江流；梦过了渌水荡漾，天青云淡，白鹿青崖，广厦万间，忽地停下了脚步。</p>
-<p>他取来了镜子，镜子不是湖面，镜子里，只有他一人。</p>
-<p>他看到镜中数百年的流浪给自己留下的痕迹，深深浅浅。百年来的种种夹杂着繁复的心情，化作无数人影向他涌来：李将军，石壕吏；卖炭翁，琵琶女，秦妃王子浣纱人，征人思妇一书生……他拨开重叠的幻境，人影憧憧，镜中人只有自己。</p>
-<p>他于是知道，像风吹过了三千里，他写尽天下而未曾落笔之处，是自己。</p>
-<p>一曲《鹊踏枝》，不必有“君王掩面救不得”的悲恸，不必有“同是天涯沦落人”的怜与自怜。“闲愁”本不需要什么由头引子，若非要说，便是那宜人春色，而不再是欲回天地、欲入扁舟。</p>
-<p>没有“欲”，愁是无名的愁——就像你愿意无缘由地凝视阳光下的一株小树。无理之处，实则有情而且真实得使人想落下眼泪。试想，在大唐盛世会有多少诗人揽镜自鉴自伤憔悴呢？他们的眼光是向外的，是天地苍茫。而到了南唐——仿佛曲终人散，镜子里，终于能够空到放得下一个自己，一个真实的自己。</p>
-<p>我爱那“独立小桥风满袖”、“长笛一声人倚楼”。它们若结成联句，在我看来无异于唐与五代的桥梁——他们共同描绘了人的真实：风满袖，仿佛身上每一寸衣袂都被晚风鼓动；一声笛，又仿佛余音袅袅回环缭绕，敲打心弦而不绝……人在这样的情境下，是自我的，真实的，饱满的，也是孤独的。</p>
-<p>人们怀揣孤独的共情，从盛唐走向晚唐，又从晚唐步入南唐……</p>
-<p>体会到了何为自我，冯延巳的《鹊踏枝》在最后一句让“人”悄悄离去。</p>
-<p>平林新月，有人叹“可惜不见人影”。</p>
-<p>岂知“无妨不见人影”，乃至“可幸没有人影”！人在此中的“退”是心在此中的“生”！</p>
-]]></content>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="81d3f0ddb8223b0eb03666ffd64b4d94703b9628319d55bf1b38d73c15768f2d">4b1060b742dbd6c274dbc76c854478d69673406e758d4fb452ff42a9dd7cb6b979ef17514ccc06b21c84db92e45e03fde7df1cae26c9fac16ec18b54b04966b701f7c0105bdb7924daba65d24eeb85eaa9cad1814c0158908df839c89c4db16b48690f06f61f1eb767b92a3d57a5c5c5f25dac2935b9cab8dfea559880d44f3311213f55db869e428a3e3b7f6ffd9e60be51d9d30743f6b2422a7475752b0a0d8903bd2391488284fb14f0ecd9f093f42054d435adee21df7e275ef82be61f7aef5b368cb45affd30e7359c83b7510dda73824e8f273698e1dfc51e1b1cf427f505d9c8fe554accc68ab729d2b56d2be525940a2f481e82ac7c59f43230f2d2ed0c6d2234a9536a16ffc7791381292892af8fdb9ffcdc9d4b9c5f2e3a9bd7e1252bcc662a1d8dd50c6e62f871e867a65105c994a1861a4f74f086d77f2aaf73703c645b46ca6c0675e58dcf005c30b13aa1cdb1618693fc860be14559a32b72190494d8b03f2bb518431260f712ab88a2ebe0f710db0a5c482a2608caa372b2b56e9d18fcde42c72e612ee40953dc8a69382fe0043dc283f54b67868b8230a872491613ba12649a0f4b4ec44050e97e6ef60e4ede4f38dc7f9187397cb03ce2fdcb556b2112a5c1dcd8a14169e8eda9d56a4d21575bcc32fa9924fde463cc899ed2b5e5c2ad11901c8bf6ae99a930acf2c19d7f6dd5d619234e808426573d1052245011c46b1e8137ec79bcb16d690cc34942bf68a48834ab22039f714d2236a57a8aa4d02b3c01a4df14fd39b0ca1c23e9ed49d3b40f1d0a8bc65793dd3f63eefa979c41c2b8199a26de4f565b2f15980c81c01e40a0700a9d97324e87bc590382963cadac944edaafb1a328d3bb9da7969dcefd2564ca6c973b882e500d15a46639bea03bbc77d0fe0f815958e5aa9d986aba09455be4aacd611c5f7839b45004ce6d4db242893d625353cd5da84eee9c804dde6bc4a0f654e44ebfb201a829af1d42dbce833e6690eeeaad984f79ff03963f5f0583102e242b7b8bc951b6203afe7be17f01c9883e3a6e176dc6ae2332feda219bcc990f9dd8cc2ed299bd638bdf98a3ba96356eb32c4a20a7f32ad53b5aaa6e26154c61487fd3fdb3e606b8865818606a255404dd913d2b78208f326b62960718723e2025567bcfd0a819ef13f1bb54b31da96dd38c8e19bb8ece9f7a57d0ad6480821a809320407afa92bd5326caa604fb8b02ae684c3e94180e8108c3a584476c693b3ed9dff34f8900e4fd0fdc32bdc1fbbb02ffa9a37f2050d3c593aafdfcfdb7ff7ba1e869340b4500cd501ca7ca3615a20d05c45a700071f28ec7449fd02cf293e13cee7f5ef908d11a8340a5f62413f4b3fb901905e04207f80b6e79d49d0fafc4a9502ae2b63f3a7c247cd438e76e27994f8b8d35c352baa601877a3e1c30a9fb036e1bebbb7ff7da020c54b6cb3f4437ad5c226590681e545046e126ce35580ca4c54e7f7bbdfdc0fb6c08a442112f894d2a809a7658579bbff943fd3f73691c9fda6a1f31a203140c2b4f9cbea725c3a68c0f39c7816b877b952f2caf9926b5b73230da8037c76e1f5e384cabc934c96d762dbff92db5e83ae3e84292e8f968bb46621d226f224400b170f6cd9d80fec73b8b4791c7b974b774c7b23da3da3034b01f33e44bb9fd8074414f0b44bfd88031056c0b74bfe6aa79639c721491ec6fbc7b3de8fb3ae3752f2f159d40e48a819e26e7d3bb1b885c45cc768fbf891e61d88e7a1afe26cdc264382ec00312f0218915a9bd90a6affcc5e701f5514e89261fff58ff561f8698933839a191da858758eb6c6df0e2e907d3d92bf24d423825a9128debc31f6452df80f9a32d03479a627b35a2c7f11df270c7ceae46c9b65c50d9d779d5955845c4168b1c925b5f208ea9a8b45fb8e8976ea53f9d24e768d9655a7c3246912628116934a23779e784b30a9f42bab55b860296a5c12a1be1d1fd4cd62a2eb335f5affbe6de9dee0fe02cbc47dc8b68f5b965b89c739f31bbc1770268c703b94cceeda3b9f59bd6906490404ea37476089e047104d8b41349d791f42a4760901792bd3e83755b4be95ef57e8cfb6d6c3983afbf759bb5f95d247ae7a80380c32f379fc059e8508d99a4a9e5b47619f1ac0e373e55d123bd53af7a77f2f0c5fb7cd89cf9ff8e7741473761743108731cb3f44690e264fbb6b54ad6f6e464464e262cd7699d4440e370b66a9f0f7baac13dc198b49d8cfc24dea560b52952d1676bfb41db61b467595c71de14a9f74fa9eca43e12e549ebd25195975cc70924f565b0b4d18be10ab6215e73e10d1922b94a1dc8c5ea066175fea65c7c694fafe9816e533d7167f6f6b5a83fce90759180682105e104b5ad5092e11dba39558389c9e68d972927cc8a80ad2afde041b28054cd8eac1b42143b994df42e4dafcb890ac06a18b588122956eceb3f2866908aa798e863d90cb641eb446caaf5ae5ce4f73a8c6f3a6bea2252401ec06cbf2e06ba3483bbfb9a52c0cb5cdac22abf70e26b35030b4d8b49b76db43049e022d91ee8c5676c4151be668c39e0153b8316d7f08393a6f437c0c18b49aa510e7821972a9abf4a2a2c89aacd1e235888cc94ee7576375b98888371fca726b60cc6210bbc8ec38e409cd84ac2c6a1e0f1287a88db6c8ebc97603c5c6dedbbe982d6a82d8f95b1a754ebe353147d44b33917be03c27831d501765985189457f3438a245ddcbb3d97901a0132a6052cfdd6d0fac40cef3ed1587edf07ddcd362afecee72db059ba95a1d4039bde23f8bf645bcbcf36126521c102a9b163e746c212824fdbdfd7aa1f6afca48e9c0a6ea9de8adefeb989fc31129dd84016f5f51d5712f75c974159e891c60d47f78698309c15d1bd8d78f59fd0d65ec95861b39548e8964c03260df953a9e485aa21a7857ff955ba858d015672e802febba01c7594142a6786f204f62f29b5686a4d729174b35010d01d90d1c66ec1110e1078a9daa5bb40d1da2ec87cafecdf4f97997ce1b033c3f2daef9cc0b6ee4d2d6dfc418bd8f5db65e59e9cf18fac39412ba87eb79e517b1ee15551823a9b4f903c51e6f97144cbc6043bba958765025ed44da6fa42d5213f0cc76afe00cef1b20e4d2ef9b01ad5e9ea452dbd3ded7ae774f60ba4ccce1660a39e12087bc1e46ddf76875daf617c22bf605c850b40160d62f25ea0ad0b3ef3e9ec65250d77e9b4461d9352023ca5b0ba11be120e5772b9ddf9d1f7b5f33fe6b52e34c2011df60b3a5cb1c05f7f68d0d6ef9479b26e33f737731298ce6f81287d344f8472f3cd751480c4f78c901e88748085de1b094aea8b00e9b3351f2d43545256edb48eb36dbfe52ea2e51a852835c198da9994333dc81958af43a710b044017ca69bc5bab50d02c3c59bd38640a4386c3f171b4f8325d0212030768537d0df4ec148339ec21f4a485e978dcb97068af38ab8d3a1400685fd8976be2</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>残章</category>
       </categories>
       <tags>
         <tag>残章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Azusa</title>
-    <url>/2023/05/22/qing-yin-shao-nu/</url>
-    <content><![CDATA[<p>阿梓喵！</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
-]]></content>
-      <categories>
-        <category>けいおん！</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
       </tags>
   </entry>
 </search>
