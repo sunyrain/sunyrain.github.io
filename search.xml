@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>日记9-17</title>
+    <url>/2023/09/17/2023-09-17/</url>
+    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
+<span id="more"></span>
+<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
+<p>可恶。</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown实用语法</title>
     <url>/2023/06/13/markdown-yu-fa/</url>
     <content><![CDATA[<ul>
@@ -20,30 +35,20 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/07/06/deep-learning-with-pytorch/</url>
-    <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查询显卡状态</span></span><br><span class="line">torch.cuda.is_available()</span><br><span class="line"><span class="comment">#将张量转移至显卡进行计算,利用tensor的.to方法</span></span><br><span class="line">a=a.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line"><span class="comment">#如果在不同设备进行计算，则会报错</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Chapter2-P2"><a href="#Chapter2-P2" class="headerlink" title="Chapter2 P2"></a>Chapter2 P2</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#在out的第2个（参数1代表第2个）维度选取最大值，函数返回值有两个，分别为最大值和最大值位置，不需要的话以_占位即可</span></span><br><span class="line">_, index = torch.<span class="built_in">max</span>(out,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
-
-]]></content>
-  </entry>
-  <entry>
-    <title>一之濑怜</title>
-    <url>/2023/05/28/yi-zhi-lai-lian/</url>
-    <content><![CDATA[<p>一之濑怜</p>
-<hr>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%B8%80%E4%B9%8B%E6%BF%91%E6%80%9C.png" alt="一之濑怜"></p>
-]]></content>
+    <title>日记9-18</title>
+    <url>/2023/09/18/2023-09-18/</url>
+    <content><![CDATA[<p>开局啥都听不懂，忽闻改培养方案，寄。</p>
+<span id="more"></span>
+<p>似乎在课上听到了了不得的东西，然而并不知道在说什么，寄。<br>开篇PPT，魔法少女小圆魔女视角。终局PPT，Clannad弦理论。<br>啥都不会，B站大学启动。吴氏网、标准点阵、倒易空间。<br>学了一中午，PPT和教参平台上的图全是错的，助教那的祖传课本却是对的，寄。<br>呃呃呃要开始上第一节乐理课了，开始紧张了，寄。<br>我测，直接自杀了。</p>
+<p>以下是朋友圈记录<br>7:30</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">每年保留节目</span><br><span class="line">开学第一天走错教室去上研究生课</span><br><span class="line">​今天的主题是《数字图像技术及应用》</span><br><span class="line">比起上学期的《高级半导体物理》​已经好很多了</span><br><span class="line">未来可期</span><br></pre></td></tr></table></figure>
+<p>8：03</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">大结局</span><br><span class="line">​在上《数字图像处理》课的时候</span><br><span class="line">​被《深度学习》老师点名回答问题了</span><br><span class="line">​于是zygg如实回答了我上个朋友圈里写的东西</span><br><span class="line">​于是教室里洋溢着欢乐的气息</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>IDOLY PRIDE</category>
+        <category>Life</category>
       </categories>
       <tags>
-        <tag>他乡</tag>
+        <tag>Life</tag>
       </tags>
   </entry>
   <entry>
@@ -56,6 +61,62 @@
       </categories>
       <tags>
         <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>和声学学习</title>
+    <url>/2023/09/12/he-sheng/</url>
+    <content><![CDATA[<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="和弦（和弦音）"><a href="#和弦（和弦音）" class="headerlink" title="和弦（和弦音）"></a>和弦（和弦音）</h2><h4 id="和声、和音、和弦"><a href="#和声、和音、和弦" class="headerlink" title="和声、和音、和弦"></a>和声、和音、和弦</h4><ul>
+<li><p>和声学：研究和音的结构以及它们如何连接</p>
+</li>
+<li><p>和弦中各音的名称</p>
+<ul>
+<li>和弦按三度关系排列后，最低的音为根音，向上依次为三、五、七、九……名称不随排列位置改变而改变。</li>
+</ul>
+</li>
+<li><p>和弦音</p>
+</li>
+<li><p>和弦外音</p>
+<ul>
+<li>延留音，出现在强拍或次强拍，使得音高与自己接近的和弦音延迟出现。除了延留音，其他的和弦外音都出现在弱拍上。</li>
+<li>经过音，和弦音上下级之间的过渡。</li>
+<li>辅助音，和弦音与其重复音之间的连接</li>
+<li>先现音，后一和弦音在弱拍上提前出现</li>
+</ul>
+</li>
+<li><p>非三度结构的和音</p>
+</li>
+</ul>
+<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h3 id="大三和弦与小三和弦、四部和声"><a href="#大三和弦与小三和弦、四部和声" class="headerlink" title="大三和弦与小三和弦、四部和声"></a>大三和弦与小三和弦、四部和声</h3><ul>
+<li><p>定义</p>
+<ul>
+<li>大三和弦，大三度+小三度（基于根音的大三度+纯五度）</li>
+<li>小三和弦，小三度+大三度（基于根音的小三度+纯五度）</li>
+<li>增减（两个大三度、两个小三度）</li>
+</ul>
+</li>
+<li><p>四部和声</p>
+<ul>
+<li>四声部，高音、中音、次中音、低音</li>
+</ul>
+</li>
+<li><p>三和弦的旋律位置</p>
+</li>
+</ul>
+<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="正三和弦的功能体系"><a href="#正三和弦的功能体系" class="headerlink" title="正三和弦的功能体系"></a>正三和弦的功能体系</h3><ul>
+<li>主、副、属</li>
+<li>建立在音阶的Ⅰ级，也就是主音上的三和弦叫做主三和弦，在大调中用T表示，小调中用t表示</li>
+<li>进行、进行的公式<ul>
+<li>和弦的连续构成了和声进行，最简单的和声进行逻辑基础就是</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Parallel Life</category>
+      </categories>
+      <tags>
+        <tag>Parallel</tag>
       </tags>
   </entry>
   <entry>
@@ -73,10 +134,61 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/07/06/deep-learning-with-pytorch/</url>
+    <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查询显卡状态</span></span><br><span class="line">torch.cuda.is_available()</span><br><span class="line"><span class="comment">#将张量转移至显卡进行计算,利用tensor的.to方法</span></span><br><span class="line">a=a.to(<span class="string">&#x27;cuda&#x27;</span>)</span><br><span class="line"><span class="comment">#如果在不同设备进行计算，则会报错</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Chapter2-P2"><a href="#Chapter2-P2" class="headerlink" title="Chapter2 P2"></a>Chapter2 P2</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#在out的第2个（参数1代表第2个）维度选取最大值，函数返回值有两个，分别为最大值和最大值位置，不需要的话以_占位即可</span></span><br><span class="line">_, index = torch.<span class="built_in">max</span>(out,<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
     <title>伊吹渚</title>
     <url>/2023/05/28/yi-chui-zhu/</url>
     <content><![CDATA[<p>伊吹渚</p>
 <p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%BC%8A%E5%90%B9%E6%B8%9A.png" alt="伊吹渚"></p>
+]]></content>
+      <categories>
+        <category>IDOLY PRIDE</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不遇</title>
+    <url>/2022/12/24/bu-yu/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="0aa5231a1221a5088098a6a6af05bac785d54aef4a219c856ad4723b40ca10f8">18363a58ea4c366463ee079546de5729939caa987abbc861019ffecce95702a95f7beff5b10e1aae40f308e6be34c51590b44b5c4db081cbbe6c12a7e6bd34e40e89bc1e60fcdb29f5ee0ac7a8d044932a0e65072913fdc2efb0264532ad2167c2a22c956b9e7401d6673e4a66ab8f4067e033894a6ae524e3b22afb5772e9af2ad20fb2dcf669e379a58ce240a4ea215f1c01a5d809e159bbe73e76aacc0c5be6958ff53dae269cb22122c738beb5be73931d81af55acfd3b84e38c608af2550fa71b39e9ca010da5386387b3fba412c81b477beff47506c31c3ee44bc62791b6df4d57e6e309e498f8a9276588e5b8e36752e56909c97a7a461dad4c10b34e2e24ec30cd13c5e9af5d999fa3e9c93f604214e93f3ab0819c1b223b0c2bbd15b80c4fbe4b627f90065fffd59fdc97c2296bae7d58360863a8e7eb8bc2e24a6d16ddbb86b60867142e78ceae71b492df19c56ea454dd43d91eaac553fedbab42096d3aafb3c3ef736f310ecdf05d71f523fef9722824131629795c1826e968574f681e0e84b922bae9395bc4428a7e6971c61e70aa9f9a49e18975d98d6e1462c5b09169aed55efcfa512f8519426ad93979b061135e314971a72ff41b8e165a0718875146d546aff0086d67c113d8f433ff67fbd47de0522a073f36d053d9755b1025b2ba79ed23124a8bc70c1032dc2ef03331cf8a24f05aa4c64f7f7050b3270b2d72c95b393c82ac542da4b04d348da4fe56d2d42ddc023b697ff46a998e93d398032f8597fbc1dcb315587c7eafc126a5cade83d6775dc6ffb20475d23832e293636a7addbabae4d343547a21fffbbc68f94959e74d32e4d09a65bd30febddc826683e27339ddee2672f10a366ed07b0e35dffe3461fa5c1dee27e67fd47af8b8255690445986e6eec717ea0808b775c5ca8507667f3edbd9ef65ee2ab6285f89b94115ec84c6945c382849593833e31303bf3272e0dbfb3d5e07171c7b7455f1b3e59b5cd3c575b2f01a3f13ce90e1fa4c212fc9bc85daf808482d7ff805ba8339a7445b4328f99f3643bd2942509fd3adf8857c2a9be11610ad53bdc23e05f37d4eb6a859b535bf4d51caa63932a6d8e77f5810ce2ac80f6f40af7e84509a97b72b0ab0bd2c78cb3d872fa28bb9ad7576229ca6b7832e9e60b31163af9eb4e09e1519ac9bf1e34af658e32bed2491e39e84b0e43d8c0ca714ce03ccfcd360aff17f9aa7898c38db693b1d51c34ce931b5897be5c4df73362cd573eb9ccae417d891de5be0aff8c7ed4a0652fd21b2f9cfa9f340600c1bcaadb62cb11e2239fa7e30b63487f289c8811af5d3c57423bd2a27abf74f285ff59027d7e7f05f92ac84548de0bb9a31b0385062e256a061e47dbf5d0b9a27f66e00576d7e61bc96021023b06d1020825381efe30aacf0f2b01c3cfbc81f062b8ae4f18f72bf3b8acea2503f52783626fb13cfe19548e41de025ca00ed008ed94523776650ff3b0115303fe76486fdb28f39656a64f9421aed73842746ceb142064aba6b8bc0a2af25796cf26118f81691f56fb7f15761f09396eabd8a940ef96736d623cd45577a5302affb829872078e9f75ed70e5a9e18f7bd75dadb0df6a78e3a8b1eb234732311a313fc9a9899c2cc7180eb3a27d5cc85503f6e9732b9a972607320a1b8f5c4ce48b24c7cb6eff8aca31dec15bc2929fd07679950c18c36f289b5422f7865eaccba3631a21aef38adb7664a406d41307eaba39118e9f44426dc6ed0bd215a4a5b4a82c31725b0f361c10d66dc48f1118808716ca1f04265a8609ea24dd4c10ee69b1bf3ce02d21af08939a63694df2532bda1981547d585a7ed6a740fecfb3f84ace4c63cf4ca85d7258f237e93ba812b3a72634384fedff3a74498a9d90693aea36db78bc4913114b5a2afcae35d8d7ca42da3c1c4e0f94387916f80f48d2b7cd6a1e4869da286b9b1b670316d85a2507176e75e1ed717d33ad5f8560378804594ee12f18f9ff4d73669e28acbfe667df466deae143c9998d257a3786b3c4857734becc7e4d078e30c44eb98370b849cdd239cf374104fac5b38cb5e8a733a5515b0938bb3e76f82da87fba66a43e1e9b84ee1211c98f41c50f3adfcaa0c3bfe4312428eaf18e7733cfeba3f92627cfecc6f932eee4382d285f2f4567c975b48bb627bff0bd993d380a085db9af0cbb2a0f70c7a4fab27ba6db2bda2b624d8d686c5d416b39995f4874a0835d1992568cca65494032cc5acad24e6eb2a4f2118ac5431a80b58cbc92a34708d5b631fa18481eb217652f953ca8b8282d7596ce1cb4e832a60f41ed5455db0b20851008cad1a024dc501018104002258841952bdf23b5019b623d86319b81b0371f5f1c917697e3d215ef31de4ca4f5f0e4d494b17474236804e6a8e34fd46ff92fd49eaabb12cfacd773cce07eb7d3c4527eed8fcdb85df525be088fd3180c62364ebb136db292066c7b6e1aaaef05fbaf6a5960adce31af534a38b9c0785ef880151db8ea83f97560aafe465b04ed4ba3f13f93a5e206ec0851396c6cf399501b6fee8c18a151960e82c3d65eae9e6dc9a513eb3686ec127ed3e1f1e49e4cbcc4bf3802acaf172c25ab2fa76dfc847bad04c7b32129caaf3bfa6881aaa5307d2d6f8393f2f53d60dfa11bd3e35555334a1a4ee87c3fa1dbb10afc9b1b0472d6ad11d468a1cd1727d12d8b11d31cc3a7e541d29c2a2bab54f24726bd478763001f5fa958ae63e184acdb5f99883b1fe4889cbc0fff758ef93dd42fa3c7aac1cf90c50e8be503cbee28ccf3f92984e75fe09b6574ec7a83933e002a976663d3e7f4cfecad0b45c878ec4d4a9b76ae15f3258f3045ac42ea30889b55cca45612a76d5e493b2882e6d7c5149c4c40cd61578c328b998dbd88d782235f7cea9cf41ff12ea9a76f2fa28775dc9ec8aa4fe709297044ab9a856a6ea63813704a95d54413d66b1f4e7531d9562fff6e6656f0ab1ff91b1506b402ca108cafeb9947281d7cd53ef59ec922a9597e23d6a764148100c20e91f19f8d86e900f3fdb9e5a11193e3415addf81abfc4c49ce4d0708ee2c84b757018ac56ce90a438423072171a79d8653bc2f14109cfe7f956c1683eca587cf98861b6cddbf2d713d42b967ca2b83dfb3b795c6714d6e93d664503225cc3518b8f2aabf373c248bcc4867ff769b11369502ee56d6495f6bb3ce3821b8f6dca5c0fc5c67bc566e6062bcec7c64d860ba577c77e80338d772f2ce9f8f43ea142c2e29be4d186a12d4cae44b65f1a59a10fd6c09072cf4c3a52ea91d6a6260afffc0bfc18c70ab1bfad05081ed96606b68b8cebd8f21cf6a2dcaf370bfac8eef7f7c0ec38c84b356496f60836134fccd269f8e820d365596c0fc736296cf115f33812a6d51e08ca784a57ebdcbf949ebf75fba7835c6e502a637f563ba2bf6926c18bb85552905367609250871f14ce94035d2716932c15965851ddcc9b83b7df5101259cd4a14491ac3ef6d69f4f755201461060408eb774f04d764638d023157fe213d7f2135b25f053fee756b33a6211d13e630c833e0c5ad2d42d266ac5c09a93761651f43cdfb3bde9f50e360727f506bbb1d11c2137ac547c5875af5367529ed697e21ab0778acd5cb3d4e50343797797c315ef19ccb0145ef1fe4edc8f1acbaf105998a02d07871d4b21db0cada62ba5660fc9e52d4e17a288919d34ef94180c2933ede6a15ade6d028488c0c70405707405e277c4141c4815a43a011a22f81e656e4eaa79119999cf6b57ebb6a4be2a78957be4f0a94745b937efbf54b7d54cbc42b7195b411186d97b84cfa00dd8d07a3cee4833e516f99327c679b6b65dcdd9c2df8c29df5e0f08e39e1c9f73e5c6483bd6677802b7cf0b9a5b9531f37e74716c6f9b0913a4730854c87783477cb8241afc3133a00d716c8f91f0d6a15a5b80379bff25fffa0c7a323b1ea35e766d2e805dd12e314a28534b3d2a371cce142552f7e2d56273aa829540</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>故人</category>
+      </categories>
+      <tags>
+        <tag>故人</tag>
+        <tag>挚友</tag>
+        <tag>陌路</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一之濑怜</title>
+    <url>/2023/05/28/yi-zhi-lai-lian/</url>
+    <content><![CDATA[<p>一之濑怜</p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/%E4%B8%80%E4%B9%8B%E6%BF%91%E6%80%9C.png" alt="一之濑怜"></p>
 ]]></content>
       <categories>
         <category>IDOLY PRIDE</category>
@@ -106,20 +218,6 @@
       </tags>
   </entry>
   <entry>
-    <title>平凡的好累的一天</title>
-    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
-    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
-<p>6.17，基础物理考试的前两天</p>
-<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>春归</title>
     <url>/2022/12/24/xiao-shi/</url>
     <content><![CDATA[<p>春归</p>
@@ -135,6 +233,66 @@
       <tags>
         <tag>诗云</tag>
         <tag>残章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新版校园卡</title>
+    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
+    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>呓语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基本乐理学习</title>
+    <url>/2023/09/12/li-chong-guang-ji-ben-le-li/</url>
+    <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
+<ul>
+<li>临时变音记号，只对同小节，同高度有效</li>
+</ul>
+<h1 id="第二章-音律"><a href="#第二章-音律" class="headerlink" title="第二章 音律"></a>第二章 音律</h1><h3 id="标准音和中央C"><a href="#标准音和中央C" class="headerlink" title="标准音和中央C"></a>标准音和中央C</h3><ul>
+<li>小字一组a1 440Hz 标准音</li>
+<li>小字一组c1 中央C</li>
+</ul>
+<h3 id="复合音与分音列"><a href="#复合音与分音列" class="headerlink" title="复合音与分音列"></a>复合音与分音列</h3><h3 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h3><h3 id="五度相生律"><a href="#五度相生律" class="headerlink" title="五度相生律"></a>五度相生律</h3><h3 id="纯律"><a href="#纯律" class="headerlink" title="纯律"></a>纯律</h3><h3 id="自然（变化）全音（半音）"><a href="#自然（变化）全音（半音）" class="headerlink" title="自然（变化）全音（半音）"></a>自然（变化）全音（半音）</h3><h1 id="第三章-五线谱记谱法"><a href="#第三章-五线谱记谱法" class="headerlink" title="第三章 五线谱记谱法"></a>第三章 五线谱记谱法</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125147672.png" alt="image-20230913125147672"></p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125336603.png" alt="image-20230913125336603"></p>
+<ul>
+<li>延长记号<img src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20230913125425686.png" alt="image-20230913125425686" style="zoom:25%;" /> 自由延长其时值</li>
+<li>延音线，两个同样音高的音上，唱奏时只唱奏一次</li>
+<li>省略记号<ul>
+<li>移动八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151808680.png" alt="image-20230913151808680"></li>
+<li>重复八度记号以及长时间重复八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151855071.png" alt="image-20230913151855071"><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151931322.png" alt="image-20230913151931322"></li>
+<li>长休止</li>
+</ul>
+</li>
+<li>演奏法方面的记号</li>
+<li>装饰音记号</li>
+</ul>
+<h1 id="第四讲-节奏与节拍"><a href="#第四讲-节奏与节拍" class="headerlink" title="第四讲 节奏与节拍"></a>第四讲 节奏与节拍</h1><h1 id="第五讲-音乐的速度与力度"><a href="#第五讲-音乐的速度与力度" class="headerlink" title="第五讲 音乐的速度与力度"></a>第五讲 音乐的速度与力度</h1><h3 id="速度在音乐表现中的意义"><a href="#速度在音乐表现中的意义" class="headerlink" title="速度在音乐表现中的意义"></a>速度在音乐表现中的意义</h3><h3 id="音乐速度的标记"><a href="#音乐速度的标记" class="headerlink" title="音乐速度的标记"></a>音乐速度的标记</h3><h3 id="力度在音乐表现中的意义"><a href="#力度在音乐表现中的意义" class="headerlink" title="力度在音乐表现中的意义"></a>力度在音乐表现中的意义</h3><h3 id="音乐力度的标记"><a href="#音乐力度的标记" class="headerlink" title="音乐力度的标记"></a>音乐力度的标记</h3><h1 id="第六讲-音程"><a href="#第六讲-音程" class="headerlink" title="第六讲 音程"></a>第六讲 音程</h1>]]></content>
+      <categories>
+        <category>Parallel Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+        <tag>Parallel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>平凡的好累的一天</title>
+    <url>/2023/06/17/ping-fan-de-hao-lei-de-yi-tian/</url>
+    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
+<p>6.17，基础物理考试的前两天</p>
+<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -319,28 +477,25 @@
       </categories>
   </entry>
   <entry>
-    <title>新版校园卡</title>
-    <url>/2023/06/11/xin-ban-xiao-yuan-qia/</url>
-    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
+    <title>one-hot编码向量化及还原</title>
+    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
+    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
+<span id="more"></span>
+
+<ul>
+<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
+<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>Tricks</category>
       </categories>
       <tags>
-        <tag>呓语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Azusa</title>
-    <url>/2023/05/22/qing-yin-shao-nu/</url>
-    <content><![CDATA[<p>阿梓喵！</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
-]]></content>
-      <categories>
-        <category>けいおん！</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
+        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -363,25 +518,16 @@
       </tags>
   </entry>
   <entry>
-    <title>one-hot编码向量化及还原</title>
-    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
-    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
-<span id="more"></span>
-
-<ul>
-<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
-<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
-</ul>
+    <title>Azusa</title>
+    <url>/2023/05/22/qing-yin-shao-nu/</url>
+    <content><![CDATA[<p>阿梓喵！</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
 ]]></content>
       <categories>
-        <category>Tricks</category>
+        <category>けいおん！</category>
       </categories>
       <tags>
-        <tag>Tricks</tag>
+        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
@@ -405,149 +551,6 @@
       </categories>
       <tags>
         <tag>残章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-17</title>
-    <url>/2023/09/17/2023-09-17/</url>
-    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
-<span id="more"></span>
-<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
-<p>可恶。</p>
-]]></content>
-      <categories>
-        <category>Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>不遇</title>
-    <url>/2022/12/24/bu-yu/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="0aa5231a1221a5088098a6a6af05bac785d54aef4a219c856ad4723b40ca10f8">18363a58ea4c366463ee079546de5729939caa987abbc861019ffecce95702a95f7beff5b10e1aae40f308e6be34c51590b44b5c4db081cbbe6c12a7e6bd34e40e89bc1e60fcdb29f5ee0ac7a8d044932a0e65072913fdc2efb0264532ad2167c2a22c956b9e7401d6673e4a66ab8f4067e033894a6ae524e3b22afb5772e9af2ad20fb2dcf669e379a58ce240a4ea215f1c01a5d809e159bbe73e76aacc0c5be6958ff53dae269cb22122c738beb5be73931d81af55acfd3b84e38c608af2550fa71b39e9ca010da5386387b3fba412c81b477beff47506c31c3ee44bc62791b6df4d57e6e309e498f8a9276588e5b8e36752e56909c97a7a461dad4c10b34e2e24ec30cd13c5e9af5d999fa3e9c93f604214e93f3ab0819c1b223b0c2bbd15b80c4fbe4b627f90065fffd59fdc97c2296bae7d58360863a8e7eb8bc2e24a6d16ddbb86b60867142e78ceae71b492df19c56ea454dd43d91eaac553fedbab42096d3aafb3c3ef736f310ecdf05d71f523fef9722824131629795c1826e968574f681e0e84b922bae9395bc4428a7e6971c61e70aa9f9a49e18975d98d6e1462c5b09169aed55efcfa512f8519426ad93979b061135e314971a72ff41b8e165a0718875146d546aff0086d67c113d8f433ff67fbd47de0522a073f36d053d9755b1025b2ba79ed23124a8bc70c1032dc2ef03331cf8a24f05aa4c64f7f7050b3270b2d72c95b393c82ac542da4b04d348da4fe56d2d42ddc023b697ff46a998e93d398032f8597fbc1dcb315587c7eafc126a5cade83d6775dc6ffb20475d23832e293636a7addbabae4d343547a21fffbbc68f94959e74d32e4d09a65bd30febddc826683e27339ddee2672f10a366ed07b0e35dffe3461fa5c1dee27e67fd47af8b8255690445986e6eec717ea0808b775c5ca8507667f3edbd9ef65ee2ab6285f89b94115ec84c6945c382849593833e31303bf3272e0dbfb3d5e07171c7b7455f1b3e59b5cd3c575b2f01a3f13ce90e1fa4c212fc9bc85daf808482d7ff805ba8339a7445b4328f99f3643bd2942509fd3adf8857c2a9be11610ad53bdc23e05f37d4eb6a859b535bf4d51caa63932a6d8e77f5810ce2ac80f6f40af7e84509a97b72b0ab0bd2c78cb3d872fa28bb9ad7576229ca6b7832e9e60b31163af9eb4e09e1519ac9bf1e34af658e32bed2491e39e84b0e43d8c0ca714ce03ccfcd360aff17f9aa7898c38db693b1d51c34ce931b5897be5c4df73362cd573eb9ccae417d891de5be0aff8c7ed4a0652fd21b2f9cfa9f340600c1bcaadb62cb11e2239fa7e30b63487f289c8811af5d3c57423bd2a27abf74f285ff59027d7e7f05f92ac84548de0bb9a31b0385062e256a061e47dbf5d0b9a27f66e00576d7e61bc96021023b06d1020825381efe30aacf0f2b01c3cfbc81f062b8ae4f18f72bf3b8acea2503f52783626fb13cfe19548e41de025ca00ed008ed94523776650ff3b0115303fe76486fdb28f39656a64f9421aed73842746ceb142064aba6b8bc0a2af25796cf26118f81691f56fb7f15761f09396eabd8a940ef96736d623cd45577a5302affb829872078e9f75ed70e5a9e18f7bd75dadb0df6a78e3a8b1eb234732311a313fc9a9899c2cc7180eb3a27d5cc85503f6e9732b9a972607320a1b8f5c4ce48b24c7cb6eff8aca31dec15bc2929fd07679950c18c36f289b5422f7865eaccba3631a21aef38adb7664a406d41307eaba39118e9f44426dc6ed0bd215a4a5b4a82c31725b0f361c10d66dc48f1118808716ca1f04265a8609ea24dd4c10ee69b1bf3ce02d21af08939a63694df2532bda1981547d585a7ed6a740fecfb3f84ace4c63cf4ca85d7258f237e93ba812b3a72634384fedff3a74498a9d90693aea36db78bc4913114b5a2afcae35d8d7ca42da3c1c4e0f94387916f80f48d2b7cd6a1e4869da286b9b1b670316d85a2507176e75e1ed717d33ad5f8560378804594ee12f18f9ff4d73669e28acbfe667df466deae143c9998d257a3786b3c4857734becc7e4d078e30c44eb98370b849cdd239cf374104fac5b38cb5e8a733a5515b0938bb3e76f82da87fba66a43e1e9b84ee1211c98f41c50f3adfcaa0c3bfe4312428eaf18e7733cfeba3f92627cfecc6f932eee4382d285f2f4567c975b48bb627bff0bd993d380a085db9af0cbb2a0f70c7a4fab27ba6db2bda2b624d8d686c5d416b39995f4874a0835d1992568cca65494032cc5acad24e6eb2a4f2118ac5431a80b58cbc92a34708d5b631fa18481eb217652f953ca8b8282d7596ce1cb4e832a60f41ed5455db0b20851008cad1a024dc501018104002258841952bdf23b5019b623d86319b81b0371f5f1c917697e3d215ef31de4ca4f5f0e4d494b17474236804e6a8e34fd46ff92fd49eaabb12cfacd773cce07eb7d3c4527eed8fcdb85df525be088fd3180c62364ebb136db292066c7b6e1aaaef05fbaf6a5960adce31af534a38b9c0785ef880151db8ea83f97560aafe465b04ed4ba3f13f93a5e206ec0851396c6cf399501b6fee8c18a151960e82c3d65eae9e6dc9a513eb3686ec127ed3e1f1e49e4cbcc4bf3802acaf172c25ab2fa76dfc847bad04c7b32129caaf3bfa6881aaa5307d2d6f8393f2f53d60dfa11bd3e35555334a1a4ee87c3fa1dbb10afc9b1b0472d6ad11d468a1cd1727d12d8b11d31cc3a7e541d29c2a2bab54f24726bd478763001f5fa958ae63e184acdb5f99883b1fe4889cbc0fff758ef93dd42fa3c7aac1cf90c50e8be503cbee28ccf3f92984e75fe09b6574ec7a83933e002a976663d3e7f4cfecad0b45c878ec4d4a9b76ae15f3258f3045ac42ea30889b55cca45612a76d5e493b2882e6d7c5149c4c40cd61578c328b998dbd88d782235f7cea9cf41ff12ea9a76f2fa28775dc9ec8aa4fe709297044ab9a856a6ea63813704a95d54413d66b1f4e7531d9562fff6e6656f0ab1ff91b1506b402ca108cafeb9947281d7cd53ef59ec922a9597e23d6a764148100c20e91f19f8d86e900f3fdb9e5a11193e3415addf81abfc4c49ce4d0708ee2c84b757018ac56ce90a438423072171a79d8653bc2f14109cfe7f956c1683eca587cf98861b6cddbf2d713d42b967ca2b83dfb3b795c6714d6e93d664503225cc3518b8f2aabf373c248bcc4867ff769b11369502ee56d6495f6bb3ce3821b8f6dca5c0fc5c67bc566e6062bcec7c64d860ba577c77e80338d772f2ce9f8f43ea142c2e29be4d186a12d4cae44b65f1a59a10fd6c09072cf4c3a52ea91d6a6260afffc0bfc18c70ab1bfad05081ed96606b68b8cebd8f21cf6a2dcaf370bfac8eef7f7c0ec38c84b356496f60836134fccd269f8e820d365596c0fc736296cf115f33812a6d51e08ca784a57ebdcbf949ebf75fba7835c6e502a637f563ba2bf6926c18bb85552905367609250871f14ce94035d2716932c15965851ddcc9b83b7df5101259cd4a14491ac3ef6d69f4f755201461060408eb774f04d764638d023157fe213d7f2135b25f053fee756b33a6211d13e630c833e0c5ad2d42d266ac5c09a93761651f43cdfb3bde9f50e360727f506bbb1d11c2137ac547c5875af5367529ed697e21ab0778acd5cb3d4e50343797797c315ef19ccb0145ef1fe4edc8f1acbaf105998a02d07871d4b21db0cada62ba5660fc9e52d4e17a288919d34ef94180c2933ede6a15ade6d028488c0c70405707405e277c4141c4815a43a011a22f81e656e4eaa79119999cf6b57ebb6a4be2a78957be4f0a94745b937efbf54b7d54cbc42b7195b411186d97b84cfa00dd8d07a3cee4833e516f99327c679b6b65dcdd9c2df8c29df5e0f08e39e1c9f73e5c6483bd6677802b7cf0b9a5b9531f37e74716c6f9b0913a4730854c87783477cb8241afc3133a00d716c8f91f0d6a15a5b80379bff25fffa0c7a323b1ea35e766d2e805dd12e314a28534b3d2a371cce142552f7e2d56273aa829540</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>故人</category>
-      </categories>
-      <tags>
-        <tag>故人</tag>
-        <tag>挚友</tag>
-        <tag>陌路</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-18</title>
-    <url>/2023/09/18/2023-09-18/</url>
-    <content><![CDATA[<p>开局啥都听不懂，忽闻改培养方案，寄。</p>
-<span id="more"></span>
-<p>似乎在课上听到了了不得的东西，然而并不知道在说什么，寄。<br>开篇PPT，魔法少女小圆魔女视角。终局PPT，Clannad弦理论。<br>啥都不会，B站大学启动。吴氏网、标准点阵、倒易空间。<br>学了一中午，PPT和教参平台上的图全是错的，助教那的祖传课本却是对的，寄。<br>呃呃呃要开始上第一节乐理课了，开始紧张了，寄。</p>
-]]></content>
-      <categories>
-        <category>Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>和声学学习</title>
-    <url>/2023/09/12/he-sheng/</url>
-    <content><![CDATA[<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="和弦（和弦音）"><a href="#和弦（和弦音）" class="headerlink" title="和弦（和弦音）"></a>和弦（和弦音）</h2><h4 id="和声、和音、和弦"><a href="#和声、和音、和弦" class="headerlink" title="和声、和音、和弦"></a>和声、和音、和弦</h4><ul>
-<li><p>和声学：研究和音的结构以及它们如何连接</p>
-</li>
-<li><p>和弦中各音的名称</p>
-<ul>
-<li>和弦按三度关系排列后，最低的音为根音，向上依次为三、五、七、九……名称不随排列位置改变而改变。</li>
-</ul>
-</li>
-<li><p>和弦音</p>
-</li>
-<li><p>和弦外音</p>
-<ul>
-<li>延留音，出现在强拍或次强拍，使得音高与自己接近的和弦音延迟出现。除了延留音，其他的和弦外音都出现在弱拍上。</li>
-<li>经过音，和弦音上下级之间的过渡。</li>
-<li>辅助音，和弦音与其重复音之间的连接</li>
-<li>先现音，后一和弦音在弱拍上提前出现</li>
-</ul>
-</li>
-<li><p>非三度结构的和音</p>
-</li>
-</ul>
-<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h3 id="大三和弦与小三和弦、四部和声"><a href="#大三和弦与小三和弦、四部和声" class="headerlink" title="大三和弦与小三和弦、四部和声"></a>大三和弦与小三和弦、四部和声</h3><ul>
-<li><p>定义</p>
-<ul>
-<li>大三和弦，大三度+小三度（基于根音的大三度+纯五度）</li>
-<li>小三和弦，小三度+大三度（基于根音的小三度+纯五度）</li>
-<li>增减（两个大三度、两个小三度）</li>
-</ul>
-</li>
-<li><p>四部和声</p>
-<ul>
-<li>四声部，高音、中音、次中音、低音</li>
-</ul>
-</li>
-<li><p>三和弦的旋律位置</p>
-</li>
-</ul>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="正三和弦的功能体系"><a href="#正三和弦的功能体系" class="headerlink" title="正三和弦的功能体系"></a>正三和弦的功能体系</h3><ul>
-<li>主、副、属</li>
-<li>建立在音阶的Ⅰ级，也就是主音上的三和弦叫做主三和弦，在大调中用T表示，小调中用t表示</li>
-<li>进行、进行的公式<ul>
-<li>和弦的连续构成了和声进行，最简单的和声进行逻辑基础就是</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Parallel Life</category>
-      </categories>
-      <tags>
-        <tag>Parallel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基本乐理学习</title>
-    <url>/2023/09/12/li-chong-guang-ji-ben-le-li/</url>
-    <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
-<ul>
-<li>临时变音记号，只对同小节，同高度有效</li>
-</ul>
-<h1 id="第二章-音律"><a href="#第二章-音律" class="headerlink" title="第二章 音律"></a>第二章 音律</h1><h3 id="标准音和中央C"><a href="#标准音和中央C" class="headerlink" title="标准音和中央C"></a>标准音和中央C</h3><ul>
-<li>小字一组a1 440Hz 标准音</li>
-<li>小字一组c1 中央C</li>
-</ul>
-<h3 id="复合音与分音列"><a href="#复合音与分音列" class="headerlink" title="复合音与分音列"></a>复合音与分音列</h3><h3 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h3><h3 id="五度相生律"><a href="#五度相生律" class="headerlink" title="五度相生律"></a>五度相生律</h3><h3 id="纯律"><a href="#纯律" class="headerlink" title="纯律"></a>纯律</h3><h3 id="自然（变化）全音（半音）"><a href="#自然（变化）全音（半音）" class="headerlink" title="自然（变化）全音（半音）"></a>自然（变化）全音（半音）</h3><h1 id="第三章-五线谱记谱法"><a href="#第三章-五线谱记谱法" class="headerlink" title="第三章 五线谱记谱法"></a>第三章 五线谱记谱法</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125147672.png" alt="image-20230913125147672"></p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125336603.png" alt="image-20230913125336603"></p>
-<ul>
-<li>延长记号<img src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20230913125425686.png" alt="image-20230913125425686" style="zoom:25%;" /> 自由延长其时值</li>
-<li>延音线，两个同样音高的音上，唱奏时只唱奏一次</li>
-<li>省略记号<ul>
-<li>移动八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151808680.png" alt="image-20230913151808680"></li>
-<li>重复八度记号以及长时间重复八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151855071.png" alt="image-20230913151855071"><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151931322.png" alt="image-20230913151931322"></li>
-<li>长休止</li>
-</ul>
-</li>
-<li>演奏法方面的记号</li>
-<li>装饰音记号</li>
-</ul>
-<h1 id="第四讲-节奏与节拍"><a href="#第四讲-节奏与节拍" class="headerlink" title="第四讲 节奏与节拍"></a>第四讲 节奏与节拍</h1><h1 id="第五讲-音乐的速度与力度"><a href="#第五讲-音乐的速度与力度" class="headerlink" title="第五讲 音乐的速度与力度"></a>第五讲 音乐的速度与力度</h1><h3 id="速度在音乐表现中的意义"><a href="#速度在音乐表现中的意义" class="headerlink" title="速度在音乐表现中的意义"></a>速度在音乐表现中的意义</h3><h3 id="音乐速度的标记"><a href="#音乐速度的标记" class="headerlink" title="音乐速度的标记"></a>音乐速度的标记</h3><h3 id="力度在音乐表现中的意义"><a href="#力度在音乐表现中的意义" class="headerlink" title="力度在音乐表现中的意义"></a>力度在音乐表现中的意义</h3><h3 id="音乐力度的标记"><a href="#音乐力度的标记" class="headerlink" title="音乐力度的标记"></a>音乐力度的标记</h3><h1 id="第六讲-音程"><a href="#第六讲-音程" class="headerlink" title="第六讲 音程"></a>第六讲 音程</h1>]]></content>
-      <categories>
-        <category>Parallel Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-        <tag>Parallel</tag>
       </tags>
   </entry>
 </search>
