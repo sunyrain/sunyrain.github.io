@@ -3,7 +3,9 @@
   <entry>
     <title>日记9-19</title>
     <url>/2023/09/19/2023-09-19/</url>
-    <content><![CDATA[<p>美好的一天开始啦！<br>开局诸事不宜，8:00-8:45极致折磨。</p>
+    <content><![CDATA[<p>美好的一天开始啦！</p>
+<span id="more"></span>
+<p>开局诸事不宜，8:00-8:45极致折磨。<br>机器学习课，累累累累累。感觉好难，需要回头再看看。<br>组会好累，累累累累累。<br>幸好这学期周四放假，否则真的要寄了。<br>帮yyx装了python和anaconda。</p>
 ]]></content>
       <categories>
         <category>Life</category>
@@ -414,7 +416,9 @@
   <entry>
     <title>基本乐理学习</title>
     <url>/2023/09/12/li-chong-guang-ji-ben-le-li/</url>
-    <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
+    <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
 <ul>
 <li>临时变音记号，只对同小节，同高度有效</li>
 </ul>
@@ -448,7 +452,8 @@
   <entry>
     <title>机器学习</title>
     <url>/2023/09/19/ji-qi-xue-xi/</url>
-    <content><![CDATA[<h3 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h3><h4 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h4><ul>
+    <content><![CDATA[<h3 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h3><span id="more"></span>
+<h4 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h4><ul>
 <li>Hoeffding’s inequality<br>Low complexity model and big data can give us a good generalization in machine learning</li>
 </ul>
 <h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><h4 id="Regression-Ⅰ"><a href="#Regression-Ⅰ" class="headerlink" title="Regression Ⅰ"></a>Regression Ⅰ</h4><ul>
@@ -649,6 +654,53 @@
       </categories>
       <tags>
         <tag>他乡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-20</title>
+    <url>/2023/09/20/2023-09-20/</url>
+    <content><![CDATA[<p>好好好，anaconda你这么玩是吧！</p>
+<span id="more"></span>
+<p>numpy.dot()整整困扰了我一天！！！<br>这下好了，全给你删了，看你怎么办。<br>昨天我就不应该良心发现，帮你升级，你看看你自己，像什么样子。<br>怒了，直接退课！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-21</title>
+    <url>/2023/09/21/2023-09-21/</url>
+    <content><![CDATA[<p>今天天气好好啊啊啊啊啊啊啊！</p>
+<span id="more"></span>
+<p>吃完中饭从观畴出来，风有点凉，但是阳光照在身上又很舒服。<br>呃呃呃啊啊啊，实在是太适合躺在草坪上睡觉了啊啊啊啊啊啊。<br>可惜的是，天不遂人愿。俗务缠身，也许只有七八十岁才能享受生活叭。<br>今天早上由于ChatGPT抽风，试了一下文心一言，还挺不错的诶。<br>果然要先相信，再质疑。<br>下午准备把机器学习和深度学习讲的东西整个再看一下。<br>完了以后晚上复习一下量子与统计，把作业做了。<br>接下来视唱练耳什么的，带个键盘去操场。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于Python的科学与数值计算</title>
+    <url>/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/</url>
+    <content><![CDATA[<h2 id="第一讲：绪论"><a href="#第一讲：绪论" class="headerlink" title="第一讲：绪论"></a>第一讲：绪论</h2><span id="more"></span>
+<h3 id="pyhton基本操作"><a href="#pyhton基本操作" class="headerlink" title="pyhton基本操作"></a>pyhton基本操作</h3><ul>
+<li>数学运算<ul>
+<li>&#x2F;&#x2F;整数除法</li>
+</ul>
+</li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
       </tags>
   </entry>
 </search>
