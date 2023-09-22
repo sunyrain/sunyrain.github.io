@@ -203,6 +203,7 @@
     <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
     <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
     <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
+<span id="more"></span>
 <p>System.Collections.Generic.RandomizedStringEqualityComparer 不是 GenericTypeDefinition。只能对 Type.IsGenericTypeDefinition 为 True。</p>
 <p>解决方法：到<a href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82">http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。</a></p>
 ]]></content>
@@ -535,23 +536,37 @@
 </ul>
 <h3 id="X光的本质"><a href="#X光的本质" class="headerlink" title="X光的本质"></a>X光的本质</h3><ul>
 <li>波长介于紫外线和 $\gamma$ 射线之间，约为0.01~100埃</li>
+<li>长波长——软X射线 短波长——硬X射线</li>
 </ul>
 <h3 id="X射线的应用与发展"><a href="#X射线的应用与发展" class="headerlink" title="X射线的应用与发展"></a>X射线的应用与发展</h3><h3 id="X射线的性质"><a href="#X射线的性质" class="headerlink" title="X射线的性质"></a>X射线的性质</h3><h3 id="X射线的产生"><a href="#X射线的产生" class="headerlink" title="X射线的产生"></a>X射线的产生</h3><ul>
 <li>高速运动的带电粒子的运动遇到障碍被减速时便产生X射线</li>
+<li>从X射线管角度理解<ul>
+<li>对绕成螺旋型的钨丝通电加热至白热，放出热辐射电子</li>
+<li>电子在数万伏管内高压电场的作用下轰击靶材产生X射线</li>
+</ul>
+</li>
 </ul>
 <h3 id="X射线谱"><a href="#X射线谱" class="headerlink" title="X射线谱"></a>X射线谱</h3><ul>
 <li>连续X射线谱，有公式$eV &#x3D; h\nu <em>{max}&#x3D;\frac{hc}{\lambda</em>{0}}$ </li>
 <li>经验规律，连续谱中强度最大处的波长记为$\lambda_{m}$ 则一般有$\lambda_{m}&#x3D;1.5\lambda_{0}$</li>
+<li>电流决定了热辐射电子的多少，电压决定了热辐射电子的强度</li>
+</ul>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><ul>
+<li>已知$Cu-K_a$线波长，计算铜原子$2p$和$1s$能级间的能量差<ul>
+<li>解题方法，首先明确从$2p$到$1s$属于从$L$层跃迁到$K$层，也即$K_a$线</li>
+<li>故直接利用波长与能量关系计算</li>
+</ul>
+</li>
 </ul>
 <h3 id="X射线与物质的相互作用"><a href="#X射线与物质的相互作用" class="headerlink" title="X射线与物质的相互作用"></a>X射线与物质的相互作用</h3><h3 id="X射线衰减规律"><a href="#X射线衰减规律" class="headerlink" title="X射线衰减规律"></a>X射线衰减规律</h3><ul>
 <li>吸收的不连续性</li>
 <li>吸收限的利用<ul>
 <li>靶材（Target Material）：</li>
-<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，靶材中的电子被加速，并与原子相互作用，产生X射线辐射</li>
+<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，与原子相互作用，产生X射线辐射</li>
 <li>滤片（Filter）：</li>
 <li>滤片是放置在X射线束路径上的材料，通常由金属或其他适当的材料制成。滤片的主要作用是改变或调整X射线的能量谱。通过选择不同材料的滤片，可以过滤掉低能量的X射线，使得只有特定能量范围内的X射线通过</li>
 <li>试样（Sample）：</li>
-<li>试样是您要进行X光实验的物质或样品。当X射线穿过试样时，它会与试样中的原子相互作用，产生一系列特定能量的X射线散射或吸收。通过分析这些散射或吸收事件，可以获得有关试样的信息，例如其成分、结构或厚度等</li>
+<li>试样是要进行X光实验的物质或样品。当X射线穿过试样时，它会与试样中的原子相互作用，产生一系列特定能量的X射线散射或吸收。通过分析这些散射或吸收事件，可以获得有关试样的信息，例如其成分、结构或厚度等</li>
 </ul>
 </li>
 </ul>
@@ -633,9 +648,18 @@
 <li>Maximum Likelihood Estimation<ul>
 <li>Assumptions<ul>
 <li>随机取样残差符合均值为0的高斯分布，在残差为0时，概率取最大值</li>
+<li>$(x_i,y_i)$独立同分布</li>
 </ul>
 </li>
 <li>最大似然估计最大化在所有取样点处的概率之和，这样约等于最小化残差</li>
+<li>最大化以下式子：$$p\left(D \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;p\left(\left(\boldsymbol{x}<em>{\mathbf{1}}, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
+<li>Calculate the expression of likelihood</li>
+<li>Due to the assumption of independency$$p\left(\left(\boldsymbol{x}<em>1, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
+<li>Due to the assumption of Gaussian Distribution$$\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}<em>{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod</em>{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T \boldsymbol{x}_i\right)^2}{2 \sigma^2}}$$</li>
+<li>Due to the assumption of homoscedasticity$$\prod_{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}&#x3D;\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right)^m e^{-\frac{\sum_{i&#x3D;1}^m\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
+<li>Calculate the Log-likelihood$$\mathcal{L}\left(\boldsymbol{\beta}, \sigma^2\right)&#x3D;-\frac{m}{2} \ln \left(2 \pi \sigma^2\right)-\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$$</li>
+<li>到此步为止，为了最大化似然，需要最小化$\frac{m}{2} \ln \left(2 \pi \sigma^2\right)+\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$ 也即最小化$(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})\quad$这与多元线性回归类似（最小化残差平方和）</li>
+<li></li>
 </ul>
 </li>
 </ul>
@@ -744,6 +768,18 @@
       </categories>
       <tags>
         <tag>残章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-22</title>
+    <url>/2023/09/22/2023-09-22/</url>
+    <content><![CDATA[<p>刚一开学就压力颇大啊<br>感觉也没选什么课但就是莫名烦躁，感觉事情很多<br>可恶<br>今天下午加晚上得把材料分析与表征给看个七七八八，然后再沉下心来把量子与统计看了。然后把衣服洗一下，然后……可能去理个发什么的<br>呃呃呃啊啊啊，不得不说肯德基的炸鸡有点东西，还有就是什么时候才能趴在桌子上睡觉不流口水啊，keso！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>
