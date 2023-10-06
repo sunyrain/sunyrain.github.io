@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>日记6-5</title>
-    <url>/2023/06/05/2023-06-05/</url>
-    <content><![CDATA[<p>23.6.5</p>
-<p>在基物课上做基物编程作业，想着快速解决这十个编程题，但又反复纠结该咋提交这一大堆东西。</p>
-<p>突然想到可以用jupyter notebook，每个题分个格子，太酷啦。</p>
-<p>于是光速写完代码，突然发现一运行内核就崩溃。</p>
-<p>迅速改本地运行，但是调用matplotlib画不了图。</p>
-<p>于是乎谷歌、百度、CSDN、GPT4齐上。</p>
-<p>经过一段时间……</p>
-<p>终于在一个网络的角落发现了，升级numpy可解。</p>
-<p>绝了……</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记6-8</title>
     <url>/2023/06/08/2023-06-08/</url>
     <content><![CDATA[<p>23.6.8</p>
@@ -32,18 +12,6 @@
 <p>首先从期末考试A-及以上开始！</p>
 <p>附图如下：</p>
 <img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230608155314202.png" alt="image-20230608155314202" style="zoom:50%;" />]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记6-11</title>
-    <url>/2023/06/11/2023-06-11/</url>
-    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
-]]></content>
       <categories>
         <category>生活</category>
       </categories>
@@ -67,6 +35,53 @@
       </tags>
   </entry>
   <entry>
+    <title>日记6-5</title>
+    <url>/2023/06/05/2023-06-05/</url>
+    <content><![CDATA[<p>23.6.5</p>
+<p>在基物课上做基物编程作业，想着快速解决这十个编程题，但又反复纠结该咋提交这一大堆东西。</p>
+<p>突然想到可以用jupyter notebook，每个题分个格子，太酷啦。</p>
+<p>于是光速写完代码，突然发现一运行内核就崩溃。</p>
+<p>迅速改本地运行，但是调用matplotlib画不了图。</p>
+<p>于是乎谷歌、百度、CSDN、GPT4齐上。</p>
+<p>经过一段时间……</p>
+<p>终于在一个网络的角落发现了，升级numpy可解。</p>
+<p>绝了……</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记6-11</title>
+    <url>/2023/06/11/2023-06-11/</url>
+    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-17</title>
+    <url>/2023/09/17/2023-09-17/</url>
+    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
+<span id="more"></span>
+<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
+<p>可恶。</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日记9-18</title>
     <url>/2023/09/18/2023-09-18/</url>
     <content><![CDATA[<p>开局啥都听不懂，忽闻改培养方案，寄。</p>
@@ -77,21 +92,6 @@
 <p>8：03</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">大结局</span><br><span class="line">​在上《数字图像处理》课的时候</span><br><span class="line">​被《深度学习》老师点名回答问题了</span><br><span class="line">​于是zygg如实回答了我上个朋友圈里写的东西</span><br><span class="line">​于是教室里洋溢着欢乐的气息</span><br></pre></td></tr></table></figure>
 <p>终于结束了，寄。</p>
-]]></content>
-      <categories>
-        <category>Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-17</title>
-    <url>/2023/09/17/2023-09-17/</url>
-    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
-<span id="more"></span>
-<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
-<p>可恶。</p>
 ]]></content>
       <categories>
         <category>Life</category>
@@ -155,6 +155,30 @@
       </tags>
   </entry>
   <entry>
+    <title>日记9-25</title>
+    <url>/2023/09/25/2023-09-25/</url>
+    <content><![CDATA[<p>早上好好好冷啊<br>昨天吃的泡芙绝对有毒<br>今天下午又要视唱练耳test了，急急急急急<br>下午把量统作业做了以后，把图画完然后光速开始练习<br>时间还挺紧的aaaaa<br>可恶，才听了一小节课就不想听了<br>晕<br>感觉事情好好好好好多啊<br>好好好，视唱练耳test过了！！！<br>感谢怡宝！！感谢世界！！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-26</title>
+    <url>/2023/09/26/2023-09-26/</url>
+    <content><![CDATA[<p>哦哈哟！<br>为什么早上这么冷。<br>再冷我就不上学了，怒。<br>解决了GIthub Pages Custom Domain失效的原因<br>原来是source内要添加内含网址的CNAME文件<br>Git连Github失败有可能是代理端口不对，改一下就可以<br>晚上吃一下观畴三楼，测试一下</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日记9-24</title>
     <url>/2023/09/24/2023-09-24/</url>
     <content><![CDATA[<p>荒废时光啊荒废时光啊荒废时光啊荒废时光啊<br>急了<br>Reamke的一天，看到VS Code 版本升到了3.11.4，感觉从3.9.6是翻篇的一集（虽然不知道有啥变化就是了）</p>
@@ -179,33 +203,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-26</title>
-    <url>/2023/09/26/2023-09-26/</url>
-    <content><![CDATA[<p>哦哈哟！<br>为什么早上这么冷。<br>再冷我就不上学了，怒。<br>解决了GIthub Pages Custom Domain失效的原因<br>原来是source内要添加内含网址的CNAME文件<br>Git连Github失败有可能是代理端口不对，改一下就可以<br>晚上吃一下观畴三楼，测试一下</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cheat Engine 告别风灵月影</title>
-    <url>/2023/06/10/cheatengine/</url>
-    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-25</title>
-    <url>/2023/09/25/2023-09-25/</url>
-    <content><![CDATA[<p>早上好好好冷啊<br>昨天吃的泡芙绝对有毒<br>今天下午又要视唱练耳test了，急急急急急<br>下午把量统作业做了以后，把图画完然后光速开始练习<br>时间还挺紧的aaaaa<br>可恶，才听了一小节课就不想听了<br>晕<br>感觉事情好好好好好多啊<br>好好好，视唱练耳test过了！！！<br>感谢怡宝！！感谢世界！！</p>
+    <title>日记9-27</title>
+    <url>/2023/09/28/2023-09-27/</url>
+    <content><![CDATA[<p>很煎熬的一天<br>量统下课以后还是得好好复习啊啊啊啊，上课人超级多，怎么怎么怎么会这样。<br>工图，极致折磨的三节课，服了。<br>下午的网球课，感觉自己好烂，不太能配合jf同志。<br>之后请zyt同志去观畴三楼吃了吃好吃的，感觉环境还不错，人也不是很多，10.2那天可以请爷爷奶奶来这里吃。不过五个人的桌子不知道好不好找。吃饭的时候发现了我大一的优秀文学作品，但是yt同志的似乎更为优秀。<br>顺便，被观畴三楼优秀员工szy盒出来了，寄。<br>晚上，写了写量统作业。mm同志问了群速的问题，但是，我也不懂，倒。<br>视唱练耳，反复练了两条音阶，但是听音感觉还是不太行，呃呃呃啊啊啊，不知道是不是方法问题。<br>zyt非要呆在礼射研习会的棚子里，呃呃呃啊啊啊太离谱了。<br>贝斯得弦真的好粗啊啊啊啊啊。</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -227,9 +227,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-27</title>
-    <url>/2023/09/28/2023-09-27/</url>
-    <content><![CDATA[<p>很煎熬的一天<br>量统下课以后还是得好好复习啊啊啊啊，上课人超级多，怎么怎么怎么会这样。<br>工图，极致折磨的三节课，服了。<br>下午的网球课，感觉自己好烂，不太能配合jf同志。<br>之后请zyt同志去观畴三楼吃了吃好吃的，感觉环境还不错，人也不是很多，10.2那天可以请爷爷奶奶来这里吃。不过五个人的桌子不知道好不好找。吃饭的时候发现了我大一的优秀文学作品，但是yt同志的似乎更为优秀。<br>顺便，被观畴三楼优秀员工szy盒出来了，寄。<br>晚上，写了写量统作业。mm同志问了群速的问题，但是，我也不懂，倒。<br>视唱练耳，反复练了两条音阶，但是听音感觉还是不太行，呃呃呃啊啊啊，不知道是不是方法问题。<br>zyt非要呆在礼射研习会的棚子里，呃呃呃啊啊啊太离谱了。<br>贝斯得弦真的好粗啊啊啊啊啊。</p>
+    <title>日记10-1</title>
+    <url>/2023/10/01/2023-10-01/</url>
+    <content><![CDATA[<p>急急急，明天母上大人就要来了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>疯狂理宿舍中<br>唉唉唉唉唉唉<br>买点东西吃吃</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -239,15 +239,63 @@
       </tags>
   </entry>
   <entry>
-    <title>DisBand Space</title>
-    <url>/2023/09/25/disband-xiang-guan-xin-xi/</url>
-    <content><![CDATA[<p>DisBand网站上线 <a href="http://www.disband.cn/">www.disband.cn</a></p>
+    <title>日记9-30</title>
+    <url>/2023/09/30/2023-09-30/</url>
+    <content><![CDATA[<p>求求你别刷B站了！！！</p>
 ]]></content>
       <categories>
-        <category>Parallel Life</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>Parallel</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-29</title>
+    <url>/2023/09/30/2023-09-29/</url>
+    <content><![CDATA[<p>一觉睡到大中午，呃呃呃啊啊啊<br>下午拎包出去溜达溜达<br>什刹海+月坛</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-5</title>
+    <url>/2023/10/05/2023-10-05/</url>
+    <content><![CDATA[<p>一眨眼断更了这么久啊<br>时间一下子溜走了，留下了一些照片聊作慰藉<br>今天帮yt同志看了看实验报告，说实话花了不少时间，不过不负责任的基物实验老师起码得背一半的锅，估计是急着放假了，压根没检查，方法完全不对更别说算不确定度了，急了<br>sh同学学习十分认真，表扬一下<br>今天还干了些啥啊啊啊啊啊，中午把全新的天猫校园被子送给了宿管阿姨，以及忍不住诱惑在逐渐转冷的北京秋日，毅然决然地吃雪糕。晚上，做一个只属于自己的AI的想法又在我脑海中复辟了，于是屈从于自己各式各样的“突发奇想”，开始导出自己的微信聊天记录，并拆分成训练集测试集什么的，简直是闲得慌<br>琴到了第三天了，今天练了两个小时，先练了流星和Time Travel，之后练了A little Star 的击板部分，害，不知道还要练多久<br>晚上把量子与统计写了1&#x2F;2道题<br>一天就这样过去了</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-6</title>
+    <url>/2023/10/06/2023-10-06/</url>
+    <content><![CDATA[<p>大模型折腾了一天<br>果然是越忙越喜欢折腾<br>把工图作业交了，感觉考试搞不好会很难<br>还有好多作业，奇怪，国庆期间都干了些啥？</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cheat Engine 告别风灵月影</title>
+    <url>/2023/06/10/cheatengine/</url>
+    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -262,6 +310,18 @@
 <h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+  </entry>
+  <entry>
+    <title>DisBand Space</title>
+    <url>/2023/09/25/disband-xiang-guan-xin-xi/</url>
+    <content><![CDATA[<p>DisBand网站上线 <a href="http://www.disband.cn/">www.disband.cn</a></p>
+]]></content>
+      <categories>
+        <category>Parallel Life</category>
+      </categories>
+      <tags>
+        <tag>Parallel</tag>
+      </tags>
   </entry>
   <entry>
     <title>Markdown实用语法</title>
@@ -285,6 +345,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Reference</title>
+    <url>/2023/09/21/reference-for-ml-dl/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>相关内容参考</category>
+      </categories>
+      <tags>
+        <tag>Reference</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
     <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
     <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
@@ -297,17 +368,6 @@
       </categories>
       <tags>
         <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Reference</title>
-    <url>/2023/09/21/reference-for-ml-dl/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>相关内容参考</category>
-      </categories>
-      <tags>
-        <tag>Reference</tag>
       </tags>
   </entry>
   <entry>
@@ -439,42 +499,6 @@
       <tags>
         <tag>诗云</tag>
         <tag>残章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基本乐理学习</title>
-    <url>/2023/09/12/li-chong-guang-ji-ben-le-li/</url>
-    <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><span id="more"></span>
-
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
-<ul>
-<li>临时变音记号，只对同小节，同高度有效</li>
-</ul>
-<h1 id="第二章-音律"><a href="#第二章-音律" class="headerlink" title="第二章 音律"></a>第二章 音律</h1><h3 id="标准音和中央C"><a href="#标准音和中央C" class="headerlink" title="标准音和中央C"></a>标准音和中央C</h3><ul>
-<li>小字一组a1 440Hz 标准音</li>
-<li>小字一组c1 中央C</li>
-</ul>
-<h3 id="复合音与分音列"><a href="#复合音与分音列" class="headerlink" title="复合音与分音列"></a>复合音与分音列</h3><h3 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h3><h3 id="五度相生律"><a href="#五度相生律" class="headerlink" title="五度相生律"></a>五度相生律</h3><h3 id="纯律"><a href="#纯律" class="headerlink" title="纯律"></a>纯律</h3><h3 id="自然（变化）全音（半音）"><a href="#自然（变化）全音（半音）" class="headerlink" title="自然（变化）全音（半音）"></a>自然（变化）全音（半音）</h3><h1 id="第三章-五线谱记谱法"><a href="#第三章-五线谱记谱法" class="headerlink" title="第三章 五线谱记谱法"></a>第三章 五线谱记谱法</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125147672.png" alt="image-20230913125147672"></p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125336603.png" alt="image-20230913125336603"></p>
-<ul>
-<li>延长记号<img src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20230913125425686.png" alt="image-20230913125425686" style="zoom:25%;" /> 自由延长其时值</li>
-<li>延音线，两个同样音高的音上，唱奏时只唱奏一次</li>
-<li>省略记号<ul>
-<li>移动八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151808680.png" alt="image-20230913151808680"></li>
-<li>重复八度记号以及长时间重复八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151855071.png" alt="image-20230913151855071"><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151931322.png" alt="image-20230913151931322"></li>
-<li>长休止</li>
-</ul>
-</li>
-<li>演奏法方面的记号</li>
-<li>装饰音记号</li>
-</ul>
-<h1 id="第四讲-节奏与节拍"><a href="#第四讲-节奏与节拍" class="headerlink" title="第四讲 节奏与节拍"></a>第四讲 节奏与节拍</h1><h1 id="第五讲-音乐的速度与力度"><a href="#第五讲-音乐的速度与力度" class="headerlink" title="第五讲 音乐的速度与力度"></a>第五讲 音乐的速度与力度</h1><h3 id="速度在音乐表现中的意义"><a href="#速度在音乐表现中的意义" class="headerlink" title="速度在音乐表现中的意义"></a>速度在音乐表现中的意义</h3><h3 id="音乐速度的标记"><a href="#音乐速度的标记" class="headerlink" title="音乐速度的标记"></a>音乐速度的标记</h3><h3 id="力度在音乐表现中的意义"><a href="#力度在音乐表现中的意义" class="headerlink" title="力度在音乐表现中的意义"></a>力度在音乐表现中的意义</h3><h3 id="音乐力度的标记"><a href="#音乐力度的标记" class="headerlink" title="音乐力度的标记"></a>音乐力度的标记</h3><h1 id="第六讲-音程"><a href="#第六讲-音程" class="headerlink" title="第六讲 音程"></a>第六讲 音程</h1>]]></content>
-      <categories>
-        <category>Parallel Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-        <tag>Parallel</tag>
       </tags>
   </entry>
   <entry>
@@ -614,14 +638,143 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[]]></content>
+    <title>机器学习</title>
+    <url>/2023/09/19/ji-qi-xue-xi/</url>
+    <content><![CDATA[<h2 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h2><span id="more"></span>
+<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
+<li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
+<li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
+<li>可见实验结果误差大于$\epsilon$的概率并不取决于期望，而取决于实验的次数$N$</li>
+<li>该例子具有一定的特殊性，因为其为Brenoulli实验，且所考虑的$\nu$和$\mu$均在0到1之间</li>
+</ul>
+</li>
+<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)$$<ul>
+<li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
+</ul>
+</li>
+</ul>
+<h4 id="Example-拓展"><a href="#Example-拓展" class="headerlink" title="Example 拓展"></a>Example 拓展</h4><ul>
+<li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
+<li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\mu$和$\nu$</li>
+<li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$<br>Low complexity model and big data can give us a good generalization in machine learning</li>
+</ul>
+<h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><h4 id="Regression-Ⅰ"><a href="#Regression-Ⅰ" class="headerlink" title="Regression Ⅰ"></a>Regression Ⅰ</h4><ul>
+<li>Linear Regression<ul>
+<li>$y_{i}&#x3D;f_{\beta_{0},\beta_{1}}(x_{i})+\epsilon_{i}&#x3D;\beta_{0}+x_{i}\beta_{1}+\epsilon_{i}\quad$其中$\epsilon$即为残差</li>
+<li>Cost Function<ul>
+<li>$C\left(\beta_0,\beta_1\right)&#x3D;\sum_{i&#x3D;1}^m\left(y_if_{\beta_0,\beta_1}\left(x_i\right)\right)^2$</li>
+</ul>
+</li>
+<li>Assumptions<ul>
+<li>Weak exogeneity</li>
+<li>Linearity</li>
+<li>Homoscedasticity</li>
+</ul>
+</li>
+<li>Ordinary least squares<ul>
+<li>Cost Function $(y_{i}-f_{\beta_{0},\beta_{1}}(x_{i}))^2$ </li>
+<li>对两个参数分别求偏导及二阶偏导，最小化损失函数</li>
+<li>Coefficient of determination $r^2$<ul>
+<li>$$r^2&#x3D;1-\frac{\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0, \beta_1}\left(x_i\right)\right)^2}{\sum_{i&#x3D;1}^m\left(y_i-\bar{y}\right)^2} \times 100 %$$</li>
+<li>也即比较线性回归模型残差平方和和原有数据残差平方和（相对于$\bar{y}$）故$r^2$越大越优</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Multiple Linear Regression<ul>
+<li>同样思路，计算一阶导数并令之为0</li>
+<li>$$\begin{gathered}C(\boldsymbol{\beta})&#x3D;(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})&#x3D;\boldsymbol{y}^T \boldsymbol{y}+\boldsymbol{\beta}^T X^T X \boldsymbol{\beta}-2 \boldsymbol{\beta}^T X^T \boldsymbol{y} \\frac{\partial C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}}&#x3D;2 X^T X \boldsymbol{\beta}-2 X^T \boldsymbol{y}\end{gathered}$$</li>
+<li>据此给出 $\widehat{\boldsymbol{\beta}}$的表达式</li>
+<li>$$\widehat{\boldsymbol{\beta}}&#x3D;\left(X^T X\right)^{-1} X^T \boldsymbol{y}$$</li>
+<li>计算二阶导数</li>
+<li>$$\mathcal{H}&#x3D;\frac{\partial^2 C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}^2}&#x3D;2 X^T X$$</li>
+<li>证明海森矩阵正定（$a$是任意给定非零向量）</li>
+<li>$$\boldsymbol{a}^T X^T X \boldsymbol{a}&#x3D;(X \boldsymbol{a})^T X \boldsymbol{a}&#x3D;|X \boldsymbol{a}|_2^2 \geq 0$$</li>
+<li>定义hat matrix</li>
+<li>$$\widehat{\boldsymbol{y}}&#x3D;X \widehat{\boldsymbol{\beta}}&#x3D;X\left(X^T X\right)^{-1} X^T \boldsymbol{y}&#x3D;X\left(X^T X\right)^{-\mathbf{1}} X^T \boldsymbol{y}&#x3D;H \boldsymbol{y}$$</li>
+<li>Properties of hat matrix<ul>
+<li>H 、$I-H$is orthogonal</li>
+<li>Idempotent $H&#x3D;H^2$、$(I-H)&#x3D;(I-H)^2$</li>
+<li>残差由$\epsilon&#x3D;y-\hat{y}&#x3D;y-Hy&#x3D;(I-H)y$给出</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Maximum Likelihood Estimation<ul>
+<li>Assumptions<ul>
+<li>随机取样残差符合均值为0的高斯分布，在残差为0时，概率取最大值</li>
+<li>$(x_i,y_i)$独立同分布</li>
+</ul>
+</li>
+<li>最大似然估计最大化在所有取样点处的概率之和，这样约等于最小化残差</li>
+<li>最大化以下式子：$$p\left(D \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;p\left(\left(\boldsymbol{x}<em>{\mathbf{1}}, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
+<li>Calculate the expression of likelihood</li>
+<li>Due to the assumption of independency$$p\left(\left(\boldsymbol{x}<em>1, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
+<li>Due to the assumption of Gaussian Distribution$$\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}<em>{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod</em>{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T \boldsymbol{x}_i\right)^2}{2 \sigma^2}}$$</li>
+<li>Due to the assumption of homoscedasticity$$\prod_{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}&#x3D;\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right)^m e^{-\frac{\sum_{i&#x3D;1}^m\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
+<li>Calculate the Log-likelihood$$\mathcal{L}\left(\boldsymbol{\beta}, \sigma^2\right)&#x3D;-\frac{m}{2} \ln \left(2 \pi \sigma^2\right)-\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$$</li>
+<li>到此步为止，为了最大化似然，需要最小化$\frac{m}{2} \ln \left(2 \pi \sigma^2\right)+\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$ 也即最小化$(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})\quad$这与多元线性回归类似（最小化残差平方和）</li>
+</ul>
+</li>
+</ul>
+<h2 id="Gradient-Descent-Ⅰ"><a href="#Gradient-Descent-Ⅰ" class="headerlink" title="Gradient Descent Ⅰ"></a>Gradient Descent Ⅰ</h2><h2 id="Gradient-Descent-Ⅱ"><a href="#Gradient-Descent-Ⅱ" class="headerlink" title="Gradient Descent Ⅱ"></a>Gradient Descent Ⅱ</h2><ul>
+<li>Line search<ul>
+<li>Exact Line Search</li>
+</ul>
+</li>
+<li>Newton’s method</li>
+<li>Stochastic gradient descent</li>
+<li>Mini-batch</li>
+<li>Momentum method</li>
+<li>Nesterov’s accelerated</li>
+<li>AdaGrad&#x2F;RMSprop</li>
+<li>Adam(Momentum&amp;RMSprop) Nadam(Nesterov’s accelerated&amp;RMSprop)</li>
+</ul>
+<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基本乐理学习</title>
+    <url>/2023/09/12/li-chong-guang-ji-ben-le-li/</url>
+    <content><![CDATA[<h1 id="第一章-乐音体系"><a href="#第一章-乐音体系" class="headerlink" title="第一章 乐音体系"></a>第一章 乐音体系</h1><span id="more"></span>
+
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230912233559411.png" alt="image-20230912233559411"></p>
+<ul>
+<li>临时变音记号，只对同小节，同高度有效</li>
+</ul>
+<h1 id="第二章-音律"><a href="#第二章-音律" class="headerlink" title="第二章 音律"></a>第二章 音律</h1><h3 id="标准音和中央C"><a href="#标准音和中央C" class="headerlink" title="标准音和中央C"></a>标准音和中央C</h3><ul>
+<li>小字一组a1 440Hz 标准音</li>
+<li>小字一组c1 中央C</li>
+</ul>
+<h3 id="复合音与分音列"><a href="#复合音与分音列" class="headerlink" title="复合音与分音列"></a>复合音与分音列</h3><h3 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h3><h3 id="五度相生律"><a href="#五度相生律" class="headerlink" title="五度相生律"></a>五度相生律</h3><h3 id="纯律"><a href="#纯律" class="headerlink" title="纯律"></a>纯律</h3><h3 id="自然（变化）全音（半音）"><a href="#自然（变化）全音（半音）" class="headerlink" title="自然（变化）全音（半音）"></a>自然（变化）全音（半音）</h3><h1 id="第三章-五线谱记谱法"><a href="#第三章-五线谱记谱法" class="headerlink" title="第三章 五线谱记谱法"></a>第三章 五线谱记谱法</h1><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125147672.png" alt="image-20230913125147672"></p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913125336603.png" alt="image-20230913125336603"></p>
+<ul>
+<li>延长记号<img src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20230913125425686.png" alt="image-20230913125425686" style="zoom:25%;" /> 自由延长其时值</li>
+<li>延音线，两个同样音高的音上，唱奏时只唱奏一次</li>
+<li>省略记号<ul>
+<li>移动八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151808680.png" alt="image-20230913151808680"></li>
+<li>重复八度记号以及长时间重复八度记号<img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151855071.png" alt="image-20230913151855071"><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20230913151931322.png" alt="image-20230913151931322"></li>
+<li>长休止</li>
+</ul>
+</li>
+<li>演奏法方面的记号</li>
+<li>装饰音记号</li>
+</ul>
+<h1 id="第四讲-节奏与节拍"><a href="#第四讲-节奏与节拍" class="headerlink" title="第四讲 节奏与节拍"></a>第四讲 节奏与节拍</h1><h1 id="第五讲-音乐的速度与力度"><a href="#第五讲-音乐的速度与力度" class="headerlink" title="第五讲 音乐的速度与力度"></a>第五讲 音乐的速度与力度</h1><h3 id="速度在音乐表现中的意义"><a href="#速度在音乐表现中的意义" class="headerlink" title="速度在音乐表现中的意义"></a>速度在音乐表现中的意义</h3><h3 id="音乐速度的标记"><a href="#音乐速度的标记" class="headerlink" title="音乐速度的标记"></a>音乐速度的标记</h3><h3 id="力度在音乐表现中的意义"><a href="#力度在音乐表现中的意义" class="headerlink" title="力度在音乐表现中的意义"></a>力度在音乐表现中的意义</h3><h3 id="音乐力度的标记"><a href="#音乐力度的标记" class="headerlink" title="音乐力度的标记"></a>音乐力度的标记</h3><h1 id="第六讲-音程"><a href="#第六讲-音程" class="headerlink" title="第六讲 音程"></a>第六讲 音程</h1>]]></content>
+      <categories>
+        <category>Parallel Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+        <tag>Parallel</tag>
       </tags>
   </entry>
   <entry>
@@ -733,6 +886,17 @@
       </tags>
   </entry>
   <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>one-hot编码向量化及还原</title>
     <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
     <content><![CDATA[<p>打kaggle遇到的一些细节</p>
@@ -752,110 +916,6 @@
       </categories>
       <tags>
         <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机器学习</title>
-    <url>/2023/09/19/ji-qi-xue-xi/</url>
-    <content><![CDATA[<h2 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h2><span id="more"></span>
-<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
-<li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
-<li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
-<li>可见实验结果误差大于$\epsilon$的概率并不取决于期望，而取决于实验的次数$N$</li>
-<li>该例子具有一定的特殊性，因为其为Brenoulli实验，且所考虑的$\nu$和$\mu$均在0到1之间</li>
-</ul>
-</li>
-<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)$$<ul>
-<li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
-</ul>
-</li>
-</ul>
-<h4 id="Example-拓展"><a href="#Example-拓展" class="headerlink" title="Example 拓展"></a>Example 拓展</h4><ul>
-<li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
-<li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\mu$和$\nu$</li>
-<li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$<br>Low complexity model and big data can give us a good generalization in machine learning</li>
-</ul>
-<h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><h4 id="Regression-Ⅰ"><a href="#Regression-Ⅰ" class="headerlink" title="Regression Ⅰ"></a>Regression Ⅰ</h4><ul>
-<li>Linear Regression<ul>
-<li>$y_{i}&#x3D;f_{\beta_{0},\beta_{1}}(x_{i})+\epsilon_{i}&#x3D;\beta_{0}+x_{i}\beta_{1}+\epsilon_{i}\quad$其中$\epsilon$即为残差</li>
-<li>Cost Function<ul>
-<li>$C\left(\beta_0,\beta_1\right)&#x3D;\sum_{i&#x3D;1}^m\left(y_if_{\beta_0,\beta_1}\left(x_i\right)\right)^2$</li>
-</ul>
-</li>
-<li>Assumptions<ul>
-<li>Weak exogeneity</li>
-<li>Linearity</li>
-<li>Homoscedasticity</li>
-</ul>
-</li>
-<li>Ordinary least squares<ul>
-<li>Cost Function $(y_{i}-f_{\beta_{0},\beta_{1}}(x_{i}))^2$ </li>
-<li>对两个参数分别求偏导及二阶偏导，最小化损失函数</li>
-<li>Coefficient of determination $r^2$<ul>
-<li>$$r^2&#x3D;1-\frac{\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0, \beta_1}\left(x_i\right)\right)^2}{\sum_{i&#x3D;1}^m\left(y_i-\bar{y}\right)^2} \times 100 %$$</li>
-<li>也即比较线性回归模型残差平方和和原有数据残差平方和（相对于$\bar{y}$）故$r^2$越大越优</li>
-</ul>
-</li>
-<li></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Multiple Linear Regression<ul>
-<li>同样思路，计算一阶导数并令之为0</li>
-<li>$$\begin{gathered}C(\boldsymbol{\beta})&#x3D;(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})&#x3D;\boldsymbol{y}^T \boldsymbol{y}+\boldsymbol{\beta}^T X^T X \boldsymbol{\beta}-2 \boldsymbol{\beta}^T X^T \boldsymbol{y} \\frac{\partial C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}}&#x3D;2 X^T X \boldsymbol{\beta}-2 X^T \boldsymbol{y}\end{gathered}$$</li>
-<li>据此给出 $\widehat{\boldsymbol{\beta}}$的表达式</li>
-<li>$$\widehat{\boldsymbol{\beta}}&#x3D;\left(X^T X\right)^{-1} X^T \boldsymbol{y}$$</li>
-<li>计算二阶导数</li>
-<li>$$\mathcal{H}&#x3D;\frac{\partial^2 C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}^2}&#x3D;2 X^T X$$</li>
-<li>证明海森矩阵正定（$a$是任意给定非零向量）</li>
-<li>$$\boldsymbol{a}^T X^T X \boldsymbol{a}&#x3D;(X \boldsymbol{a})^T X \boldsymbol{a}&#x3D;|X \boldsymbol{a}|_2^2 \geq 0$$</li>
-<li>定义hat matrix</li>
-<li>$$\widehat{\boldsymbol{y}}&#x3D;X \widehat{\boldsymbol{\beta}}&#x3D;X\left(X^T X\right)^{-1} X^T \boldsymbol{y}&#x3D;X\left(X^T X\right)^{-\mathbf{1}} X^T \boldsymbol{y}&#x3D;H \boldsymbol{y}$$</li>
-<li>Properties of hat matrix<ul>
-<li>H 、$I-H$is orthogonal</li>
-<li>Idempotent $H&#x3D;H^2$、$(I-H)&#x3D;(I-H)^2$</li>
-<li>残差由$\epsilon&#x3D;y-\hat{y}&#x3D;y-Hy&#x3D;(I-H)y$给出</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Maximum Likelihood Estimation<ul>
-<li>Assumptions<ul>
-<li>随机取样残差符合均值为0的高斯分布，在残差为0时，概率取最大值</li>
-<li>$(x_i,y_i)$独立同分布</li>
-</ul>
-</li>
-<li>最大似然估计最大化在所有取样点处的概率之和，这样约等于最小化残差</li>
-<li>最大化以下式子：$$p\left(D \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;p\left(\left(\boldsymbol{x}<em>{\mathbf{1}}, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
-<li>Calculate the expression of likelihood</li>
-<li>Due to the assumption of independency$$p\left(\left(\boldsymbol{x}<em>1, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
-<li>Due to the assumption of Gaussian Distribution$$\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}<em>{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod</em>{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T \boldsymbol{x}_i\right)^2}{2 \sigma^2}}$$</li>
-<li>Due to the assumption of homoscedasticity$$\prod_{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}&#x3D;\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right)^m e^{-\frac{\sum_{i&#x3D;1}^m\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
-<li>Calculate the Log-likelihood$$\mathcal{L}\left(\boldsymbol{\beta}, \sigma^2\right)&#x3D;-\frac{m}{2} \ln \left(2 \pi \sigma^2\right)-\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$$</li>
-<li>到此步为止，为了最大化似然，需要最小化$\frac{m}{2} \ln \left(2 \pi \sigma^2\right)+\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$ 也即最小化$(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})\quad$这与多元线性回归类似（最小化残差平方和）</li>
-</ul>
-</li>
-</ul>
-<h2 id="Gradient-Descent-Ⅰ"><a href="#Gradient-Descent-Ⅰ" class="headerlink" title="Gradient Descent Ⅰ"></a>Gradient Descent Ⅰ</h2><h2 id="Gradient-Descent-Ⅱ"><a href="#Gradient-Descent-Ⅱ" class="headerlink" title="Gradient Descent Ⅱ"></a>Gradient Descent Ⅱ</h2><ul>
-<li>Line search<ul>
-<li>Exact Line Search</li>
-</ul>
-</li>
-<li>Newton’s method</li>
-<li>Stochastic gradient descent</li>
-<li>Mini-batch</li>
-<li>Momentum method</li>
-<li>Nesterov’s accelerated</li>
-<li>AdaGrad&#x2F;RMSprop</li>
-<li>Adam(Momentum&amp;RMSprop) Nadam(Nesterov’s accelerated&amp;RMSprop)</li>
-</ul>
-<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -981,30 +1041,6 @@
       </categories>
       <tags>
         <tag>残章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-29</title>
-    <url>/2023/09/30/2023-09-29/</url>
-    <content><![CDATA[<p>一觉睡到大中午，呃呃呃啊啊啊<br>下午拎包出去溜达溜达<br>什刹海+月坛</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-30</title>
-    <url>/2023/09/30/2023-09-30/</url>
-    <content><![CDATA[<p>求求你别刷B站了！！！</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
 </search>
