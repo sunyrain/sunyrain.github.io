@@ -27,11 +27,15 @@
 <meta property="og:site_name" content="whilesunny">
 <meta property="og:description" content="课程详细信息 期末考试70%、课程展示20%、考勤作业10%    X射线衍射技术(X-Ray Diffraction) X光的发现 1895.11.8 伦琴 肉眼不可见、使铂氯化钡发光、使照相底板感光、气体电离、杀伤生物细胞  微观结构的研究方法 仪器极限分辨率 $\lambda$&#x2F;2 （远场光学）  X光的本质 波长介于紫外线和 $\gamma$ 射线之间，约为0.01~100埃">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png">
 <meta property="article:published_time" content="2023-09-18T01:35:33.294Z">
-<meta property="article:modified_time" content="2023-09-25T03:49:23.128Z">
+<meta property="article:modified_time" content="2023-10-09T04:12:25.873Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png">
 
 <link rel="canonical" href="https://sunyrain.github.io/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/">
 
@@ -227,7 +231,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-25 11:49:23" itemprop="dateModified" datetime="2023-09-25T11:49:23+08:00">2023-09-25</time>
+                <time title="修改时间：2023-10-09 12:12:25" itemprop="dateModified" datetime="2023-10-09T12:12:25+08:00">2023-10-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -308,27 +312,58 @@
 </li>
 </ul>
 <h3 id="X光的探测与防护"><a href="#X光的探测与防护" class="headerlink" title="X光的探测与防护"></a>X光的探测与防护</h3><h2 id="晶体学基础"><a href="#晶体学基础" class="headerlink" title="晶体学基础"></a>晶体学基础</h2><h3 id="晶体结构"><a href="#晶体结构" class="headerlink" title="晶体结构"></a>晶体结构</h3><ul>
-<li>赤平极射投影<ul>
+<li><p>赤平极射投影</p>
+<ul>
 <li>方位角 $\phi$包含该点的子午面与$0°$子午面的夹角</li>
 <li>极距角 $\rho$该点与北极点的夹角</li>
 <li>赤平投影图上点距离圆心的距离与方位角有关，基圆与极距角有关<br>  重点（吴氏网、标准点阵、倒易点阵）</li>
 </ul>
 </li>
-<li>吴氏网<ul>
-<li>吴氏网只能水平上走格子，如果想在竖直上走格子，需要旋转吴氏网，然后再所有的点一起水平上走格子<br> 对于任意可微的对称性，一定存在一个相应的守恒流。</li>
+<li><p>吴氏网</p>
+<ul>
+<li>吴氏网只能水平上走格子，如果想在竖直上走格子，需要旋转吴氏网，然后再所有的点一起水平上走格子<br> 对于任意可微的对称性，一定存在一个相应的守恒流</li>
 </ul>
 </li>
-<li>倒易点阵</li>
+<li><p>倒易点阵</p>
+<ul>
+<li><p>对于一个给定基矢的正点阵，必有倒易点阵与之相对应，关系为<br>$$a^{*}&#x3D;\frac{b×c}{v}$$<br>此处$v$为正点阵的体积	</p>
+</li>
+<li><p>有关正点阵和倒易点阵，相关的符号标识如下</p>
+<ul>
+<li>晶面指数$(hkl),(uvw)^{*}$</li>
+<li>晶向指数$[uvw],[hkl]^{*}$</li>
+<li>面间距$d_{hkl},d_{uvw}^{*}$</li>
+<li>晶向或阵矢$r&#x3D;ua+vb+wc,g^{<em>}&#x3D;ha^</em>+kb^*+lc^*$</li>
+<li>晶向长度或阵矢大小$r_{uvw},g_{hkl}$</li>
+<li>结点位置$uvw,hkl$</li>
+</ul>
+</li>
+<li><p>倒易点阵晶向垂直于正点阵同名晶面，反之亦然</p>
+</li>
+<li><p>正点阵的面间距是同名倒易矢量长度的倒数</p>
+<p>$$|g_{hkl}|^2&#x3D; \frac1{d_{hkl}^2}&#x3D;(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\bullet(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\&#x3D; h^2(a^*)^2+k^2(b^*)^2+l^2(c^*)^2\+2kl\boldsymbol{b}^<em>\boldsymbol{c}^</em>\boldsymbol{c}^<em>cos\boldsymbol{a}^</em>+2lh\boldsymbol{c}^<em>\boldsymbol{a}^</em>cos\boldsymbol{\beta}^*+2h\boldsymbol{k}a^<em>\boldsymbol{b}^</em>cos\boldsymbol{\gamma}^* $$</p>
+<ul>
+<li>立方晶系<ul>
+<li>$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="阶段作业"><a href="#阶段作业" class="headerlink" title="阶段作业"></a>阶段作业</h3><ul>
 <li>P81-82 T 15 16 22 24</li>
 </ul>
 <h2 id="X射线与材料的散射、干涉与衍射"><a href="#X射线与材料的散射、干涉与衍射" class="headerlink" title="X射线与材料的散射、干涉与衍射"></a>X射线与材料的散射、干涉与衍射</h2><h3 id="散射"><a href="#散射" class="headerlink" title="散射"></a>散射</h3><ul>
-<li>电子的散射，静电相互作用等</li>
-<li>X射线的散射，与物质的基本单元发生作用</li>
-<li>单电子对X射线的散射<ul>
+<li><p>电子的散射，静电相互作用等</p>
+</li>
+<li><p>X射线的散射，与物质的基本单元发生作用</p>
+</li>
+<li><p>单电子对X射线的散射</p>
+<ul>
 <li>相干散射<ul>
-<li>相干散射是衍射的基础</li>
+<li>相干散射是衍射的基础，从波动性的角度出发，X射线是电磁波，其照射在自由电子上时，交变电场就会强迫电子作频率相同的振动，发射X射线。电子发出的X射线为散射线，与入射线波长相同、相位滞后恒定，故可以发生干涉。</li>
 <li>平面偏振光相干散射</li>
 <li>非平面偏振光相干散射<ul>
 <li>原子中只需要考虑电子散射</li>
@@ -339,22 +374,72 @@
 <li>非相干散射</li>
 </ul>
 </li>
-<li>散射线的干涉<ul>
-<li>相位差与反射矢量</li>
-</ul>
-</li>
-<li>原子对X射线的散射<ul>
-<li>单电子原子的散射</li>
-<li>多电子原子的散射</li>
-</ul>
-</li>
-<li>晶胞的散射</li>
-<li>小晶体的衍射<ul>
-<li>晶体散射线相互干涉</li>
+<li><p>散射线的干涉</p>
+<ul>
+<li>相位差与反射矢量<ul>
+<li>相位差满足$$\phi &#x3D; 2\pi \frac{-S_{0}·r+S·r }{\lambda}$$其中$S_0$为入射线上的单位矢量，$S$为反射线上的单位矢量</li>
+<li>记 $s&#x3D;\frac{S-S_0}{\lambda}\quad s$为散射矢量，其大小为$\frac{2sin\theta}{\lambda}$，引入散射矢量后，上式可化作$\phi &#x3D;2\pi s·r$</li>
 </ul>
 </li>
 </ul>
-
+</li>
+<li><p>原子对X射线的散射</p>
+<ul>
+<li>单电子原子的散射<ul>
+<li>原子中一个电子的散射因子$$f(s) &#x3D; \int_v \rho(r)e^{i2\pi s·r}dv$$</li>
+<li>电子的相干强度为$I_{相干}&#x3D;f^{2}(s)I_{电子}$</li>
+</ul>
+</li>
+<li>多电子原子的散射<ul>
+<li>假设原子的总电荷密度为各个电子电荷密度之和</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>晶胞的散射</p>
+</li>
+<li><p>小晶体的衍射</p>
+<ul>
+<li><p>小晶体的衍射强度</p>
+<ul>
+<li><p>小晶体的衍射线振幅</p>
+<p>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}F\left(s\right)\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}_{mnp}}<br>$$</p>
+<p>因其中的结构因子与晶胞的位置无关, 从而有<br>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;F\left(s\right)\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}<em>{mnp}}<br>$$<br>于是, 晶体的衍射线强度为<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{m p p}}\right|^2 I</em>{\text {电子 }}<br>$$<br>定义<br>$$<br>L(s) \equiv\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{\operatorname{mmp}}}\right|^2<br>$$<br>由于它表示的是晶体散射线的干涉结果, 故称为晶体的干涉函数, 或劳厄函数, 衍射线强度可以简写成<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2 L(s) I_{\text {电子 }}<br>$$</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="衍射线的强度分析"><a href="#衍射线的强度分析" class="headerlink" title="衍射线的强度分析"></a>衍射线的强度分析</h2><h2 id="多晶体衍射信息的获取方法"><a href="#多晶体衍射信息的获取方法" class="headerlink" title="多晶体衍射信息的获取方法"></a>多晶体衍射信息的获取方法</h2><h3 id="德拜法"><a href="#德拜法" class="headerlink" title="德拜法"></a>德拜法</h3><ul>
+<li>德拜照片的计算与标定<ul>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png" alt="image-20231009103514509" style="zoom:50%;" />
+</li>
+<li><p>圆弧之间的对应的顶角为4$\theta$</p>
+</li>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png" alt="image-20231009104249654" style="zoom:50%;" />
+</li>
+<li><p>此处采用的角度标准为（deg）</p>
+</li>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png" alt="image-20231009104341784" style="zoom:50%;" />
+</li>
+<li><p>考虑布拉格公式$d&#x3D;\frac{\lambda}{2sin\theta}$和晶面间距计算公式$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</p>
+</li>
+<li><p>得$$\sin^2\theta&#x3D;\frac{\lambda^2}{4a^2}(h^2+k^2+l^2)$$</p>
+</li>
+<li><p>令$\frac{\lambda^{2}}{4a^2}&#x3D;K$并设$m$为干涉指数的平方和，即$$m&#x3D;h^2+k^2+l^2$$于是$sin^2\theta &#x3D; Km$</p>
+</li>
+<li><p>计算出$K$和每条德拜线的$sin^2\theta$并计算出对应的m值（$m$均为正整数）然后依据衍射线条在晶系中的出现顺序判断</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="衍射仪法"><a href="#衍射仪法" class="headerlink" title="衍射仪法"></a>衍射仪法</h3><h3 id="衍射材料的获得"><a href="#衍射材料的获得" class="headerlink" title="衍射材料的获得"></a>衍射材料的获得</h3><h4 id="试样制备要求"><a href="#试样制备要求" class="headerlink" title="试样制备要求"></a>试样制备要求</h4><ul>
+<li>晶粒大小</li>
+<li>试样大小厚度和质量</li>
+<li>避免产生择优取向</li>
+</ul>
+<h4 id="衍射全图的获得"><a href="#衍射全图的获得" class="headerlink" title="衍射全图的获得"></a>衍射全图的获得</h4><h4 id="单峰测试"><a href="#单峰测试" class="headerlink" title="单峰测试"></a>单峰测试</h4><h4 id="衍射信息的获取"><a href="#衍射信息的获取" class="headerlink" title="衍射信息的获取"></a>衍射信息的获取</h4><h4 id="衍射线的线形分析"><a href="#衍射线的线形分析" class="headerlink" title="衍射线的线形分析"></a>衍射线的线形分析</h4><h2 id="单晶体衍射信息的获取方法"><a href="#单晶体衍射信息的获取方法" class="headerlink" title="单晶体衍射信息的获取方法"></a>单晶体衍射信息的获取方法</h2><h3 id="劳厄法"><a href="#劳厄法" class="headerlink" title="劳厄法"></a>劳厄法</h3>
     </div>
 
     
@@ -436,7 +521,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E8%A1%8D%E5%B0%84%E6%8A%80%E6%9C%AF-X-Ray-Diffraction"><span class="nav-number">1.</span> <span class="nav-text">X射线衍射技术(X-Ray Diffraction)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AE%E8%A7%82%E7%BB%93%E6%9E%84%E7%9A%84%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">微观结构的研究方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%85%89%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="nav-number">3.</span> <span class="nav-text">X光的本质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-number">4.</span> <span class="nav-text">X射线的应用与发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">5.</span> <span class="nav-text">X射线的性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="nav-number">6.</span> <span class="nav-text">X射线的产生</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E8%B0%B1"><span class="nav-number">7.</span> <span class="nav-text">X射线谱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-number">8.</span> <span class="nav-text">例题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E4%B8%8E%E7%89%A9%E8%B4%A8%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"><span class="nav-number">9.</span> <span class="nav-text">X射线与物质的相互作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E8%A1%B0%E5%87%8F%E8%A7%84%E5%BE%8B"><span class="nav-number">10.</span> <span class="nav-text">X射线衰减规律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%85%89%E7%9A%84%E6%8E%A2%E6%B5%8B%E4%B8%8E%E9%98%B2%E6%8A%A4"><span class="nav-number">11.</span> <span class="nav-text">X光的探测与防护</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%99%B6%E4%BD%93%E5%AD%A6%E5%9F%BA%E7%A1%80"><span class="nav-number"></span> <span class="nav-text">晶体学基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%B6%E4%BD%93%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text">晶体结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%98%B6%E6%AE%B5%E4%BD%9C%E4%B8%9A"><span class="nav-number">2.</span> <span class="nav-text">阶段作业</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E4%B8%8E%E6%9D%90%E6%96%99%E7%9A%84%E6%95%A3%E5%B0%84%E3%80%81%E5%B9%B2%E6%B6%89%E4%B8%8E%E8%A1%8D%E5%B0%84"><span class="nav-number"></span> <span class="nav-text">X射线与材料的散射、干涉与衍射</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%A3%E5%B0%84"><span class="nav-number">1.</span> <span class="nav-text">散射</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E8%A1%8D%E5%B0%84%E6%8A%80%E6%9C%AF-X-Ray-Diffraction"><span class="nav-number">1.</span> <span class="nav-text">X射线衍射技术(X-Ray Diffraction)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AE%E8%A7%82%E7%BB%93%E6%9E%84%E7%9A%84%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">微观结构的研究方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%85%89%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="nav-number">3.</span> <span class="nav-text">X光的本质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E7%9A%84%E5%BA%94%E7%94%A8%E4%B8%8E%E5%8F%91%E5%B1%95"><span class="nav-number">4.</span> <span class="nav-text">X射线的应用与发展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">5.</span> <span class="nav-text">X射线的性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="nav-number">6.</span> <span class="nav-text">X射线的产生</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E8%B0%B1"><span class="nav-number">7.</span> <span class="nav-text">X射线谱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-number">8.</span> <span class="nav-text">例题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E4%B8%8E%E7%89%A9%E8%B4%A8%E7%9A%84%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8"><span class="nav-number">9.</span> <span class="nav-text">X射线与物质的相互作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E8%A1%B0%E5%87%8F%E8%A7%84%E5%BE%8B"><span class="nav-number">10.</span> <span class="nav-text">X射线衰减规律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#X%E5%85%89%E7%9A%84%E6%8E%A2%E6%B5%8B%E4%B8%8E%E9%98%B2%E6%8A%A4"><span class="nav-number">11.</span> <span class="nav-text">X光的探测与防护</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%99%B6%E4%BD%93%E5%AD%A6%E5%9F%BA%E7%A1%80"><span class="nav-number"></span> <span class="nav-text">晶体学基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%B6%E4%BD%93%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text">晶体结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%98%B6%E6%AE%B5%E4%BD%9C%E4%B8%9A"><span class="nav-number">2.</span> <span class="nav-text">阶段作业</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X%E5%B0%84%E7%BA%BF%E4%B8%8E%E6%9D%90%E6%96%99%E7%9A%84%E6%95%A3%E5%B0%84%E3%80%81%E5%B9%B2%E6%B6%89%E4%B8%8E%E8%A1%8D%E5%B0%84"><span class="nav-number"></span> <span class="nav-text">X射线与材料的散射、干涉与衍射</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%A3%E5%B0%84"><span class="nav-number">1.</span> <span class="nav-text">散射</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8D%E5%B0%84%E7%BA%BF%E7%9A%84%E5%BC%BA%E5%BA%A6%E5%88%86%E6%9E%90"><span class="nav-number"></span> <span class="nav-text">衍射线的强度分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84%E4%BF%A1%E6%81%AF%E7%9A%84%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95"><span class="nav-number"></span> <span class="nav-text">多晶体衍射信息的获取方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%B7%E6%8B%9C%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">德拜法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8D%E5%B0%84%E4%BB%AA%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">衍射仪法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A1%8D%E5%B0%84%E6%9D%90%E6%96%99%E7%9A%84%E8%8E%B7%E5%BE%97"><span class="nav-number">3.</span> <span class="nav-text">衍射材料的获得</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%95%E6%A0%B7%E5%88%B6%E5%A4%87%E8%A6%81%E6%B1%82"><span class="nav-number">3.1.</span> <span class="nav-text">试样制备要求</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8D%E5%B0%84%E5%85%A8%E5%9B%BE%E7%9A%84%E8%8E%B7%E5%BE%97"><span class="nav-number">3.2.</span> <span class="nav-text">衍射全图的获得</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E5%B3%B0%E6%B5%8B%E8%AF%95"><span class="nav-number">3.3.</span> <span class="nav-text">单峰测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8D%E5%B0%84%E4%BF%A1%E6%81%AF%E7%9A%84%E8%8E%B7%E5%8F%96"><span class="nav-number">3.4.</span> <span class="nav-text">衍射信息的获取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8D%E5%B0%84%E7%BA%BF%E7%9A%84%E7%BA%BF%E5%BD%A2%E5%88%86%E6%9E%90"><span class="nav-number">3.5.</span> <span class="nav-text">衍射线的线形分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E6%99%B6%E4%BD%93%E8%A1%8D%E5%B0%84%E4%BF%A1%E6%81%AF%E7%9A%84%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95"><span class="nav-number"></span> <span class="nav-text">单晶体衍射信息的获取方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%B3%E5%8E%84%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">劳厄法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -450,7 +535,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
