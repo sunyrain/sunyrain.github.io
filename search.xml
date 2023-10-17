@@ -20,21 +20,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日记6-17</title>
-    <url>/2023/06/17/2023-06-17/</url>
-    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
-<span id="more"></span>
-<p>6.17，基础物理考试的前两天</p>
-<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记6-5</title>
     <url>/2023/06/05/2023-06-05/</url>
     <content><![CDATA[<p>23.6.5</p>
@@ -67,18 +52,18 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-17</title>
-    <url>/2023/09/17/2023-09-17/</url>
-    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
+    <title>日记6-17</title>
+    <url>/2023/06/17/2023-06-17/</url>
+    <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
 <span id="more"></span>
-<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
-<p>可恶。</p>
+<p>6.17，基础物理考试的前两天</p>
+<p>在图书馆复习了整整一天，Kim老师教的热力学里，熵是绝对的明星，H、F、G都黯然失色。<br>搞懂了看似很厉害的勒让德变换以及几个破题<br>还有 茉莉初雪奶茶<br>一天就这样过去了</p>
 ]]></content>
       <categories>
-        <category>Life</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>Life</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -106,6 +91,21 @@
     <content><![CDATA[<p>美好的一天开始啦！</p>
 <span id="more"></span>
 <p>开局诸事不宜，8:00-8:45极致折磨。<br>机器学习课，累累累累累。感觉好难，需要回头再看看。<br>组会好累，累累累累累。<br>幸好这学期周四放假，否则真的要寄了。<br>帮yyx装了python和anaconda。</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-17</title>
+    <url>/2023/09/17/2023-09-17/</url>
+    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
+<span id="more"></span>
+<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
+<p>可恶。</p>
 ]]></content>
       <categories>
         <category>Life</category>
@@ -155,33 +155,21 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-25</title>
-    <url>/2023/09/25/2023-09-25/</url>
-    <content><![CDATA[<p>早上好好好冷啊<br>昨天吃的泡芙绝对有毒<br>今天下午又要视唱练耳test了，急急急急急<br>下午把量统作业做了以后，把图画完然后光速开始练习<br>时间还挺紧的aaaaa<br>可恶，才听了一小节课就不想听了<br>晕<br>感觉事情好好好好好多啊<br>好好好，视唱练耳test过了！！！<br>感谢怡宝！！感谢世界！！</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-26</title>
-    <url>/2023/09/26/2023-09-26/</url>
-    <content><![CDATA[<p>哦哈哟！<br>为什么早上这么冷。<br>再冷我就不上学了，怒。<br>解决了GIthub Pages Custom Domain失效的原因<br>原来是source内要添加内含网址的CNAME文件<br>Git连Github失败有可能是代理端口不对，改一下就可以<br>晚上吃一下观畴三楼，测试一下</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记9-24</title>
     <url>/2023/09/24/2023-09-24/</url>
     <content><![CDATA[<p>荒废时光啊荒废时光啊荒废时光啊荒废时光啊<br>急了<br>Reamke的一天，看到VS Code 版本升到了3.11.4，感觉从3.9.6是翻篇的一集（虽然不知道有啥变化就是了）</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-25</title>
+    <url>/2023/09/25/2023-09-25/</url>
+    <content><![CDATA[<p>早上好好好冷啊<br>昨天吃的泡芙绝对有毒<br>今天下午又要视唱练耳test了，急急急急急<br>下午把量统作业做了以后，把图画完然后光速开始练习<br>时间还挺紧的aaaaa<br>可恶，才听了一小节课就不想听了<br>晕<br>感觉事情好好好好好多啊<br>好好好，视唱练耳test过了！！！<br>感谢怡宝！！感谢世界！！</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -227,9 +215,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-1</title>
-    <url>/2023/10/01/2023-10-01/</url>
-    <content><![CDATA[<p>急急急，明天母上大人就要来了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>疯狂理宿舍中<br>唉唉唉唉唉唉<br>买点东西吃吃</p>
+    <title>日记9-26</title>
+    <url>/2023/09/26/2023-09-26/</url>
+    <content><![CDATA[<p>哦哈哟！<br>为什么早上这么冷。<br>再冷我就不上学了，怒。<br>解决了GIthub Pages Custom Domain失效的原因<br>原来是source内要添加内含网址的CNAME文件<br>Git连Github失败有可能是代理端口不对，改一下就可以<br>晚上吃一下观畴三楼，测试一下</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -251,9 +239,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-29</title>
-    <url>/2023/09/30/2023-09-29/</url>
-    <content><![CDATA[<p>一觉睡到大中午，呃呃呃啊啊啊<br>下午拎包出去溜达溜达<br>什刹海+月坛</p>
+    <title>日记10-1</title>
+    <url>/2023/10/01/2023-10-01/</url>
+    <content><![CDATA[<p>急急急，明天母上大人就要来了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>疯狂理宿舍中<br>唉唉唉唉唉唉<br>买点东西吃吃</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -263,9 +251,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-5</title>
-    <url>/2023/10/05/2023-10-05/</url>
-    <content><![CDATA[<p>一眨眼断更了这么久啊<br>时间一下子溜走了，留下了一些照片聊作慰藉<br>今天帮yt同志看了看实验报告，说实话花了不少时间，不过不负责任的基物实验老师起码得背一半的锅，估计是急着放假了，压根没检查，方法完全不对更别说算不确定度了，急了<br>sh同学学习十分认真，表扬一下<br>今天还干了些啥啊啊啊啊啊，中午把全新的天猫校园被子送给了宿管阿姨，以及忍不住诱惑在逐渐转冷的北京秋日，毅然决然地吃雪糕。晚上，做一个只属于自己的AI的想法又在我脑海中复辟了，于是屈从于自己各式各样的“突发奇想”，开始导出自己的微信聊天记录，并拆分成训练集测试集什么的，简直是闲得慌<br>琴到了第三天了，今天练了两个小时，先练了流星和Time Travel，之后练了A little Star 的击板部分，害，不知道还要练多久<br>晚上把量子与统计写了1&#x2F;2道题<br>一天就这样过去了</p>
+    <title>日记9-29</title>
+    <url>/2023/09/30/2023-09-29/</url>
+    <content><![CDATA[<p>一觉睡到大中午，呃呃呃啊啊啊<br>下午拎包出去溜达溜达<br>什刹海+月坛</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -287,15 +275,109 @@
       </tags>
   </entry>
   <entry>
-    <title>Cheat Engine 告别风灵月影</title>
-    <url>/2023/06/10/cheatengine/</url>
-    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+    <title>日记10-5</title>
+    <url>/2023/10/05/2023-10-05/</url>
+    <content><![CDATA[<p>一眨眼断更了这么久啊<br>时间一下子溜走了，留下了一些照片聊作慰藉<br>今天帮yt同志看了看实验报告，说实话花了不少时间，不过不负责任的基物实验老师起码得背一半的锅，估计是急着放假了，压根没检查，方法完全不对更别说算不确定度了，急了<br>sh同学学习十分认真，表扬一下<br>今天还干了些啥啊啊啊啊啊，中午把全新的天猫校园被子送给了宿管阿姨，以及忍不住诱惑在逐渐转冷的北京秋日，毅然决然地吃雪糕。晚上，做一个只属于自己的AI的想法又在我脑海中复辟了，于是屈从于自己各式各样的“突发奇想”，开始导出自己的微信聊天记录，并拆分成训练集测试集什么的，简直是闲得慌<br>琴到了第三天了，今天练了两个小时，先练了流星和Time Travel，之后练了A little Star 的击板部分，害，不知道还要练多久<br>晚上把量子与统计写了1&#x2F;2道题<br>一天就这样过去了</p>
 ]]></content>
       <categories>
-        <category>工具</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>奇遇</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-7</title>
+    <url>/2023/10/07/2023-10-07/</url>
+    <content><![CDATA[<p>感觉这一整个学期，都要生活在视唱练耳的阴影之下了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>要多练啊啊啊啊啊啊啊啊啊<br>量子与统计也得好好看，明天又要上课了，往前坐一点<br>材料分析与表征你甜蜜的到底在讲什么？？？<br>叉乘（Cross Product）：</p>
+<ul>
+<li>叉乘通常与三维空间中的向量相关</li>
+<li>而外积在三维与叉乘类似，其余则不然<br>总而言之言而总之，又活过了视唱练耳<br>下一步，是A自然小调音阶</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-8</title>
+    <url>/2023/10/08/2023-10-08/</url>
+    <content><![CDATA[<p>决定建立量子力学手写笔记，怒<br>说起来是第二次学这个量子力学了<br>上次在csm那还拿了4.0呢，现在还是啥都不会<br>搞了一下午……略微会一点了<br>顺便玩了一会愤怒的小鸟</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-9</title>
+    <url>/2023/10/09/2023-10-09/</url>
+    <content><![CDATA[<p>呃呃呃啊啊啊，大清早焦虑拉满了呃呃呃<br>论文进展好久没有往前了，什么时候才能完成换组大业啊啊啊啊<br>我超啊啊啊啊啊<br>急了</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-12</title>
+    <url>/2023/10/12/2023-10-12/</url>
+    <content><![CDATA[<p>今天，有超多事情的一天。<br>下午五点半，图书馆的窗外还在下雨。<br>挑战杯的方向扑朔迷离，论文的完成遥遥无期<br>大模型一训就是好几个小时<br>啊~~~~~~~~~<br>悲</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/10/13/2023-10-13/</url>
+    <content><![CDATA[<p>一把文明坐一天<br>饿饿饿啊啊啊<br>玩文明的前置需求也许是身体素质……<br>晚上和yt同志调用乐队经费吃了必胜客<br>KTV唱歌，启动！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日记10-14</title>
+    <url>/2023/10/14/2023-10-14/</url>
+    <content><![CDATA[<p>周六了，还有好多作业没写<br>挑战杯训练Lamma基础模型，顺便把folder填一下<br>论文把四种方程的应用场景写一下<br>量子与统计一定要抽时间看<br>还有视唱练耳，切记切记切记切记！！！<br>其他的事情，交给时间去解决吧</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-15</title>
+    <url>/2023/10/15/2023-10-15/</url>
+    <content><![CDATA[<p>镜面边缘</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-16</title>
+    <url>/2023/10/16/2023-10-16/</url>
+    <content><![CDATA[<p>每次写日记都要打文档properties真的好烦……</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -321,6 +403,18 @@
       </categories>
       <tags>
         <tag>Parallel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cheat Engine 告别风灵月影</title>
+    <url>/2023/06/10/cheatengine/</url>
+    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -385,30 +479,6 @@
       </tags>
   </entry>
   <entry>
-    <title>不遇</title>
-    <url>/2022/12/24/bu-yu/</url>
-    <content><![CDATA[<p>开头删了又写，写了又删，总找不到一种合适的语气，三年前如此，现在亦如此，倒比不上十年前的你我了。</p>
-<span id="more"></span>
-
-<p>转念一想，你可能永远也不知道这里有一篇为你而留的文字，那我便放心大胆的写啦。</p>
-<p>说来也奇怪，这几年的回忆，反而模糊不清，有些迫切想解释的，遗憾未完成的，都如云烟般散去。其实我只想让你知道，在三年未见的时光里，我只在等你。</p>
-<p>风言风语对当时的你我也许还是过于锋利了，只记得那年夏天没吃到你的生日蛋糕，之后，就只能在别人的朋友圈里看到你了。</p>
-<p>回想初三那一年，一见封谶的字条墨迹未干，久别重逢在我头上敲的那一下依旧有点疼:( 深秋我们在为数不多的夜里走着，我说，我们看似走的更近了，其实在渐行渐远。你说，我们再也回不去小时候了。我想牵牵你的手，故意说“我们连牵手都没牵过，以后也算不上分手”，没想到，却一句话说到了最后。</p>
-<p>那段时间，是我辜负了你纯真而又热烈的情感，回过头来，我真想将那些数学作业撕个粉碎，从五楼扬下去。当时的你在我的梦里总是带着泪光，而我，也只能在梦里拥抱你。</p>
-<p>大学里聊起谈恋爱的话题，大家都怨恨老天欠我们一个青梅竹马。只有我默默不说话，我知道，老天让我在一年级的时候就遇到了你。近乎自然而然，又仿佛一种羁绊，六年的小学生活，至少你就是我眼里最耀眼最可爱的那个女生。当时的我们真像书中那些温暖的文字所说 ，青梅竹马，两小无猜。我还记得我们一起四手联弹，我总是弹不好，被我爸嘲笑。记得在东恒盛大厅的沙发上看电视，你还摔了一跤。记得在机房里，你让我为你系上纽扣，我一下子脸红让你自己系。记得那些似乎无穷无尽的周六周日，我们一起学习玩耍的日子。记得你抱着我家狗狗，记得和你玩双人小游戏。快乐多么简单啊，数学试卷发下来比我高一分你就会高兴好久（而我会难过好久）。学语文时互批，我们总是想找茬让对方低几分。有太多回忆我好想一直一直写下去，因为这些都是我所无比珍视的，我想把它们带进我的坟墓。</p>
-<p>不知道现在的你还好吗，故人，挚友，陌路。也许现在的你我，就像书中所说，“最熟悉的陌生人”。中考结束，约好一起去看老师，我却终未成行。高中三年，从见面时的尴尬到最后形同陌路。</p>
-<p>也许看到这篇文字的你，会想起一些美好的回忆罢。如此便足矣。</p>
-]]></content>
-      <categories>
-        <category>故人</category>
-      </categories>
-      <tags>
-        <tag>故人</tag>
-        <tag>挚友</tag>
-        <tag>陌路</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>和声学学习</title>
     <url>/2023/09/12/he-sheng/</url>
     <content><![CDATA[<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><h2 id="和弦（和弦音）"><a href="#和弦（和弦音）" class="headerlink" title="和弦（和弦音）"></a>和弦（和弦音）</h2><h4 id="和声、和音、和弦"><a href="#和声、和音、和弦" class="headerlink" title="和声、和音、和弦"></a>和声、和音、和弦</h4><ul>
@@ -462,6 +532,30 @@
       </categories>
       <tags>
         <tag>Parallel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不遇</title>
+    <url>/2022/12/24/bu-yu/</url>
+    <content><![CDATA[<p>开头删了又写，写了又删，总找不到一种合适的语气，三年前如此，现在亦如此，倒比不上十年前的你我了。</p>
+<span id="more"></span>
+
+<p>转念一想，你可能永远也不知道这里有一篇为你而留的文字，那我便放心大胆的写啦。</p>
+<p>说来也奇怪，这几年的回忆，反而模糊不清，有些迫切想解释的，遗憾未完成的，都如云烟般散去。其实我只想让你知道，在三年未见的时光里，我只在等你。</p>
+<p>风言风语对当时的你我也许还是过于锋利了，只记得那年夏天没吃到你的生日蛋糕，之后，就只能在别人的朋友圈里看到你了。</p>
+<p>回想初三那一年，一见封谶的字条墨迹未干，久别重逢在我头上敲的那一下依旧有点疼:( 深秋我们在为数不多的夜里走着，我说，我们看似走的更近了，其实在渐行渐远。你说，我们再也回不去小时候了。我想牵牵你的手，故意说“我们连牵手都没牵过，以后也算不上分手”，没想到，却一句话说到了最后。</p>
+<p>那段时间，是我辜负了你纯真而又热烈的情感，回过头来，我真想将那些数学作业撕个粉碎，从五楼扬下去。当时的你在我的梦里总是带着泪光，而我，也只能在梦里拥抱你。</p>
+<p>大学里聊起谈恋爱的话题，大家都怨恨老天欠我们一个青梅竹马。只有我默默不说话，我知道，老天让我在一年级的时候就遇到了你。近乎自然而然，又仿佛一种羁绊，六年的小学生活，至少你就是我眼里最耀眼最可爱的那个女生。当时的我们真像书中那些温暖的文字所说 ，青梅竹马，两小无猜。我还记得我们一起四手联弹，我总是弹不好，被我爸嘲笑。记得在东恒盛大厅的沙发上看电视，你还摔了一跤。记得在机房里，你让我为你系上纽扣，我一下子脸红让你自己系。记得那些似乎无穷无尽的周六周日，我们一起学习玩耍的日子。记得你抱着我家狗狗，记得和你玩双人小游戏。快乐多么简单啊，数学试卷发下来比我高一分你就会高兴好久（而我会难过好久）。学语文时互批，我们总是想找茬让对方低几分。有太多回忆我好想一直一直写下去，因为这些都是我所无比珍视的，我想把它们带进我的坟墓。</p>
+<p>不知道现在的你还好吗，故人，挚友，陌路。也许现在的你我，就像书中所说，“最熟悉的陌生人”。中考结束，约好一起去看老师，我却终未成行。高中三年，从见面时的尴尬到最后形同陌路。</p>
+<p>也许看到这篇文字的你，会想起一些美好的回忆罢。如此便足矣。</p>
+]]></content>
+      <categories>
+        <category>故人</category>
+      </categories>
+      <tags>
+        <tag>故人</tag>
+        <tag>挚友</tag>
+        <tag>陌路</tag>
       </tags>
   </entry>
   <entry>
@@ -737,7 +831,24 @@
 <li>AdaGrad&#x2F;RMSprop</li>
 <li>Adam(Momentum&amp;RMSprop) Nadam(Nesterov’s accelerated&amp;RMSprop)</li>
 </ul>
-<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3>]]></content>
+<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3><h2 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h2><h3 id="Ridge-Regression"><a href="#Ridge-Regression" class="headerlink" title="Ridge Regression"></a>Ridge Regression</h3><p>即，添加一些正则化项使模型系数趋向于零，从而降低了模型的复杂性</p>
+<h2 id="Supervised-learning-1"><a href="#Supervised-learning-1" class="headerlink" title="Supervised learning"></a>Supervised learning</h2><h3 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h3><ul>
+<li>Logistic regression<ul>
+<li>即训练一组参数W、b，使得WX+b带入sigmoid函数可以区分是两类中的哪一类。一般使用梯度上升，最大化似然函数</li>
+<li>Sigmoid function<ul>
+<li>$$g(z)&#x3D;\frac{1}{1+e^{-z}}$$</li>
+<li>Property Ⅰ $g^{‘}(z)&#x3D; g(z)(1-g(z))$</li>
+<li>Property Ⅱ $1-g(z)&#x3D;g(-z)$</li>
+</ul>
+</li>
+<li>Multi-classes</li>
+<li>concave(凹的)、convex(凸的)</li>
+</ul>
+</li>
+<li>Prceptron</li>
+<li><h2 id="GDA高斯判别分析"><a href="#GDA高斯判别分析" class="headerlink" title="GDA高斯判别分析"></a>GDA高斯判别分析</h2></li>
+</ul>
+]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -926,7 +1037,39 @@
 <li>试样大小厚度和质量</li>
 <li>避免产生择优取向</li>
 </ul>
-<h4 id="衍射全图的获得"><a href="#衍射全图的获得" class="headerlink" title="衍射全图的获得"></a>衍射全图的获得</h4><h4 id="单峰测试"><a href="#单峰测试" class="headerlink" title="单峰测试"></a>单峰测试</h4><h4 id="衍射信息的获取"><a href="#衍射信息的获取" class="headerlink" title="衍射信息的获取"></a>衍射信息的获取</h4><h4 id="衍射线的线形分析"><a href="#衍射线的线形分析" class="headerlink" title="衍射线的线形分析"></a>衍射线的线形分析</h4><h2 id="单晶体衍射信息的获取方法"><a href="#单晶体衍射信息的获取方法" class="headerlink" title="单晶体衍射信息的获取方法"></a>单晶体衍射信息的获取方法</h2><h3 id="劳厄法"><a href="#劳厄法" class="headerlink" title="劳厄法"></a>劳厄法</h3>]]></content>
+<h4 id="衍射全图的获得"><a href="#衍射全图的获得" class="headerlink" title="衍射全图的获得"></a>衍射全图的获得</h4><h4 id="单峰测试"><a href="#单峰测试" class="headerlink" title="单峰测试"></a>单峰测试</h4><h4 id="衍射信息的获取"><a href="#衍射信息的获取" class="headerlink" title="衍射信息的获取"></a>衍射信息的获取</h4><h4 id="衍射线的线形分析"><a href="#衍射线的线形分析" class="headerlink" title="衍射线的线形分析"></a>衍射线的线形分析</h4><h2 id="单晶体衍射信息的获取方法"><a href="#单晶体衍射信息的获取方法" class="headerlink" title="单晶体衍射信息的获取方法"></a>单晶体衍射信息的获取方法</h2><h3 id="劳埃法"><a href="#劳埃法" class="headerlink" title="劳埃法"></a>劳埃法</h3><ul>
+<li>特征：使用连续的X射线谱照射固定不动的单晶体</li>
+</ul>
+<h2 id="X射线衍射的应用"><a href="#X射线衍射的应用" class="headerlink" title="X射线衍射的应用"></a>X射线衍射的应用</h2><h3 id="物相分析"><a href="#物相分析" class="headerlink" title="物相分析"></a>物相分析</h3><h4 id="定性相分析"><a href="#定性相分析" class="headerlink" title="定性相分析"></a>定性相分析</h4><h4 id="定量相分析"><a href="#定量相分析" class="headerlink" title="定量相分析"></a>定量相分析</h4><ul>
+<li><p>基础：物质的衍射强度与物质参与衍射的体积成正比<br>$$<br>I&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_0^2}\left(\frac{e^2}{m c^2}\right)^2 \frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P V \mathrm{e}^{-2 M} A(\theta)<br>$$</p>
+<ul>
+<li>对于粉末衍射仪法，$A(\theta)&#x3D;1&#x2F;2\mu$</li>
+</ul>
+</li>
+<li><p>举例来说，两相体系下<br>$$<br>\begin{aligned}<br>&amp; I_\alpha&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\alpha^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\alpha \frac{V_\alpha}{2 \mu} \<br>&amp; I_\beta&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\beta^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\beta \frac{V_\beta}{2 \mu}<br>\end{aligned}<br>$$</p>
+<ul>
+<li>$\mu 是混合物的线吸收系数$</li>
+<li>前面的部分二者都相同</li>
+</ul>
+</li>
+<li><p>外标法</p>
+<ul>
+<li>本质上是<br>  $$<br>  I_\alpha&#x3D;K \frac{w_a}{\rho_\alpha \mu^*}<br>  $$</li>
+<li>而对于纯 $\alpha$ 相的试样, 即标样, 其同指数衍射线的强度应为</li>
+</ul>
+<p>  $$</p>
+<ul>
+<li>I_{\alpha_0}&#x3D;K \frac{1}{\rho_\alpha \mu_a^*}<br>  $$</li>
+<li>从而, 待测试样中 $\alpha$ 相的衍射强度与 $\alpha$ 相标样的衍射强度的比值为</li>
+</ul>
+<p>  $$<br>  \frac{I_a}{I_{\alpha_0}}&#x3D;\frac{\mu_a^*}{\mu^*} w_a<br>  $$</p>
+<ul>
+<li>如果试样仅由 $\alpha 、 \beta$ 两相组成, 则上式可以写成</li>
+</ul>
+<p>  $$<br>  \frac{I_\alpha}{I_{\alpha_0}}&#x3D;\frac{w_\alpha \mu_\alpha^*}{w_\alpha\left(\mu_\alpha^*-\mu_\beta^<em>\right)+\mu_\beta^</em>}<br>  $$</p>
+</li>
+</ul>
+<h4 id="精确测定点阵常数"><a href="#精确测定点阵常数" class="headerlink" title="精确测定点阵常数"></a>精确测定点阵常数</h4>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -938,7 +1081,14 @@
     <title>深度学习</title>
     <url>/2023/09/19/shen-du-xue-xi/</url>
     <content><![CDATA[<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-]]></content>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -1031,12 +1181,85 @@
 </ul>
 </li>
 </ul>
-]]></content>
+<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
+<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
+<li>旁分泌信号</li>
+<li>内分泌信号</li>
+</ul>
+<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
+<li>信号接受<ul>
+<li>信号分子</li>
+<li>受体<ul>
+<li>细胞表面受体<ul>
+<li>G蛋白耦合受体</li>
+<li>受体络氨酸激酶</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>信号转导<ul>
+<li>磷酸化级联</li>
+<li>第二信使<ul>
+<li>非蛋白类小分子</li>
+<li>cAMP环腺苷酸</li>
+<li>cGMP环鸟苷酸</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
+<li>周期素和蛋白激酶</li>
+<li>生长因子</li>
+</ul>
+<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
+<li>凋亡过程<ul>
+<li>细胞收缩、染色体凝结</li>
+<li>膜起泡</li>
+<li>细胞核塌陷</li>
+<li>凋亡体形成</li>
+<li>凋亡小体裂解</li>
+</ul>
+</li>
+<li>三种信号通路<ul>
+<li>线粒体通路</li>
+<li>死亡受体通路</li>
+<li>内质网通路</li>
+</ul>
+</li>
+</ul>
+<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
+<li>自噬过程<ul>
+<li>自噬泡形成</li>
+<li>自噬体形成</li>
+<li>自噬体和溶酶体融合</li>
+<li>自噬溶酶体形成</li>
+<li>降解和再吸收</li>
+</ul>
+</li>
+<li>细胞自噬与疾病</li>
+</ul>
+<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Azusa</title>
+    <url>/2023/05/22/qing-yin-shao-nu/</url>
+    <content><![CDATA[<p>阿梓喵！</p>
+<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
+]]></content>
+      <categories>
+        <category>けいおん！</category>
+      </categories>
+      <tags>
+        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
@@ -1055,19 +1278,6 @@
       </categories>
       <tags>
         <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Azusa</title>
-    <url>/2023/05/22/qing-yin-shao-nu/</url>
-    <content><![CDATA[<p>阿梓喵！</p>
-<p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/azusa.jpg" alt="azusa"></p>
-]]></content>
-      <categories>
-        <category>けいおん！</category>
-      </categories>
-      <tags>
-        <tag>他乡</tag>
       </tags>
   </entry>
   <entry>
@@ -1091,46 +1301,6 @@
       </categories>
       <tags>
         <tag>残章</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记10-7</title>
-    <url>/2023/10/07/2023-10-07/</url>
-    <content><![CDATA[<p>感觉这一整个学期，都要生活在视唱练耳的阴影之下了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>要多练啊啊啊啊啊啊啊啊啊<br>量子与统计也得好好看，明天又要上课了，往前坐一点<br>材料分析与表征你甜蜜的到底在讲什么？？？<br>叉乘（Cross Product）：</p>
-<ul>
-<li>叉乘通常与三维空间中的向量相关</li>
-<li>而外积在三维与叉乘类似，其余则不然<br>总而言之言而总之，又活过了视唱练耳<br>下一步，是A自然小调音阶</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记10-8</title>
-    <url>/2023/10/08/2023-10-08/</url>
-    <content><![CDATA[<p>决定建立量子力学手写笔记，怒<br>说起来是第二次学这个量子力学了<br>上次在csm那还拿了4.0呢，现在还是啥都不会<br>搞了一下午……略微会一点了<br>顺便玩了一会愤怒的小鸟</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记10-9</title>
-    <url>/2023/10/09/2023-10-09/</url>
-    <content><![CDATA[<p>呃呃呃啊啊啊，大清早焦虑拉满了呃呃呃<br>论文进展好久没有往前了，什么时候才能完成换组大业啊啊啊啊<br>我超啊啊啊啊啊<br>急了</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
 </search>

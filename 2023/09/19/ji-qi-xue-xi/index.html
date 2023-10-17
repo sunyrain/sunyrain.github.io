@@ -28,7 +28,7 @@
 <meta property="og:description" content="9-19 第一讲">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-19T01:51:02.572Z">
-<meta property="article:modified_time" content="2023-10-07T11:15:19.638Z">
+<meta property="article:modified_time" content="2023-10-10T03:43:54.056Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-07 19:15:19" itemprop="dateModified" datetime="2023-10-07T19:15:19+08:00">2023-10-07</time>
+                <time title="修改时间：2023-10-10 11:43:54" itemprop="dateModified" datetime="2023-10-10T11:43:54+08:00">2023-10-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -354,7 +354,24 @@
 <li>AdaGrad&#x2F;RMSprop</li>
 <li>Adam(Momentum&amp;RMSprop) Nadam(Nesterov’s accelerated&amp;RMSprop)</li>
 </ul>
-<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3>
+<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3><h2 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h2><h3 id="Ridge-Regression"><a href="#Ridge-Regression" class="headerlink" title="Ridge Regression"></a>Ridge Regression</h3><p>即，添加一些正则化项使模型系数趋向于零，从而降低了模型的复杂性</p>
+<h2 id="Supervised-learning-1"><a href="#Supervised-learning-1" class="headerlink" title="Supervised learning"></a>Supervised learning</h2><h3 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h3><ul>
+<li>Logistic regression<ul>
+<li>即训练一组参数W、b，使得WX+b带入sigmoid函数可以区分是两类中的哪一类。一般使用梯度上升，最大化似然函数</li>
+<li>Sigmoid function<ul>
+<li>$$g(z)&#x3D;\frac{1}{1+e^{-z}}$$</li>
+<li>Property Ⅰ $g^{‘}(z)&#x3D; g(z)(1-g(z))$</li>
+<li>Property Ⅱ $1-g(z)&#x3D;g(-z)$</li>
+</ul>
+</li>
+<li>Multi-classes</li>
+<li>concave(凹的)、convex(凸的)</li>
+</ul>
+</li>
+<li>Prceptron</li>
+<li><h2 id="GDA高斯判别分析"><a href="#GDA高斯判别分析" class="headerlink" title="GDA高斯判别分析"></a>GDA高斯判别分析</h2></li>
+</ul>
+
     </div>
 
     
@@ -436,7 +453,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-19-%E7%AC%AC%E4%B8%80%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">9-19 第一讲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">2.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">3.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">3.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-19-%E7%AC%AC%E4%B8%80%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">9-19 第一讲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">2.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">3.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">3.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">4.</span> <span class="nav-text">Regularization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ridge-Regression"><span class="nav-number">4.1.</span> <span class="nav-text">Ridge Regression</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number">5.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">5.1.</span> <span class="nav-text">Classification</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GDA%E9%AB%98%E6%96%AF%E5%88%A4%E5%88%AB%E5%88%86%E6%9E%90"><span class="nav-number">6.</span> <span class="nav-text">GDA高斯判别分析</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -450,7 +467,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">44</span>
+          <span class="site-state-item-count">49</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
