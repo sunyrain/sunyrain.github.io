@@ -429,6 +429,13 @@
 <li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
 </ul>
 </li>
+<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
+<li>补充一个上面加点$\dot{x}$ dot<blockquote>
+<p>如何引用呢？使用&gt;即可</p>
+</blockquote>
+</li>
+</ul>
+</li>
 </ul>
 ]]></content>
       <categories>
@@ -735,50 +742,79 @@
     <title>机器学习</title>
     <url>/2023/09/19/ji-qi-xue-xi/</url>
     <content><![CDATA[<h2 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h2><span id="more"></span>
-<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
+<p>$(\psi(r,\theta,\phi)&#x3D;\frac{1}{\sqrt{\pi{a_0}^3}}e^{-\frac{r}{a_0}})$</p>
+<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+<h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
+<li>其中$\nu$  是取样中红色球的比例  </li>
 <li>可见实验结果误差大于$\epsilon$的概率并不取决于期望，而取决于实验的次数$N$</li>
 <li>该例子具有一定的特殊性，因为其为Brenoulli实验，且所考虑的$\nu$和$\mu$均在0到1之间</li>
+<li>关键：big data gives an accurate learning result</li>
 </ul>
 </li>
-<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)$$<ul>
+<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>\tag{1}<br>$$<ul>
+<li>$b_i ,a_i$分别为变量$X_i$的上限和下限</li>
+<li>注意到$S_n$是变量之和，如果要与伯努利情况下的Koeffding比较，则可以考虑指数上下同除$n^2$</li>
 <li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
 </ul>
 </li>
 </ul>
 <h4 id="Example-拓展"><a href="#Example-拓展" class="headerlink" title="Example 拓展"></a>Example 拓展</h4><ul>
-<li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
-<li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\mu$和$\nu$</li>
-<li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$<br>Low complexity model and big data can give us a good generalization in machine learning</li>
+<li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，每一次取球，就相当于在定义域$X$中取一个$x$，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
+<li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\nu$和$\mu$，我们想要知道我们的假设$h$效果怎么样，但是没必要把所有$x$全带入。</li>
+<li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$ </li>
+<li>$$</li>
 </ul>
-<h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><h4 id="Regression-Ⅰ"><a href="#Regression-Ⅰ" class="headerlink" title="Regression Ⅰ"></a>Regression Ⅰ</h4><ul>
+<p>\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq \sum_{m&#x3D;1}^M \mathbb{P}\left[\left|E_{\text {in }}\left(h_m\right)-E_{\text {out }}\left(h_m\right)\right|&gt;\epsilon\right]</p>
+<p>$$</p>
+<ul>
+<li>$$</li>
+</ul>
+<p>\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq 2 M e^{-2 \epsilon^2 N}<br>\tag{2}<br>$$</p>
+<ul>
+<li>这条式子的意思是，给出所有$M$个假设中，最优的一个，训练集和实际集的误差上限（这本身不能让$g$接近$f$）这很好理解，因为右侧包含左侧。<blockquote>
+<p>Low complexity model and big data can give us a good generalization in machine learning</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><blockquote>
+<p>Use labelled dataset to train algorithms</p>
+</blockquote>
+<h4 id="Regression-Ⅰ"><a href="#Regression-Ⅰ" class="headerlink" title="Regression Ⅰ"></a>Regression Ⅰ</h4><ul>
 <li>Linear Regression<ul>
-<li>$y_{i}&#x3D;f_{\beta_{0},\beta_{1}}(x_{i})+\epsilon_{i}&#x3D;\beta_{0}+x_{i}\beta_{1}+\epsilon_{i}\quad$其中$\epsilon$即为残差</li>
+<li>$y_{i}&#x3D;f_{\beta_{0},\beta_{1}}(x_{i})+\epsilon_{i}&#x3D;\beta_{0}+x_{i}\beta_{1}+\epsilon_{i}\quad$其中$\epsilon$即为残差<ul>
+<li>$f_{\beta_{0},\beta_{1}}$是线性回归的函数，训练目标是最小化$\epsilon$的平方和</li>
+</ul>
+</li>
 <li>Cost Function<ul>
-<li>$C\left(\beta_0,\beta_1\right)&#x3D;\sum_{i&#x3D;1}^m\left(y_if_{\beta_0,\beta_1}\left(x_i\right)\right)^2$</li>
+<li>$C\left(\beta_0,\beta_1\right)&#x3D;\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0,\beta_1}\left(x_i\right)\right)^2$</li>
 </ul>
 </li>
 <li>Assumptions<ul>
-<li>Weak exogeneity</li>
-<li>Linearity</li>
-<li>Homoscedasticity</li>
+<li>Weak exogeneity 假设残差的期望为0</li>
+<li>Linearity 假设WX+b&#x3D;y</li>
+<li>Homoscedasticity 假设因变量方差不随自变量改变<ul>
+<li>假设我们通过房子的面积等预测房价，我们可以假设不管面积是大是小，价格的方差不会变。而事实上也存在反例，例如我们一般认为，小房子的价格波动更大</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Ordinary least squares<ul>
 <li>Cost Function $(y_{i}-f_{\beta_{0},\beta_{1}}(x_{i}))^2$ </li>
 <li>对两个参数分别求偏导及二阶偏导，最小化损失函数</li>
 <li>Coefficient of determination $r^2$<ul>
-<li>$$r^2&#x3D;1-\frac{\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0, \beta_1}\left(x_i\right)\right)^2}{\sum_{i&#x3D;1}^m\left(y_i-\bar{y}\right)^2} \times 100 %$$</li>
+<li>$$r^2&#x3D;1-\frac{\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0, \beta_1}\left(x_i\right)\right)^2}{\sum_{i&#x3D;1}^m\left(y_i-\bar{y}\right)^2} \times 100 % \tag{3}$$</li>
 <li>也即比较线性回归模型残差平方和和原有数据残差平方和（相对于$\bar{y}$）故$r^2$越大越优</li>
+<li>定性看一下，直接拿均值肯定很烂，然后$r^2&#x3D;1$的话，说明完全拟合上了</li>
 </ul>
 </li>
-<li></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Multiple Linear Regression<ul>
+<li>额外假设，不存在多重共线性</li>
 <li>同样思路，计算一阶导数并令之为0</li>
 <li>$$\begin{gathered}C(\boldsymbol{\beta})&#x3D;(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})&#x3D;\boldsymbol{y}^T \boldsymbol{y}+\boldsymbol{\beta}^T X^T X \boldsymbol{\beta}-2 \boldsymbol{\beta}^T X^T \boldsymbol{y} \\frac{\partial C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}}&#x3D;2 X^T X \boldsymbol{\beta}-2 X^T \boldsymbol{y}\end{gathered}$$</li>
 <li>据此给出 $\widehat{\boldsymbol{\beta}}$的表达式</li>
@@ -790,16 +826,25 @@
 <li>定义hat matrix</li>
 <li>$$\widehat{\boldsymbol{y}}&#x3D;X \widehat{\boldsymbol{\beta}}&#x3D;X\left(X^T X\right)^{-1} X^T \boldsymbol{y}&#x3D;X\left(X^T X\right)^{-\mathbf{1}} X^T \boldsymbol{y}&#x3D;H \boldsymbol{y}$$</li>
 <li>Properties of hat matrix<ul>
-<li>H 、$I-H$is orthogonal</li>
+<li>$H$ 、$I-H$  均是正交投影矩阵</li>
 <li>Idempotent $H&#x3D;H^2$、$(I-H)&#x3D;(I-H)^2$</li>
-<li>残差由$\epsilon&#x3D;y-\hat{y}&#x3D;y-Hy&#x3D;(I-H)y$给出</li>
+<li>残差由$\epsilon&#x3D;y-\hat{y}&#x3D;y-Hy&#x3D;(I-H)y$给出<ul>
+<li>当然，残差的平方和$\epsilon^T \epsilon&#x3D;y^T(I-H)y$（依据幂等消掉了一个）</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Maximum Likelihood Estimation<ul>
 <li>Assumptions<ul>
-<li>随机取样残差符合均值为0的高斯分布，在残差为0时，概率取最大值</li>
+<li>随机取样残差符合均值为0的高斯分布，在残差为0时，概率取最大值<ul>
+<li>在假设残差符合高斯分布的前提下，假设其方差为$\sigma^2$</li>
+</ul>
+</li>
+<li>$$<br>p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}<br>$$</li>
+<li>依据常规高斯分布公式分析，其实就是下式（对于残差，均值$\mu$为0）</li>
+<li>$$p;(\left(\epsilon_i) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(\epsilon_i-0)^2}{2 \sigma^2}}$$</li>
 <li>$(x_i,y_i)$独立同分布</li>
 </ul>
 </li>
@@ -811,10 +856,16 @@
 <li>Due to the assumption of homoscedasticity$$\prod_{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}&#x3D;\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right)^m e^{-\frac{\sum_{i&#x3D;1}^m\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
 <li>Calculate the Log-likelihood$$\mathcal{L}\left(\boldsymbol{\beta}, \sigma^2\right)&#x3D;-\frac{m}{2} \ln \left(2 \pi \sigma^2\right)-\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$$</li>
 <li>到此步为止，为了最大化似然，需要最小化$\frac{m}{2} \ln \left(2 \pi \sigma^2\right)+\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$ 也即最小化$(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})\quad$这与多元线性回归类似（最小化残差平方和）</li>
+<li>分别对$\beta$和$\sigma^2$求偏导，注意得到的$\sigma$是残差的标准差，又由于同分布假设，故假设最后的结果是$y_{predict}$则95%置信区间为$y_{predict}\pm 1.96\sigma$</li>
 </ul>
 </li>
 </ul>
-<h2 id="Gradient-Descent-Ⅰ"><a href="#Gradient-Descent-Ⅰ" class="headerlink" title="Gradient Descent Ⅰ"></a>Gradient Descent Ⅰ</h2><h2 id="Gradient-Descent-Ⅱ"><a href="#Gradient-Descent-Ⅱ" class="headerlink" title="Gradient Descent Ⅱ"></a>Gradient Descent Ⅱ</h2><ul>
+<h2 id="Gradient-Descent-Ⅰ"><a href="#Gradient-Descent-Ⅰ" class="headerlink" title="Gradient Descent Ⅰ"></a>Gradient Descent Ⅰ</h2><h3 id="Illustration-1D"><a href="#Illustration-1D" class="headerlink" title="Illustration(1D)"></a>Illustration(1D)</h3><p>对于1-D线性回归模型，我们可以发现，损失函数是一个下凸函数，所以我们可以先随机选定一组参数$(\beta_0,\beta_1)$ 相当于在碗的壁上放了一个乒乓球，之后按以下策略，迭代参数$(\beta_0,\beta_1)$<br>$$<br>\begin{gathered}<br>\beta_1^{(i+1)}&#x3D;\beta_1^{(i)}-\alpha \frac{\partial C\left(\beta_0^{(i)}, \beta_1^{(i)}\right)}{\partial \beta_1}&#x3D;\beta_1^{(i)}+2 \alpha \sum_{i&#x3D;1}^m\left(y_i-\beta_1^{(i)} x_i-\beta_0^{(i)}\right) x_i \<br>\beta_0^{(i+1)}&#x3D;\beta_0^{(i)}-\alpha \frac{\partial C\left(\beta_0^{(i)}, \beta_1^{(i)}\right)}{\partial \beta_0}&#x3D;\beta_0^{(i)}+2 \alpha \sum_{i&#x3D;1}^m\left(y_i-\beta_1^{(i)} x_i-\beta_0^{(i)}\right)<br>\end{gathered}<br>$$</p>
+<blockquote>
+<p>第一讲到此结束</p>
+</blockquote>
+<hr>
+<h2 id="Gradient-Descent-Ⅱ"><a href="#Gradient-Descent-Ⅱ" class="headerlink" title="Gradient Descent Ⅱ"></a>Gradient Descent Ⅱ</h2><ul>
 <li>Line search<ul>
 <li>Exact Line Search<ul>
 <li>在一定范围内搜索$\alpha$让$f$最小</li>
@@ -846,9 +897,117 @@
 </ul>
 </li>
 <li>Prceptron</li>
-<li><h2 id="GDA高斯判别分析"><a href="#GDA高斯判别分析" class="headerlink" title="GDA高斯判别分析"></a>GDA高斯判别分析</h2></li>
+<li>GDA高斯判别分析</li>
 </ul>
-]]></content>
+<h4 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h4><ul>
+<li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
+<li>树，连通无环结构<ul>
+<li>树的节点表示属性测试</li>
+<li>叶节点表示分类结果</li>
+<li>每一次划分其实是对空间进行一次轴对齐的超平面划分，树可以向图转换，图也可以还原成树</li>
+</ul>
+</li>
+<li>$Classification; Error$（可以用来评价划分的质量）<ul>
+<li>$Error(i|j,t_{j}) &#x3D; 1-\max <em>{k}P(k|R</em>{i})$ </li>
+<li>注意这里P不是概率，而是$R_i$中k的比例，比方说一个完美的分类，$R_i$中只有k，那么$Error$就是0</li>
+<li>其中，j是划分的维度，tj是划分的阈值</li>
+<li>树当前的每一个叶子节点都代表了一块区域，而算法的继续进行需要做的，就是将该空间继续划分成两块</li>
+<li>$\min _{j, t_j}\left{\frac{N_1}{N} \operatorname{Error}\left(1 \mid j, t_j\right)+\frac{N_2}{N} \operatorname{Error}\left(2 \mid j, t_j\right)\right}$<ul>
+<li>区域被划分为两块，分别是$R_1$和$R_2$，将两块区域的误差加权相加即得到需要最小化的误差函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>我们也可以使用$Gini;index$ <ul>
+<li>通过测试每个区域的”纯度”，来判断划分质量</li>
+<li>$Gini(i|j,t_j)&#x3D;1-\Sigma_k P(k|R_i)^2$</li>
+<li>再次提醒，$P$是$k$类在$R_i$中的比例</li>
+<li>$Gini$值越低，划分质量越高，所以我们也要最小化$Gini$函数的加权和</li>
+</ul>
+</li>
+<li>我们也可以使用$Entropy$<ul>
+<li>$H(X)&#x3D;$ $-\sum_{x \in X} P(x) \log _2 P(x)$ in each newly created region $R_1, R_2$.</li>
+<li>$\operatorname{Entropy}\left(i \mid j, t_j\right)&#x3D;-\sum_k P\left(k \mid R_i\right) \log _2 P\left(k \mid R_i\right)$</li>
+</ul>
+</li>
+</ul>
+<h5 id="Stopping-Condition"><a href="#Stopping-Condition" class="headerlink" title="Stopping Condition"></a>Stopping Condition</h5><ul>
+<li>maximum depth</li>
+<li>number of instance</li>
+</ul>
+<h5 id="For-Regression"><a href="#For-Regression" class="headerlink" title="For Regression"></a>For Regression</h5><h5 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h5><ul>
+<li>每一次划分都最优或接近最优，则correlation大，这可能降低效果</li>
+<li>所以需要引入随机森林以降低Variance</li>
+</ul>
+<h5 id="Random-forest"><a href="#Random-forest" class="headerlink" title="Random forest"></a>Random forest</h5><ul>
+<li>每棵树每步分裂限制特征集，限制每一步的“视角”，在限制的特征集中选择最优的特征和阈值，最终融合不同视角进行投票</li>
+</ul>
+<h5 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h5><ul>
+<li>The strength of week learners</li>
+<li>原理是，首先使用week classifier进行学习，之后依据预测结果，给出residual。下一个week classifier对特征和残差进行学习，得到一个新的预测结果，和residual得出下一个residual，反复进行，并在最后以一定参数融合所有的week classifier</li>
+</ul>
+<h5 id="GBoosting"><a href="#GBoosting" class="headerlink" title="GBoosting"></a>GBoosting</h5><ul>
+<li>XGBoost是GBoosting的一种特定实现</li>
+</ul>
+<h5 id="K-nearest-neighbourhood"><a href="#K-nearest-neighbourhood" class="headerlink" title="K-nearest neighbourhood"></a>K-nearest neighbourhood</h5><ul>
+<li>关键思想：一个样本的类别可以通过其K个最近邻居的类别来决定</li>
+<li>也可以固定邻居数、固定搜索半径等</li>
+<li>也可以使用soft boundary，距离点越近权重越高</li>
+<li>但同时，测算点的距离对于计算机是较为繁琐的</li>
+</ul>
+<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><h3 id="Clustering"><a href="#Clustering" class="headerlink" title="Clustering"></a>Clustering</h3><h4 id="K-means（no-label）"><a href="#K-means（no-label）" class="headerlink" title="K-means（no label）"></a>K-means（no label）</h4><ul>
+<li>首先在数据点中，随机选K个点作为聚类中心</li>
+<li>将每个数据点分配到距离它最近的聚类中心</li>
+<li>对于每个聚类，计算其所有数据点的平均位置，更新聚类中心的位置</li>
+<li>直达聚类中心不发生变化或者达到预定的迭代次数</li>
+</ul>
+<h4 id="Hierarchical-clustering（层次聚类）"><a href="#Hierarchical-clustering（层次聚类）" class="headerlink" title="Hierarchical clustering（层次聚类）"></a>Hierarchical clustering（层次聚类）</h4><ul>
+<li>Hierarchical agglomerative clustering（层次凝聚聚类）<ul>
+<li>初始状态下，每个数据点都被认为是一个单独的聚类。</li>
+<li>计算每对聚类之间的相似度或距离。</li>
+<li>根据相似度或距离的度量规则，选择最相似的两个聚类进行合并。</li>
+<li>合并后的聚类形成一个新的聚类，替代原来的两个聚类。</li>
+<li>重复步骤，直到所有数据点都合并为一个聚类或达到预设的聚类数量。</li>
+</ul>
+</li>
+<li>Divisive clustering（分裂聚类）<ul>
+<li>初始状态下，所有数据点都被归为一个聚类。</li>
+<li>计算当前聚类中的数据点的相似度或距离。</li>
+<li>根据相似度或距离的度量规则，选择一个聚类进行分裂。</li>
+<li>分裂所选的聚类，将其划分为两个或多个子聚类。</li>
+<li>重复步骤2-4，直到每个数据点都成为一个单独的聚类或达到预设的聚类数量。</li>
+</ul>
+</li>
+</ul>
+<h3 id="Big-Data-Clustering"><a href="#Big-Data-Clustering" class="headerlink" title="Big Data Clustering"></a>Big Data Clustering</h3><ul>
+<li><h4 id="BFR（人名算法）"><a href="#BFR（人名算法）" class="headerlink" title="BFR（人名算法）"></a>BFR（人名算法）</h4><ul>
+<li>初始阶段，将整个数据集分为几个较小的子集。</li>
+<li>在每个子集上应用一个聚类算法，如K-means或层次聚类。</li>
+<li>分析每个子集的聚类结果，根据一些评估指标（如聚类质量、聚类数量等）来决定是否需要进一步划分或合并聚类。</li>
+<li>如果需要划分，将子集进一步划分为更小的子集，并重复步骤2-3。<br>  如果需要合并，将具有相似性质的聚类合并在一起，并重复步骤2-3。</li>
+</ul>
+</li>
+<li>Clustering using representatives (CURE)</li>
+</ul>
+<h2 id="Support-vector"><a href="#Support-vector" class="headerlink" title="Support vector"></a>Support vector</h2><blockquote>
+<p>核心逻辑，尝试最大化两个类别中的间隔，同时确保所有的数据点都被正确分类<br>使用Lagrange对偶性，我们可以将这个问题转化为对偶问题<br>一旦我们解决了对偶问题，我们可以使用互补松弛性来确定哪些数据点是支持向量，从而确定决策边界</p>
+</blockquote>
+<ul>
+<li>Support vector regression<ul>
+<li>让马路盖住所有点，但是越窄越好</li>
+</ul>
+</li>
+<li>Support vector clustering</li>
+<li>Transudative support vector machine</li>
+</ul>
+<h3 id="Kernel-方法"><a href="#Kernel-方法" class="headerlink" title="Kernel 方法"></a>Kernel 方法</h3><blockquote>
+<p>将点向高维映射，有时可以使数据点明显分开</p>
+</blockquote>
+<h2 id="Learning-with-Probabilistic-Graphic-Model"><a href="#Learning-with-Probabilistic-Graphic-Model" class="headerlink" title="Learning with Probabilistic Graphic Model"></a>Learning with Probabilistic Graphic Model</h2><h3 id="Directed-graphs-Baysian-network"><a href="#Directed-graphs-Baysian-network" class="headerlink" title="Directed graphs (Baysian network)"></a>Directed graphs (Baysian network)</h3><ul>
+<li>逻辑是，对于多个事件，建立很多小的表，以避免建立所有情况合成的大表</li>
+<li>从独立到条件独立</li>
+</ul>
+<h3 id="Undirected-graphs-Markov-random-field"><a href="#Undirected-graphs-Markov-random-field" class="headerlink" title="Undirected graphs (Markov random field)"></a>Undirected graphs (Markov random field)</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -901,7 +1060,7 @@
 <li>吸收的不连续性</li>
 <li>吸收限的利用<ul>
 <li>靶材（Target Material）：</li>
-<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，与原子相互作用，产生X射线辐射</li>
+<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，与原子相互作用，产生X射线辐射。我们要尽量选择波长略长于试样吸收限的靶材，这样不会有K系荧光辐射，同时也不会被试样吸收太多。</li>
 <li>滤片（Filter）：</li>
 <li>滤片是放置在X射线束路径上的材料，通常由金属或其他适当的材料制成。滤片的主要作用是改变或调整X射线的能量谱。通过选择不同材料的滤片，可以过滤掉低能量的X射线，使得只有特定能量范围内的X射线通过</li>
 <li>试样（Sample）：</li>
@@ -1041,6 +1200,8 @@
 <li>特征：使用连续的X射线谱照射固定不动的单晶体</li>
 </ul>
 <h2 id="X射线衍射的应用"><a href="#X射线衍射的应用" class="headerlink" title="X射线衍射的应用"></a>X射线衍射的应用</h2><h3 id="物相分析"><a href="#物相分析" class="headerlink" title="物相分析"></a>物相分析</h3><h4 id="定性相分析"><a href="#定性相分析" class="headerlink" title="定性相分析"></a>定性相分析</h4><h4 id="定量相分析"><a href="#定量相分析" class="headerlink" title="定量相分析"></a>定量相分析</h4><ul>
+<li><p>PDF卡片</p>
+</li>
 <li><p>基础：物质的衍射强度与物质参与衍射的体积成正比<br>$$<br>I&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_0^2}\left(\frac{e^2}{m c^2}\right)^2 \frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P V \mathrm{e}^{-2 M} A(\theta)<br>$$</p>
 <ul>
 <li>对于粉末衍射仪法，$A(\theta)&#x3D;1&#x2F;2\mu$</li>
@@ -1048,18 +1209,17 @@
 </li>
 <li><p>举例来说，两相体系下<br>$$<br>\begin{aligned}<br>&amp; I_\alpha&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\alpha^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\alpha \frac{V_\alpha}{2 \mu} \<br>&amp; I_\beta&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\beta^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\beta \frac{V_\beta}{2 \mu}<br>\end{aligned}<br>$$</p>
 <ul>
-<li>$\mu 是混合物的线吸收系数$</li>
-<li>前面的部分二者都相同</li>
+<li>$\mu$ 是混合物的线吸收系数</li>
+<li>前面的部分二者都相同，所以只和$V$有关系</li>
+<li>$\mu ^*$是质量吸收系数，为$\mu &#x2F; \rho$</li>
+<li>不管什么方法，$\alpha$相衍射强度 $I_{\alpha}&#x3D;K\frac{C_{\alpha}}{\mu}$</li>
 </ul>
 </li>
 <li><p>外标法</p>
 <ul>
 <li>本质上是<br>  $$<br>  I_\alpha&#x3D;K \frac{w_a}{\rho_\alpha \mu^*}<br>  $$</li>
-<li>而对于纯 $\alpha$ 相的试样, 即标样, 其同指数衍射线的强度应为</li>
-</ul>
-<p>  $$</p>
-<ul>
-<li>I_{\alpha_0}&#x3D;K \frac{1}{\rho_\alpha \mu_a^*}<br>  $$</li>
+<li>上式的$\mu ^*$是总质量吸收系数</li>
+<li>而对于纯 $\alpha$ 相的试样, 即标样, 其同指数衍射线的强度应为<br>  $$<br>  I_{\alpha_0}&#x3D;K \frac{1}{\rho_\alpha \mu_a^*}<br>  $$</li>
 <li>从而, 待测试样中 $\alpha$ 相的衍射强度与 $\alpha$ 相标样的衍射强度的比值为</li>
 </ul>
 <p>  $$<br>  \frac{I_a}{I_{\alpha_0}}&#x3D;\frac{\mu_a^*}{\mu^*} w_a<br>  $$</p>
@@ -1067,9 +1227,77 @@
 <li>如果试样仅由 $\alpha 、 \beta$ 两相组成, 则上式可以写成</li>
 </ul>
 <p>  $$<br>  \frac{I_\alpha}{I_{\alpha_0}}&#x3D;\frac{w_\alpha \mu_\alpha^*}{w_\alpha\left(\mu_\alpha^*-\mu_\beta^<em>\right)+\mu_\beta^</em>}<br>  $$</p>
+<ul>
+<li>实际使用时，首先要知道是什么和什么的混合，找到工作曲线，之后通过两次实验测定$\frac{I_\alpha}{I_{\alpha_0}}$，在工作表上对应找即知道物质百分比</li>
+</ul>
+</li>
+<li><p>内标法</p>
+<ul>
+<li>内标法首先向试样中加入标准物，然后让待测相与标准相进行比较，相当于通过加入标准相的方法，知道了$\omega _{s}$ </li>
+<li>待测相衍射线强度与标准相衍射线强度之比可以表述为</li>
+<li>$$\frac{I^{‘}<em>{a}}{I</em>{s}}&#x3D;K\frac{\omega^{‘}<em>{a}}{\omega</em>{s}}$$</li>
+<li>设法得到$K$值即可</li>
+</ul>
 </li>
 </ul>
-<h4 id="精确测定点阵常数"><a href="#精确测定点阵常数" class="headerlink" title="精确测定点阵常数"></a>精确测定点阵常数</h4>]]></content>
+<h4 id="精确测定点阵常数"><a href="#精确测定点阵常数" class="headerlink" title="精确测定点阵常数"></a>精确测定点阵常数</h4><h2 id="宏观应力分析"><a href="#宏观应力分析" class="headerlink" title="宏观应力分析"></a>宏观应力分析</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h3><p>只要有应力存在就会有应变，，也即晶面间距的变化。X光可以很好地测面间距的变化，所以可以用来测应力。</p>
+<h4 id="应力应变关系"><a href="#应力应变关系" class="headerlink" title="应力应变关系"></a>应力应变关系</h4><ul>
+<li><p>考虑受轴向拉力$F_x$的截面为A的棒</p>
+<ul>
+<li>胡克定律指出$\epsilon_x &#x3D; \frac{\sigma_x}{E}$</li>
+<li>轴向拉伸，垂直于轴的面也会发生形变</li>
+<li>$$-\epsilon_y &#x3D; -\epsilon_z &#x3D; \nu \epsilon_x &#x3D; \frac{\nu \sigma_x}{E}$$<ul>
+<li>其中$\nu$是泊松比</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>考虑微变形情况下，主应力和主应变的广义胡克定律为</p>
+<ul>
+<li>$\epsilon_1 &#x3D; \frac{1}{E}[\sigma_1 - \nu(\sigma_2+\sigma_3)]$<ul>
+<li>（$cyc$）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>任意一个方向（注意应力是一个张量）</p>
+<p>$$ \left{\begin{array}{l}<br>\sigma_{\phi \psi}&#x3D;\alpha_1^2 \sigma_1+\alpha_2^2 \sigma_2+\alpha_3^2 \sigma_3 \<br>\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3<br>\end{array}\right.$$</p>
+</li>
+<li><p>其中$$\begin{aligned}<br>&amp; \alpha_1&#x3D;\sin \psi \cos \phi \<br>&amp; \alpha_2&#x3D;\sin \psi \sin \phi \<br>&amp; \alpha_3&#x3D;\cos \psi<br>\end{aligned} $$</p>
+</li>
+<li><p>广义胡克定律<br>$$\left{\begin{array}{l}\varepsilon_1&#x3D;\frac{1}{E}\left[\sigma_1-\nu\left(\sigma_2+\sigma_3\right)\right] \ \varepsilon_2&#x3D;\frac{1}{E}\left[\sigma_2-\nu\left(\sigma_1+\sigma_3\right)\right] \ \varepsilon_3&#x3D;\frac{1}{E}\left[\sigma_3-\nu\left(\sigma_1+\sigma_2\right)\right]\end{array}\right.$$</p>
+</li>
+</ul>
+<h4 id="X射线衍射方法测定应力的原理"><a href="#X射线衍射方法测定应力的原理" class="headerlink" title="X射线衍射方法测定应力的原理"></a>X射线衍射方法测定应力的原理</h4><p>对于一般的金属材料，X射线的穿透能力很低，所以仅能测定表面层的应力。又垂直于表面层的应力的总和为0.也即$\sigma_3 &#x3D; 0$</p>
+<ul>
+<li><p>广义胡克定律在此前提下简化为：</p>
+</li>
+<li><p>$$<br>\left{\begin{array}{l}<br>\varepsilon_1&#x3D;\frac{1}{E}\left(\sigma_1-\nu \sigma_2\right) \<br>\varepsilon_2&#x3D;\frac{1}{E}\left(\sigma_2-\nu \sigma_1\right) \<br>\varepsilon_3&#x3D;-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>\end{array}\right.<br>$$</p>
+</li>
+<li><p>带入$\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3$化简即得到：</p>
+</li>
+<li><p>$$<br>\varepsilon_{\phi \psi}&#x3D;\frac{1+\nu}{E} \sigma_\phi \sin ^2 \psi-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>$$</p>
+<ul>
+<li>注意$\sigma_\phi &#x3D; cos^2\phi \sigma_1 +sin^2 \phi \sigma_2$</li>
+</ul>
+<p>将上式对 $\sin ^2 \psi$ 求导, 就可以解出表面上任一方向上的应力 $\sigma_\phi$, 有：<br>$$<br>\sigma_\phi&#x3D;\frac{E}{1+\nu} \frac{\partial \varepsilon_{\phi \psi}}{\partial \sin ^2 \psi}<br>$$</p>
+</li>
+</ul>
+<h3 id="衍射仪法测定宏观应力"><a href="#衍射仪法测定宏观应力" class="headerlink" title="衍射仪法测定宏观应力"></a>衍射仪法测定宏观应力</h3><h2 id="微晶尺寸和微观应力"><a href="#微晶尺寸和微观应力" class="headerlink" title="微晶尺寸和微观应力"></a>微晶尺寸和微观应力</h2><h4 id="微晶尺寸的测定"><a href="#微晶尺寸的测定" class="headerlink" title="微晶尺寸的测定"></a>微晶尺寸的测定</h4><h4 id="微观应力的测定"><a href="#微观应力的测定" class="headerlink" title="微观应力的测定"></a>微观应力的测定</h4><h2 id="织构的测定"><a href="#织构的测定" class="headerlink" title="织构的测定"></a>织构的测定</h2><h3 id="织构的分类"><a href="#织构的分类" class="headerlink" title="织构的分类"></a>织构的分类</h3><ul>
+<li>丝织构<ul>
+<li>丝织构的晶体学特点是晶粒的某一个或者某几个晶向倾向于平行试样的某一特定方向，一般沿丝轴方向或生长方向</li>
+</ul>
+</li>
+<li>板织构<ul>
+<li>板织构的晶体学特征是各晶粒的某一个或几个晶面平行于试样的某一特定面(如轧面),一个或几个晶向平行于试样的某一特定方向(如轧向)。</li>
+</ul>
+</li>
+</ul>
+<h3 id="织构的表示方法"><a href="#织构的表示方法" class="headerlink" title="织构的表示方法"></a>织构的表示方法</h3><ul>
+<li>正级图</li>
+<li>反级图</li>
+</ul>
+]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -1082,7 +1310,14 @@
     <url>/2023/09/19/shen-du-xue-xi/</url>
     <content><![CDATA[<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
 <h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution</li>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的$f$和$g$进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
+</ul>
+</li>
+<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
 <li>局部链接、权值共享<ul>
 <li>举例来说，32*32的</li>
 </ul>
@@ -1241,7 +1476,53 @@
 </li>
 <li>细胞自噬与疾病</li>
 </ul>
-<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3>]]></content>
+<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
+<li>无膜细胞器</li>
+</ul>
+<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
+<li>基因<ul>
+<li>控制性状</li>
+</ul>
+</li>
+<li>基因的构成<ul>
+<li>调控区域<ul>
+<li>指导基因是否能够产生蛋白</li>
+</ul>
+</li>
+<li>启动子<ul>
+<li>和转录酶结合的序列</li>
+</ul>
+</li>
+<li>编码区域</li>
+<li>断裂基因<ul>
+<li>细菌基因：连续</li>
+<li>动物基因：断裂</li>
+</ul>
+</li>
+<li>原核基因</li>
+<li>真核基因<ul>
+<li>产生蛋白质的序列<ul>
+<li>内含子&amp;外显子</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>染色质与染色体<ul>
+<li>从DNA到染色质</li>
+</ul>
+</li>
+<li>遗传物质保证稳定机制<ul>
+<li>DNA精确复制<ul>
+<li>碱基配对</li>
+<li>DNA聚合酶的校正</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -1301,6 +1582,212 @@
       </categories>
       <tags>
         <tag>残章</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-19</title>
+    <url>/2023/10/19/2023-10-19/</url>
+    <content><![CDATA[<p>共同的焦虑会诞生情感<br>共同的快乐也会<br>晚上好冷</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/10/20/2023-10-20/</url>
+    <content><![CDATA[<p>量统课后问了老师问题<br>好欸！<br>中午在麦叔的铺子里进行了加餐<br>现在GPT3.5api GPT4.0 google colab pro均在手<br>启动！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日记10-25</title>
+    <url>/2023/10/25/2023-10-25/</url>
+    <content><![CDATA[<p>上午上了量统，奇怪的是，没有任何印象<br>心情还是很差，最近发生了很多事情<br>很难说自己是成长了还是依然很天真<br>但所幸，遇到的都是善良温柔的人<br>工图突然变得很难，网球感觉还是没什么感觉<br>一个人在图书馆学习<br>不知道期待着什么<br>也不知道担忧着什么<br>就这样单曲循环着《曾经我也想过一了百了》<br>不累，却也没什么精神<br>不喜欢这样的自己</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/10/22/2023-10-22/</url>
+    <content><![CDATA[<p>一切还是应该回到最初的轨道<br>孰轻孰重、孰是孰非<br>题中应有之义</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>日记10-26</title>
+    <url>/2023/10/26/2023-10-26/</url>
+    <content><![CDATA[<p>等天晴<br>一切似乎略微有了转机<br>发现答案就在自己身边啊<br>答案就在自己身边</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-28</title>
+    <url>/2023/10/28/2023-10-28/</url>
+    <content><![CDATA[<p>昨天干了啥（10.29记）<br>感觉把显示器的事情搞定了<br>早上干了什么完全想不清了<br>下午爆肝了7个小时搞定了二维圆柱绕流的事情<br>然后就晚上了<br>然后担心一个人是不是死掉了担心到2点<br>然后荒诞的一天就结束了</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-29</title>
+    <url>/2023/10/29/2023-10-29/</url>
+    <content><![CDATA[<p>啊啊啊啊啊啊啊啊啊啊<br>视唱练耳一定要练啊混蛋<br>昨天那个以为死掉的人<br>纯粹只是睡过了<br>md<br>忙忙忙忙忙<br>今天赶紧把论文的几个图给做了<br>急急急急急急急<br>明天组会警告</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-27</title>
+    <url>/2023/10/27/2023-10-27/</url>
+    <content><![CDATA[<p>新的一天<br>一天又一天的事务会冲刷悲伤与喜悦<br>正如海浪抹平万丈沟壑和孩子堆得城堡</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-31</title>
+    <url>/2023/10/31/2023-10-31/</url>
+    <content><![CDATA[<p>时间紧，任务重<br>时不我待！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-30</title>
+    <url>/2023/10/30/2023-10-30/</url>
+    <content><![CDATA[<p>马上过生日啦！<br>立牌到了，但是没有阿梓喵，气死我了<br>可恶</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记11-1</title>
+    <url>/2023/11/01/2023-11-01/</url>
+    <content><![CDATA[<p>生日……吗</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/10/25/cosmol-drug-release/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/10/22/langchain-xue-xi-bi-ji/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/11/01/gong-cheng-tu-xue/</url>
+    <content><![CDATA[<p>面对应封闭线框<br>类似性指导作图<br>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</p>
+<h2 id="立体与立体相交"><a href="#立体与立体相交" class="headerlink" title="立体与立体相交"></a>立体与立体相交</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>立体与立体相交简称相贯，立体表面交线称相贯线</p>
+<h3 id="相贯线的主要性质"><a href="#相贯线的主要性质" class="headerlink" title="相贯线的主要性质"></a>相贯线的主要性质</h3><ul>
+<li>表面性：位于两立体的表面上</li>
+<li>封闭性：一般是封闭的空间曲线或折线</li>
+<li>共有性：是两立体表面的共有线</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>量子与统计</title>
+    <url>/2023/10/28/liang-zi-yu-tong-ji/</url>
+    <content><![CDATA[<h3 id="第三章习题"><a href="#第三章习题" class="headerlink" title="第三章习题"></a>第三章习题</h3><ul>
+<li>有关氢原子的计算<ul>
+<li>半径的均值往往在球坐标系下计算<ul>
+<li>注意变换坐标系的相关细节</li>
+</ul>
+</li>
+<li>最概然半径，也即氢原子电子出现概率最大的半径值，可以通过计算不同$r$处的概率密度得到，注意$w(r)&#x3D;R^2(r)r^2$ </li>
+<li>动能：利用动能算符转化</li>
+</ul>
+</li>
+<li>有关经典物理中的计算<ul>
+<li>将能量表示式转化为算符</li>
+</ul>
+</li>
+<li>从态函数中读出信息<ul>
+<li>$\psi(r, \theta, \psi)&#x3D;\frac{1}{2} R_{21}(r) Y_{10}(\theta, \varphi)-\frac{\sqrt{3}}{2} R_{21}(r) Y_{1-1}(\theta, \varphi)$<ul>
+<li>$R_{nl},Y_{lm}$通过表达式确定$n、l、m$三个参数</li>
+<li>$n$可以确定$E$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>![[Pasted image 20231031184458.png]]</li>
+</ul>
+<h2 id="量子力学的矩阵形式与表象理论"><a href="#量子力学的矩阵形式与表象理论" class="headerlink" title="量子力学的矩阵形式与表象理论"></a>量子力学的矩阵形式与表象理论</h2><h3 id="Q表象"><a href="#Q表象" class="headerlink" title="Q表象"></a>Q表象</h3><ul>
+<li>力学量Q<ul>
+<li>$\hat{Q}\mu_i&#x3D;q_i\mu_i$</li>
+<li>将$\Psi$向本征函数系${ \mu_i,… }$上投影，得系数$a_n(t)$</li>
+<li>$|a_n|^2$就是在$\Psi(x,t)$所描写的态中测量力学量$\hat{Q}$所得结果为$q_n$的概率</li>
+<li>对连续谱和多自由度也成立</li>
+</ul>
+</li>
+</ul>
+<h3 id="算符的矩阵表示"><a href="#算符的矩阵表示" class="headerlink" title="算符的矩阵表示"></a>算符的矩阵表示</h3><ul>
+<li>坐标表象下，算符一般可表示为$\hat{F}(x,-i\hbar\frac{\partial}{\partial x})$ </li>
+<li>表示力学量$F$的矩阵是厄米矩阵</li>
+<li>力学量在自身表象中为对角的厄米矩阵</li>
+</ul>
+<h3 id="量子力学的矩阵形式"><a href="#量子力学的矩阵形式" class="headerlink" title="量子力学的矩阵形式"></a>量子力学的矩阵形式</h3><h2 id="第四章习题"><a href="#第四章习题" class="headerlink" title="第四章习题"></a>第四章习题</h2><h3 id="课堂习题"><a href="#课堂习题" class="headerlink" title="课堂习题"></a>课堂习题</h3><ul>
+<li>$\hat{A}^2&#x3D;1$求本征值及矩阵</li>
+<li>$\hat{A}^2&#x3D;\hat{A}$求本征值及矩阵</li>
+<li>坐标与动量表象下算符的矩阵元</li>
+<li>粒子以某态在一维无限深势阱中运动，求该态在能量表象下的矩阵表示（态变换）</li>
+<li>一维谐振子的坐标、动量以及H在能量表象中的表示（算符变换）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
       </tags>
   </entry>
 </search>
