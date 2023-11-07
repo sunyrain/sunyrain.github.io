@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sunyrain.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="机器学习期中复习提纲（### Lecture1-### Lecture5） 注：课件中所有红色部分需要认真复习！ Lecture 1 霍夫丁不等式（Hoeffding inequality）含义，与欠拟合和过拟合的关联  In-sample error 和 out-of-sample error 概念  复杂度（complexity）和数据规模对机器学习效果的影响  线性回归（Linear reg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习期中CheckSheet">
+<meta property="og:url" content="https://sunyrain.github.io/2023/11/01/ji-qi-xue-xi-qi-zhong-check-sheet/index.html">
+<meta property="og:site_name" content="whilesunny">
+<meta property="og:description" content="机器学习期中复习提纲（### Lecture1-### Lecture5） 注：课件中所有红色部分需要认真复习！ Lecture 1 霍夫丁不等式（Hoeffding inequality）含义，与欠拟合和过拟合的关联  In-sample error 和 out-of-sample error 概念  复杂度（complexity）和数据规模对机器学习效果的影响  线性回归（Linear reg">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-01T14:10:25.173Z">
+<meta property="article:modified_time" content="2023-11-01T14:12:23.968Z">
+<meta property="article:author" content="whilesunny">
+<meta property="article:tag" content="课程">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://sunyrain.github.io/2023/11/01/ji-qi-xue-xi-qi-zhong-check-sheet/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>机器学习期中CheckSheet | whilesunny</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">whilesunny</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Sunny&Rainy</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/01/ji-qi-xue-xi-qi-zhong-check-sheet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          机器学习期中CheckSheet
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-11-01 22:10:25 / 修改时间：22:12:23" itemprop="dateCreated datePublished" datetime="2023-11-01T22:10:25+08:00">2023-11-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>机器学习期中复习提纲（### Lecture1-### Lecture5）</p>
+<p>注：课件中所有红色部分需要认真复习！</p>
+<h3 id="Lecture-1"><a href="#Lecture-1" class="headerlink" title="Lecture 1"></a>Lecture 1</h3><ol>
+<li><p>霍夫丁不等式（Hoeffding inequality）含义，与欠拟合和过拟合的关联</p>
+</li>
+<li><p>In-sample error 和 out-of-sample error 概念</p>
+</li>
+<li><p>复杂度（complexity）和数据规模对机器学习效果的影响</p>
+</li>
+<li><p>线性回归（Linear regression）</p>
+</li>
+</ol>
+<ul>
+<li><p>定义（自变量，因变量，公式，参数 β，残差 residual，成本函数 cost function）</p>
+</li>
+<li><p>假设（弱外生性、线性、方差齐性）</p>
+</li>
+<li><p>最小二乘法（OLS）计算验证过程</p>
+</li>
+<li><p>判定系数（coefficient of determination）定义</p>
+</li>
+</ul>
+<ol start="5">
+<li>多元线性回归（Multiple linear regression）</li>
+</ol>
+<ul>
+<li><p>概念和假设（新增假设 No perfect multicollinearity）</p>
+</li>
+<li><p>β̂的解的表达</p>
+</li>
+</ul>
+<ol start="6">
+<li>极大似然估计（Maximum likelihood estimation）</li>
+</ol>
+<ul>
+<li><p>概念和假设</p>
+</li>
+<li><p>目标函数</p>
+</li>
+<li><p>多元线性回归问题中β̂和𝜎</p>
+</li>
+</ul>
+<p>̂ 2的解的表达</p>
+<ol start="7">
+<li>梯度下降（Gradient desent）</li>
+</ol>
+<ul>
+<li><p>目标、具体实现流程</p>
+</li>
+<li><p>参数更新方式</p>
+</li>
+<li><p>步长（learning step）以及其影响</p>
+</li>
+</ul>
+<h3 id="Lecture-2"><a href="#Lecture-2" class="headerlink" title="Lecture 2"></a>Lecture 2</h3><ol>
+<li>线搜索（Line search）</li>
+</ol>
+<ul>
+<li><p>目标和具体实现流程</p>
+</li>
+<li><p>优化步长的方法</p>
+</li>
+</ul>
+<ol start="2">
+<li>牛顿法（Newton’s method）</li>
+</ol>
+<ul>
+<li><p>目标和具体实现流程</p>
+</li>
+<li><p>参数更新方式（一维和多维）</p>
+</li>
+</ul>
+<ol start="3">
+<li>随机梯度下降（Stochastic gradient descent）</li>
+</ol>
+<ul>
+<li><p>目标和具体实现流程</p>
+</li>
+<li><p>参数更新方式</p>
+</li>
+</ul>
+<ol start="4">
+<li>小批量梯度下降（Mini-batch gradient descent）</li>
+</ol>
+<ul>
+<li><p>目标和具体实现流程</p>
+</li>
+<li><p>参数更新方式</p>
+</li>
+</ul>
+<ol start="5">
+<li>动量梯度下降法 &amp; Nesterov 加速梯度下降法（Gradient descent with momentum &amp;</li>
+</ol>
+<p>Nesterov’s accelerated Gradient descent）</p>
+<ul>
+<li>了解基础概念</li>
+</ul>
+<ol start="6">
+<li><p>AdaGrad&#x2F;RMSprop&#x2F;Adam-  了解上述三种方法的特点</p>
+</li>
+<li><p>基函数回归（Basis function regression）</p>
+</li>
+</ol>
+<ul>
+<li>定义（自变量，因变量，公式，参数，成本函数 cost function）</li>
+</ul>
+<ol start="8">
+<li><p>归纳偏置（Inductive bias）概念</p>
+</li>
+<li><p>No Free lunch theorem 概念</p>
+</li>
+<li><p>欠拟合和过拟合（Overfitting and underfitting）概念和过拟合原因.</p>
+</li>
+<li><p>训练损失和测试损失（Training loss &amp; testing loss）概念和变化原因</p>
+</li>
+<li><p>偏差和方差（Bias and variance）</p>
+</li>
+</ol>
+<ul>
+<li><p>了解 bias-variance trade-off（权衡）</p>
+</li>
+<li><p>No free lunch 了解含义</p>
+</li>
+</ul>
+<ol start="13">
+<li>交叉验证（Cross-validation）</li>
+</ol>
+<ul>
+<li><p>了解基础概念</p>
+</li>
+<li><p>N-fold cross-validation 具体流程</p>
+</li>
+</ul>
+<h3 id="Lecture-3"><a href="#Lecture-3" class="headerlink" title="Lecture 3"></a>Lecture 3</h3><ol>
+<li>正则化（Regularization）</li>
+</ol>
+<ul>
+<li><p>正则化的目的</p>
+</li>
+<li><p>Ridge regression 的 cost function 和梯度更新过程</p>
+</li>
+<li><p>Lasso 相关概念</p>
+</li>
+</ul>
+<ol start="2">
+<li>逻辑回归（Logistic Regression）</li>
+</ol>
+<ul>
+<li><p>定义（自变量，因变量，参数 β，sigmoid 函数，似然函数 Likelihood function）</p>
+</li>
+<li><p>随机梯度下降法&#x2F;梯度下降法(stochastic gradient descent&#x2F;gradient descent)</p>
+</li>
+</ul>
+<p>具体实现流程和下降公式</p>
+<ol start="3">
+<li>感知机(Perceptron)</li>
+</ol>
+<ul>
+<li>了解基本概念</li>
+</ul>
+<ol start="4">
+<li>Gaussian discriminant analysis</li>
+</ol>
+<ul>
+<li>了解高斯判别整体流程</li>
+</ul>
+<h3 id="Lecture-4"><a href="#Lecture-4" class="headerlink" title="Lecture 4"></a>Lecture 4</h3><ol>
+<li>决策树（Decision tree）</li>
+</ol>
+<ul>
+<li><p>基本概念（理清课件上的例子和 code 中例子）和具体实现流程</p>
+</li>
+<li><p>拆分标准（Splitting criteria）</p>
+</li>
+<li><p>分类错误（classification error）的几种度量标准（metrics）</p>
+</li>
+<li><p>终止条件（Stopping condition）</p>
+</li>
+<li><p>Using decision tree for regression 了解基本概念</p>
+</li>
+</ul>
+<ol start="2">
+<li><p>Regression tree 了解基本概念</p>
+</li>
+<li><p>Bagging</p>
+</li>
+</ol>
+<ul>
+<li><p>了解基本概念</p>
+</li>
+<li><p>优势（Advantages）和局限（Limitation）</p>
+</li>
+</ul>
+<ol start="4">
+<li>随机森林（Random forest）</li>
+</ol>
+<ul>
+<li><p>了解基本概念和实现流程</p>
+</li>
+<li><p>调整随机森林的方法5. Boosting</p>
+</li>
+<li><p>了解基本概念和实现流程</p>
+</li>
+</ul>
+<ol start="6">
+<li>Gradient Boosting</li>
+</ol>
+<ul>
+<li>了解基本概念</li>
+</ul>
+<ol start="7">
+<li>KNN（K-nearest neighborhood）</li>
+</ol>
+<ul>
+<li><p>基本概念和具体实现流程</p>
+</li>
+<li><p>Parzen Windows and soft boundary 了解概念</p>
+</li>
+<li><p>了解 K-D tree 和 LSH 的目的</p>
+</li>
+</ul>
+<h3 id="Lecture-5"><a href="#Lecture-5" class="headerlink" title="Lecture 5"></a>Lecture 5</h3><ol>
+<li>K-means</li>
+</ol>
+<ul>
+<li>概念和具体实现流程</li>
+</ul>
+<ol start="2">
+<li>分层聚类（Hierarchical clustering）</li>
+</ol>
+<ul>
+<li><p>了解基本概念和实现流程</p>
+</li>
+<li><p>组间距离定义</p>
+</li>
+</ul>
+<ol start="3">
+<li>BFR</li>
+</ol>
+<ul>
+<li><p>了解基本概念和实现流程</p>
+</li>
+<li><p>Meta-data 的使用</p>
+</li>
+</ul>
+<ol start="4">
+<li>Mixture of Gaussians</li>
+</ol>
+<ul>
+<li><p>隐藏变量和正态假设的概念</p>
+</li>
+<li><p>似然函数</p>
+</li>
+<li><p>能简述 EM 算法流程</p>
+</li>
+<li><p>Jensen’s inequality</p>
+</li>
+</ul>
+<ol start="5">
+<li>PCA</li>
+</ol>
+<ul>
+<li><p>算法目的</p>
+</li>
+<li><p>预处理流程</p>
+</li>
+<li><p>具体实现</p>
+</li>
+</ul>
+<p>别的注意点：</p>
+<ol>
+<li><p>非参数方法和含参数方法的区别</p>
+</li>
+<li><p>监督学习和无监督学习的区别</p>
+</li>
+<li><p>需要具备书写伪代码的能力</p>
+</li>
+<li><p>在算法实现过程中哪些因素会影响最终结果</p>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag"># 课程</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/" rel="prev" title="Hexo git问题">
+      <i class="fa fa-chevron-left"></i> Hexo git问题
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/11/04/2023-11-04/" rel="next" title="日记11-4">
+      日记11-4 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lecture-1"><span class="nav-number">1.</span> <span class="nav-text">Lecture 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lecture-2"><span class="nav-number">2.</span> <span class="nav-text">Lecture 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lecture-3"><span class="nav-number">3.</span> <span class="nav-text">Lecture 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lecture-4"><span class="nav-number">4.</span> <span class="nav-text">Lecture 4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lecture-5"><span class="nav-number">5.</span> <span class="nav-text">Lecture 5</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">whilesunny</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">68</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">whilesunny</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+  
+
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</html>
