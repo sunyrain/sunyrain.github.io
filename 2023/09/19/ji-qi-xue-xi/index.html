@@ -28,7 +28,7 @@
 <meta property="og:description" content="9-19 第一讲">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-19T01:51:02.572Z">
-<meta property="article:modified_time" content="2023-11-05T12:27:10.567Z">
+<meta property="article:modified_time" content="2023-11-07T13:03:01.657Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-05 20:27:10" itemprop="dateModified" datetime="2023-11-05T20:27:10+08:00">2023-11-05</time>
+                <time title="修改时间：2023-11-07 21:03:01" itemprop="dateModified" datetime="2023-11-07T21:03:01+08:00">2023-11-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -610,7 +610,10 @@
 </li>
 </ul>
 </li>
-<li>GDA高斯判别分析</li>
+<li>GDA高斯判别分析<ul>
+<li>与一般的Discriminative learning算法不同，GDA尝试学习$p(x|y)(and ; p(y))$ ,之后利用其去构建后验分布</li>
+</ul>
+</li>
 </ul>
 <h4 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h4><ul>
 <li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
@@ -720,7 +723,100 @@
 <li>逻辑是，对于多个事件，建立很多小的表，以避免建立所有情况合成的大表</li>
 <li>从独立到条件独立</li>
 </ul>
-<h3 id="Undirected-graphs-Markov-random-field"><a href="#Undirected-graphs-Markov-random-field" class="headerlink" title="Undirected graphs (Markov random field)"></a>Undirected graphs (Markov random field)</h3>
+<h3 id="Undirected-graphs-Markov-random-field"><a href="#Undirected-graphs-Markov-random-field" class="headerlink" title="Undirected graphs (Markov random field)"></a>Undirected graphs (Markov random field)</h3><h2 id="Reinforcement-learning"><a href="#Reinforcement-learning" class="headerlink" title="Reinforcement learning"></a>Reinforcement learning</h2><h3 id="马尔可夫奖励过程（MRP-Markov-reward-process）"><a href="#马尔可夫奖励过程（MRP-Markov-reward-process）" class="headerlink" title="马尔可夫奖励过程（MRP Markov reward process）"></a>马尔可夫奖励过程（MRP Markov reward process）</h3><ul>
+<li>首先进行基本定义，一般可以定义为$\langle S,P,R,\gamma \rangle$<ul>
+<li>$S$是一个有限的状态集合</li>
+<li>$P$是转移概率矩阵，$P_{ss’}$记录了从$s$状态出发，到达$s’$状态的概率</li>
+<li>$R$是奖励函数<ul>
+<li>$R_s$是当前在$s$状态下，下一时刻能获得的奖励期望</li>
+</ul>
+</li>
+<li>$\gamma$是折现参数<ul>
+<li>对远期能获得的奖励乘系数“折现”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关键方程<ul>
+<li>位置价值函数$v(s) &#x3D;\mathbb{E}[G_t|S_t&#x3D;s]$ 也就是现在在状态$s$，之后总的收益期望</li>
+<li>也可以递归定义如下：$$v(s)&#x3D;\mathbb{E}[R_t|S_t&#x3D;s]+\gamma\sum_{s^{\prime}}v(s^{\prime})P[S_{t+1}&#x3D;s^{\prime}|S_t&#x3D;s]$$</li>
+<li>第一项是在$t$时刻处于状态$s$时，$t+1$时刻获得的即时$Reward$的期望，后面的累加项统计了下一步的所有可能，并将它们的价值函数折现求和。</li>
+<li>这里的$\gamma$是折现函数</li>
+</ul>
+</li>
+<li>两种计算$v$的方法<ul>
+<li>矩阵计算<ul>
+<li>$v&#x3D;R+\gamma pv$ </li>
+<li>故$v&#x3D;(I-\gamma\mathcal{P})^{-1}\mathcal{R}$</li>
+</ul>
+</li>
+<li>动态规划<ul>
+<li>在收敛之前，依据公式反复迭代<ul>
+<li>$v^{(k)}(s)&#x3D;R(s)+\gamma\sum_{s’\in S}P(s’|s)v^{(k-1)}\left(s’\right)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="马尔可夫决策过程（MDP）"><a href="#马尔可夫决策过程（MDP）" class="headerlink" title="马尔可夫决策过程（MDP）"></a>马尔可夫决策过程（MDP）</h3><blockquote>
+<p>在MRP基础上引入了决策过程</p>
+</blockquote>
+<ul>
+<li>同样可给出定义$\langle S,A,P,R,\gamma \rangle$<ul>
+<li>补充定义了$A$，$A$是有限的行为的集合，例如平面游戏中的上下左右之类的</li>
+</ul>
+</li>
+<li>策略(policy)<ul>
+<li>策略就是在给定状态下，决策的分布，一般记作$\pi$，定义是$\left.\pi(a|s)&#x3D;\mathbb{P}\left[A_{t}&#x3D;a\right|S_{t}&#x3D;s\right]$</li>
+</ul>
+</li>
+<li>在引入了决策过程后，状态价值函数发生了改变，因为此时其同样与policy相关<ul>
+<li>定义$v_{\pi}(s)&#x3D;\mathbb{E}<em>{\pi}[G</em>{t}|S_{t}&#x3D;s]$ ，这是新的状态价值函数</li>
+<li>定义$q_\pi(s,a)&#x3D;\mathbb{E}_\pi[G_t|S_t&#x3D;s,A_t&#x3D;\alpha]$ ，这被称作决策价值函数<ul>
+<li>含义是：在时间$t$处于状态$s$时，做出决策$\alpha$且之后遵循policy $\pi$的预期收益</li>
+</ul>
+</li>
+<li>在如上定义之后，我们可以把$v$的公式改写为<ul>
+<li>$v_\pi(s)&#x3D;\mathbb{E}<em>\pi[G_t|S_t&#x3D;s]&#x3D;\sum</em>{a\in\mathcal{A}}\mathbb{E}_\pi[G_t,A_t&#x3D;a|S_t&#x3D;s]$<ul>
+<li>穷举所有的决策求和</li>
+</ul>
+</li>
+<li>$&#x3D;\sum_{a\in\mathcal{A}}\mathbb{E}<em>{\pi}[G</em>{t}|S_{t}&#x3D;s,A_{t}&#x3D;a]\mathbb{P}[A_{t}&#x3D;a|S_{t}&#x3D;s]$</li>
+<li>$&#x3D;\sum_{a\in\mathcal{A}}q_{\pi}(s,a)\pi(a|s)$ <ul>
+<li>当然，我们也可以将$q_{\pi}$定义为递归形式</li>
+<li>${\mathcal R}<em>{s}^{a}+\gamma\sum</em>{\forall s\prime}v_{\pi}(s^{\prime}){\mathcal P}_{ss^{\prime}}^{a}$<ul>
+<li>思路与之前类似</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>小网格世界示例<ul>
+<li>![[Pasted image 20231107164046.png]]<ul>
+<li>agent服从全局随机策略，即上下左右均为0.25概率</li>
+<li>如果操作走出了网格，则状态不变</li>
+<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="MDP-Policy-Iteration"><a href="#MDP-Policy-Iteration" class="headerlink" title="MDP: Policy Iteration"></a>MDP: Policy Iteration</h3><ul>
+<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进<ul>
+<li>一般可以用$\pi(a|s)&#x3D;\frac1{A(s)}$进行初始化（$A(s)$指的是$s$状态下，可执行的决策总数）</li>
+<li>伪代码表示策略更新<ul>
+<li>$\pi^{<em>}(a|s)&#x3D;\operatorname</em>{argmax}<em>{\mathrm{a}}q</em>{\pi}(s,a)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
     </div>
 
     
@@ -802,7 +898,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-19-%E7%AC%AC%E4%B8%80%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">9-19 第一讲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">2.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Illustration-1D"><span class="nav-number">2.1.</span> <span class="nav-text">Illustration(1D)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">3.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">3.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">4.</span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number">5.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">5.1.</span> <span class="nav-text">Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">5.1.1.</span> <span class="nav-text">Decision Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Stopping-Condition"><span class="nav-number">5.1.1.1.</span> <span class="nav-text">Stopping Condition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#For-Regression"><span class="nav-number">5.1.1.2.</span> <span class="nav-text">For Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Bagging"><span class="nav-number">5.1.1.3.</span> <span class="nav-text">Bagging</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Random-forest"><span class="nav-number">5.1.1.4.</span> <span class="nav-text">Random forest</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Boosting"><span class="nav-number">5.1.1.5.</span> <span class="nav-text">Boosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#GBoosting"><span class="nav-number">5.1.1.6.</span> <span class="nav-text">GBoosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#K-nearest-neighbourhood"><span class="nav-number">5.1.1.7.</span> <span class="nav-text">K-nearest neighbourhood</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">6.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clustering"><span class="nav-number">6.1.</span> <span class="nav-text">Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#K-means%EF%BC%88no-label%EF%BC%89"><span class="nav-number">6.1.1.</span> <span class="nav-text">K-means（no label）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hierarchical-clustering%EF%BC%88%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">6.1.2.</span> <span class="nav-text">Hierarchical clustering（层次聚类）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-Clustering"><span class="nav-number">6.2.</span> <span class="nav-text">Big Data Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BFR%EF%BC%88%E4%BA%BA%E5%90%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="nav-number">6.2.1.</span> <span class="nav-text">BFR（人名算法）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-vector"><span class="nav-number">7.</span> <span class="nav-text">Support vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernel-%E6%96%B9%E6%B3%95"><span class="nav-number">7.1.</span> <span class="nav-text">Kernel 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Learning-with-Probabilistic-Graphic-Model"><span class="nav-number">8.</span> <span class="nav-text">Learning with Probabilistic Graphic Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Directed-graphs-Baysian-network"><span class="nav-number">8.1.</span> <span class="nav-text">Directed graphs (Baysian network)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undirected-graphs-Markov-random-field"><span class="nav-number">8.2.</span> <span class="nav-text">Undirected graphs (Markov random field)</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-19-%E7%AC%AC%E4%B8%80%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">9-19 第一讲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">2.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Illustration-1D"><span class="nav-number">2.1.</span> <span class="nav-text">Illustration(1D)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">3.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">3.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">4.</span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number">5.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">5.1.</span> <span class="nav-text">Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">5.1.1.</span> <span class="nav-text">Decision Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Stopping-Condition"><span class="nav-number">5.1.1.1.</span> <span class="nav-text">Stopping Condition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#For-Regression"><span class="nav-number">5.1.1.2.</span> <span class="nav-text">For Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Bagging"><span class="nav-number">5.1.1.3.</span> <span class="nav-text">Bagging</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Random-forest"><span class="nav-number">5.1.1.4.</span> <span class="nav-text">Random forest</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Boosting"><span class="nav-number">5.1.1.5.</span> <span class="nav-text">Boosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#GBoosting"><span class="nav-number">5.1.1.6.</span> <span class="nav-text">GBoosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#K-nearest-neighbourhood"><span class="nav-number">5.1.1.7.</span> <span class="nav-text">K-nearest neighbourhood</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">6.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clustering"><span class="nav-number">6.1.</span> <span class="nav-text">Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#K-means%EF%BC%88no-label%EF%BC%89"><span class="nav-number">6.1.1.</span> <span class="nav-text">K-means（no label）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hierarchical-clustering%EF%BC%88%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">6.1.2.</span> <span class="nav-text">Hierarchical clustering（层次聚类）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-Clustering"><span class="nav-number">6.2.</span> <span class="nav-text">Big Data Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BFR%EF%BC%88%E4%BA%BA%E5%90%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="nav-number">6.2.1.</span> <span class="nav-text">BFR（人名算法）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-vector"><span class="nav-number">7.</span> <span class="nav-text">Support vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernel-%E6%96%B9%E6%B3%95"><span class="nav-number">7.1.</span> <span class="nav-text">Kernel 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Learning-with-Probabilistic-Graphic-Model"><span class="nav-number">8.</span> <span class="nav-text">Learning with Probabilistic Graphic Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Directed-graphs-Baysian-network"><span class="nav-number">8.1.</span> <span class="nav-text">Directed graphs (Baysian network)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undirected-graphs-Markov-random-field"><span class="nav-number">8.2.</span> <span class="nav-text">Undirected graphs (Markov random field)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reinforcement-learning"><span class="nav-number">9.</span> <span class="nav-text">Reinforcement learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%EF%BC%88MRP-Markov-reward-process%EF%BC%89"><span class="nav-number">9.1.</span> <span class="nav-text">马尔可夫奖励过程（MRP Markov reward process）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B%EF%BC%88MDP%EF%BC%89"><span class="nav-number">9.2.</span> <span class="nav-text">马尔可夫决策过程（MDP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Policy-Iteration"><span class="nav-number">9.3.</span> <span class="nav-text">MDP: Policy Iteration</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -816,7 +912,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">68</span>
+          <span class="site-state-item-count">69</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1004,6 +1100,59 @@ window.addEventListener('pjax:success', () => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

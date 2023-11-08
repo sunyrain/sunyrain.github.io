@@ -729,13 +729,56 @@
   <entry>
     <title>基于Python的科学与数值计算</title>
     <url>/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/</url>
-    <content><![CDATA[<h2 id="第一讲：绪论"><a href="#第一讲：绪论" class="headerlink" title="第一讲：绪论"></a>第一讲：绪论</h2><span id="more"></span>
-<h3 id="pyhton基本操作"><a href="#pyhton基本操作" class="headerlink" title="pyhton基本操作"></a>pyhton基本操作</h3><ul>
-<li>数学运算<ul>
-<li>&#x2F;&#x2F;整数除法</li>
+    <content><![CDATA[<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="ndarray"><a href="#ndarray" class="headerlink" title="ndarray"></a>ndarray</h2><ul>
+<li>基本信息<ul>
+<li>numpy的基础数据结构（下简称ndarray为array）</li>
+<li>向量、矩阵、张量等均用array表示</li>
+<li>数组下标从0开始</li>
 </ul>
 </li>
-<li></li>
+<li>ndarray与list的区别<ul>
+<li>array元素为相同数据类型</li>
+<li>array固定长度</li>
+<li>array易进行维度、形状变换</li>
+<li>array支持完整的向量&#x2F;张量操作和线性代数函数</li>
+</ul>
+</li>
+<li>adarray类<ul>
+<li>参数<ul>
+<li>shape 形状</li>
+<li>dtype 类型</li>
+<li>buffer 可以指定数据块而无需复制</li>
+<li>offset 指定从数据块的第几个位置开始复制</li>
+<li>strides 各维度步进字节数</li>
+<li>…</li>
+</ul>
+</li>
+<li>属性<ul>
+<li>shape 包含数组每个维度的元素数量的元组，如 (3, 5)</li>
+<li>size 元素总数</li>
+<li>ndim 维度数量，1、2、3⋯</li>
+<li>nbytes 存储数据的总字节数</li>
+<li>dtype 数据类型</li>
+<li>itemsize 每个元素的字节数，如 float32 是 4 个字节</li>
+<li>strides: 跨步&#x2F;步幅，索引访问的间隔字节数</li>
+<li>data 数组的真正数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于array的运算<ul>
+<li>基于元素的算数运算<ul>
+<li>numpy数组的基本算数运算是作用到每个元素上的</li>
+<li>广播机制<ul>
+<li>a、b 维数相等，某一维（轴）上的数量不等，其中一个数组在该维度上数量为 1，则将该数组在该轴上的数量扩充（复制），使其与另外的数组相同（广播）</li>
+<li>a、b 维数不等，将维数少的数组从左扩充长度为 1 的新维度，直到二者维度相等。然后再执行上面的广播操作</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>聚合函数</li>
 </ul>
 ]]></content>
       <categories>
@@ -1273,7 +1316,10 @@
 </li>
 </ul>
 </li>
-<li>GDA高斯判别分析</li>
+<li>GDA高斯判别分析<ul>
+<li>与一般的Discriminative learning算法不同，GDA尝试学习$p(x|y)(and ; p(y))$ ,之后利用其去构建后验分布</li>
+</ul>
+</li>
 </ul>
 <h4 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h4><ul>
 <li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
@@ -1383,7 +1429,100 @@
 <li>逻辑是，对于多个事件，建立很多小的表，以避免建立所有情况合成的大表</li>
 <li>从独立到条件独立</li>
 </ul>
-<h3 id="Undirected-graphs-Markov-random-field"><a href="#Undirected-graphs-Markov-random-field" class="headerlink" title="Undirected graphs (Markov random field)"></a>Undirected graphs (Markov random field)</h3>]]></content>
+<h3 id="Undirected-graphs-Markov-random-field"><a href="#Undirected-graphs-Markov-random-field" class="headerlink" title="Undirected graphs (Markov random field)"></a>Undirected graphs (Markov random field)</h3><h2 id="Reinforcement-learning"><a href="#Reinforcement-learning" class="headerlink" title="Reinforcement learning"></a>Reinforcement learning</h2><h3 id="马尔可夫奖励过程（MRP-Markov-reward-process）"><a href="#马尔可夫奖励过程（MRP-Markov-reward-process）" class="headerlink" title="马尔可夫奖励过程（MRP Markov reward process）"></a>马尔可夫奖励过程（MRP Markov reward process）</h3><ul>
+<li>首先进行基本定义，一般可以定义为$\langle S,P,R,\gamma \rangle$<ul>
+<li>$S$是一个有限的状态集合</li>
+<li>$P$是转移概率矩阵，$P_{ss’}$记录了从$s$状态出发，到达$s’$状态的概率</li>
+<li>$R$是奖励函数<ul>
+<li>$R_s$是当前在$s$状态下，下一时刻能获得的奖励期望</li>
+</ul>
+</li>
+<li>$\gamma$是折现参数<ul>
+<li>对远期能获得的奖励乘系数“折现”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关键方程<ul>
+<li>位置价值函数$v(s) &#x3D;\mathbb{E}[G_t|S_t&#x3D;s]$ 也就是现在在状态$s$，之后总的收益期望</li>
+<li>也可以递归定义如下：$$v(s)&#x3D;\mathbb{E}[R_t|S_t&#x3D;s]+\gamma\sum_{s^{\prime}}v(s^{\prime})P[S_{t+1}&#x3D;s^{\prime}|S_t&#x3D;s]$$</li>
+<li>第一项是在$t$时刻处于状态$s$时，$t+1$时刻获得的即时$Reward$的期望，后面的累加项统计了下一步的所有可能，并将它们的价值函数折现求和。</li>
+<li>这里的$\gamma$是折现函数</li>
+</ul>
+</li>
+<li>两种计算$v$的方法<ul>
+<li>矩阵计算<ul>
+<li>$v&#x3D;R+\gamma pv$ </li>
+<li>故$v&#x3D;(I-\gamma\mathcal{P})^{-1}\mathcal{R}$</li>
+</ul>
+</li>
+<li>动态规划<ul>
+<li>在收敛之前，依据公式反复迭代<ul>
+<li>$v^{(k)}(s)&#x3D;R(s)+\gamma\sum_{s’\in S}P(s’|s)v^{(k-1)}\left(s’\right)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="马尔可夫决策过程（MDP）"><a href="#马尔可夫决策过程（MDP）" class="headerlink" title="马尔可夫决策过程（MDP）"></a>马尔可夫决策过程（MDP）</h3><blockquote>
+<p>在MRP基础上引入了决策过程</p>
+</blockquote>
+<ul>
+<li>同样可给出定义$\langle S,A,P,R,\gamma \rangle$<ul>
+<li>补充定义了$A$，$A$是有限的行为的集合，例如平面游戏中的上下左右之类的</li>
+</ul>
+</li>
+<li>策略(policy)<ul>
+<li>策略就是在给定状态下，决策的分布，一般记作$\pi$，定义是$\left.\pi(a|s)&#x3D;\mathbb{P}\left[A_{t}&#x3D;a\right|S_{t}&#x3D;s\right]$</li>
+</ul>
+</li>
+<li>在引入了决策过程后，状态价值函数发生了改变，因为此时其同样与policy相关<ul>
+<li>定义$v_{\pi}(s)&#x3D;\mathbb{E}<em>{\pi}[G</em>{t}|S_{t}&#x3D;s]$ ，这是新的状态价值函数</li>
+<li>定义$q_\pi(s,a)&#x3D;\mathbb{E}_\pi[G_t|S_t&#x3D;s,A_t&#x3D;\alpha]$ ，这被称作决策价值函数<ul>
+<li>含义是：在时间$t$处于状态$s$时，做出决策$\alpha$且之后遵循policy $\pi$的预期收益</li>
+</ul>
+</li>
+<li>在如上定义之后，我们可以把$v$的公式改写为<ul>
+<li>$v_\pi(s)&#x3D;\mathbb{E}<em>\pi[G_t|S_t&#x3D;s]&#x3D;\sum</em>{a\in\mathcal{A}}\mathbb{E}_\pi[G_t,A_t&#x3D;a|S_t&#x3D;s]$<ul>
+<li>穷举所有的决策求和</li>
+</ul>
+</li>
+<li>$&#x3D;\sum_{a\in\mathcal{A}}\mathbb{E}<em>{\pi}[G</em>{t}|S_{t}&#x3D;s,A_{t}&#x3D;a]\mathbb{P}[A_{t}&#x3D;a|S_{t}&#x3D;s]$</li>
+<li>$&#x3D;\sum_{a\in\mathcal{A}}q_{\pi}(s,a)\pi(a|s)$ <ul>
+<li>当然，我们也可以将$q_{\pi}$定义为递归形式</li>
+<li>${\mathcal R}<em>{s}^{a}+\gamma\sum</em>{\forall s\prime}v_{\pi}(s^{\prime}){\mathcal P}_{ss^{\prime}}^{a}$<ul>
+<li>思路与之前类似</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>小网格世界示例<ul>
+<li>![[Pasted image 20231107164046.png]]<ul>
+<li>agent服从全局随机策略，即上下左右均为0.25概率</li>
+<li>如果操作走出了网格，则状态不变</li>
+<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="MDP-Policy-Iteration"><a href="#MDP-Policy-Iteration" class="headerlink" title="MDP: Policy Iteration"></a>MDP: Policy Iteration</h3><ul>
+<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进<ul>
+<li>一般可以用$\pi(a|s)&#x3D;\frac1{A(s)}$进行初始化（$A(s)$指的是$s$状态下，可执行的决策总数）</li>
+<li>伪代码表示策略更新<ul>
+<li>$\pi^{<em>}(a|s)&#x3D;\operatorname</em>{argmax}<em>{\mathrm{a}}q</em>{\pi}(s,a)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -1698,6 +1837,38 @@
 <li><p>需要具备书写伪代码的能力</p>
 </li>
 <li><p>在算法实现过程中哪些因素会影响最终结果</p>
+</li>
+</ol>
+<h3 id="Lecture-6"><a href="#Lecture-6" class="headerlink" title="Lecture 6"></a>Lecture 6</h3><ol>
+<li>Principle components analysis <ul>
+<li>算法目的 </li>
+<li>具体流程</li>
+<li>与 eigenvalue eigenvector 的关系</li>
+</ul>
+</li>
+<li>Support vector machine <ul>
+<li>算法目的 </li>
+<li>基本思路 </li>
+<li>目标、约束、决策边界</li>
+</ul>
+</li>
+<li>Learning with Probabilistic Graphic Model <ul>
+<li>Independent &amp; Conditional independent</li>
+</ul>
+</li>
+<li>Hidden Markov chain (lecture 7) <ul>
+<li>Forward-backward algorithm</li>
+</ul>
+</li>
+</ol>
+<h3 id="Lecture-7"><a href="#Lecture-7" class="headerlink" title="Lecture 7"></a>Lecture 7</h3><ol>
+<li>Markov Decision process </li>
+<li>Bellman Expectation equation </li>
+<li>Bellman Optimality equation </li>
+<li>General policy iteration <ol>
+<li>Policy iteration </li>
+<li>Value iteration</li>
+</ol>
 </li>
 </ol>
 ]]></content>
@@ -2192,6 +2363,10 @@
 <h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
 <li>多个遗传密码对应同一个氨基酸</li>
 </ul>
+<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
+<li>对环境刺激做出应答</li>
+<li>发育</li>
+</ul>
 ]]></content>
       <categories>
         <category>课程</category>
@@ -2296,14 +2471,23 @@
 <li>![[Pasted image 20231031184458.png]]</li>
 </ul>
 <h2 id="量子力学的矩阵形式与表象理论"><a href="#量子力学的矩阵形式与表象理论" class="headerlink" title="量子力学的矩阵形式与表象理论"></a>量子力学的矩阵形式与表象理论</h2><h3 id="Q表象"><a href="#Q表象" class="headerlink" title="Q表象"></a>Q表象</h3><ul>
-<li>将某态转变为力学量Q表象下的表示<br>  - $\hat{Q}\mu_i&#x3D;q_i\mu_i$，${ \mu_{i} }$是其本征态函数，构成态空间正交归一完备的基矢<ul>
-<li>将$\Psi$向本征函数系${ \mu_i,… }$上投影，得系数$a_n(t)$</li>
+<li>将某态转变为力学量Q表象下的表示<ul>
+<li>$\hat{Q}\mu_i&#x3D;q_i\mu_i$，${ \mu_{i} }$是其本征态函数，构成态空间正交归一完备的基矢</li>
+<li>将$\Psi$向本征函数系${ \mu_i,… }$上投影，得系数$a_n(t)$<ul>
+<li>而一组系数构成的向量，就是$\hat{Q}$表象下的态矢量</li>
+</ul>
+</li>
 <li>$|a_n|^2$就是在$\Psi(x,t)$所描写的态中测量力学量$\hat{Q}$所得结果为$q_n$的概率</li>
 <li>对连续谱和多自由度也成立</li>
 </ul>
 </li>
 <li>考虑某力学量表象$Q’$ <ul>
 <li>同一个量子态$\Psi$也可用$Q’$的本征态展开，同样作投影得一组表示$(q_n^{‘})$</li>
+</ul>
+</li>
+<li>一个领悟<ul>
+<li>“波函数的模方代表在某处找到粒子概率”仅是在坐标表象下成立的表述。原因是，事实上这个东西的模方代表的是位于$x\rangle$上的概率。其实与$\hat{Q}$表象下的${a_n}$没什么区别，只不过离散的时候是累加，而连续的时候是积分</li>
+<li>所以说，${a_n}$也可以视作$\hat{Q}$表象下的波函数</li>
 </ul>
 </li>
 </ul>
@@ -2332,12 +2516,28 @@
 <li>粒子以某态在一维无限深势阱中运动，求该态在能量表象下的矩阵表示（态变换）</li>
 <li>一维谐振子的坐标、动量以及H在能量表象中的表示（算符变换）</li>
 </ul>
-<h3 id="课后习题"><a href="#课后习题" class="headerlink" title="课后习题"></a>课后习题</h3>]]></content>
+<h3 id="课后习题"><a href="#课后习题" class="headerlink" title="课后习题"></a>课后习题</h3><h1 id="自旋与全同粒子体系"><a href="#自旋与全同粒子体系" class="headerlink" title="自旋与全同粒子体系"></a>自旋与全同粒子体系</h1><h3 id="Stern-Gerlach实验"><a href="#Stern-Gerlach实验" class="headerlink" title="Stern-Gerlach实验"></a>Stern-Gerlach实验</h3><ul>
+<li>银原子最外层价电子在$5s$轨道上，由$L&#x3D;\sqrt{l(l+1)\hbar}$，知银原子基态轨道磁矩为$0$</li>
+<li>但是实验结果表明</li>
+</ul>
+<h3 id="电子自旋假设"><a href="#电子自旋假设" class="headerlink" title="电子自旋假设"></a>电子自旋假设</h3><h3 id="课堂习题-1"><a href="#课堂习题-1" class="headerlink" title="课堂习题"></a>课堂习题</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记11-7</title>
+    <url>/2023/11/07/2023-11-07/</url>
+    <content><![CDATA[<p>对于自己想要什么还是很不清楚啊<br>明明是个很随便的人，却有时候显得异常顽固呢<br>难评<br>14:00先把机器学习整了，起码复习到15:30<br>upd：学到了17:00，基本上把今天课上的东西消化了<br>下一步，复习一下numpy，顺便复习一下量子与统计<br>呃啊，急急急急急。<br>现在是17:20，吃完回来快六点了，要不直接去得了<br>呃呃呃啊啊啊</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>
