@@ -40,18 +40,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日记6-11</title>
-    <url>/2023/06/11/2023-06-11/</url>
-    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记6-17</title>
     <url>/2023/06/17/2023-06-17/</url>
     <content><![CDATA[<p>平凡的很累的一天，拿什么来记住呢？</p>
@@ -67,52 +55,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-17</title>
-    <url>/2023/09/17/2023-09-17/</url>
-    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
-<span id="more"></span>
-<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
-<p>可恶。</p>
-]]></content>
-      <categories>
-        <category>Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-20</title>
-    <url>/2023/09/20/2023-09-20/</url>
-    <content><![CDATA[<p>好好好，anaconda你这么玩是吧！</p>
-<span id="more"></span>
-<p>numpy.dot()整整困扰了我一天！！！<br>这下好了，全给你删了，看你怎么办。<br>昨天我就不应该良心发现，帮你升级，你看看你自己，像什么样子。<br>怒了，直接退课！</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-21</title>
-    <url>/2023/09/21/2023-09-21/</url>
-    <content><![CDATA[<p>今天天气好好啊啊啊啊啊啊啊！</p>
-<span id="more"></span>
-<p>吃完中饭从观畴出来，风有点凉，但是阳光照在身上又很舒服。<br>呃呃呃啊啊啊，实在是太适合躺在草坪上睡觉了啊啊啊啊啊啊。<br>可惜的是，天不遂人愿。俗务缠身，也许只有七八十岁才能享受生活叭。<br>今天早上由于ChatGPT抽风，试了一下文心一言，还挺不错的诶。<br>果然要先相信，再质疑。<br>下午准备把机器学习和深度学习讲的东西整个再看一下。<br>完了以后晚上复习一下量子与统计，把作业做了。<br>接下来视唱练耳什么的，带个键盘去操场。<br>和zyt操场溜达溜达。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记9-22</title>
-    <url>/2023/09/22/2023-09-22/</url>
-    <content><![CDATA[<p>刚一开学就压力颇大啊<br>感觉也没选什么课但就是莫名烦躁，感觉事情很多<br>可恶<br>今天下午加晚上得把材料分析与表征给看个七七八八，然后再沉下心来把量子与统计看了。然后把衣服洗一下，然后……可能去理个发什么的<br>呃呃呃啊啊啊，不得不说肯德基的炸鸡有点东西，还有就是什么时候才能趴在桌子上睡觉不流口水啊，keso！<br>急急急，怎么就周五了？SRT还啥都没有啊啊啊啊！<br>完蛋……<br>在紫荆书咖氪了300，然后发现网极度不好，后悔了……<br>马上就周一了，视唱练耳再度要来了啊啊啊啊啊！<br>可恶的科协会议啊啊啊啊啊。<br>晚上再去操场溜达溜达。<br>溜达到了快12点呃呃呃。</p>
+    <title>日记6-11</title>
+    <url>/2023/06/11/2023-06-11/</url>
+    <content><![CDATA[<p>新版校园卡到手了，相较于室温时效两年之久，表面渗生物质处理，洗澡时喷丸强化，平时偶尔加工硬化的老校园卡来说，各项性能还有待提高。</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -155,9 +100,52 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-24</title>
-    <url>/2023/09/24/2023-09-24/</url>
-    <content><![CDATA[<p>荒废时光啊荒废时光啊荒废时光啊荒废时光啊<br>急了<br>Reamke的一天，看到VS Code 版本升到了3.11.4，感觉从3.9.6是翻篇的一集（虽然不知道有啥变化就是了）</p>
+    <title>日记9-17</title>
+    <url>/2023/09/17/2023-09-17/</url>
+    <content><![CDATA[<p>第一次用Obsidian，感觉还挺好诶，不过笔记的精髓是文字。</p>
+<span id="more"></span>
+<p>今天zyt同志排球大胜利（以及昨天也是），不得不说还是有点水平在的。<br>有关我的论文啊啊啊啊啊，实在是一言难尽。总怀疑实验数据本身有问题，同样的算法，环境也很接近，但是表现却很差。Ensemble理论上讲应该是最稳定的叭……</p>
+<p>可恶。</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-21</title>
+    <url>/2023/09/21/2023-09-21/</url>
+    <content><![CDATA[<p>今天天气好好啊啊啊啊啊啊啊！</p>
+<span id="more"></span>
+<p>吃完中饭从观畴出来，风有点凉，但是阳光照在身上又很舒服。<br>呃呃呃啊啊啊，实在是太适合躺在草坪上睡觉了啊啊啊啊啊啊。<br>可惜的是，天不遂人愿。俗务缠身，也许只有七八十岁才能享受生活叭。<br>今天早上由于ChatGPT抽风，试了一下文心一言，还挺不错的诶。<br>果然要先相信，再质疑。<br>下午准备把机器学习和深度学习讲的东西整个再看一下。<br>完了以后晚上复习一下量子与统计，把作业做了。<br>接下来视唱练耳什么的，带个键盘去操场。<br>和zyt操场溜达溜达。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-20</title>
+    <url>/2023/09/20/2023-09-20/</url>
+    <content><![CDATA[<p>好好好，anaconda你这么玩是吧！</p>
+<span id="more"></span>
+<p>numpy.dot()整整困扰了我一天！！！<br>这下好了，全给你删了，看你怎么办。<br>昨天我就不应该良心发现，帮你升级，你看看你自己，像什么样子。<br>怒了，直接退课！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记9-22</title>
+    <url>/2023/09/22/2023-09-22/</url>
+    <content><![CDATA[<p>刚一开学就压力颇大啊<br>感觉也没选什么课但就是莫名烦躁，感觉事情很多<br>可恶<br>今天下午加晚上得把材料分析与表征给看个七七八八，然后再沉下心来把量子与统计看了。然后把衣服洗一下，然后……可能去理个发什么的<br>呃呃呃啊啊啊，不得不说肯德基的炸鸡有点东西，还有就是什么时候才能趴在桌子上睡觉不流口水啊，keso！<br>急急急，怎么就周五了？SRT还啥都没有啊啊啊啊！<br>完蛋……<br>在紫荆书咖氪了300，然后发现网极度不好，后悔了……<br>马上就周一了，视唱练耳再度要来了啊啊啊啊啊！<br>可恶的科协会议啊啊啊啊啊。<br>晚上再去操场溜达溜达。<br>溜达到了快12点呃呃呃。</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -179,6 +167,18 @@
       </tags>
   </entry>
   <entry>
+    <title>日记9-24</title>
+    <url>/2023/09/24/2023-09-24/</url>
+    <content><![CDATA[<p>荒废时光啊荒废时光啊荒废时光啊荒废时光啊<br>急了<br>Reamke的一天，看到VS Code 版本升到了3.11.4，感觉从3.9.6是翻篇的一集（虽然不知道有啥变化就是了）</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日记9-25</title>
     <url>/2023/09/25/2023-09-25/</url>
     <content><![CDATA[<p>早上好好好冷啊<br>昨天吃的泡芙绝对有毒<br>今天下午又要视唱练耳test了，急急急急急<br>下午把量统作业做了以后，把图画完然后光速开始练习<br>时间还挺紧的aaaaa<br>可恶，才听了一小节课就不想听了<br>晕<br>感觉事情好好好好好多啊<br>好好好，视唱练耳test过了！！！<br>感谢怡宝！！感谢世界！！</p>
@@ -191,9 +191,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-27</title>
-    <url>/2023/09/28/2023-09-27/</url>
-    <content><![CDATA[<p>很煎熬的一天<br>量统下课以后还是得好好复习啊啊啊啊，上课人超级多，怎么怎么怎么会这样。<br>工图，极致折磨的三节课，服了。<br>下午的网球课，感觉自己好烂，不太能配合jf同志。<br>之后请zyt同志去观畴三楼吃了吃好吃的，感觉环境还不错，人也不是很多，10.2那天可以请爷爷奶奶来这里吃。不过五个人的桌子不知道好不好找。吃饭的时候发现了我大一的优秀文学作品，但是yt同志的似乎更为优秀。<br>顺便，被观畴三楼优秀员工szy盒出来了，寄。<br>晚上，写了写量统作业。mm同志问了群速的问题，但是，我也不懂，倒。<br>视唱练耳，反复练了两条音阶，但是听音感觉还是不太行，呃呃呃啊啊啊，不知道是不是方法问题。<br>zyt非要呆在礼射研习会的棚子里，呃呃呃啊啊啊太离谱了。<br>贝斯得弦真的好粗啊啊啊啊啊。</p>
+    <title>日记9-26</title>
+    <url>/2023/09/26/2023-09-26/</url>
+    <content><![CDATA[<p>哦哈哟！<br>为什么早上这么冷。<br>再冷我就不上学了，怒。<br>解决了GIthub Pages Custom Domain失效的原因<br>原来是source内要添加内含网址的CNAME文件<br>Git连Github失败有可能是代理端口不对，改一下就可以<br>晚上吃一下观畴三楼，测试一下</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -203,9 +203,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记9-26</title>
-    <url>/2023/09/26/2023-09-26/</url>
-    <content><![CDATA[<p>哦哈哟！<br>为什么早上这么冷。<br>再冷我就不上学了，怒。<br>解决了GIthub Pages Custom Domain失效的原因<br>原来是source内要添加内含网址的CNAME文件<br>Git连Github失败有可能是代理端口不对，改一下就可以<br>晚上吃一下观畴三楼，测试一下</p>
+    <title>日记9-27</title>
+    <url>/2023/09/28/2023-09-27/</url>
+    <content><![CDATA[<p>很煎熬的一天<br>量统下课以后还是得好好复习啊啊啊啊，上课人超级多，怎么怎么怎么会这样。<br>工图，极致折磨的三节课，服了。<br>下午的网球课，感觉自己好烂，不太能配合jf同志。<br>之后请zyt同志去观畴三楼吃了吃好吃的，感觉环境还不错，人也不是很多，10.2那天可以请爷爷奶奶来这里吃。不过五个人的桌子不知道好不好找。吃饭的时候发现了我大一的优秀文学作品，但是yt同志的似乎更为优秀。<br>顺便，被观畴三楼优秀员工szy盒出来了，寄。<br>晚上，写了写量统作业。mm同志问了群速的问题，但是，我也不懂，倒。<br>视唱练耳，反复练了两条音阶，但是听音感觉还是不太行，呃呃呃啊啊啊，不知道是不是方法问题。<br>zyt非要呆在礼射研习会的棚子里，呃呃呃啊啊啊太离谱了。<br>贝斯得弦真的好粗啊啊啊啊啊。</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -239,18 +239,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-1</title>
-    <url>/2023/10/01/2023-10-01/</url>
-    <content><![CDATA[<p>急急急，明天母上大人就要来了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>疯狂理宿舍中<br>唉唉唉唉唉唉<br>买点东西吃吃</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记9-30</title>
     <url>/2023/09/30/2023-09-30/</url>
     <content><![CDATA[<p>求求你别刷B站了！！！</p>
@@ -263,9 +251,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-6</title>
-    <url>/2023/10/06/2023-10-06/</url>
-    <content><![CDATA[<p>大模型折腾了一天<br>果然是越忙越喜欢折腾<br>把工图作业交了，感觉考试搞不好会很难<br>还有好多作业，奇怪，国庆期间都干了些啥？</p>
+    <title>日记10-1</title>
+    <url>/2023/10/01/2023-10-01/</url>
+    <content><![CDATA[<p>急急急，明天母上大人就要来了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>疯狂理宿舍中<br>唉唉唉唉唉唉<br>买点东西吃吃</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -287,13 +275,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-7</title>
-    <url>/2023/10/07/2023-10-07/</url>
-    <content><![CDATA[<p>感觉这一整个学期，都要生活在视唱练耳的阴影之下了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>要多练啊啊啊啊啊啊啊啊啊<br>量子与统计也得好好看，明天又要上课了，往前坐一点<br>材料分析与表征你甜蜜的到底在讲什么？？？<br>叉乘（Cross Product）：</p>
-<ul>
-<li>叉乘通常与三维空间中的向量相关</li>
-<li>而外积在三维与叉乘类似，其余则不然<br>总而言之言而总之，又活过了视唱练耳<br>下一步，是A自然小调音阶</li>
-</ul>
+    <title>日记10-6</title>
+    <url>/2023/10/06/2023-10-06/</url>
+    <content><![CDATA[<p>大模型折腾了一天<br>果然是越忙越喜欢折腾<br>把工图作业交了，感觉考试搞不好会很难<br>还有好多作业，奇怪，国庆期间都干了些啥？</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -327,9 +311,37 @@
       </tags>
   </entry>
   <entry>
+    <title>日记10-7</title>
+    <url>/2023/10/07/2023-10-07/</url>
+    <content><![CDATA[<p>感觉这一整个学期，都要生活在视唱练耳的阴影之下了<br>呃呃呃啊啊啊呃呃呃啊啊啊<br>要多练啊啊啊啊啊啊啊啊啊<br>量子与统计也得好好看，明天又要上课了，往前坐一点<br>材料分析与表征你甜蜜的到底在讲什么？？？<br>叉乘（Cross Product）：</p>
+<ul>
+<li>叉乘通常与三维空间中的向量相关</li>
+<li>而外积在三维与叉乘类似，其余则不然<br>总而言之言而总之，又活过了视唱练耳<br>下一步，是A自然小调音阶</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日记10-12</title>
     <url>/2023/10/12/2023-10-12/</url>
     <content><![CDATA[<p>今天，有超多事情的一天。<br>下午五点半，图书馆的窗外还在下雨。<br>挑战杯的方向扑朔迷离，论文的完成遥遥无期<br>大模型一训就是好几个小时<br>啊~~~~~~~~~<br>悲</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-14</title>
+    <url>/2023/10/14/2023-10-14/</url>
+    <content><![CDATA[<p>周六了，还有好多作业没写<br>挑战杯训练Lamma基础模型，顺便把folder填一下<br>论文把四种方程的应用场景写一下<br>量子与统计一定要抽时间看<br>还有视唱练耳，切记切记切记切记！！！<br>其他的事情，交给时间去解决吧</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -343,18 +355,6 @@
     <url>/2023/10/13/2023-10-13/</url>
     <content><![CDATA[<p>一把文明坐一天<br>饿饿饿啊啊啊<br>玩文明的前置需求也许是身体素质……<br>晚上和yt同志调用乐队经费吃了必胜客<br>KTV唱歌，启动！</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>日记10-14</title>
-    <url>/2023/10/14/2023-10-14/</url>
-    <content><![CDATA[<p>周六了，还有好多作业没写<br>挑战杯训练Lamma基础模型，顺便把folder填一下<br>论文把四种方程的应用场景写一下<br>量子与统计一定要抽时间看<br>还有视唱练耳，切记切记切记切记！！！<br>其他的事情，交给时间去解决吧</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
   </entry>
   <entry>
     <title>日记10-15</title>
@@ -381,24 +381,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/10/22/2023-10-22/</url>
-    <content><![CDATA[<p>一切还是应该回到最初的轨道<br>孰轻孰重、孰是孰非<br>题中应有之义</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>日记10-25</title>
-    <url>/2023/10/25/2023-10-25/</url>
-    <content><![CDATA[<p>上午上了量统，奇怪的是，没有任何印象<br>心情还是很差，最近发生了很多事情<br>很难说自己是成长了还是依然很天真<br>但所幸，遇到的都是善良温柔的人<br>工图突然变得很难，网球感觉还是没什么感觉<br>一个人在图书馆学习<br>不知道期待着什么<br>也不知道担忧着什么<br>就这样单曲循环着《曾经我也想过一了百了》<br>不累，却也没什么精神<br>不喜欢这样的自己</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记10-19</title>
     <url>/2023/10/19/2023-10-19/</url>
     <content><![CDATA[<p>共同的焦虑会诞生情感<br>共同的快乐也会<br>晚上好冷</p>
@@ -411,9 +393,27 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/10/22/2023-10-22/</url>
+    <content><![CDATA[<p>一切还是应该回到最初的轨道<br>孰轻孰重、孰是孰非<br>题中应有之义</p>
+]]></content>
+  </entry>
+  <entry>
     <title>日记10-20</title>
     <url>/2023/10/20/2023-10-20/</url>
     <content><![CDATA[<p>量统课后问了老师问题<br>好欸！<br>中午在麦叔的铺子里进行了加餐<br>现在GPT3.5api GPT4.0 google colab pro均在手<br>启动！</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记10-25</title>
+    <url>/2023/10/25/2023-10-25/</url>
+    <content><![CDATA[<p>上午上了量统，奇怪的是，没有任何印象<br>心情还是很差，最近发生了很多事情<br>很难说自己是成长了还是依然很天真<br>但所幸，遇到的都是善良温柔的人<br>工图突然变得很难，网球感觉还是没什么感觉<br>一个人在图书馆学习<br>不知道期待着什么<br>也不知道担忧着什么<br>就这样单曲循环着《曾经我也想过一了百了》<br>不累，却也没什么精神<br>不喜欢这样的自己</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -435,9 +435,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-28</title>
-    <url>/2023/10/28/2023-10-28/</url>
-    <content><![CDATA[<p>昨天干了啥（10.29记）<br>感觉把显示器的事情搞定了<br>早上干了什么完全想不清了<br>下午爆肝了7个小时搞定了二维圆柱绕流的事情<br>然后就晚上了<br>然后担心一个人是不是死掉了担心到2点<br>然后荒诞的一天就结束了</p>
+    <title>日记10-26</title>
+    <url>/2023/10/26/2023-10-26/</url>
+    <content><![CDATA[<p>等天晴<br>一切似乎略微有了转机<br>发现答案就在自己身边啊<br>答案就在自己身边</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -447,9 +447,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-26</title>
-    <url>/2023/10/26/2023-10-26/</url>
-    <content><![CDATA[<p>等天晴<br>一切似乎略微有了转机<br>发现答案就在自己身边啊<br>答案就在自己身边</p>
+    <title>日记10-28</title>
+    <url>/2023/10/28/2023-10-28/</url>
+    <content><![CDATA[<p>昨天干了啥（10.29记）<br>感觉把显示器的事情搞定了<br>早上干了什么完全想不清了<br>下午爆肝了7个小时搞定了二维圆柱绕流的事情<br>然后就晚上了<br>然后担心一个人是不是死掉了担心到2点<br>然后荒诞的一天就结束了</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -471,9 +471,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-30</title>
-    <url>/2023/10/30/2023-10-30/</url>
-    <content><![CDATA[<p>马上过生日啦！<br>立牌到了，但是没有阿梓喵，气死我了<br>可恶</p>
+    <title>日记10-31</title>
+    <url>/2023/10/31/2023-10-31/</url>
+    <content><![CDATA[<p>时间紧，任务重<br>时不我待！</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -483,9 +483,9 @@
       </tags>
   </entry>
   <entry>
-    <title>日记10-31</title>
-    <url>/2023/10/31/2023-10-31/</url>
-    <content><![CDATA[<p>时间紧，任务重<br>时不我待！</p>
+    <title>日记10-30</title>
+    <url>/2023/10/30/2023-10-30/</url>
+    <content><![CDATA[<p>马上过生日啦！<br>立牌到了，但是没有阿梓喵，气死我了<br>可恶</p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -568,6 +568,11 @@
 ]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/2023/10/25/cosmol-drug-release/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>DisBand Space</title>
     <url>/2023/09/25/disband-xiang-guan-xin-xi/</url>
     <content><![CDATA[<p>DisBand网站上线 <a href="http://www.disband.cn/">www.disband.cn</a></p>
@@ -578,16 +583,6 @@
       <tags>
         <tag>Parallel</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/10/25/cosmol-drug-release/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/10/22/langchain-xue-xi-bi-ji/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Markdown实用语法</title>
@@ -609,7 +604,7 @@
 </ul>
 </li>
 </ul>
-<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle </p>
+<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec</p>
 ]]></content>
       <categories>
         <category>工具</category>
@@ -628,6 +623,11 @@
       <tags>
         <tag>Reference</tag>
       </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/10/22/langchain-xue-xi-bi-ji/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
@@ -715,6 +715,30 @@
       </tags>
   </entry>
   <entry>
+    <title>不遇</title>
+    <url>/2022/12/24/bu-yu/</url>
+    <content><![CDATA[<p>开头删了又写，写了又删，总找不到一种合适的语气，三年前如此，现在亦如此，倒比不上十年前的你我了。</p>
+<span id="more"></span>
+
+<p>转念一想，你可能永远也不知道这里有一篇为你而留的文字，那我便放心大胆的写啦。</p>
+<p>说来也奇怪，这几年的回忆，反而模糊不清，有些迫切想解释的，遗憾未完成的，都如云烟般散去。其实我只想让你知道，在三年未见的时光里，我只在等你。</p>
+<p>风言风语对当时的你我也许还是过于锋利了，只记得那年夏天没吃到你的生日蛋糕，之后，就只能在别人的朋友圈里看到你了。</p>
+<p>回想初三那一年，一见封谶的字条墨迹未干，久别重逢在我头上敲的那一下依旧有点疼:( 深秋我们在为数不多的夜里走着，我说，我们看似走的更近了，其实在渐行渐远。你说，我们再也回不去小时候了。我想牵牵你的手，故意说“我们连牵手都没牵过，以后也算不上分手”，没想到，却一句话说到了最后。</p>
+<p>那段时间，是我辜负了你纯真而又热烈的情感，回过头来，我真想将那些数学作业撕个粉碎，从五楼扬下去。当时的你在我的梦里总是带着泪光，而我，也只能在梦里拥抱你。</p>
+<p>大学里聊起谈恋爱的话题，大家都怨恨老天欠我们一个青梅竹马。只有我默默不说话，我知道，老天让我在一年级的时候就遇到了你。近乎自然而然，又仿佛一种羁绊，六年的小学生活，至少你就是我眼里最耀眼最可爱的那个女生。当时的我们真像书中那些温暖的文字所说 ，青梅竹马，两小无猜。我还记得我们一起四手联弹，我总是弹不好，被我爸嘲笑。记得在东恒盛大厅的沙发上看电视，你还摔了一跤。记得在机房里，你让我为你系上纽扣，我一下子脸红让你自己系。记得那些似乎无穷无尽的周六周日，我们一起学习玩耍的日子。记得你抱着我家狗狗，记得和你玩双人小游戏。快乐多么简单啊，数学试卷发下来比我高一分你就会高兴好久（而我会难过好久）。学语文时互批，我们总是想找茬让对方低几分。有太多回忆我好想一直一直写下去，因为这些都是我所无比珍视的，我想把它们带进我的坟墓。</p>
+<p>不知道现在的你还好吗，故人，挚友，陌路。也许现在的你我，就像书中所说，“最熟悉的陌生人”。中考结束，约好一起去看老师，我却终未成行。高中三年，从见面时的尴尬到最后形同陌路。</p>
+<p>也许看到这篇文字的你，会想起一些美好的回忆罢。如此便足矣。</p>
+]]></content>
+      <categories>
+        <category>故人</category>
+      </categories>
+      <tags>
+        <tag>故人</tag>
+        <tag>挚友</tag>
+        <tag>陌路</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Python的科学与数值计算</title>
     <url>/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/</url>
     <content><![CDATA[<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="ndarray"><a href="#ndarray" class="headerlink" title="ndarray"></a>ndarray</h2><ul>
@@ -777,30 +801,6 @@
       </tags>
   </entry>
   <entry>
-    <title>不遇</title>
-    <url>/2022/12/24/bu-yu/</url>
-    <content><![CDATA[<p>开头删了又写，写了又删，总找不到一种合适的语气，三年前如此，现在亦如此，倒比不上十年前的你我了。</p>
-<span id="more"></span>
-
-<p>转念一想，你可能永远也不知道这里有一篇为你而留的文字，那我便放心大胆的写啦。</p>
-<p>说来也奇怪，这几年的回忆，反而模糊不清，有些迫切想解释的，遗憾未完成的，都如云烟般散去。其实我只想让你知道，在三年未见的时光里，我只在等你。</p>
-<p>风言风语对当时的你我也许还是过于锋利了，只记得那年夏天没吃到你的生日蛋糕，之后，就只能在别人的朋友圈里看到你了。</p>
-<p>回想初三那一年，一见封谶的字条墨迹未干，久别重逢在我头上敲的那一下依旧有点疼:( 深秋我们在为数不多的夜里走着，我说，我们看似走的更近了，其实在渐行渐远。你说，我们再也回不去小时候了。我想牵牵你的手，故意说“我们连牵手都没牵过，以后也算不上分手”，没想到，却一句话说到了最后。</p>
-<p>那段时间，是我辜负了你纯真而又热烈的情感，回过头来，我真想将那些数学作业撕个粉碎，从五楼扬下去。当时的你在我的梦里总是带着泪光，而我，也只能在梦里拥抱你。</p>
-<p>大学里聊起谈恋爱的话题，大家都怨恨老天欠我们一个青梅竹马。只有我默默不说话，我知道，老天让我在一年级的时候就遇到了你。近乎自然而然，又仿佛一种羁绊，六年的小学生活，至少你就是我眼里最耀眼最可爱的那个女生。当时的我们真像书中那些温暖的文字所说 ，青梅竹马，两小无猜。我还记得我们一起四手联弹，我总是弹不好，被我爸嘲笑。记得在东恒盛大厅的沙发上看电视，你还摔了一跤。记得在机房里，你让我为你系上纽扣，我一下子脸红让你自己系。记得那些似乎无穷无尽的周六周日，我们一起学习玩耍的日子。记得你抱着我家狗狗，记得和你玩双人小游戏。快乐多么简单啊，数学试卷发下来比我高一分你就会高兴好久（而我会难过好久）。学语文时互批，我们总是想找茬让对方低几分。有太多回忆我好想一直一直写下去，因为这些都是我所无比珍视的，我想把它们带进我的坟墓。</p>
-<p>不知道现在的你还好吗，故人，挚友，陌路。也许现在的你我，就像书中所说，“最熟悉的陌生人”。中考结束，约好一起去看老师，我却终未成行。高中三年，从见面时的尴尬到最后形同陌路。</p>
-<p>也许看到这篇文字的你，会想起一些美好的回忆罢。如此便足矣。</p>
-]]></content>
-      <categories>
-        <category>故人</category>
-      </categories>
-      <tags>
-        <tag>故人</tag>
-        <tag>挚友</tag>
-        <tag>陌路</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>春归</title>
     <url>/2022/12/24/xiao-shi/</url>
     <content><![CDATA[<p>春归</p>
@@ -819,11 +819,166 @@
       </tags>
   </entry>
   <entry>
+    <title>数理方程特殊函数部分以及其他</title>
+    <url>/2023/06/14/shu-li-fang-cheng/</url>
+    <content><![CDATA[<p>级数解</p>
+<ul>
+<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
+<li>回到原式中带入级数解进行计算</li>
+</ul>
+<p>坐标系</p>
+<ul>
+<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
+<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
+<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
+</ul>
+<p>Bessel方程</p>
+<ul>
+<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
+<li>解记作$J_{\pm v(x)}$</li>
+<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
+<li><del>第三类柱函数</del></li>
+<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
+<li>基本递推关系</li>
+</ul>
+<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
+<ul>
+<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
+</ul>
+<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
+<ul>
+<li><p>特征为$l(l+1)$</p>
+</li>
+<li><p>解为$ j_l, n_l$</p>
+</li>
+</ul>
+<p>渐进行为</p>
+<ul>
+<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
+<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
+<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
+<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
+<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
+<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
+</ul>
+<p>Legendre方程和连带Legendre方程的形式</p>
+<ul>
+<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
+</li>
+<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
+</ul>
+</li>
+<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
+<ul>
+<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
+<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
+</ul>
+</li>
+<li><p>Legendre多项式的生成函数</p>
+<ul>
+<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
+<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
+</ul>
+</li>
+<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
+</li>
+<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
+</li>
+</ul>
+</li>
+<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
+<ul>
+<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
+<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
+<li>球谐函数的模长<ul>
+<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><del>递推公式、连带Legendre函数模方</del></p>
+</li>
+</ul>
+<p>傅里叶变换和逆变换形式</p>
+<p> Laplace变换和逆变换形式</p>
+<p>傅里叶变换的卷积公式</p>
+<p>Laplace变换的卷积公式</p>
+<p>方程标准型特征方程</p>
+<ul>
+<li><p>特征方程法</p>
+<ul>
+<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
+</li>
+<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
+</li>
+<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
+</li>
+<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
+</li>
+<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
+</li>
+<li><p>利用变换系数公式求解方程各项系数</p>
+</li>
+</ul>
+</li>
+<li><p>配方法</p>
+<ul>
+<li><del>变系数配方法</del></li>
+<li>常系数配方法，将二次项配方后，换元即可</li>
+</ul>
+</li>
+</ul>
+<p>格林函数</p>
+<ul>
+<li>电像法</li>
+<li>本征函数展开法<ul>
+<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
+<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
+</ul>
+</li>
+<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>时光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工程图学</title>
+    <url>/2023/11/01/gong-cheng-tu-xue/</url>
+    <content><![CDATA[<ul>
+<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
+<li>类似性指导作图，面和它的封闭线框具有相似性</li>
+<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
+<li>找点的方法之辅助直线<ul>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
+<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>机器学习</title>
     <url>/2023/09/19/ji-qi-xue-xi/</url>
-    <content><![CDATA[<h2 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h2><span id="more"></span>
-<p>$(\psi(r,\theta,\phi)&#x3D;\frac{1}{\sqrt{\pi{a_0}^3}}e^{-\frac{r}{a_0}})$</p>
-<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+    <content><![CDATA[<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
 <h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
@@ -833,7 +988,7 @@
 <li>关键：big data gives an accurate learning result</li>
 </ul>
 </li>
-<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>\tag{1}<br>$$<ul>
+<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>\tag{1}$$<ul>
 <li>$b_i ,a_i$分别为变量$X_i$的上限和下限</li>
 <li>注意到$S_n$是变量之和，如果要与伯努利情况下的Koeffding比较，则可以考虑指数上下同除$n^2$</li>
 <li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
@@ -844,15 +999,8 @@
 <li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，每一次取球，就相当于在定义域$X$中取一个$x$，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
 <li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\nu$和$\mu$，我们想要知道我们的假设$h$效果怎么样，但是没必要把所有$x$全带入。</li>
 <li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$ </li>
-<li>$$</li>
-</ul>
-<p>\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq \sum_{m&#x3D;1}^M \mathbb{P}\left[\left|E_{\text {in }}\left(h_m\right)-E_{\text {out }}\left(h_m\right)\right|&gt;\epsilon\right]</p>
-<p>$$</p>
-<ul>
-<li>$$</li>
-</ul>
-<p>\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq 2 M e^{-2 \epsilon^2 N}<br>\tag{2}<br>$$</p>
-<ul>
+<li>$$\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq \sum_{m&#x3D;1}^M \mathbb{P}\left[\left|E_{\text {in }}\left(h_m\right)-E_{\text {out }}\left(h_m\right)\right|&gt;\epsilon\right]$$</li>
+<li>$$\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq 2 M e^{-2 \epsilon^2 N}<br>\tag{2}$$</li>
 <li>这条式子的意思是，给出所有$M$个假设中，最优的一个，训练集和实际集的误差上限（这本身不能让$g$接近$f$）这很好理解，因为右侧包含左侧。<blockquote>
 <p>Low complexity model and big data can give us a good generalization in machine learning</p>
 </blockquote>
@@ -922,7 +1070,7 @@
 <li>在假设残差符合高斯分布的前提下，假设其方差为$\sigma^2$</li>
 </ul>
 </li>
-<li>$$<br>p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}<br>$$</li>
+<li>$$p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
 <li>复习的时候发现这里非常容易混淆，再次强调$p((x_i,y_i)|\beta)$其实指的是$x_i$在参数为$\beta$时给出的预测和真实的标签$y_i$的差距服从的分布</li>
 <li>依据常规高斯分布公式分析，其实就是下式（对于残差，均值$\mu$为0）</li>
 <li>$$p;(\left(\epsilon_i) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(\epsilon_i-0)^2}{2 \sigma^2}}$$</li>
@@ -1130,8 +1278,8 @@
 <li>注记一下，这里假设$y_i$有0和1两种可能，所以直接放在指数上了</li>
 </ul>
 </li>
-<li>综上，最大似然函数的对数是<ul>
-<li>$$\mathcal{L}(\boldsymbol{\beta})&#x3D;\log\left(\prod_{i&#x3D;1}^mp((\boldsymbol{x}<em>i,y_i)|\boldsymbol{\beta})\right)&#x3D;\sum</em>{i&#x3D;1}^my_i\log\left(f_p(x_i)\right)+(1-y_i)\log\left(1-f_p(x_i)\right)$$</li>
+<li>综上，最大似然函数的对数是</li>
+<li>$$\mathcal{L}(\boldsymbol{\beta})&#x3D;\log\left(\prod_{i&#x3D;1}^mp((\boldsymbol{x}<em>i,y_i)|\boldsymbol{\beta})\right)&#x3D;\sum</em>{i&#x3D;1}^my_i\log\left(f_\beta(x_i)\right)+(1-y_i)\log\left(1-f_\beta(x_i)\right)$$<ul>
 <li>我们的目标就是找到这样一个$\beta$使得$\mathcal{L}(\beta)$最大<ul>
 <li>其实也就是提高全部预测准确的概率</li>
 </ul>
@@ -1176,21 +1324,40 @@
 </li>
 <li>GDA高斯判别分析<ul>
 <li>与一般的Discriminative learning算法不同，GDA尝试学习$p(x|y)(and ; p(y))$ ,之后利用其去构建后验分布</li>
+<li>整体来说，分类问题的目标是求$argmax_y;p(y|x)$这一点是不变的，但是GDA做了如下转化</li>
+<li>$$\begin{aligned}\operatorname{argmax}_yp(y|x)&#x3D;\operatorname{argmax}_y\frac{p(x|y)p(y)}{p(x)}&#x3D;\operatorname{argmax}_yp(x|y)p(y)\end{aligned}$$</li>
+<li>所以我们可以转为计算$p(y)$和$p(x|y)$，然后对他们的乘积找一个$y$使其最大化，下分别计算之</li>
+<li>$p(y)&#x3D;\phi^{1{y&#x3D;\times}}(1-\phi)^{1-1{y&#x3D;\times}}$</li>
+<li>$p(\boldsymbol{x}|y&#x3D;\times)&#x3D;\frac{1}{(2\pi)^{d&#x2F;2}|\Sigma|^{1&#x2F;2}}\exp\left(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu}_\times)^T\Sigma^{-1}(\boldsymbol{x}-\boldsymbol{\mu}_\times)\right)$</li>
+<li>$p(x|y&#x3D;{0})&#x3D;\frac1{(2\pi)^{d&#x2F;2}|\Sigma|^{1&#x2F;2}}\exp\left(-\frac12(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)$</li>
+<li>$\Sigma^T&#x3D;\frac1m\Sigma_{i&#x3D;1}^m\left(x^{(i)}-\mu_{y^{(i)}}\right)\left(x^{(i)}-\mu_{y^{(i)}}\right)^T$</li>
+<li>$\phi&#x3D;\frac1m\sum_{i&#x3D;1}^m1{y^{(i)}&#x3D;\times}$</li>
 </ul>
 </li>
 </ul>
 <h4 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h4><ul>
 <li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
-<li>树，连通无环结构<ul>
+<li>决策树<ul>
+<li>连通无环结构</li>
 <li>树的节点表示属性测试</li>
 <li>叶节点表示分类结果</li>
 <li>每一次划分其实是对空间进行一次轴对齐的超平面划分，树可以向图转换，图也可以还原成树</li>
 </ul>
 </li>
+<li>决策树的建立<ul>
+<li>建立最小决策树是NP问题，我们使用贪心算法作为一个较好的近似模型<ul>
+<li>首先我们从空的决策树开始</li>
+<li>选择最优特征，同时选择最优的特征阈值</li>
+<li>在划分出来的新节点上继续上述循环，直到到达终止条件</li>
+</ul>
+</li>
+<li>所以重点就是“Splitting Criteria”</li>
+</ul>
+</li>
 <li>$Classification; Error$（可以用来评价划分的质量）<ul>
 <li>$Error(i|j,t_{j}) &#x3D; 1-\max <em>{k}P(k|R</em>{i})$ </li>
 <li>注意这里P不是概率，而是$R_i$中k的比例，比方说一个完美的分类，$R_i$中只有k，那么$Error$就是0</li>
-<li>其中，j是划分的维度，tj是划分的阈值</li>
+<li>其中，$j$是划分的维度，$t_j$是划分的阈值</li>
 <li>树当前的每一个叶子节点都代表了一块区域，而算法的继续进行需要做的，就是将该空间继续划分成两块</li>
 <li>$\min _{j, t_j}\left{\frac{N_1}{N} \operatorname{Error}\left(1 \mid j, t_j\right)+\frac{N_2}{N} \operatorname{Error}\left(2 \mid j, t_j\right)\right}$<ul>
 <li>区域被划分为两块，分别是$R_1$和$R_2$，将两块区域的误差加权相加即得到需要最小化的误差函数</li>
@@ -1201,29 +1368,103 @@
 <li>我们也可以使用$Gini;index$ <ul>
 <li>通过测试每个区域的”纯度”，来判断划分质量</li>
 <li>$Gini(i|j,t_j)&#x3D;1-\Sigma_k P(k|R_i)^2$</li>
-<li>再次提醒，$P$是$k$类在$R_i$中的比例</li>
+<li>再次提醒，$P(k|R_i)$是指$k$类在$R_i$中的比例</li>
 <li>$Gini$值越低，划分质量越高，所以我们也要最小化$Gini$函数的加权和</li>
 </ul>
 </li>
 <li>我们也可以使用$Entropy$<ul>
-<li>$H(X)&#x3D;$ $-\sum_{x \in X} P(x) \log _2 P(x)$ in each newly created region $R_1, R_2$.</li>
-<li>$\operatorname{Entropy}\left(i \mid j, t_j\right)&#x3D;-\sum_k P\left(k \mid R_i\right) \log _2 P\left(k \mid R_i\right)$</li>
+<li>$\operatorname{Entropy}\left(i \mid j, t_j\right)&#x3D;-\sum_k P\left(k \mid R_i\right) \log _2 P\left(k \mid R_i\right)$<ul>
+<li>也就是说$j$分类器下，以$t_j$为阈值，$i$区域的熵是$i$区域内所有$k$个class的占比乘上其占比对2求对数的和的倒数</li>
+</ul>
+</li>
+<li>当然，我们要最小化$\min_{j,t_j}\left{\frac{N_1}N\operatorname{Entropy}(1|j,t_j)+\frac{N_2}N\operatorname{Entropy}(2|j,t_j)\right}$<ul>
+<li>含义也与之前类似，就是通过某种方式找到一个最优分类器和分类阈值</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h5 id="Stopping-Condition"><a href="#Stopping-Condition" class="headerlink" title="Stopping Condition"></a>Stopping Condition</h5><ul>
-<li>maximum depth</li>
-<li>number of instance</li>
+<li>如果不加以限制，决策树会不断进行划分，直到每个叶子都只包含一个节点为止，这也达成了训练集上的100%准确率<ul>
+<li>为了避免以上情况，我们提出一些合理的停止策略</li>
+<li>例如，我们可以限制决策树的深度</li>
+<li>当某一区域内全都为同一种类时停止划分</li>
+<li>对每一区域内的数量设置下限</li>
+<li>对总叶子数量设置上限</li>
+<li>计算划分收益，对收益设置下限<ul>
+<li>注，收益一般可表示为</li>
+<li>$\mathrm{Gain}(R)&#x3D;\Delta(R)&#x3D;m(R)-\frac{N_1}Nm(R_1)-\frac{N_2}Nm(R_2)$</li>
 </ul>
-<h5 id="For-Regression"><a href="#For-Regression" class="headerlink" title="For Regression"></a>For Regression</h5><h5 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h5><ul>
-<li>每一次划分都最优或接近最优，则correlation大，这可能降低效果</li>
-<li>所以需要引入随机森林以降低Variance</li>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="For-Regression"><a href="#For-Regression" class="headerlink" title="For Regression"></a>For Regression</h5><blockquote>
+<p>当然，决策树也可以用来做回归问题</p>
+</blockquote>
+<ul>
+<li>同样是对于问题空间进行分割，分割后的每一块区域取其中元素的平均值作为回归决策树对于这一块数据的预测值</li>
+<li>这一次，我们需要最小化的是区域内的点的值和我们预测的值（也就是我们框起来的区域的点的平均值）的差距，我们一般采用以下计算方法</li>
+<li>$$\operatorname{argmin}_{j,t_j}\left{\frac{N_1}NMSE(R_1)+\frac{N_2}NMSE(R_2)\right}$$</li>
+<li>或者</li>
+<li>$$\text{ argmin}_{j,t_j}\left{\frac{N_1}NVar(y|x\in R_1)+\frac{N_2}NVar(y|x\in R_1)\right}$$</li>
+<li>其实，如果我们将预测值选为区域内$y$的均值的话，二者结果是一样的</li>
+</ul>
+<h5 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h5><blockquote>
+<p>说一下有关名字的由来，其实是Bootstrap aggregating的缩写，意思分别是“自助采样”和 “聚合”</p>
+</blockquote>
+<ul>
+<li>较深的或者较大的决策树常常会过拟合，在新的数据集上有较大的方差</li>
+<li>一般来说，我们可以采取以下方法<ul>
+<li>对训练数据采样，对于每一组采样（一般来说，一个自助样本（有放回抽样的样本）大约包含原始数据集中约63.2%的唯一实例），训练一个决策树<ul>
+<li>这里解释一下采样的相关问题</li>
+<li>采样与数据集大小完全一样，但由于是有放回采样，所以依据公式计算，每个数据点不被选中的概率连续乘以自身N次，即$(1-\frac{1}{N})^N$ 趋近于 $e^{-1}$，也就是说，抽到与原始数据集一样大的话，包含着六成多一点的无重复数据</li>
+</ul>
+</li>
+<li>之后对于一个给定的输入，我们将其放入所有的决策树并将结果取平均作为输出</li>
+</ul>
+</li>
+<li>当然，这样做也存在着缺点，我们在提高模型表现的同时，损失了模型的可解释性</li>
 </ul>
 <h5 id="Random-forest"><a href="#Random-forest" class="headerlink" title="Random forest"></a>Random forest</h5><ul>
-<li>每棵树每步分裂限制特征集，限制每一步的“视角”，在限制的特征集中选择最优的特征和阈值，最终融合不同视角进行投票</li>
+<li>为什么需要Random Forest<ul>
+<li>bagging得到的树都是在同一个数据集中抽样得到的数据上训练的，而且采用的都是相同的贪心策略，这往往会导致生成的树在结构上非常相似，以至于会拥有极其类似的分布</li>
+<li>当我们有B棵树，两两相关系数为$\rho$，自身方差为$\sigma^2$时，他们的均值的方差为$\rho\sigma^2+\frac{1-\rho}B\sigma^2$</li>
+<li>从这个式子可以看出，即使在bagging算法中，我们使用了再大的B，也无法消除前一项的影响，而假设树之间的相关性较高，则优化程度有限，本质上是因为，决策树不独立</li>
 </ul>
-<h5 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h5><ul>
-<li>The strength of week learners</li>
+</li>
+<li>每棵树每步分裂限制特征集，限制每一步的“视角”，在限制的特征集中选择最优的特征和阈值，最终融合不同视角进行投票<ul>
+<li>实操上，我们在每一步分裂时，随机选择一组特征，在其中选择最优的特征</li>
+<li>补充说明一些可以调整的超参数<ul>
+<li>每次随机挑选的特征数量</li>
+<li>随机森林中树的总数</li>
+<li>叶结点的最小规模</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如何进一步调整随机森林<ul>
+<li>交叉验证<ul>
+<li>随机森林天然可以交叉验证，因为我们使用一部分数据来构建决策树，剩下的数据就可以用来评估</li>
+</ul>
+</li>
+<li>随机排列特征数据<ul>
+<li>我们想要评估一个特征在整个随机森林中的重要性，我们可以对袋外数据中的某一个特征进行随机排列，然后测试决策树因为特征被随机排列而造成的计算准确度下降情况</li>
+<li>对随机森林中所有的树做如上操作后，计算平均情况，即可得到该特征在整个随机森林中的平均重要性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>随机森林仍然不是完美的算法<ul>
+<li>如果特征的数量有很多，但是有用的特征很少的时候，随机森林的效果可能会很差，因为我们随机选择特征很容易选中很多没用的特征而漏选有用特征，构建出来的树很可能完全无法有效学习数据格式</li>
+<li>树的数量极大时，又会回到树相关性提高，方差变大的问题</li>
+</ul>
+</li>
+</ul>
+<h5 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h5><blockquote>
+<p>The strength of week learners</p>
+</blockquote>
+<ul>
 <li>原理是，首先使用week classifier进行学习，之后依据预测结果，给出residual。下一个week classifier对特征和残差进行学习，得到一个新的预测结果，和residual得出下一个residual，反复进行，并在最后以一定参数融合所有的week classifier</li>
 </ul>
 <h5 id="GBoosting"><a href="#GBoosting" class="headerlink" title="GBoosting"></a>GBoosting</h5><ul>
@@ -1324,7 +1565,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="马尔可夫决策过程（MDP）"><a href="#马尔可夫决策过程（MDP）" class="headerlink" title="马尔可夫决策过程（MDP）"></a>马尔可夫决策过程（MDP）</h3><blockquote>
+<h3 id="马尔可夫决策过程-Markov-decision-process（MDP）"><a href="#马尔可夫决策过程-Markov-decision-process（MDP）" class="headerlink" title="马尔可夫决策过程 Markov decision process（MDP）"></a>马尔可夫决策过程 Markov decision process（MDP）</h3><blockquote>
 <p>在MRP基础上引入了决策过程</p>
 </blockquote>
 <ul>
@@ -1364,14 +1605,17 @@
 <li>![[Pasted image 20231107164046.png]]<ul>
 <li>agent服从全局随机策略，即上下左右均为0.25概率</li>
 <li>如果操作走出了网格，则状态不变</li>
-<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？</li>
+<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？<ul>
+<li>显然不是，需要优化</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="MDP-Policy-Iteration"><a href="#MDP-Policy-Iteration" class="headerlink" title="MDP: Policy Iteration"></a>MDP: Policy Iteration</h3><ul>
-<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进<ul>
+<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进，直到收敛为止<ul>
 <li>一般可以用$\pi(a|s)&#x3D;\frac1{A(s)}$进行初始化（$A(s)$指的是$s$状态下，可执行的决策总数）</li>
 <li>伪代码表示策略更新<ul>
 <li>$\pi^{<em>}(a|s)&#x3D;\operatorname</em>{argmax}<em>{\mathrm{a}}q</em>{\pi}(s,a)$</li>
@@ -1380,159 +1624,9 @@
 </ul>
 </li>
 </ul>
-]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数理方程特殊函数部分以及其他</title>
-    <url>/2023/06/14/shu-li-fang-cheng/</url>
-    <content><![CDATA[<p>级数解</p>
-<ul>
-<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
-<li>回到原式中带入级数解进行计算</li>
-</ul>
-<p>坐标系</p>
-<ul>
-<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
-<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
-<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
-</ul>
-<p>Bessel方程</p>
-<ul>
-<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
-<li>解记作$J_{\pm v(x)}$</li>
-<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
-<li><del>第三类柱函数</del></li>
-<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
-<li>基本递推关系</li>
-</ul>
-<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
-<ul>
-<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
-</ul>
-<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
-<ul>
-<li><p>特征为$l(l+1)$</p>
-</li>
-<li><p>解为$ j_l, n_l$</p>
-</li>
-</ul>
-<p>渐进行为</p>
-<ul>
-<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
-<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
-<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
-<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
-<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
-<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
-</ul>
-<p>Legendre方程和连带Legendre方程的形式</p>
-<ul>
-<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
-</li>
-<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
-</ul>
-</li>
-<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
-<ul>
-<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
-<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
-</ul>
-</li>
-<li><p>Legendre多项式的生成函数</p>
-<ul>
-<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
-<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
-</ul>
-</li>
-<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
-</li>
-<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
-</li>
-</ul>
-</li>
-<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
-<ul>
-<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
-<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
-<li>球谐函数的模长<ul>
-<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><del>递推公式、连带Legendre函数模方</del></p>
-</li>
-</ul>
-<p>傅里叶变换和逆变换形式</p>
-<p> Laplace变换和逆变换形式</p>
-<p>傅里叶变换的卷积公式</p>
-<p>Laplace变换的卷积公式</p>
-<p>方程标准型特征方程</p>
-<ul>
-<li><p>特征方程法</p>
-<ul>
-<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
-</li>
-<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
-</li>
-<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
-</li>
-<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
-</li>
-<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
-</li>
-<li><p>利用变换系数公式求解方程各项系数</p>
-</li>
-</ul>
-</li>
-<li><p>配方法</p>
-<ul>
-<li><del>变系数配方法</del></li>
-<li>常系数配方法，将二次项配方后，换元即可</li>
-</ul>
-</li>
-</ul>
-<p>格林函数</p>
-<ul>
-<li>电像法</li>
-<li>本征函数展开法<ul>
-<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
-<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
-</ul>
-</li>
-<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>时光</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工程图学</title>
-    <url>/2023/11/01/gong-cheng-tu-xue/</url>
-    <content><![CDATA[<p>面对应封闭线框<br>类似性指导作图<br>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</p>
-<h2 id="立体与立体相交"><a href="#立体与立体相交" class="headerlink" title="立体与立体相交"></a>立体与立体相交</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>立体与立体相交简称相贯，立体表面交线称相贯线</p>
-<h3 id="相贯线的主要性质"><a href="#相贯线的主要性质" class="headerlink" title="相贯线的主要性质"></a>相贯线的主要性质</h3><ul>
-<li>表面性：位于两立体的表面上</li>
-<li>封闭性：一般是封闭的空间曲线或折线</li>
-<li>共有性：是两立体表面的共有线</li>
+<h3 id="MDP-Value-Iteration"><a href="#MDP-Value-Iteration" class="headerlink" title="MDP: Value Iteration"></a>MDP: Value Iteration</h3><ul>
+<li>主体思想，不依赖更新Policy进而更新$v$，而是直接在每次迭代中更新$v$，以此隐性地更新策略</li>
+<li>具体来说，每次更新$v$的方法是，选取能最大化该轮$v(s)$的动作$a$，那其实也就是选取了最优决策，感觉是上一种方法的升级版</li>
 </ul>
 ]]></content>
       <categories>
@@ -1833,238 +1927,6 @@
       </tags>
   </entry>
   <entry>
-    <title>one-hot编码向量化及还原</title>
-    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
-    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
-<span id="more"></span>
-
-<ul>
-<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
-<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的$f$和$g$进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
-</ul>
-</li>
-<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>现代生物学导论</title>
-    <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
-    <content><![CDATA[<span id="more"></span>
-<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><h3 id="生物系统的弱化学作用"><a href="#生物系统的弱化学作用" class="headerlink" title="生物系统的弱化学作用"></a>生物系统的弱化学作用</h3><ul>
-<li>强弱化学作用<ul>
-<li>强化学作用<ul>
-<li>生理温度下稳定</li>
-<li>包括所有的化学键</li>
-</ul>
-</li>
-<li>弱化学作用<ul>
-<li>生物体内不断生成和断裂</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="DNA的结构和功能"><a href="#DNA的结构和功能" class="headerlink" title="DNA的结构和功能"></a>DNA的结构和功能</h3><ul>
-<li>DNA的化学组成<ul>
-<li>磷酸、五碳糖、含氮碱基</li>
-</ul>
-</li>
-<li>DNA的功能<ul>
-<li>多样性、存储遗传信息、可复制、稳定</li>
-</ul>
-</li>
-<li>DNA的一级结构（存储遗传信息）<ul>
-<li>多聚核苷酸单链</li>
-<li>一级结构的应用<ul>
-<li>寻找生物间演化关系<ul>
-<li>人类（23对）、黑猩猩（及后均为24对）、大猩猩、红毛猩猩</li>
-<li>假说：人类染色体在演化过程中发生了融合<ul>
-<li>可能更长</li>
-<li>可能含有不止一处着丝粒、端粒</li>
-<li>比较序列等</li>
-<li>……</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>DNA指纹鉴定</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>DNA的二级结构</li>
-<li>DNA的三级结构</li>
-</ul>
-<h3 id="蛋白质的结构与功能"><a href="#蛋白质的结构与功能" class="headerlink" title="蛋白质的结构与功能"></a>蛋白质的结构与功能</h3><ul>
-<li>蛋白质的四级结构</li>
-<li>蛋白质功能</li>
-<li>蛋白质折叠</li>
-<li>分子伴侣蛋白<ul>
-<li>hsp60工作机制</li>
-</ul>
-</li>
-<li>蛋白质折叠与疾病</li>
-<li>结构与功能的关系<ul>
-<li>例如：DNA聚合酶</li>
-</ul>
-</li>
-</ul>
-<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
-<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
-<li>旁分泌信号</li>
-<li>内分泌信号</li>
-</ul>
-<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
-<li>信号接受<ul>
-<li>信号分子</li>
-<li>受体<ul>
-<li>细胞表面受体<ul>
-<li>G蛋白耦合受体</li>
-<li>受体络氨酸激酶</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>信号转导<ul>
-<li>磷酸化级联</li>
-<li>第二信使<ul>
-<li>非蛋白类小分子</li>
-<li>cAMP环腺苷酸</li>
-<li>cGMP环鸟苷酸</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
-<li>周期素和蛋白激酶</li>
-<li>生长因子</li>
-</ul>
-<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
-<li>凋亡过程<ul>
-<li>细胞收缩、染色体凝结</li>
-<li>膜起泡</li>
-<li>细胞核塌陷</li>
-<li>凋亡体形成</li>
-<li>凋亡小体裂解</li>
-</ul>
-</li>
-<li>三种信号通路<ul>
-<li>线粒体通路</li>
-<li>死亡受体通路</li>
-<li>内质网通路</li>
-</ul>
-</li>
-</ul>
-<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
-<li>自噬过程<ul>
-<li>自噬泡形成</li>
-<li>自噬体形成</li>
-<li>自噬体和溶酶体融合</li>
-<li>自噬溶酶体形成</li>
-<li>降解和再吸收</li>
-</ul>
-</li>
-<li>细胞自噬与疾病</li>
-</ul>
-<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
-<li>无膜细胞器</li>
-</ul>
-<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
-<li>基因<ul>
-<li>控制性状</li>
-</ul>
-</li>
-<li>基因的构成<ul>
-<li>调控区域<ul>
-<li>指导基因是否能够产生蛋白</li>
-</ul>
-</li>
-<li>启动子<ul>
-<li>和转录酶结合的序列</li>
-</ul>
-</li>
-<li>编码区域</li>
-<li>断裂基因<ul>
-<li>细菌基因：连续</li>
-<li>动物基因：断裂</li>
-</ul>
-</li>
-<li>原核基因</li>
-<li>真核基因<ul>
-<li>产生蛋白质的序列<ul>
-<li>内含子&amp;外显子</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>染色质与染色体<ul>
-<li>从DNA到染色质</li>
-</ul>
-</li>
-<li>遗传物质保证稳定机制<ul>
-<li>DNA精确复制<ul>
-<li>碱基配对</li>
-<li>DNA聚合酶的校正</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
-<li>多个遗传密码对应同一个氨基酸</li>
-</ul>
-<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
-<li>对环境刺激做出应答</li>
-<li>发育</li>
-</ul>
-]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>机器学习期中CheckSheet</title>
     <url>/2023/11/01/ji-qi-xue-xi-qi-zhong-check-sheet/</url>
     <content><![CDATA[<p>机器学习期中复习提纲（### Lecture1-### Lecture5）</p>
@@ -2266,18 +2128,22 @@
 <ul>
 <li><p>了解基本概念和实现流程</p>
 </li>
-<li><p>调整随机森林的方法5. Boosting</p>
-</li>
-<li><p>了解基本概念和实现流程</p>
+<li><p>调整随机森林的方法</p>
 </li>
 </ul>
-<ol start="6">
+<ol>
+<li>Boosting</li>
+</ol>
+<ul>
+<li>了解基本概念和实现流程</li>
+</ul>
+<ol start="2">
 <li>Gradient Boosting</li>
 </ol>
 <ul>
 <li>了解基本概念</li>
 </ul>
-<ol start="7">
+<ol start="3">
 <li>KNN（K-nearest neighborhood）</li>
 </ol>
 <ul>
@@ -2388,6 +2254,238 @@
       </tags>
   </entry>
   <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的$f$和$g$进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
+</ul>
+</li>
+<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>one-hot编码向量化及还原</title>
+    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
+    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
+<span id="more"></span>
+
+<ul>
+<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
+<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>现代生物学导论</title>
+    <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><h3 id="生物系统的弱化学作用"><a href="#生物系统的弱化学作用" class="headerlink" title="生物系统的弱化学作用"></a>生物系统的弱化学作用</h3><ul>
+<li>强弱化学作用<ul>
+<li>强化学作用<ul>
+<li>生理温度下稳定</li>
+<li>包括所有的化学键</li>
+</ul>
+</li>
+<li>弱化学作用<ul>
+<li>生物体内不断生成和断裂</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="DNA的结构和功能"><a href="#DNA的结构和功能" class="headerlink" title="DNA的结构和功能"></a>DNA的结构和功能</h3><ul>
+<li>DNA的化学组成<ul>
+<li>磷酸、五碳糖、含氮碱基</li>
+</ul>
+</li>
+<li>DNA的功能<ul>
+<li>多样性、存储遗传信息、可复制、稳定</li>
+</ul>
+</li>
+<li>DNA的一级结构（存储遗传信息）<ul>
+<li>多聚核苷酸单链</li>
+<li>一级结构的应用<ul>
+<li>寻找生物间演化关系<ul>
+<li>人类（23对）、黑猩猩（及后均为24对）、大猩猩、红毛猩猩</li>
+<li>假说：人类染色体在演化过程中发生了融合<ul>
+<li>可能更长</li>
+<li>可能含有不止一处着丝粒、端粒</li>
+<li>比较序列等</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DNA指纹鉴定</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DNA的二级结构</li>
+<li>DNA的三级结构</li>
+</ul>
+<h3 id="蛋白质的结构与功能"><a href="#蛋白质的结构与功能" class="headerlink" title="蛋白质的结构与功能"></a>蛋白质的结构与功能</h3><ul>
+<li>蛋白质的四级结构</li>
+<li>蛋白质功能</li>
+<li>蛋白质折叠</li>
+<li>分子伴侣蛋白<ul>
+<li>hsp60工作机制</li>
+</ul>
+</li>
+<li>蛋白质折叠与疾病</li>
+<li>结构与功能的关系<ul>
+<li>例如：DNA聚合酶</li>
+</ul>
+</li>
+</ul>
+<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
+<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
+<li>旁分泌信号</li>
+<li>内分泌信号</li>
+</ul>
+<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
+<li>信号接受<ul>
+<li>信号分子</li>
+<li>受体<ul>
+<li>细胞表面受体<ul>
+<li>G蛋白耦合受体</li>
+<li>受体络氨酸激酶</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>信号转导<ul>
+<li>磷酸化级联</li>
+<li>第二信使<ul>
+<li>非蛋白类小分子</li>
+<li>cAMP环腺苷酸</li>
+<li>cGMP环鸟苷酸</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
+<li>周期素和蛋白激酶</li>
+<li>生长因子</li>
+</ul>
+<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
+<li>凋亡过程<ul>
+<li>细胞收缩、染色体凝结</li>
+<li>膜起泡</li>
+<li>细胞核塌陷</li>
+<li>凋亡体形成</li>
+<li>凋亡小体裂解</li>
+</ul>
+</li>
+<li>三种信号通路<ul>
+<li>线粒体通路</li>
+<li>死亡受体通路</li>
+<li>内质网通路</li>
+</ul>
+</li>
+</ul>
+<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
+<li>自噬过程<ul>
+<li>自噬泡形成</li>
+<li>自噬体形成</li>
+<li>自噬体和溶酶体融合</li>
+<li>自噬溶酶体形成</li>
+<li>降解和再吸收</li>
+</ul>
+</li>
+<li>细胞自噬与疾病</li>
+</ul>
+<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
+<li>无膜细胞器</li>
+</ul>
+<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
+<li>基因<ul>
+<li>控制性状</li>
+</ul>
+</li>
+<li>基因的构成<ul>
+<li>调控区域<ul>
+<li>指导基因是否能够产生蛋白</li>
+</ul>
+</li>
+<li>启动子<ul>
+<li>和转录酶结合的序列</li>
+</ul>
+</li>
+<li>编码区域</li>
+<li>断裂基因<ul>
+<li>细菌基因：连续</li>
+<li>动物基因：断裂</li>
+</ul>
+</li>
+<li>原核基因</li>
+<li>真核基因<ul>
+<li>产生蛋白质的序列<ul>
+<li>内含子&amp;外显子</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>染色质与染色体<ul>
+<li>从DNA到染色质</li>
+</ul>
+</li>
+<li>遗传物质保证稳定机制<ul>
+<li>DNA精确复制<ul>
+<li>碱基配对</li>
+<li>DNA聚合酶的校正</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
+<li>多个遗传密码对应同一个氨基酸</li>
+</ul>
+<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
+<li>对环境刺激做出应答</li>
+<li>发育</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo git问题</title>
     <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
@@ -2399,6 +2497,29 @@
       </categories>
       <tags>
         <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鹊踏枝</title>
+    <url>/2022/12/24/que-ta-zhi/</url>
+    <content><![CDATA[<p>翻过五代词的卷首语，就仿佛翻过了整整一个时代——告别了行吟于诗国晚辉中的杜牧、李商隐，一种全新的体裁在一片全新的时代土壤上展苞待放。</p>
+<p>就好像一个四处漂泊的游子，他游天姥，攀蜀道，下江陵；见过了大漠孤烟，长河落日，星垂平野，月涌江流；梦过了渌水荡漾，天青云淡，白鹿青崖，广厦万间，忽地停下了脚步。</p>
+<p>他取来了镜子，镜子不是湖面，镜子里，只有他一人。</p>
+<p>他看到镜中数百年的流浪给自己留下的痕迹，深深浅浅。百年来的种种夹杂着繁复的心情，化作无数人影向他涌来：李将军，石壕吏；卖炭翁，琵琶女，秦妃王子浣纱人，征人思妇一书生……他拨开重叠的幻境，人影憧憧，镜中人只有自己。</p>
+<p>他于是知道，像风吹过了三千里，他写尽天下而未曾落笔之处，是自己。</p>
+<p>一曲《鹊踏枝》，不必有“君王掩面救不得”的悲恸，不必有“同是天涯沦落人”的怜与自怜。“闲愁”本不需要什么由头引子，若非要说，便是那宜人春色，而不再是欲回天地、欲入扁舟。</p>
+<p>没有“欲”，愁是无名的愁——就像你愿意无缘由地凝视阳光下的一株小树。无理之处，实则有情而且真实得使人想落下眼泪。试想，在大唐盛世会有多少诗人揽镜自鉴自伤憔悴呢？他们的眼光是向外的，是天地苍茫。而到了南唐——仿佛曲终人散，镜子里，终于能够空到放得下一个自己，一个真实的自己。</p>
+<p>我爱那“独立小桥风满袖”、“长笛一声人倚楼”。它们若结成联句，在我看来无异于唐与五代的桥梁——他们共同描绘了人的真实：风满袖，仿佛身上每一寸衣袂都被晚风鼓动；一声笛，又仿佛余音袅袅回环缭绕，敲打心弦而不绝……人在这样的情境下，是自我的，真实的，饱满的，也是孤独的。</p>
+<p>人们怀揣孤独的共情，从盛唐走向晚唐，又从晚唐步入南唐……</p>
+<p>体会到了何为自我，冯延巳的《鹊踏枝》在最后一句让“人”悄悄离去。</p>
+<p>平林新月，有人叹“可惜不见人影”。</p>
+<p>岂知“无妨不见人影”，乃至“可幸没有人影”！人在此中的“退”是心在此中的“生”！</p>
+]]></content>
+      <categories>
+        <category>残章</category>
+      </categories>
+      <tags>
+        <tag>残章</tag>
       </tags>
   </entry>
   <entry>
@@ -2435,7 +2556,85 @@
   <entry>
     <title>量子与统计</title>
     <url>/2023/10/28/liang-zi-yu-tong-ji/</url>
-    <content><![CDATA[<h3 id="第三章习题"><a href="#第三章习题" class="headerlink" title="第三章习题"></a>第三章习题</h3><ul>
+    <content><![CDATA[<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><blockquote>
+<p>快速通过</p>
+</blockquote>
+<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="薛定谔方程"><a href="#薛定谔方程" class="headerlink" title="薛定谔方程"></a>薛定谔方程</h3><ul>
+<li>薛定谔方程<ul>
+<li>含时薛定谔方程<ul>
+<li>$$\mathrm{i}\hbar\frac{\partial}{\partial t}\psi(\boldsymbol{r},t)&#x3D;H\psi(\boldsymbol{r},t)$$</li>
+</ul>
+</li>
+<li>不含时薛定谔方程<ul>
+<li>$$H\psi&#x3D;E\psi$$</li>
+</ul>
+</li>
+<li>一些说明<ul>
+<li>薛定谔方程不适用于相对论效应，所以能量的计算方式一般依据其经典对应即可</li>
+<li>薛定谔方程是量子力学的一个基本假定</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>薛定谔方程的讨论<ul>
+<li>空间概率密度$\Psi^{*}\left(\boldsymbol{r},t\right)\Psi(\boldsymbol{r},t)$</li>
+<li>概率流密度矢量$\frac{\partial w}{\partial t}&#x3D;\Psi^{<em>}\frac{\partial\Psi}{\partial t}+\frac{\partial\Psi^{</em>}}{\partial t}\Psi$</li>
+<li>代入薛定谔方程化简，得$\frac{\partial w}{\partial t}&#x3D;\vec{J}\equiv\frac{i\hbar}{2\mu}(\Psi\nabla\Psi^*-\Psi^*\nabla\Psi)$<ul>
+<li>注1：$\frac{\partial\Psi}{\partial t}&#x3D;\frac{i\hbar}{2\mu}\nabla^{2}\Psi+\frac{1}{i\hbar}U\Psi$</li>
+<li>注2：$\frac{\partial\Psi^{<em>}}{\partial t}&#x3D;-\frac{i\hbar}{2\mu}\nabla^{2}\Psi^{</em>}-\frac{1}{i\hbar}U\Psi^{*}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>定态薛定谔方程<ul>
+<li>此处开始涉及定态的概念</li>
+<li>若势能函数与时间无关，则薛定谔方程可以分离变量求解</li>
+<li>原本的薛定谔方程如下：$\begin{aligned}i\hbar\frac{\partial\Psi}{\partial t}&amp;&#x3D;-\frac{\hbar^2}{2\mu}\nabla^2\Psi+U(\vec{r})\Psi\end{aligned}$<ul>
+<li>分离变量设：$\Psi(\vec{r},t)&#x3D;f(t)\psi(\vec{r})$</li>
+<li>得：$\frac{i\hbar}{f(t)}\frac{df}{dt}&#x3D;\frac{1}{\psi(\vec{r})}\Bigg[-\frac{\hbar^{2}}{2\mu}\nabla^{2}\psi+U(\vec{r})\psi\Bigg]\color{red}{&#x3D;E}$</li>
+<li>接下来按照分离变量的解法分别求解两个方程</li>
+<li>时间项的解是一般的$i\hbar\frac{df}{dt}&#x3D;Ef\left(t\right),f\left(t\right)&#x3D;c\mathrm{e}^{-\frac ihEt}$</li>
+<li>另一个即是所谓的定态薛定谔方程（不含时薛定谔方程）<ul>
+<li>$-\frac{\hbar^{2}}{2\mu}\nabla^{2}\psi+U(\vec{r})\psi&#x3D;E\psi(\vec{r})$</li>
+<li>这是在势场$U(\vec{r})$中粒子的能量本征方程<ul>
+<li>定态是能量的本征态</li>
+</ul>
+</li>
+<li>定态波函数都具有这样的形式<ul>
+<li>$\Psi(\vec{r},t)&#x3D;\mathrm{e}^{-\frac i\hbar Et}\psi(\vec{r})$</li>
+<li>其中$E$的物理意义是粒子的能量</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>一些定义区分<ul>
+<li>定态：体系的能量有确定值的状态</li>
+<li>非定态：由若干个能量不同的本征态叠加所形成的态</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="第二章课堂思考题"><a href="#第二章课堂思考题" class="headerlink" title="第二章课堂思考题"></a>第二章课堂思考题</h4><ul>
+<li>写出自由粒子、氢原子、氦原子的哈密顿量<ul>
+<li>自由粒子$\hat{H}&#x3D;\frac{\hat{\mathbf{p}}^2}{2m}&#x3D;-\frac{\hbar^2}{2m}\nabla^2$</li>
+<li>$\hat{H}&#x3D;-\frac{\hbar^2}{2m_e}\nabla^2-\frac{e^2}{4\pi\epsilon_0r}$</li>
+<li>$\hat{H}&#x3D;-\frac{\hbar^2}{2m_e}\left(\nabla_1^2+\nabla_2^2\right)-\frac{2e^2}{4\pi\epsilon_0r_1}-\frac{2e^2}{4\pi\epsilon_0r_2}+\frac{e^2}{4\pi\epsilon_0|\mathbf{r}_1-\mathbf{r}_2|}$<ul>
+<li>在一些情况下，也可以不写$4\pi\epsilon_0$（特殊单位制）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>假设一个粒子的初始态是两个定态的线性组合$$\psi\left(x,0\right)&#x3D;c_1\psi_1\left(x\right)+c_2\psi_2\left(x\right)$$那么任意时刻的波函数是什么？求出概率密度并描述其运动形式.<ul>
+<li>其实只要分别乘上时间项，再求平方即可$$\psi\left(x,t\right)&#x3D;c_1\psi_1\left(x\right)e^{-iE_1t&#x2F;\hbar}+c_2\psi_2\left(x\right)e^{-iE_2t&#x2F;\hbar}$$</li>
+<li>有一个有趣的点，就是平方后可得$$c_1^2\psi_1^2\left(x\right)+c_2^2\psi_2^2\left(x\right)+2c_1c_2\psi_1\left(x\right)\psi_2\left(x\right)\mathrm{cos}\left[\left(E_2-E_1\right)t&#x2F;\hbar\right]$$</li>
+<li>概率密度的振动被称为“量子节拍”</li>
+</ul>
+</li>
+</ul>
+<h1 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h1><h3 id="第三章习题"><a href="#第三章习题" class="headerlink" title="第三章习题"></a>第三章习题</h3><ul>
 <li>有关氢原子的计算<ul>
 <li>半径的均值往往在球坐标系下计算<ul>
 <li>注意变换坐标系的相关细节</li>
@@ -2509,7 +2708,74 @@
 <li>银原子最外层价电子在$5s$轨道上，由$L&#x3D;\sqrt{l(l+1)\hbar}$，知银原子基态轨道磁矩为$0$</li>
 <li>但是实验结果表明</li>
 </ul>
-<h3 id="电子自旋假设"><a href="#电子自旋假设" class="headerlink" title="电子自旋假设"></a>电子自旋假设</h3><h3 id="课堂习题-1"><a href="#课堂习题-1" class="headerlink" title="课堂习题"></a>课堂习题</h3>]]></content>
+<h3 id="电子自旋假设"><a href="#电子自旋假设" class="headerlink" title="电子自旋假设"></a>电子自旋假设</h3><h3 id="课堂习题-1"><a href="#课堂习题-1" class="headerlink" title="课堂习题"></a>课堂习题</h3><h1 id="第一次习题课"><a href="#第一次习题课" class="headerlink" title="第一次习题课"></a>第一次习题课</h1><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h4><ul>
+<li>量子态</li>
+<li>定态</li>
+<li>束缚态</li>
+<li>散射态</li>
+<li>宇称</li>
+<li>德布罗意假设</li>
+<li>隧穿（隧道效应）</li>
+</ul>
+<h4 id="原理与假设"><a href="#原理与假设" class="headerlink" title="原理与假设"></a>原理与假设</h4><ul>
+<li>波粒二象性</li>
+<li>量子力学基本假定*</li>
+<li>量子态叠加</li>
+<li>不确定度*</li>
+<li>互补</li>
+<li>对应</li>
+</ul>
+<h4 id="重点模型"><a href="#重点模型" class="headerlink" title="重点模型"></a>重点模型</h4><ul>
+<li>自由粒子模型</li>
+<li>无限深势阱&#x2F;有限深</li>
+<li>$\delta$势模型</li>
+<li>定点、定轴转动</li>
+<li>一维二维三维线性谐振子</li>
+<li>氢原子（能级公式、波函数特征、电流密度及磁矩）</li>
+</ul>
+<h4 id="两类问题"><a href="#两类问题" class="headerlink" title="两类问题"></a>两类问题</h4><ul>
+<li>束缚态问题</li>
+<li>散射问题</li>
+</ul>
+<h4 id="讨论题"><a href="#讨论题" class="headerlink" title="讨论题"></a>讨论题</h4><h5 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h5><ul>
+<li>束缚态与坐标关系的问题</li>
+</ul>
+<h5 id="本征方程的建立与求解"><a href="#本征方程的建立与求解" class="headerlink" title="本征方程的建立与求解"></a>本征方程的建立与求解</h5><ul>
+<li>定轴转动模型<ul>
+<li>$\mu$在平面上沿$R$绕$z$轴转动，初始时刻粒子波函数为$\Psi(\psi,0)&#x3D;Acos^2\psi$ ，求解下列问题<ul>
+<li><h2 id="写出这个系统的哈密顿量算符"><a href="#写出这个系统的哈密顿量算符" class="headerlink" title="写出这个系统的哈密顿量算符"></a>写出这个系统的哈密顿量算符</h2></li>
+<li>求出粒子的能级和对应的归一化能量本征函数，给出各能级的简并度</li>
+<li>粒子在任意$_{t\geq0}$ 时刻的波函数以及处于第二能量激发态的概率</li>
+<li>角动量的可能值、相应的概率及平均值，并回答这些值是否受时间影响</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>线性谐振子模型<ul>
+<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}$的作用 $$V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x,<br>$$<ul>
+<li>求束缚态能量本征值和本征函数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>散射问题<ul>
+<li>考虑双 $\delta$ 函数势，其中$\alpha$ 和$\alpha$ 都是正的常数</li>
+<li>$$<br>V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>$$<ul>
+<li>画出这个势</li>
+<li>若考虑具有能量为$E&gt;0$的粒子入射该势垒，求透射率</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="算符理论、测量、不确定度关系"><a href="#算符理论、测量、不确定度关系" class="headerlink" title="算符理论、测量、不确定度关系"></a>算符理论、测量、不确定度关系</h5><ul>
+<li>厄米算符定义、性质、判定及构造</li>
+<li>算符对易关系的计算</li>
+<li>平均值的计算</li>
+<li>对测量的理解和应用</li>
+<li>对不确定关系的理解及应用</li>
+</ul>
+]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -2518,26 +2784,28 @@
       </tags>
   </entry>
   <entry>
-    <title>鹊踏枝</title>
-    <url>/2022/12/24/que-ta-zhi/</url>
-    <content><![CDATA[<p>翻过五代词的卷首语，就仿佛翻过了整整一个时代——告别了行吟于诗国晚辉中的杜牧、李商隐，一种全新的体裁在一片全新的时代土壤上展苞待放。</p>
-<p>就好像一个四处漂泊的游子，他游天姥，攀蜀道，下江陵；见过了大漠孤烟，长河落日，星垂平野，月涌江流；梦过了渌水荡漾，天青云淡，白鹿青崖，广厦万间，忽地停下了脚步。</p>
-<p>他取来了镜子，镜子不是湖面，镜子里，只有他一人。</p>
-<p>他看到镜中数百年的流浪给自己留下的痕迹，深深浅浅。百年来的种种夹杂着繁复的心情，化作无数人影向他涌来：李将军，石壕吏；卖炭翁，琵琶女，秦妃王子浣纱人，征人思妇一书生……他拨开重叠的幻境，人影憧憧，镜中人只有自己。</p>
-<p>他于是知道，像风吹过了三千里，他写尽天下而未曾落笔之处，是自己。</p>
-<p>一曲《鹊踏枝》，不必有“君王掩面救不得”的悲恸，不必有“同是天涯沦落人”的怜与自怜。“闲愁”本不需要什么由头引子，若非要说，便是那宜人春色，而不再是欲回天地、欲入扁舟。</p>
-<p>没有“欲”，愁是无名的愁——就像你愿意无缘由地凝视阳光下的一株小树。无理之处，实则有情而且真实得使人想落下眼泪。试想，在大唐盛世会有多少诗人揽镜自鉴自伤憔悴呢？他们的眼光是向外的，是天地苍茫。而到了南唐——仿佛曲终人散，镜子里，终于能够空到放得下一个自己，一个真实的自己。</p>
-<p>我爱那“独立小桥风满袖”、“长笛一声人倚楼”。它们若结成联句，在我看来无异于唐与五代的桥梁——他们共同描绘了人的真实：风满袖，仿佛身上每一寸衣袂都被晚风鼓动；一声笛，又仿佛余音袅袅回环缭绕，敲打心弦而不绝……人在这样的情境下，是自我的，真实的，饱满的，也是孤独的。</p>
-<p>人们怀揣孤独的共情，从盛唐走向晚唐，又从晚唐步入南唐……</p>
-<p>体会到了何为自我，冯延巳的《鹊踏枝》在最后一句让“人”悄悄离去。</p>
-<p>平林新月，有人叹“可惜不见人影”。</p>
-<p>岂知“无妨不见人影”，乃至“可幸没有人影”！人在此中的“退”是心在此中的“生”！</p>
+    <title>日记11-9</title>
+    <url>/2023/11/09/2023-11-09/</url>
+    <content><![CDATA[<p>好好好这么浪费时间是吧<br>唉，反正每到期中周都整这一出<br>真是服了<br>11:00之前先把GDA给搞了<br>然后吃个饭到12:00<br>把机器学习第四章给看了，然后差不多1、2点了<br>之后……之后复习一下量统到4点，然后把和声唱了，最好把题也给做了，这样就五点了。<br>吃个晚饭六点了，然后弹一个小时吉他，七点半再开始学，到九点把机器学习前四章的cheatsheet给做了，然后复习量统到10点<br>完了以后剩下的时间把老师改的论文看看<br>呃呃呃呃啊啊啊啊<br>急急急</p>
+<p>呃呃15:47check<br>第四章还没看完，急了<br>22:28check<br>寄</p>
 ]]></content>
       <categories>
-        <category>残章</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>残章</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记11-10</title>
+    <url>/2023/11/10/2023-11-10/</url>
+    <content><![CDATA[<p>又是过生日！<br>9月27</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>

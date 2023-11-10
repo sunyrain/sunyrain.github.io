@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"sunyrain.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="9-19 第一讲">
+  <meta name="description" content="Big Data &amp; Simple Modelwhy machine learning feasible 可行的 Example : pick red and green marbles from a bin $\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$ Hoeffdin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习">
 <meta property="og:url" content="https://sunyrain.github.io/2023/09/19/ji-qi-xue-xi/index.html">
 <meta property="og:site_name" content="whilesunny">
-<meta property="og:description" content="9-19 第一讲">
+<meta property="og:description" content="Big Data &amp; Simple Modelwhy machine learning feasible 可行的 Example : pick red and green marbles from a bin $\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$ Hoeffdin">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-19T01:51:02.572Z">
-<meta property="article:modified_time" content="2023-11-08T02:34:09.867Z">
+<meta property="article:modified_time" content="2023-11-09T07:46:00.978Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-08 10:34:09" itemprop="dateModified" datetime="2023-11-08T10:34:09+08:00">2023-11-08</time>
+                <time title="修改时间：2023-11-09 15:46:00" itemprop="dateModified" datetime="2023-11-09T15:46:00+08:00">2023-11-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -257,9 +257,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="9-19-第一讲"><a href="#9-19-第一讲" class="headerlink" title="9-19 第一讲"></a>9-19 第一讲</h2><span id="more"></span>
-<p>$(\psi(r,\theta,\phi)&#x3D;\frac{1}{\sqrt{\pi{a_0}^3}}e^{-\frac{r}{a_0}})$</p>
-<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+        <h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
 <h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
@@ -269,7 +267,7 @@
 <li>关键：big data gives an accurate learning result</li>
 </ul>
 </li>
-<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>\tag{1}<br>$$<ul>
+<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>\tag{1}$$<ul>
 <li>$b_i ,a_i$分别为变量$X_i$的上限和下限</li>
 <li>注意到$S_n$是变量之和，如果要与伯努利情况下的Koeffding比较，则可以考虑指数上下同除$n^2$</li>
 <li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
@@ -280,15 +278,8 @@
 <li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，每一次取球，就相当于在定义域$X$中取一个$x$，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
 <li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\nu$和$\mu$，我们想要知道我们的假设$h$效果怎么样，但是没必要把所有$x$全带入。</li>
 <li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$ </li>
-<li>$$</li>
-</ul>
-<p>\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq \sum_{m&#x3D;1}^M \mathbb{P}\left[\left|E_{\text {in }}\left(h_m\right)-E_{\text {out }}\left(h_m\right)\right|&gt;\epsilon\right]</p>
-<p>$$</p>
-<ul>
-<li>$$</li>
-</ul>
-<p>\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq 2 M e^{-2 \epsilon^2 N}<br>\tag{2}<br>$$</p>
-<ul>
+<li>$$\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq \sum_{m&#x3D;1}^M \mathbb{P}\left[\left|E_{\text {in }}\left(h_m\right)-E_{\text {out }}\left(h_m\right)\right|&gt;\epsilon\right]$$</li>
+<li>$$\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq 2 M e^{-2 \epsilon^2 N}<br>\tag{2}$$</li>
 <li>这条式子的意思是，给出所有$M$个假设中，最优的一个，训练集和实际集的误差上限（这本身不能让$g$接近$f$）这很好理解，因为右侧包含左侧。<blockquote>
 <p>Low complexity model and big data can give us a good generalization in machine learning</p>
 </blockquote>
@@ -358,7 +349,7 @@
 <li>在假设残差符合高斯分布的前提下，假设其方差为$\sigma^2$</li>
 </ul>
 </li>
-<li>$$<br>p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}<br>$$</li>
+<li>$$p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
 <li>复习的时候发现这里非常容易混淆，再次强调$p((x_i,y_i)|\beta)$其实指的是$x_i$在参数为$\beta$时给出的预测和真实的标签$y_i$的差距服从的分布</li>
 <li>依据常规高斯分布公式分析，其实就是下式（对于残差，均值$\mu$为0）</li>
 <li>$$p;(\left(\epsilon_i) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(\epsilon_i-0)^2}{2 \sigma^2}}$$</li>
@@ -566,8 +557,8 @@
 <li>注记一下，这里假设$y_i$有0和1两种可能，所以直接放在指数上了</li>
 </ul>
 </li>
-<li>综上，最大似然函数的对数是<ul>
-<li>$$\mathcal{L}(\boldsymbol{\beta})&#x3D;\log\left(\prod_{i&#x3D;1}^mp((\boldsymbol{x}<em>i,y_i)|\boldsymbol{\beta})\right)&#x3D;\sum</em>{i&#x3D;1}^my_i\log\left(f_p(x_i)\right)+(1-y_i)\log\left(1-f_p(x_i)\right)$$</li>
+<li>综上，最大似然函数的对数是</li>
+<li>$$\mathcal{L}(\boldsymbol{\beta})&#x3D;\log\left(\prod_{i&#x3D;1}^mp((\boldsymbol{x}<em>i,y_i)|\boldsymbol{\beta})\right)&#x3D;\sum</em>{i&#x3D;1}^my_i\log\left(f_\beta(x_i)\right)+(1-y_i)\log\left(1-f_\beta(x_i)\right)$$<ul>
 <li>我们的目标就是找到这样一个$\beta$使得$\mathcal{L}(\beta)$最大<ul>
 <li>其实也就是提高全部预测准确的概率</li>
 </ul>
@@ -612,21 +603,40 @@
 </li>
 <li>GDA高斯判别分析<ul>
 <li>与一般的Discriminative learning算法不同，GDA尝试学习$p(x|y)(and ; p(y))$ ,之后利用其去构建后验分布</li>
+<li>整体来说，分类问题的目标是求$argmax_y;p(y|x)$这一点是不变的，但是GDA做了如下转化</li>
+<li>$$\begin{aligned}\operatorname{argmax}_yp(y|x)&#x3D;\operatorname{argmax}_y\frac{p(x|y)p(y)}{p(x)}&#x3D;\operatorname{argmax}_yp(x|y)p(y)\end{aligned}$$</li>
+<li>所以我们可以转为计算$p(y)$和$p(x|y)$，然后对他们的乘积找一个$y$使其最大化，下分别计算之</li>
+<li>$p(y)&#x3D;\phi^{1{y&#x3D;\times}}(1-\phi)^{1-1{y&#x3D;\times}}$</li>
+<li>$p(\boldsymbol{x}|y&#x3D;\times)&#x3D;\frac{1}{(2\pi)^{d&#x2F;2}|\Sigma|^{1&#x2F;2}}\exp\left(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu}_\times)^T\Sigma^{-1}(\boldsymbol{x}-\boldsymbol{\mu}_\times)\right)$</li>
+<li>$p(x|y&#x3D;{0})&#x3D;\frac1{(2\pi)^{d&#x2F;2}|\Sigma|^{1&#x2F;2}}\exp\left(-\frac12(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)$</li>
+<li>$\Sigma^T&#x3D;\frac1m\Sigma_{i&#x3D;1}^m\left(x^{(i)}-\mu_{y^{(i)}}\right)\left(x^{(i)}-\mu_{y^{(i)}}\right)^T$</li>
+<li>$\phi&#x3D;\frac1m\sum_{i&#x3D;1}^m1{y^{(i)}&#x3D;\times}$</li>
 </ul>
 </li>
 </ul>
 <h4 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h4><ul>
 <li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
-<li>树，连通无环结构<ul>
+<li>决策树<ul>
+<li>连通无环结构</li>
 <li>树的节点表示属性测试</li>
 <li>叶节点表示分类结果</li>
 <li>每一次划分其实是对空间进行一次轴对齐的超平面划分，树可以向图转换，图也可以还原成树</li>
 </ul>
 </li>
+<li>决策树的建立<ul>
+<li>建立最小决策树是NP问题，我们使用贪心算法作为一个较好的近似模型<ul>
+<li>首先我们从空的决策树开始</li>
+<li>选择最优特征，同时选择最优的特征阈值</li>
+<li>在划分出来的新节点上继续上述循环，直到到达终止条件</li>
+</ul>
+</li>
+<li>所以重点就是“Splitting Criteria”</li>
+</ul>
+</li>
 <li>$Classification; Error$（可以用来评价划分的质量）<ul>
 <li>$Error(i|j,t_{j}) &#x3D; 1-\max <em>{k}P(k|R</em>{i})$ </li>
 <li>注意这里P不是概率，而是$R_i$中k的比例，比方说一个完美的分类，$R_i$中只有k，那么$Error$就是0</li>
-<li>其中，j是划分的维度，tj是划分的阈值</li>
+<li>其中，$j$是划分的维度，$t_j$是划分的阈值</li>
 <li>树当前的每一个叶子节点都代表了一块区域，而算法的继续进行需要做的，就是将该空间继续划分成两块</li>
 <li>$\min _{j, t_j}\left{\frac{N_1}{N} \operatorname{Error}\left(1 \mid j, t_j\right)+\frac{N_2}{N} \operatorname{Error}\left(2 \mid j, t_j\right)\right}$<ul>
 <li>区域被划分为两块，分别是$R_1$和$R_2$，将两块区域的误差加权相加即得到需要最小化的误差函数</li>
@@ -637,29 +647,103 @@
 <li>我们也可以使用$Gini;index$ <ul>
 <li>通过测试每个区域的”纯度”，来判断划分质量</li>
 <li>$Gini(i|j,t_j)&#x3D;1-\Sigma_k P(k|R_i)^2$</li>
-<li>再次提醒，$P$是$k$类在$R_i$中的比例</li>
+<li>再次提醒，$P(k|R_i)$是指$k$类在$R_i$中的比例</li>
 <li>$Gini$值越低，划分质量越高，所以我们也要最小化$Gini$函数的加权和</li>
 </ul>
 </li>
 <li>我们也可以使用$Entropy$<ul>
-<li>$H(X)&#x3D;$ $-\sum_{x \in X} P(x) \log _2 P(x)$ in each newly created region $R_1, R_2$.</li>
-<li>$\operatorname{Entropy}\left(i \mid j, t_j\right)&#x3D;-\sum_k P\left(k \mid R_i\right) \log _2 P\left(k \mid R_i\right)$</li>
+<li>$\operatorname{Entropy}\left(i \mid j, t_j\right)&#x3D;-\sum_k P\left(k \mid R_i\right) \log _2 P\left(k \mid R_i\right)$<ul>
+<li>也就是说$j$分类器下，以$t_j$为阈值，$i$区域的熵是$i$区域内所有$k$个class的占比乘上其占比对2求对数的和的倒数</li>
+</ul>
+</li>
+<li>当然，我们要最小化$\min_{j,t_j}\left{\frac{N_1}N\operatorname{Entropy}(1|j,t_j)+\frac{N_2}N\operatorname{Entropy}(2|j,t_j)\right}$<ul>
+<li>含义也与之前类似，就是通过某种方式找到一个最优分类器和分类阈值</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <h5 id="Stopping-Condition"><a href="#Stopping-Condition" class="headerlink" title="Stopping Condition"></a>Stopping Condition</h5><ul>
-<li>maximum depth</li>
-<li>number of instance</li>
+<li>如果不加以限制，决策树会不断进行划分，直到每个叶子都只包含一个节点为止，这也达成了训练集上的100%准确率<ul>
+<li>为了避免以上情况，我们提出一些合理的停止策略</li>
+<li>例如，我们可以限制决策树的深度</li>
+<li>当某一区域内全都为同一种类时停止划分</li>
+<li>对每一区域内的数量设置下限</li>
+<li>对总叶子数量设置上限</li>
+<li>计算划分收益，对收益设置下限<ul>
+<li>注，收益一般可表示为</li>
+<li>$\mathrm{Gain}(R)&#x3D;\Delta(R)&#x3D;m(R)-\frac{N_1}Nm(R_1)-\frac{N_2}Nm(R_2)$</li>
 </ul>
-<h5 id="For-Regression"><a href="#For-Regression" class="headerlink" title="For Regression"></a>For Regression</h5><h5 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h5><ul>
-<li>每一次划分都最优或接近最优，则correlation大，这可能降低效果</li>
-<li>所以需要引入随机森林以降低Variance</li>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="For-Regression"><a href="#For-Regression" class="headerlink" title="For Regression"></a>For Regression</h5><blockquote>
+<p>当然，决策树也可以用来做回归问题</p>
+</blockquote>
+<ul>
+<li>同样是对于问题空间进行分割，分割后的每一块区域取其中元素的平均值作为回归决策树对于这一块数据的预测值</li>
+<li>这一次，我们需要最小化的是区域内的点的值和我们预测的值（也就是我们框起来的区域的点的平均值）的差距，我们一般采用以下计算方法</li>
+<li>$$\operatorname{argmin}_{j,t_j}\left{\frac{N_1}NMSE(R_1)+\frac{N_2}NMSE(R_2)\right}$$</li>
+<li>或者</li>
+<li>$$\text{ argmin}_{j,t_j}\left{\frac{N_1}NVar(y|x\in R_1)+\frac{N_2}NVar(y|x\in R_1)\right}$$</li>
+<li>其实，如果我们将预测值选为区域内$y$的均值的话，二者结果是一样的</li>
+</ul>
+<h5 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h5><blockquote>
+<p>说一下有关名字的由来，其实是Bootstrap aggregating的缩写，意思分别是“自助采样”和 “聚合”</p>
+</blockquote>
+<ul>
+<li>较深的或者较大的决策树常常会过拟合，在新的数据集上有较大的方差</li>
+<li>一般来说，我们可以采取以下方法<ul>
+<li>对训练数据采样，对于每一组采样（一般来说，一个自助样本（有放回抽样的样本）大约包含原始数据集中约63.2%的唯一实例），训练一个决策树<ul>
+<li>这里解释一下采样的相关问题</li>
+<li>采样与数据集大小完全一样，但由于是有放回采样，所以依据公式计算，每个数据点不被选中的概率连续乘以自身N次，即$(1-\frac{1}{N})^N$ 趋近于 $e^{-1}$，也就是说，抽到与原始数据集一样大的话，包含着六成多一点的无重复数据</li>
+</ul>
+</li>
+<li>之后对于一个给定的输入，我们将其放入所有的决策树并将结果取平均作为输出</li>
+</ul>
+</li>
+<li>当然，这样做也存在着缺点，我们在提高模型表现的同时，损失了模型的可解释性</li>
 </ul>
 <h5 id="Random-forest"><a href="#Random-forest" class="headerlink" title="Random forest"></a>Random forest</h5><ul>
-<li>每棵树每步分裂限制特征集，限制每一步的“视角”，在限制的特征集中选择最优的特征和阈值，最终融合不同视角进行投票</li>
+<li>为什么需要Random Forest<ul>
+<li>bagging得到的树都是在同一个数据集中抽样得到的数据上训练的，而且采用的都是相同的贪心策略，这往往会导致生成的树在结构上非常相似，以至于会拥有极其类似的分布</li>
+<li>当我们有B棵树，两两相关系数为$\rho$，自身方差为$\sigma^2$时，他们的均值的方差为$\rho\sigma^2+\frac{1-\rho}B\sigma^2$</li>
+<li>从这个式子可以看出，即使在bagging算法中，我们使用了再大的B，也无法消除前一项的影响，而假设树之间的相关性较高，则优化程度有限，本质上是因为，决策树不独立</li>
 </ul>
-<h5 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h5><ul>
-<li>The strength of week learners</li>
+</li>
+<li>每棵树每步分裂限制特征集，限制每一步的“视角”，在限制的特征集中选择最优的特征和阈值，最终融合不同视角进行投票<ul>
+<li>实操上，我们在每一步分裂时，随机选择一组特征，在其中选择最优的特征</li>
+<li>补充说明一些可以调整的超参数<ul>
+<li>每次随机挑选的特征数量</li>
+<li>随机森林中树的总数</li>
+<li>叶结点的最小规模</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如何进一步调整随机森林<ul>
+<li>交叉验证<ul>
+<li>随机森林天然可以交叉验证，因为我们使用一部分数据来构建决策树，剩下的数据就可以用来评估</li>
+</ul>
+</li>
+<li>随机排列特征数据<ul>
+<li>我们想要评估一个特征在整个随机森林中的重要性，我们可以对袋外数据中的某一个特征进行随机排列，然后测试决策树因为特征被随机排列而造成的计算准确度下降情况</li>
+<li>对随机森林中所有的树做如上操作后，计算平均情况，即可得到该特征在整个随机森林中的平均重要性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>随机森林仍然不是完美的算法<ul>
+<li>如果特征的数量有很多，但是有用的特征很少的时候，随机森林的效果可能会很差，因为我们随机选择特征很容易选中很多没用的特征而漏选有用特征，构建出来的树很可能完全无法有效学习数据格式</li>
+<li>树的数量极大时，又会回到树相关性提高，方差变大的问题</li>
+</ul>
+</li>
+</ul>
+<h5 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h5><blockquote>
+<p>The strength of week learners</p>
+</blockquote>
+<ul>
 <li>原理是，首先使用week classifier进行学习，之后依据预测结果，给出residual。下一个week classifier对特征和残差进行学习，得到一个新的预测结果，和residual得出下一个residual，反复进行，并在最后以一定参数融合所有的week classifier</li>
 </ul>
 <h5 id="GBoosting"><a href="#GBoosting" class="headerlink" title="GBoosting"></a>GBoosting</h5><ul>
@@ -760,7 +844,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="马尔可夫决策过程（MDP）"><a href="#马尔可夫决策过程（MDP）" class="headerlink" title="马尔可夫决策过程（MDP）"></a>马尔可夫决策过程（MDP）</h3><blockquote>
+<h3 id="马尔可夫决策过程-Markov-decision-process（MDP）"><a href="#马尔可夫决策过程-Markov-decision-process（MDP）" class="headerlink" title="马尔可夫决策过程 Markov decision process（MDP）"></a>马尔可夫决策过程 Markov decision process（MDP）</h3><blockquote>
 <p>在MRP基础上引入了决策过程</p>
 </blockquote>
 <ul>
@@ -800,14 +884,17 @@
 <li>![[Pasted image 20231107164046.png]]<ul>
 <li>agent服从全局随机策略，即上下左右均为0.25概率</li>
 <li>如果操作走出了网格，则状态不变</li>
-<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？</li>
+<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？<ul>
+<li>显然不是，需要优化</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <h3 id="MDP-Policy-Iteration"><a href="#MDP-Policy-Iteration" class="headerlink" title="MDP: Policy Iteration"></a>MDP: Policy Iteration</h3><ul>
-<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进<ul>
+<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进，直到收敛为止<ul>
 <li>一般可以用$\pi(a|s)&#x3D;\frac1{A(s)}$进行初始化（$A(s)$指的是$s$状态下，可执行的决策总数）</li>
 <li>伪代码表示策略更新<ul>
 <li>$\pi^{<em>}(a|s)&#x3D;\operatorname</em>{argmax}<em>{\mathrm{a}}q</em>{\pi}(s,a)$</li>
@@ -815,6 +902,10 @@
 </li>
 </ul>
 </li>
+</ul>
+<h3 id="MDP-Value-Iteration"><a href="#MDP-Value-Iteration" class="headerlink" title="MDP: Value Iteration"></a>MDP: Value Iteration</h3><ul>
+<li>主体思想，不依赖更新Policy进而更新$v$，而是直接在每次迭代中更新$v$，以此隐性地更新策略</li>
+<li>具体来说，每次更新$v$的方法是，选取能最大化该轮$v(s)$的动作$a$，那其实也就是选取了最优决策，感觉是上一种方法的升级版</li>
 </ul>
 
     </div>
@@ -898,7 +989,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#9-19-%E7%AC%AC%E4%B8%80%E8%AE%B2"><span class="nav-number">1.</span> <span class="nav-text">9-19 第一讲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">2.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Illustration-1D"><span class="nav-number">2.1.</span> <span class="nav-text">Illustration(1D)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">3.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">3.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">4.</span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number">5.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">5.1.</span> <span class="nav-text">Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">5.1.1.</span> <span class="nav-text">Decision Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Stopping-Condition"><span class="nav-number">5.1.1.1.</span> <span class="nav-text">Stopping Condition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#For-Regression"><span class="nav-number">5.1.1.2.</span> <span class="nav-text">For Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Bagging"><span class="nav-number">5.1.1.3.</span> <span class="nav-text">Bagging</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Random-forest"><span class="nav-number">5.1.1.4.</span> <span class="nav-text">Random forest</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Boosting"><span class="nav-number">5.1.1.5.</span> <span class="nav-text">Boosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#GBoosting"><span class="nav-number">5.1.1.6.</span> <span class="nav-text">GBoosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#K-nearest-neighbourhood"><span class="nav-number">5.1.1.7.</span> <span class="nav-text">K-nearest neighbourhood</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">6.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clustering"><span class="nav-number">6.1.</span> <span class="nav-text">Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#K-means%EF%BC%88no-label%EF%BC%89"><span class="nav-number">6.1.1.</span> <span class="nav-text">K-means（no label）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hierarchical-clustering%EF%BC%88%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">6.1.2.</span> <span class="nav-text">Hierarchical clustering（层次聚类）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-Clustering"><span class="nav-number">6.2.</span> <span class="nav-text">Big Data Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BFR%EF%BC%88%E4%BA%BA%E5%90%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="nav-number">6.2.1.</span> <span class="nav-text">BFR（人名算法）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-vector"><span class="nav-number">7.</span> <span class="nav-text">Support vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernel-%E6%96%B9%E6%B3%95"><span class="nav-number">7.1.</span> <span class="nav-text">Kernel 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Learning-with-Probabilistic-Graphic-Model"><span class="nav-number">8.</span> <span class="nav-text">Learning with Probabilistic Graphic Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Directed-graphs-Baysian-network"><span class="nav-number">8.1.</span> <span class="nav-text">Directed graphs (Baysian network)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undirected-graphs-Markov-random-field"><span class="nav-number">8.2.</span> <span class="nav-text">Undirected graphs (Markov random field)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reinforcement-learning"><span class="nav-number">9.</span> <span class="nav-text">Reinforcement learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%EF%BC%88MRP-Markov-reward-process%EF%BC%89"><span class="nav-number">9.1.</span> <span class="nav-text">马尔可夫奖励过程（MRP Markov reward process）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B%EF%BC%88MDP%EF%BC%89"><span class="nav-number">9.2.</span> <span class="nav-text">马尔可夫决策过程（MDP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Policy-Iteration"><span class="nav-number">9.3.</span> <span class="nav-text">MDP: Policy Iteration</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number"></span> <span class="nav-text">Gradient Descent Ⅰ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Illustration-1D"><span class="nav-number">1.</span> <span class="nav-text">Illustration(1D)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number"></span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number"></span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number"></span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">1.</span> <span class="nav-text">Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">1.1.</span> <span class="nav-text">Decision Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Stopping-Condition"><span class="nav-number">1.1.1.</span> <span class="nav-text">Stopping Condition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#For-Regression"><span class="nav-number">1.1.2.</span> <span class="nav-text">For Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Bagging"><span class="nav-number">1.1.3.</span> <span class="nav-text">Bagging</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Random-forest"><span class="nav-number">1.1.4.</span> <span class="nav-text">Random forest</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Boosting"><span class="nav-number">1.1.5.</span> <span class="nav-text">Boosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#GBoosting"><span class="nav-number">1.1.6.</span> <span class="nav-text">GBoosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#K-nearest-neighbourhood"><span class="nav-number">1.1.7.</span> <span class="nav-text">K-nearest neighbourhood</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number"></span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clustering"><span class="nav-number">1.</span> <span class="nav-text">Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#K-means%EF%BC%88no-label%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">K-means（no label）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hierarchical-clustering%EF%BC%88%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">Hierarchical clustering（层次聚类）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-Clustering"><span class="nav-number">2.</span> <span class="nav-text">Big Data Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BFR%EF%BC%88%E4%BA%BA%E5%90%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="nav-number">2.1.</span> <span class="nav-text">BFR（人名算法）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-vector"><span class="nav-number"></span> <span class="nav-text">Support vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernel-%E6%96%B9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">Kernel 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Learning-with-Probabilistic-Graphic-Model"><span class="nav-number"></span> <span class="nav-text">Learning with Probabilistic Graphic Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Directed-graphs-Baysian-network"><span class="nav-number">1.</span> <span class="nav-text">Directed graphs (Baysian network)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undirected-graphs-Markov-random-field"><span class="nav-number">2.</span> <span class="nav-text">Undirected graphs (Markov random field)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reinforcement-learning"><span class="nav-number"></span> <span class="nav-text">Reinforcement learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%EF%BC%88MRP-Markov-reward-process%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">马尔可夫奖励过程（MRP Markov reward process）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B-Markov-decision-process%EF%BC%88MDP%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">马尔可夫决策过程 Markov decision process（MDP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Policy-Iteration"><span class="nav-number">3.</span> <span class="nav-text">MDP: Policy Iteration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Value-Iteration"><span class="nav-number">4.</span> <span class="nav-text">MDP: Value Iteration</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -912,7 +1003,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-count">71</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
