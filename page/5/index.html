@@ -191,6 +191,130 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/" class="post-title-link" itemprop="url">基于Python的科学与数值计算</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-09-19 19:06:09" itemprop="dateCreated datePublished" datetime="2023-09-19T19:06:09+08:00">2023-09-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-11-07 20:25:21" itemprop="dateModified" datetime="2023-11-07T20:25:21+08:00">2023-11-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="ndarray"><a href="#ndarray" class="headerlink" title="ndarray"></a>ndarray</h2><ul>
+<li>基本信息<ul>
+<li>numpy的基础数据结构（下简称ndarray为array）</li>
+<li>向量、矩阵、张量等均用array表示</li>
+<li>数组下标从0开始</li>
+</ul>
+</li>
+<li>ndarray与list的区别<ul>
+<li>array元素为相同数据类型</li>
+<li>array固定长度</li>
+<li>array易进行维度、形状变换</li>
+<li>array支持完整的向量&#x2F;张量操作和线性代数函数</li>
+</ul>
+</li>
+<li>adarray类<ul>
+<li>参数<ul>
+<li>shape 形状</li>
+<li>dtype 类型</li>
+<li>buffer 可以指定数据块而无需复制</li>
+<li>offset 指定从数据块的第几个位置开始复制</li>
+<li>strides 各维度步进字节数</li>
+<li>…</li>
+</ul>
+</li>
+<li>属性<ul>
+<li>shape 包含数组每个维度的元素数量的元组，如 (3, 5)</li>
+<li>size 元素总数</li>
+<li>ndim 维度数量，1、2、3⋯</li>
+<li>nbytes 存储数据的总字节数</li>
+<li>dtype 数据类型</li>
+<li>itemsize 每个元素的字节数，如 float32 是 4 个字节</li>
+<li>strides: 跨步&#x2F;步幅，索引访问的间隔字节数</li>
+<li>data 数组的真正数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于array的运算<ul>
+<li>基于元素的算数运算<ul>
+<li>numpy数组的基本算数运算是作用到每个元素上的</li>
+<li>广播机制<ul>
+<li>a、b 维数相等，某一维（轴）上的数量不等，其中一个数组在该维度上数量为 1，则将该数组在该轴上的数量扩充（复制），使其与另外的数组相同（广播）</li>
+<li>a、b 维数不等，将维数少的数组从左扩充长度为 1 的新维度，直到二者维度相等。然后再执行上面的广播操作</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>聚合函数</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/shen-du-xue-xi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -310,7 +434,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-09 15:46:00" itemprop="dateModified" datetime="2023-11-09T15:46:00+08:00">2023-11-09</time>
+                <time title="修改时间：2023-11-11 17:10:10" itemprop="dateModified" datetime="2023-11-11T17:10:10+08:00">2023-11-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -333,7 +457,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+          <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
 <h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
@@ -343,7 +467,7 @@
 <li>关键：big data gives an accurate learning result</li>
 </ul>
 </li>
-<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>\tag{1}$$<ul>
+<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>  \tag{1}$$<ul>
 <li>$b_i ,a_i$分别为变量$X_i$的上限和下限</li>
 <li>注意到$S_n$是变量之和，如果要与伯努利情况下的Koeffding比较，则可以考虑指数上下同除$n^2$</li>
 <li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
@@ -690,7 +814,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h4><ul>
+<h3 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h3><ul>
 <li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
 <li>决策树<ul>
 <li>连通无环结构</li>
@@ -820,18 +944,84 @@
 <p>The strength of week learners</p>
 </blockquote>
 <ul>
-<li>原理是，首先使用week classifier进行学习，之后依据预测结果，给出residual。下一个week classifier对特征和残差进行学习，得到一个新的预测结果，和residual得出下一个residual，反复进行，并在最后以一定参数融合所有的week classifier</li>
+<li>原理是，首先使用week classifier进行学习，之后依据预测结果，提高分类错误的数据点的权重，再此基础上再次训练一个分类器，并提高分类错误的数据点的权重。如此往复，在最后将所有的树分类器以一定的权重累加，得到强大的分类器</li>
 </ul>
 <h5 id="GBoosting"><a href="#GBoosting" class="headerlink" title="GBoosting"></a>GBoosting</h5><ul>
-<li>XGBoost是GBoosting的一种特定实现</li>
+<li>GBoosting的概念比想象的还要深刻一点</li>
+<li>用于回归的GBoosting原理如下<ul>
+<li>分类器为$T$</li>
+<li>先训练一个弱分类器$T_0$，并令$T&#x3D;T_0$</li>
+<li>计算残差，将残差作为目标训练一个新的分类器$T_i$</li>
+<li>将弱分类器以一定的参数加入$T$，残差会因此减少</li>
+<li>$F_{m}(x)&#x3D;F_{m-1}(x)+\lambda\sum_{j&#x3D;1}^{J_{m}}\gamma_{jm}I\big(x\in R_{jm}\big)$<ul>
+<li>$F_m(x)$是$m$轮迭代后，树给出的预测值，它的值等于上一轮结果加上一定比例的本轮训练（对残差）的预测结果</li>
+<li>$\gamma_{jm}$的意思是，第$m$棵树中第$j$个区域的最优值，后面的$I\big(x\in R_{jm}\big)$是示性函数，判断$x$是否在第$m$棵树中第$j$个区域</li>
 </ul>
-<h5 id="K-nearest-neighbourhood"><a href="#K-nearest-neighbourhood" class="headerlink" title="K-nearest neighbourhood"></a>K-nearest neighbourhood</h5><ul>
-<li>关键思想：一个样本的类别可以通过其K个最近邻居的类别来决定</li>
-<li>也可以固定邻居数、固定搜索半径等</li>
-<li>也可以使用soft boundary，距离点越近权重越高</li>
-<li>但同时，测算点的距离对于计算机是较为繁琐的</li>
+</li>
+<li>重复此步骤即可</li>
 </ul>
-<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><h3 id="Clustering"><a href="#Clustering" class="headerlink" title="Clustering"></a>Clustering</h3><h4 id="K-means（no-label）"><a href="#K-means（no-label）" class="headerlink" title="K-means（no label）"></a>K-means（no label）</h4><ul>
+</li>
+<li>为什么叫Gradient Boosting？<ul>
+<li>因为在MSE作为$Loss$函数时，残差同时也指出了$Loss$函数梯度的下降方向</li>
+</ul>
+</li>
+<li>XGBoost是GBoosting的一种优化版本</li>
+</ul>
+<h3 id="一种视角"><a href="#一种视角" class="headerlink" title="一种视角"></a>一种视角</h3><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231111145655554.png" alt="image-20231111145655554" style="zoom: 67%;" />
+
+<ul>
+<li>我们该如何看待这张图呢？</li>
+<li>其实这里展现的是经典的“偏差-方差”平衡</li>
+<li>左侧展现的是欠拟合的情况，所以我们要通过Boosting的策略，去降低偏差</li>
+<li>右侧则是过拟合的情况，也就是所谓的”高方差”<ul>
+<li>在“偏差-方差”平衡的语境下，方差具体指的是模型预测相对于模型预测的期望值的变异度</li>
+<li>高方差指的是在不同数据集上训练得到的模型，对于同一个输入点，得到的输出的方差</li>
+<li>$\mathrm{Var}(x)&#x3D;E[(f(x;D)-E[f(x;D)])^2]$ 其中$D$指很多不同的数据集</li>
+</ul>
+</li>
+<li>在过拟合的情况下，我们就需要引入Bagging去减小方差，乃至引入随机森林去限制特征，使集成的模型降低对特定样本和噪声的敏感性</li>
+</ul>
+<h5 id="Multivariate-splits"><a href="#Multivariate-splits" class="headerlink" title="Multivariate splits"></a>Multivariate splits</h5><ul>
+<li>多变量线性组合的决策树</li>
+<li>可以视作决策树的变种，区别在于不再平行于坐标轴划分空间，但是分类器和分类阈值的搜索成本也可能随之上升</li>
+</ul>
+<h4 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h4><blockquote>
+<p>The most significant application that reflects the characteristics of decision trees </p>
+<p>is often considered to be Medical Diagnosis</p>
+</blockquote>
+<ul>
+<li>可解释性（让人信赖）、透明性（易于遵循）、层次决策（逐步评估）</li>
+</ul>
+<h2 id="K-nearest-neighbourhood"><a href="#K-nearest-neighbourhood" class="headerlink" title="K-nearest neighbourhood"></a>K-nearest neighbourhood</h2><blockquote>
+<p>K近邻算法是一个用于回归与分类的非参方法</p>
+</blockquote>
+<ul>
+<li><p>关键思想：一个样本的类别可以通过其K个最近邻居的类别来决定</p>
+</li>
+<li><p>也可以固定邻居数、固定搜索半径等</p>
+</li>
+<li><p>也可以使用soft boundary，距离点越近权重越高</p>
+</li>
+<li><p>但同时，测算点的距离对于计算机是较为繁琐的</p>
+<ul>
+<li><p>K-D Tree 方法，将数据在不同维度上划为分区，仅在test Point所在的分区计算K近邻</p>
+<ul>
+<li>维度的诅咒：在高维空间中，几乎所有点都相对较远</li>
+</ul>
+</li>
+<li><p>Locality-Sensitive Hashing, LSH，采用超平面随机划分，在局部区域中计算最近邻</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="Applications-1"><a href="#Applications-1" class="headerlink" title="Applications"></a>Applications</h5><blockquote>
+<p>K-Nearest Neighbours can be applied to Recommendation Systems</p>
+</blockquote>
+<ul>
+<li>个性化、用户相似度、懒惰学习</li>
+</ul>
+<p>​    </p>
+<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><h3 id="Clustering（聚类）"><a href="#Clustering（聚类）" class="headerlink" title="Clustering（聚类）"></a>Clustering（聚类）</h3><h4 id="K-means（no-label）"><a href="#K-means（no-label）" class="headerlink" title="K-means（no label）"></a>K-means（no label）</h4><ul>
 <li>首先在数据点中，随机选K个点作为聚类中心</li>
 <li>将每个数据点分配到距离它最近的聚类中心</li>
 <li>对于每个聚类，计算其所有数据点的平均位置，更新聚类中心的位置</li>
@@ -2178,87 +2368,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/06/17/2023-06-17/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/17/2023-06-17/" class="post-title-link" itemprop="url">日记6-17</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-06-17 22:40:04" itemprop="dateCreated datePublished" datetime="2023-06-17T22:40:04+08:00">2023-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-21 12:47:47" itemprop="dateModified" datetime="2023-09-21T12:47:47+08:00">2023-09-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>平凡的很累的一天，拿什么来记住呢？</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/06/17/2023-06-17/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -2327,7 +2436,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-count">72</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

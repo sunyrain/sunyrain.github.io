@@ -191,6 +191,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/10/29/2023-10-29/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/29/2023-10-29/" class="post-title-link" itemprop="url">日记10-29</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-10-29 12:11:51 / 修改时间：12:13:02" itemprop="dateCreated datePublished" datetime="2023-10-29T12:11:51+08:00">2023-10-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>啊啊啊啊啊啊啊啊啊啊<br>视唱练耳一定要练啊混蛋<br>昨天那个以为死掉的人<br>纯粹只是睡过了<br>md<br>忙忙忙忙忙<br>今天赶紧把论文的几个图给做了<br>急急急急急急急<br>明天组会警告</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/10/28/2023-10-28/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -296,7 +364,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-10 10:42:56" itemprop="dateModified" datetime="2023-11-10T10:42:56+08:00">2023-11-10</time>
+                <time title="修改时间：2023-11-11 23:16:27" itemprop="dateModified" datetime="2023-11-11T23:16:27+08:00">2023-11-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -380,6 +448,91 @@
 </ul>
 </li>
 </ul>
+<h3 id="一维运动问题的一般分析"><a href="#一维运动问题的一般分析" class="headerlink" title="一维运动问题的一般分析"></a>一维运动问题的一般分析</h3><h4 id="一维定态薛定谔方程的一般性质"><a href="#一维定态薛定谔方程的一般性质" class="headerlink" title="一维定态薛定谔方程的一般性质"></a>一维定态薛定谔方程的一般性质</h4><ul>
+<li>一维定态的分类<ul>
+<li>束缚态：粒子局限在有限的空间中, 即粒子在无穷远处出现的概率等于零的状态</li>
+<li>非束缚态(或称散射态): 粒子可以出现在无穷远处的状态</li>
+</ul>
+</li>
+</ul>
+<h4 id="一维有限深势阱和有限深势阱"><a href="#一维有限深势阱和有限深势阱" class="headerlink" title="一维有限深势阱和有限深势阱"></a>一维有限深势阱和有限深势阱</h4><ul>
+<li><p>一维无限深势阱</p>
+<ul>
+<li><p>先依据图示写出势能函数，再写出哈密顿量，最后写出薛定谔方程</p>
+<ul>
+<li>$$V\big(x\big)&#x3D;\begin{cases}0,&amp;0&lt;x&lt;a\\infty,&amp;x&lt;0,x&gt;a\end{cases} $$</li>
+<li>$$\hat{H}&#x3D;-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x) $$</li>
+</ul>
+</li>
+<li><p>由于势能函数不随时间变化，所以是定态薛定谔方程</p>
+<ul>
+<li>$$-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi(x)&#x3D;E\psi(x)$$</li>
+<li>一组常见的化简方式是$k^2&#x3D;\frac{2mE}{\hbar^2}$</li>
+</ul>
+</li>
+<li><p>最终阱内方程化简为</p>
+<ul>
+<li>$\psi^{\prime\prime}(x)+k^2\psi(x)&#x3D;0$</li>
+<li>解得$\psi(x)&#x3D;A\sin(kx+\delta)$</li>
+</ul>
+</li>
+<li><p>阱外情况</p>
+<ul>
+<li>$\left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\infty\right]\psi(x){&#x3D;}E\psi(x)$</li>
+<li>故$\psi$只能为0</li>
+</ul>
+</li>
+<li><p>列出方程并求解后，考虑边界条件，波函数在$x&#x3D;0, a$处得0</p>
+<ul>
+<li><p>解得$sinka &#x3D; 0$ 故 $ka &#x3D; n\pi$, $n$取$1,2,3,…$</p>
+<ul>
+<li>为什么不取0？因为取0后波函数为0，无意义</li>
+<li>为什么不取负数？因为并没有给出新的波函数</li>
+</ul>
+</li>
+<li><p>最终解出</p>
+<ul>
+<li><p>$E&#x3D;E_n&#x3D;\frac{\hbar^2\pi^2n^2}{2ma^2},\quad n&#x3D;1,2,3,\cdots $</p>
+<ul>
+<li>这里可以看出，粒子具有最低能级，也就是零点能，可以用不确定性关系解释</li>
+<li>（势阱中$\Delta x\approx a$, 动量具有不确定度，能量不能为0）</li>
+</ul>
+</li>
+<li><p>$\psi_n\left(x\right)&#x3D;A_n\sin\left(\frac{n\pi}ax\right)$</p>
+<ul>
+<li>对波函数归一化得</li>
+</ul>
+<p>$$\left.\psi_n(x)&#x3D;\left{\begin{aligned}\sqrt{\frac2a}\sin(\frac{n\pi}ax),\quad&amp;0&lt;x&lt;a\0,\quad&amp;x&lt;0,x&gt;a\end{aligned}\right.\right.$$</p>
+<ul>
+<li>最终，定态解的形式是$$\Psi_n\left(x,t\right)&#x3D;\sqrt{\frac2a}\sin(\frac{n\pi}ax)e^{-\frac i\hbar E_nt}$$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>补充说明，如果原点在势阱中心，则边界条件会改变，同样方法求解即可</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>有限深对称方势阱</p>
+<ul>
+<li>同样列出势能函数和哈密顿量</li>
+<li>在$E&lt;V_0$的情况下，势阱内外定态薛定谔方程如下式<ul>
+<li>$$\begin{aligned}&amp;\frac{d^2\psi}{dx^2}+k^2\psi(x)&#x3D;0,\quad(k&#x3D;\sqrt{2mE}&#x2F;\hbar,\left|x\right|&lt;a&#x2F;2)\\&amp;\frac{d^2\psi}{dx^2}-\beta^2\psi(x)&#x3D;0,\quad(\beta&#x3D;\sqrt{2m\left(V_0-E\right)}&#x2F;\hbar,\left|x\right|&gt;a&#x2F;2)\end{aligned}$$<ul>
+<li>第二个方程的一般解$\psi(x)&#x3D;C\operatorname{e}^{\beta x}+D\operatorname{e}^{-\beta x}$</li>
+<li>但是考虑到束缚态的性质，在无穷远处粒子出现的概率为0</li>
+<li>最终解得$$\left.\psi(x)&#x3D;\left{\begin{aligned}C\operatorname{e}^{\beta x},\quad&amp;(x&lt;-a&#x2F;2)\A\cos kx+B\sin kx,\quad&amp;(-a&#x2F;2&lt;x&lt;a&#x2F;2)\D\operatorname{e}^{-\beta x}.\quad&amp;(a&#x2F;2&lt;x)\end{aligned}\right.\right.$$<ul>
+<li>对于束缚态，能级是不简并的，同时对称势阱$V(x)$具有空间反射对称性，故能量本征态必有确定的宇称，分别讨论即可</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h4 id="第二章课堂思考题"><a href="#第二章课堂思考题" class="headerlink" title="第二章课堂思考题"></a>第二章课堂思考题</h4><ul>
 <li>写出自由粒子、氢原子、氦原子的哈密顿量<ul>
 <li>自由粒子$\hat{H}&#x3D;\frac{\hat{\mathbf{p}}^2}{2m}&#x3D;-\frac{\hbar^2}{2m}\nabla^2$</li>
@@ -394,6 +547,18 @@
 <li>其实只要分别乘上时间项，再求平方即可$$\psi\left(x,t\right)&#x3D;c_1\psi_1\left(x\right)e^{-iE_1t&#x2F;\hbar}+c_2\psi_2\left(x\right)e^{-iE_2t&#x2F;\hbar}$$</li>
 <li>有一个有趣的点，就是平方后可得$$c_1^2\psi_1^2\left(x\right)+c_2^2\psi_2^2\left(x\right)+2c_1c_2\psi_1\left(x\right)\psi_2\left(x\right)\mathrm{cos}\left[\left(E_2-E_1\right)t&#x2F;\hbar\right]$$</li>
 <li>概率密度的振动被称为“量子节拍”</li>
+</ul>
+</li>
+<li>在阱宽为$a$的无限深势阱中, 粒子的状态为<ul>
+<li>$$\Psi(x)&#x3D;\frac1{\sqrt{2}}\left[\sqrt{\frac2a}\sin\frac{\pi x}a-\sqrt{\frac2a}\sin\frac{2\pi x}a\right]$$</li>
+<li>多次测量其能量<ul>
+<li>每次可能测到的值和相应概率以及能量的平均值<ul>
+<li>解答问题的关键在于将波函数写成按无限深势阱哈密顿量的本征函数展开形式，之后常规计算即可</li>
+<li>$$\Psi(x)&#x3D;\frac1{\sqrt{2}}\psi_1(x)-\frac1{\sqrt{2}}\psi_2(x)$$</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -419,7 +584,7 @@
 </li>
 </ul>
 </li>
-<li>![[Pasted image 20231031184458.png]]</li>
+<li><h3 id="Pasted-image-20231031184458-png"><a href="#Pasted-image-20231031184458-png" class="headerlink" title="![[Pasted image 20231031184458.png]]"></a>![[Pasted image 20231031184458.png]]</h3></li>
 </ul>
 <h2 id="量子力学的矩阵形式与表象理论"><a href="#量子力学的矩阵形式与表象理论" class="headerlink" title="量子力学的矩阵形式与表象理论"></a>量子力学的矩阵形式与表象理论</h2><h3 id="Q表象"><a href="#Q表象" class="headerlink" title="Q表象"></a>Q表象</h3><ul>
 <li>将某态转变为力学量Q表象下的表示<ul>
@@ -502,6 +667,7 @@
 </ul>
 <h4 id="讨论题"><a href="#讨论题" class="headerlink" title="讨论题"></a>讨论题</h4><h5 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h5><ul>
 <li>束缚态与坐标关系的问题</li>
+<li>力学量完全集、守恒量完全集（是力学量完全集的子集）</li>
 </ul>
 <h5 id="本征方程的建立与求解"><a href="#本征方程的建立与求解" class="headerlink" title="本征方程的建立与求解"></a>本征方程的建立与求解</h5><ul>
 <li>定轴转动模型<ul>
@@ -515,15 +681,13 @@
 </ul>
 </li>
 <li>线性谐振子模型<ul>
-<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}$的作用 $$V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x,<br>$$<ul>
+<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}$的作用 $$V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x$$</li>
+</ul>
+</li>
 <li>求束缚态能量本征值和本征函数</li>
-</ul>
-</li>
-</ul>
-</li>
 <li>散射问题<ul>
 <li>考虑双 $\delta$ 函数势，其中$\alpha$ 和$\alpha$ 都是正的常数</li>
-<li>$$<br>V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>$$<ul>
+<li>$$<br>  V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>  $$<ul>
 <li>画出这个势</li>
 <li>若考虑具有能量为$E&gt;0$的粒子入射该势垒，求透射率</li>
 </ul>
@@ -532,13 +696,50 @@
 </li>
 </ul>
 <h5 id="算符理论、测量、不确定度关系"><a href="#算符理论、测量、不确定度关系" class="headerlink" title="算符理论、测量、不确定度关系"></a>算符理论、测量、不确定度关系</h5><ul>
+<li>一些概念<ul>
 <li>厄米算符定义、性质、判定及构造</li>
 <li>算符对易关系的计算</li>
 <li>平均值的计算</li>
 <li>对测量的理解和应用</li>
 <li>对不确定关系的理解及应用</li>
 </ul>
-
+</li>
+<li>参考例题<ul>
+<li>连续测量问题<ul>
+<li>已知某微观体系的力学量 $A$有两个归一化本征态 $\psi_{1}$和 $\psi_{2}$, 相应的本征值为$a_1$和$a_2$.力学量$B$有两个归一化本征态$\phi_{1}$和$\phi_{2}$, 相应的本征值为$b_1$和$b_2$.两组本征态有如下关系</li>
+<li>$$\psi_1&#x3D;\frac15(3\phi_1+4\phi_2),\quad\psi_2&#x3D;\frac15(4\phi_1-3\phi_2)$$</li>
+<li>测量可观测量 $A$, 所得结果为 $\alpha_{1}$ ,那么在测量之后(瞬时)体系处于什么态？</li>
+<li>如果现在再测量 $B$,可能的结果是什么？ 它们出现的概率是多少？</li>
+<li>在恰好测出 $B$ 后，再次测量 $A$ ,那么结果为$\alpha_{1}$的概率为多少？</li>
+</ul>
+</li>
+<li>守恒量判定<ul>
+<li>设某一量子体系的Hamilton量为$\widehat{H}&#x3D;\frac{1}{2m}\widehat{P}+\omega\widehat{ L}_{z}$,其中 m 为质量，$\omega$ 为频率. 分析并给出下列这些力学量中哪些是守恒量？</li>
+<li>$$H,p_x,p_y,p_z,p^2,\hat{L}_x,\hat{L}_y,\hat{L}_z,\hat{L}^2$$</li>
+</ul>
+</li>
+<li>测量假设、不确定性关系</li>
+</ul>
+</li>
+</ul>
+<h5 id="矩阵力学及表象理论"><a href="#矩阵力学及表象理论" class="headerlink" title="矩阵力学及表象理论"></a>矩阵力学及表象理论</h5><ul>
+<li>重点内容<ul>
+<li>量子态的矩阵表示</li>
+<li>力学量的矩阵表示</li>
+<li>本征方程（矩阵形式）的求解、平均值的计算</li>
+</ul>
+</li>
+<li>参考例题<ul>
+<li>表象与矩阵元的求解<ul>
+<li>设一维粒子Hamilton量为$$H&#x3D;\frac{p_x^2}{2m}+V(x)$$</li>
+<li>分别写出在$\hat{x}$ 和$p_x$表象中，$\hat{x},\hat{P}_x,\hat{H}$ 的矩阵元.</li>
+</ul>
+</li>
+<li>设粒子处于下列势阱$$V\left(x\right)&#x3D;\begin{cases}\infty,&amp;x&lt;0;\Fx,&amp;x&gt;0,\end{cases}$$其中$^{F}$为常数，求粒子的能量本征函数。</li>
+</ul>
+</li>
+</ul>
+<h5 id="自旋与角动量理论"><a href="#自旋与角动量理论" class="headerlink" title="自旋与角动量理论"></a>自旋与角动量理论</h5>
       
     </div>
 
@@ -1152,80 +1353,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/10/15/2023-10-15/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/10/15/2023-10-15/" class="post-title-link" itemprop="url">日记10-15</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-10-15 21:30:25" itemprop="dateCreated datePublished" datetime="2023-10-15T21:30:25+08:00">2023-10-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-10-16 08:44:22" itemprop="dateModified" datetime="2023-10-16T08:44:22+08:00">2023-10-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>镜面边缘</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1294,7 +1421,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-count">72</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
