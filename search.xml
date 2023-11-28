@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Cheat Engine 告别风灵月影</title>
-    <url>/2023/06/10/cheatengine/</url>
-    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title></title>
     <url>/2023/07/06/deep-learning-with-pytorch/</url>
     <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
@@ -26,9 +14,55 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Cheat Engine 告别风灵月影</title>
+    <url>/2023/06/10/cheatengine/</url>
+    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/10/25/cosmol-drug-release/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>HealthCare RL 论文研读</title>
+    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
+    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
+<li>精读链接</li>
+<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
+</ul>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
+<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
+<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
+<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
+</ul>
+</li>
+<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
+<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
+</ul>
+</li>
+<li><strong>模型的临床应用和效果</strong>：<ul>
+<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
+</ul>
+</li>
+<li><strong>研究的局限性和未来展望</strong>：<ul>
+<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>HealthCare</tag>
+      </tags>
   </entry>
   <entry>
     <title>Markdown实用语法</title>
@@ -60,18 +94,32 @@
       </tags>
   </entry>
   <entry>
-    <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
-    <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
-    <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
-<span id="more"></span>
-<p>System.Collections.Generic.RandomizedStringEqualityComparer 不是 GenericTypeDefinition。只能对 Type.IsGenericTypeDefinition 为 True。</p>
-<p>解决方法：到<a href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82">http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。</a></p>
-]]></content>
+    <title>Prompt Engineering</title>
+    <url>/2023/11/26/prompt-engineering/</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>Tricks</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python绘图</title>
+    <url>/2023/11/21/python-hui-tu/</url>
+    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>Figure 是Axes的容器，画布</li>
+<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
+<li>Axis 坐标轴，上面有ticks和labels</li>
+<li>Artist 各种图形元素的统称</li>
+<li>legend 图例</li>
+</ul>
+<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -91,23 +139,59 @@
       </tags>
   </entry>
   <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
+    <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
+    <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
+    <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
 <span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+<p>System.Collections.Generic.RandomizedStringEqualityComparer 不是 GenericTypeDefinition。只能对 Type.IsGenericTypeDefinition 为 True。</p>
+<p>解决方法：到<a href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82">http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。</a></p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>奇遇</tag>
+        <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</title>
+    <url>/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>HealthCare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工程图学</title>
+    <url>/2023/11/01/gong-cheng-tu-xue/</url>
+    <content><![CDATA[<span id="more"></span>
+<ul>
+<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
+<li>类似性指导作图，面和它的封闭线框具有相似性</li>
+<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
+<li>找点的方法之辅助直线<ul>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
+<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
+<li>点划线露出4mm</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
     <title>基于Python的科学与数值计算</title>
     <url>/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/</url>
-    <content><![CDATA[<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="ndarray"><a href="#ndarray" class="headerlink" title="ndarray"></a>ndarray</h2><ul>
+    <content><![CDATA[<span id="more"></span>
+<h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><h2 id="ndarray"><a href="#ndarray" class="headerlink" title="ndarray"></a>ndarray</h2><ul>
 <li>基本信息<ul>
 <li>numpy的基础数据结构（下简称ndarray为array）</li>
 <li>向量、矩阵、张量等均用array表示</li>
@@ -167,31 +251,10 @@
       </tags>
   </entry>
   <entry>
-    <title>工程图学</title>
-    <url>/2023/11/01/gong-cheng-tu-xue/</url>
-    <content><![CDATA[<ul>
-<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
-<li>类似性指导作图，面和它的封闭线框具有相似性</li>
-<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
-<li>找点的方法之辅助直线<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
-<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
-<li>点划线露出4mm</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>机器学习</title>
     <url>/2023/09/19/ji-qi-xue-xi/</url>
-    <content><![CDATA[<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+    <content><![CDATA[<span id="more"></span>
+<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
 <h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
@@ -947,7 +1010,8 @@
   <entry>
     <title>数理方程特殊函数部分以及其他</title>
     <url>/2023/06/14/shu-li-fang-cheng/</url>
-    <content><![CDATA[<p>级数解</p>
+    <content><![CDATA[<span id="more"></span>
+<p>级数解</p>
 <ul>
 <li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
 <li>回到原式中带入级数解进行计算</li>
@@ -1078,6 +1142,42 @@
       </categories>
       <tags>
         <tag>时光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>one-hot编码向量化及还原</title>
+    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
+    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
+<span id="more"></span>
+
+<ul>
+<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
+<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -1348,7 +1448,19 @@
 <p>将上式对 $\sin ^2 \psi$ 求导, 就可以解出表面上任一方向上的应力 $\sigma_\phi$, 有：<br>$$<br>\sigma_\phi&#x3D;\frac{E}{1+\nu} \frac{\partial \varepsilon_{\phi \psi}}{\partial \sin ^2 \psi}<br>$$</p>
 </li>
 </ul>
-<h3 id="衍射仪法测定宏观应力"><a href="#衍射仪法测定宏观应力" class="headerlink" title="衍射仪法测定宏观应力"></a>衍射仪法测定宏观应力</h3><h2 id="微晶尺寸和微观应力"><a href="#微晶尺寸和微观应力" class="headerlink" title="微晶尺寸和微观应力"></a>微晶尺寸和微观应力</h2><h4 id="微晶尺寸的测定"><a href="#微晶尺寸的测定" class="headerlink" title="微晶尺寸的测定"></a>微晶尺寸的测定</h4><h4 id="微观应力的测定"><a href="#微观应力的测定" class="headerlink" title="微观应力的测定"></a>微观应力的测定</h4><h2 id="织构的测定"><a href="#织构的测定" class="headerlink" title="织构的测定"></a>织构的测定</h2><h3 id="织构的分类"><a href="#织构的分类" class="headerlink" title="织构的分类"></a>织构的分类</h3><ul>
+<h3 id="衍射仪法测定宏观应力"><a href="#衍射仪法测定宏观应力" class="headerlink" title="衍射仪法测定宏观应力"></a>衍射仪法测定宏观应力</h3><h2 id="微晶尺寸和微观应力"><a href="#微晶尺寸和微观应力" class="headerlink" title="微晶尺寸和微观应力"></a>微晶尺寸和微观应力</h2><h3 id="量子力学的不确定性原理"><a href="#量子力学的不确定性原理" class="headerlink" title="量子力学的不确定性原理"></a>量子力学的不确定性原理</h3><ol>
+<li><p><strong>波动性和离散性</strong>：X射线作为电磁波，具有波动性。在量子尺度下，波动性导致了能量和动量的不确定性。这种不确定性在微观尺度上对物质的行为有重要影响。</p>
+</li>
+<li><p><strong>晶体尺寸与不确定性</strong>：在小尺寸晶体中，晶格面的数量减少意味着晶体中可用于衍射的晶格点减少。根据不确定性原理，较少的晶格点导致衍射角度的不确定性增大，从而允许在布拉格角附近的较宽角度范围内发生衍射。</p>
+</li>
+</ol>
+<h3 id="晶格面排列的影响"><a href="#晶格面排列的影响" class="headerlink" title="晶格面排列的影响"></a>晶格面排列的影响</h3><ol>
+<li><p><strong>晶格面间距的变化</strong>：在大晶体中，由于晶格面数量众多，晶格面间距非常均匀，衍射条件非常严格。但在小晶体中，晶格面的间距可能因为晶体边界效应而略有不均匀。</p>
+</li>
+<li><p><strong>衍射角度的变化</strong>：晶格面间距的这种轻微不均匀性可能导致衍射角度略有变化，从而使得衍射不再严格局限于理想的布拉格角。</p>
+</li>
+</ol>
+<h4 id="微晶尺寸的测定"><a href="#微晶尺寸的测定" class="headerlink" title="微晶尺寸的测定"></a>微晶尺寸的测定</h4><h4 id="微观应力的测定"><a href="#微观应力的测定" class="headerlink" title="微观应力的测定"></a>微观应力的测定</h4><h2 id="织构的测定"><a href="#织构的测定" class="headerlink" title="织构的测定"></a>织构的测定</h2><h3 id="织构的分类"><a href="#织构的分类" class="headerlink" title="织构的分类"></a>织构的分类</h3><ul>
 <li>丝织构<ul>
 <li>丝织构的晶体学特点是晶粒的某一个或者某几个晶向倾向于平行试样的某一特定方向，一般沿丝轴方向或生长方向</li>
 </ul>
@@ -1373,7 +1485,8 @@
   <entry>
     <title>深度学习</title>
     <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+    <content><![CDATA[<span id="more"></span>
+<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
 <h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
 <li>Three shapes of convolution<ul>
 <li>valid即全程完整的$f$和$g$进行卷积</li>
@@ -1397,247 +1510,10 @@
       </tags>
   </entry>
   <entry>
-    <title>现代生物学导论</title>
-    <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
-    <content><![CDATA[<span id="more"></span>
-<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><h3 id="生物系统的弱化学作用"><a href="#生物系统的弱化学作用" class="headerlink" title="生物系统的弱化学作用"></a>生物系统的弱化学作用</h3><ul>
-<li>强弱化学作用<ul>
-<li>强化学作用<ul>
-<li>生理温度下稳定</li>
-<li>包括所有的化学键</li>
-</ul>
-</li>
-<li>弱化学作用<ul>
-<li>生物体内不断生成和断裂</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="DNA的结构和功能"><a href="#DNA的结构和功能" class="headerlink" title="DNA的结构和功能"></a>DNA的结构和功能</h3><ul>
-<li>DNA的化学组成<ul>
-<li>磷酸、五碳糖、含氮碱基</li>
-</ul>
-</li>
-<li>DNA的功能<ul>
-<li>多样性、存储遗传信息、可复制、稳定</li>
-</ul>
-</li>
-<li>DNA的一级结构（存储遗传信息）<ul>
-<li>多聚核苷酸单链</li>
-<li>一级结构的应用<ul>
-<li>寻找生物间演化关系<ul>
-<li>人类（23对）、黑猩猩（及后均为24对）、大猩猩、红毛猩猩</li>
-<li>假说：人类染色体在演化过程中发生了融合<ul>
-<li>可能更长</li>
-<li>可能含有不止一处着丝粒、端粒</li>
-<li>比较序列等</li>
-<li>……</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>DNA指纹鉴定</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>DNA的二级结构</li>
-<li>DNA的三级结构</li>
-</ul>
-<h3 id="蛋白质的结构与功能"><a href="#蛋白质的结构与功能" class="headerlink" title="蛋白质的结构与功能"></a>蛋白质的结构与功能</h3><ul>
-<li>蛋白质的四级结构</li>
-<li>蛋白质功能</li>
-<li>蛋白质折叠</li>
-<li>分子伴侣蛋白<ul>
-<li>hsp60工作机制</li>
-</ul>
-</li>
-<li>蛋白质折叠与疾病</li>
-<li>结构与功能的关系<ul>
-<li>例如：DNA聚合酶</li>
-</ul>
-</li>
-</ul>
-<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
-<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
-<li>旁分泌信号</li>
-<li>内分泌信号</li>
-</ul>
-<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
-<li>信号接受<ul>
-<li>信号分子</li>
-<li>受体<ul>
-<li>细胞表面受体<ul>
-<li>G蛋白耦合受体</li>
-<li>受体络氨酸激酶</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>信号转导<ul>
-<li>磷酸化级联</li>
-<li>第二信使<ul>
-<li>非蛋白类小分子</li>
-<li>cAMP环腺苷酸</li>
-<li>cGMP环鸟苷酸</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
-<li>周期素和蛋白激酶</li>
-<li>生长因子</li>
-</ul>
-<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
-<li>凋亡过程<ul>
-<li>细胞收缩、染色体凝结</li>
-<li>膜起泡</li>
-<li>细胞核塌陷</li>
-<li>凋亡体形成</li>
-<li>凋亡小体裂解</li>
-</ul>
-</li>
-<li>三种信号通路<ul>
-<li>线粒体通路</li>
-<li>死亡受体通路</li>
-<li>内质网通路</li>
-</ul>
-</li>
-</ul>
-<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
-<li>自噬过程<ul>
-<li>自噬泡形成</li>
-<li>自噬体形成</li>
-<li>自噬体和溶酶体融合</li>
-<li>自噬溶酶体形成</li>
-<li>降解和再吸收</li>
-</ul>
-</li>
-<li>细胞自噬与疾病</li>
-</ul>
-<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
-<li>无膜细胞器</li>
-</ul>
-<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
-<li>基因<ul>
-<li>控制性状</li>
-</ul>
-</li>
-<li>基因的构成<ul>
-<li>调控区域<ul>
-<li>指导基因是否能够产生蛋白</li>
-</ul>
-</li>
-<li>启动子<ul>
-<li>和转录酶结合的序列</li>
-</ul>
-</li>
-<li>编码区域</li>
-<li>断裂基因<ul>
-<li>细菌基因：连续</li>
-<li>动物基因：断裂</li>
-</ul>
-</li>
-<li>原核基因</li>
-<li>真核基因<ul>
-<li>产生蛋白质的序列<ul>
-<li>内含子&amp;外显子</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>染色质与染色体<ul>
-<li>从DNA到染色质</li>
-</ul>
-</li>
-<li>遗传物质保证稳定机制<ul>
-<li>DNA精确复制<ul>
-<li>碱基配对</li>
-<li>DNA聚合酶的校正</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
-<li>多个遗传密码对应同一个氨基酸</li>
-</ul>
-<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
-<li>对环境刺激做出应答</li>
-<li>发育</li>
-</ul>
-]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>one-hot编码向量化及还原</title>
-    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
-    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
-<span id="more"></span>
-
-<ul>
-<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
-<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo git问题</title>
-    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计划</title>
-    <url>/2023/09/18/ji-hua/</url>
-    <content><![CDATA[<ul>
-<li>21:00 跑步</li>
-<li>21:30 - 22:10视唱练耳+弹琴</li>
-<li>22:10 - 22:50画画</li>
-<li>22:50 - 23:00收拾收拾准备睡觉</li>
-<li>（找时间复习！！！）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>量子与统计</title>
     <url>/2023/10/28/liang-zi-yu-tong-ji/</url>
-    <content><![CDATA[<p>习题课相关内容[[量子与统计习题课]]</p>
+    <content><![CDATA[<span id="more"></span>
+<p>习题课相关内容[[量子与统计习题课]]</p>
 <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><blockquote>
 <p>快速通过</p>
 </blockquote>
@@ -2009,72 +1885,194 @@
       </tags>
   </entry>
   <entry>
-    <title>Python绘图</title>
-    <url>/2023/11/21/python-hui-tu/</url>
-    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>Figure 是Axes的容器，画布</li>
-<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
-<li>Axis 坐标轴，上面有ticks和labels</li>
-<li>Artist 各种图形元素的统称</li>
-<li>legend 图例</li>
+    <title>现代生物学导论</title>
+    <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><h3 id="生物系统的弱化学作用"><a href="#生物系统的弱化学作用" class="headerlink" title="生物系统的弱化学作用"></a>生物系统的弱化学作用</h3><ul>
+<li>强弱化学作用<ul>
+<li>强化学作用<ul>
+<li>生理温度下稳定</li>
+<li>包括所有的化学键</li>
 </ul>
-<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
+</li>
+<li>弱化学作用<ul>
+<li>生物体内不断生成和断裂</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="DNA的结构和功能"><a href="#DNA的结构和功能" class="headerlink" title="DNA的结构和功能"></a>DNA的结构和功能</h3><ul>
+<li>DNA的化学组成<ul>
+<li>磷酸、五碳糖、含氮碱基</li>
+</ul>
+</li>
+<li>DNA的功能<ul>
+<li>多样性、存储遗传信息、可复制、稳定</li>
+</ul>
+</li>
+<li>DNA的一级结构（存储遗传信息）<ul>
+<li>多聚核苷酸单链</li>
+<li>一级结构的应用<ul>
+<li>寻找生物间演化关系<ul>
+<li>人类（23对）、黑猩猩（及后均为24对）、大猩猩、红毛猩猩</li>
+<li>假说：人类染色体在演化过程中发生了融合<ul>
+<li>可能更长</li>
+<li>可能含有不止一处着丝粒、端粒</li>
+<li>比较序列等</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DNA指纹鉴定</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DNA的二级结构</li>
+<li>DNA的三级结构</li>
+</ul>
+<h3 id="蛋白质的结构与功能"><a href="#蛋白质的结构与功能" class="headerlink" title="蛋白质的结构与功能"></a>蛋白质的结构与功能</h3><ul>
+<li>蛋白质的四级结构</li>
+<li>蛋白质功能</li>
+<li>蛋白质折叠</li>
+<li>分子伴侣蛋白<ul>
+<li>hsp60工作机制</li>
+</ul>
+</li>
+<li>蛋白质折叠与疾病</li>
+<li>结构与功能的关系<ul>
+<li>例如：DNA聚合酶</li>
+</ul>
+</li>
+</ul>
+<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
+<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
+<li>旁分泌信号</li>
+<li>内分泌信号</li>
+</ul>
+<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
+<li>信号接受<ul>
+<li>信号分子</li>
+<li>受体<ul>
+<li>细胞表面受体<ul>
+<li>G蛋白耦合受体</li>
+<li>受体络氨酸激酶</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>信号转导<ul>
+<li>磷酸化级联</li>
+<li>第二信使<ul>
+<li>非蛋白类小分子</li>
+<li>cAMP环腺苷酸</li>
+<li>cGMP环鸟苷酸</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
+<li>周期素和蛋白激酶</li>
+<li>生长因子</li>
+</ul>
+<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
+<li>凋亡过程<ul>
+<li>细胞收缩、染色体凝结</li>
+<li>膜起泡</li>
+<li>细胞核塌陷</li>
+<li>凋亡体形成</li>
+<li>凋亡小体裂解</li>
+</ul>
+</li>
+<li>三种信号通路<ul>
+<li>线粒体通路</li>
+<li>死亡受体通路</li>
+<li>内质网通路</li>
+</ul>
+</li>
+</ul>
+<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
+<li>自噬过程<ul>
+<li>自噬泡形成</li>
+<li>自噬体形成</li>
+<li>自噬体和溶酶体融合</li>
+<li>自噬溶酶体形成</li>
+<li>降解和再吸收</li>
+</ul>
+</li>
+<li>细胞自噬与疾病</li>
+</ul>
+<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
+<li>无膜细胞器</li>
+</ul>
+<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
+<li>基因<ul>
+<li>控制性状</li>
+</ul>
+</li>
+<li>基因的构成<ul>
+<li>调控区域<ul>
+<li>指导基因是否能够产生蛋白</li>
+</ul>
+</li>
+<li>启动子<ul>
+<li>和转录酶结合的序列</li>
+</ul>
+</li>
+<li>编码区域</li>
+<li>断裂基因<ul>
+<li>细菌基因：连续</li>
+<li>动物基因：断裂</li>
+</ul>
+</li>
+<li>原核基因</li>
+<li>真核基因<ul>
+<li>产生蛋白质的序列<ul>
+<li>内含子&amp;外显子</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>染色质与染色体<ul>
+<li>从DNA到染色质</li>
+</ul>
+</li>
+<li>遗传物质保证稳定机制<ul>
+<li>DNA精确复制<ul>
+<li>碱基配对</li>
+<li>DNA聚合酶的校正</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
+<li>多个遗传密码对应同一个氨基酸</li>
+</ul>
+<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
+<li>对环境刺激做出应答</li>
+<li>发育</li>
+</ul>
+]]></content>
       <categories>
-        <category>工具</category>
+        <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
       </tags>
   </entry>
   <entry>
-    <title>HealthCare RL 论文研读</title>
-    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
-    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
-<li>精读链接</li>
-<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
-</ul>
-<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
-<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
-<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
-<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
-</ul>
-</li>
-<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
-<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
-</ul>
-</li>
-<li><strong>模型的临床应用和效果</strong>：<ul>
-<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
-</ul>
-</li>
-<li><strong>研究的局限性和未来展望</strong>：<ul>
-<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>HealthCare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</title>
-    <url>/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>HealthCare</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>量子与统计习题课</title>
     <url>/2023/11/21/liang-zi-yu-tong-ji-xi-ti-ke/</url>
-    <content><![CDATA[<p>课程内容[[量子与统计]]</p>
+    <content><![CDATA[<span id="more"></span>
+<p>课程内容[[量子与统计]]</p>
 <h1 id="第一次习题课"><a href="#第一次习题课" class="headerlink" title="第一次习题课"></a>第一次习题课</h1><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h4><ul>
 <li><p>量子态</p>
 </li>
@@ -2241,6 +2239,20 @@
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo git问题</title>
+    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
       </tags>
   </entry>
 </search>
