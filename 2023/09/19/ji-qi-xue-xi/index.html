@@ -20,16 +20,16 @@
     var CONFIG = {"hostname":"sunyrain.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="机器学习Big Data &amp; Simple Modelwhy machine learning feasible 可行的 Example : pick red and green marbles from a bin $\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$ Hoe">
+  <meta name="description" content="机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习">
 <meta property="og:url" content="https://sunyrain.github.io/2023/09/19/ji-qi-xue-xi/index.html">
 <meta property="og:site_name" content="whilesunny">
-<meta property="og:description" content="机器学习Big Data &amp; Simple Modelwhy machine learning feasible 可行的 Example : pick red and green marbles from a bin $\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$ Hoe">
+<meta property="og:description" content="机器学习">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231111145655554.png">
 <meta property="article:published_time" content="2023-09-19T01:51:02.572Z">
-<meta property="article:modified_time" content="2023-11-26T07:52:04.098Z">
+<meta property="article:modified_time" content="2023-11-28T03:05:11.301Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
@@ -229,7 +229,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-26 15:52:04" itemprop="dateModified" datetime="2023-11-26T15:52:04+08:00">2023-11-26</time>
+                <time title="修改时间：2023-11-28 11:05:11" itemprop="dateModified" datetime="2023-11-28T11:05:11+08:00">2023-11-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -259,8 +259,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <span id="more"></span>
-<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+        <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><span id="more"></span>
+
+<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
 <h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
@@ -1005,7 +1006,58 @@
 </ul>
 </li>
 </ul>
-<h3 id="Signal-Analysis"><a href="#Signal-Analysis" class="headerlink" title="Signal Analysis"></a>Signal Analysis</h3>
+<h3 id="Signal-Analysis"><a href="#Signal-Analysis" class="headerlink" title="Signal Analysis"></a>Signal Analysis</h3><h1 id="深度学习篇"><a href="#深度学习篇" class="headerlink" title="深度学习篇"></a>深度学习篇</h1><h2 id="Neuron-Shallow-Neural-Networks"><a href="#Neuron-Shallow-Neural-Networks" class="headerlink" title="Neuron,Shallow Neural Networks"></a>Neuron,Shallow Neural Networks</h2><h3 id="Neuron"><a href="#Neuron" class="headerlink" title="Neuron"></a>Neuron</h3><ul>
+<li>Activation Function <ul>
+<li>Step Function<ul>
+<li>$sgn(x)&#x3D;\begin{cases}1,x\geq0\0,x&lt;0&amp;\end{cases}$</li>
+</ul>
+</li>
+<li>Sigmoid Function<ul>
+<li>$\mathrm{sigmoid}(x)&#x3D;\frac1{1+e^{-x}}$</li>
+<li>$\sigma^{\prime}(x)&#x3D;\sigma(1-\sigma)$</li>
+</ul>
+</li>
+<li>Hyperbolic Tangent Function<ul>
+<li>$y&#x3D;\frac{e^x-e^{-x}}{e^x+e^{-x}}$</li>
+<li>$y^{\prime}(x)&#x3D;1-y^2$</li>
+</ul>
+</li>
+<li>Rectified Linear Unit<ul>
+<li>$y&#x3D;w\cdot\max(0,x)$</li>
+<li>$y^{\prime}(x)&#x3D;\max(0,w)$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example<ul>
+<li>线性拟合XOR<ul>
+<li>Data<ul>
+<li>$\mathbf{X}&#x3D;\binom{0,1,0,1}{0,0,1,1}^T$</li>
+<li>$y&#x3D;(0,1,1,0)^T$</li>
+</ul>
+</li>
+<li>以$\theta$为参数的损失函数<ul>
+<li>$J(\theta)&#x3D;\frac14\sum_{x\in\mathbb{X}}(y-f(x;\theta))^2$</li>
+</ul>
+</li>
+<li>$f(x;w,b)&#x3D;w^Tx+b$<ul>
+<li>$\to J(\theta)&#x3D;\frac14\sum_{x\in\mathbb{X}}(f^*(x)-f(x;\theta))^2$</li>
+<li>$\to\boldsymbol{w}&#x3D;(0,0)^T,\boldsymbol{b}&#x3D;0.5$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>浅层神经网络拟合XOR<ul>
+<li>考虑调用ReLU</li>
+<li>$x\to U \to h\to w\to \hat{y}$</li>
+<li>也即$f(x;U,c,w,b)&#x3D;w^T\max{0,U^Tx+c}+b$</li>
+<li>$\max{0,U^Tx+c}$此为ReLU层（注意前一个0是零向量，max逐元素取）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Shallow-Neural-Networks"><a href="#Shallow-Neural-Networks" class="headerlink" title="Shallow Neural Networks"></a>Shallow Neural Networks</h3><h3 id="Training-Neural-Networks"><a href="#Training-Neural-Networks" class="headerlink" title="Training Neural Networks"></a>Training Neural Networks</h3>
     </div>
 
     
@@ -1087,7 +1139,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.0.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.0.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">1.1.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Illustration-1D"><span class="nav-number">1.1.1.</span> <span class="nav-text">Illustration(1D)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">1.2.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">1.2.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">1.3.</span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number">1.4.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">1.4.1.</span> <span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">1.4.2.</span> <span class="nav-text">Decision Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Stopping-Condition"><span class="nav-number">1.4.2.0.1.</span> <span class="nav-text">Stopping Condition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#For-Regression"><span class="nav-number">1.4.2.0.2.</span> <span class="nav-text">For Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Bagging"><span class="nav-number">1.4.2.0.3.</span> <span class="nav-text">Bagging</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Random-forest"><span class="nav-number">1.4.2.0.4.</span> <span class="nav-text">Random forest</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Boosting"><span class="nav-number">1.4.2.0.5.</span> <span class="nav-text">Boosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#GBoosting"><span class="nav-number">1.4.2.0.6.</span> <span class="nav-text">GBoosting</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%A7%8D%E8%A7%86%E8%A7%92"><span class="nav-number">1.4.3.</span> <span class="nav-text">一种视角</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Multivariate-splits"><span class="nav-number">1.4.3.0.1.</span> <span class="nav-text">Multivariate splits</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Applications"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">Applications</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#K-nearest-neighbourhood"><span class="nav-number">1.5.</span> <span class="nav-text">K-nearest neighbourhood</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Applications-1"><span class="nav-number">1.5.0.0.1.</span> <span class="nav-text">Applications</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">1.6.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clustering%EF%BC%88%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">1.6.1.</span> <span class="nav-text">Clustering（聚类）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#K-means%EF%BC%88no-label%EF%BC%89"><span class="nav-number">1.6.1.1.</span> <span class="nav-text">K-means（no label）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hierarchical-clustering%EF%BC%88%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">1.6.1.2.</span> <span class="nav-text">Hierarchical clustering（层次聚类）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-Clustering"><span class="nav-number">1.6.2.</span> <span class="nav-text">Big Data Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BFR%EF%BC%88%E4%BA%BA%E5%90%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="nav-number">1.6.2.1.</span> <span class="nav-text">BFR（人名算法）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-vector"><span class="nav-number">1.7.</span> <span class="nav-text">Support vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernel-%E6%96%B9%E6%B3%95"><span class="nav-number">1.7.1.</span> <span class="nav-text">Kernel 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Learning-with-Probabilistic-Graphic-Model"><span class="nav-number">1.8.</span> <span class="nav-text">Learning with Probabilistic Graphic Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Directed-graphs-Baysian-network"><span class="nav-number">1.8.1.</span> <span class="nav-text">Directed graphs (Baysian network)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undirected-graphs-Markov-random-field"><span class="nav-number">1.8.2.</span> <span class="nav-text">Undirected graphs (Markov random field)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reinforcement-learning"><span class="nav-number">1.9.</span> <span class="nav-text">Reinforcement learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%EF%BC%88MRP-Markov-reward-process%EF%BC%89"><span class="nav-number">1.9.1.</span> <span class="nav-text">马尔可夫奖励过程（MRP Markov reward process）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B-Markov-decision-process%EF%BC%88MDP%EF%BC%89"><span class="nav-number">1.9.2.</span> <span class="nav-text">马尔可夫决策过程 Markov decision process（MDP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Policy-Iteration"><span class="nav-number">1.9.3.</span> <span class="nav-text">MDP: Policy Iteration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Value-Iteration"><span class="nav-number">1.9.4.</span> <span class="nav-text">MDP: Value Iteration</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mathematical-Foundation-for-Deep-Learning"><span class="nav-number">1.10.</span> <span class="nav-text">Mathematical Foundation for Deep Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Information-Theory"><span class="nav-number">1.10.1.</span> <span class="nav-text">Information Theory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Signal-Analysis"><span class="nav-number">1.10.2.</span> <span class="nav-text">Signal Analysis</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">机器学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-amp-Simple-Model"><span class="nav-number">1.0.1.</span> <span class="nav-text">Big Data &amp; Simple Model</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-pick-red-and-green-marbles-from-a-bin"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">Example : pick red and green marbles from a bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-%E6%8B%93%E5%B1%95"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">Example 拓展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Supervised-learning"><span class="nav-number">1.0.2.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression-%E2%85%A0"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">Regression Ⅰ</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A0"><span class="nav-number">1.1.</span> <span class="nav-text">Gradient Descent Ⅰ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Illustration-1D"><span class="nav-number">1.1.1.</span> <span class="nav-text">Illustration(1D)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gradient-Descent-%E2%85%A1"><span class="nav-number">1.2.</span> <span class="nav-text">Gradient Descent Ⅱ</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Induction-amp-Deduction"><span class="nav-number">1.2.1.</span> <span class="nav-text">Induction &amp; Deduction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Regularization"><span class="nav-number">1.3.</span> <span class="nav-text">Regularization</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-learning-1"><span class="nav-number">1.4.</span> <span class="nav-text">Supervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Classification"><span class="nav-number">1.4.1.</span> <span class="nav-text">Classification</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">1.4.2.</span> <span class="nav-text">Decision Tree</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Stopping-Condition"><span class="nav-number">1.4.2.0.1.</span> <span class="nav-text">Stopping Condition</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#For-Regression"><span class="nav-number">1.4.2.0.2.</span> <span class="nav-text">For Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Bagging"><span class="nav-number">1.4.2.0.3.</span> <span class="nav-text">Bagging</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Random-forest"><span class="nav-number">1.4.2.0.4.</span> <span class="nav-text">Random forest</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Boosting"><span class="nav-number">1.4.2.0.5.</span> <span class="nav-text">Boosting</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#GBoosting"><span class="nav-number">1.4.2.0.6.</span> <span class="nav-text">GBoosting</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%A7%8D%E8%A7%86%E8%A7%92"><span class="nav-number">1.4.3.</span> <span class="nav-text">一种视角</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Multivariate-splits"><span class="nav-number">1.4.3.0.1.</span> <span class="nav-text">Multivariate splits</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Applications"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">Applications</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#K-nearest-neighbourhood"><span class="nav-number">1.5.</span> <span class="nav-text">K-nearest neighbourhood</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Applications-1"><span class="nav-number">1.5.0.0.1.</span> <span class="nav-text">Applications</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unsupervised-Learning"><span class="nav-number">1.6.</span> <span class="nav-text">Unsupervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clustering%EF%BC%88%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">1.6.1.</span> <span class="nav-text">Clustering（聚类）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#K-means%EF%BC%88no-label%EF%BC%89"><span class="nav-number">1.6.1.1.</span> <span class="nav-text">K-means（no label）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hierarchical-clustering%EF%BC%88%E5%B1%82%E6%AC%A1%E8%81%9A%E7%B1%BB%EF%BC%89"><span class="nav-number">1.6.1.2.</span> <span class="nav-text">Hierarchical clustering（层次聚类）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big-Data-Clustering"><span class="nav-number">1.6.2.</span> <span class="nav-text">Big Data Clustering</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BFR%EF%BC%88%E4%BA%BA%E5%90%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="nav-number">1.6.2.1.</span> <span class="nav-text">BFR（人名算法）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-vector"><span class="nav-number">1.7.</span> <span class="nav-text">Support vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernel-%E6%96%B9%E6%B3%95"><span class="nav-number">1.7.1.</span> <span class="nav-text">Kernel 方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Learning-with-Probabilistic-Graphic-Model"><span class="nav-number">1.8.</span> <span class="nav-text">Learning with Probabilistic Graphic Model</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Directed-graphs-Baysian-network"><span class="nav-number">1.8.1.</span> <span class="nav-text">Directed graphs (Baysian network)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Undirected-graphs-Markov-random-field"><span class="nav-number">1.8.2.</span> <span class="nav-text">Undirected graphs (Markov random field)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reinforcement-learning"><span class="nav-number">1.9.</span> <span class="nav-text">Reinforcement learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%EF%BC%88MRP-Markov-reward-process%EF%BC%89"><span class="nav-number">1.9.1.</span> <span class="nav-text">马尔可夫奖励过程（MRP Markov reward process）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B-Markov-decision-process%EF%BC%88MDP%EF%BC%89"><span class="nav-number">1.9.2.</span> <span class="nav-text">马尔可夫决策过程 Markov decision process（MDP）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Policy-Iteration"><span class="nav-number">1.9.3.</span> <span class="nav-text">MDP: Policy Iteration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MDP-Value-Iteration"><span class="nav-number">1.9.4.</span> <span class="nav-text">MDP: Value Iteration</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mathematical-Foundation-for-Deep-Learning"><span class="nav-number">1.10.</span> <span class="nav-text">Mathematical Foundation for Deep Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Information-Theory"><span class="nav-number">1.10.1.</span> <span class="nav-text">Information Theory</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Signal-Analysis"><span class="nav-number">1.10.2.</span> <span class="nav-text">Signal Analysis</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AF%87"><span class="nav-number">2.</span> <span class="nav-text">深度学习篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Neuron-Shallow-Neural-Networks"><span class="nav-number">2.1.</span> <span class="nav-text">Neuron,Shallow Neural Networks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Neuron"><span class="nav-number">2.1.1.</span> <span class="nav-text">Neuron</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shallow-Neural-Networks"><span class="nav-number">2.1.2.</span> <span class="nav-text">Shallow Neural Networks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-Neural-Networks"><span class="nav-number">2.1.3.</span> <span class="nav-text">Training Neural Networks</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1101,20 +1153,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

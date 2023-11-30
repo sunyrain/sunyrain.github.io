@@ -191,6 +191,81 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/" class="post-title-link" itemprop="url">VS2012只能对 Type.IsGenericTypeDefinition 为 True</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-09-21 19:11:59 / 修改时间：20:19:29" itemprop="dateCreated datePublished" datetime="2023-09-21T19:11:59+08:00">2023-09-21</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这是个VS2012解决方案的问题。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -436,7 +511,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-26 15:52:04" itemprop="dateModified" datetime="2023-11-26T15:52:04+08:00">2023-11-26</time>
+                <time title="修改时间：2023-11-28 11:05:11" itemprop="dateModified" datetime="2023-11-28T11:05:11+08:00">2023-11-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -459,753 +534,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <span id="more"></span>
-<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
-<h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
-<li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
-<li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
-<li>其中$\nu$  是取样中红色球的比例  </li>
-<li>可见实验结果误差大于$\epsilon$的概率并不取决于期望，而取决于实验的次数$N$</li>
-<li>该例子具有一定的特殊性，因为其为Brenoulli实验，且所考虑的$\nu$和$\mu$均在0到1之间</li>
-<li>关键：big data gives an accurate learning result</li>
-</ul>
-</li>
-<li>广义Hoeffding’s inequality：$$\mathbb{P}\left(\left|S_n-\mathbb{E}\left[S_n\right]\right| \geq t\right) \leq 2 \exp \left(-\frac{2 t^2}{\sum_{i&#x3D;1}^n\left(b_i-a_i\right)^2}\right)<br>  \tag{1}$$<ul>
-<li>$b_i ,a_i$分别为变量$X_i$的上限和下限</li>
-<li>注意到$S_n$是变量之和，如果要与伯努利情况下的Koeffding比较，则可以考虑指数上下同除$n^2$</li>
-<li>在广义的情况下考虑本例，$b_i-a_i&#x3D;1$，代入即得本例情况</li>
-</ul>
-</li>
-</ul>
-<h4 id="Example-拓展"><a href="#Example-拓展" class="headerlink" title="Example 拓展"></a>Example 拓展</h4><ul>
-<li>将未知的$\mu$替换为$f(x)$，我们给出假设$h(x)$，从取球的角度来看，每一次取球，就相当于在定义域$X$中取一个$x$，取出红球意味着，$h(x)\ne f(x)$，而取出绿球则意味着$h(x) &#x3D; f(x)$ </li>
-<li>在上述前提下，定义$E_{in}(h)$作为抽样错误率，也即“in sample error”，同时定义$E_{out}(h)$作为总错误率，也即对所有利用假设进行判断后$h(x) \ne f(x)$ 的比率。其实也就是之前所述的$\nu$和$\mu$，我们想要知道我们的假设$h$效果怎么样，但是没必要把所有$x$全带入。</li>
-<li>$h$的参数空间记为$H$ ，其中最优的假设是$g$，经过训练后，$g$会尽可能接近$f$ </li>
-<li>$$\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq \sum_{m&#x3D;1}^M \mathbb{P}\left[\left|E_{\text {in }}\left(h_m\right)-E_{\text {out }}\left(h_m\right)\right|&gt;\epsilon\right]$$</li>
-<li>$$\mathbb{P}\left[\left|E_{\text {in }}(g)-E_{\text {out }}(g)\right|&gt;\epsilon\right] \leq 2 M e^{-2 \epsilon^2 N}<br>\tag{2}$$</li>
-<li>这条式子的意思是，给出所有$M$个假设中，最优的一个，训练集和实际集的误差上限（这本身不能让$g$接近$f$）这很好理解，因为右侧包含左侧。<blockquote>
-<p>Low complexity model and big data can give us a good generalization in machine learning</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning"></a>Supervised learning</h3><blockquote>
-<p>Use labelled dataset to train algorithms</p>
-</blockquote>
-<h4 id="Regression-Ⅰ"><a href="#Regression-Ⅰ" class="headerlink" title="Regression Ⅰ"></a>Regression Ⅰ</h4><ul>
-<li>Linear Regression<ul>
-<li>$y_{i}&#x3D;f_{\beta_{0},\beta_{1}}(x_{i})+\epsilon_{i}&#x3D;\beta_{0}+x_{i}\beta_{1}+\epsilon_{i}\quad$其中$\epsilon$即为残差<ul>
-<li>$f_{\beta_{0},\beta_{1}}$是线性回归的函数，训练目标是最小化$\epsilon$的平方和</li>
-</ul>
-</li>
-<li>Cost Function<ul>
-<li>$C\left(\beta_0,\beta_1\right)&#x3D;\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0,\beta_1}\left(x_i\right)\right)^2$</li>
-</ul>
-</li>
-<li>Assumptions<ul>
-<li>Weak exogeneity 假设残差的期望为0</li>
-<li>Linearity 假设WX+b&#x3D;y</li>
-<li>Homoscedasticity 假设因变量方差不随自变量改变<ul>
-<li>假设我们通过房子的面积等预测房价，我们可以假设不管面积是大是小，价格的方差不会变。而事实上也存在反例，例如我们一般认为，小房子的价格波动更大</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Ordinary least squares<ul>
-<li>Cost Function $(y_{i}-f_{\beta_{0},\beta_{1}}(x_{i}))^2$ </li>
-<li>对两个参数分别求偏导及二阶偏导，最小化损失函数</li>
-<li>Coefficient of determination $r^2$<ul>
-<li>$$r^2&#x3D;1-\frac{\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0, \beta_1}\left(x_i\right)\right)^2}{\sum_{i&#x3D;1}^m\left(y_i-\bar{y}\right)^2} \times 100 % \tag{3}$$</li>
-<li>也即比较线性回归模型残差平方和和原有数据残差平方和（相对于$\bar{y}$）故$r^2$越大越优</li>
-<li>定性看一下，直接拿均值肯定很烂，然后$r^2&#x3D;1$的话，说明完全拟合上了</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Multiple Linear Regression<ul>
-<li>额外假设，不存在多重共线性</li>
-<li>同样思路，计算一阶导数并令之为0</li>
-<li>$$\begin{gathered}C(\boldsymbol{\beta})&#x3D;(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})&#x3D;\boldsymbol{y}^T \boldsymbol{y}+\boldsymbol{\beta}^T X^T X \boldsymbol{\beta}-2 \boldsymbol{\beta}^T X^T \boldsymbol{y} \\frac{\partial C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}}&#x3D;2 X^T X \boldsymbol{\beta}-2 X^T \boldsymbol{y}\end{gathered}$$</li>
-<li>据此给出 $\widehat{\boldsymbol{\beta}}$的表达式</li>
-<li>$$\widehat{\boldsymbol{\beta}}&#x3D;\left(X^T X\right)^{-1} X^T \boldsymbol{y}$$</li>
-<li>计算二阶导数</li>
-<li>$$\mathcal{H}&#x3D;\frac{\partial^2 C(\boldsymbol{\beta})}{\partial \boldsymbol{\beta}^2}&#x3D;2 X^T X$$</li>
-<li>证明海森矩阵正定（$a$是任意给定非零向量）</li>
-<li>$$\boldsymbol{a}^T X^T X \boldsymbol{a}&#x3D;(X \boldsymbol{a})^T X \boldsymbol{a}&#x3D;|X \boldsymbol{a}|_2^2 \geq 0$$</li>
-<li>定义hat matrix</li>
-<li>$$\widehat{\boldsymbol{y}}&#x3D;X \widehat{\boldsymbol{\beta}}&#x3D;X\left(X^T X\right)^{-1} X^T \boldsymbol{y}&#x3D;X\left(X^T X\right)^{-\mathbf{1}} X^T \boldsymbol{y}&#x3D;H \boldsymbol{y}$$</li>
-<li>Properties of hat matrix<ul>
-<li>$H$ 、$I-H$  均是正交投影矩阵</li>
-<li>Idempotent $H&#x3D;H^2$、$(I-H)&#x3D;(I-H)^2$</li>
-<li>残差由$\epsilon&#x3D;y-\hat{y}&#x3D;y-Hy&#x3D;(I-H)y$给出<ul>
-<li>当然，残差的平方和$\epsilon^T \epsilon&#x3D;y^T(I-H)y$（依据幂等消掉了一个）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>最大似然估计<ul>
-<li>Assumptions<ul>
-<li>随机取样残差符合均值为0的高斯分布，在残差为0时，概率取最大值<ul>
-<li>在假设残差符合高斯分布的前提下，假设其方差为$\sigma^2$</li>
-</ul>
-</li>
-<li>$$p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
-<li>复习的时候发现这里非常容易混淆，再次强调$p((x_i,y_i)|\beta)$其实指的是$x_i$在参数为$\beta$时给出的预测和真实的标签$y_i$的差距服从的分布</li>
-<li>依据常规高斯分布公式分析，其实就是下式（对于残差，均值$\mu$为0）</li>
-<li>$$p;(\left(\epsilon_i) \mid \boldsymbol{\beta}\right)&#x3D;\frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(\epsilon_i-0)^2}{2 \sigma^2}}$$</li>
-<li>$(x_i,y_i)$独立同分布</li>
-</ul>
-</li>
-<li>最大似然估计最大化在所有取样点处的概率之和，这样约等于最小化残差</li>
-<li>最大化以下式子：$$p\left(D \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;p\left(\left(\boldsymbol{x}<em>{\mathbf{1}}, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
-<li>Calculate the expression of likelihood</li>
-<li>Due to the assumption of independency$$p\left(\left(\boldsymbol{x}<em>1, y_1\right), \ldots\left(\boldsymbol{x}</em>{\boldsymbol{m}}, y_m\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}_{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)$$</li>
-<li>Due to the assumption of Gaussian Distribution$$\prod_{i&#x3D;1}^m p\left(\left(\boldsymbol{x}<em>{\boldsymbol{i}}, y_i\right) \mid \boldsymbol{\beta}, \sigma^2\right)&#x3D;\prod</em>{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T \boldsymbol{x}_i\right)^2}{2 \sigma^2}}$$</li>
-<li>Due to the assumption of homoscedasticity$$\prod_{i&#x3D;1}^m \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}&#x3D;\left(\frac{1}{\sqrt{2 \pi \sigma^2}}\right)^m e^{-\frac{\sum_{i&#x3D;1}^m\left(y_i-\boldsymbol{\beta}^T x_i\right)^2}{2 \sigma^2}}$$</li>
-<li>Calculate the Log-likelihood$$\mathcal{L}\left(\boldsymbol{\beta}, \sigma^2\right)&#x3D;-\frac{m}{2} \ln \left(2 \pi \sigma^2\right)-\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$$</li>
-<li>到此步为止，为了最大化似然，需要最小化$\frac{m}{2} \ln \left(2 \pi \sigma^2\right)+\frac{1}{2 \sigma^2}(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})$ 也即最小化$(\boldsymbol{y}-X \boldsymbol{\beta})^T(\boldsymbol{y}-X \boldsymbol{\beta})\quad$这与多元线性回归类似（最小化残差平方和）</li>
-<li>分别对$\beta$和$\sigma^2$求偏导，注意得到的$\sigma$是残差的标准差，又由于同分布假设，故假设最后的结果是$y_{predict}$则95%置信区间为$y_{predict}\pm 1.96\sigma$</li>
-</ul>
-</li>
-</ul>
-<h2 id="Gradient-Descent-Ⅰ"><a href="#Gradient-Descent-Ⅰ" class="headerlink" title="Gradient Descent Ⅰ"></a>Gradient Descent Ⅰ</h2><h3 id="Illustration-1D"><a href="#Illustration-1D" class="headerlink" title="Illustration(1D)"></a>Illustration(1D)</h3><p>对于1-D线性回归模型，我们可以发现，损失函数是一个下凸函数，所以我们可以先随机选定一组参数$(\beta_0,\beta_1)$ 相当于在碗的壁上放了一个乒乓球，之后按以下策略，迭代参数$(\beta_0,\beta_1)$<br>$$<br>\begin{gathered}<br>\beta_1^{(i+1)}&#x3D;\beta_1^{(i)}-\alpha \frac{\partial C\left(\beta_0^{(i)}, \beta_1^{(i)}\right)}{\partial \beta_1}&#x3D;\beta_1^{(i)}+2 \alpha \sum_{i&#x3D;1}^m\left(y_i-\beta_1^{(i)} x_i-\beta_0^{(i)}\right) x_i \<br>\beta_0^{(i+1)}&#x3D;\beta_0^{(i)}-\alpha \frac{\partial C\left(\beta_0^{(i)}, \beta_1^{(i)}\right)}{\partial \beta_0}&#x3D;\beta_0^{(i)}+2 \alpha \sum_{i&#x3D;1}^m\left(y_i-\beta_1^{(i)} x_i-\beta_0^{(i)}\right)<br>\end{gathered}<br>$$</p>
-<ul>
-<li>注意到有 $C\left(\beta_0,\beta_1\right)&#x3D;\sum_{i&#x3D;1}^m\left(y_i-f_{\beta_0,\beta_1}\left(x_i\right)\right)^2$</li>
-<li>注意区分在优化问题中的参数$x$以及具体的数据点$x$两者容易搞混</li>
-</ul>
-<blockquote>
-<p>第一讲到此结束</p>
-</blockquote>
-<hr>
-<h2 id="Gradient-Descent-Ⅱ"><a href="#Gradient-Descent-Ⅱ" class="headerlink" title="Gradient Descent Ⅱ"></a>Gradient Descent Ⅱ</h2><blockquote>
-<p>For General functions, the gradient descent algorithm is often stuck at a local minimum</p>
-</blockquote>
-<ul>
-<li>数值方法求解梯度<ul>
-<li>$\partial f&#x2F; \partial x &#x3D; (f(x+\epsilon)-f(x))&#x2F;\epsilon$</li>
-</ul>
-</li>
-<li>Line search<ul>
-<li>Exact Line Search<ul>
-<li>$a_i^{*} &#x3D; argmin_{a_i&gt;&#x3D;0}f(x_i+a_i\Delta x_i)$</li>
-<li>在一定范围内搜索$\alpha$让$f$最小</li>
-<li>问题在于操作繁琐计算需求大，主要是为了找一个让函数沿着当前方向下降最大的步长</li>
-</ul>
-</li>
-<li>Backtracking Search<ul>
-<li>核心思想是“你至少下降这么多我才可以接受”，核心目标是确定一个还算不错的步长</li>
-<li>设置一个值$\gamma$衡量所期望的函数下降的程度，同时设置一个值$\rho$ 来逐步缩小步长直到符合要求</li>
-<li>目标是比较$f(x+\alpha \Delta x)$与$f(x)+\alpha \gamma \nabla f(x)^T \Delta x$，如果当前选择的步长未能使函数下降至小于期望，则将步长$\alpha$缩小为$\rho \alpha$ </li>
-<li>$Wolfe ; 1^{st} ; and ; Wolfe ; 2^{nd} ; condition$<ul>
-<li>第一条件，也就是在回溯线搜索中用到的条件，限制步长不要太长，以至于错过local minimum</li>
-<li>第二条件，约束 $\frac{\phi^{\prime}(a)}{\phi^{\prime}(0)}&#x3D;\frac{\nabla f(x+a\Delta x)^{T}\Delta x}{\nabla f(x)^{T}\Delta x}\leq \eta$也即要求新的位置的斜率必须相较最初变得一定程度上平缓，这使得了步长不会过短<ul>
-<li>注意到如果原地不动$\eta&#x3D;1$，如果移动至局部最小值，$\eta &#x3D; 0$所以一般取$\eta$在0到1之间</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Newton’s method<ul>
-<li>牛顿法本用来通过数值方法找到函数根的近似解，但也可以稍加变化使之可以应用在梯度下降法中，即将求根的对象从$f$变为$f^{‘}$  </li>
-<li>公式可写作$x_{i+1}&#x3D;x_{i}-\frac{f’(x_{i})}{f’’(x_{i})}$</li>
-<li>在一维情况下阐述工作原理<ul>
-<li>首先我们在某点计算目标函数的梯度和Hessian，之后用这些信息形成二阶泰勒展开，得到二次曲线</li>
-<li>之后我们找到二次曲线的最小值位置，更新$x_{k+1}$</li>
-<li>参考公式如下$f(x)\approx f(x_{i})+\boldsymbol{g}^{T}(x-\boldsymbol{x}<em>{i})+\frac{1}{2}(\boldsymbol{x}-\boldsymbol{x}</em>{i})^{T}H(\boldsymbol{x}-\boldsymbol{x}_{i})$ </li>
-<li>一张很有启发意义的图</li>
-<li>![[Pasted image 20231102110212.png]]</li>
-<li>伪代码可以理解为$x_{i+1} &#x3D; x_i -H^{-1}g$</li>
-<li>补充说明<ul>
-<li>如果H并不是正定的，有两种方法解决此问题<ul>
-<li>采用Dk矩阵替换$H^{-1}$对角元素，具体表达式如下$D_{k}(i,i)&#x3D;\max\left(\varepsilon,\frac{\partial f^{2}}{\partial x_{i}^{2}}\right)^{-1}$ </li>
-<li>或采用LMA，在Hessian非正定的情况下，退化为gradient descent</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Stochastic gradient descent<ul>
-<li>在大数据量的背景下，很难利用所有数据计算Cost Function</li>
-<li>解决方案：Stochasitically sample from the dataset.</li>
-<li>对比Linear regression背景下，GD和SGD的区别与联系<ul>
-<li>GD略，见前</li>
-<li>SGD的Cost Function只对一个点计算，每计算一个点就更新所有参数权重，一般对全数据做1到10次扫描，假设数据量为m则，则一轮扫描就对参数进行了m次更新，而GD此时只进行了一次更新</li>
-<li>优势：快</li>
-<li>劣势<ul>
-<li>失去了向量化的优势，现代的硬件，例如CPU或者GPU对向量化运算进行了优化，能够同时对数组或向量的多个元素执行相同的操作，从而大大提高运算效率，但是SGD舍弃了这种优势</li>
-<li>不是所有的迭代都朝向最优方向</li>
-<li>收敛速度较慢，在最优解附近可能会发生震荡等<ul>
-<li>解决方案，调整学习率为$\frac{C_1}{i+C_2}$，其中$C_1,C_2$均常数，$i$为迭代次数，这可以使得学习率逐渐下降，最终在最优解附近波动较小</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Mini-batch<ul>
-<li>原理和思路类似SGD，但是不是取单一点而是取一组k个点，提高了稳定性，同时也保证了相对较快的速度和较小的计算资源消耗</li>
-</ul>
-</li>
-<li>Momentum method<ul>
-<li>提出的根本原因是一般的梯度下降由于震荡问题不能引入太大的$\alpha$，而且不具有记忆</li>
-<li>对比一般梯度下降和动量梯度下降<ul>
-<li>一般梯度下降$x^{(i+1)}&#x3D;x^{(i)}-\alpha\nabla f(x^{(i)})$</li>
-<li>而动量梯度下降表达式为：<ul>
-<li>$\boldsymbol{x}^{(i+1)}&#x3D;\boldsymbol{x}^{(i)}+\boldsymbol{v}^{(i)}$</li>
-<li>$\boldsymbol{v}^{(i)}&#x3D;-\alpha\nabla f\big(\boldsymbol{x}^{(i)}\big)+\boldsymbol{\theta}\boldsymbol{v}^{(i-1)}$</li>
-</ul>
-</li>
-<li>动量梯度下降利用速度项更新$x$，而速度项$v$和梯度以及上一时刻的速度$v_{i-1}$有关，相当于保有了“记忆”</li>
-<li>事实上$v_i&#x3D;-\alpha\sum_{k&#x3D;0}^{i}\theta^{k}\nabla f(x^{(i-k)})$ 对之前的的速度进行了指数衰减级的记忆</li>
-</ul>
-</li>
-<li>补充知识：条件数Condition Number<ul>
-<li>定义，$k&#x3D;(\frac{a}{b})^2$</li>
-<li>一般GD $O(klog(\frac{1}{\epsilon}))$</li>
-<li>一般SGD $O(\sqrt{k}log(\frac{1}{\epsilon}))$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Nesterov’s accelerated<ul>
-<li>尝试解决动量梯度下降存在的，在局部最优点可能具有较大速度导致错过最优点的现象</li>
-<li>原理是通过在速度项中的梯度项中，将原来的参数空间$x_i$改为“下一步的位置”，也即$x_i\theta v_{i-1}$，起到了“看前一步”的效果</li>
-</ul>
-</li>
-<li>AdaGrad&#x2F;RMSprop<ul>
-<li>AdaGrad允许学习率随着参数调整，他的宗旨是，对于梯度大的参数，我们适当减小学习率，对于梯度小的参数，我们维护一个较大的学习率<ul>
-<li>$x_j^{(i+1)}&#x3D;x_j^{(i)}-\frac{\alpha}{\sqrt{g_j^{(i)}+\epsilon}}\Delta x_j^{(i)}$ </li>
-<li>$g_{j}^{(i)}&#x3D;g_{j}^{(i-1)}+\left(\Delta x_{j}^{(i)}\right)^{2}$</li>
-<li>这里的$g_j$维护的是该参数的历史梯度平方和，一定程度上可以反映该参数的历史梯度情况</li>
-</ul>
-</li>
-<li>RMSprop与AdaGrad逻辑相似，但是对于历史梯度的记忆是随时间衰减的<ul>
-<li>$x_{j}^{(i+1)}&#x3D;x_{j}^{(i)}-\frac{\alpha}{\sqrt{l_{j}^{(i)}}+\epsilon}\Delta x_{j}^{(i)}$ </li>
-<li>$l_{j}^{(i)}&#x3D;(1-\varphi)l_{j}^{(i-1)}+\varphi\left(\Delta x_{j}^{(i)}\right)^{2}$ </li>
-<li>其中$l_j$保留了梯度平方历史的加权和，并按某参数衰减，类似Momentum GD对于历史速度的处理方法</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Adam(Momentum&amp;RMSprop) Nadam(Nesterov’s accelerated&amp;RMSprop)</li>
-</ul>
-<h3 id="Induction-amp-Deduction"><a href="#Induction-amp-Deduction" class="headerlink" title="Induction &amp; Deduction"></a>Induction &amp; Deduction</h3><h2 id="Regularization"><a href="#Regularization" class="headerlink" title="Regularization"></a>Regularization</h2><ul>
-<li>Ridge Regression<ul>
-<li><p>在线性回归模型中，较大的参数往往会让模型变得更为敏感，我们一般添加一些正则化项惩罚$w$项的长度</p>
-</li>
-<li><p>一个添加了$L2$正则化处罚项的损失函数一般类似于</p>
-</li>
-<li><p>$$C(\boldsymbol{w})&#x3D;\frac{1}{2}\sum_{n&#x3D;1}^{N}\left(\boldsymbol{x}<em>{n}^{T}\boldsymbol{w}-y</em>{n}\right)^{2}+\frac{\lambda}{2}|w|_{2}^{2}&#x3D;\frac{1}{2}(X\boldsymbol{w}-\boldsymbol{y})^{T}(X\boldsymbol{w}-\boldsymbol{y})+\frac{\lambda}{2}w^{T}\boldsymbol{w}$$</p>
-</li>
-<li><p>当然，梯度也要随之更改：</p>
-</li>
-<li><p>$$\nabla C(\mathbf{w})&#x3D;\nabla\left{\frac{1}{2}(X\mathbf{w}-\mathbf{y})^{T}(X\mathbf{w}-\mathbf{y})+\frac{\lambda}{2}\mathbf{w}^{T}\mathbf{w}\right}&#x3D;0$$</p>
-</li>
-<li><p>解得：$\boldsymbol{w}^*&#x3D;(X^TX+\lambda I)^{-1}X^T\boldsymbol{y}$</p>
-<ul>
-<li>这个解是符合逻辑的，如果去除正则项，则为$\boldsymbol{w}^*&#x3D;(X^TX)^{-1}X^T\boldsymbol{y}$</li>
-</ul>
-</li>
-<li><p>应用了正则化以后，training loss会变差，这是自然的，因为引入了新的损失项目，导致模型更难过拟合以下降training loss</p>
-</li>
-<li><p>必须指出当$\lambda$上升时，会导致函数趋近于$f(x)&#x3D;0$以减少惩罚</p>
-</li>
-<li><p>但是不会将任何系数压缩到0，而是将它们都逼近0，会在模型中保留所有特征，尽管有些值会很小</p>
-</li>
-</ul>
-</li>
-<li>Lasso回归<ul>
-<li>与岭回归不同的是，Lasso回归采用L1正则项</li>
-<li>$$C(\boldsymbol{w})&#x3D;{\frac12}\sum_{n&#x3D;1}^N(x_n^T\boldsymbol{w}-y_n)^2+{\frac\lambda2}|w|$$</li>
-<li>Lasso可以实现特征选择，参考下图，蓝绿色区域是正则化误差，而红线是平方误差等高线，Lasso在坐标轴上取得了理想的解，一个特征因此被舍弃了</li>
-<li>![[Pasted image 20231104102253.png]]</li>
-<li>也可以这样比较</li>
-<li>![[Pasted image 20231104103346.png]]</li>
-<li>可以发现随着$\lambda$的增大，Lasso回归的x轴系数最终变为0</li>
-</ul>
-</li>
-<li>Elastic-net regression（弹性网络回归）<ul>
-<li>实际上就是将Lasso和Rigid结合</li>
-<li>$$\frac{1}{2}\sum_{n&#x3D;1}^{N}\bigl(x_{n}^{T}w-y_{n}\bigr)^{2}+\frac{\lambda_{1}}{2}|w|+\frac{\lambda_{2}}{2}|w|_{2}^{2}$$<blockquote>
-<p>相关性并不意味着因果性，使用回归技术并不意味着特征与标签有因果关系</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="Supervised-learning-1"><a href="#Supervised-learning-1" class="headerlink" title="Supervised learning"></a>Supervised learning</h2><h3 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h3><ul>
-<li>Logistic regression<ul>
-<li>即训练一组参数W、b，使得WX+b带入sigmoid函数可以区分是两类中的哪一类。一般使用梯度上升，最大化似然函数</li>
-<li>Sigmoid function<ul>
-<li>$$g(z)&#x3D;\frac{1}{1+e^{-z}}$$</li>
-<li>Property Ⅰ  $g^{‘}(z)&#x3D; g(z)(1-g(z))$</li>
-<li>Property Ⅱ  $1-g(z)&#x3D;g(-z)$</li>
-</ul>
-</li>
-<li>Maximum likelihood estimation<ul>
-<li>其实就是在给定参数$\beta$下，数据点$x_i$观察到$y_i$标签的概率，严格来说应该是给定$\beta$在给定$x_i$模型返回$y_i$的概率</li>
-<li>不妨假设$y_i$服从伯努利分布，则$m$条数据的概率表达式为</li>
-<li>$$\prod_{i&#x3D;1}^{m}p((x_{i},y_{i})|\boldsymbol{\beta})&#x3D;\prod_{i&#x3D;1}^{m}f_{\boldsymbol{\beta}}(x_{i})^{\nu_{i}}(1-f_{\boldsymbol{\beta}}(x_{i}))^{1-\nu_{i}}$$<ul>
-<li>注记一下，这里假设$y_i$有0和1两种可能，所以直接放在指数上了</li>
-</ul>
-</li>
-<li>综上，最大似然函数的对数是</li>
-<li>$$\mathcal{L}(\boldsymbol{\beta})&#x3D;\log\left(\prod_{i&#x3D;1}^mp((\boldsymbol{x}<em>i,y_i)|\boldsymbol{\beta})\right)&#x3D;\sum</em>{i&#x3D;1}^my_i\log\left(f_\beta(x_i)\right)+(1-y_i)\log\left(1-f_\beta(x_i)\right)$$<ul>
-<li>我们的目标就是找到这样一个$\beta$使得$\mathcal{L}(\beta)$最大<ul>
-<li>其实也就是提高全部预测准确的概率</li>
-</ul>
-</li>
-<li>在我们使用了$sigmoid$函数的前提下，公式又可以如下转化</li>
-<li>$$\boldsymbol{\beta}^{*}&#x3D;\underset{\boldsymbol{\beta}}{\mathrm{argmax}}\sum_{i&#x3D;1}^{m}y_{i}\log\Big(g(\boldsymbol{\beta}^{T}x_{i})\Big)+(1-y_{i})\mathrm{log}\Big(1-g\big(\boldsymbol{\beta}^{T}x_{i}\big)\Big)$$</li>
-<li>如果我们应用SGD求解，则最终的更新公式为</li>
-<li>$$\left.\beta^{(k+1)}&#x3D;\beta^{(k)}+\alpha\left[y_i-g\left(\beta^{(k)}\right.^Tx_i\right)\right]x_i$$</li>
-<li>Logistic regression的评价标准<ul>
-<li>$$\frac{number, of, correctly, classified, }{number, of, total, training, data}$$</li>
-<li>或者采用Efron’s</li>
-<li>$$r^{2}&#x3D;1-\frac{\sum_{i&#x3D;1}^{m}(f(x_{i})-y_{i})^{2}}{\sum_{i&#x3D;1}^{m}(y_{i}-\bar{y})^{2}}$$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Multi-classes多分类问题<ul>
-<li>Softmax<ul>
-<li>公式如下</li>
-<li>$$\mathrm{P}(y|\theta)&#x3D;\mathrm{P}(y|x,{\boldsymbol{\beta}<em>{k}}</em>{k&#x3D;1}^{K})&#x3D;\prod_{k&#x3D;1}^{K}\left(\frac{\exp{\boldsymbol{x}^{T}\boldsymbol{\beta}<em>{k}}}{\sum</em>{k^{\prime}&#x3D;1}^{K}\exp{\boldsymbol{x}^{T}\boldsymbol{\beta}<em>{k^{\prime}}}}\right)^{y</em>{k}}$$</li>
-<li>注：对需要划分的每一个类训练一组参数（注意和深度学习区别，深度学习中一般在网络结构的最后一层统一使用softmax，并不会为每一类单独训练参数）</li>
-<li>注：$y$是一个标签向量，一般采用了独热编码，例如在五分类问题中表示为$（0，0，1，0，0）$ 这一般表示为第三类。等式表示在给定k组参数和$x$的前提下，对某条数据预测正确的概率</li>
-<li>注：以标签作为指数，其实就是取出了独热编码中$y_k$&#x3D;1的概率，只是形式上更为统一</li>
-<li>综上，我们可以给出Log loss function</li>
-<li>$$\log\prod_{i&#x3D;1}^{m}\mathrm{P}(\mathbf{y}<em>{i}|\mathbf{x}</em>{i},{\boldsymbol{\beta}<em>{k}}</em>{k&#x3D;1}^{K})&#x3D;\log\left[\prod_{i&#x3D;1}^{m}\prod_{k&#x3D;1}^{K}\left(\frac{\exp(\boldsymbol{x}<em>{i}^{T}\boldsymbol{\beta}</em>{k})}{\sum_{k^{\prime}&#x3D;1}^{K}\exp(\boldsymbol{x}<em>{i}^{T}\boldsymbol{\beta}</em>{k^{\prime}})}\right)^{y_{i,k}}\right]$$</li>
-<li>以及其对每组参数的梯度</li>
-<li>$$&#x3D;\sum_{i&#x3D;1}^{m}[y_{i,k}-\theta_{k}]x_{i}$$</li>
-</ul>
-</li>
-<li>concave(上凸的)、convex(下凸的)</li>
-<li>Prceptron<ul>
-<li>通过多层感知机可以实现数据区域的分割</li>
-<li>本质上来讲，单层感知机可以视作一个线性分类器，把空间按照一定的规则划分为两半</li>
-<li>$$f_{A}(x)&#x3D;\mathrm{sgn}\left(\sum_{i&#x3D;0}^{d}\beta_{i}x_{i}\right)&#x3D;\mathrm{sgn}(\beta^{T}x)$$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>GDA高斯判别分析<ul>
-<li>与一般的Discriminative learning算法不同，GDA尝试学习$p(x|y)(and ; p(y))$ ,之后利用其去构建后验分布</li>
-<li>整体来说，分类问题的目标是求$argmax_y;p(y|x)$这一点是不变的，但是GDA做了如下转化</li>
-<li>$$\begin{aligned}\operatorname{argmax}_yp(y|x)&#x3D;\operatorname{argmax}_y\frac{p(x|y)p(y)}{p(x)}&#x3D;\operatorname{argmax}_yp(x|y)p(y)\end{aligned}$$</li>
-<li>所以我们可以转为计算$p(y)$和$p(x|y)$，然后对他们的乘积找一个$y$使其最大化，下分别计算之</li>
-<li>$p(y)&#x3D;\phi^{1{y&#x3D;\times}}(1-\phi)^{1-1{y&#x3D;\times}}$</li>
-<li>$p(\boldsymbol{x}|y&#x3D;\times)&#x3D;\frac{1}{(2\pi)^{d&#x2F;2}|\Sigma|^{1&#x2F;2}}\exp\left(-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu}_\times)^T\Sigma^{-1}(\boldsymbol{x}-\boldsymbol{\mu}_\times)\right)$</li>
-<li>$p(x|y&#x3D;{0})&#x3D;\frac1{(2\pi)^{d&#x2F;2}|\Sigma|^{1&#x2F;2}}\exp\left(-\frac12(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\right)$</li>
-<li>$\Sigma^T&#x3D;\frac1m\Sigma_{i&#x3D;1}^m\left(x^{(i)}-\mu_{y^{(i)}}\right)\left(x^{(i)}-\mu_{y^{(i)}}\right)^T$</li>
-<li>$\phi&#x3D;\frac1m\sum_{i&#x3D;1}^m1{y^{(i)}&#x3D;\times}$</li>
-</ul>
-</li>
-</ul>
-<h3 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h3><ul>
-<li>Logistic Regression只有在数据本身分布比较理想，具有明确的界限时，效果才会比较良好</li>
-<li>决策树<ul>
-<li>连通无环结构</li>
-<li>树的节点表示属性测试</li>
-<li>叶节点表示分类结果</li>
-<li>每一次划分其实是对空间进行一次轴对齐的超平面划分，树可以向图转换，图也可以还原成树</li>
-</ul>
-</li>
-<li>决策树的建立<ul>
-<li>建立最小决策树是NP问题，我们使用贪心算法作为一个较好的近似模型<ul>
-<li>首先我们从空的决策树开始</li>
-<li>选择最优特征，同时选择最优的特征阈值</li>
-<li>在划分出来的新节点上继续上述循环，直到到达终止条件</li>
-</ul>
-</li>
-<li>所以重点就是“Splitting Criteria”</li>
-</ul>
-</li>
-<li>$Classification; Error$（可以用来评价划分的质量）<ul>
-<li>$Error(i|j,t_{j}) &#x3D; 1-\max <em>{k}P(k|R</em>{i})$ </li>
-<li>注意这里P不是概率，而是$R_i$中k的比例，比方说一个完美的分类，$R_i$中只有k，那么$Error$就是0</li>
-<li>其中，$j$是划分的维度，$t_j$是划分的阈值</li>
-<li>树当前的每一个叶子节点都代表了一块区域，而算法的继续进行需要做的，就是将该空间继续划分成两块</li>
-<li>$\min _{j, t_j}\left{\frac{N_1}{N} \operatorname{Error}\left(1 \mid j, t_j\right)+\frac{N_2}{N} \operatorname{Error}\left(2 \mid j, t_j\right)\right}$<ul>
-<li>区域被划分为两块，分别是$R_1$和$R_2$，将两块区域的误差加权相加即得到需要最小化的误差函数</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>我们也可以使用$Gini;index$ <ul>
-<li>通过测试每个区域的”纯度”，来判断划分质量</li>
-<li>$Gini(i|j,t_j)&#x3D;1-\Sigma_k P(k|R_i)^2$</li>
-<li>再次提醒，$P(k|R_i)$是指$k$类在$R_i$中的比例</li>
-<li>$Gini$值越低，划分质量越高，所以我们也要最小化$Gini$函数的加权和</li>
-</ul>
-</li>
-<li>我们也可以使用$Entropy$<ul>
-<li>$\operatorname{Entropy}\left(i \mid j, t_j\right)&#x3D;-\sum_k P\left(k \mid R_i\right) \log _2 P\left(k \mid R_i\right)$<ul>
-<li>也就是说$j$分类器下，以$t_j$为阈值，$i$区域的熵是$i$区域内所有$k$个class的占比乘上其占比对2求对数的和的倒数</li>
-</ul>
-</li>
-<li>当然，我们要最小化$\min_{j,t_j}\left{\frac{N_1}N\operatorname{Entropy}(1|j,t_j)+\frac{N_2}N\operatorname{Entropy}(2|j,t_j)\right}$<ul>
-<li>含义也与之前类似，就是通过某种方式找到一个最优分类器和分类阈值</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="Stopping-Condition"><a href="#Stopping-Condition" class="headerlink" title="Stopping Condition"></a>Stopping Condition</h5><ul>
-<li>如果不加以限制，决策树会不断进行划分，直到每个叶子都只包含一个节点为止，这也达成了训练集上的100%准确率<ul>
-<li>为了避免以上情况，我们提出一些合理的停止策略</li>
-<li>例如，我们可以限制决策树的深度</li>
-<li>当某一区域内全都为同一种类时停止划分</li>
-<li>对每一区域内的数量设置下限</li>
-<li>对总叶子数量设置上限</li>
-<li>计算划分收益，对收益设置下限<ul>
-<li>注，收益一般可表示为</li>
-<li>$\mathrm{Gain}(R)&#x3D;\Delta(R)&#x3D;m(R)-\frac{N_1}Nm(R_1)-\frac{N_2}Nm(R_2)$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="For-Regression"><a href="#For-Regression" class="headerlink" title="For Regression"></a>For Regression</h5><blockquote>
-<p>当然，决策树也可以用来做回归问题</p>
-</blockquote>
-<ul>
-<li>同样是对于问题空间进行分割，分割后的每一块区域取其中元素的平均值作为回归决策树对于这一块数据的预测值</li>
-<li>这一次，我们需要最小化的是区域内的点的值和我们预测的值（也就是我们框起来的区域的点的平均值）的差距，我们一般采用以下计算方法</li>
-<li>$$\operatorname{argmin}_{j,t_j}\left{\frac{N_1}NMSE(R_1)+\frac{N_2}NMSE(R_2)\right}$$</li>
-<li>或者</li>
-<li>$$\text{ argmin}_{j,t_j}\left{\frac{N_1}NVar(y|x\in R_1)+\frac{N_2}NVar(y|x\in R_1)\right}$$</li>
-<li>其实，如果我们将预测值选为区域内$y$的均值的话，二者结果是一样的</li>
-</ul>
-<h5 id="Bagging"><a href="#Bagging" class="headerlink" title="Bagging"></a>Bagging</h5><blockquote>
-<p>说一下有关名字的由来，其实是Bootstrap aggregating的缩写，意思分别是“自助采样”和 “聚合”</p>
-</blockquote>
-<ul>
-<li>较深的或者较大的决策树常常会过拟合，在新的数据集上有较大的方差</li>
-<li>一般来说，我们可以采取以下方法<ul>
-<li>对训练数据采样，对于每一组采样（一般来说，一个自助样本（有放回抽样的样本）大约包含原始数据集中约63.2%的唯一实例），训练一个决策树<ul>
-<li>这里解释一下采样的相关问题</li>
-<li>采样与数据集大小完全一样，但由于是有放回采样，所以依据公式计算，每个数据点不被选中的概率连续乘以自身N次，即$(1-\frac{1}{N})^N$ 趋近于 $e^{-1}$，也就是说，抽到与原始数据集一样大的话，包含着六成多一点的无重复数据</li>
-</ul>
-</li>
-<li>之后对于一个给定的输入，我们将其放入所有的决策树并将结果取平均作为输出</li>
-</ul>
-</li>
-<li>当然，这样做也存在着缺点，我们在提高模型表现的同时，损失了模型的可解释性</li>
-</ul>
-<h5 id="Random-forest"><a href="#Random-forest" class="headerlink" title="Random forest"></a>Random forest</h5><ul>
-<li>为什么需要Random Forest<ul>
-<li>bagging得到的树都是在同一个数据集中抽样得到的数据上训练的，而且采用的都是相同的贪心策略，这往往会导致生成的树在结构上非常相似，以至于会拥有极其类似的分布</li>
-<li>当我们有B棵树，两两相关系数为$\rho$，自身方差为$\sigma^2$时，他们的均值的方差为$\rho\sigma^2+\frac{1-\rho}B\sigma^2$</li>
-<li>从这个式子可以看出，即使在bagging算法中，我们使用了再大的B，也无法消除前一项的影响，而假设树之间的相关性较高，则优化程度有限，本质上是因为，决策树不独立</li>
-</ul>
-</li>
-<li>每棵树每步分裂限制特征集，限制每一步的“视角”，在限制的特征集中选择最优的特征和阈值，最终融合不同视角进行投票<ul>
-<li>实操上，我们在每一步分裂时，随机选择一组特征，在其中选择最优的特征</li>
-<li>补充说明一些可以调整的超参数<ul>
-<li>每次随机挑选的特征数量</li>
-<li>随机森林中树的总数</li>
-<li>叶结点的最小规模</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>如何进一步调整随机森林<ul>
-<li>交叉验证<ul>
-<li>随机森林天然可以交叉验证，因为我们使用一部分数据来构建决策树，剩下的数据就可以用来评估</li>
-</ul>
-</li>
-<li>随机排列特征数据<ul>
-<li>我们想要评估一个特征在整个随机森林中的重要性，我们可以对袋外数据中的某一个特征进行随机排列，然后测试决策树因为特征被随机排列而造成的计算准确度下降情况</li>
-<li>对随机森林中所有的树做如上操作后，计算平均情况，即可得到该特征在整个随机森林中的平均重要性</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>随机森林仍然不是完美的算法<ul>
-<li>如果特征的数量有很多，但是有用的特征很少的时候，随机森林的效果可能会很差，因为我们随机选择特征很容易选中很多没用的特征而漏选有用特征，构建出来的树很可能完全无法有效学习数据格式</li>
-<li>树的数量极大时，又会回到树相关性提高，方差变大的问题</li>
-</ul>
-</li>
-</ul>
-<h5 id="Boosting"><a href="#Boosting" class="headerlink" title="Boosting"></a>Boosting</h5><blockquote>
-<p>The strength of week learners</p>
-</blockquote>
-<ul>
-<li>原理是，首先使用week classifier进行学习，之后依据预测结果，提高分类错误的数据点的权重，再此基础上再次训练一个分类器，并提高分类错误的数据点的权重。如此往复，在最后将所有的树分类器以一定的权重累加，得到强大的分类器</li>
-</ul>
-<h5 id="GBoosting"><a href="#GBoosting" class="headerlink" title="GBoosting"></a>GBoosting</h5><ul>
-<li>GBoosting的概念比想象的还要深刻一点</li>
-<li>用于回归的GBoosting原理如下<ul>
-<li>分类器为$T$</li>
-<li>先训练一个弱分类器$T_0$，并令$T&#x3D;T_0$</li>
-<li>计算残差，将残差作为目标训练一个新的分类器$T_i$</li>
-<li>将弱分类器以一定的参数加入$T$，残差会因此减少</li>
-<li>$F_{m}(x)&#x3D;F_{m-1}(x)+\lambda\sum_{j&#x3D;1}^{J_{m}}\gamma_{jm}I\big(x\in R_{jm}\big)$<ul>
-<li>$F_m(x)$是$m$轮迭代后，树给出的预测值，它的值等于上一轮结果加上一定比例的本轮训练（对残差）的预测结果</li>
-<li>$\gamma_{jm}$的意思是，第$m$棵树中第$j$个区域的最优值，后面的$I\big(x\in R_{jm}\big)$是示性函数，判断$x$是否在第$m$棵树中第$j$个区域</li>
-</ul>
-</li>
-<li>重复此步骤即可</li>
-</ul>
-</li>
-<li>为什么叫Gradient Boosting？<ul>
-<li>因为在MSE作为$Loss$函数时，残差同时也指出了$Loss$函数梯度的下降方向</li>
-</ul>
-</li>
-<li>XGBoost是GBoosting的一种优化版本</li>
-</ul>
-<h3 id="一种视角"><a href="#一种视角" class="headerlink" title="一种视角"></a>一种视角</h3><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231111145655554.png" alt="image-20231111145655554" style="zoom: 67%;" />
-
-<ul>
-<li>我们该如何看待这张图呢？</li>
-<li>其实这里展现的是经典的“偏差-方差”平衡</li>
-<li>左侧展现的是欠拟合的情况，所以我们要通过Boosting的策略，去降低偏差</li>
-<li>右侧则是过拟合的情况，也就是所谓的”高方差”<ul>
-<li>在“偏差-方差”平衡的语境下，方差具体指的是模型预测相对于模型预测的期望值的变异度</li>
-<li>高方差指的是在不同数据集上训练得到的模型，对于同一个输入点，得到的输出的方差</li>
-<li>$\mathrm{Var}(x)&#x3D;E[(f(x;D)-E[f(x;D)])^2]$ 其中$D$指很多不同的数据集</li>
-</ul>
-</li>
-<li>在过拟合的情况下，我们就需要引入Bagging去减小方差，乃至引入随机森林去限制特征，使集成的模型降低对特定样本和噪声的敏感性</li>
-</ul>
-<h5 id="Multivariate-splits"><a href="#Multivariate-splits" class="headerlink" title="Multivariate splits"></a>Multivariate splits</h5><ul>
-<li>多变量线性组合的决策树</li>
-<li>可以视作决策树的变种，区别在于不再平行于坐标轴划分空间，但是分类器和分类阈值的搜索成本也可能随之上升</li>
-</ul>
-<h4 id="Applications"><a href="#Applications" class="headerlink" title="Applications"></a>Applications</h4><blockquote>
-<p>The most significant application that reflects the characteristics of decision trees </p>
-<p>is often considered to be Medical Diagnosis</p>
-</blockquote>
-<ul>
-<li>可解释性（让人信赖）、透明性（易于遵循）、层次决策（逐步评估）</li>
-</ul>
-<h2 id="K-nearest-neighbourhood"><a href="#K-nearest-neighbourhood" class="headerlink" title="K-nearest neighbourhood"></a>K-nearest neighbourhood</h2><blockquote>
-<p>K近邻算法是一个用于回归与分类的非参方法</p>
-</blockquote>
-<ul>
-<li><p>关键思想：一个样本的类别可以通过其K个最近邻居的类别来决定</p>
-</li>
-<li><p>也可以固定邻居数、固定搜索半径等</p>
-</li>
-<li><p>也可以使用soft boundary，距离点越近权重越高</p>
-</li>
-<li><p>但同时，测算点的距离对于计算机是较为繁琐的</p>
-<ul>
-<li><p>K-D Tree 方法，将数据在不同维度上划为分区，仅在test Point所在的分区计算K近邻</p>
-<ul>
-<li>维度的诅咒：在高维空间中，几乎所有点都相对较远</li>
-</ul>
-</li>
-<li><p>Locality-Sensitive Hashing, LSH，采用超平面随机划分，在局部区域中计算最近邻</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="Applications-1"><a href="#Applications-1" class="headerlink" title="Applications"></a>Applications</h5><blockquote>
-<p>K-Nearest Neighbours can be applied to Recommendation Systems</p>
-</blockquote>
-<ul>
-<li>个性化、用户相似度、懒惰学习</li>
-</ul>
-<p>​    </p>
-<h2 id="Unsupervised-Learning"><a href="#Unsupervised-Learning" class="headerlink" title="Unsupervised Learning"></a>Unsupervised Learning</h2><h3 id="Clustering（聚类）"><a href="#Clustering（聚类）" class="headerlink" title="Clustering（聚类）"></a>Clustering（聚类）</h3><h4 id="K-means（no-label）"><a href="#K-means（no-label）" class="headerlink" title="K-means（no label）"></a>K-means（no label）</h4><ul>
-<li>首先在数据点中，随机选K个点作为聚类中心</li>
-<li>将每个数据点分配到距离它最近的聚类中心</li>
-<li>对于每个聚类，计算其所有数据点的平均位置，更新聚类中心的位置</li>
-<li>直达聚类中心不发生变化或者达到预定的迭代次数</li>
-</ul>
-<h4 id="Hierarchical-clustering（层次聚类）"><a href="#Hierarchical-clustering（层次聚类）" class="headerlink" title="Hierarchical clustering（层次聚类）"></a>Hierarchical clustering（层次聚类）</h4><ul>
-<li>Hierarchical agglomerative clustering（层次凝聚聚类）<ul>
-<li>初始状态下，每个数据点都被认为是一个单独的聚类。</li>
-<li>计算每对聚类之间的相似度或距离。</li>
-<li>根据相似度或距离的度量规则，选择最相似的两个聚类进行合并。</li>
-<li>合并后的聚类形成一个新的聚类，替代原来的两个聚类。</li>
-<li>重复步骤，直到所有数据点都合并为一个聚类或达到预设的聚类数量。</li>
-</ul>
-</li>
-<li>Divisive clustering（分裂聚类）<ul>
-<li>初始状态下，所有数据点都被归为一个聚类。</li>
-<li>计算当前聚类中的数据点的相似度或距离。</li>
-<li>根据相似度或距离的度量规则，选择一个聚类进行分裂。</li>
-<li>分裂所选的聚类，将其划分为两个或多个子聚类。</li>
-<li>重复步骤2-4，直到每个数据点都成为一个单独的聚类或达到预设的聚类数量。</li>
-</ul>
-</li>
-</ul>
-<h3 id="Big-Data-Clustering"><a href="#Big-Data-Clustering" class="headerlink" title="Big Data Clustering"></a>Big Data Clustering</h3><ul>
-<li><h4 id="BFR（人名算法）"><a href="#BFR（人名算法）" class="headerlink" title="BFR（人名算法）"></a>BFR（人名算法）</h4><ul>
-<li>初始阶段，将整个数据集分为几个较小的子集。</li>
-<li>在每个子集上应用一个聚类算法，如K-means或层次聚类。</li>
-<li>分析每个子集的聚类结果，根据一些评估指标（如聚类质量、聚类数量等）来决定是否需要进一步划分或合并聚类。</li>
-<li>如果需要划分，将子集进一步划分为更小的子集，并重复步骤2-3。<br>  如果需要合并，将具有相似性质的聚类合并在一起，并重复步骤2-3。</li>
-</ul>
-</li>
-<li>Clustering using representatives (CURE)</li>
-</ul>
-<h2 id="Support-vector"><a href="#Support-vector" class="headerlink" title="Support vector"></a>Support vector</h2><blockquote>
-<p>核心逻辑，尝试最大化两个类别中的间隔，同时确保所有的数据点都被正确分类<br>使用Lagrange对偶性，我们可以将这个问题转化为对偶问题<br>一旦我们解决了对偶问题，我们可以使用互补松弛性来确定哪些数据点是支持向量，从而确定决策边界</p>
-</blockquote>
-<ul>
-<li>Support vector regression<ul>
-<li>让马路盖住所有点，但是越窄越好</li>
-</ul>
-</li>
-<li>Support vector clustering</li>
-<li>Transudative support vector machine</li>
-</ul>
-<h3 id="Kernel-方法"><a href="#Kernel-方法" class="headerlink" title="Kernel 方法"></a>Kernel 方法</h3><blockquote>
-<p>将点向高维映射，有时可以使数据点明显分开</p>
-</blockquote>
-<h2 id="Learning-with-Probabilistic-Graphic-Model"><a href="#Learning-with-Probabilistic-Graphic-Model" class="headerlink" title="Learning with Probabilistic Graphic Model"></a>Learning with Probabilistic Graphic Model</h2><h3 id="Directed-graphs-Baysian-network"><a href="#Directed-graphs-Baysian-network" class="headerlink" title="Directed graphs (Baysian network)"></a>Directed graphs (Baysian network)</h3><ul>
-<li>逻辑是，对于多个事件，建立很多小的表，以避免建立所有情况合成的大表</li>
-<li>从独立到条件独立</li>
-</ul>
-<h3 id="Undirected-graphs-Markov-random-field"><a href="#Undirected-graphs-Markov-random-field" class="headerlink" title="Undirected graphs (Markov random field)"></a>Undirected graphs (Markov random field)</h3><h2 id="Reinforcement-learning"><a href="#Reinforcement-learning" class="headerlink" title="Reinforcement learning"></a>Reinforcement learning</h2><h3 id="马尔可夫奖励过程（MRP-Markov-reward-process）"><a href="#马尔可夫奖励过程（MRP-Markov-reward-process）" class="headerlink" title="马尔可夫奖励过程（MRP Markov reward process）"></a>马尔可夫奖励过程（MRP Markov reward process）</h3><ul>
-<li>首先进行基本定义，一般可以定义为$\langle S,P,R,\gamma \rangle$<ul>
-<li>$S$是一个有限的状态集合</li>
-<li>$P$是转移概率矩阵，$P_{ss’}$记录了从$s$状态出发，到达$s’$状态的概率</li>
-<li>$R$是奖励函数<ul>
-<li>$R_s$是当前在$s$状态下，下一时刻能获得的奖励期望</li>
-</ul>
-</li>
-<li>$\gamma$是折现参数<ul>
-<li>对远期能获得的奖励乘系数“折现”</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>关键方程<ul>
-<li>位置价值函数$v(s) &#x3D;\mathbb{E}[G_t|S_t&#x3D;s]$ 也就是现在在状态$s$，之后总的收益期望</li>
-<li>也可以递归定义如下：$$v(s)&#x3D;\mathbb{E}[R_t|S_t&#x3D;s]+\gamma\sum_{s^{\prime}}v(s^{\prime})P[S_{t+1}&#x3D;s^{\prime}|S_t&#x3D;s]$$</li>
-<li>第一项是在$t$时刻处于状态$s$时，$t+1$时刻获得的即时$Reward$的期望，后面的累加项统计了下一步的所有可能，并将它们的价值函数折现求和。</li>
-<li>这里的$\gamma$是折现函数</li>
-</ul>
-</li>
-<li>两种计算$v$的方法<ul>
-<li>矩阵计算<ul>
-<li>$v&#x3D;R+\gamma pv$ </li>
-<li>故$v&#x3D;(I-\gamma\mathcal{P})^{-1}\mathcal{R}$</li>
-</ul>
-</li>
-<li>动态规划<ul>
-<li>在收敛之前，依据公式反复迭代<ul>
-<li>$v^{(k)}(s)&#x3D;R(s)+\gamma\sum_{s’\in S}P(s’|s)v^{(k-1)}\left(s’\right)$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="马尔可夫决策过程-Markov-decision-process（MDP）"><a href="#马尔可夫决策过程-Markov-decision-process（MDP）" class="headerlink" title="马尔可夫决策过程 Markov decision process（MDP）"></a>马尔可夫决策过程 Markov decision process（MDP）</h3><blockquote>
-<p>在MRP基础上引入了决策过程</p>
-</blockquote>
-<ul>
-<li>同样可给出定义$\langle S,A,P,R,\gamma \rangle$<ul>
-<li>补充定义了$A$，$A$是有限的行为的集合，例如平面游戏中的上下左右之类的</li>
-</ul>
-</li>
-<li>策略(policy)<ul>
-<li>策略就是在给定状态下，决策的分布，一般记作$\pi$，定义是$\left.\pi(a|s)&#x3D;\mathbb{P}\left[A_{t}&#x3D;a\right|S_{t}&#x3D;s\right]$</li>
-</ul>
-</li>
-<li>在引入了决策过程后，状态价值函数发生了改变，因为此时其同样与policy相关<ul>
-<li>定义$v_{\pi}(s)&#x3D;\mathbb{E}<em>{\pi}[G</em>{t}|S_{t}&#x3D;s]$ ，这是新的状态价值函数</li>
-<li>定义$q_\pi(s,a)&#x3D;\mathbb{E}_\pi[G_t|S_t&#x3D;s,A_t&#x3D;\alpha]$ ，这被称作决策价值函数<ul>
-<li>含义是：在时间$t$处于状态$s$时，做出决策$\alpha$且之后遵循policy $\pi$的预期收益</li>
-</ul>
-</li>
-<li>在如上定义之后，我们可以把$v$的公式改写为<ul>
-<li>$v_\pi(s)&#x3D;\mathbb{E}<em>\pi[G_t|S_t&#x3D;s]&#x3D;\sum</em>{a\in\mathcal{A}}\mathbb{E}_\pi[G_t,A_t&#x3D;a|S_t&#x3D;s]$<ul>
-<li>穷举所有的决策求和</li>
-</ul>
-</li>
-<li>$&#x3D;\sum_{a\in\mathcal{A}}\mathbb{E}<em>{\pi}[G</em>{t}|S_{t}&#x3D;s,A_{t}&#x3D;a]\mathbb{P}[A_{t}&#x3D;a|S_{t}&#x3D;s]$</li>
-<li>$&#x3D;\sum_{a\in\mathcal{A}}q_{\pi}(s,a)\pi(a|s)$ <ul>
-<li>当然，我们也可以将$q_{\pi}$定义为递归形式</li>
-<li>${\mathcal R}<em>{s}^{a}+\gamma\sum</em>{\forall s\prime}v_{\pi}(s^{\prime}){\mathcal P}_{ss^{\prime}}^{a}$<ul>
-<li>思路与之前类似</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>小网格世界示例<ul>
-<li>![[Pasted image 20231107164046.png]]<ul>
-<li>agent服从全局随机策略，即上下左右均为0.25概率</li>
-<li>如果操作走出了网格，则状态不变</li>
-<li>多次迭代直到收敛，我们就对每个点建立了$v_{\pi(random)}$ 但是，基于这种策略的答案，是最好的吗？<ul>
-<li>显然不是，需要优化</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="MDP-Policy-Iteration"><a href="#MDP-Policy-Iteration" class="headerlink" title="MDP: Policy Iteration"></a>MDP: Policy Iteration</h3><ul>
-<li>主体思想是，对于每一种策略$\pi$，先计算$v_{\pi}$再将$greedy(\pi)$作为下一个策略，反复进行策略改进，直到收敛为止<ul>
-<li>一般可以用$\pi(a|s)&#x3D;\frac1{A(s)}$进行初始化（$A(s)$指的是$s$状态下，可执行的决策总数）</li>
-<li>伪代码表示策略更新<ul>
-<li>$\pi^{<em>}(a|s)&#x3D;\operatorname</em>{argmax}<em>{\mathrm{a}}q</em>{\pi}(s,a)$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="MDP-Value-Iteration"><a href="#MDP-Value-Iteration" class="headerlink" title="MDP: Value Iteration"></a>MDP: Value Iteration</h3><ul>
-<li>主体思想，不依赖更新Policy进而更新$v$，而是直接在每次迭代中更新$v$，以此隐性地更新策略</li>
-<li>具体来说，每次更新$v$的方法是，选取能最大化该轮$v(s)$的动作$a$，那其实也就是选取了最优决策，感觉是上一种方法的升级版</li>
-</ul>
-<h2 id="Mathematical-Foundation-for-Deep-Learning"><a href="#Mathematical-Foundation-for-Deep-Learning" class="headerlink" title="Mathematical Foundation for Deep Learning"></a>Mathematical Foundation for Deep Learning</h2><h3 id="Information-Theory"><a href="#Information-Theory" class="headerlink" title="Information Theory"></a>Information Theory</h3><ul>
-<li>Initial Guess $f(x)&#x3D;log(# ;of ;possible ;outcomes)$</li>
-<li>修正后的$f(x)&#x3D;log\frac{1}{p(x)}$<ul>
-<li>发生概率越低的事情发生了，该信息所含的信息量越高</li>
-</ul>
-</li>
-<li>联合熵<ul>
-<li>指的是随机向量的信息量，它衡量了一组随机变量作为一个整体时的不确定性</li>
-<li>公式表示为$H(X)&#x3D;E_{X∼p}[log⁡(\frac{1}{p(x)})]$，这里 $H(X)$ 是指随机向量 $X&#x3D;(X1,…,Xd)$的联合熵。</li>
-<li>联合熵是每个结果$x$发生概率的倒数的对数的期望值。</li>
-</ul>
-</li>
-<li>条件熵<ul>
-<li>条件熵描述了在已知随机变量 YY 的条件下，随机变量 XX 的额外不确定性。</li>
-<li>当 Y&#x3D;y时，X的条件熵公式为 $$H(X∣Y&#x3D;y)&#x3D;\Sigma_{x∈X}P_{X|Y}(x∣y)log⁡(\frac{1}{p_{X|Y}(x∣y)})$$，它是给定 Y 的值后 X的熵的加权平均。</li>
-<li>条件熵的总公式是 H(X∣Y)&#x3D;∑y∈Yp(y)H(X∣Y&#x3D;y)，这里 p(y) 是 Y 的概率分布，H(X∣Y&#x3D;y) 是在Y&#x3D;y 条件下 XX 的熵。</li>
-<li>最后，联合熵 H(X,Y) 可以分解为 X 的独立熵 H(X) 和 X 的条件熵 H(Y∣X) 的和，也可以写作 H(Y)+H(X∣Y)，表明两个随机变量的总不确定性等于一个变量的不确定性加上给定另一个变量后剩余的不确定性。<ul>
-<li>证明，条件概率展开即可</li>
-</ul>
-</li>
-<li>互信息<ul>
-<li>$I(X,Y)&#x3D;H(X)-H(X|Y)&#x3D;H(Y)-H(Y|X)$</li>
-<li>$I(X,Y)&#x3D;\mathbb{E}\left[\log\frac1{p_X(x)p_Y(y)}-\log\frac1{p_{XY}(x,y)}\right]$</li>
-</ul>
-</li>
-<li></li>
-</ul>
-</li>
-</ul>
-<h3 id="Signal-Analysis"><a href="#Signal-Analysis" class="headerlink" title="Signal Analysis"></a>Signal Analysis</h3>
+          <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/09/19/ji-qi-xue-xi/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -2389,7 +1726,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-18 15:14:46" itemprop="dateModified" datetime="2023-09-18T15:14:46+08:00">2023-09-18</time>
+                <time title="修改时间：2023-11-28 09:53:21" itemprop="dateModified" datetime="2023-11-28T09:53:21+08:00">2023-11-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -2412,7 +1749,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+          <span id="more"></span>
+<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
 
       
     </div>
@@ -2496,20 +1834,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

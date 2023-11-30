@@ -191,7 +191,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/26/prompt-engineering/">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/30/scaling-deep-learning-for-materials-discovery/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +205,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/11/26/prompt-engineering/" class="post-title-link" itemprop="url">Prompt Engineering</a>
+            <a href="/2023/11/30/scaling-deep-learning-for-materials-discovery/" class="post-title-link" itemprop="url">Scaling deep learning for materials discovery</a>
         </h2>
 
         <div class="post-meta">
@@ -216,8 +216,201 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-11-26 15:49:52 / 修改时间：15:50:45" itemprop="dateCreated datePublished" datetime="2023-11-26T15:49:52+08:00">2023-11-26</time>
+              <time title="创建时间：2023-11-30 09:30:08 / 修改时间：14:03:51" itemprop="dateCreated datePublished" datetime="2023-11-30T09:30:08+08:00">2023-11-30</time>
             </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB/" itemprop="url" rel="index"><span itemprop="name">论文研读</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>Author：Amil Merchant1,3 , Simon Batzner1,3, Samuel S. Schoenholz1,3, Muratahan Aykol1 ,Gowoon Cheon2 &amp; Ekin Dogus Cubuk1,3 </p>
+</blockquote>
+<h3 id="Abtract"><a href="#Abtract" class="headerlink" title="Abtract"></a>Abtract</h3><ul>
+<li><p>Discovery of inorganic crystals has been bottenecked by expensive trial-and-error approaches.</p>
+<h4 id="Definitions"><a href="#Definitions" class="headerlink" title="Definitions"></a>Definitions</h4></li>
+<li><p>Convex Hall 计算化学和计算材料学领域，凸包边缘往往代表最稳定的化合物</p>
+</li>
+<li><p>zero-shot-learning 模型需要在完全未见过的数据类别上做出预测</p>
+</li>
+<li><p>ad initio 第一性原理计算</p>
+</li>
+<li><p>estimate stability 也即对比凸包边缘化合物与其竞争项的分解能，分解能低的一般被认为是不稳定的</p>
+</li>
+<li><p>SAPS（Symmetry-Aware Partial Substitutions，对称性感知部分替换，利用已知材料的结构信息，通过部分替换原子来创造新的化合物或材料</p>
+</li>
+</ul>
+<h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><ul>
+<li><p>data flywheel 利用图神经网络筛选后的被认为“稳定”的候选分子，再利用DFT进行能量计算验证，利用计算后的结果迭代更新模型</p>
+</li>
+<li><p>GNoME enables accurate predictions of structures with 5+ unique elements(despite omission from training)</p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130104356265.png" alt="image-20231130104356265"></p>
+<ul>
+<li><p>两条pipeline 并行工作</p>
+</li>
+<li><p>结构管线</p>
+<ul>
+<li>假设有一种已知的材料结构A，我们想要探索A的变体或相关结构是否稳定</li>
+<li>利用SAPS等生成新的材料结构，并构建图表示</li>
+<li>利用GNN评估材料稳定性，并对稳定结果计算DFT</li>
+</ul>
+</li>
+<li><p>成分管线中</p>
+<ul>
+<li>从一种特定的化学式出发，比如Li₂S₂O₇</li>
+<li>为表达式构建图表示，并利用GNN评估稳定性</li>
+<li>在判断为稳定的成分中，利用AIRSS为其随机选择结构，并计算DFT</li>
+</ul>
+</li>
+<li><p>注意，GNN的用途是多样的</p>
+</li>
+<li><p><strong>对结构的评估</strong>：在结构管线中，GNoME接收的是候选材料的图表示，这些图是基于材料的原子结构和它们之间的连接关系构建的。在这种情况下，GNoME评估的是这些特定结构的稳定性。</p>
+</li>
+<li><p><strong>对成分的评估</strong>：而在成分管线中，GNoME接收的是化学成分的图表示，可能不包括具体的原子排列信息，而是反映了化学式中不同元素的种类和它们的计量比。这里的挑战是在没有明确的结构信息的情况下预测稳定性。</p>
+</li>
+</ul>
+<h4 id="Definitions-1"><a href="#Definitions-1" class="headerlink" title="Definitions"></a>Definitions</h4></li>
+<li><p>AIRSS (Automated Random Structure  Searching)随机生成大量的结构配置，然后使用DFT等评估它们的稳定性</p>
+</li>
+<li><p>$r^2$SCAN &amp; PBE 这是两种DFT方法，PBE被一般认为精度不如$r^2$SCAN，但速度较快，一般实验人员会对PBE初步计算后认为较有可能性的材料进行进一步$r^2$SCAN计算</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/30/ai-for-materials-lun-wen-yan-du/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/30/ai-for-materials-lun-wen-yan-du/" class="post-title-link" itemprop="url">Ai For Materials 论文研读</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-11-30 09:26:54 / 修改时间：09:30:07" itemprop="dateCreated datePublished" datetime="2023-11-30T09:26:54+08:00">2023-11-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%BA%E6%96%87%E7%A0%94%E8%AF%BB/" itemprop="url" rel="index"><span itemprop="name">论文研读</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/26/prompt-engineering-lun-wen-yan-du/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="whilesunny">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="whilesunny">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/11/26/prompt-engineering-lun-wen-yan-du/" class="post-title-link" itemprop="url">Prompt Engineering</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-11-26 15:49:52" itemprop="dateCreated datePublished" datetime="2023-11-26T15:49:52+08:00">2023-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-11-30 14:38:42" itemprop="dateModified" datetime="2023-11-30T14:38:42+08:00">2023-11-30</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -239,7 +432,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h2 id="提示工程整体框架"><a href="#提示工程整体框架" class="headerlink" title="提示工程整体框架"></a>提示工程整体框架</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/11/26/prompt-engineering-lun-wen-yan-du/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -281,10 +482,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-11-22 11:21:50 / 修改时间：11:22:26" itemprop="dateCreated datePublished" datetime="2023-11-22T11:21:50+08:00">2023-11-22</time>
+              <time title="创建时间：2023-11-22 11:21:50" itemprop="dateCreated datePublished" datetime="2023-11-22T11:21:50+08:00">2023-11-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-11-28 16:09:45" itemprop="dateModified" datetime="2023-11-28T16:09:45+08:00">2023-11-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -306,7 +513,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h3 id="Abstract-部分"><a href="#Abstract-部分" class="headerlink" title="Abstract 部分"></a>Abstract 部分</h3><ul>
+<li>Sepsis（脓毒症）best treatment atrategy remains uncertain</li>
+<li>Current practice in the administration of intravenous fluids (静脉输液) and vasopressors (血管升压药) are suboptimal</li>
+<li>This Problem is a sequential decision-making-problem</li>
+<li>Learn optimal treatment by analyzing a myriad of (mostly suboptimal) treatment decisions</li>
+</ul>
+<h3 id="Intro部分"><a href="#Intro部分" class="headerlink" title="Intro部分"></a>Intro部分</h3><ul>
+<li>Clinical variability in sepsis treatment is extreme,suboptimal decisions lead to poorer outcomes</li>
+<li>The intrinsic design of models using reinforcement learning can handle sparse reward signals<ul>
+<li>over come the complexity related to the heterogeneity of patient responses to medical interventions</li>
+<li>and the delayed indications of the efficacy of treatments</li>
+</ul>
+</li>
+<li>Database<ul>
+<li>Medical Information Mart for Intensive Care version Ⅲ</li>
+<li>eICU Research Institute Database(eRI)</li>
+</ul>
+</li>
+<li>Data Process<ul>
+<li>a set of 48 variables including demographics, Elixhauser premorbid status, vital signs, laboratory values, fluids and vasopressors received</li>
+<li>Patients’ data were coded as multidimensional discrete time series with 4-h time steps. The study included up to 72h of measurements taken around the estimated time if onset of sepsis</li>
+<li>The <strong>total volume of intravenous fluids</strong> and <strong>maximum dose of vasopressosrs</strong> administered over each <strong>4-h period</strong> defined the medical treatments of interests</li>
+</ul>
+</li>
+</ul>
+<p>Method部分</p>
+<ul>
+<li>To further assess the validity of the state aggregation, they used the distribution of International Classification of Diseases codes in the states and demonstrated that past medical history and diagnoses are encapsulated to some extent within our chosen state definition.也即ICD与聚类结果有类似性，证明聚类有一定的代表性</li>
+</ul>
+
       
     </div>
 
@@ -916,7 +1152,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-26 15:51:55" itemprop="dateModified" datetime="2023-11-26T15:51:55+08:00">2023-11-26</time>
+                <time title="修改时间：2023-11-29 11:39:10" itemprop="dateModified" datetime="2023-11-29T11:39:10+08:00">2023-11-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -939,371 +1175,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <span id="more"></span>
-<p>习题课相关内容[[量子与统计习题课]]</p>
-<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><blockquote>
-<p>快速通过</p>
-</blockquote>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><h3 id="薛定谔方程"><a href="#薛定谔方程" class="headerlink" title="薛定谔方程"></a>薛定谔方程</h3><ul>
-<li><h6 id="薛定谔方程-1"><a href="#薛定谔方程-1" class="headerlink" title="薛定谔方程"></a>薛定谔方程</h6><ul>
-<li>含时薛定谔方程<ul>
-<li>$$\mathrm{i}\hbar\frac{\partial}{\partial t}\psi(\boldsymbol{r},t)&#x3D;H\psi(\boldsymbol{r},t)$$</li>
-</ul>
-</li>
-<li>不含时薛定谔方程<ul>
-<li>$$H\psi&#x3D;E\psi$$</li>
-</ul>
-</li>
-<li>一些说明<ul>
-<li>薛定谔方程不适用于相对论效应，所以能量的计算方式一般依据其经典对应即可</li>
-<li>薛定谔方程是量子力学的一个基本假定</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>薛定谔方程的讨论<ul>
-<li>空间概率密度$\Psi^{*}\left(\boldsymbol{r},t\right)\Psi(\boldsymbol{r},t)$</li>
-<li>概率流密度矢量$\frac{\partial w}{\partial t}&#x3D;\Psi^{<em>}\frac{\partial\Psi}{\partial t}+\frac{\partial\Psi^{</em>}}{\partial t}\Psi$</li>
-<li>代入薛定谔方程化简，得$\frac{\partial w}{\partial t}&#x3D;\vec{J}\equiv\frac{i\hbar}{2\mu}(\Psi\nabla\Psi^*-\Psi^*\nabla\Psi)$<ul>
-<li>注1：$\frac{\partial\Psi}{\partial t}&#x3D;\frac{i\hbar}{2\mu}\nabla^{2}\Psi+\frac{1}{i\hbar}U\Psi$</li>
-<li>注2：$\frac{\partial\Psi^{<em>}}{\partial t}&#x3D;-\frac{i\hbar}{2\mu}\nabla^{2}\Psi^{</em>}-\frac{1}{i\hbar}U\Psi^{*}$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>定态薛定谔方程<ul>
-<li>此处开始涉及定态的概念</li>
-<li>若势能函数与时间无关，则薛定谔方程可以分离变量求解</li>
-<li>原本的薛定谔方程如下：$\begin{aligned}i\hbar\frac{\partial\Psi}{\partial t}&amp;&#x3D;-\frac{\hbar^2}{2\mu}\nabla^2\Psi+U(\vec{r})\Psi\end{aligned}$<ul>
-<li>分离变量设：$\Psi(\vec{r},t)&#x3D;f(t)\psi(\vec{r})$</li>
-<li>得：$\frac{i\hbar}{f(t)}\frac{df}{dt}&#x3D;\frac{1}{\psi(\vec{r})}\Bigg[-\frac{\hbar^{2}}{2\mu}\nabla^{2}\psi+U(\vec{r})\psi\Bigg]\color{red}{&#x3D;E}$</li>
-<li>接下来按照分离变量的解法分别求解两个方程</li>
-<li>时间项的解是一般的$i\hbar\frac{df}{dt}&#x3D;Ef\left(t\right),f\left(t\right)&#x3D;c\mathrm{e}^{-\frac ihEt}$</li>
-<li>另一个即是所谓的定态薛定谔方程（不含时薛定谔方程）<ul>
-<li>$-\frac{\hbar^{2}}{2\mu}\nabla^{2}\psi+U(\vec{r})\psi&#x3D;E\psi(\vec{r})$</li>
-<li>这是在势场$U(\vec{r})$中粒子的能量本征方程<ul>
-<li>定态是能量的本征态</li>
-</ul>
-</li>
-<li>定态波函数都具有这样的形式<ul>
-<li>$\Psi(\vec{r},t)&#x3D;\mathrm{e}^{-\frac i\hbar Et}\psi(\vec{r})$</li>
-<li>其中$E$的物理意义是粒子的能量</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>一些定义区分<ul>
-<li>定态：体系的能量有确定值的状态</li>
-<li>非定态：由若干个能量不同的本征态叠加所形成的态</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="一维运动问题的一般分析"><a href="#一维运动问题的一般分析" class="headerlink" title="一维运动问题的一般分析"></a>一维运动问题的一般分析</h3><h4 id="一维定态薛定谔方程的一般性质"><a href="#一维定态薛定谔方程的一般性质" class="headerlink" title="一维定态薛定谔方程的一般性质"></a>一维定态薛定谔方程的一般性质</h4><ul>
-<li>一维定态的分类<ul>
-<li>束缚态：粒子局限在有限的空间中, 即粒子在无穷远处出现的概率等于零的状态</li>
-<li>非束缚态(或称散射态): 粒子可以出现在无穷远处的状态</li>
-</ul>
-</li>
-</ul>
-<h4 id="一维有限深势阱和有限深势阱"><a href="#一维有限深势阱和有限深势阱" class="headerlink" title="一维有限深势阱和有限深势阱"></a>一维有限深势阱和有限深势阱</h4><ul>
-<li><p>一维无限深势阱</p>
-<ul>
-<li><p>先依据图示写出势能函数，再写出哈密顿量，最后写出薛定谔方程</p>
-<ul>
-<li>$$V\big(x\big)&#x3D;\begin{cases}0,&amp;0&lt;x&lt;a\\infty,&amp;x&lt;0,x&gt;a\end{cases} $$</li>
-<li>$$\hat{H}&#x3D;-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x) $$</li>
-</ul>
-</li>
-<li><p>由于势能函数不随时间变化，所以是定态薛定谔方程</p>
-<ul>
-<li>$$-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}\psi(x)&#x3D;E\psi(x)$$</li>
-<li>一组常见的化简方式是$k^2&#x3D;\frac{2mE}{\hbar^2}$</li>
-</ul>
-</li>
-<li><p>最终阱内方程化简为</p>
-<ul>
-<li>$\psi^{\prime\prime}(x)+k^2\psi(x)&#x3D;0$</li>
-<li>解得$\psi(x)&#x3D;A\sin(kx+\delta)$</li>
-</ul>
-</li>
-<li><p>阱外情况</p>
-<ul>
-<li>$\left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+\infty\right]\psi(x){&#x3D;}E\psi(x)$</li>
-<li>故$\psi$只能为0</li>
-</ul>
-</li>
-<li><p>列出方程并求解后，考虑边界条件，波函数在$x&#x3D;0, a$处得0</p>
-<ul>
-<li><p>解得$sinka &#x3D; 0$ 故 $ka &#x3D; n\pi$, $n$取$1,2,3,…$</p>
-<ul>
-<li>为什么不取0？因为取0后波函数为0，无意义</li>
-<li>为什么不取负数？因为并没有给出新的波函数</li>
-</ul>
-</li>
-<li><p>最终解出</p>
-<ul>
-<li><p>$E&#x3D;E_n&#x3D;\frac{\hbar^2\pi^2n^2}{2ma^2},\quad n&#x3D;1,2,3,\cdots $</p>
-<ul>
-<li>这里可以看出，粒子具有最低能级，也就是零点能，可以用不确定性关系解释</li>
-<li>（势阱中$\Delta x\approx a$, 动量具有不确定度，能量不能为0）</li>
-</ul>
-</li>
-<li><p>$\psi_n\left(x\right)&#x3D;A_n\sin\left(\frac{n\pi}ax\right)$</p>
-<ul>
-<li>对波函数归一化得</li>
-</ul>
-<p>$$\left.\psi_n(x)&#x3D;\left{\begin{aligned}\sqrt{\frac2a}\sin(\frac{n\pi}ax),\quad&amp;0&lt;x&lt;a\0,\quad&amp;x&lt;0,x&gt;a\end{aligned}\right.\right.$$</p>
-<ul>
-<li>最终，定态解的形式是$$\Psi_n\left(x,t\right)&#x3D;\sqrt{\frac2a}\sin(\frac{n\pi}ax)e^{-\frac i\hbar E_nt}$$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>补充说明，如果原点在势阱中心，则边界条件会改变，同样方法求解即可</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>有限深对称方势阱</p>
-<ul>
-<li>同样列出势能函数和哈密顿量</li>
-<li>在$E&lt;V_0$的情况下，势阱内外定态薛定谔方程如下式<ul>
-<li>$$\begin{aligned}&amp;\frac{d^2\psi}{dx^2}+k^2\psi(x)&#x3D;0,\quad(k&#x3D;\sqrt{2mE}&#x2F;\hbar,\left|x\right|&lt;a&#x2F;2)\\&amp;\frac{d^2\psi}{dx^2}-\beta^2\psi(x)&#x3D;0,\quad(\beta&#x3D;\sqrt{2m\left(V_0-E\right)}&#x2F;\hbar,\left|x\right|&gt;a&#x2F;2)\end{aligned}$$<ul>
-<li>第二个方程的一般解$\psi(x)&#x3D;C\operatorname{e}^{\beta x}+D\operatorname{e}^{-\beta x}$</li>
-<li>但是考虑到束缚态的性质，在无穷远处粒子出现的概率为0</li>
-<li>最终解得$$\left.\psi(x)&#x3D;\left{\begin{aligned}C\operatorname{e}^{\beta x},\quad&amp;(x&lt;-a&#x2F;2)\A\cos kx+B\sin kx,\quad&amp;(-a&#x2F;2&lt;x&lt;a&#x2F;2)\D\operatorname{e}^{-\beta x}.\quad&amp;(a&#x2F;2&lt;x)\end{aligned}\right.\right.$$<ul>
-<li>对于束缚态，能级是不简并的，同时对称势阱$V(x)$具有空间反射对称性，故能量本征态必有确定的宇称，分别讨论即可</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="第二章课堂思考题"><a href="#第二章课堂思考题" class="headerlink" title="第二章课堂思考题"></a>第二章课堂思考题</h4><ul>
-<li>写出自由粒子、氢原子、氦原子的哈密顿量<ul>
-<li>自由粒子$\hat{H}&#x3D;\frac{\hat{\mathbf{p}}^2}{2m}&#x3D;-\frac{\hbar^2}{2m}\nabla^2$</li>
-<li>$\hat{H}&#x3D;-\frac{\hbar^2}{2m_e}\nabla^2-\frac{e^2}{4\pi\epsilon_0r}$</li>
-<li>$\hat{H}&#x3D;-\frac{\hbar^2}{2m_e}\left(\nabla_1^2+\nabla_2^2\right)-\frac{2e^2}{4\pi\epsilon_0r_1}-\frac{2e^2}{4\pi\epsilon_0r_2}+\frac{e^2}{4\pi\epsilon_0|\mathbf{r}_1-\mathbf{r}_2|}$<ul>
-<li>在一些情况下，也可以不写$4\pi\epsilon_0$（特殊单位制）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>假设一个粒子的初始态是两个定态的线性组合$$\psi\left(x,0\right)&#x3D;c_1\psi_1\left(x\right)+c_2\psi_2\left(x\right)$$那么任意时刻的波函数是什么？求出概率密度并描述其运动形式.<ul>
-<li>其实只要分别乘上时间项，再求平方即可$$\psi\left(x,t\right)&#x3D;c_1\psi_1\left(x\right)e^{-iE_1t&#x2F;\hbar}+c_2\psi_2\left(x\right)e^{-iE_2t&#x2F;\hbar}$$</li>
-<li>有一个有趣的点，就是平方后可得$$c_1^2\psi_1^2\left(x\right)+c_2^2\psi_2^2\left(x\right)+2c_1c_2\psi_1\left(x\right)\psi_2\left(x\right)\mathrm{cos}\left[\left(E_2-E_1\right)t&#x2F;\hbar\right]$$</li>
-<li>概率密度的振动被称为“量子节拍”</li>
-</ul>
-</li>
-<li>在阱宽为$a$的无限深势阱中, 粒子的状态为<ul>
-<li>$$\Psi(x)&#x3D;\frac1{\sqrt{2}}\left[\sqrt{\frac2a}\sin\frac{\pi x}a-\sqrt{\frac2a}\sin\frac{2\pi x}a\right]$$</li>
-<li>多次测量其能量<ul>
-<li>每次可能测到的值和相应概率以及能量的平均值<ul>
-<li>解答问题的关键在于将波函数写成按无限深势阱哈密顿量的本征函数展开形式，之后常规计算即可</li>
-<li>$$\Psi(x)&#x3D;\frac1{\sqrt{2}}\psi_1(x)-\frac1{\sqrt{2}}\psi_2(x)$$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h1><h3 id="第三章习题"><a href="#第三章习题" class="headerlink" title="第三章习题"></a>第三章习题</h3><ul>
-<li>有关氢原子的计算<ul>
-<li>半径的均值往往在球坐标系下计算<ul>
-<li>注意变换坐标系的相关细节</li>
-</ul>
-</li>
-<li>最概然半径，也即氢原子电子出现概率最大的半径值，可以通过计算不同$r$处的概率密度得到，注意$w(r)&#x3D;R^2(r)r^2$ </li>
-<li>动能：利用动能算符转化</li>
-</ul>
-</li>
-<li>有关经典物理中的计算<ul>
-<li>将能量表示式转化为算符</li>
-</ul>
-</li>
-<li>从态函数中读出信息<ul>
-<li>$\psi(r, \theta, \psi)&#x3D;\frac{1}{2} R_{21}(r) Y_{10}(\theta, \varphi)-\frac{\sqrt{3}}{2} R_{21}(r) Y_{1-1}(\theta, \varphi)$<ul>
-<li>$R_{nl},Y_{lm}$通过表达式确定$n、l、m$三个参数</li>
-<li>$n$可以确定$E$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="Pasted-image-20231031184458-png"><a href="#Pasted-image-20231031184458-png" class="headerlink" title="![[Pasted image 20231031184458.png]]"></a>![[Pasted image 20231031184458.png]]</h3></li>
-</ul>
-<h2 id="量子力学的矩阵形式与表象理论"><a href="#量子力学的矩阵形式与表象理论" class="headerlink" title="量子力学的矩阵形式与表象理论"></a>量子力学的矩阵形式与表象理论</h2><h3 id="Q表象"><a href="#Q表象" class="headerlink" title="Q表象"></a>Q表象</h3><ul>
-<li>将某态转变为力学量Q表象下的表示<ul>
-<li>$\hat{Q}\mu_i&#x3D;q_i\mu_i$，${ \mu_{i} }$是其本征态函数，构成态空间正交归一完备的基矢</li>
-<li>将$\Psi$向本征函数系${ \mu_i,… }$上投影，得系数$a_n(t)$<ul>
-<li>而一组系数构成的向量，就是$\hat{Q}$表象下的态矢量</li>
-</ul>
-</li>
-<li>$|a_n|^2$就是在$\Psi(x,t)$所描写的态中测量力学量$\hat{Q}$所得结果为$q_n$的概率</li>
-<li>对连续谱和多自由度也成立</li>
-</ul>
-</li>
-<li>考虑某力学量表象$Q’$ <ul>
-<li>同一个量子态$\Psi$也可用$Q’$的本征态展开，同样作投影得一组表示$(q_n^{‘})$</li>
-</ul>
-</li>
-<li>一个领悟<ul>
-<li>“波函数的模方代表在某处找到粒子概率”仅是在坐标表象下成立的表述。原因是，事实上这个东西的模方代表的是位于$x\rangle$上的概率。其实与$\hat{Q}$表象下的${a_n}$没什么区别，只不过离散的时候是累加，而连续的时候是积分</li>
-<li>所以说，${a_n}$也可以视作$\hat{Q}$表象下的波函数</li>
-</ul>
-</li>
-</ul>
-<h3 id="算符的矩阵表示"><a href="#算符的矩阵表示" class="headerlink" title="算符的矩阵表示"></a>算符的矩阵表示</h3><ul>
-<li>坐标表象下，算符一般可表示为$\hat{F}(x,-i\hbar\frac{\partial}{\partial x})$ </li>
-<li>表示力学量$F$的矩阵是厄米矩阵</li>
-<li>力学量在自身表象中为对角的厄米矩阵</li>
-</ul>
-<h3 id="量子力学的矩阵形式"><a href="#量子力学的矩阵形式" class="headerlink" title="量子力学的矩阵形式"></a>量子力学的矩阵形式</h3><h3 id="Dirac-符号"><a href="#Dirac-符号" class="headerlink" title="Dirac 符号"></a>Dirac 符号</h3><ul>
-<li>右矢与左矢</li>
-<li>标积<ul>
-<li>$\langle \psi|\phi \rangle$</li>
-</ul>
-</li>
-</ul>
-<h2 id="第四章习题"><a href="#第四章习题" class="headerlink" title="第四章习题"></a>第四章习题</h2><h3 id="课堂习题"><a href="#课堂习题" class="headerlink" title="课堂习题"></a>课堂习题</h3><ul>
-<li>$\hat{A}^2&#x3D;1$求本征值及矩阵<ul>
-<li>分别作用于某波函数即可</li>
-</ul>
-</li>
-<li>$\hat{A}^2&#x3D;\hat{A}$求本征值及矩阵<ul>
-<li>方法同上</li>
-</ul>
-</li>
-<li>坐标与动量表象下算符的矩阵元</li>
-<li>粒子以某态在一维无限深势阱中运动，求该态在能量表象下的矩阵表示（态变换）</li>
-<li>一维谐振子的坐标、动量以及H在能量表象中的表示（算符变换）</li>
-</ul>
-<h3 id="课后习题"><a href="#课后习题" class="headerlink" title="课后习题"></a>课后习题</h3><h1 id="自旋与全同粒子体系"><a href="#自旋与全同粒子体系" class="headerlink" title="自旋与全同粒子体系"></a>自旋与全同粒子体系</h1><h3 id="Stern-Gerlach实验"><a href="#Stern-Gerlach实验" class="headerlink" title="Stern-Gerlach实验"></a>Stern-Gerlach实验</h3><ul>
-<li>银原子最外层价电子在$5s$轨道上，由$L&#x3D;\sqrt{l(l+1)}\hbar$，而$s$轨道$l&#x3D;0$知银原子基态轨道磁矩为$0$</li>
-<li>但是实验结果表明，当银原子束通过非均匀磁场时，它们的磁矩方向并不是连续分布的，而是分为两个明显分离的部分，这意味着银原子的磁矩有两个可能的取向</li>
-<li>这个实验结果揭示了除了轨道角动量之外还有另一种形式的角动量，即自旋角动量。自旋角动量与磁矩有关，而且对于银原子这个磁矩有两个可能的取值，表明自旋角动量磁量子数$s_m$为$\pm 1&#x2F;2$(注：自旋角量子数为$\frac{1}{2}$)</li>
-</ul>
-<h3 id="电子自旋假设"><a href="#电子自旋假设" class="headerlink" title="电子自旋假设"></a>电子自旋假设</h3><ul>
-<li>电子并非质点，具有内禀运动自旋，相应具有自旋角动量和自旋磁矩<ul>
-<li>$|\vec S|&#x3D;\sqrt{s(s+1)}\hbar$ , s为自旋量子数<ul>
-<li>注意区别电子的自旋量子数和磁量子数</li>
-</ul>
-</li>
-<li>$S_z&#x3D;\pm\frac{\hbar}{2}$<ul>
-<li>也就是$m_s&#x3D;\pm\frac{1}{2}$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>自旋的表达——自旋算符与Pauli算符<ul>
-<li>与轨道角动量类似<ul>
-<li>${\hat{S^2},\hat{S_z}}$共同本征态$|Sm\rangle$</li>
-</ul>
-</li>
-<li>Pauli算符<ul>
-<li>$\hat{\vec{\boldsymbol{S}}}&#x3D;\frac\hbar2\hat{\boldsymbol{\sigma}}$</li>
-<li>在${\hat{S^2},\hat{S_z}}$或者${\hat{\sigma^2},\hat{\sigma_z}}$表象下</li>
-<li>$\sigma_x&#x3D;\begin{pmatrix}0&amp;1\1&amp;0\end{pmatrix}$,$\sigma_y&#x3D;\begin{pmatrix}0&amp;-i\ i&amp;0\end{pmatrix}$,$\sigma_z&#x3D;\begin{pmatrix}1&amp;\mathbf{0}\0&amp;-1\end{pmatrix}$<ul>
-<li>证明利用厄米性和反对易关系</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="电子自旋态"><a href="#电子自旋态" class="headerlink" title="电子自旋态"></a>电子自旋态</h3><ul>
-<li>电子的二分量波函数<ul>
-<li>为了描述电子所处的状态，还需要变量描写自旋态，由于自旋只有两种可能，所以可以写为两个分量并排成一个矩阵$$\psi(\vec{r},t)&#x3D;\begin{pmatrix}\psi_1(\vec{r},t)\\psi_2(\vec{r},t)\end{pmatrix}$$<ul>
-<li>已进行归一化$\int\psi^\dagger\psi d\tau&#x3D;\int\left(\left|\psi_1\right|^2+\left|\psi_2\right|^2\right)d\tau&#x3D;1$</li>
-</ul>
-</li>
-<li>第一行对应$S_z&#x3D;\frac{\hbar}{2}$,第二行对应$S_z&#x3D;-\frac{\hbar}{2}$</li>
-</ul>
-</li>
-<li>电子的自旋磁矩<ul>
-<li>电子自旋磁矩等于一个玻尔磁子<ul>
-<li>$|\mu_z|$&#x3D;$\mu_B$&#x3D;$\frac{e\hbar}{2m_e}$</li>
-<li>电子自旋磁矩算符$\hat{\vec{\mu}}_s&#x3D;-2\cdot\frac{\mu_B}\hbar\hat{\vec{\vec{S}}}&#x3D;-\frac e{m_e}\hat{\vec{S}}$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="角动量的合成"><a href="#角动量的合成" class="headerlink" title="角动量的合成"></a>角动量的合成</h3><ul>
-<li>两个角动量体系的力学量完全集<ul>
-<li>非耦合表象${\hat{J}<em>1^2,\hat{J}</em>{1z},\hat{J}<em>2^2,\hat{J}</em>{2z}}$<ul>
-<li>即没有用到耦合量的表象</li>
-</ul>
-</li>
-<li>耦合表象${\hat{J}_1^2,\hat{J}<em>2^2,\hat{J}^{2},\hat{J}</em>{z}}$</li>
-</ul>
-</li>
-</ul>
-<h3 id="全同粒子体系"><a href="#全同粒子体系" class="headerlink" title="全同粒子体系"></a>全同粒子体系</h3><ul>
-<li>全同性假设<ul>
-<li>全同粒子体系中任意两个全同粒子的交换，都不改变体系的物理状态</li>
-</ul>
-</li>
-<li>交换算符$\hat{P_{ij}}$<ul>
-<li>作用是把波函数中第$i$个和第$j$个粒子的坐标交换</li>
-</ul>
-</li>
-<li>玻色子和费米子<ul>
-<li>Bose子，自旋量子数为$\hbar$的整数倍</li>
-<li>Fermi子，自旋量子数为$\hbar$的半整数倍</li>
-</ul>
-</li>
-<li>全同性假设对哈密顿量的要求<ul>
-<li>任意交换两个全同粒子，体系的哈密顿量不变</li>
-</ul>
-</li>
-<li>交换对称或反对称波函数的构成<ul>
-<li>前提：</li>
-<li>单粒子近似<ul>
-<li>无耦合体系：体系的总波函数是单个粒子波函数的乘积</li>
-</ul>
-</li>
-<li>二离子体系</li>
-</ul>
-</li>
-</ul>
-<h2 id="双电子的自旋函数"><a href="#双电子的自旋函数" class="headerlink" title="双电子的自旋函数"></a>双电子的自旋函数</h2><ul>
-<li>单体近似下，两个电子的自旋函数<ul>
-<li>$\chi\left(s_{1z},s_{2z}\right)&#x3D;\chi_{m_s}\left(s_{1z}\right)\chi_{m_s^{\prime}}\left(s_{2z}\right)$</li>
-<li>自旋磁量子数可取$\pm\frac{1}{2}$</li>
-</ul>
-</li>
-<li>无耦合表象</li>
-</ul>
-<h1 id="微扰论"><a href="#微扰论" class="headerlink" title="微扰论"></a>微扰论</h1><h3 id="定态微扰论Ⅰ：非简并情形"><a href="#定态微扰论Ⅰ：非简并情形" class="headerlink" title="定态微扰论Ⅰ：非简并情形"></a>定态微扰论Ⅰ：非简并情形</h3><ul>
-<li>一级微扰公式<ul>
-<li>$\hat{H}\psi_n&#x3D;E_n\psi_n$中，$\hat{H}$较为复杂无法精确求解时</li>
-<li>如果$\hat{H}$可以表达为$\hat{H_0}+\hat{H}’$（其中$\hat{H}’$是小的修正）<ul>
-<li>$E_n&#x3D;E_n^{(0)}+E_n^{(1)}+E_n^{(2)}+\cdots$</li>
-<li>$\psi_n&#x3D;\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}+\cdots$</li>
-</ul>
-</li>
-<li>$(\hat{H}_0+\hat{H}^{\prime})(\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}+\cdots)&#x3D;(E_n^{(0)}+E_n^{(1)}+E_n^{(2)}+\cdots)(\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}+\cdots)$</li>
-</ul>
-</li>
-<li>一级方程:  $(\hat{H}_0-E_n^{(0)})\psi_n^{(1)}&#x3D;-(\hat{H}^{\prime}-E_n^{(1)})\psi_n^{(0)}$<ul>
-<li>约定波函数的高级近似解与零级近似解都正交</li>
-<li>非简并情形下</li>
-</ul>
-</li>
-<li>例题1 电解质的极化率</li>
-<li>例题2 氦原子以及氦原子的基态能量</li>
-</ul>
-<h3 id="定态微扰论Ⅱ：简并情形"><a href="#定态微扰论Ⅱ：简并情形" class="headerlink" title="定态微扰论Ⅱ：简并情形"></a>定态微扰论Ⅱ：简并情形</h3>
+          <p>习题课相关内容[[量子与统计习题课]]</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/28/liang-zi-yu-tong-ji/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1432,148 +1312,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/" class="post-title-link" itemprop="url">VS2012只能对 Type.IsGenericTypeDefinition 为 True</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-21 19:11:59 / 修改时间：20:19:29" itemprop="dateCreated datePublished" datetime="2023-09-21T19:11:59+08:00">2023-09-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这是个VS2012解决方案的问题。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/21/reference-for-ml-dl/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/21/reference-for-ml-dl/" class="post-title-link" itemprop="url">Reference</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-21 12:58:19 / 修改时间：12:59:05" itemprop="dateCreated datePublished" datetime="2023-09-21T12:58:19+08:00">2023-09-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9%E5%8F%82%E8%80%83/" itemprop="url" rel="index"><span itemprop="name">相关内容参考</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1642,20 +1380,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

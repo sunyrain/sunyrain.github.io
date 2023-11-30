@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cheat Engine 告别风灵月影</title>
+    <url>/2023/06/10/cheatengine/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ai For Materials 论文研读</title>
+    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
+    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/07/06/deep-learning-with-pytorch/</url>
     <content><![CDATA[<h1 id="Deep-Learning-with-Pytorch"><a href="#Deep-Learning-with-Pytorch" class="headerlink" title="Deep Learning with Pytorch"></a>Deep Learning with Pytorch</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h2 id="Chapter2-P1"><a href="#Chapter2-P1" class="headerlink" title="Chapter2 P1"></a>Chapter2 P1</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment">#引入pytorch包</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment">#查看版本</span></span><br><span class="line">torch.version.__version__</span><br><span class="line"><span class="comment">#定义全一张量</span></span><br><span class="line">a=torch.ones(<span class="number">3</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
@@ -12,18 +36,6 @@
 <h2 id="Chapter3-P1"><a href="#Chapter3-P1" class="headerlink" title="Chapter3 P1"></a>Chapter3 P1</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#python自带的列表</span></span><br><span class="line">a = [<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line"><span class="comment">#torch中的张量,out为tensor([1.,1.,1.])</span></span><br><span class="line">a = torch.ones(<span class="number">3</span>)</span><br><span class="line"><span class="comment">#按下标访问，例如a[2],则返回tensor(1.),仍然是张量,取float后值为1.0，也即</span></span><br><span class="line"><span class="built_in">float</span>(a[<span class="number">1</span>])=<span class="number">1.0</span></span><br><span class="line"><span class="comment">#tensor也可按下标修改,如</span></span><br><span class="line">a[<span class="number">2</span>]=<span class="number">2.0</span></span><br><span class="line"><span class="comment">#全零tensor,如torch.zeros(6)</span></span><br><span class="line"><span class="comment">#直接定义tensor</span></span><br><span class="line">points=torch.tensor([<span class="number">4.</span>,<span class="number">1.</span>,<span class="number">5.</span>,<span class="number">3.</span>,<span class="number">2.</span>,<span class="number">1.</span>])</span><br><span class="line"><span class="comment">#有关高维张量</span></span><br><span class="line">point = torch.tensor([<span class="number">4.0</span>,<span class="number">1.0</span>],[<span class="number">5</span>,<span class="number">0</span>,<span class="number">3.0</span>].[<span class="number">2.0</span>,<span class="number">1.0</span>])</span><br><span class="line"><span class="comment">#返回形状</span></span><br><span class="line">points.shape</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>Cheat Engine 告别风灵月影</title>
-    <url>/2023/06/10/cheatengine/</url>
-    <content><![CDATA[<p>最近玩Brotato，突然发现风灵月影居然没有相关的修改器。阴差阳错之下，学会了Cheat Engine的操作。（有一说一tutorial做的真挺好，就像黑客风格的游戏一样）<br>一般操作流程就是读取内存，确定参数对应的内存保存位置，修改之即可。这下再也不用担心网络上乱七八糟修改器的病毒问题，或者功能有所欠缺了。</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
   </entry>
   <entry>
     <title></title>
@@ -94,9 +106,46 @@
       </tags>
   </entry>
   <entry>
-    <title>Prompt Engineering</title>
-    <url>/2023/11/26/prompt-engineering/</url>
+    <title></title>
+    <url>/2023/10/22/langchain-xue-xi-bi-ji/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Prompt Engineering</title>
+    <url>/2023/11/26/prompt-engineering-lun-wen-yan-du/</url>
+    <content><![CDATA[<h2 id="提示工程整体框架"><a href="#提示工程整体框架" class="headerlink" title="提示工程整体框架"></a>提示工程整体框架</h2><span id="more"></span>
+<h4 id="大语言模型设置"><a href="#大语言模型设置" class="headerlink" title="大语言模型设置"></a>大语言模型设置</h4><ul>
+<li>Temperature<ul>
+<li>参数值越小，模型会返回越确定的结果</li>
+</ul>
+</li>
+<li>Top_p<ul>
+<li>参数值越低，结果越准确。参数高则更具有多样性和创造性</li>
+</ul>
+</li>
+</ul>
+<h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h4 id="提示词要素"><a href="#提示词要素" class="headerlink" title="提示词要素"></a>提示词要素</h4><ul>
+<li>指令</li>
+<li>上下文</li>
+<li>输入数据</li>
+<li>输出指示</li>
+</ul>
+<h4 id="设计提示词的通用技巧"><a href="#设计提示词的通用技巧" class="headerlink" title="设计提示词的通用技巧"></a>设计提示词的通用技巧</h4><ul>
+<li>参考：<a href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api">https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api</a></li>
+</ul>
+<h4 id="提示词示例"><a href="#提示词示例" class="headerlink" title="提示词示例"></a>提示词示例</h4><h2 id="提示技术"><a href="#提示技术" class="headerlink" title="提示技术"></a>提示技术</h2><h4 id="零样本提示（Zero-Shot）"><a href="#零样本提示（Zero-Shot）" class="headerlink" title="零样本提示（Zero-Shot）"></a>零样本提示（Zero-Shot）</h4><ul>
+<li>不向模型提供任何示例</li>
+</ul>
+<h4 id="少样本提示（Few-Shot）"><a href="#少样本提示（Few-Shot）" class="headerlink" title="少样本提示（Few-Shot）"></a>少样本提示（Few-Shot）</h4><ul>
+<li>向模型提供少量示例<ul>
+<li>一个有趣的事实是，在少量示例中，即使使用随机标签或者不一致的格式，效果也比没有标签好得多</li>
+</ul>
+</li>
+</ul>
+<h4 id="链式思考提示（Chain-of-Thought-Prompting）"><a href="#链式思考提示（Chain-of-Thought-Prompting）" class="headerlink" title="链式思考提示（Chain of Thought Prompting）"></a>链式思考提示（Chain of Thought Prompting）</h4><ul>
+<li>结合Few Shot时，</li>
+</ul>
+]]></content>
       <categories>
         <category>学习</category>
       </categories>
@@ -123,19 +172,67 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/10/22/langchain-xue-xi-bi-ji/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Reference</title>
-    <url>/2023/09/21/reference-for-ml-dl/</url>
-    <content><![CDATA[]]></content>
+    <title>Scaling deep learning for materials discovery</title>
+    <url>/2023/11/30/scaling-deep-learning-for-materials-discovery/</url>
+    <content><![CDATA[<blockquote>
+<p>Author：Amil Merchant1,3 , Simon Batzner1,3, Samuel S. Schoenholz1,3, Muratahan Aykol1 ,Gowoon Cheon2 &amp; Ekin Dogus Cubuk1,3 </p>
+</blockquote>
+<h3 id="Abtract"><a href="#Abtract" class="headerlink" title="Abtract"></a>Abtract</h3><ul>
+<li><p>Discovery of inorganic crystals has been bottenecked by expensive trial-and-error approaches.</p>
+<h4 id="Definitions"><a href="#Definitions" class="headerlink" title="Definitions"></a>Definitions</h4></li>
+<li><p>Convex Hall 计算化学和计算材料学领域，凸包边缘往往代表最稳定的化合物</p>
+</li>
+<li><p>zero-shot-learning 模型需要在完全未见过的数据类别上做出预测</p>
+</li>
+<li><p>ad initio 第一性原理计算</p>
+</li>
+<li><p>estimate stability 也即对比凸包边缘化合物与其竞争项的分解能，分解能低的一般被认为是不稳定的</p>
+</li>
+<li><p>SAPS（Symmetry-Aware Partial Substitutions，对称性感知部分替换，利用已知材料的结构信息，通过部分替换原子来创造新的化合物或材料</p>
+</li>
+</ul>
+<h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><ul>
+<li><p>data flywheel 利用图神经网络筛选后的被认为“稳定”的候选分子，再利用DFT进行能量计算验证，利用计算后的结果迭代更新模型</p>
+</li>
+<li><p>GNoME enables accurate predictions of structures with 5+ unique elements(despite omission from training)</p>
+</li>
+<li><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130104356265.png" alt="image-20231130104356265"></p>
+<ul>
+<li><p>两条pipeline 并行工作</p>
+</li>
+<li><p>结构管线</p>
+<ul>
+<li>假设有一种已知的材料结构A，我们想要探索A的变体或相关结构是否稳定</li>
+<li>利用SAPS等生成新的材料结构，并构建图表示</li>
+<li>利用GNN评估材料稳定性，并对稳定结果计算DFT</li>
+</ul>
+</li>
+<li><p>成分管线中</p>
+<ul>
+<li>从一种特定的化学式出发，比如Li₂S₂O₇</li>
+<li>为表达式构建图表示，并利用GNN评估稳定性</li>
+<li>在判断为稳定的成分中，利用AIRSS为其随机选择结构，并计算DFT</li>
+</ul>
+</li>
+<li><p>注意，GNN的用途是多样的</p>
+</li>
+<li><p><strong>对结构的评估</strong>：在结构管线中，GNoME接收的是候选材料的图表示，这些图是基于材料的原子结构和它们之间的连接关系构建的。在这种情况下，GNoME评估的是这些特定结构的稳定性。</p>
+</li>
+<li><p><strong>对成分的评估</strong>：而在成分管线中，GNoME接收的是化学成分的图表示，可能不包括具体的原子排列信息，而是反映了化学式中不同元素的种类和它们的计量比。这里的挑战是在没有明确的结构信息的情况下预测稳定性。</p>
+</li>
+</ul>
+<h4 id="Definitions-1"><a href="#Definitions-1" class="headerlink" title="Definitions"></a>Definitions</h4></li>
+<li><p>AIRSS (Automated Random Structure  Searching)随机生成大量的结构配置，然后使用DFT等评估它们的稳定性</p>
+</li>
+<li><p>$r^2$SCAN &amp; PBE 这是两种DFT方法，PBE被一般认为精度不如$r^2$SCAN，但速度较快，一般实验人员会对PBE初步计算后认为较有可能性的材料进行进一步$r^2$SCAN计算</p>
+</li>
+</ul>
+]]></content>
       <categories>
-        <category>相关内容参考</category>
+        <category>论文研读</category>
       </categories>
       <tags>
-        <tag>Reference</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -154,37 +251,57 @@
       </tags>
   </entry>
   <entry>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</title>
     <url>/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h3 id="Abstract-部分"><a href="#Abstract-部分" class="headerlink" title="Abstract 部分"></a>Abstract 部分</h3><ul>
+<li>Sepsis（脓毒症）best treatment atrategy remains uncertain</li>
+<li>Current practice in the administration of intravenous fluids (静脉输液) and vasopressors (血管升压药) are suboptimal</li>
+<li>This Problem is a sequential decision-making-problem</li>
+<li>Learn optimal treatment by analyzing a myriad of (mostly suboptimal) treatment decisions</li>
+</ul>
+<h3 id="Intro部分"><a href="#Intro部分" class="headerlink" title="Intro部分"></a>Intro部分</h3><ul>
+<li>Clinical variability in sepsis treatment is extreme,suboptimal decisions lead to poorer outcomes</li>
+<li>The intrinsic design of models using reinforcement learning can handle sparse reward signals<ul>
+<li>over come the complexity related to the heterogeneity of patient responses to medical interventions</li>
+<li>and the delayed indications of the efficacy of treatments</li>
+</ul>
+</li>
+<li>Database<ul>
+<li>Medical Information Mart for Intensive Care version Ⅲ</li>
+<li>eICU Research Institute Database(eRI)</li>
+</ul>
+</li>
+<li>Data Process<ul>
+<li>a set of 48 variables including demographics, Elixhauser premorbid status, vital signs, laboratory values, fluids and vasopressors received</li>
+<li>Patients’ data were coded as multidimensional discrete time series with 4-h time steps. The study included up to 72h of measurements taken around the estimated time if onset of sepsis</li>
+<li>The <strong>total volume of intravenous fluids</strong> and <strong>maximum dose of vasopressosrs</strong> administered over each <strong>4-h period</strong> defined the medical treatments of interests</li>
+</ul>
+</li>
+</ul>
+<p>Method部分</p>
+<ul>
+<li>To further assess the validity of the state aggregation, they used the distribution of International Classification of Diseases codes in the states and demonstrated that past medical history and diagnoses are encapsulated to some extent within our chosen state definition.也即ICD与聚类结果有类似性，证明聚类有一定的代表性</li>
+</ul>
+]]></content>
       <categories>
         <category>论文研读</category>
       </categories>
       <tags>
         <tag>HealthCare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工程图学</title>
-    <url>/2023/11/01/gong-cheng-tu-xue/</url>
-    <content><![CDATA[<span id="more"></span>
-<ul>
-<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
-<li>类似性指导作图，面和它的封闭线框具有相似性</li>
-<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
-<li>找点的方法之辅助直线<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
-<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
-<li>点划线露出4mm</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -251,10 +368,500 @@
       </tags>
   </entry>
   <entry>
+    <title>工程图学</title>
+    <url>/2023/11/01/gong-cheng-tu-xue/</url>
+    <content><![CDATA[<span id="more"></span>
+<ul>
+<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
+<li>类似性指导作图，面和它的封闭线框具有相似性</li>
+<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
+<li>找点的方法之辅助直线<ul>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
+<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
+<li>点划线露出4mm</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数理方程特殊函数部分以及其他</title>
+    <url>/2023/06/14/shu-li-fang-cheng/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>级数解</p>
+<ul>
+<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
+<li>回到原式中带入级数解进行计算</li>
+</ul>
+<p>坐标系</p>
+<ul>
+<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
+<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
+<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
+</ul>
+<p>Bessel方程</p>
+<ul>
+<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
+<li>解记作$J_{\pm v(x)}$</li>
+<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
+<li><del>第三类柱函数</del></li>
+<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
+<li>基本递推关系</li>
+</ul>
+<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
+<ul>
+<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
+</ul>
+<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
+<ul>
+<li><p>特征为$l(l+1)$</p>
+</li>
+<li><p>解为$ j_l, n_l$</p>
+</li>
+</ul>
+<p>渐进行为</p>
+<ul>
+<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
+<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
+<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
+<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
+<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
+<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
+</ul>
+<p>Legendre方程和连带Legendre方程的形式</p>
+<ul>
+<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
+</li>
+<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
+</ul>
+</li>
+<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
+<ul>
+<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
+<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
+</ul>
+</li>
+<li><p>Legendre多项式的生成函数</p>
+<ul>
+<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
+<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
+</ul>
+</li>
+<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
+</li>
+<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
+</li>
+</ul>
+</li>
+<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
+<ul>
+<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
+<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
+<li>球谐函数的模长<ul>
+<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><del>递推公式、连带Legendre函数模方</del></p>
+</li>
+</ul>
+<p>傅里叶变换和逆变换形式</p>
+<p> Laplace变换和逆变换形式</p>
+<p>傅里叶变换的卷积公式</p>
+<p>Laplace变换的卷积公式</p>
+<p>方程标准型特征方程</p>
+<ul>
+<li><p>特征方程法</p>
+<ul>
+<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
+</li>
+<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
+</li>
+<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
+</li>
+<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
+</li>
+<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
+</li>
+<li><p>利用变换系数公式求解方程各项系数</p>
+</li>
+</ul>
+</li>
+<li><p>配方法</p>
+<ul>
+<li><del>变系数配方法</del></li>
+<li>常系数配方法，将二次项配方后，换元即可</li>
+</ul>
+</li>
+</ul>
+<p>格林函数</p>
+<ul>
+<li>电像法</li>
+<li>本征函数展开法<ul>
+<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
+<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
+</ul>
+</li>
+<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>时光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>材料分析与表征 9.18</title>
+    <url>/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/</url>
+    <content><![CDATA[<span id="more"></span>
+<ul>
+<li>课程详细信息<ul>
+<li>期末考试70%、课程展示20%、考勤作业10%</li>
+</ul>
+</li>
+</ul>
+<h3 id="X射线衍射技术-X-Ray-Diffraction"><a href="#X射线衍射技术-X-Ray-Diffraction" class="headerlink" title="X射线衍射技术(X-Ray Diffraction)"></a>X射线衍射技术(X-Ray Diffraction)</h3><ul>
+<li>X光的发现 1895.11.8 伦琴</li>
+<li>肉眼不可见、使铂氯化钡发光、使照相底板感光、气体电离、杀伤生物细胞</li>
+</ul>
+<h3 id="微观结构的研究方法"><a href="#微观结构的研究方法" class="headerlink" title="微观结构的研究方法"></a>微观结构的研究方法</h3><ul>
+<li>仪器极限分辨率 $\lambda$&#x2F;2 （远场光学）</li>
+</ul>
+<h3 id="X光的本质"><a href="#X光的本质" class="headerlink" title="X光的本质"></a>X光的本质</h3><ul>
+<li>波长介于紫外线和 $\gamma$ 射线之间，约为0.01~100埃</li>
+<li>长波长——软X射线 短波长——硬X射线</li>
+</ul>
+<h3 id="X射线的应用与发展"><a href="#X射线的应用与发展" class="headerlink" title="X射线的应用与发展"></a>X射线的应用与发展</h3><h3 id="X射线的性质"><a href="#X射线的性质" class="headerlink" title="X射线的性质"></a>X射线的性质</h3><h3 id="X射线的产生"><a href="#X射线的产生" class="headerlink" title="X射线的产生"></a>X射线的产生</h3><ul>
+<li>高速运动的带电粒子的运动遇到障碍被减速时便产生X射线</li>
+<li>从X射线管角度理解<ul>
+<li>对绕成螺旋型的钨丝通电加热至白热，放出热辐射电子</li>
+<li>电子在数万伏管内高压电场的作用下轰击靶材产生X射线</li>
+</ul>
+</li>
+</ul>
+<h3 id="X射线谱"><a href="#X射线谱" class="headerlink" title="X射线谱"></a>X射线谱</h3><ul>
+<li>连续X射线谱，有公式$eV &#x3D; h\nu <em>{max}&#x3D;\frac{hc}{\lambda</em>{0}}$ </li>
+<li>经验规律，连续谱中强度最大处的波长记为$\lambda_{m}$ 则一般有$\lambda_{m}&#x3D;1.5\lambda_{0}$</li>
+<li>电流决定了热辐射电子的多少，电压决定了热辐射电子的强度</li>
+</ul>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><ul>
+<li>已知$Cu-K_a$线波长，计算铜原子$2p$和$1s$能级间的能量差<ul>
+<li>解题方法，首先明确从$2p$到$1s$属于从$L$层跃迁到$K$层，也即$K_a$线</li>
+<li>故直接利用波长与能量关系计算</li>
+</ul>
+</li>
+</ul>
+<h3 id="X射线与物质的相互作用"><a href="#X射线与物质的相互作用" class="headerlink" title="X射线与物质的相互作用"></a>X射线与物质的相互作用</h3><h3 id="X射线衰减规律"><a href="#X射线衰减规律" class="headerlink" title="X射线衰减规律"></a>X射线衰减规律</h3><ul>
+<li>吸收的不连续性</li>
+<li>吸收限的利用<ul>
+<li>靶材（Target Material）：</li>
+<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，与原子相互作用，产生X射线辐射。我们要尽量选择波长略长于试样吸收限的靶材，这样不会有K系荧光辐射，同时也不会被试样吸收太多。</li>
+<li>滤片（Filter）：</li>
+<li>滤片是放置在X射线束路径上的材料，通常由金属或其他适当的材料制成。滤片的主要作用是改变或调整X射线的能量谱。通过选择不同材料的滤片，可以过滤掉低能量的X射线，使得只有特定能量范围内的X射线通过</li>
+<li>试样（Sample）：</li>
+<li>试样是要进行X光实验的物质或样品。当X射线穿过试样时，它会与试样中的原子相互作用，产生一系列特定能量的X射线散射或吸收。通过分析这些散射或吸收事件，可以获得有关试样的信息，例如其成分、结构或厚度等</li>
+</ul>
+</li>
+</ul>
+<h3 id="X光的探测与防护"><a href="#X光的探测与防护" class="headerlink" title="X光的探测与防护"></a>X光的探测与防护</h3><h2 id="晶体学基础"><a href="#晶体学基础" class="headerlink" title="晶体学基础"></a>晶体学基础</h2><h3 id="晶体结构"><a href="#晶体结构" class="headerlink" title="晶体结构"></a>晶体结构</h3><ul>
+<li><p>赤平极射投影</p>
+<ul>
+<li>方位角 $\phi$包含该点的子午面与$0°$子午面的夹角</li>
+<li>极距角 $\rho$该点与北极点的夹角</li>
+<li>赤平投影图上点距离圆心的距离与方位角有关，基圆与极距角有关<br>  重点（吴氏网、标准点阵、倒易点阵）</li>
+</ul>
+</li>
+<li><p>吴氏网</p>
+<ul>
+<li>吴氏网只能水平上走格子，如果想在竖直上走格子，需要旋转吴氏网，然后再所有的点一起水平上走格子<br> 对于任意可微的对称性，一定存在一个相应的守恒流</li>
+</ul>
+</li>
+<li><p>倒易点阵</p>
+<ul>
+<li><p>对于一个给定基矢的正点阵，必有倒易点阵与之相对应，关系为<br>$$a^{*}&#x3D;\frac{b×c}{v}$$<br>此处$v$为正点阵的体积	</p>
+</li>
+<li><p>有关正点阵和倒易点阵，相关的符号标识如下</p>
+<ul>
+<li>晶面指数$(hkl),(uvw)^{*}$</li>
+<li>晶向指数$[uvw],[hkl]^{*}$</li>
+<li>面间距$d_{hkl},d_{uvw}^{*}$</li>
+<li>晶向或阵矢$r&#x3D;ua+vb+wc,g^{<em>}&#x3D;ha^</em>+kb^*+lc^*$</li>
+<li>晶向长度或阵矢大小$r_{uvw},g_{hkl}$</li>
+<li>结点位置$uvw,hkl$</li>
+</ul>
+</li>
+<li><p>倒易点阵晶向垂直于正点阵同名晶面，反之亦然</p>
+</li>
+<li><p>正点阵的面间距是同名倒易矢量长度的倒数</p>
+<p>$$|g_{hkl}|^2&#x3D; \frac1{d_{hkl}^2}&#x3D;(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\bullet(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\&#x3D; h^2(a^*)^2+k^2(b^*)^2+l^2(c^*)^2\+2kl\boldsymbol{b}^<em>\boldsymbol{c}^</em>\boldsymbol{c}^<em>cos\boldsymbol{a}^</em>+2lh\boldsymbol{c}^<em>\boldsymbol{a}^</em>cos\boldsymbol{\beta}^*+2h\boldsymbol{k}a^<em>\boldsymbol{b}^</em>cos\boldsymbol{\gamma}^* $$</p>
+<ul>
+<li>立方晶系<ul>
+<li>$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="阶段作业"><a href="#阶段作业" class="headerlink" title="阶段作业"></a>阶段作业</h3><ul>
+<li>P81-82 T 15 16 22 24</li>
+</ul>
+<h2 id="X射线与材料的散射、干涉与衍射"><a href="#X射线与材料的散射、干涉与衍射" class="headerlink" title="X射线与材料的散射、干涉与衍射"></a>X射线与材料的散射、干涉与衍射</h2><h3 id="散射"><a href="#散射" class="headerlink" title="散射"></a>散射</h3><ul>
+<li><p>电子的散射，静电相互作用等</p>
+</li>
+<li><p>X射线的散射，与物质的基本单元发生作用</p>
+</li>
+<li><p>单电子对X射线的散射</p>
+<ul>
+<li>相干散射<ul>
+<li>相干散射是衍射的基础，从波动性的角度出发，X射线是电磁波，其照射在自由电子上时，交变电场就会强迫电子作频率相同的振动，发射X射线。电子发出的X射线为散射线，与入射线波长相同、相位滞后恒定，故可以发生干涉。</li>
+<li>平面偏振光相干散射</li>
+<li>非平面偏振光相干散射<ul>
+<li>原子中只需要考虑电子散射</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非相干散射</li>
+</ul>
+</li>
+<li><p>散射线的干涉</p>
+<ul>
+<li>相位差与反射矢量<ul>
+<li>相位差满足$$\phi &#x3D; 2\pi \frac{-S_{0}·r+S·r }{\lambda}$$其中$S_0$为入射线上的单位矢量，$S$为反射线上的单位矢量</li>
+<li>记 $s&#x3D;\frac{S-S_0}{\lambda}\quad s$为散射矢量，其大小为$\frac{2sin\theta}{\lambda}$，引入散射矢量后，上式可化作$\phi &#x3D;2\pi s·r$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>原子对X射线的散射</p>
+<ul>
+<li>单电子原子的散射<ul>
+<li>原子中一个电子的散射因子$$f(s) &#x3D; \int_v \rho(r)e^{i2\pi s·r}dv$$</li>
+<li>电子的相干强度为$I_{相干}&#x3D;f^{2}(s)I_{电子}$</li>
+</ul>
+</li>
+<li>多电子原子的散射<ul>
+<li>假设原子的总电荷密度为各个电子电荷密度之和</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>晶胞的散射</p>
+</li>
+<li><p>小晶体的衍射</p>
+<ul>
+<li><p>小晶体的衍射强度</p>
+<ul>
+<li><p>小晶体的衍射线振幅</p>
+<p>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}F\left(s\right)\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}_{mnp}}<br>$$</p>
+<p>因其中的结构因子与晶胞的位置无关, 从而有<br>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;F\left(s\right)\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}<em>{mnp}}<br>$$<br>于是, 晶体的衍射线强度为<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{m p p}}\right|^2 I</em>{\text {电子 }}<br>$$<br>定义<br>$$<br>L(s) \equiv\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{\operatorname{mmp}}}\right|^2<br>$$<br>由于它表示的是晶体散射线的干涉结果, 故称为晶体的干涉函数, 或劳厄函数, 衍射线强度可以简写成<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2 L(s) I_{\text {电子 }}<br>$$</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="衍射线的强度分析"><a href="#衍射线的强度分析" class="headerlink" title="衍射线的强度分析"></a>衍射线的强度分析</h2><h2 id="多晶体衍射信息的获取方法"><a href="#多晶体衍射信息的获取方法" class="headerlink" title="多晶体衍射信息的获取方法"></a>多晶体衍射信息的获取方法</h2><h3 id="德拜法"><a href="#德拜法" class="headerlink" title="德拜法"></a>德拜法</h3><ul>
+<li>德拜照片的计算与标定<ul>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png" alt="image-20231009103514509" style="zoom:50%;" />
+</li>
+<li><p>圆弧之间的对应的顶角为4$\theta$</p>
+</li>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png" alt="image-20231009104249654" style="zoom:50%;" />
+</li>
+<li><p>此处采用的角度标准为（deg）</p>
+</li>
+<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png" alt="image-20231009104341784" style="zoom:50%;" />
+</li>
+<li><p>考虑布拉格公式$d&#x3D;\frac{\lambda}{2sin\theta}$和晶面间距计算公式$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</p>
+</li>
+<li><p>得$$\sin^2\theta&#x3D;\frac{\lambda^2}{4a^2}(h^2+k^2+l^2)$$</p>
+</li>
+<li><p>令$\frac{\lambda^{2}}{4a^2}&#x3D;K$并设$m$为干涉指数的平方和，即$$m&#x3D;h^2+k^2+l^2$$于是$sin^2\theta &#x3D; Km$</p>
+</li>
+<li><p>计算出$K$和每条德拜线的$sin^2\theta$并计算出对应的m值（$m$均为正整数）然后依据衍射线条在晶系中的出现顺序判断</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="衍射仪法"><a href="#衍射仪法" class="headerlink" title="衍射仪法"></a>衍射仪法</h3><h3 id="衍射材料的获得"><a href="#衍射材料的获得" class="headerlink" title="衍射材料的获得"></a>衍射材料的获得</h3><h4 id="试样制备要求"><a href="#试样制备要求" class="headerlink" title="试样制备要求"></a>试样制备要求</h4><ul>
+<li>晶粒大小</li>
+<li>试样大小厚度和质量</li>
+<li>避免产生择优取向</li>
+</ul>
+<h4 id="衍射全图的获得"><a href="#衍射全图的获得" class="headerlink" title="衍射全图的获得"></a>衍射全图的获得</h4><h4 id="单峰测试"><a href="#单峰测试" class="headerlink" title="单峰测试"></a>单峰测试</h4><h4 id="衍射信息的获取"><a href="#衍射信息的获取" class="headerlink" title="衍射信息的获取"></a>衍射信息的获取</h4><h4 id="衍射线的线形分析"><a href="#衍射线的线形分析" class="headerlink" title="衍射线的线形分析"></a>衍射线的线形分析</h4><h2 id="单晶体衍射信息的获取方法"><a href="#单晶体衍射信息的获取方法" class="headerlink" title="单晶体衍射信息的获取方法"></a>单晶体衍射信息的获取方法</h2><h3 id="劳埃法"><a href="#劳埃法" class="headerlink" title="劳埃法"></a>劳埃法</h3><ul>
+<li>特征：使用连续的X射线谱照射固定不动的单晶体</li>
+</ul>
+<h2 id="X射线衍射的应用"><a href="#X射线衍射的应用" class="headerlink" title="X射线衍射的应用"></a>X射线衍射的应用</h2><h3 id="物相分析"><a href="#物相分析" class="headerlink" title="物相分析"></a>物相分析</h3><h4 id="定性相分析"><a href="#定性相分析" class="headerlink" title="定性相分析"></a>定性相分析</h4><h4 id="定量相分析"><a href="#定量相分析" class="headerlink" title="定量相分析"></a>定量相分析</h4><ul>
+<li><p>PDF卡片</p>
+</li>
+<li><p>基础：物质的衍射强度与物质参与衍射的体积成正比<br>$$<br>I&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_0^2}\left(\frac{e^2}{m c^2}\right)^2 \frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P V \mathrm{e}^{-2 M} A(\theta)<br>$$</p>
+<ul>
+<li>对于粉末衍射仪法，$A(\theta)&#x3D;1&#x2F;2\mu$</li>
+</ul>
+</li>
+<li><p>举例来说，两相体系下<br>$$<br>\begin{aligned}<br>&amp; I_\alpha&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\alpha^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\alpha \frac{V_\alpha}{2 \mu} \<br>&amp; I_\beta&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\beta^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\beta \frac{V_\beta}{2 \mu}<br>\end{aligned}<br>$$</p>
+<ul>
+<li>$\mu$ 是混合物的线吸收系数</li>
+<li>前面的部分二者都相同，所以只和$V$有关系</li>
+<li>$\mu ^*$是质量吸收系数，为$\mu &#x2F; \rho$</li>
+<li>不管什么方法，$\alpha$相衍射强度 $I_{\alpha}&#x3D;K\frac{C_{\alpha}}{\mu}$</li>
+</ul>
+</li>
+<li><p>外标法</p>
+<ul>
+<li>本质上是<br>  $$<br>  I_\alpha&#x3D;K \frac{w_a}{\rho_\alpha \mu^*}<br>  $$</li>
+<li>上式的$\mu ^*$是总质量吸收系数</li>
+<li>而对于纯 $\alpha$ 相的试样, 即标样, 其同指数衍射线的强度应为<br>  $$<br>  I_{\alpha_0}&#x3D;K \frac{1}{\rho_\alpha \mu_a^*}<br>  $$</li>
+<li>从而, 待测试样中 $\alpha$ 相的衍射强度与 $\alpha$ 相标样的衍射强度的比值为</li>
+</ul>
+<p>  $$<br>  \frac{I_a}{I_{\alpha_0}}&#x3D;\frac{\mu_a^*}{\mu^*} w_a<br>  $$</p>
+<ul>
+<li>如果试样仅由 $\alpha 、 \beta$ 两相组成, 则上式可以写成</li>
+</ul>
+<p>  $$<br>  \frac{I_\alpha}{I_{\alpha_0}}&#x3D;\frac{w_\alpha \mu_\alpha^*}{w_\alpha\left(\mu_\alpha^*-\mu_\beta^<em>\right)+\mu_\beta^</em>}<br>  $$</p>
+<ul>
+<li>实际使用时，首先要知道是什么和什么的混合，找到工作曲线，之后通过两次实验测定$\frac{I_\alpha}{I_{\alpha_0}}$，在工作表上对应找即知道物质百分比</li>
+</ul>
+</li>
+<li><p>内标法</p>
+<ul>
+<li>内标法首先向试样中加入标准物，然后让待测相与标准相进行比较，相当于通过加入标准相的方法，知道了$\omega _{s}$ </li>
+<li>待测相衍射线强度与标准相衍射线强度之比可以表述为</li>
+<li>$$\frac{I^{‘}<em>{a}}{I</em>{s}}&#x3D;K\frac{\omega^{‘}<em>{a}}{\omega</em>{s}}$$</li>
+<li>设法得到$K$值即可</li>
+</ul>
+</li>
+</ul>
+<h4 id="精确测定点阵常数"><a href="#精确测定点阵常数" class="headerlink" title="精确测定点阵常数"></a>精确测定点阵常数</h4><h2 id="宏观应力分析"><a href="#宏观应力分析" class="headerlink" title="宏观应力分析"></a>宏观应力分析</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h3><p>只要有应力存在就会有应变，，也即晶面间距的变化。X光可以很好地测面间距的变化，所以可以用来测应力。</p>
+<h4 id="应力应变关系"><a href="#应力应变关系" class="headerlink" title="应力应变关系"></a>应力应变关系</h4><ul>
+<li><p>考虑受轴向拉力$F_x$的截面为A的棒</p>
+<ul>
+<li>胡克定律指出$\epsilon_x &#x3D; \frac{\sigma_x}{E}$</li>
+<li>轴向拉伸，垂直于轴的面也会发生形变</li>
+<li>$$-\epsilon_y &#x3D; -\epsilon_z &#x3D; \nu \epsilon_x &#x3D; \frac{\nu \sigma_x}{E}$$<ul>
+<li>其中$\nu$是泊松比</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>考虑微变形情况下，主应力和主应变的广义胡克定律为</p>
+<ul>
+<li>$\epsilon_1 &#x3D; \frac{1}{E}[\sigma_1 - \nu(\sigma_2+\sigma_3)]$<ul>
+<li>（$cyc$）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>任意一个方向（注意应力是一个张量）</p>
+<p>$$ \left{\begin{array}{l}<br>\sigma_{\phi \psi}&#x3D;\alpha_1^2 \sigma_1+\alpha_2^2 \sigma_2+\alpha_3^2 \sigma_3 \<br>\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3<br>\end{array}\right.$$</p>
+</li>
+<li><p>其中$$\begin{aligned}<br>&amp; \alpha_1&#x3D;\sin \psi \cos \phi \<br>&amp; \alpha_2&#x3D;\sin \psi \sin \phi \<br>&amp; \alpha_3&#x3D;\cos \psi<br>\end{aligned} $$</p>
+</li>
+<li><p>广义胡克定律<br>$$\left{\begin{array}{l}\varepsilon_1&#x3D;\frac{1}{E}\left[\sigma_1-\nu\left(\sigma_2+\sigma_3\right)\right] \ \varepsilon_2&#x3D;\frac{1}{E}\left[\sigma_2-\nu\left(\sigma_1+\sigma_3\right)\right] \ \varepsilon_3&#x3D;\frac{1}{E}\left[\sigma_3-\nu\left(\sigma_1+\sigma_2\right)\right]\end{array}\right.$$</p>
+</li>
+</ul>
+<h4 id="X射线衍射方法测定应力的原理"><a href="#X射线衍射方法测定应力的原理" class="headerlink" title="X射线衍射方法测定应力的原理"></a>X射线衍射方法测定应力的原理</h4><p>对于一般的金属材料，X射线的穿透能力很低，所以仅能测定表面层的应力。又垂直于表面层的应力的总和为0.也即$\sigma_3 &#x3D; 0$</p>
+<ul>
+<li><p>广义胡克定律在此前提下简化为：</p>
+</li>
+<li><p>$$<br>\left{\begin{array}{l}<br>\varepsilon_1&#x3D;\frac{1}{E}\left(\sigma_1-\nu \sigma_2\right) \<br>\varepsilon_2&#x3D;\frac{1}{E}\left(\sigma_2-\nu \sigma_1\right) \<br>\varepsilon_3&#x3D;-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>\end{array}\right.<br>$$</p>
+</li>
+<li><p>带入$\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3$化简即得到：</p>
+</li>
+<li><p>$$<br>\varepsilon_{\phi \psi}&#x3D;\frac{1+\nu}{E} \sigma_\phi \sin ^2 \psi-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>$$</p>
+<ul>
+<li>注意$\sigma_\phi &#x3D; cos^2\phi \sigma_1 +sin^2 \phi \sigma_2$</li>
+</ul>
+<p>将上式对 $\sin ^2 \psi$ 求导, 就可以解出表面上任一方向上的应力 $\sigma_\phi$, 有：<br>$$<br>\sigma_\phi&#x3D;\frac{E}{1+\nu} \frac{\partial \varepsilon_{\phi \psi}}{\partial \sin ^2 \psi}<br>$$</p>
+</li>
+</ul>
+<h3 id="衍射仪法测定宏观应力"><a href="#衍射仪法测定宏观应力" class="headerlink" title="衍射仪法测定宏观应力"></a>衍射仪法测定宏观应力</h3><h2 id="微晶尺寸和微观应力"><a href="#微晶尺寸和微观应力" class="headerlink" title="微晶尺寸和微观应力"></a>微晶尺寸和微观应力</h2><h3 id="量子力学的不确定性原理"><a href="#量子力学的不确定性原理" class="headerlink" title="量子力学的不确定性原理"></a>量子力学的不确定性原理</h3><ol>
+<li><p><strong>波动性和离散性</strong>：X射线作为电磁波，具有波动性。在量子尺度下，波动性导致了能量和动量的不确定性。这种不确定性在微观尺度上对物质的行为有重要影响。</p>
+</li>
+<li><p><strong>晶体尺寸与不确定性</strong>：在小尺寸晶体中，晶格面的数量减少意味着晶体中可用于衍射的晶格点减少。根据不确定性原理，较少的晶格点导致衍射角度的不确定性增大，从而允许在布拉格角附近的较宽角度范围内发生衍射。</p>
+</li>
+</ol>
+<h3 id="晶格面排列的影响"><a href="#晶格面排列的影响" class="headerlink" title="晶格面排列的影响"></a>晶格面排列的影响</h3><ol>
+<li><p><strong>晶格面间距的变化</strong>：在大晶体中，由于晶格面数量众多，晶格面间距非常均匀，衍射条件非常严格。但在小晶体中，晶格面的间距可能因为晶体边界效应而略有不均匀。</p>
+</li>
+<li><p><strong>衍射角度的变化</strong>：晶格面间距的这种轻微不均匀性可能导致衍射角度略有变化，从而使得衍射不再严格局限于理想的布拉格角。</p>
+</li>
+</ol>
+<h4 id="微晶尺寸的测定"><a href="#微晶尺寸的测定" class="headerlink" title="微晶尺寸的测定"></a>微晶尺寸的测定</h4><h4 id="微观应力的测定"><a href="#微观应力的测定" class="headerlink" title="微观应力的测定"></a>微观应力的测定</h4><h2 id="织构的测定"><a href="#织构的测定" class="headerlink" title="织构的测定"></a>织构的测定</h2><h3 id="织构的分类"><a href="#织构的分类" class="headerlink" title="织构的分类"></a>织构的分类</h3><ul>
+<li>丝织构<ul>
+<li>丝织构的晶体学特点是晶粒的某一个或者某几个晶向倾向于平行试样的某一特定方向，一般沿丝轴方向或生长方向</li>
+</ul>
+</li>
+<li>板织构<ul>
+<li>板织构的晶体学特征是各晶粒的某一个或几个晶面平行于试样的某一特定面(如轧面),一个或几个晶向平行于试样的某一特定方向(如轧向)。</li>
+</ul>
+</li>
+</ul>
+<h3 id="织构的表示方法"><a href="#织构的表示方法" class="headerlink" title="织构的表示方法"></a>织构的表示方法</h3><ul>
+<li>正级图</li>
+<li>反级图</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的$f$和$g$进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
+</ul>
+</li>
+<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>机器学习</title>
     <url>/2023/09/19/ji-qi-xue-xi/</url>
-    <content><![CDATA[<span id="more"></span>
-<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
+    <content><![CDATA[<h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><span id="more"></span>
+
+<h3 id="Big-Data-amp-Simple-Model"><a href="#Big-Data-amp-Simple-Model" class="headerlink" title="Big Data &amp; Simple Model"></a>Big Data &amp; Simple Model</h3><p>why machine learning feasible 可行的</p>
 <h4 id="Example-pick-red-and-green-marbles-from-a-bin"><a href="#Example-pick-red-and-green-marbles-from-a-bin" class="headerlink" title="Example : pick red and green marbles from a bin"></a>Example : pick red and green marbles from a bin</h4><ul>
 <li>$\mathbb{P}[red marbles] &#x3D; \mu \qquad \mathbb{P}[green marbles] &#x3D; 1-\mu$</li>
 <li>Hoeffding’s inequality：$P[|\nu-\mu|&gt;\epsilon]\leq2e^{-2\epsilon^2N}$<ul>
@@ -999,163 +1606,63 @@
 </ul>
 </li>
 </ul>
-<h3 id="Signal-Analysis"><a href="#Signal-Analysis" class="headerlink" title="Signal Analysis"></a>Signal Analysis</h3>]]></content>
+<h3 id="Signal-Analysis"><a href="#Signal-Analysis" class="headerlink" title="Signal Analysis"></a>Signal Analysis</h3><h1 id="深度学习篇"><a href="#深度学习篇" class="headerlink" title="深度学习篇"></a>深度学习篇</h1><h2 id="Neuron-Shallow-Neural-Networks"><a href="#Neuron-Shallow-Neural-Networks" class="headerlink" title="Neuron,Shallow Neural Networks"></a>Neuron,Shallow Neural Networks</h2><h3 id="Neuron"><a href="#Neuron" class="headerlink" title="Neuron"></a>Neuron</h3><ul>
+<li>Activation Function <ul>
+<li>Step Function<ul>
+<li>$sgn(x)&#x3D;\begin{cases}1,x\geq0\0,x&lt;0&amp;\end{cases}$</li>
+</ul>
+</li>
+<li>Sigmoid Function<ul>
+<li>$\mathrm{sigmoid}(x)&#x3D;\frac1{1+e^{-x}}$</li>
+<li>$\sigma^{\prime}(x)&#x3D;\sigma(1-\sigma)$</li>
+</ul>
+</li>
+<li>Hyperbolic Tangent Function<ul>
+<li>$y&#x3D;\frac{e^x-e^{-x}}{e^x+e^{-x}}$</li>
+<li>$y^{\prime}(x)&#x3D;1-y^2$</li>
+</ul>
+</li>
+<li>Rectified Linear Unit<ul>
+<li>$y&#x3D;w\cdot\max(0,x)$</li>
+<li>$y^{\prime}(x)&#x3D;\max(0,w)$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example<ul>
+<li>线性拟合XOR<ul>
+<li>Data<ul>
+<li>$\mathbf{X}&#x3D;\binom{0,1,0,1}{0,0,1,1}^T$</li>
+<li>$y&#x3D;(0,1,1,0)^T$</li>
+</ul>
+</li>
+<li>以$\theta$为参数的损失函数<ul>
+<li>$J(\theta)&#x3D;\frac14\sum_{x\in\mathbb{X}}(y-f(x;\theta))^2$</li>
+</ul>
+</li>
+<li>$f(x;w,b)&#x3D;w^Tx+b$<ul>
+<li>$\to J(\theta)&#x3D;\frac14\sum_{x\in\mathbb{X}}(f^*(x)-f(x;\theta))^2$</li>
+<li>$\to\boldsymbol{w}&#x3D;(0,0)^T,\boldsymbol{b}&#x3D;0.5$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>浅层神经网络拟合XOR<ul>
+<li>考虑调用ReLU</li>
+<li>$x\to U \to h\to w\to \hat{y}$</li>
+<li>也即$f(x;U,c,w,b)&#x3D;w^T\max{0,U^Tx+c}+b$</li>
+<li>$\max{0,U^Tx+c}$此为ReLU层（注意前一个0是零向量，max逐元素取）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Shallow-Neural-Networks"><a href="#Shallow-Neural-Networks" class="headerlink" title="Shallow Neural Networks"></a>Shallow Neural Networks</h3><h3 id="Training-Neural-Networks"><a href="#Training-Neural-Networks" class="headerlink" title="Training Neural Networks"></a>Training Neural Networks</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数理方程特殊函数部分以及其他</title>
-    <url>/2023/06/14/shu-li-fang-cheng/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>级数解</p>
-<ul>
-<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
-<li>回到原式中带入级数解进行计算</li>
-</ul>
-<p>坐标系</p>
-<ul>
-<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
-<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
-<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
-</ul>
-<p>Bessel方程</p>
-<ul>
-<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
-<li>解记作$J_{\pm v(x)}$</li>
-<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
-<li><del>第三类柱函数</del></li>
-<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
-<li>基本递推关系</li>
-</ul>
-<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
-<ul>
-<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
-</ul>
-<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
-<ul>
-<li><p>特征为$l(l+1)$</p>
-</li>
-<li><p>解为$ j_l, n_l$</p>
-</li>
-</ul>
-<p>渐进行为</p>
-<ul>
-<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
-<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
-<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
-<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
-<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
-<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
-</ul>
-<p>Legendre方程和连带Legendre方程的形式</p>
-<ul>
-<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
-</li>
-<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
-</ul>
-</li>
-<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
-<ul>
-<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
-<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
-</ul>
-</li>
-<li><p>Legendre多项式的生成函数</p>
-<ul>
-<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
-<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
-</ul>
-</li>
-<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
-</li>
-<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
-</li>
-</ul>
-</li>
-<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
-<ul>
-<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
-<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
-<li>球谐函数的模长<ul>
-<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><del>递推公式、连带Legendre函数模方</del></p>
-</li>
-</ul>
-<p>傅里叶变换和逆变换形式</p>
-<p> Laplace变换和逆变换形式</p>
-<p>傅里叶变换的卷积公式</p>
-<p>Laplace变换的卷积公式</p>
-<p>方程标准型特征方程</p>
-<ul>
-<li><p>特征方程法</p>
-<ul>
-<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
-</li>
-<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
-</li>
-<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
-</li>
-<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
-</li>
-<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
-</li>
-<li><p>利用变换系数公式求解方程各项系数</p>
-</li>
-</ul>
-</li>
-<li><p>配方法</p>
-<ul>
-<li><del>变系数配方法</del></li>
-<li>常系数配方法，将二次项配方后，换元即可</li>
-</ul>
-</li>
-</ul>
-<p>格林函数</p>
-<ul>
-<li>电像法</li>
-<li>本征函数展开法<ul>
-<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
-<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
-</ul>
-</li>
-<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>时光</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
-<span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -1181,298 +1688,194 @@
       </tags>
   </entry>
   <entry>
-    <title>材料分析与表征 9.18</title>
-    <url>/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/</url>
+    <title>Hexo git问题</title>
+    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>现代生物学导论</title>
+    <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
     <content><![CDATA[<span id="more"></span>
-<ul>
-<li>课程详细信息<ul>
-<li>期末考试70%、课程展示20%、考勤作业10%</li>
+<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><h3 id="生物系统的弱化学作用"><a href="#生物系统的弱化学作用" class="headerlink" title="生物系统的弱化学作用"></a>生物系统的弱化学作用</h3><ul>
+<li>强弱化学作用<ul>
+<li>强化学作用<ul>
+<li>生理温度下稳定</li>
+<li>包括所有的化学键</li>
+</ul>
+</li>
+<li>弱化学作用<ul>
+<li>生物体内不断生成和断裂</li>
 </ul>
 </li>
 </ul>
-<h3 id="X射线衍射技术-X-Ray-Diffraction"><a href="#X射线衍射技术-X-Ray-Diffraction" class="headerlink" title="X射线衍射技术(X-Ray Diffraction)"></a>X射线衍射技术(X-Ray Diffraction)</h3><ul>
-<li>X光的发现 1895.11.8 伦琴</li>
-<li>肉眼不可见、使铂氯化钡发光、使照相底板感光、气体电离、杀伤生物细胞</li>
+</li>
 </ul>
-<h3 id="微观结构的研究方法"><a href="#微观结构的研究方法" class="headerlink" title="微观结构的研究方法"></a>微观结构的研究方法</h3><ul>
-<li>仪器极限分辨率 $\lambda$&#x2F;2 （远场光学）</li>
+<h3 id="DNA的结构和功能"><a href="#DNA的结构和功能" class="headerlink" title="DNA的结构和功能"></a>DNA的结构和功能</h3><ul>
+<li>DNA的化学组成<ul>
+<li>磷酸、五碳糖、含氮碱基</li>
 </ul>
-<h3 id="X光的本质"><a href="#X光的本质" class="headerlink" title="X光的本质"></a>X光的本质</h3><ul>
-<li>波长介于紫外线和 $\gamma$ 射线之间，约为0.01~100埃</li>
-<li>长波长——软X射线 短波长——硬X射线</li>
+</li>
+<li>DNA的功能<ul>
+<li>多样性、存储遗传信息、可复制、稳定</li>
 </ul>
-<h3 id="X射线的应用与发展"><a href="#X射线的应用与发展" class="headerlink" title="X射线的应用与发展"></a>X射线的应用与发展</h3><h3 id="X射线的性质"><a href="#X射线的性质" class="headerlink" title="X射线的性质"></a>X射线的性质</h3><h3 id="X射线的产生"><a href="#X射线的产生" class="headerlink" title="X射线的产生"></a>X射线的产生</h3><ul>
-<li>高速运动的带电粒子的运动遇到障碍被减速时便产生X射线</li>
-<li>从X射线管角度理解<ul>
-<li>对绕成螺旋型的钨丝通电加热至白热，放出热辐射电子</li>
-<li>电子在数万伏管内高压电场的作用下轰击靶材产生X射线</li>
+</li>
+<li>DNA的一级结构（存储遗传信息）<ul>
+<li>多聚核苷酸单链</li>
+<li>一级结构的应用<ul>
+<li>寻找生物间演化关系<ul>
+<li>人类（23对）、黑猩猩（及后均为24对）、大猩猩、红毛猩猩</li>
+<li>假说：人类染色体在演化过程中发生了融合<ul>
+<li>可能更长</li>
+<li>可能含有不止一处着丝粒、端粒</li>
+<li>比较序列等</li>
+<li>……</li>
 </ul>
 </li>
 </ul>
-<h3 id="X射线谱"><a href="#X射线谱" class="headerlink" title="X射线谱"></a>X射线谱</h3><ul>
-<li>连续X射线谱，有公式$eV &#x3D; h\nu <em>{max}&#x3D;\frac{hc}{\lambda</em>{0}}$ </li>
-<li>经验规律，连续谱中强度最大处的波长记为$\lambda_{m}$ 则一般有$\lambda_{m}&#x3D;1.5\lambda_{0}$</li>
-<li>电流决定了热辐射电子的多少，电压决定了热辐射电子的强度</li>
-</ul>
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><ul>
-<li>已知$Cu-K_a$线波长，计算铜原子$2p$和$1s$能级间的能量差<ul>
-<li>解题方法，首先明确从$2p$到$1s$属于从$L$层跃迁到$K$层，也即$K_a$线</li>
-<li>故直接利用波长与能量关系计算</li>
+</li>
+<li>DNA指纹鉴定</li>
 </ul>
 </li>
 </ul>
-<h3 id="X射线与物质的相互作用"><a href="#X射线与物质的相互作用" class="headerlink" title="X射线与物质的相互作用"></a>X射线与物质的相互作用</h3><h3 id="X射线衰减规律"><a href="#X射线衰减规律" class="headerlink" title="X射线衰减规律"></a>X射线衰减规律</h3><ul>
-<li>吸收的不连续性</li>
-<li>吸收限的利用<ul>
-<li>靶材（Target Material）：</li>
-<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，与原子相互作用，产生X射线辐射。我们要尽量选择波长略长于试样吸收限的靶材，这样不会有K系荧光辐射，同时也不会被试样吸收太多。</li>
-<li>滤片（Filter）：</li>
-<li>滤片是放置在X射线束路径上的材料，通常由金属或其他适当的材料制成。滤片的主要作用是改变或调整X射线的能量谱。通过选择不同材料的滤片，可以过滤掉低能量的X射线，使得只有特定能量范围内的X射线通过</li>
-<li>试样（Sample）：</li>
-<li>试样是要进行X光实验的物质或样品。当X射线穿过试样时，它会与试样中的原子相互作用，产生一系列特定能量的X射线散射或吸收。通过分析这些散射或吸收事件，可以获得有关试样的信息，例如其成分、结构或厚度等</li>
+</li>
+<li>DNA的二级结构</li>
+<li>DNA的三级结构</li>
+</ul>
+<h3 id="蛋白质的结构与功能"><a href="#蛋白质的结构与功能" class="headerlink" title="蛋白质的结构与功能"></a>蛋白质的结构与功能</h3><ul>
+<li>蛋白质的四级结构</li>
+<li>蛋白质功能</li>
+<li>蛋白质折叠</li>
+<li>分子伴侣蛋白<ul>
+<li>hsp60工作机制</li>
+</ul>
+</li>
+<li>蛋白质折叠与疾病</li>
+<li>结构与功能的关系<ul>
+<li>例如：DNA聚合酶</li>
 </ul>
 </li>
 </ul>
-<h3 id="X光的探测与防护"><a href="#X光的探测与防护" class="headerlink" title="X光的探测与防护"></a>X光的探测与防护</h3><h2 id="晶体学基础"><a href="#晶体学基础" class="headerlink" title="晶体学基础"></a>晶体学基础</h2><h3 id="晶体结构"><a href="#晶体结构" class="headerlink" title="晶体结构"></a>晶体结构</h3><ul>
-<li><p>赤平极射投影</p>
-<ul>
-<li>方位角 $\phi$包含该点的子午面与$0°$子午面的夹角</li>
-<li>极距角 $\rho$该点与北极点的夹角</li>
-<li>赤平投影图上点距离圆心的距离与方位角有关，基圆与极距角有关<br>  重点（吴氏网、标准点阵、倒易点阵）</li>
+<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
+<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
+<li>旁分泌信号</li>
+<li>内分泌信号</li>
 </ul>
-</li>
-<li><p>吴氏网</p>
-<ul>
-<li>吴氏网只能水平上走格子，如果想在竖直上走格子，需要旋转吴氏网，然后再所有的点一起水平上走格子<br> 对于任意可微的对称性，一定存在一个相应的守恒流</li>
-</ul>
-</li>
-<li><p>倒易点阵</p>
-<ul>
-<li><p>对于一个给定基矢的正点阵，必有倒易点阵与之相对应，关系为<br>$$a^{*}&#x3D;\frac{b×c}{v}$$<br>此处$v$为正点阵的体积	</p>
-</li>
-<li><p>有关正点阵和倒易点阵，相关的符号标识如下</p>
-<ul>
-<li>晶面指数$(hkl),(uvw)^{*}$</li>
-<li>晶向指数$[uvw],[hkl]^{*}$</li>
-<li>面间距$d_{hkl},d_{uvw}^{*}$</li>
-<li>晶向或阵矢$r&#x3D;ua+vb+wc,g^{<em>}&#x3D;ha^</em>+kb^*+lc^*$</li>
-<li>晶向长度或阵矢大小$r_{uvw},g_{hkl}$</li>
-<li>结点位置$uvw,hkl$</li>
-</ul>
-</li>
-<li><p>倒易点阵晶向垂直于正点阵同名晶面，反之亦然</p>
-</li>
-<li><p>正点阵的面间距是同名倒易矢量长度的倒数</p>
-<p>$$|g_{hkl}|^2&#x3D; \frac1{d_{hkl}^2}&#x3D;(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\bullet(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\&#x3D; h^2(a^*)^2+k^2(b^*)^2+l^2(c^*)^2\+2kl\boldsymbol{b}^<em>\boldsymbol{c}^</em>\boldsymbol{c}^<em>cos\boldsymbol{a}^</em>+2lh\boldsymbol{c}^<em>\boldsymbol{a}^</em>cos\boldsymbol{\beta}^*+2h\boldsymbol{k}a^<em>\boldsymbol{b}^</em>cos\boldsymbol{\gamma}^* $$</p>
-<ul>
-<li>立方晶系<ul>
-<li>$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</li>
+<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
+<li>信号接受<ul>
+<li>信号分子</li>
+<li>受体<ul>
+<li>细胞表面受体<ul>
+<li>G蛋白耦合受体</li>
+<li>受体络氨酸激酶</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-<h3 id="阶段作业"><a href="#阶段作业" class="headerlink" title="阶段作业"></a>阶段作业</h3><ul>
-<li>P81-82 T 15 16 22 24</li>
-</ul>
-<h2 id="X射线与材料的散射、干涉与衍射"><a href="#X射线与材料的散射、干涉与衍射" class="headerlink" title="X射线与材料的散射、干涉与衍射"></a>X射线与材料的散射、干涉与衍射</h2><h3 id="散射"><a href="#散射" class="headerlink" title="散射"></a>散射</h3><ul>
-<li><p>电子的散射，静电相互作用等</p>
-</li>
-<li><p>X射线的散射，与物质的基本单元发生作用</p>
-</li>
-<li><p>单电子对X射线的散射</p>
-<ul>
-<li>相干散射<ul>
-<li>相干散射是衍射的基础，从波动性的角度出发，X射线是电磁波，其照射在自由电子上时，交变电场就会强迫电子作频率相同的振动，发射X射线。电子发出的X射线为散射线，与入射线波长相同、相位滞后恒定，故可以发生干涉。</li>
-<li>平面偏振光相干散射</li>
-<li>非平面偏振光相干散射<ul>
-<li>原子中只需要考虑电子散射</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>非相干散射</li>
-</ul>
-</li>
-<li><p>散射线的干涉</p>
-<ul>
-<li>相位差与反射矢量<ul>
-<li>相位差满足$$\phi &#x3D; 2\pi \frac{-S_{0}·r+S·r }{\lambda}$$其中$S_0$为入射线上的单位矢量，$S$为反射线上的单位矢量</li>
-<li>记 $s&#x3D;\frac{S-S_0}{\lambda}\quad s$为散射矢量，其大小为$\frac{2sin\theta}{\lambda}$，引入散射矢量后，上式可化作$\phi &#x3D;2\pi s·r$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>原子对X射线的散射</p>
-<ul>
-<li>单电子原子的散射<ul>
-<li>原子中一个电子的散射因子$$f(s) &#x3D; \int_v \rho(r)e^{i2\pi s·r}dv$$</li>
-<li>电子的相干强度为$I_{相干}&#x3D;f^{2}(s)I_{电子}$</li>
-</ul>
-</li>
-<li>多电子原子的散射<ul>
-<li>假设原子的总电荷密度为各个电子电荷密度之和</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>晶胞的散射</p>
-</li>
-<li><p>小晶体的衍射</p>
-<ul>
-<li><p>小晶体的衍射强度</p>
-<ul>
-<li><p>小晶体的衍射线振幅</p>
-<p>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}F\left(s\right)\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}_{mnp}}<br>$$</p>
-<p>因其中的结构因子与晶胞的位置无关, 从而有<br>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;F\left(s\right)\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}<em>{mnp}}<br>$$<br>于是, 晶体的衍射线强度为<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{m p p}}\right|^2 I</em>{\text {电子 }}<br>$$<br>定义<br>$$<br>L(s) \equiv\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{\operatorname{mmp}}}\right|^2<br>$$<br>由于它表示的是晶体散射线的干涉结果, 故称为晶体的干涉函数, 或劳厄函数, 衍射线强度可以简写成<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2 L(s) I_{\text {电子 }}<br>$$</p>
-</li>
+<li>信号转导<ul>
+<li>磷酸化级联</li>
+<li>第二信使<ul>
+<li>非蛋白类小分子</li>
+<li>cAMP环腺苷酸</li>
+<li>cGMP环鸟苷酸</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="衍射线的强度分析"><a href="#衍射线的强度分析" class="headerlink" title="衍射线的强度分析"></a>衍射线的强度分析</h2><h2 id="多晶体衍射信息的获取方法"><a href="#多晶体衍射信息的获取方法" class="headerlink" title="多晶体衍射信息的获取方法"></a>多晶体衍射信息的获取方法</h2><h3 id="德拜法"><a href="#德拜法" class="headerlink" title="德拜法"></a>德拜法</h3><ul>
-<li>德拜照片的计算与标定<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png" alt="image-20231009103514509" style="zoom:50%;" />
+<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
+<li>周期素和蛋白激酶</li>
+<li>生长因子</li>
+</ul>
+<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
+<li>凋亡过程<ul>
+<li>细胞收缩、染色体凝结</li>
+<li>膜起泡</li>
+<li>细胞核塌陷</li>
+<li>凋亡体形成</li>
+<li>凋亡小体裂解</li>
+</ul>
 </li>
-<li><p>圆弧之间的对应的顶角为4$\theta$</p>
-</li>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png" alt="image-20231009104249654" style="zoom:50%;" />
-</li>
-<li><p>此处采用的角度标准为（deg）</p>
-</li>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png" alt="image-20231009104341784" style="zoom:50%;" />
-</li>
-<li><p>考虑布拉格公式$d&#x3D;\frac{\lambda}{2sin\theta}$和晶面间距计算公式$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</p>
-</li>
-<li><p>得$$\sin^2\theta&#x3D;\frac{\lambda^2}{4a^2}(h^2+k^2+l^2)$$</p>
-</li>
-<li><p>令$\frac{\lambda^{2}}{4a^2}&#x3D;K$并设$m$为干涉指数的平方和，即$$m&#x3D;h^2+k^2+l^2$$于是$sin^2\theta &#x3D; Km$</p>
-</li>
-<li><p>计算出$K$和每条德拜线的$sin^2\theta$并计算出对应的m值（$m$均为正整数）然后依据衍射线条在晶系中的出现顺序判断</p>
-</li>
+<li>三种信号通路<ul>
+<li>线粒体通路</li>
+<li>死亡受体通路</li>
+<li>内质网通路</li>
 </ul>
 </li>
 </ul>
-<h3 id="衍射仪法"><a href="#衍射仪法" class="headerlink" title="衍射仪法"></a>衍射仪法</h3><h3 id="衍射材料的获得"><a href="#衍射材料的获得" class="headerlink" title="衍射材料的获得"></a>衍射材料的获得</h3><h4 id="试样制备要求"><a href="#试样制备要求" class="headerlink" title="试样制备要求"></a>试样制备要求</h4><ul>
-<li>晶粒大小</li>
-<li>试样大小厚度和质量</li>
-<li>避免产生择优取向</li>
-</ul>
-<h4 id="衍射全图的获得"><a href="#衍射全图的获得" class="headerlink" title="衍射全图的获得"></a>衍射全图的获得</h4><h4 id="单峰测试"><a href="#单峰测试" class="headerlink" title="单峰测试"></a>单峰测试</h4><h4 id="衍射信息的获取"><a href="#衍射信息的获取" class="headerlink" title="衍射信息的获取"></a>衍射信息的获取</h4><h4 id="衍射线的线形分析"><a href="#衍射线的线形分析" class="headerlink" title="衍射线的线形分析"></a>衍射线的线形分析</h4><h2 id="单晶体衍射信息的获取方法"><a href="#单晶体衍射信息的获取方法" class="headerlink" title="单晶体衍射信息的获取方法"></a>单晶体衍射信息的获取方法</h2><h3 id="劳埃法"><a href="#劳埃法" class="headerlink" title="劳埃法"></a>劳埃法</h3><ul>
-<li>特征：使用连续的X射线谱照射固定不动的单晶体</li>
-</ul>
-<h2 id="X射线衍射的应用"><a href="#X射线衍射的应用" class="headerlink" title="X射线衍射的应用"></a>X射线衍射的应用</h2><h3 id="物相分析"><a href="#物相分析" class="headerlink" title="物相分析"></a>物相分析</h3><h4 id="定性相分析"><a href="#定性相分析" class="headerlink" title="定性相分析"></a>定性相分析</h4><h4 id="定量相分析"><a href="#定量相分析" class="headerlink" title="定量相分析"></a>定量相分析</h4><ul>
-<li><p>PDF卡片</p>
-</li>
-<li><p>基础：物质的衍射强度与物质参与衍射的体积成正比<br>$$<br>I&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_0^2}\left(\frac{e^2}{m c^2}\right)^2 \frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P V \mathrm{e}^{-2 M} A(\theta)<br>$$</p>
-<ul>
-<li>对于粉末衍射仪法，$A(\theta)&#x3D;1&#x2F;2\mu$</li>
+<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
+<li>自噬过程<ul>
+<li>自噬泡形成</li>
+<li>自噬体形成</li>
+<li>自噬体和溶酶体融合</li>
+<li>自噬溶酶体形成</li>
+<li>降解和再吸收</li>
 </ul>
 </li>
-<li><p>举例来说，两相体系下<br>$$<br>\begin{aligned}<br>&amp; I_\alpha&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\alpha^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\alpha \frac{V_\alpha}{2 \mu} \<br>&amp; I_\beta&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\beta^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\beta \frac{V_\beta}{2 \mu}<br>\end{aligned}<br>$$</p>
-<ul>
-<li>$\mu$ 是混合物的线吸收系数</li>
-<li>前面的部分二者都相同，所以只和$V$有关系</li>
-<li>$\mu ^*$是质量吸收系数，为$\mu &#x2F; \rho$</li>
-<li>不管什么方法，$\alpha$相衍射强度 $I_{\alpha}&#x3D;K\frac{C_{\alpha}}{\mu}$</li>
+<li>细胞自噬与疾病</li>
+</ul>
+<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
+<li>无膜细胞器</li>
+</ul>
+<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
+<li>基因<ul>
+<li>控制性状</li>
 </ul>
 </li>
-<li><p>外标法</p>
-<ul>
-<li>本质上是<br>  $$<br>  I_\alpha&#x3D;K \frac{w_a}{\rho_\alpha \mu^*}<br>  $$</li>
-<li>上式的$\mu ^*$是总质量吸收系数</li>
-<li>而对于纯 $\alpha$ 相的试样, 即标样, 其同指数衍射线的强度应为<br>  $$<br>  I_{\alpha_0}&#x3D;K \frac{1}{\rho_\alpha \mu_a^*}<br>  $$</li>
-<li>从而, 待测试样中 $\alpha$ 相的衍射强度与 $\alpha$ 相标样的衍射强度的比值为</li>
-</ul>
-<p>  $$<br>  \frac{I_a}{I_{\alpha_0}}&#x3D;\frac{\mu_a^*}{\mu^*} w_a<br>  $$</p>
-<ul>
-<li>如果试样仅由 $\alpha 、 \beta$ 两相组成, 则上式可以写成</li>
-</ul>
-<p>  $$<br>  \frac{I_\alpha}{I_{\alpha_0}}&#x3D;\frac{w_\alpha \mu_\alpha^*}{w_\alpha\left(\mu_\alpha^*-\mu_\beta^<em>\right)+\mu_\beta^</em>}<br>  $$</p>
-<ul>
-<li>实际使用时，首先要知道是什么和什么的混合，找到工作曲线，之后通过两次实验测定$\frac{I_\alpha}{I_{\alpha_0}}$，在工作表上对应找即知道物质百分比</li>
+<li>基因的构成<ul>
+<li>调控区域<ul>
+<li>指导基因是否能够产生蛋白</li>
 </ul>
 </li>
-<li><p>内标法</p>
-<ul>
-<li>内标法首先向试样中加入标准物，然后让待测相与标准相进行比较，相当于通过加入标准相的方法，知道了$\omega _{s}$ </li>
-<li>待测相衍射线强度与标准相衍射线强度之比可以表述为</li>
-<li>$$\frac{I^{‘}<em>{a}}{I</em>{s}}&#x3D;K\frac{\omega^{‘}<em>{a}}{\omega</em>{s}}$$</li>
-<li>设法得到$K$值即可</li>
+<li>启动子<ul>
+<li>和转录酶结合的序列</li>
 </ul>
 </li>
+<li>编码区域</li>
+<li>断裂基因<ul>
+<li>细菌基因：连续</li>
+<li>动物基因：断裂</li>
 </ul>
-<h4 id="精确测定点阵常数"><a href="#精确测定点阵常数" class="headerlink" title="精确测定点阵常数"></a>精确测定点阵常数</h4><h2 id="宏观应力分析"><a href="#宏观应力分析" class="headerlink" title="宏观应力分析"></a>宏观应力分析</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h3><p>只要有应力存在就会有应变，，也即晶面间距的变化。X光可以很好地测面间距的变化，所以可以用来测应力。</p>
-<h4 id="应力应变关系"><a href="#应力应变关系" class="headerlink" title="应力应变关系"></a>应力应变关系</h4><ul>
-<li><p>考虑受轴向拉力$F_x$的截面为A的棒</p>
-<ul>
-<li>胡克定律指出$\epsilon_x &#x3D; \frac{\sigma_x}{E}$</li>
-<li>轴向拉伸，垂直于轴的面也会发生形变</li>
-<li>$$-\epsilon_y &#x3D; -\epsilon_z &#x3D; \nu \epsilon_x &#x3D; \frac{\nu \sigma_x}{E}$$<ul>
-<li>其中$\nu$是泊松比</li>
+</li>
+<li>原核基因</li>
+<li>真核基因<ul>
+<li>产生蛋白质的序列<ul>
+<li>内含子&amp;外显子</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>考虑微变形情况下，主应力和主应变的广义胡克定律为</p>
-<ul>
-<li>$\epsilon_1 &#x3D; \frac{1}{E}[\sigma_1 - \nu(\sigma_2+\sigma_3)]$<ul>
-<li>（$cyc$）</li>
+</ul>
+</li>
+<li>染色质与染色体<ul>
+<li>从DNA到染色质</li>
+</ul>
+</li>
+<li>遗传物质保证稳定机制<ul>
+<li>DNA精确复制<ul>
+<li>碱基配对</li>
+<li>DNA聚合酶的校正</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>任意一个方向（注意应力是一个张量）</p>
-<p>$$ \left{\begin{array}{l}<br>\sigma_{\phi \psi}&#x3D;\alpha_1^2 \sigma_1+\alpha_2^2 \sigma_2+\alpha_3^2 \sigma_3 \<br>\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3<br>\end{array}\right.$$</p>
-</li>
-<li><p>其中$$\begin{aligned}<br>&amp; \alpha_1&#x3D;\sin \psi \cos \phi \<br>&amp; \alpha_2&#x3D;\sin \psi \sin \phi \<br>&amp; \alpha_3&#x3D;\cos \psi<br>\end{aligned} $$</p>
-</li>
-<li><p>广义胡克定律<br>$$\left{\begin{array}{l}\varepsilon_1&#x3D;\frac{1}{E}\left[\sigma_1-\nu\left(\sigma_2+\sigma_3\right)\right] \ \varepsilon_2&#x3D;\frac{1}{E}\left[\sigma_2-\nu\left(\sigma_1+\sigma_3\right)\right] \ \varepsilon_3&#x3D;\frac{1}{E}\left[\sigma_3-\nu\left(\sigma_1+\sigma_2\right)\right]\end{array}\right.$$</p>
-</li>
 </ul>
-<h4 id="X射线衍射方法测定应力的原理"><a href="#X射线衍射方法测定应力的原理" class="headerlink" title="X射线衍射方法测定应力的原理"></a>X射线衍射方法测定应力的原理</h4><p>对于一般的金属材料，X射线的穿透能力很低，所以仅能测定表面层的应力。又垂直于表面层的应力的总和为0.也即$\sigma_3 &#x3D; 0$</p>
-<ul>
-<li><p>广义胡克定律在此前提下简化为：</p>
-</li>
-<li><p>$$<br>\left{\begin{array}{l}<br>\varepsilon_1&#x3D;\frac{1}{E}\left(\sigma_1-\nu \sigma_2\right) \<br>\varepsilon_2&#x3D;\frac{1}{E}\left(\sigma_2-\nu \sigma_1\right) \<br>\varepsilon_3&#x3D;-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>\end{array}\right.<br>$$</p>
-</li>
-<li><p>带入$\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3$化简即得到：</p>
-</li>
-<li><p>$$<br>\varepsilon_{\phi \psi}&#x3D;\frac{1+\nu}{E} \sigma_\phi \sin ^2 \psi-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>$$</p>
-<ul>
-<li>注意$\sigma_\phi &#x3D; cos^2\phi \sigma_1 +sin^2 \phi \sigma_2$</li>
+<h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
+<li>多个遗传密码对应同一个氨基酸</li>
 </ul>
-<p>将上式对 $\sin ^2 \psi$ 求导, 就可以解出表面上任一方向上的应力 $\sigma_\phi$, 有：<br>$$<br>\sigma_\phi&#x3D;\frac{E}{1+\nu} \frac{\partial \varepsilon_{\phi \psi}}{\partial \sin ^2 \psi}<br>$$</p>
-</li>
-</ul>
-<h3 id="衍射仪法测定宏观应力"><a href="#衍射仪法测定宏观应力" class="headerlink" title="衍射仪法测定宏观应力"></a>衍射仪法测定宏观应力</h3><h2 id="微晶尺寸和微观应力"><a href="#微晶尺寸和微观应力" class="headerlink" title="微晶尺寸和微观应力"></a>微晶尺寸和微观应力</h2><h3 id="量子力学的不确定性原理"><a href="#量子力学的不确定性原理" class="headerlink" title="量子力学的不确定性原理"></a>量子力学的不确定性原理</h3><ol>
-<li><p><strong>波动性和离散性</strong>：X射线作为电磁波，具有波动性。在量子尺度下，波动性导致了能量和动量的不确定性。这种不确定性在微观尺度上对物质的行为有重要影响。</p>
-</li>
-<li><p><strong>晶体尺寸与不确定性</strong>：在小尺寸晶体中，晶格面的数量减少意味着晶体中可用于衍射的晶格点减少。根据不确定性原理，较少的晶格点导致衍射角度的不确定性增大，从而允许在布拉格角附近的较宽角度范围内发生衍射。</p>
-</li>
-</ol>
-<h3 id="晶格面排列的影响"><a href="#晶格面排列的影响" class="headerlink" title="晶格面排列的影响"></a>晶格面排列的影响</h3><ol>
-<li><p><strong>晶格面间距的变化</strong>：在大晶体中，由于晶格面数量众多，晶格面间距非常均匀，衍射条件非常严格。但在小晶体中，晶格面的间距可能因为晶体边界效应而略有不均匀。</p>
-</li>
-<li><p><strong>衍射角度的变化</strong>：晶格面间距的这种轻微不均匀性可能导致衍射角度略有变化，从而使得衍射不再严格局限于理想的布拉格角。</p>
-</li>
-</ol>
-<h4 id="微晶尺寸的测定"><a href="#微晶尺寸的测定" class="headerlink" title="微晶尺寸的测定"></a>微晶尺寸的测定</h4><h4 id="微观应力的测定"><a href="#微观应力的测定" class="headerlink" title="微观应力的测定"></a>微观应力的测定</h4><h2 id="织构的测定"><a href="#织构的测定" class="headerlink" title="织构的测定"></a>织构的测定</h2><h3 id="织构的分类"><a href="#织构的分类" class="headerlink" title="织构的分类"></a>织构的分类</h3><ul>
-<li>丝织构<ul>
-<li>丝织构的晶体学特点是晶粒的某一个或者某几个晶向倾向于平行试样的某一特定方向，一般沿丝轴方向或生长方向</li>
-</ul>
-</li>
-<li>板织构<ul>
-<li>板织构的晶体学特征是各晶粒的某一个或几个晶面平行于试样的某一特定面(如轧面),一个或几个晶向平行于试样的某一特定方向(如轧向)。</li>
-</ul>
-</li>
-</ul>
-<h3 id="织构的表示方法"><a href="#织构的表示方法" class="headerlink" title="织构的表示方法"></a>织构的表示方法</h3><ul>
-<li>正级图</li>
-<li>反级图</li>
+<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
+<li>对环境刺激做出应答</li>
+<li>发育</li>
 </ul>
 ]]></content>
       <categories>
@@ -1483,37 +1886,11 @@
       </tags>
   </entry>
   <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的$f$和$g$进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
-</ul>
-</li>
-<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>量子与统计</title>
     <url>/2023/10/28/liang-zi-yu-tong-ji/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>习题课相关内容[[量子与统计习题课]]</p>
+    <content><![CDATA[<p>习题课相关内容[[量子与统计习题课]]</p>
+<span id="more"></span>
+
 <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><blockquote>
 <p>快速通过</p>
 </blockquote>
@@ -1860,207 +2237,33 @@
 <h1 id="微扰论"><a href="#微扰论" class="headerlink" title="微扰论"></a>微扰论</h1><h3 id="定态微扰论Ⅰ：非简并情形"><a href="#定态微扰论Ⅰ：非简并情形" class="headerlink" title="定态微扰论Ⅰ：非简并情形"></a>定态微扰论Ⅰ：非简并情形</h3><ul>
 <li>一级微扰公式<ul>
 <li>$\hat{H}\psi_n&#x3D;E_n\psi_n$中，$\hat{H}$较为复杂无法精确求解时</li>
-<li>如果$\hat{H}$可以表达为$\hat{H_0}+\hat{H}’$（其中$\hat{H}’$是小的修正）<ul>
-<li>$E_n&#x3D;E_n^{(0)}+E_n^{(1)}+E_n^{(2)}+\cdots$</li>
-<li>$\psi_n&#x3D;\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}+\cdots$</li>
+<li>如果$\hat{H}$可以表达为$\hat{H_0}+\hat{H}’$（其中$\hat{H_0}$可解$\hat{H}’$是小的修正）<ul>
+<li>考虑将$E_n$和$\psi_n$展开为$\lambda$的幂级数，并把$\hat{H}’$写作$\lambda \hat{H}^{(1)}$</li>
+<li>$E_n&#x3D;E_n^{(0)}+\lambda E_n^{(1)}+\lambda^2E_n^{(2)}+\cdots$</li>
+<li>$\psi_n&#x3D;\psi_n^{(0)}+\lambda \psi_n^{(1)}+\lambda^2\psi_n^{(2)}+\cdots$</li>
 </ul>
 </li>
-<li>$(\hat{H}_0+\hat{H}^{\prime})(\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}+\cdots)&#x3D;(E_n^{(0)}+E_n^{(1)}+E_n^{(2)}+\cdots)(\psi_n^{(0)}+\psi_n^{(1)}+\psi_n^{(2)}+\cdots)$</li>
+<li>$(\hat{H}_0+\lambda \hat{H}^{(1)})(\psi_n^{(0)}+\lambda\psi_n^{(1)}+\lambda^2\psi_n^{(2)}+\cdots)&#x3D;(E_n^{(0)}+\lambda E_n^{(1)}+\lambda^2E_n^{(2)}+\cdots)(\psi_n^{(0)}+\lambda\psi_n^{(1)}+\lambda^2\psi_n^{(2)}+\cdots)$</li>
 </ul>
 </li>
-<li>一级方程:  $(\hat{H}_0-E_n^{(0)})\psi_n^{(1)}&#x3D;-(\hat{H}^{\prime}-E_n^{(1)})\psi_n^{(0)}$<ul>
-<li>约定波函数的高级近似解与零级近似解都正交</li>
-<li>非简并情形下</li>
+<li>一级方程:  $(\hat{H}_0-E_n^{(0)})\psi_n^{(1)}&#x3D;-(\hat{H}^{(1)}-E_n^{(1)})\psi_n^{(0)}$</li>
+<li>约定：波函数的高级近似解与零级近似解都正交</li>
+<li>非简并情形下<ul>
+<li>将一级近似解$\psi_n^{(1)}$用零级解展开为$\Sigma_m a_{nm}^{(1)}\psi_m^{(0)}$ 代入回一级方程，$\hat{H_0}\psi_m$均化简为$E_n\psi_m$</li>
+<li>得到$\sum_ma_{nm}^{(1)}(E_m^{(0)}-E_n^{(0)})\psi_m^{(0)}&#x3D;-(\hat{H^{\prime}}-E_n^{(1)})\psi_n^{(0)}$</li>
+<li>等式两边同时左乘$\psi_k^{(0)*}$，并考虑正交归一性</li>
+<li>得到$a_{nk}^{(1)}(E_k^{(0)}-E_n^{(0)})&#x3D;-\int\psi_k^{(0)*}\hat{H^{\prime}}\psi_n^{(0)}d\tau+E_n^{(1)}\delta_{kn}$</li>
+<li>$k&#x3D;n$时，得一级微扰能<ul>
+<li>$\begin{aligned}E_n^{(1)}&#x3D;\int\psi_n^{(0)*}\hat{H}’\psi_n^{(0)}d\tau&#x3D;H_{nn}’\end{aligned}$</li>
+</ul>
+</li>
+<li>$k\neq n$时，得$a_{nk}^{(1)}$也就是用零级近似解展开的展开系数</li>
 </ul>
 </li>
 <li>例题1 电解质的极化率</li>
 <li>例题2 氦原子以及氦原子的基态能量</li>
 </ul>
-<h3 id="定态微扰论Ⅱ：简并情形"><a href="#定态微扰论Ⅱ：简并情形" class="headerlink" title="定态微扰论Ⅱ：简并情形"></a>定态微扰论Ⅱ：简并情形</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>现代生物学导论</title>
-    <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
-    <content><![CDATA[<span id="more"></span>
-<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><h3 id="生物系统的弱化学作用"><a href="#生物系统的弱化学作用" class="headerlink" title="生物系统的弱化学作用"></a>生物系统的弱化学作用</h3><ul>
-<li>强弱化学作用<ul>
-<li>强化学作用<ul>
-<li>生理温度下稳定</li>
-<li>包括所有的化学键</li>
-</ul>
-</li>
-<li>弱化学作用<ul>
-<li>生物体内不断生成和断裂</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="DNA的结构和功能"><a href="#DNA的结构和功能" class="headerlink" title="DNA的结构和功能"></a>DNA的结构和功能</h3><ul>
-<li>DNA的化学组成<ul>
-<li>磷酸、五碳糖、含氮碱基</li>
-</ul>
-</li>
-<li>DNA的功能<ul>
-<li>多样性、存储遗传信息、可复制、稳定</li>
-</ul>
-</li>
-<li>DNA的一级结构（存储遗传信息）<ul>
-<li>多聚核苷酸单链</li>
-<li>一级结构的应用<ul>
-<li>寻找生物间演化关系<ul>
-<li>人类（23对）、黑猩猩（及后均为24对）、大猩猩、红毛猩猩</li>
-<li>假说：人类染色体在演化过程中发生了融合<ul>
-<li>可能更长</li>
-<li>可能含有不止一处着丝粒、端粒</li>
-<li>比较序列等</li>
-<li>……</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>DNA指纹鉴定</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>DNA的二级结构</li>
-<li>DNA的三级结构</li>
-</ul>
-<h3 id="蛋白质的结构与功能"><a href="#蛋白质的结构与功能" class="headerlink" title="蛋白质的结构与功能"></a>蛋白质的结构与功能</h3><ul>
-<li>蛋白质的四级结构</li>
-<li>蛋白质功能</li>
-<li>蛋白质折叠</li>
-<li>分子伴侣蛋白<ul>
-<li>hsp60工作机制</li>
-</ul>
-</li>
-<li>蛋白质折叠与疾病</li>
-<li>结构与功能的关系<ul>
-<li>例如：DNA聚合酶</li>
-</ul>
-</li>
-</ul>
-<h2 id="细胞和癌"><a href="#细胞和癌" class="headerlink" title="细胞和癌"></a>细胞和癌</h2><h3 id="细胞通信"><a href="#细胞通信" class="headerlink" title="细胞通信"></a>细胞通信</h3><p>（单细胞生物之间存在细胞通讯）</p>
-<h4 id="细胞通讯的种类"><a href="#细胞通讯的种类" class="headerlink" title="细胞通讯的种类"></a>细胞通讯的种类</h4><ul>
-<li>旁分泌信号</li>
-<li>内分泌信号</li>
-</ul>
-<h4 id="细胞通信的过程"><a href="#细胞通信的过程" class="headerlink" title="细胞通信的过程"></a>细胞通信的过程</h4><ul>
-<li>信号接受<ul>
-<li>信号分子</li>
-<li>受体<ul>
-<li>细胞表面受体<ul>
-<li>G蛋白耦合受体</li>
-<li>受体络氨酸激酶</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>信号转导<ul>
-<li>磷酸化级联</li>
-<li>第二信使<ul>
-<li>非蛋白类小分子</li>
-<li>cAMP环腺苷酸</li>
-<li>cGMP环鸟苷酸</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="细胞周期"><a href="#细胞周期" class="headerlink" title="细胞周期"></a>细胞周期</h3><h4 id="调控细胞周期的分子机制"><a href="#调控细胞周期的分子机制" class="headerlink" title="调控细胞周期的分子机制"></a>调控细胞周期的分子机制</h4><ul>
-<li>周期素和蛋白激酶</li>
-<li>生长因子</li>
-</ul>
-<h3 id="细胞凋亡"><a href="#细胞凋亡" class="headerlink" title="细胞凋亡"></a>细胞凋亡</h3><ul>
-<li>凋亡过程<ul>
-<li>细胞收缩、染色体凝结</li>
-<li>膜起泡</li>
-<li>细胞核塌陷</li>
-<li>凋亡体形成</li>
-<li>凋亡小体裂解</li>
-</ul>
-</li>
-<li>三种信号通路<ul>
-<li>线粒体通路</li>
-<li>死亡受体通路</li>
-<li>内质网通路</li>
-</ul>
-</li>
-</ul>
-<h3 id="细胞自噬"><a href="#细胞自噬" class="headerlink" title="细胞自噬"></a>细胞自噬</h3><ul>
-<li>自噬过程<ul>
-<li>自噬泡形成</li>
-<li>自噬体形成</li>
-<li>自噬体和溶酶体融合</li>
-<li>自噬溶酶体形成</li>
-<li>降解和再吸收</li>
-</ul>
-</li>
-<li>细胞自噬与疾病</li>
-</ul>
-<h3 id="液-液相分离"><a href="#液-液相分离" class="headerlink" title="液-液相分离"></a>液-液相分离</h3><ul>
-<li>无膜细胞器</li>
-</ul>
-<h4 id="DNA和基因"><a href="#DNA和基因" class="headerlink" title="DNA和基因"></a>DNA和基因</h4><ul>
-<li>基因<ul>
-<li>控制性状</li>
-</ul>
-</li>
-<li>基因的构成<ul>
-<li>调控区域<ul>
-<li>指导基因是否能够产生蛋白</li>
-</ul>
-</li>
-<li>启动子<ul>
-<li>和转录酶结合的序列</li>
-</ul>
-</li>
-<li>编码区域</li>
-<li>断裂基因<ul>
-<li>细菌基因：连续</li>
-<li>动物基因：断裂</li>
-</ul>
-</li>
-<li>原核基因</li>
-<li>真核基因<ul>
-<li>产生蛋白质的序列<ul>
-<li>内含子&amp;外显子</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>染色质与染色体<ul>
-<li>从DNA到染色质</li>
-</ul>
-</li>
-<li>遗传物质保证稳定机制<ul>
-<li>DNA精确复制<ul>
-<li>碱基配对</li>
-<li>DNA聚合酶的校正</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="遗传密码的特点"><a href="#遗传密码的特点" class="headerlink" title="遗传密码的特点"></a>遗传密码的特点</h3><ul>
-<li>多个遗传密码对应同一个氨基酸</li>
-</ul>
-<h4 id="调控从基因到蛋白质的过程"><a href="#调控从基因到蛋白质的过程" class="headerlink" title="调控从基因到蛋白质的过程"></a>调控从基因到蛋白质的过程</h4><ul>
-<li>对环境刺激做出应答</li>
-<li>发育</li>
-</ul>
-]]></content>
+<h3 id="定态微扰论Ⅱ：简并情形"><a href="#定态微扰论Ⅱ：简并情形" class="headerlink" title="定态微扰论Ⅱ：简并情形"></a>定态微扰论Ⅱ：简并情形</h3><h3 id="量子态随时间的演化"><a href="#量子态随时间的演化" class="headerlink" title="量子态随时间的演化"></a>量子态随时间的演化</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -2239,20 +2442,6 @@
       </categories>
       <tags>
         <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo git问题</title>
-    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
       </tags>
   </entry>
 </search>
