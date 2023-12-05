@@ -20,23 +20,20 @@
     var CONFIG = {"hostname":"sunyrain.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="提示工程整体框架">
+  <meta name="description" content="12-01 数据分析 elixhauser - Elixhauser评分：一个用于评估患者合并症严重程度的医疗评分系统。 re_admission - 重新入院：表示患者是否有重新入院的记录。 died_in_hosp - 在医院内死亡：表示患者是否在医院内死亡。 died_within_48h_of_out_time - 出院后48小时内死亡：表示患者是否在出院后48小时内死亡。 mortali">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Prompt Engineering">
-<meta property="og:url" content="https://sunyrain.github.io/2023/11/26/prompt-engineering-lun-wen-yan-du/index.html">
+<meta property="og:title" content="HealthCare LLM 工作日志">
+<meta property="og:url" content="https://sunyrain.github.io/2023/12/01/healthcare-llm-gong-zuo-ri-zhi/index.html">
 <meta property="og:site_name" content="whilesunny">
-<meta property="og:description" content="提示工程整体框架">
+<meta property="og:description" content="12-01 数据分析 elixhauser - Elixhauser评分：一个用于评估患者合并症严重程度的医疗评分系统。 re_admission - 重新入院：表示患者是否有重新入院的记录。 died_in_hosp - 在医院内死亡：表示患者是否在医院内死亡。 died_within_48h_of_out_time - 出院后48小时内死亡：表示患者是否在出院后48小时内死亡。 mortali">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130155743246.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130160718378.png">
-<meta property="article:published_time" content="2023-11-26T07:49:52.284Z">
-<meta property="article:modified_time" content="2023-11-30T08:16:57.524Z">
+<meta property="article:published_time" content="2023-12-01T02:29:59.618Z">
+<meta property="article:modified_time" content="2023-12-05T05:39:07.287Z">
 <meta property="article:author" content="whilesunny">
-<meta property="article:tag" content="学习">
+<meta property="article:tag" content="HealthCare">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130155743246.png">
 
-<link rel="canonical" href="https://sunyrain.github.io/2023/11/26/prompt-engineering-lun-wen-yan-du/">
+<link rel="canonical" href="https://sunyrain.github.io/2023/12/01/healthcare-llm-gong-zuo-ri-zhi/">
 
 
 <script id="page-configurations">
@@ -49,7 +46,7 @@
   };
 </script>
 
-  <title>Prompt Engineering | whilesunny</title>
+  <title>HealthCare LLM 工作日志 | whilesunny</title>
   
 
 
@@ -200,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/26/prompt-engineering-lun-wen-yan-du/">
+    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/12/01/healthcare-llm-gong-zuo-ri-zhi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -213,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Prompt Engineering
+          HealthCare LLM 工作日志
         </h1>
 
         <div class="post-meta">
@@ -223,14 +220,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-11-26 15:49:52" itemprop="dateCreated datePublished" datetime="2023-11-26T15:49:52+08:00">2023-11-26</time>
+              <time title="创建时间：2023-12-01 10:29:59" itemprop="dateCreated datePublished" datetime="2023-12-01T10:29:59+08:00">2023-12-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-30 16:16:57" itemprop="dateModified" datetime="2023-11-30T16:16:57+08:00">2023-11-30</time>
+                <time title="修改时间：2023-12-05 13:39:07" itemprop="dateModified" datetime="2023-12-05T13:39:07+08:00">2023-12-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -238,7 +235,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">科研</span></a>
                 </span>
             </span>
 
@@ -260,52 +257,116 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="提示工程整体框架"><a href="#提示工程整体框架" class="headerlink" title="提示工程整体框架"></a>提示工程整体框架</h2><span id="more"></span>
-<h4 id="大语言模型设置"><a href="#大语言模型设置" class="headerlink" title="大语言模型设置"></a>大语言模型设置</h4><ul>
-<li>Temperature<ul>
-<li>参数值越小，模型会返回越确定的结果</li>
+        <h3 id="12-01"><a href="#12-01" class="headerlink" title="12-01"></a>12-01</h3><ul>
+<li>数据分析<ul>
+<li><strong>elixhauser</strong> - Elixhauser评分：一个用于评估患者合并症严重程度的医疗评分系统。</li>
+<li><strong>re_admission</strong> - 重新入院：表示患者是否有重新入院的记录。</li>
+<li><strong>died_in_hosp</strong> - 在医院内死亡：表示患者是否在医院内死亡。</li>
+<li><strong>died_within_48h_of_out_time</strong> - 出院后48小时内死亡：表示患者是否在出院后48小时内死亡。</li>
+<li><strong>mortality_90d</strong> - 90天内死亡率：表示患者在90天内死亡的情况。</li>
+<li><strong>delay_end_of_record_and_discharge_or_death</strong> - 记录结束与出院或死亡的延迟：记录和出院或死亡之间的时间差。</li>
+<li><strong>GCS</strong> - 格拉斯哥昏迷评分：评估患者意识水平的评分系统。</li>
 </ul>
 </li>
-<li>Top_p<ul>
-<li>参数值越低，结果越准确。参数高则更具有多样性和创造性</li>
+<li>代码研读<ul>
+<li>可能的数据处理C:\Users\wenjie\Desktop\HealthCareLLM\SimMedEnv-master\SimMedEnv-master\HD4RL\utils\data.py</li>
+<li>利用pandas读入csv，转为ReplayBuffer可以读取的格式，利用\utils\data.py</li>
+<li>继承tianshou policy ,修改</li>
 </ul>
 </li>
+<li>工作总结<ul>
+<li>继承BasePolicy，撰写ChatGPTPolicy<ul>
+<li>具体可参考Policy.py中的相关内容</li>
 </ul>
-<h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><h4 id="提示词要素"><a href="#提示词要素" class="headerlink" title="提示词要素"></a>提示词要素</h4><ul>
-<li>指令</li>
-<li>上下文</li>
-<li>输入数据</li>
-<li>输出指示</li>
-</ul>
-<h4 id="设计提示词的通用技巧"><a href="#设计提示词的通用技巧" class="headerlink" title="设计提示词的通用技巧"></a>设计提示词的通用技巧</h4><ul>
-<li>参考：<a target="_blank" rel="noopener" href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api">https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api</a></li>
-</ul>
-<h4 id="提示词示例"><a href="#提示词示例" class="headerlink" title="提示词示例"></a>提示词示例</h4><h2 id="提示技术"><a href="#提示技术" class="headerlink" title="提示技术"></a>提示技术</h2><h4 id="零样本提示（Zero-Shot）"><a href="#零样本提示（Zero-Shot）" class="headerlink" title="零样本提示（Zero-Shot）"></a>零样本提示（Zero-Shot）</h4><ul>
-<li>不向模型提供任何示例</li>
-</ul>
-<h4 id="少样本提示（Few-Shot）"><a href="#少样本提示（Few-Shot）" class="headerlink" title="少样本提示（Few-Shot）"></a>少样本提示（Few-Shot）</h4><ul>
-<li>向模型提供少量示例<ul>
-<li>一个有趣的事实是，在少量示例中，即使使用随机标签或者不一致的格式，效果也比没有标签好得多</li>
+</li>
+<li>实例化OPE_Wapper</li>
 </ul>
 </li>
 </ul>
-<h4 id="链式思考提示（Chain-of-Thought-Prompting）"><a href="#链式思考提示（Chain-of-Thought-Prompting）" class="headerlink" title="链式思考提示（Chain of Thought Prompting）"></a>链式思考提示（Chain of Thought Prompting）</h4><ul>
-<li>结合Few Shot时，在样本提示中给出中间推理步骤</li>
-<li>作为Zero Shot使用时，使用特殊提示“让我们逐步思考”，提示模型给出中间思维过程</li>
-</ul>
-<h4 id="自我一致性（SELF-CONSISTENCY）"><a href="#自我一致性（SELF-CONSISTENCY）" class="headerlink" title="自我一致性（SELF-CONSISTENCY）"></a>自我一致性（SELF-CONSISTENCY）</h4><ul>
-<li>通过CoT采样多个不同的推理路径</li>
-</ul>
-<h4 id="Generated-Knowledge-Prompting"><a href="#Generated-Knowledge-Prompting" class="headerlink" title="Generated Knowledge Prompting"></a>Generated Knowledge Prompting</h4><ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130155743246.png" alt="image-20231130155743246"></li>
-<li>通过提示，给出问题相关的知识<ul>
-<li>PLM通过（问题-知识）组合构成的提示，依据问题生成相关的知识片段</li>
+<h3 id="12-02"><a href="#12-02" class="headerlink" title="12-02"></a>12-02</h3><ul>
+<li>概念与定义<ul>
+<li>OPE（Off-Policy Evaluation）<ul>
+<li>一个简单的策略，可以是随机策略或者是初步的策略</li>
+<li>简单策略与环境交互得到的经验回放数据集</li>
+<li>一个需要评估的目标策略</li>
 </ul>
 </li>
-<li>模型根据问题和相关知识生成答案</li>
 </ul>
-<h4 id="ToT（Tree-of-Thoughts）"><a href="#ToT（Tree-of-Thoughts）" class="headerlink" title="ToT（Tree of Thoughts）"></a>ToT（Tree of Thoughts）</h4><ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130160718378.png" alt="image-20231130160718378"></li>
+</li>
+<li>踩坑<ul>
+<li>有关类的定义和调用，听听copilot的会很好</li>
+<li>notion的task居然是可以打开的，急急急</li>
+</ul>
+</li>
+<li>知识点<br>在离线策略评估（Off-Policy Evaluation, OPE）的领域中，有多种方法用于评估一个策略的性能</li>
+</ul>
+<ol>
+<li><strong>IS (Importance Sampling)</strong>:<ul>
+<li>重要性采样（IS）是一种通过对历史数据进行重新加权来评估策略的方法。它计算目标策略和行为策略之间的重要性比率（即行为策略生成数据的概率与目标策略生成相同数据的概率之比）。然后，使用这些比率来加权回报，从而估算在目标策略下的期望回报。</li>
+</ul>
+</li>
+<li><strong>FQE (Fitted Q Evaluation)</strong>:<ul>
+<li>FQE 通过适配一种称为 Q 函数的值函数来评估策略。Q 函数估计在给定状态和动作下未来的累积奖励。FQE 通过迭代地适应历史数据来学习这个函数，并使用它来估计目标策略的性能。</li>
+</ul>
+</li>
+<li><strong>WIS (Weighted Importance Sampling)</strong>:<ul>
+<li>加权重要性采样（WIS）是 IS 的一个变体，它通过对每个样本的重要性比率进行归一化来改进普通的 IS。这种方法可以减少方差，并在某些情况下提供更准确的估计。</li>
+</ul>
+</li>
+<li><strong>WIS_bootstrap</strong>:<ul>
+<li>这是 WIS 方法的一种扩展，它使用自举（bootstrap）方法来估计误差和置信区间。通过重采样历史数据并多次应用 WIS，可以获得关于估计值稳定性的更多信息。</li>
+</ul>
+</li>
+<li><strong>WIS_mortality</strong>:<ul>
+<li>这是针对特定应用（如医疗领域中的死亡率预测）调整的 WIS 方法。它可能会在计算重要性比率时考虑特殊的生存或死亡情况，从而使得评估更适合于这类高风险的应用场景。</li>
+</ul>
+</li>
+<li><strong>WIS_truncated</strong>:<ul>
+<li>在这个变体中，重要性比率被截断或限制在某个最大值。这有助于减少由于极端重要性比率引起的高方差问题，特别是在目标策略和行为策略差异很大时。</li>
+</ul>
+</li>
+<li><strong>WIS_bootstrap_truncated</strong>:<ul>
+<li>这是 WIS_truncated 的一种扩展，结合了自举方法和截断技术。通过这种方式，它既能够减少极端重要性比率带来的不稳定性，又能提供关于估计值稳定性的附加信息。</li>
+</ul>
+</li>
+</ol>
+<h3 id="12-03"><a href="#12-03" class="headerlink" title="12-03"></a>12-03</h3><ul>
+<li>总结<ul>
+<li>破防了，这个VS Code的环境管理简直是狗屎</li>
+<li>吐了，子数据集构建，太无语了，太无语了，太无语了</li>
+</ul>
+</li>
+<li>经验与收获<ul>
+<li>有关库代码撰写<ul>
+<li>在一个统一的库中跨文件夹调用时，使用绝对路径，从最高级开始import，提高可复用性</li>
+</ul>
+</li>
+<li>有关sys以及工作路径<ul>
+<li>import sys <ul>
+<li>print(sys.path)可以返回当前代码执行的工作路径</li>
+<li>一般来说希望返回当前执行文件的根目录，这样可以依序寻找到所有所需的文件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>代码相关细节<ul>
+<li>Toy_Buffer构建<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">buffer = load_buffer(<span class="string">&quot;path&quot;</span>)</span><br><span class="line">n = <span class="number">10</span>  <span class="comment"># 患者数量</span></span><br><span class="line">end_indices = np.where(buffer.done == <span class="number">1</span>)[<span class="number">0</span>][:n]</span><br><span class="line">buffer_save_path = <span class="string">&quot;path&quot;</span></span><br><span class="line">all_batch = []</span><br><span class="line">start_index = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> end_index <span class="keyword">in</span> end_indices:</span><br><span class="line">    trajectory = buffer[start_index:end_index + <span class="number">1</span>]</span><br><span class="line">    trajectory = Batch.stack(trajectory)</span><br><span class="line">    all_batch.append(Batch.stack(trajectory))</span><br><span class="line">    start_index = end_index + <span class="number">1</span></span><br><span class="line">all_batch = Batch.cat(all_batch)</span><br><span class="line">replay_buffer = ReplayBuffer(size=<span class="built_in">len</span>(all_batch))</span><br><span class="line">replay_buffer.set_batch(all_batch)</span><br><span class="line">replay_buffer.save_hdf5(buffer_save_path)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="12-05"><a href="#12-05" class="headerlink" title="12-05"></a>12-05</h3><ul>
+<li><p>工作内容</p>
+<ul>
+<li>调整了路径参数等的管理方式，采用config.json管理</li>
+<li>增加了prompt回放功能，初步规范化了文件名、输出等</li>
+</ul>
+</li>
+<li><p>参考代码（config管理）</p>
+</li>
+<li><p>&#96;&#96;&#96;python<br>with open(‘HealthcareLLM\SimMedEnv\config.json’, ‘r’) as config_file:<br>config &#x3D; json.load(config_file)<br>buffer &#x3D; load_buffer(config[“buffer_path”])</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 一般来说，对于.json文件，可以以key-value的形式保存数据</span><br><span class="line"></span><br><span class="line">- 例如</span><br><span class="line"></span><br><span class="line">  - ```python</span><br><span class="line">    &quot;log_folder&quot;: &quot;GPT_Conversation_log&quot;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -316,7 +377,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+              <a href="/tags/HealthCare/" rel="tag"># HealthCare</a>
           </div>
 
         
@@ -325,12 +386,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/" rel="prev" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care">
-      <i class="fa fa-chevron-left"></i> The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care
+    <a href="/2023/11/30/wei-ming-ming/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/11/30/ai-for-materials-lun-wen-yan-du/" rel="next" title="Ai For Materials 论文研读">
-      Ai For Materials 论文研读 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/12/04/music-generation-gong-zuo-ri-zhi/" rel="next" title="Music Generation 工作日志">
+      Music Generation 工作日志 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -389,7 +450,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6"><span class="nav-number">1.</span> <span class="nav-text">提示工程整体框架</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.0.1.</span> <span class="nav-text">大语言模型设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.0.2.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E8%AF%8D%E8%A6%81%E7%B4%A0"><span class="nav-number">1.0.3.</span> <span class="nav-text">提示词要素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E8%AE%A1%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%9A%84%E9%80%9A%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="nav-number">1.0.4.</span> <span class="nav-text">设计提示词的通用技巧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E8%AF%8D%E7%A4%BA%E4%BE%8B"><span class="nav-number">1.0.5.</span> <span class="nav-text">提示词示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E7%A4%BA%E6%8A%80%E6%9C%AF"><span class="nav-number">2.</span> <span class="nav-text">提示技术</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%B6%E6%A0%B7%E6%9C%AC%E6%8F%90%E7%A4%BA%EF%BC%88Zero-Shot%EF%BC%89"><span class="nav-number">2.0.1.</span> <span class="nav-text">零样本提示（Zero-Shot）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%91%E6%A0%B7%E6%9C%AC%E6%8F%90%E7%A4%BA%EF%BC%88Few-Shot%EF%BC%89"><span class="nav-number">2.0.2.</span> <span class="nav-text">少样本提示（Few-Shot）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%93%BE%E5%BC%8F%E6%80%9D%E8%80%83%E6%8F%90%E7%A4%BA%EF%BC%88Chain-of-Thought-Prompting%EF%BC%89"><span class="nav-number">2.0.3.</span> <span class="nav-text">链式思考提示（Chain of Thought Prompting）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%87%AA%E6%88%91%E4%B8%80%E8%87%B4%E6%80%A7%EF%BC%88SELF-CONSISTENCY%EF%BC%89"><span class="nav-number">2.0.4.</span> <span class="nav-text">自我一致性（SELF-CONSISTENCY）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Generated-Knowledge-Prompting"><span class="nav-number">2.0.5.</span> <span class="nav-text">Generated Knowledge Prompting</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ToT%EF%BC%88Tree-of-Thoughts%EF%BC%89"><span class="nav-number">2.0.6.</span> <span class="nav-text">ToT（Tree of Thoughts）</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#12-01"><span class="nav-number">1.</span> <span class="nav-text">12-01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-02"><span class="nav-number">2.</span> <span class="nav-text">12-02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-03"><span class="nav-number">3.</span> <span class="nav-text">12-03</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-05"><span class="nav-number">4.</span> <span class="nav-text">12-05</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -591,6 +652,59 @@ window.addEventListener('pjax:success', () => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
