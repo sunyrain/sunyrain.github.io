@@ -59,11 +59,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/10/25/cosmol-drug-release/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>HealthCare LLM 工作日志</title>
     <url>/2023/12/01/healthcare-llm-gong-zuo-ri-zhi/</url>
     <content><![CDATA[<h3 id="12-01"><a href="#12-01" class="headerlink" title="12-01"></a>12-01</h3><ul>
@@ -304,15 +299,23 @@
 </ul>
 </li>
 <li>关注<ul>
-<li>论文提到了此前的[[Scaling deep learning for materials discovery]]，指出了相比于潜在的稳定无机化合物（$10^{10}$）目前最大的探索($10^{6}到10^{7}$)，也仅仅是很小的一部分<br>在这些限制下，人们对逆向生成产生了兴趣<br>目前的一些其他缺陷</li>
+<li>论文提到了此前的[[Scaling deep learning for materials discovery]]，指出了相比于潜在的稳定无机化合物（$10^{10}$）目前最大的探索($10^{6}到10^{7}$)，也仅仅是很小的一部分<br>在这些限制下，人们对逆向生成产生了兴趣</li>
 </ul>
 </li>
+<li>目前的一些其他缺陷<ul>
 <li>目前方法基于DFT计算，但是DFT给出的稳定结果实际上未必稳定</li>
 <li>目前方法可以处理的元素周期表中的元素有限</li>
 <li>目前方法只能优化少数几种材料性质，主要是形成能<ul>
-<li>虽然形成能是材料稳定性的一个关键指标</li>
+<li>虽然形成能是材料稳定性的一个关键指标，但是要设计特定功能的材料的话，还需要电子、磁性质等等</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>之前的SOTA<ul>
+<li>Crystal diffusion variational autoencoder for periodic material generation</li>
+</ul>
+</li>
+<li>介绍MatterGen</li>
 </ul>
 ]]></content>
       <categories>
@@ -336,11 +339,6 @@
       <categories>
         <category>工作日志</category>
       </categories>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/10/22/langchain-xue-xi-bi-ji/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Prompt Engineering</title>
