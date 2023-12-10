@@ -28,7 +28,7 @@
 <meta property="og:description" content="12-01 数据分析 elixhauser - Elixhauser评分：一个用于评估患者合并症严重程度的医疗评分系统。 re_admission - 重新入院：表示患者是否有重新入院的记录。 died_in_hosp - 在医院内死亡：表示患者是否在医院内死亡。 died_within_48h_of_out_time - 出院后48小时内死亡：表示患者是否在出院后48小时内死亡。 mortali">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-01T02:29:59.618Z">
-<meta property="article:modified_time" content="2023-12-05T05:39:07.287Z">
+<meta property="article:modified_time" content="2023-12-09T05:56:37.039Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="HealthCare">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-12-05 13:39:07" itemprop="dateModified" datetime="2023-12-05T13:39:07+08:00">2023-12-05</time>
+                <time title="修改时间：2023-12-09 13:56:37" itemprop="dateModified" datetime="2023-12-09T13:56:37+08:00">2023-12-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -365,8 +365,79 @@
 </li>
 <li><p>参考代码（config管理）</p>
 </li>
-<li><p>&#96;&#96;&#96;python<br>with open(‘HealthcareLLM\SimMedEnv\config.json’, ‘r’) as config_file:<br>config &#x3D; json.load(config_file)<br>buffer &#x3D; load_buffer(config[“buffer_path”])</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 一般来说，对于.json文件，可以以key-value的形式保存数据</span><br><span class="line"></span><br><span class="line">- 例如</span><br><span class="line"></span><br><span class="line">  - ```python</span><br><span class="line">    &quot;log_folder&quot;: &quot;GPT_Conversation_log&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;HealthcareLLM\SimMedEnv\config.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> config_file:</span><br><span class="line">    config = json.load(config_file)</span><br><span class="line">buffer = load_buffer(config[<span class="string">&quot;buffer_path&quot;</span>])</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>一般来说，对于.json文件，可以以key-value的形式保存数据</p>
+</li>
+<li><p>例如</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;log_folder&quot;</span>: <span class="string">&quot;GPT_Conversation_log&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="12-06"><a href="#12-06" class="headerlink" title="12-06"></a>12-06</h3><ul>
+<li>Code Review<ul>
+<li>Config验证，关键字检查，Config路径输入init 可改<ul>
+<li>最好改为config类</li>
+</ul>
+</li>
+<li>VS code静态检查 PEP8</li>
+<li><strong>init</strong> 增加data loader</li>
+<li>learn就报错</li>
+<li>补充正确Action</li>
+<li>GPT 多轮对话</li>
+<li>typing 包</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a>12-07</h3><ul>
+<li>收获<ul>
+<li>将最新的git代码pull到本地 <ul>
+<li>git pull即可</li>
+</ul>
+</li>
+<li>指向问题出现的位置<ul>
+<li>ctrl+点击</li>
+</ul>
+</li>
+<li>VS Code感觉还是颇为不错的<ul>
+<li>有关VS Code断点+表达式</li>
+<li>所谓表达式也可以理解为变量的表达方式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Python知识<ul>
+<li>&#96;&#96;&#96;*args参数<ul>
+<li>用来处理在函数定义时未被命名的位置函数</li>
+</ul>
+</li>
+<li>&#96;&#96;&#96;**kargs参数<ul>
+<li>用来处理函数定义时，未被命名的多余关键字参数</li>
+</ul>
+</li>
+<li>&#96;&#96;&#96;enumerate<ul>
+<li>其返回包括index在内的tuple</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-09"><a href="#12-09" class="headerlink" title="12-09"></a>12-09</h3><ul>
+<li><p>vscode使用</p>
+<ul>
+<li>有关路径的问题，终于可以说解决的差不多了</li>
+<li>有关自己定义的包，跨文件夹引用从根目录往下就要开始采用点索引法</li>
+</ul>
+</li>
+<li><p>有关git使用</p>
+<ul>
+<li><p>对库进行远程链接</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add &lt;SimMedEnv-repo-URL&gt; &lt;path-to-SimMedEnv&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对于含有子模块的项目</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --recurse-submodules &lt;your-repo-URL&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -450,7 +521,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#12-01"><span class="nav-number">1.</span> <span class="nav-text">12-01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-02"><span class="nav-number">2.</span> <span class="nav-text">12-02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-03"><span class="nav-number">3.</span> <span class="nav-text">12-03</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-05"><span class="nav-number">4.</span> <span class="nav-text">12-05</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#12-01"><span class="nav-number">1.</span> <span class="nav-text">12-01</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-02"><span class="nav-number">2.</span> <span class="nav-text">12-02</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-03"><span class="nav-number">3.</span> <span class="nav-text">12-03</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-05"><span class="nav-number">4.</span> <span class="nav-text">12-05</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-06"><span class="nav-number">5.</span> <span class="nav-text">12-06</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-07"><span class="nav-number">6.</span> <span class="nav-text">12-07</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-09"><span class="nav-number">7.</span> <span class="nav-text">12-09</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -464,7 +535,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">27</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -477,7 +548,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
