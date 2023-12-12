@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Ai For Materials 论文研读</title>
-    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
-    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cheat Engine 告别风灵月影</title>
     <url>/2023/06/10/cheatengine/</url>
     <content><![CDATA[<span id="more"></span>
@@ -25,37 +14,14 @@
       </tags>
   </entry>
   <entry>
-    <title>HealthCare RL 论文研读</title>
-    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
-    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
-<li>精读链接</li>
-<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
-</ul>
-<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
-<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
-<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
-<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
-</ul>
-</li>
-<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
-<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
-</ul>
-</li>
-<li><strong>模型的临床应用和效果</strong>：<ul>
-<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
-</ul>
-</li>
-<li><strong>研究的局限性和未来展望</strong>：<ul>
-<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
-</ul>
-</li>
-</ol>
-]]></content>
+    <title>Ai For Materials 论文研读</title>
+    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
+    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
       <categories>
         <category>论文研读</category>
       </categories>
       <tags>
-        <tag>HealthCare</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -156,7 +122,7 @@
 </ul>
 </li>
 <li>代码相关细节<ul>
-<li>Toy_Buffer构建<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">buffer = load_buffer(<span class="string">&quot;path&quot;</span>)</span><br><span class="line">n = <span class="number">10</span>  <span class="comment"># 患者数量</span></span><br><span class="line">end_indices = np.where(buffer.done == <span class="number">1</span>)[<span class="number">0</span>][:n]</span><br><span class="line">buffer_save_path = <span class="string">&quot;path&quot;</span></span><br><span class="line">all_batch = []</span><br><span class="line">start_index = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> end_index <span class="keyword">in</span> end_indices:</span><br><span class="line">    trajectory = buffer[start_index:end_index + <span class="number">1</span>]</span><br><span class="line">    trajectory = Batch.stack(trajectory)</span><br><span class="line">    all_batch.append(Batch.stack(trajectory))</span><br><span class="line">    start_index = end_index + <span class="number">1</span></span><br><span class="line">all_batch = Batch.cat(all_batch)</span><br><span class="line">replay_buffer = ReplayBuffer(size=<span class="built_in">len</span>(all_batch))</span><br><span class="line">replay_buffer.set_batch(all_batch)</span><br><span class="line">replay_buffer.save_hdf5(buffer_save_path)</span><br></pre></td></tr></table></figure></li>
+<li>Toy_Buffer构建<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">buffer = load_buffer(<span class="string">&quot;path&quot;</span>)</span><br><span class="line">n = <span class="number">10</span>  <span class="comment"># 患者数量</span></span><br><span class="line">end_indices = np.where(buffer.done == <span class="number">1</span>)[<span class="number">0</span>][:n]</span><br><span class="line">buffer_save_path = <span class="string">&quot;path&quot;</span></span><br><span class="line">all_batch = []</span><br><span class="line">start_index = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> end_index <span class="keyword">in</span> end_indices:</span><br><span class="line">    trajectory = buffer[start_index:end_index + <span class="number">1</span>]</span><br><span class="line">    trajectory = Batch.stack(trajectory)</span><br><span class="line">    all_batch.append(Batch.stack(trajectory))</span><br><span class="line">    start_index = end_index + <span class="number">1</span></span><br><span class="line">all_batch = Batch.cat(all_batch)</span><br><span class="line">replay_buffer = ReplayBuffer(size=<span class="built_in">len</span>(all_batch))</span><br><span class="line">replay_buffer.set_batch(all_batch)</span><br><span class="line">replay_buffer.save_hdf5(buffer_save_path)</span><br></pre></td></tr></table></figure></div></li>
 </ul>
 </li>
 </ul>
@@ -170,13 +136,13 @@
 <li><p>参考代码（config管理）</p>
 </li>
 </ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;HealthcareLLM\SimMedEnv\config.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> config_file:</span><br><span class="line">    config = json.load(config_file)</span><br><span class="line">buffer = load_buffer(config[<span class="string">&quot;buffer_path&quot;</span>])</span><br></pre></td></tr></table></figure>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;HealthcareLLM\SimMedEnv\config.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> config_file:</span><br><span class="line">    config = json.load(config_file)</span><br><span class="line">buffer = load_buffer(config[<span class="string">&quot;buffer_path&quot;</span>])</span><br></pre></td></tr></table></figure></div>
 
 <ul>
 <li><p>一般来说，对于.json文件，可以以key-value的形式保存数据</p>
 </li>
 <li><p>例如</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;log_folder&quot;</span>: <span class="string">&quot;GPT_Conversation_log&quot;</span></span><br></pre></td></tr></table></figure></li>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;log_folder&quot;</span>: <span class="string">&quot;GPT_Conversation_log&quot;</span></span><br></pre></td></tr></table></figure></div></li>
 </ul>
 <h3 id="12-06"><a href="#12-06" class="headerlink" title="12-06"></a>12-06</h3><ul>
 <li>Code Review<ul>
@@ -236,16 +202,50 @@
 <li><p>有关git使用</p>
 <ul>
 <li><p>对库进行远程链接</p>
-  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git submodule add &lt;SimMedEnv-repo-URL&gt; &lt;path-to-SimMedEnv&gt;</span><br></pre></td></tr></table></figure>
+  <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git submodule add &lt;SimMedEnv-repo-URL&gt; &lt;path-to-SimMedEnv&gt;</span><br></pre></td></tr></table></figure></div>
 </li>
 <li><p>对于含有子模块的项目</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --recurse-submodules &lt;your-repo-URL&gt;</span><br></pre></td></tr></table></figure></li>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --recurse-submodules &lt;your-repo-URL&gt;</span><br></pre></td></tr></table></figure></div></li>
 </ul>
 </li>
 </ul>
 ]]></content>
       <categories>
         <category>科研</category>
+      </categories>
+      <tags>
+        <tag>HealthCare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HealthCare RL 论文研读</title>
+    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
+    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
+<li>精读链接</li>
+<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
+</ul>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
+<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
+<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
+<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
+</ul>
+</li>
+<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
+<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
+</ul>
+</li>
+<li><strong>模型的临床应用和效果</strong>：<ul>
+<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
+</ul>
+</li>
+<li><strong>研究的局限性和未来展望</strong>：<ul>
+<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>论文研读</category>
       </categories>
       <tags>
         <tag>HealthCare</tag>
@@ -331,7 +331,14 @@
     <content><![CDATA[<h3 id="12-04"><a href="#12-04" class="headerlink" title="12-04"></a>12-04</h3><p>复现了代码</p>
 <ul>
 <li>一些知识<ul>
-<li>导入了os库以后，os.listdir(xx_dir)会列出指定目录下所有的文件和文件夹</li>
+<li><p>导入了os库以后，os.listdir(xx_dir)会列出指定目录下所有的文件和文件夹</p>
+</li>
+<li><p>tdqm库，只需作用于可迭代对象，下方就会显示进度条，类似于</p>
+</li>
+<li><pre><code class="python">from tqdm import tqdm
+for i in tqdm(range(10000)):
+</code></pre>
+</li>
 </ul>
 </li>
 </ul>
@@ -361,7 +368,7 @@
 <li>输出指示</li>
 </ul>
 <h4 id="设计提示词的通用技巧"><a href="#设计提示词的通用技巧" class="headerlink" title="设计提示词的通用技巧"></a>设计提示词的通用技巧</h4><ul>
-<li>参考：<a href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api">https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api</a></li>
+<li>参考：<a class="link"   href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api" >https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 <h4 id="提示词示例"><a href="#提示词示例" class="headerlink" title="提示词示例"></a>提示词示例</h4><h2 id="提示技术"><a href="#提示技术" class="headerlink" title="提示技术"></a>提示技术</h2><h4 id="零样本提示（Zero-Shot）"><a href="#零样本提示（Zero-Shot）" class="headerlink" title="零样本提示（Zero-Shot）"></a>零样本提示（Zero-Shot）</h4><ul>
 <li>不向模型提供任何示例</li>
@@ -380,7 +387,12 @@
 <li>通过CoT采样多个不同的推理路径</li>
 </ul>
 <h4 id="Generated-Knowledge-Prompting"><a href="#Generated-Knowledge-Prompting" class="headerlink" title="Generated Knowledge Prompting"></a>Generated Knowledge Prompting</h4><ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130155743246.png" alt="image-20231130155743246"></li>
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130155743246.png"
+                      alt="image-20231130155743246"
+                ></li>
 <li>通过提示，给出问题相关的知识<ul>
 <li>PLM通过（问题-知识）组合构成的提示，依据问题生成相关的知识片段</li>
 </ul>
@@ -388,7 +400,12 @@
 <li>模型根据问题和相关知识生成答案</li>
 </ul>
 <h4 id="ToT（Tree-of-Thoughts）"><a href="#ToT（Tree-of-Thoughts）" class="headerlink" title="ToT（Tree of Thoughts）"></a>ToT（Tree of Thoughts）</h4><ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130160718378.png" alt="image-20231130160718378"></li>
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130160718378.png"
+                      alt="image-20231130160718378"
+                ></li>
 </ul>
 ]]></content>
       <categories>
@@ -396,6 +413,24 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python绘图</title>
+    <url>/2023/11/21/python-hui-tu/</url>
+    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>Figure 是Axes的容器，画布</li>
+<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
+<li>Axis 坐标轴，上面有ticks和labels</li>
+<li>Artist 各种图形元素的统称</li>
+<li>legend 图例</li>
+</ul>
+<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -423,7 +458,12 @@
 </li>
 <li><p>GNoME enables accurate predictions of structures with 5+ unique elements(despite omission from training)</p>
 </li>
-<li><p><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130104356265.png" alt="image-20231130104356265"></p>
+<li><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130104356265.png"
+                      alt="image-20231130104356265"
+                ></p>
 <ul>
 <li><p>两条pipeline 并行工作</p>
 </li>
@@ -460,24 +500,6 @@
       </categories>
       <tags>
         <tag>AI4M</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python绘图</title>
-    <url>/2023/11/21/python-hui-tu/</url>
-    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>Figure 是Axes的容器，画布</li>
-<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
-<li>Axis 坐标轴，上面有ticks和labels</li>
-<li>Artist 各种图形元素的统称</li>
-<li>legend 图例</li>
-</ul>
-<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -526,7 +548,7 @@
     <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
 <span id="more"></span>
 <p>System.Collections.Generic.RandomizedStringEqualityComparer 不是 GenericTypeDefinition。只能对 Type.IsGenericTypeDefinition 为 True。</p>
-<p>解决方法：到<a href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82">http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。</a></p>
+<p>解决方法：到<a class="link"   href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82" >http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -621,7 +643,12 @@
 <li>类似性指导作图，面和它的封闭线框具有相似性</li>
 <li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
 <li>找点的方法之辅助直线<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png"
+                      alt="image-20231108104948928" style="zoom: 33%;" 
+                ></li>
 <li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
 <li>点划线露出4mm</li>
 </ul>
@@ -770,6 +797,75 @@
       </categories>
       <tags>
         <tag>时光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/11/30/wei-ming-ming/</url>
+    <content><![CDATA[<p>让大模型成为RL Agent<br>mimictable_processed.csv<br>icu_stay id 可以视作不同的病人<br>step<br>gender<br>补充空值：阶跃响应<br>数值改为自然语言单位<br>Customized Dataset<br>Input Action Reward<br>转Prompt CoT   四个决策任选<br>时序，后面的Step需要前面的信息，以及前面的决策<br>Few Shot 选择方案<br>大模型会输出确定方案<br>sample wise 距离<br>Tianshou Buffer<br>读代码HD4RL-OPE-utils<br>HD4RL-core base_obj val_OPE 400 继承Tianshou policy 继承，改写forward<br>Metrics </p>
+<ul>
+<li>监督学习，效果不佳，复刻医生决策<ul>
+<li>医生并不optimal</li>
+<li>学不到好的</li>
+<li>监督学习基础下，比较大模型和监督学习</li>
+</ul>
+</li>
+<li>![[Pasted image 20231130173523.png]]</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/12/11/wei-ming-ming-1/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的$f$和$g$进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
+</ul>
+</li>
+<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>one-hot编码向量化及还原</title>
+    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
+    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
+<span id="more"></span>
+
+<ul>
+<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
+  <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
+<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -927,15 +1023,30 @@
 </ul>
 <h2 id="衍射线的强度分析"><a href="#衍射线的强度分析" class="headerlink" title="衍射线的强度分析"></a>衍射线的强度分析</h2><h2 id="多晶体衍射信息的获取方法"><a href="#多晶体衍射信息的获取方法" class="headerlink" title="多晶体衍射信息的获取方法"></a>多晶体衍射信息的获取方法</h2><h3 id="德拜法"><a href="#德拜法" class="headerlink" title="德拜法"></a>德拜法</h3><ul>
 <li>德拜照片的计算与标定<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png" alt="image-20231009103514509" style="zoom:50%;" />
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png"
+                      alt="image-20231009103514509" style="zoom:50%;" 
+                >
 </li>
 <li><p>圆弧之间的对应的顶角为4$\theta$</p>
 </li>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png" alt="image-20231009104249654" style="zoom:50%;" />
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png"
+                      alt="image-20231009104249654" style="zoom:50%;" 
+                >
 </li>
 <li><p>此处采用的角度标准为（deg）</p>
 </li>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png" alt="image-20231009104341784" style="zoom:50%;" />
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png"
+                      alt="image-20231009104341784" style="zoom:50%;" 
+                >
 </li>
 <li><p>考虑布拉格公式$d&#x3D;\frac{\lambda}{2sin\theta}$和晶面间距计算公式$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</p>
 </li>
@@ -1087,7 +1198,12 @@
 </ul>
 </li>
 <li><p>衍射花样与晶体几何关系</p>
-<img src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20231204111558999.png" alt="image-20231204111558999" style="zoom:50%;" />
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20231204111558999.png"
+                      alt="image-20231204111558999" style="zoom:50%;" 
+                >
 
 <ul>
 <li>注：由于满足布拉格定律的角度$\theta$很小，$tan2\theta$,$sin2\theta$均近似为$\theta$</li>
@@ -1115,70 +1231,6 @@
       </categories>
       <tags>
         <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/11/30/wei-ming-ming/</url>
-    <content><![CDATA[<p>让大模型成为RL Agent<br>mimictable_processed.csv<br>icu_stay id 可以视作不同的病人<br>step<br>gender<br>补充空值：阶跃响应<br>数值改为自然语言单位<br>Customized Dataset<br>Input Action Reward<br>转Prompt CoT   四个决策任选<br>时序，后面的Step需要前面的信息，以及前面的决策<br>Few Shot 选择方案<br>大模型会输出确定方案<br>sample wise 距离<br>Tianshou Buffer<br>读代码HD4RL-OPE-utils<br>HD4RL-core base_obj val_OPE 400 继承Tianshou policy 继承，改写forward<br>Metrics </p>
-<ul>
-<li>监督学习，效果不佳，复刻医生决策<ul>
-<li>医生并不optimal</li>
-<li>学不到好的</li>
-<li>监督学习基础下，比较大模型和监督学习</li>
-</ul>
-</li>
-<li>![[Pasted image 20231130173523.png]]</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的$f$和$g$进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
-</ul>
-</li>
-<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>one-hot编码向量化及还原</title>
-    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
-    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
-<span id="more"></span>
-
-<ul>
-<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
-<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -1696,7 +1748,12 @@
 </li>
 <li>XGBoost是GBoosting的一种优化版本</li>
 </ul>
-<h3 id="一种视角"><a href="#一种视角" class="headerlink" title="一种视角"></a>一种视角</h3><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231111145655554.png" alt="image-20231111145655554" style="zoom: 67%;" />
+<h3 id="一种视角"><a href="#一种视角" class="headerlink" title="一种视角"></a>一种视角</h3><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231111145655554.png"
+                      alt="image-20231111145655554" style="zoom: 67%;" 
+                >
 
 <ul>
 <li>我们该如何看待这张图呢？</li>
@@ -1982,7 +2039,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Shallow-Neural-Networks"><a href="#Shallow-Neural-Networks" class="headerlink" title="Shallow Neural Networks"></a>Shallow Neural Networks</h3><h3 id="Training-Neural-Networks"><a href="#Training-Neural-Networks" class="headerlink" title="Training Neural Networks"></a>Training Neural Networks</h3><h3 id="CNN-in-Action"><a href="#CNN-in-Action" class="headerlink" title="CNN in Action"></a>CNN in Action</h3>]]></content>
+<h3 id="Shallow-Neural-Networks"><a href="#Shallow-Neural-Networks" class="headerlink" title="Shallow Neural Networks"></a>Shallow Neural Networks</h3><h3 id="Training-Neural-Networks"><a href="#Training-Neural-Networks" class="headerlink" title="Training Neural Networks"></a>Training Neural Networks</h3><h3 id="CNN-in-Action"><a href="#CNN-in-Action" class="headerlink" title="CNN in Action"></a>CNN in Action</h3><h3 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -2177,15 +2234,188 @@
   <entry>
     <title>Hexo git问题</title>
     <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure></div>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure></div>
 ]]></content>
       <categories>
         <category>Tricks</category>
       </categories>
       <tags>
         <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>量子与统计习题课</title>
+    <url>/2023/11/21/liang-zi-yu-tong-ji-xi-ti-ke/</url>
+    <content><![CDATA[<p>课程内容[[量子与统计]]</p>
+<span id="more"></span>
+<h1 id="第一次习题课"><a href="#第一次习题课" class="headerlink" title="第一次习题课"></a>第一次习题课</h1><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h4><ul>
+<li><p>量子态</p>
+</li>
+<li><p>定态</p>
+</li>
+<li><p>束缚态</p>
+</li>
+<li><p>散射态</p>
+</li>
+<li><p>宇称</p>
+</li>
+<li><p>德布罗意假设</p>
+</li>
+<li><p>隧穿（隧道效应）</p>
+</li>
+</ul>
+<h4 id="原理与假设（书后）"><a href="#原理与假设（书后）" class="headerlink" title="原理与假设（书后）"></a>原理与假设（书后）</h4><ul>
+<li><p>波粒二象性</p>
+</li>
+<li><p>量子力学基本假定*</p>
+</li>
+<li><p>量子态叠加</p>
+</li>
+<li><p>不确定度*</p>
+</li>
+<li><p>互补</p>
+</li>
+<li><p>对应</p>
+</li>
+</ul>
+<h4 id="重点模型"><a href="#重点模型" class="headerlink" title="重点模型"></a>重点模型</h4><ul>
+<li><p>自由粒子模型</p>
+</li>
+<li><p>无限深势阱&#x2F;有限深</p>
+</li>
+<li><p>\delta势模型</p>
+</li>
+<li><p>定点、定轴转动</p>
+</li>
+<li><p>一维二维三维线性谐振子</p>
+</li>
+<li><p>氢原子（能级公式、波函数特征、电流密度及磁矩）</p>
+</li>
+</ul>
+<h4 id="两类问题"><a href="#两类问题" class="headerlink" title="两类问题"></a>两类问题</h4><ul>
+<li><p>束缚态问题</p>
+</li>
+<li><p>散射问题</p>
+</li>
+</ul>
+<h4 id="讨论题"><a href="#讨论题" class="headerlink" title="讨论题"></a>讨论题</h4><h5 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h5><ul>
+<li><p>束缚态与坐标关系的问题</p>
+</li>
+<li><p>力学量完全集、守恒量完全集（是力学量完全集的子集）</p>
+</li>
+</ul>
+<h5 id="本征方程的建立与求解"><a href="#本征方程的建立与求解" class="headerlink" title="本征方程的建立与求解"></a>本征方程的建立与求解</h5><ul>
+<li><p>定轴转动模型</p>
+<ul>
+<li>$\mu$在平面上沿R绕z轴转动，初始时刻粒子波函数为$\Psi(\psi,0)&#x3D;Acos^2\psi$，求解下列问题<ul>
+<li>写出这个系统的哈密顿量算符</li>
+<li>求出粒子的能级和对应的归一化能量本征函数，给出各能级的简并度</li>
+<li>粒子在任意$_{t\geq0}$时刻的波函数以及处于第二能量激发态的概率</li>
+<li>角动量的可能值、相应的概率及平均值，并回答这些值是否受时间影响</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>线性谐振子模型</p>
+<ul>
+<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}的作用 V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x$</li>
+</ul>
+</li>
+<li><p>求束缚态能量本征值和本征函数</p>
+</li>
+<li><p>散射问题</p>
+<ul>
+<li><p>考虑双 \delta 函数势，其中\alpha 和\alpha 都是正的常数</p>
+</li>
+<li><p>$$<br>  V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>  $$</p>
+<ul>
+<li><p>画出这个势</p>
+</li>
+<li><p>若考虑具有能量为E&gt;0的粒子入射该势垒，求透射率</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="算符理论、测量、不确定度关系"><a href="#算符理论、测量、不确定度关系" class="headerlink" title="算符理论、测量、不确定度关系"></a>算符理论、测量、不确定度关系</h5><ul>
+<li><p>一些概念</p>
+<ul>
+<li><p>厄米算符定义、性质、判定及构造</p>
+</li>
+<li><p>算符对易关系的计算</p>
+</li>
+<li><p>平均值的计算</p>
+</li>
+<li><p>对测量的理解和应用</p>
+</li>
+<li><p>对不确定关系的理解及应用</p>
+</li>
+</ul>
+</li>
+<li><p>参考例题</p>
+<ul>
+<li><p>连续测量问题</p>
+<ul>
+<li><p>已知某微观体系的力学量 A有两个归一化本征态 \psi_{1}和 \psi_{2}, 相应的本征值为a_1和a_2.力学量B有两个归一化本征态\phi_{1}和\phi_{2}, 相应的本征值为b_1和b_2.两组本征态有如下关系</p>
+</li>
+<li><p>$\psi_1&#x3D;\frac15(3\phi_1+4\phi_2),\quad\psi_2&#x3D;\frac15(4\phi_1-3\phi_2)$</p>
+</li>
+<li><p>测量可观测量 A, 所得结果为 \alpha_{1} ,那么在测量之后(瞬时)体系处于什么态？</p>
+</li>
+<li><p>如果现在再测量 B,可能的结果是什么？ 它们出现的概率是多少？</p>
+</li>
+<li><p>在恰好测出 B 后，再次测量 A ,那么结果为\alpha_{1}的概率为多少？</p>
+</li>
+</ul>
+</li>
+<li><p>守恒量判定</p>
+<ul>
+<li><p>设某一量子体系的Hamilton量为$\widehat{H}&#x3D;\frac{1}{2m}\widehat{P}+\omega\widehat{ L}_{z}$,其中 m 为质量，\omega 为频率. 分析并给出下列这些力学量中哪些是守恒量？</p>
+</li>
+<li><p>$H,p_x,p_y,p_z,p^2,\hat{L}_x,\hat{L}_y,\hat{L}_z,\hat{L}^2$</p>
+</li>
+</ul>
+</li>
+<li><p>测量假设、不确定性关系</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="矩阵力学及表象理论"><a href="#矩阵力学及表象理论" class="headerlink" title="矩阵力学及表象理论"></a>矩阵力学及表象理论</h5><ul>
+<li><p>重点内容</p>
+<ul>
+<li><p>量子态的矩阵表示</p>
+</li>
+<li><p>力学量的矩阵表示</p>
+</li>
+<li><p>本征方程（矩阵形式）的求解、平均值的计算</p>
+</li>
+</ul>
+</li>
+<li><p>参考例题</p>
+<ul>
+<li><p>表象与矩阵元的求解</p>
+<ul>
+<li><p>设一维粒子Hamilton量为H&#x3D;\frac{p_x^2}{2m}+V(x)</p>
+</li>
+<li><p>分别写出在\hat{x} 和p_x表象中，\hat{x},\hat{P}_x,\hat{H} 的矩阵元.</p>
+</li>
+</ul>
+</li>
+<li><p>设粒子处于下列势阱$V\left(x\right)&#x3D;\begin{cases}\infty,&amp;x&lt;0;\Fx,&amp;x&gt;0,\end{cases}$其中^{F}为常数，求粒子的能量本征函数。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="自旋与角动量理论"><a href="#自旋与角动量理论" class="headerlink" title="自旋与角动量理论"></a>自旋与角动量理论</h5><h3 id="综合练习"><a href="#综合练习" class="headerlink" title="综合练习"></a>综合练习</h3>]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -2678,179 +2908,6 @@
 <li>$\alpha$的物理意义</li>
 </ul>
 ]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>量子与统计习题课</title>
-    <url>/2023/11/21/liang-zi-yu-tong-ji-xi-ti-ke/</url>
-    <content><![CDATA[<p>课程内容[[量子与统计]]</p>
-<span id="more"></span>
-<h1 id="第一次习题课"><a href="#第一次习题课" class="headerlink" title="第一次习题课"></a>第一次习题课</h1><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h4><ul>
-<li><p>量子态</p>
-</li>
-<li><p>定态</p>
-</li>
-<li><p>束缚态</p>
-</li>
-<li><p>散射态</p>
-</li>
-<li><p>宇称</p>
-</li>
-<li><p>德布罗意假设</p>
-</li>
-<li><p>隧穿（隧道效应）</p>
-</li>
-</ul>
-<h4 id="原理与假设（书后）"><a href="#原理与假设（书后）" class="headerlink" title="原理与假设（书后）"></a>原理与假设（书后）</h4><ul>
-<li><p>波粒二象性</p>
-</li>
-<li><p>量子力学基本假定*</p>
-</li>
-<li><p>量子态叠加</p>
-</li>
-<li><p>不确定度*</p>
-</li>
-<li><p>互补</p>
-</li>
-<li><p>对应</p>
-</li>
-</ul>
-<h4 id="重点模型"><a href="#重点模型" class="headerlink" title="重点模型"></a>重点模型</h4><ul>
-<li><p>自由粒子模型</p>
-</li>
-<li><p>无限深势阱&#x2F;有限深</p>
-</li>
-<li><p>\delta势模型</p>
-</li>
-<li><p>定点、定轴转动</p>
-</li>
-<li><p>一维二维三维线性谐振子</p>
-</li>
-<li><p>氢原子（能级公式、波函数特征、电流密度及磁矩）</p>
-</li>
-</ul>
-<h4 id="两类问题"><a href="#两类问题" class="headerlink" title="两类问题"></a>两类问题</h4><ul>
-<li><p>束缚态问题</p>
-</li>
-<li><p>散射问题</p>
-</li>
-</ul>
-<h4 id="讨论题"><a href="#讨论题" class="headerlink" title="讨论题"></a>讨论题</h4><h5 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h5><ul>
-<li><p>束缚态与坐标关系的问题</p>
-</li>
-<li><p>力学量完全集、守恒量完全集（是力学量完全集的子集）</p>
-</li>
-</ul>
-<h5 id="本征方程的建立与求解"><a href="#本征方程的建立与求解" class="headerlink" title="本征方程的建立与求解"></a>本征方程的建立与求解</h5><ul>
-<li><p>定轴转动模型</p>
-<ul>
-<li>$\mu$在平面上沿R绕z轴转动，初始时刻粒子波函数为$\Psi(\psi,0)&#x3D;Acos^2\psi$，求解下列问题<ul>
-<li>写出这个系统的哈密顿量算符</li>
-<li>求出粒子的能级和对应的归一化能量本征函数，给出各能级的简并度</li>
-<li>粒子在任意$_{t\geq0}$时刻的波函数以及处于第二能量激发态的概率</li>
-<li>角动量的可能值、相应的概率及平均值，并回答这些值是否受时间影响</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>线性谐振子模型</p>
-<ul>
-<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}的作用 V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x$</li>
-</ul>
-</li>
-<li><p>求束缚态能量本征值和本征函数</p>
-</li>
-<li><p>散射问题</p>
-<ul>
-<li><p>考虑双 \delta 函数势，其中\alpha 和\alpha 都是正的常数</p>
-</li>
-<li><p>$$<br>  V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>  $$</p>
-<ul>
-<li><p>画出这个势</p>
-</li>
-<li><p>若考虑具有能量为E&gt;0的粒子入射该势垒，求透射率</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="算符理论、测量、不确定度关系"><a href="#算符理论、测量、不确定度关系" class="headerlink" title="算符理论、测量、不确定度关系"></a>算符理论、测量、不确定度关系</h5><ul>
-<li><p>一些概念</p>
-<ul>
-<li><p>厄米算符定义、性质、判定及构造</p>
-</li>
-<li><p>算符对易关系的计算</p>
-</li>
-<li><p>平均值的计算</p>
-</li>
-<li><p>对测量的理解和应用</p>
-</li>
-<li><p>对不确定关系的理解及应用</p>
-</li>
-</ul>
-</li>
-<li><p>参考例题</p>
-<ul>
-<li><p>连续测量问题</p>
-<ul>
-<li><p>已知某微观体系的力学量 A有两个归一化本征态 \psi_{1}和 \psi_{2}, 相应的本征值为a_1和a_2.力学量B有两个归一化本征态\phi_{1}和\phi_{2}, 相应的本征值为b_1和b_2.两组本征态有如下关系</p>
-</li>
-<li><p>$\psi_1&#x3D;\frac15(3\phi_1+4\phi_2),\quad\psi_2&#x3D;\frac15(4\phi_1-3\phi_2)$</p>
-</li>
-<li><p>测量可观测量 A, 所得结果为 \alpha_{1} ,那么在测量之后(瞬时)体系处于什么态？</p>
-</li>
-<li><p>如果现在再测量 B,可能的结果是什么？ 它们出现的概率是多少？</p>
-</li>
-<li><p>在恰好测出 B 后，再次测量 A ,那么结果为\alpha_{1}的概率为多少？</p>
-</li>
-</ul>
-</li>
-<li><p>守恒量判定</p>
-<ul>
-<li><p>设某一量子体系的Hamilton量为$\widehat{H}&#x3D;\frac{1}{2m}\widehat{P}+\omega\widehat{ L}_{z}$,其中 m 为质量，\omega 为频率. 分析并给出下列这些力学量中哪些是守恒量？</p>
-</li>
-<li><p>$H,p_x,p_y,p_z,p^2,\hat{L}_x,\hat{L}_y,\hat{L}_z,\hat{L}^2$</p>
-</li>
-</ul>
-</li>
-<li><p>测量假设、不确定性关系</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="矩阵力学及表象理论"><a href="#矩阵力学及表象理论" class="headerlink" title="矩阵力学及表象理论"></a>矩阵力学及表象理论</h5><ul>
-<li><p>重点内容</p>
-<ul>
-<li><p>量子态的矩阵表示</p>
-</li>
-<li><p>力学量的矩阵表示</p>
-</li>
-<li><p>本征方程（矩阵形式）的求解、平均值的计算</p>
-</li>
-</ul>
-</li>
-<li><p>参考例题</p>
-<ul>
-<li><p>表象与矩阵元的求解</p>
-<ul>
-<li><p>设一维粒子Hamilton量为H&#x3D;\frac{p_x^2}{2m}+V(x)</p>
-</li>
-<li><p>分别写出在\hat{x} 和p_x表象中，\hat{x},\hat{P}_x,\hat{H} 的矩阵元.</p>
-</li>
-</ul>
-</li>
-<li><p>设粒子处于下列势阱$V\left(x\right)&#x3D;\begin{cases}\infty,&amp;x&lt;0;\Fx,&amp;x&gt;0,\end{cases}$其中^{F}为常数，求粒子的能量本征函数。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="自旋与角动量理论"><a href="#自旋与角动量理论" class="headerlink" title="自旋与角动量理论"></a>自旋与角动量理论</h5><h3 id="综合练习"><a href="#综合练习" class="headerlink" title="综合练习"></a>综合练习</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>

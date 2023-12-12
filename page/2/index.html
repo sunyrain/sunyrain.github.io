@@ -1,1936 +1,1524 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="The Redefine Team">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"sunyrain.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta property="og:type" content="website">
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://sunyrain.github.io/page/2/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta property="og:type" content="website">
 <meta property="og:title" content="whilesunny">
 <meta property="og:url" content="https://sunyrain.github.io/page/2/index.html">
 <meta property="og:site_name" content="whilesunny">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="whilesunny">
 <meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://sunyrain.github.io/page/2/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>whilesunny</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">whilesunny</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">Sunny&Rainy</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
-    </header>
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/redefine-favicon.svg" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-favicon.svg">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/redefine-favicon.svg">
+    <!--- Page Info-->
+    
+    <title>
+        
+        Theme Redefine
+    </title>
 
     
-  <div class="reading-progress-bar"></div>
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
 
-          <div class="content index posts-expand">
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        Theme Redefine
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    window.config = {"hostname":"sunyrain.github.io","root":"/","language":"zh-CN","path":"search.xml"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+        <style>
+    .home-article-item,
+    .sidebar-links,
+    .sidebar-content,
+    a.page-number,
+    a.extend,
+    .sidebar-links .links:hover,
+    .right-bottom-tools,
+    footer.footer {
+        background-color: var(--background-color-transparent-80) !important;
+    }
+    .right-bottom-tools:hover,
+    a.page-number:hover,
+    a.extend:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .site-info,
+    .home-article-sticky-label {
+        background-color: var(--background-color-transparent-15) !important;
+    }
+    .home-article-sticky-label {
+        backdrop-filter: none !important;
+    }
+    .home-banner-background {
+        filter: blur(15px);
+    }
+</style>
+
+<div class="home-banner-background">
+</div>
+
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+
+    <div class="navbar-content">
+        <div class="left">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/11/01/gong-cheng-tu-xue/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/11/01/gong-cheng-tu-xue/" class="post-title-link" itemprop="url">工程图学</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-11-01 10:04:36" itemprop="dateCreated datePublished" datetime="2023-11-01T10:04:36+08:00">2023-11-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-26 15:52:06" itemprop="dateModified" datetime="2023-11-26T15:52:06+08:00">2023-11-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
-            </span>
-
-          
-
+            <a class="logo-title" href="/">
+                <h1>
+                Theme Redefine
+                </h1>
+            </a>
         </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
 
-      
-          <span id="more"></span>
-<ul>
-<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
-<li>类似性指导作图，面和它的封闭线框具有相似性</li>
-<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
-<li>找点的方法之辅助直线<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png" alt="image-20231108104948928" style="zoom: 33%;" /></li>
-<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
-<li>点划线露出4mm</li>
-</ul>
-</li>
-</ul>
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="active"
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
 
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/10/28/liang-zi-yu-tong-ji/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/10/28/liang-zi-yu-tong-ji/" class="post-title-link" itemprop="url">量子与统计</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-10-28 11:40:32" itemprop="dateCreated datePublished" datetime="2023-10-28T11:40:32+08:00">2023-10-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-12-10 10:24:49" itemprop="dateModified" datetime="2023-12-10T10:24:49+08:00">2023-12-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>习题课相关内容[[量子与统计习题课]]</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/10/28/liang-zi-yu-tong-ji/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/" class="post-title-link" itemprop="url">VS2012只能对 Type.IsGenericTypeDefinition 为 True</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-09-21 19:11:59 / 修改时间：20:19:29" itemprop="dateCreated datePublished" datetime="2023-09-21T19:11:59+08:00">2023-09-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这是个VS2012解决方案的问题。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
             </div>
-          <!--/noindex-->
-        
-      
+        </div>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/">
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
+                        
+                    </li>
+            
+        </ul>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/" class="post-title-link" itemprop="url">基于Python的科学与数值计算</a>
-        </h2>
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">26</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+    <div class="window-mask"></div>
 
-              <time title="创建时间：2023-09-19 19:06:09" itemprop="dateCreated datePublished" datetime="2023-09-19T19:06:09+08:00">2023-09-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-30 16:31:37" itemprop="dateModified" datetime="2023-11-30T16:31:37+08:00">2023-11-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
-            </span>
+</header>
 
-          
 
         </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        <div class="main-content-body">
 
-      
-          <h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            
+                <div class="home-sidebar-container">
+    <div class="sticky-container sticky">
+        
+        
+            
+            <div class="sidebar-content" >
+                <div class="avatar flex justify-center">
+    <img src="/images/redefine-avatar.svg">
+</div>
+                <div class="author flex flex-col justify-center my-2.5 mx-0">
+    <div class="name">The Redefine Team</div>
+    
+        <div class="label">Lv3</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">26</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
             </div>
-          <!--/noindex-->
         
-      
+
+    </div>
+</div>
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/">
+                            Hexo git问题
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            1git config --global http.proxy
+
+1git config --global --unset http.proxy
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Nov 01 2023 10:40:16 GMT+0800">
+                
+                    2023-11-01
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Tricks/">Tricks</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Tricks/">Tricks</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <a href="/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/">阅读全文<span class="seo-reader-text">Hexo git问题</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/shen-du-xue-xi/">
+                </div>
+            </li>
+        
+            <li class="home-article-item">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
+                
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/19/shen-du-xue-xi/" class="post-title-link" itemprop="url">深度学习</a>
-        </h2>
+                
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/11/01/gong-cheng-tu-xue/">
+                            工程图学
+                        </a>
+                    </h3>
 
-              <time title="创建时间：2023-09-19 09:51:38" itemprop="dateCreated datePublished" datetime="2023-09-19T09:51:38+08:00">2023-09-19</time>
+                    <div class="home-article-content markdown-body">
+                        
+                            
+
+面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。
+类似性指导作图，面和它的封闭线框具有相似性
+粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线
+找点的方法之辅助直线
+
+要在$c,b$上找点，在主视图上将$c’,b’...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Nov 01 2023 10:04:36 GMT+0800">
+                
+                    2023-11-01
+                
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-26 15:51:46" itemprop="dateModified" datetime="2023-11-26T15:51:46+08:00">2023-11-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
             </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的$f$和$g$进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
-</ul>
-</li>
-<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>
-      
+        
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <a href="/2023/11/01/gong-cheng-tu-xue/">阅读全文<span class="seo-reader-text">工程图学</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/ji-qi-xue-xi/">
+                </div>
+            </li>
+        
+            <li class="home-article-item">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
+                
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/19/ji-qi-xue-xi/" class="post-title-link" itemprop="url">机器学习</a>
-        </h2>
+                
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/10/28/liang-zi-yu-tong-ji/">
+                            量子与统计
+                        </a>
+                    </h3>
 
-              <time title="创建时间：2023-09-19 09:51:02" itemprop="dateCreated datePublished" datetime="2023-09-19T09:51:02+08:00">2023-09-19</time>
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>习题课相关内容[[量子与统计习题课]]</p>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Oct 28 2023 11:40:32 GMT+0800">
+                
+                    2023-10-28
+                
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-12-05 11:12:47" itemprop="dateModified" datetime="2023-12-05T11:12:47+08:00">2023-12-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
             </span>
+        
+    </div>
 
-          
+    <a href="/2023/10/28/liang-zi-yu-tong-ji/">阅读全文<span class="seo-reader-text">量子与统计</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
 
-        </div>
-      </header>
+                </div>
+            </li>
+        
+            <li class="home-article-item">
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+                
 
-      
-          <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/09/19/ji-qi-xue-xi/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/">
+                            VS2012只能对 Type.IsGenericTypeDefinition 为 True
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>这是个VS2012解决方案的问题。</p>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Sep 21 2023 19:11:59 GMT+0800">
+                
+                    2023-09-21
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Tricks/">Tricks</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/">阅读全文<span class="seo-reader-text">VS2012只能对 Type.IsGenericTypeDefinition 为 True</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/">
+                            基于Python的科学与数值计算
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Sep 19 2023 19:06:09 GMT+0800">
+                
+                    2023-09-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/19/ji-yu-python-de-ke-xue-yu-shu-zhi-ji-suan/">阅读全文<span class="seo-reader-text">基于Python的科学与数值计算</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/19/shen-du-xue-xi/">
+                            深度学习
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。
+Convolutional Neural NetworksConvolutional Layer
+Three shapes of convolution...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Sep 19 2023 09:51:38 GMT+0800">
+                
+                    2023-09-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/19/shen-du-xue-xi/">阅读全文<span class="seo-reader-text">深度学习</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/19/ji-qi-xue-xi/">
+                            机器学习
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Sep 19 2023 09:51:02 GMT+0800">
+                
+                    2023-09-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/19/ji-qi-xue-xi/">阅读全文<span class="seo-reader-text">机器学习</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/">
+                            现代生物学导论
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Sep 19 2023 07:49:10 GMT+0800">
+                
+                    2023-09-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/">阅读全文<span class="seo-reader-text">现代生物学导论</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/">
+                            材料分析与表征 9.18
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+
+课程详细信息
+期末考试70%、课程展示20%、考勤作业10%
+
+
+
+X射线衍射技术(X-Ray Diffraction)
+X光的发现 1895.11.8 伦琴
+肉眼不可见、使铂氯化钡发光、使照相底板感光、气体电离、杀伤生物细胞
+
+微观结构的研究方...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Sep 18 2023 09:35:33 GMT+0800">
+                
+                    2023-09-18
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B/">课程</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/">阅读全文<span class="seo-reader-text">材料分析与表征 9.18</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/">
+                            one-hot编码向量化及还原
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>打kaggle遇到的一些细节</p>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Sep 12 2023 23:01:06 GMT+0800">
+                
+                    2023-09-12
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Tricks/">Tricks</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Tricks/">Tricks</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/">阅读全文<span class="seo-reader-text">one-hot编码向量化及还原</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/06/17/windows-xi-tong-shi-jian-tong-bu/">
+                            windows系统时间同步
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>实在是太可恶了……</p>
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Jun 17 2023 09:46:50 GMT+0800">
+                
+                    2023-06-17
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E5%A5%87%E9%81%87/">奇遇</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/06/17/windows-xi-tong-shi-jian-tong-bu/">阅读全文<span class="seo-reader-text">windows系统时间同步</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/06/14/shu-li-fang-cheng/">
+                            数理方程特殊函数部分以及其他
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+级数解
+
+高次项系数化为1，判断展开点类型，为常点还是奇点
+回到原式中带入级数解进行计算
+
+坐标系
+
+极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partia...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Jun 14 2023 18:50:37 GMT+0800">
+                
+                    2023-06-14
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E6%97%B6%E5%85%89/">时光</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/06/14/shu-li-fang-cheng/">阅读全文<span class="seo-reader-text">数理方程特殊函数部分以及其他</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+    </ul>
+
+    <div class="home-paginator px-7 py-5">
+        <div class="paginator">
+    <a class="extend prev" rel="prev" href="/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa-regular fa-angle-right"></i></a>
+</div>
+
+    </div>
+</div>
+
+                    <div class="comment-container pjax"></div>
+                
+
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/" class="post-title-link" itemprop="url">现代生物学导论</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-09-19 07:49:10" itemprop="dateCreated datePublished" datetime="2023-09-19T07:49:10+08:00">2023-09-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-30 16:31:49" itemprop="dateModified" datetime="2023-11-30T16:31:49+08:00">2023-11-30</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
-            </span>
-
-          
+            
 
         </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">The Redefine Team</a>
+        </div>
+        
+            <script data-swup-reload-script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
             </div>
-          <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/18/cai-liao-fen-xi-yu-biao-zheng/" class="post-title-link" itemprop="url">材料分析与表征 9.18</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-09-18 09:35:33" itemprop="dateCreated datePublished" datetime="2023-09-18T09:35:33+08:00">2023-09-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-12-05 08:33:51" itemprop="dateModified" datetime="2023-12-05T08:33:51+08:00">2023-12-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
-                </span>
-            </span>
-
-          
-
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.0</a></span>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-<ul>
-<li>课程详细信息<ul>
-<li>期末考试70%、课程展示20%、考勤作业10%</li>
-</ul>
-</li>
-</ul>
-<h3 id="X射线衍射技术-X-Ray-Diffraction"><a href="#X射线衍射技术-X-Ray-Diffraction" class="headerlink" title="X射线衍射技术(X-Ray Diffraction)"></a>X射线衍射技术(X-Ray Diffraction)</h3><ul>
-<li>X光的发现 1895.11.8 伦琴</li>
-<li>肉眼不可见、使铂氯化钡发光、使照相底板感光、气体电离、杀伤生物细胞</li>
-</ul>
-<h3 id="微观结构的研究方法"><a href="#微观结构的研究方法" class="headerlink" title="微观结构的研究方法"></a>微观结构的研究方法</h3><ul>
-<li>仪器极限分辨率 $\lambda$&#x2F;2 （远场光学）</li>
-</ul>
-<h3 id="X光的本质"><a href="#X光的本质" class="headerlink" title="X光的本质"></a>X光的本质</h3><ul>
-<li>波长介于紫外线和 $\gamma$ 射线之间，约为0.01~100埃</li>
-<li>长波长——软X射线 短波长——硬X射线</li>
-</ul>
-<h3 id="X射线的应用与发展"><a href="#X射线的应用与发展" class="headerlink" title="X射线的应用与发展"></a>X射线的应用与发展</h3><h3 id="X射线的性质"><a href="#X射线的性质" class="headerlink" title="X射线的性质"></a>X射线的性质</h3><h3 id="X射线的产生"><a href="#X射线的产生" class="headerlink" title="X射线的产生"></a>X射线的产生</h3><ul>
-<li>高速运动的带电粒子的运动遇到障碍被减速时便产生X射线</li>
-<li>从X射线管角度理解<ul>
-<li>对绕成螺旋型的钨丝通电加热至白热，放出热辐射电子</li>
-<li>电子在数万伏管内高压电场的作用下轰击靶材产生X射线</li>
-</ul>
-</li>
-</ul>
-<h3 id="X射线谱"><a href="#X射线谱" class="headerlink" title="X射线谱"></a>X射线谱</h3><ul>
-<li>连续X射线谱，有公式$eV &#x3D; h\nu <em>{max}&#x3D;\frac{hc}{\lambda</em>{0}}$ </li>
-<li>经验规律，连续谱中强度最大处的波长记为$\lambda_{m}$ 则一般有$\lambda_{m}&#x3D;1.5\lambda_{0}$</li>
-<li>电流决定了热辐射电子的多少，电压决定了热辐射电子的强度</li>
-</ul>
-<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><ul>
-<li>已知$Cu-K_a$线波长，计算铜原子$2p$和$1s$能级间的能量差<ul>
-<li>解题方法，首先明确从$2p$到$1s$属于从$L$层跃迁到$K$层，也即$K_a$线</li>
-<li>故直接利用波长与能量关系计算</li>
-</ul>
-</li>
-</ul>
-<h3 id="X射线与物质的相互作用"><a href="#X射线与物质的相互作用" class="headerlink" title="X射线与物质的相互作用"></a>X射线与物质的相互作用</h3><h3 id="X射线衰减规律"><a href="#X射线衰减规律" class="headerlink" title="X射线衰减规律"></a>X射线衰减规律</h3><ul>
-<li>吸收的不连续性</li>
-<li>吸收限的利用<ul>
-<li>靶材（Target Material）：</li>
-<li>靶材通常是一个坚固的材料，如金属，用于产生X射线。当高速电子束撞击靶材时，与原子相互作用，产生X射线辐射。我们要尽量选择波长略长于试样吸收限的靶材，这样不会有K系荧光辐射，同时也不会被试样吸收太多。</li>
-<li>滤片（Filter）：</li>
-<li>滤片是放置在X射线束路径上的材料，通常由金属或其他适当的材料制成。滤片的主要作用是改变或调整X射线的能量谱。通过选择不同材料的滤片，可以过滤掉低能量的X射线，使得只有特定能量范围内的X射线通过</li>
-<li>试样（Sample）：</li>
-<li>试样是要进行X光实验的物质或样品。当X射线穿过试样时，它会与试样中的原子相互作用，产生一系列特定能量的X射线散射或吸收。通过分析这些散射或吸收事件，可以获得有关试样的信息，例如其成分、结构或厚度等</li>
-</ul>
-</li>
-</ul>
-<h3 id="X光的探测与防护"><a href="#X光的探测与防护" class="headerlink" title="X光的探测与防护"></a>X光的探测与防护</h3><h2 id="晶体学基础"><a href="#晶体学基础" class="headerlink" title="晶体学基础"></a>晶体学基础</h2><h3 id="晶体结构"><a href="#晶体结构" class="headerlink" title="晶体结构"></a>晶体结构</h3><ul>
-<li><p>赤平极射投影</p>
-<ul>
-<li>方位角 $\phi$包含该点的子午面与$0°$子午面的夹角</li>
-<li>极距角 $\rho$该点与北极点的夹角</li>
-<li>赤平投影图上点距离圆心的距离与方位角有关，基圆与极距角有关<br>  重点（吴氏网、标准点阵、倒易点阵）</li>
-</ul>
-</li>
-<li><p>吴氏网</p>
-<ul>
-<li>吴氏网只能水平上走格子，如果想在竖直上走格子，需要旋转吴氏网，然后再所有的点一起水平上走格子<br> 对于任意可微的对称性，一定存在一个相应的守恒流</li>
-</ul>
-</li>
-<li><p>倒易点阵</p>
-<ul>
-<li><p>对于一个给定基矢的正点阵，必有倒易点阵与之相对应，关系为<br>$$a^{*}&#x3D;\frac{b×c}{v}$$<br>此处$v$为正点阵的体积	</p>
-</li>
-<li><p>有关正点阵和倒易点阵，相关的符号标识如下</p>
-<ul>
-<li>晶面指数$(hkl),(uvw)^{*}$</li>
-<li>晶向指数$[uvw],[hkl]^{*}$</li>
-<li>面间距$d_{hkl},d_{uvw}^{*}$</li>
-<li>晶向或阵矢$r&#x3D;ua+vb+wc,g^{<em>}&#x3D;ha^</em>+kb^*+lc^*$</li>
-<li>晶向长度或阵矢大小$r_{uvw},g_{hkl}$</li>
-<li>结点位置$uvw,hkl$</li>
-</ul>
-</li>
-<li><p>倒易点阵晶向垂直于正点阵同名晶面，反之亦然</p>
-</li>
-<li><p>正点阵的面间距是同名倒易矢量长度的倒数</p>
-<p>$$|g_{hkl}|^2&#x3D; \frac1{d_{hkl}^2}&#x3D;(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\bullet(h\boldsymbol{a}^*+k\boldsymbol{b}^*+l\boldsymbol{c}^*)\&#x3D; h^2(a^*)^2+k^2(b^*)^2+l^2(c^*)^2\+2kl\boldsymbol{b}^<em>\boldsymbol{c}^</em>\boldsymbol{c}^<em>cos\boldsymbol{a}^</em>+2lh\boldsymbol{c}^<em>\boldsymbol{a}^</em>cos\boldsymbol{\beta}^*+2h\boldsymbol{k}a^<em>\boldsymbol{b}^</em>cos\boldsymbol{\gamma}^* $$</p>
-<ul>
-<li>立方晶系<ul>
-<li>$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="阶段作业"><a href="#阶段作业" class="headerlink" title="阶段作业"></a>阶段作业</h3><ul>
-<li>P81-82 T 15 16 22 24</li>
-</ul>
-<h2 id="X射线与材料的散射、干涉与衍射"><a href="#X射线与材料的散射、干涉与衍射" class="headerlink" title="X射线与材料的散射、干涉与衍射"></a>X射线与材料的散射、干涉与衍射</h2><h3 id="散射"><a href="#散射" class="headerlink" title="散射"></a>散射</h3><ul>
-<li><p>电子的散射，静电相互作用等</p>
-</li>
-<li><p>X射线的散射，与物质的基本单元发生作用</p>
-</li>
-<li><p>单电子对X射线的散射</p>
-<ul>
-<li>相干散射<ul>
-<li>相干散射是衍射的基础，从波动性的角度出发，X射线是电磁波，其照射在自由电子上时，交变电场就会强迫电子作频率相同的振动，发射X射线。电子发出的X射线为散射线，与入射线波长相同、相位滞后恒定，故可以发生干涉。</li>
-<li>平面偏振光相干散射</li>
-<li>非平面偏振光相干散射<ul>
-<li>原子中只需要考虑电子散射</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>非相干散射</li>
-</ul>
-</li>
-<li><p>散射线的干涉</p>
-<ul>
-<li>相位差与反射矢量<ul>
-<li>相位差满足$$\phi &#x3D; 2\pi \frac{-S_{0}·r+S·r }{\lambda}$$其中$S_0$为入射线上的单位矢量，$S$为反射线上的单位矢量</li>
-<li>记 $s&#x3D;\frac{S-S_0}{\lambda}\quad s$为散射矢量，其大小为$\frac{2sin\theta}{\lambda}$，引入散射矢量后，上式可化作$\phi &#x3D;2\pi s·r$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>原子对X射线的散射</p>
-<ul>
-<li>单电子原子的散射<ul>
-<li>原子中一个电子的散射因子$$f(s) &#x3D; \int_v \rho(r)e^{i2\pi s·r}dv$$</li>
-<li>电子的相干强度为$I_{相干}&#x3D;f^{2}(s)I_{电子}$</li>
-</ul>
-</li>
-<li>多电子原子的散射<ul>
-<li>假设原子的总电荷密度为各个电子电荷密度之和</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>晶胞的散射</p>
-</li>
-<li><p>小晶体的衍射</p>
-<ul>
-<li><p>小晶体的衍射强度</p>
-<ul>
-<li><p>小晶体的衍射线振幅</p>
-<p>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}F\left(s\right)\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}_{mnp}}<br>$$</p>
-<p>因其中的结构因子与晶胞的位置无关, 从而有<br>$$<br>A_\text{ 晶体 }{ ( s ) }&#x3D;F\left(s\right)\sum_{m&#x3D;0}^{N_a-1}\sum_{m&#x3D;0}^{N_b-1}\sum_{p&#x3D;0}^{N_c-1}\mathrm{e}^{\mathrm{i}2\pi\mathbf{s}\cdot\mathbf{R}<em>{mnp}}<br>$$<br>于是, 晶体的衍射线强度为<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{m p p}}\right|^2 I</em>{\text {电子 }}<br>$$<br>定义<br>$$<br>L(s) \equiv\left|\sum_{m n p}^N \mathrm{e}^{\mathrm{i} 2 \pi s \cdot \boldsymbol{R}<em>{\operatorname{mmp}}}\right|^2<br>$$<br>由于它表示的是晶体散射线的干涉结果, 故称为晶体的干涉函数, 或劳厄函数, 衍射线强度可以简写成<br>$$<br>I</em>{\text {晶体 }}(s)&#x3D;|F(s)|^2 L(s) I_{\text {电子 }}<br>$$</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="衍射线的强度分析"><a href="#衍射线的强度分析" class="headerlink" title="衍射线的强度分析"></a>衍射线的强度分析</h2><h2 id="多晶体衍射信息的获取方法"><a href="#多晶体衍射信息的获取方法" class="headerlink" title="多晶体衍射信息的获取方法"></a>多晶体衍射信息的获取方法</h2><h3 id="德拜法"><a href="#德拜法" class="headerlink" title="德拜法"></a>德拜法</h3><ul>
-<li>德拜照片的计算与标定<ul>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009103514509.png" alt="image-20231009103514509" style="zoom:50%;" />
-</li>
-<li><p>圆弧之间的对应的顶角为4$\theta$</p>
-</li>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104249654.png" alt="image-20231009104249654" style="zoom:50%;" />
-</li>
-<li><p>此处采用的角度标准为（deg）</p>
-</li>
-<li><img src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231009104341784.png" alt="image-20231009104341784" style="zoom:50%;" />
-</li>
-<li><p>考虑布拉格公式$d&#x3D;\frac{\lambda}{2sin\theta}$和晶面间距计算公式$d_{hkl}&#x3D;\frac{a}{\sqrt{h^2+k^2+l^2}}$</p>
-</li>
-<li><p>得$$\sin^2\theta&#x3D;\frac{\lambda^2}{4a^2}(h^2+k^2+l^2)$$</p>
-</li>
-<li><p>令$\frac{\lambda^{2}}{4a^2}&#x3D;K$并设$m$为干涉指数的平方和，即$$m&#x3D;h^2+k^2+l^2$$于是$sin^2\theta &#x3D; Km$</p>
-</li>
-<li><p>计算出$K$和每条德拜线的$sin^2\theta$并计算出对应的m值（$m$均为正整数）然后依据衍射线条在晶系中的出现顺序判断</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="衍射仪法"><a href="#衍射仪法" class="headerlink" title="衍射仪法"></a>衍射仪法</h3><h3 id="衍射材料的获得"><a href="#衍射材料的获得" class="headerlink" title="衍射材料的获得"></a>衍射材料的获得</h3><h4 id="试样制备要求"><a href="#试样制备要求" class="headerlink" title="试样制备要求"></a>试样制备要求</h4><ul>
-<li>晶粒大小</li>
-<li>试样大小厚度和质量</li>
-<li>避免产生择优取向</li>
-</ul>
-<h4 id="衍射全图的获得"><a href="#衍射全图的获得" class="headerlink" title="衍射全图的获得"></a>衍射全图的获得</h4><h4 id="单峰测试"><a href="#单峰测试" class="headerlink" title="单峰测试"></a>单峰测试</h4><h4 id="衍射信息的获取"><a href="#衍射信息的获取" class="headerlink" title="衍射信息的获取"></a>衍射信息的获取</h4><h4 id="衍射线的线形分析"><a href="#衍射线的线形分析" class="headerlink" title="衍射线的线形分析"></a>衍射线的线形分析</h4><h2 id="单晶体衍射信息的获取方法"><a href="#单晶体衍射信息的获取方法" class="headerlink" title="单晶体衍射信息的获取方法"></a>单晶体衍射信息的获取方法</h2><h3 id="劳埃法"><a href="#劳埃法" class="headerlink" title="劳埃法"></a>劳埃法</h3><ul>
-<li>特征：使用连续的X射线谱照射固定不动的单晶体</li>
-</ul>
-<h2 id="X射线衍射的应用"><a href="#X射线衍射的应用" class="headerlink" title="X射线衍射的应用"></a>X射线衍射的应用</h2><h3 id="物相分析"><a href="#物相分析" class="headerlink" title="物相分析"></a>物相分析</h3><h4 id="定性相分析"><a href="#定性相分析" class="headerlink" title="定性相分析"></a>定性相分析</h4><h4 id="定量相分析"><a href="#定量相分析" class="headerlink" title="定量相分析"></a>定量相分析</h4><ul>
-<li><p>PDF卡片</p>
-</li>
-<li><p>基础：物质的衍射强度与物质参与衍射的体积成正比<br>$$<br>I&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_0^2}\left(\frac{e^2}{m c^2}\right)^2 \frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P V \mathrm{e}^{-2 M} A(\theta)<br>$$</p>
-<ul>
-<li>对于粉末衍射仪法，$A(\theta)&#x3D;1&#x2F;2\mu$</li>
-</ul>
-</li>
-<li><p>举例来说，两相体系下<br>$$<br>\begin{aligned}<br>&amp; I_\alpha&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\alpha^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\alpha \frac{V_\alpha}{2 \mu} \<br>&amp; I_\beta&#x3D;\frac{I_0 \lambda^3}{32 \pi R v_\beta^2}\left(\frac{e^2}{m c^2}\right)^2\left(\frac{1+\cos ^2 2 \theta}{\sin ^2 \theta \cos \theta} F^2 P \mathrm{e}^{-2 M}\right)_\beta \frac{V_\beta}{2 \mu}<br>\end{aligned}<br>$$</p>
-<ul>
-<li>$\mu$ 是混合物的线吸收系数</li>
-<li>前面的部分二者都相同，所以只和$V$有关系</li>
-<li>$\mu ^*$是质量吸收系数，为$\mu &#x2F; \rho$</li>
-<li>不管什么方法，$\alpha$相衍射强度 $I_{\alpha}&#x3D;K\frac{C_{\alpha}}{\mu}$</li>
-</ul>
-</li>
-<li><p>外标法</p>
-<ul>
-<li>本质上是<br>  $$<br>  I_\alpha&#x3D;K \frac{w_a}{\rho_\alpha \mu^*}<br>  $$</li>
-<li>上式的$\mu ^*$是总质量吸收系数</li>
-<li>而对于纯 $\alpha$ 相的试样, 即标样, 其同指数衍射线的强度应为<br>  $$<br>  I_{\alpha_0}&#x3D;K \frac{1}{\rho_\alpha \mu_a^*}<br>  $$</li>
-<li>从而, 待测试样中 $\alpha$ 相的衍射强度与 $\alpha$ 相标样的衍射强度的比值为</li>
-</ul>
-<p>  $$<br>  \frac{I_a}{I_{\alpha_0}}&#x3D;\frac{\mu_a^*}{\mu^*} w_a<br>  $$</p>
-<ul>
-<li>如果试样仅由 $\alpha 、 \beta$ 两相组成, 则上式可以写成</li>
-</ul>
-<p>  $$<br>  \frac{I_\alpha}{I_{\alpha_0}}&#x3D;\frac{w_\alpha \mu_\alpha^*}{w_\alpha\left(\mu_\alpha^*-\mu_\beta^<em>\right)+\mu_\beta^</em>}<br>  $$</p>
-<ul>
-<li>实际使用时，首先要知道是什么和什么的混合，找到工作曲线，之后通过两次实验测定$\frac{I_\alpha}{I_{\alpha_0}}$，在工作表上对应找即知道物质百分比</li>
-</ul>
-</li>
-<li><p>内标法</p>
-<ul>
-<li>内标法首先向试样中加入标准物，然后让待测相与标准相进行比较，相当于通过加入标准相的方法，知道了$\omega _{s}$ </li>
-<li>待测相衍射线强度与标准相衍射线强度之比可以表述为</li>
-<li>$$\frac{I^{‘}<em>{a}}{I</em>{s}}&#x3D;K\frac{\omega^{‘}<em>{a}}{\omega</em>{s}}$$</li>
-<li>设法得到$K$值即可</li>
-</ul>
-</li>
-</ul>
-<h4 id="精确测定点阵常数"><a href="#精确测定点阵常数" class="headerlink" title="精确测定点阵常数"></a>精确测定点阵常数</h4><h2 id="宏观应力分析"><a href="#宏观应力分析" class="headerlink" title="宏观应力分析"></a>宏观应力分析</h2><h3 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h3><p>只要有应力存在就会有应变，，也即晶面间距的变化。X光可以很好地测面间距的变化，所以可以用来测应力。</p>
-<h4 id="应力应变关系"><a href="#应力应变关系" class="headerlink" title="应力应变关系"></a>应力应变关系</h4><ul>
-<li><p>考虑受轴向拉力$F_x$的截面为A的棒</p>
-<ul>
-<li>胡克定律指出$\epsilon_x &#x3D; \frac{\sigma_x}{E}$</li>
-<li>轴向拉伸，垂直于轴的面也会发生形变</li>
-<li>$$-\epsilon_y &#x3D; -\epsilon_z &#x3D; \nu \epsilon_x &#x3D; \frac{\nu \sigma_x}{E}$$<ul>
-<li>其中$\nu$是泊松比</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>考虑微变形情况下，主应力和主应变的广义胡克定律为</p>
-<ul>
-<li>$\epsilon_1 &#x3D; \frac{1}{E}[\sigma_1 - \nu(\sigma_2+\sigma_3)]$<ul>
-<li>（$cyc$）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>任意一个方向（注意应力是一个张量）</p>
-<p>$$ \left{\begin{array}{l}<br>\sigma_{\phi \psi}&#x3D;\alpha_1^2 \sigma_1+\alpha_2^2 \sigma_2+\alpha_3^2 \sigma_3 \<br>\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3<br>\end{array}\right.$$</p>
-</li>
-<li><p>其中$$\begin{aligned}<br>&amp; \alpha_1&#x3D;\sin \psi \cos \phi \<br>&amp; \alpha_2&#x3D;\sin \psi \sin \phi \<br>&amp; \alpha_3&#x3D;\cos \psi<br>\end{aligned} $$</p>
-</li>
-<li><p>广义胡克定律<br>$$\left{\begin{array}{l}\varepsilon_1&#x3D;\frac{1}{E}\left[\sigma_1-\nu\left(\sigma_2+\sigma_3\right)\right] \ \varepsilon_2&#x3D;\frac{1}{E}\left[\sigma_2-\nu\left(\sigma_1+\sigma_3\right)\right] \ \varepsilon_3&#x3D;\frac{1}{E}\left[\sigma_3-\nu\left(\sigma_1+\sigma_2\right)\right]\end{array}\right.$$</p>
-</li>
-</ul>
-<h4 id="X射线衍射方法测定应力的原理"><a href="#X射线衍射方法测定应力的原理" class="headerlink" title="X射线衍射方法测定应力的原理"></a>X射线衍射方法测定应力的原理</h4><p>对于一般的金属材料，X射线的穿透能力很低，所以仅能测定表面层的应力。又垂直于表面层的应力的总和为0.也即$\sigma_3 &#x3D; 0$</p>
-<ul>
-<li><p>广义胡克定律在此前提下简化为：</p>
-</li>
-<li><p>$$<br>\left{\begin{array}{l}<br>\varepsilon_1&#x3D;\frac{1}{E}\left(\sigma_1-\nu \sigma_2\right) \<br>\varepsilon_2&#x3D;\frac{1}{E}\left(\sigma_2-\nu \sigma_1\right) \<br>\varepsilon_3&#x3D;-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>\end{array}\right.<br>$$</p>
-</li>
-<li><p>带入$\varepsilon_{\phi \psi}&#x3D;\alpha_1^2 \varepsilon_1+\alpha_2^2 \varepsilon_2+\alpha_3^2 \varepsilon_3$化简即得到：</p>
-</li>
-<li><p>$$<br>\varepsilon_{\phi \psi}&#x3D;\frac{1+\nu}{E} \sigma_\phi \sin ^2 \psi-\frac{\nu}{E}\left(\sigma_1+\sigma_2\right)<br>$$</p>
-<ul>
-<li>注意$\sigma_\phi &#x3D; cos^2\phi \sigma_1 +sin^2 \phi \sigma_2$</li>
-</ul>
-<p>将上式对 $\sin ^2 \psi$ 求导, 就可以解出表面上任一方向上的应力 $\sigma_\phi$, 有：<br>$$<br>\sigma_\phi&#x3D;\frac{E}{1+\nu} \frac{\partial \varepsilon_{\phi \psi}}{\partial \sin ^2 \psi}<br>$$</p>
-</li>
-</ul>
-<h3 id="衍射仪法测定宏观应力"><a href="#衍射仪法测定宏观应力" class="headerlink" title="衍射仪法测定宏观应力"></a>衍射仪法测定宏观应力</h3><h2 id="微晶尺寸和微观应力"><a href="#微晶尺寸和微观应力" class="headerlink" title="微晶尺寸和微观应力"></a>微晶尺寸和微观应力</h2><h3 id="量子力学的不确定性原理"><a href="#量子力学的不确定性原理" class="headerlink" title="量子力学的不确定性原理"></a>量子力学的不确定性原理</h3><ol>
-<li><p><strong>波动性和离散性</strong>：X射线作为电磁波，具有波动性。在量子尺度下，波动性导致了能量和动量的不确定性。这种不确定性在微观尺度上对物质的行为有重要影响。</p>
-</li>
-<li><p><strong>晶体尺寸与不确定性</strong>：在小尺寸晶体中，晶格面的数量减少意味着晶体中可用于衍射的晶格点减少。根据不确定性原理，较少的晶格点导致衍射角度的不确定性增大，从而允许在布拉格角附近的较宽角度范围内发生衍射。</p>
-</li>
-</ol>
-<h3 id="晶格面排列的影响"><a href="#晶格面排列的影响" class="headerlink" title="晶格面排列的影响"></a>晶格面排列的影响</h3><ol>
-<li><p><strong>晶格面间距的变化</strong>：在大晶体中，由于晶格面数量众多，晶格面间距非常均匀，衍射条件非常严格。但在小晶体中，晶格面的间距可能因为晶体边界效应而略有不均匀。</p>
-</li>
-<li><p><strong>衍射角度的变化</strong>：晶格面间距的这种轻微不均匀性可能导致衍射角度略有变化，从而使得衍射不再严格局限于理想的布拉格角。</p>
-</li>
-</ol>
-<h4 id="微晶尺寸的测定"><a href="#微晶尺寸的测定" class="headerlink" title="微晶尺寸的测定"></a>微晶尺寸的测定</h4><h4 id="微观应力的测定"><a href="#微观应力的测定" class="headerlink" title="微观应力的测定"></a>微观应力的测定</h4><h2 id="织构的测定"><a href="#织构的测定" class="headerlink" title="织构的测定"></a>织构的测定</h2><h3 id="织构的分类"><a href="#织构的分类" class="headerlink" title="织构的分类"></a>织构的分类</h3><ul>
-<li>丝织构<ul>
-<li>丝织构的晶体学特点是晶粒的某一个或者某几个晶向倾向于平行试样的某一特定方向，一般沿丝轴方向或生长方向</li>
-</ul>
-</li>
-<li>板织构<ul>
-<li>板织构的晶体学特征是各晶粒的某一个或几个晶面平行于试样的某一特定面(如轧面),一个或几个晶向平行于试样的某一特定方向(如轧向)。</li>
-</ul>
-</li>
-</ul>
-<h3 id="织构的表示方法"><a href="#织构的表示方法" class="headerlink" title="织构的表示方法"></a>织构的表示方法</h3><ul>
-<li>正级图</li>
-<li>反级图</li>
-</ul>
-<h1 id="电子显微分析"><a href="#电子显微分析" class="headerlink" title="电子显微分析"></a>电子显微分析</h1><h3 id="第三章-电子与物质的相互作用"><a href="#第三章-电子与物质的相互作用" class="headerlink" title="第三章 电子与物质的相互作用"></a>第三章 电子与物质的相互作用</h3><h4 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h4><p>电子束穿过薄样品，可能产生的各种信息</p>
-<ul>
-<li>二次电子</li>
-<li>特征X射线</li>
-<li>可见光</li>
-<li>电子-空穴对</li>
-<li>韧致辐射X射线</li>
-<li>非弹性散射电子</li>
-<li>透射电子</li>
-<li>弹性散射电子</li>
-<li>吸收电子</li>
-<li>俄歇电子</li>
-<li>背散射电子</li>
-</ul>
-<h4 id="电子的弹性散射"><a href="#电子的弹性散射" class="headerlink" title="电子的弹性散射"></a>电子的弹性散射</h4><h3 id="第四章-电子衍射"><a href="#第四章-电子衍射" class="headerlink" title="第四章 电子衍射"></a>第四章 电子衍射</h3><h4 id="电子衍射原理"><a href="#电子衍射原理" class="headerlink" title="电子衍射原理"></a>电子衍射原理</h4><ul>
-<li><p>再次说明有关倒易点阵</p>
-<ul>
-<li>设正空间基矢为$a,b,c$,倒易空间基矢为$a^*,b^*,c^*$</li>
-</ul>
-</li>
-<li><p>衍射花样与晶体几何关系</p>
-<img src="C:\Users\wenjie\AppData\Roaming\Typora\typora-user-images\image-20231204111558999.png" alt="image-20231204111558999" style="zoom:50%;" />
-
-<ul>
-<li>注：由于满足布拉格定律的角度$\theta$很小，$tan2\theta$,$sin2\theta$均近似为$\theta$</li>
-<li>故$rd&#x3D;L\lambda$</li>
-</ul>
-</li>
-</ul>
-<h4 id="倒易点阵平面及其画法"><a href="#倒易点阵平面及其画法" class="headerlink" title="倒易点阵平面及其画法"></a>倒易点阵平面及其画法</h4><ul>
-<li>晶带定律<ul>
-<li>许多晶面族同时与一个晶体学方向$[uvw]$平行时，这些晶面族统称为一个晶带，$[uvw]$称为晶带轴</li>
-<li>进而可以推断，晶面族倒易矢量构成与晶带轴正交的二维倒易点阵平面</li>
-<li>若晶带轴用正空间矢量表示，晶面由倒易空间矢量表示，则二者点积为0</li>
-<li>由几何关系，要确定晶带轴方向，取两个晶面即可</li>
-</ul>
-</li>
-<li>二维倒易点阵平面的画法<ul>
-<li>直接由试探法找出倒易平面的一个点，之后如果为立方晶系，则依据90度关系直接解出下一个点</li>
-<li>有了两个点以后，相加得到第三个点并向所有方向扩展即可</li>
-</ul>
-</li>
-</ul>
-<h4 id="选区电子衍射"><a href="#选区电子衍射" class="headerlink" title="选区电子衍射"></a>选区电子衍射</h4><h4 id="多晶电子衍射花样和相机长度标定"><a href="#多晶电子衍射花样和相机长度标定" class="headerlink" title="多晶电子衍射花样和相机长度标定"></a>多晶电子衍射花样和相机长度标定</h4><h4 id="单晶电子衍射花样的分布"><a href="#单晶电子衍射花样的分布" class="headerlink" title="单晶电子衍射花样的分布"></a>单晶电子衍射花样的分布</h4><h4 id="其他电子衍射谱"><a href="#其他电子衍射谱" class="headerlink" title="其他电子衍射谱"></a>其他电子衍射谱</h4><h3 id="第五章-复杂电子衍射谱"><a href="#第五章-复杂电子衍射谱" class="headerlink" title="第五章 复杂电子衍射谱"></a>第五章 复杂电子衍射谱</h3><h4 id="孪晶电子衍射谱"><a href="#孪晶电子衍射谱" class="headerlink" title="孪晶电子衍射谱"></a>孪晶电子衍射谱</h4><h4 id="高阶劳厄带电子衍射谱"><a href="#高阶劳厄带电子衍射谱" class="headerlink" title="高阶劳厄带电子衍射谱"></a>高阶劳厄带电子衍射谱</h4><h4 id="菊池线分析"><a href="#菊池线分析" class="headerlink" title="菊池线分析"></a>菊池线分析</h4>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/" class="post-title-link" itemprop="url">one-hot编码向量化及还原</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-09-12 23:01:06" itemprop="dateCreated datePublished" datetime="2023-09-12T23:01:06+08:00">2023-09-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-18 14:44:33" itemprop="dateModified" datetime="2023-09-18T14:44:33+08:00">2023-09-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tricks/" itemprop="url" rel="index"><span itemprop="name">Tricks</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>打kaggle遇到的一些细节</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
             </div>
-          <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/06/17/windows-xi-tong-shi-jian-tong-bu/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/17/windows-xi-tong-shi-jian-tong-bu/" class="post-title-link" itemprop="url">windows系统时间同步</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-06-17 09:46:50" itemprop="dateCreated datePublished" datetime="2023-06-17T09:46:50+08:00">2023-06-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-21 19:11:53" itemprop="dateModified" datetime="2023-09-21T19:11:53+08:00">2023-09-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>实在是太可恶了……</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/06/17/windows-xi-tong-shi-jian-tong-bu/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/06/14/shu-li-fang-cheng/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/14/shu-li-fang-cheng/" class="post-title-link" itemprop="url">数理方程特殊函数部分以及其他</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-06-14 18:50:37" itemprop="dateCreated datePublished" datetime="2023-06-14T18:50:37+08:00">2023-06-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-26 15:51:42" itemprop="dateModified" datetime="2023-11-26T15:51:42+08:00">2023-11-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-            </span>
-
-          
-
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-<p>级数解</p>
-<ul>
-<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
-<li>回到原式中带入级数解进行计算</li>
-</ul>
-<p>坐标系</p>
-<ul>
-<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
-<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
-<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
-</ul>
-<p>Bessel方程</p>
-<ul>
-<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
-<li>解记作$J_{\pm v(x)}$</li>
-<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
-<li><del>第三类柱函数</del></li>
-<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
-<li>基本递推关系</li>
-</ul>
-<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
-<ul>
-<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
-</ul>
-<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
-<ul>
-<li><p>特征为$l(l+1)$</p>
-</li>
-<li><p>解为$ j_l, n_l$</p>
-</li>
-</ul>
-<p>渐进行为</p>
-<ul>
-<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
-<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
-<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
-<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
-<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
-<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
-</ul>
-<p>Legendre方程和连带Legendre方程的形式</p>
-<ul>
-<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
-</li>
-<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
-</ul>
-</li>
-<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
-<ul>
-<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
-<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
-</ul>
-</li>
-<li><p>Legendre多项式的生成函数</p>
-<ul>
-<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
-<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
-</ul>
-</li>
-<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
-</li>
-<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
-</li>
-</ul>
-</li>
-<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
-<ul>
-<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
-<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
-<li>球谐函数的模长<ul>
-<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><del>递推公式、连带Legendre函数模方</del></p>
-</li>
-</ul>
-<p>傅里叶变换和逆变换形式</p>
-<p> Laplace变换和逆变换形式</p>
-<p>傅里叶变换的卷积公式</p>
-<p>Laplace变换的卷积公式</p>
-<p>方程标准型特征方程</p>
-<ul>
-<li><p>特征方程法</p>
-<ul>
-<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
-</li>
-<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
-</li>
-<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
-</li>
-<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
-</li>
-<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
-</li>
-<li><p>利用变换系数公式求解方程各项系数</p>
-</li>
-</ul>
-</li>
-<li><p>配方法</p>
-<ul>
-<li><del>变系数配方法</del></li>
-<li>常系数配方法，将二次项配方后，换元即可</li>
-</ul>
-</li>
-</ul>
-<p>格林函数</p>
-<ul>
-<li>电像法</li>
-<li>本征函数展开法<ul>
-<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
-<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
-</ul>
-</li>
-<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
-</ul>
-</li>
-</ul>
-
-      
     </div>
 
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sunyrain.github.io/2023/06/13/markdown-yu-fa/">
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="whilesunny">
-      <meta itemprop="description" content="">
-    </span>
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="whilesunny">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/13/markdown-yu-fa/" class="post-title-link" itemprop="url">Markdown实用语法</a>
-        </h2>
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+        <!-- rss -->
+        
 
-              <time title="创建时间：2023-06-13 08:38:31" itemprop="dateCreated datePublished" datetime="2023-06-13T08:38:31+08:00">2023-06-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-11-11 21:32:51" itemprop="dateModified" datetime="2023-11-11T21:32:51+08:00">2023-11-11</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
-                </span>
-            </span>
+        
 
-          
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
 
-        </div>
-      </header>
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
-<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
-<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
-<li>\rho $\rho$ ，\pm $\pm$</li>
-<li>\geq $\geq$  \leq $\leq$</li>
-<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
-</ul>
-</li>
-<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
-<li>补充一个上面加点$\dot{x}$ dot<blockquote>
-<p>如何引用呢？使用&gt;即可</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
-
-      
     </div>
 
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
     
+
+</main>
+
+
     
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+<script src="/js/libs/Swup.min.js"></script>
 
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
 
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
 
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
 
-          </div>
-          
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
 
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
     });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">whilesunny</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">25</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">8</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-        <div class="back-to-top motion-element">
-          <i class="fa fa-arrow-up"></i>
-          <span>0%</span>
-        </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">whilesunny</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-        
-<div class="busuanzi-count">
-  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '.languages',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (element.id) {
-      script.id = element.id;
-    }
-    if (element.className) {
-      script.className = element.className;
-    }
-    if (element.type) {
-      script.type = element.type;
-    }
-    if (element.src) {
-      script.src = element.src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
-    }
-    if (element.dataset.pjax !== undefined) {
-      script.dataset.pjax = '';
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-});
 </script>
 
 
 
 
-  
 
 
 
 
-  
-<script src="/js/local-search.js"></script>
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
 
     
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
 
   
+<script src="/js/libs/Typed.min.js"></script>
 
-    </div>
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 </html>
