@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ai For Materials 论文研读</title>
+    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
+    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cheat Engine 告别风灵月影</title>
     <url>/2023/06/10/cheatengine/</url>
     <content><![CDATA[<span id="more"></span>
@@ -14,14 +25,66 @@
       </tags>
   </entry>
   <entry>
-    <title>Ai For Materials 论文研读</title>
-    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
-    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
+    <title>HealthCare RL 论文研读</title>
+    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
+    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
+<li>精读链接</li>
+<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
+</ul>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
+<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
+<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
+<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
+</ul>
+</li>
+<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
+<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
+</ul>
+</li>
+<li><strong>模型的临床应用和效果</strong>：<ul>
+<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
+</ul>
+</li>
+<li><strong>研究的局限性和未来展望</strong>：<ul>
+<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
+</ul>
+</li>
+</ol>
+]]></content>
       <categories>
         <category>论文研读</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>HealthCare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown实用语法</title>
+    <url>/2023/06/13/markdown-yu-fa/</url>
+    <content><![CDATA[<ul>
+<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
+<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
+<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
+<li>\rho $\rho$ ，\pm $\pm$</li>
+<li>\geq $\geq$  \leq $\leq$</li>
+<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
+</ul>
+</li>
+<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
+<li>补充一个上面加点$\dot{x}$ dot<blockquote>
+<p>如何引用呢？使用&gt;即可</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -165,6 +228,15 @@
 <li>git pull即可</li>
 </ul>
 </li>
+<li>上传<ul>
+<li><ul>
+<li><strong><code>git add .</code></strong><br>这个命令是用来将当前目录下的所有更改（新文件、修改过的文件）加入到暂存区（staging area）</li>
+</ul>
+</li>
+<li><strong><code>git commit -m &quot;text&quot;</code></strong><br>  这个命令用于将暂存区中的更改提交到本地的代码库中。<code>-m</code> 后面跟随的 <code>&quot;text&quot;</code> 是提交信息，用于描述这次提交的内容或目的</li>
+<li><strong><code>git push</code></strong><br>  这个命令用于将本地仓库的更改推送到远程仓库</li>
+</ul>
+</li>
 <li>指向问题出现的位置<ul>
 <li>ctrl+点击</li>
 </ul>
@@ -209,75 +281,28 @@
 </ul>
 </li>
 </ul>
+<h3 id="12-12"><a href="#12-12" class="headerlink" title="12-12"></a>12-12</h3><ul>
+<li>vscode使用<ul>
+<li><p>有关同一路径下的源码，使用git bash可以正常commit，但是使用vscode提交commit就会一直卡住</p>
+</li>
+<li><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/0dda4e0ef6374c49adcfdf843e37f5fe.png"
+                      alt="img"
+                ></p>
+</li>
+<li><p>此处，应该是git不接受自动生成的消息，取消勾选后手动填写message即可</p>
+</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>科研</category>
       </categories>
       <tags>
         <tag>HealthCare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HealthCare RL 论文研读</title>
-    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
-    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
-<li>精读链接</li>
-<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
-</ul>
-<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
-<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
-<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
-<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
-</ul>
-</li>
-<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
-<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
-</ul>
-</li>
-<li><strong>模型的临床应用和效果</strong>：<ul>
-<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
-</ul>
-</li>
-<li><strong>研究的局限性和未来展望</strong>：<ul>
-<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
-</ul>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>HealthCare</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown实用语法</title>
-    <url>/2023/06/13/markdown-yu-fa/</url>
-    <content><![CDATA[<ul>
-<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
-<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
-<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
-<li>\rho $\rho$ ，\pm $\pm$</li>
-<li>\geq $\geq$  \leq $\leq$</li>
-<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
-</ul>
-</li>
-<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
-<li>补充一个上面加点$\dot{x}$ dot<blockquote>
-<p>如何引用呢？使用&gt;即可</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -324,28 +349,6 @@
       <tags>
         <tag>AI4M</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Music Generation 工作日志</title>
-    <url>/2023/12/04/music-generation-gong-zuo-ri-zhi/</url>
-    <content><![CDATA[<h3 id="12-04"><a href="#12-04" class="headerlink" title="12-04"></a>12-04</h3><p>复现了代码</p>
-<ul>
-<li>一些知识<ul>
-<li><p>导入了os库以后，os.listdir(xx_dir)会列出指定目录下所有的文件和文件夹</p>
-</li>
-<li><p>tdqm库，只需作用于可迭代对象，下方就会显示进度条，类似于</p>
-</li>
-<li><pre><code class="python">from tqdm import tqdm
-for i in tqdm(range(10000)):
-</code></pre>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作日志</category>
-      </categories>
   </entry>
   <entry>
     <title>Prompt Engineering</title>
@@ -413,24 +416,6 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python绘图</title>
-    <url>/2023/11/21/python-hui-tu/</url>
-    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>Figure 是Axes的容器，画布</li>
-<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
-<li>Axis 坐标轴，上面有ticks和labels</li>
-<li>Artist 各种图形元素的统称</li>
-<li>legend 图例</li>
-</ul>
-<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -503,6 +488,24 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
+    <title>Python绘图</title>
+    <url>/2023/11/21/python-hui-tu/</url>
+    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>Figure 是Axes的容器，画布</li>
+<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
+<li>Axis 坐标轴，上面有ticks和labels</li>
+<li>Artist 各种图形元素的统称</li>
+<li>legend 图例</li>
+</ul>
+<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</title>
     <url>/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/</url>
     <content><![CDATA[<h3 id="Abstract-部分"><a href="#Abstract-部分" class="headerlink" title="Abstract 部分"></a>Abstract 部分</h3><ul>
@@ -543,6 +546,28 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
+    <title>Music Generation 工作日志</title>
+    <url>/2023/12/04/music-generation-gong-zuo-ri-zhi/</url>
+    <content><![CDATA[<h3 id="12-04"><a href="#12-04" class="headerlink" title="12-04"></a>12-04</h3><p>复现了代码</p>
+<ul>
+<li>一些知识<ul>
+<li><p>导入了os库以后，os.listdir(xx_dir)会列出指定目录下所有的文件和文件夹</p>
+</li>
+<li><p>tdqm库，只需作用于可迭代对象，下方就会显示进度条，类似于</p>
+</li>
+<li><pre><code class="python">from tqdm import tqdm
+for i in tqdm(range(10000)):
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
     <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
     <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
@@ -555,6 +580,20 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -621,20 +660,6 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
-<span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>工程图学</title>
     <url>/2023/11/01/gong-cheng-tu-xue/</url>
     <content><![CDATA[<span id="more"></span>
@@ -663,209 +688,78 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
-    <title>数理方程特殊函数部分以及其他</title>
-    <url>/2023/06/14/shu-li-fang-cheng/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>级数解</p>
+    <title>听报告的记录</title>
+    <url>/2023/12/15/bao-gao-ji-lu/</url>
+    <content><![CDATA[<h2 id="自驱动实验平台下有机激光材料的非同步分布式闭环研发"><a href="#自驱动实验平台下有机激光材料的非同步分布式闭环研发" class="headerlink" title="自驱动实验平台下有机激光材料的非同步分布式闭环研发"></a>自驱动实验平台下有机激光材料的非同步分布式闭环研发</h2><p>报告人：郝翰</p>
 <ul>
-<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
-<li>回到原式中带入级数解进行计算</li>
+<li>引入<ul>
+<li>OLED的研发与市场化</li>
 </ul>
-<p>坐标系</p>
+</li>
+<li>Self-Driving Lab<ul>
+<li>Current paradigm ——&gt; Closing the loop</li>
+<li>单个lab，可能无法满足研发需要</li>
+<li>Worldwide Delocalized SDLs</li>
+</ul>
+</li>
+<li>Function Oriented Molecule Design to Brightest Molecule</li>
+<li>Ai-Informed Suzuki<ul>
+<li>Good reactions are rare</li>
+<li><strong>Literature mining failed</strong></li>
+<li>General condition optimization</li>
+<li>Four rounds of automated reactions<ul>
+<li>21-46% improvement</li>
+</ul>
+</li>
+<li>Deeper insight into Reaction Progress</li>
+<li>End-to-End Automation WorkFlow</li>
+<li>From Calculation to Experiment to Device</li>
+</ul>
+</li>
+<li>Cross-Platform Knowledge Transfer<ul>
+<li>XDL universal language for chemistry</li>
+<li>Seamless knowledge Transfer</li>
+</ul>
+</li>
+<li>500 New Laser in 3 month</li>
+<li>Finding Good Lasers is Hard</li>
+<li>仅依靠高通量合成无法找到理想分子</li>
+<li>SDL驱动快速合成</li>
+</ul>
+<h4 id="如何表示激光分子？"><a href="#如何表示激光分子？" class="headerlink" title="如何表示激光分子？"></a>如何表示激光分子？</h4><p>初阶的表示法效果不佳<br>GNN Embedding</p>
 <ul>
-<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
-<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
-<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
+<li>for six DFT properties</li>
+<li>激光分子聚类现象<br>Asynchronous Bayesian Optimization<br>之后，Scale up</li>
 </ul>
-<p>Bessel方程</p>
+<h3 id="Acceleration-Consortium"><a href="#Acceleration-Consortium" class="headerlink" title="Acceleration Consortium"></a>Acceleration Consortium</h3><h2 id="Deliverable-Framework-of-Self-Driving-Labs"><a href="#Deliverable-Framework-of-Self-Driving-Labs" class="headerlink" title="Deliverable Framework of Self-Driving Labs"></a>Deliverable Framework of Self-Driving Labs</h2><p>一些自动化平台</p>
 <ul>
-<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
-<li>解记作$J_{\pm v(x)}$</li>
-<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
-<li><del>第三类柱函数</del></li>
-<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
-<li>基本递推关系</li>
-</ul>
-<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
-<ul>
-<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
-</ul>
-<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
-<ul>
-<li><p>特征为$l(l+1)$</p>
-</li>
-<li><p>解为$ j_l, n_l$</p>
-</li>
-</ul>
-<p>渐进行为</p>
-<ul>
-<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
-<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
-<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
-<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
-<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
-<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
-</ul>
-<p>Legendre方程和连带Legendre方程的形式</p>
-<ul>
-<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
-</li>
-<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
-</ul>
-</li>
-<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
-<ul>
-<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
-<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
-</ul>
-</li>
-<li><p>Legendre多项式的生成函数</p>
-<ul>
-<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
-<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
-</ul>
-</li>
-<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
-</li>
-<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
-</li>
-</ul>
-</li>
-<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
-<ul>
-<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
-<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
-<li>球谐函数的模长<ul>
-<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><del>递推公式、连带Legendre函数模方</del></p>
-</li>
-</ul>
-<p>傅里叶变换和逆变换形式</p>
-<p> Laplace变换和逆变换形式</p>
-<p>傅里叶变换的卷积公式</p>
-<p>Laplace变换的卷积公式</p>
-<p>方程标准型特征方程</p>
-<ul>
-<li><p>特征方程法</p>
-<ul>
-<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
-</li>
-<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
-</li>
-<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
-</li>
-<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
-</li>
-<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
-</li>
-<li><p>利用变换系数公式求解方程各项系数</p>
-</li>
-</ul>
-</li>
-<li><p>配方法</p>
-<ul>
-<li><del>变系数配方法</del></li>
-<li>常系数配方法，将二次项配方后，换元即可</li>
-</ul>
-</li>
-</ul>
-<p>格林函数</p>
-<ul>
-<li>电像法</li>
-<li>本征函数展开法<ul>
-<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
-<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
-</ul>
-</li>
-<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
-</ul>
-</li>
+<li>Chemspeed</li>
+<li>Chemputer Cronin Group</li>
+<li>Junior unchained</li>
+<li>The Machine Burke Group<br>The ATLAS python library</li>
 </ul>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>科研</category>
       </categories>
       <tags>
-        <tag>时光</tag>
+        <tag>报告</tag>
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/11/30/wei-ming-ming/</url>
-    <content><![CDATA[<p>让大模型成为RL Agent<br>mimictable_processed.csv<br>icu_stay id 可以视作不同的病人<br>step<br>gender<br>补充空值：阶跃响应<br>数值改为自然语言单位<br>Customized Dataset<br>Input Action Reward<br>转Prompt CoT   四个决策任选<br>时序，后面的Step需要前面的信息，以及前面的决策<br>Few Shot 选择方案<br>大模型会输出确定方案<br>sample wise 距离<br>Tianshou Buffer<br>读代码HD4RL-OPE-utils<br>HD4RL-core base_obj val_OPE 400 继承Tianshou policy 继承，改写forward<br>Metrics </p>
-<ul>
-<li>监督学习，效果不佳，复刻医生决策<ul>
-<li>医生并不optimal</li>
-<li>学不到好的</li>
-<li>监督学习基础下，比较大模型和监督学习</li>
+    <title>日常工作日志</title>
+    <url>/2023/12/13/ri-chang-gong-zuo-ri-zhi/</url>
+    <content><![CDATA[<h3 id="12-13"><a href="#12-13" class="headerlink" title="12-13"></a>12-13</h3><ul>
+<li>有关matplotlib再度踩坑一次<br>plt.imshow会尝试把浮点值调整到[0.1]，但是如果是RGB，结果就寄了<br>所以输出的时候，如果是RGB图，要记得</li>
 </ul>
-</li>
-<li>![[Pasted image 20231130173523.png]]</li>
-</ul>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">plt.imshow(convolved_avg.astype(np.uint8))</span><br></pre></td></tr></table></figure></div>
+
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/12/11/wei-ming-ming-1/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的$f$和$g$进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
-</ul>
-</li>
-<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
       <categories>
-        <category>课程</category>
+        <category>工作日志</category>
       </categories>
       <tags>
         <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>one-hot编码向量化及还原</title>
-    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
-    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
-<span id="more"></span>
-
-<ul>
-<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
-  <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
-<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
-<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></div></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -1226,6 +1120,170 @@ for i in tqdm(range(10000)):
 </li>
 </ul>
 <h4 id="选区电子衍射"><a href="#选区电子衍射" class="headerlink" title="选区电子衍射"></a>选区电子衍射</h4><h4 id="多晶电子衍射花样和相机长度标定"><a href="#多晶电子衍射花样和相机长度标定" class="headerlink" title="多晶电子衍射花样和相机长度标定"></a>多晶电子衍射花样和相机长度标定</h4><h4 id="单晶电子衍射花样的分布"><a href="#单晶电子衍射花样的分布" class="headerlink" title="单晶电子衍射花样的分布"></a>单晶电子衍射花样的分布</h4><h4 id="其他电子衍射谱"><a href="#其他电子衍射谱" class="headerlink" title="其他电子衍射谱"></a>其他电子衍射谱</h4><h3 id="第五章-复杂电子衍射谱"><a href="#第五章-复杂电子衍射谱" class="headerlink" title="第五章 复杂电子衍射谱"></a>第五章 复杂电子衍射谱</h3><h4 id="孪晶电子衍射谱"><a href="#孪晶电子衍射谱" class="headerlink" title="孪晶电子衍射谱"></a>孪晶电子衍射谱</h4><h4 id="高阶劳厄带电子衍射谱"><a href="#高阶劳厄带电子衍射谱" class="headerlink" title="高阶劳厄带电子衍射谱"></a>高阶劳厄带电子衍射谱</h4><h4 id="菊池线分析"><a href="#菊池线分析" class="headerlink" title="菊池线分析"></a>菊池线分析</h4>]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数理方程特殊函数部分以及其他</title>
+    <url>/2023/06/14/shu-li-fang-cheng/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>级数解</p>
+<ul>
+<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
+<li>回到原式中带入级数解进行计算</li>
+</ul>
+<p>坐标系</p>
+<ul>
+<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
+<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
+<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
+</ul>
+<p>Bessel方程</p>
+<ul>
+<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
+<li>解记作$J_{\pm v(x)}$</li>
+<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
+<li><del>第三类柱函数</del></li>
+<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
+<li>基本递推关系</li>
+</ul>
+<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
+<ul>
+<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
+</ul>
+<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
+<ul>
+<li><p>特征为$l(l+1)$</p>
+</li>
+<li><p>解为$ j_l, n_l$</p>
+</li>
+</ul>
+<p>渐进行为</p>
+<ul>
+<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
+<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
+<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
+<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
+<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
+<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
+</ul>
+<p>Legendre方程和连带Legendre方程的形式</p>
+<ul>
+<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
+</li>
+<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
+</ul>
+</li>
+<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
+<ul>
+<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
+<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
+</ul>
+</li>
+<li><p>Legendre多项式的生成函数</p>
+<ul>
+<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
+<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
+</ul>
+</li>
+<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
+</li>
+<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
+</li>
+</ul>
+</li>
+<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
+<ul>
+<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
+<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
+<li>球谐函数的模长<ul>
+<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><del>递推公式、连带Legendre函数模方</del></p>
+</li>
+</ul>
+<p>傅里叶变换和逆变换形式</p>
+<p> Laplace变换和逆变换形式</p>
+<p>傅里叶变换的卷积公式</p>
+<p>Laplace变换的卷积公式</p>
+<p>方程标准型特征方程</p>
+<ul>
+<li><p>特征方程法</p>
+<ul>
+<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
+</li>
+<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
+</li>
+<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
+</li>
+<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
+</li>
+<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
+</li>
+<li><p>利用变换系数公式求解方程各项系数</p>
+</li>
+</ul>
+</li>
+<li><p>配方法</p>
+<ul>
+<li><del>变系数配方法</del></li>
+<li>常系数配方法，将二次项配方后，换元即可</li>
+</ul>
+</li>
+</ul>
+<p>格林函数</p>
+<ul>
+<li>电像法</li>
+<li>本征函数展开法<ul>
+<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
+<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
+</ul>
+</li>
+<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>时光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的$f$和$g$进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
+</ul>
+</li>
+<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -2045,6 +2103,28 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>one-hot编码向量化及还原</title>
+    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
+    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
+<span id="more"></span>
+
+<ul>
+<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
+  <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
+<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -2897,7 +2977,13 @@ for i in tqdm(range(10000)):
 <h3 id="量子态随时间的演化"><a href="#量子态随时间的演化" class="headerlink" title="量子态随时间的演化"></a>量子态随时间的演化</h3><ul>
 <li>Hamilton量不含时的体系</li>
 </ul>
-<h1 id="统计部分"><a href="#统计部分" class="headerlink" title="统计部分"></a>统计部分</h1><h3 id="近独立粒子系统的统计分布"><a href="#近独立粒子系统的统计分布" class="headerlink" title="近独立粒子系统的统计分布"></a>近独立粒子系统的统计分布</h3><h3 id="粒子和系统状态的量子力学描述"><a href="#粒子和系统状态的量子力学描述" class="headerlink" title="粒子和系统状态的量子力学描述"></a>粒子和系统状态的量子力学描述</h3><h3 id="分布与微观状态数"><a href="#分布与微观状态数" class="headerlink" title="分布与微观状态数"></a>分布与微观状态数</h3><h3 id="玻尔兹曼分布"><a href="#玻尔兹曼分布" class="headerlink" title="玻尔兹曼分布"></a>玻尔兹曼分布</h3><p>粒子在量子本性上是全同的，但是为可以区分的，单粒子态上可容纳的粒子数是不受限制的</p>
+<h1 id="统计部分"><a href="#统计部分" class="headerlink" title="统计部分"></a>统计部分</h1><h3 id="近独立粒子系统的统计分布"><a href="#近独立粒子系统的统计分布" class="headerlink" title="近独立粒子系统的统计分布"></a>近独立粒子系统的统计分布</h3><h3 id="粒子和系统状态的量子力学描述"><a href="#粒子和系统状态的量子力学描述" class="headerlink" title="粒子和系统状态的量子力学描述"></a>粒子和系统状态的量子力学描述</h3><h3 id="分布与微观状态数"><a href="#分布与微观状态数" class="headerlink" title="分布与微观状态数"></a>分布与微观状态数</h3><ul>
+<li>表示方法<ul>
+<li>以$\epsilon_l$表示粒子的各个能级，$\omega_l$表示粒子各个能级的简并度，$a_l$表示能级$\epsilon_l$上的粒子数</li>
+</ul>
+</li>
+</ul>
+<h3 id="玻尔兹曼分布"><a href="#玻尔兹曼分布" class="headerlink" title="玻尔兹曼分布"></a>玻尔兹曼分布</h3><p>粒子在量子本性上是全同的，但是为可以区分的，单粒子态上可容纳的粒子数是不受限制的</p>
 <h3 id="Bose-分布"><a href="#Bose-分布" class="headerlink" title="Bose 分布"></a>Bose 分布</h3><p>由全同的Bose子构成，与玻尔兹曼分布的区别在于，认为粒子不可区分，单粒子态上可容纳的粒子数也是不受限制的</p>
 <h3 id="Fermi-分布"><a href="#Fermi-分布" class="headerlink" title="Fermi 分布"></a>Fermi 分布</h3><p>由全同的Fermi子构成，单粒子态只能容纳一个粒子</p>
 <h3 id="半经典分布和玻尔兹曼分布"><a href="#半经典分布和玻尔兹曼分布" class="headerlink" title="半经典分布和玻尔兹曼分布"></a>半经典分布和玻尔兹曼分布</h3><ul>
@@ -2907,7 +2993,49 @@ for i in tqdm(range(10000)):
 <li>$\beta$的物理意义</li>
 <li>$\alpha$的物理意义</li>
 </ul>
-]]></content>
+<h2 id="玻尔兹曼统计理论"><a href="#玻尔兹曼统计理论" class="headerlink" title="玻尔兹曼统计理论"></a>玻尔兹曼统计理论</h2><h3 id="配分函数与宏观量"><a href="#配分函数与宏观量" class="headerlink" title="配分函数与宏观量"></a>配分函数与宏观量</h3><ul>
+<li>Boltzmann分布<ul>
+<li>$n_l&#x3D;e^{-\alpha-\beta\epsilon_l}\omega_l$</li>
+<li>提取公共因子部分，并考虑到粒子数之和为定值$N$$e^{-\alpha}\sum_le^{-\beta\epsilon_l}\omega_l&#x3D;N$</li>
+</ul>
+</li>
+<li>配分函数<ul>
+<li>定义$z&#x3D;\sum_le^{-\beta\epsilon_l}\omega_l$<ul>
+<li>也即$z&#x3D;z(\beta,y)$</li>
+<li>其中，$y$为外参量，而$\beta&#x3D;\beta(T)$</li>
+</ul>
+</li>
+<li>$N&#x3D;e^{-a}z$</li>
+</ul>
+</li>
+<li>能量平均值、压强与物态方程<ul>
+<li>能量平均值<ul>
+<li>尝试将系统能量平均值用$z$表出</li>
+<li>$\overline{E}&#x3D;\sum_in_i\varepsilon_i&#x3D;\sum_i\varepsilon_ie^{-\alpha-\beta\varepsilon_i}\omega_i$</li>
+<li>$&#x3D;-N\frac{\partial\left(\ln z\right)}{\partial\beta}$</li>
+<li>这就是系统平均能量的统计表达式</li>
+</ul>
+</li>
+<li>物态方程<ul>
+<li>$d\overline{E}&#x3D;\delta W+\delta Q$</li>
+<li>在无限小可逆过程中$d\overline{E}&#x3D;d\left(\sum_in_i\varepsilon_i\right)&#x3D;\sum_in_id\varepsilon_i+\sum_i\varepsilon_idn_i$</li>
+<li>右侧前者代表由外参量变化引起的粒子所处能级变化</li>
+<li>$\delta W&#x3D;\sum_in_id\varepsilon_i$</li>
+<li>$\sum_{k}Y_{k}dy_{k}&#x3D;\sum_{i}n_{i}d\varepsilon_{i}&#x3D;\sum_{i}n_{i}\bigg(\sum_{k}\frac{\partial\varepsilon_{i}}{\partial y_{k}}dy_{k}\bigg)&#x3D;\sum_{k}\bigg(\sum_{i}n_{i}\frac{\partial\varepsilon_{i}}{\partial y_{k}}\bigg)dy_{k}$</li>
+</ul>
+</li>
+<li>热量、$\beta$的值和熵</li>
+<li>自由能和$\alpha$的值<ul>
+<li>没有外场作用的，具有压缩功的系统，$z$是$(\beta,V)$的函数<ul>
+<li>也即，外参量只有$V$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="粒子状态的半经典描述"><a href="#粒子状态的半经典描述" class="headerlink" title="粒子状态的半经典描述"></a>粒子状态的半经典描述</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
