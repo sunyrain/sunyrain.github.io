@@ -18,15 +18,15 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="12-13 有关matplotlib再度踩坑一次plt.imshow会尝试把浮点值调整到[0.1]，但是如果是RGB，结果就寄了所以输出的时候，如果是RGB图，要记得  1plt.imshow(convolved_avg.astype(np.uint8))">
+        <meta name="description" content="12-13 有关matplotlib再度踩坑一次plt.imshow会尝试把浮点值调整到[0.1]，但是如果是RGB，结果就寄了所以输出的时候，如果是RGB图，要记得  1plt.imshow(convolved_avg.astype(np.uint8))  12-16 有关ensemble的进一步提升，stack思想  即，训练多个基模型，然后以基模型的输出，作为元模型的输入，拟合最终的分类标签">
 <meta property="og:type" content="article">
 <meta property="og:title" content="日常工作日志">
 <meta property="og:url" content="https://sunyrain.github.io/2023/12/13/ri-chang-gong-zuo-ri-zhi/index.html">
 <meta property="og:site_name" content="whilesunny">
-<meta property="og:description" content="12-13 有关matplotlib再度踩坑一次plt.imshow会尝试把浮点值调整到[0.1]，但是如果是RGB，结果就寄了所以输出的时候，如果是RGB图，要记得  1plt.imshow(convolved_avg.astype(np.uint8))">
+<meta property="og:description" content="12-13 有关matplotlib再度踩坑一次plt.imshow会尝试把浮点值调整到[0.1]，但是如果是RGB，结果就寄了所以输出的时候，如果是RGB图，要记得  1plt.imshow(convolved_avg.astype(np.uint8))  12-16 有关ensemble的进一步提升，stack思想  即，训练多个基模型，然后以基模型的输出，作为元模型的输入，拟合最终的分类标签">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-13T12:24:21.094Z">
-<meta property="article:modified_time" content="2023-12-13T12:28:15.404Z">
+<meta property="article:modified_time" content="2023-12-16T08:17:11.990Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
@@ -528,8 +528,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-12-13 20:28:15</span>
-            <span class="mobile">2023-12-13 20:28:15</span>
+            <span class="desktop">2023-12-16 16:17:11</span>
+            <span class="mobile">2023-12-16 16:17:11</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -567,7 +567,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>56 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>290 字</span>
         </span>
     
     
@@ -596,6 +596,15 @@
 </ul>
 <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.imshow(convolved_avg.astype(np.uint8))</span><br></pre></td></tr></table></figure></div>
 
+<h3 id="12-16"><a href="#12-16" class="headerlink" title="12-16"></a>12-16</h3><ul>
+<li><p>有关ensemble的进一步提升，stack思想</p>
+<ul>
+<li>即，训练多个基模型，然后以基模型的输出，作为元模型的输入，拟合最终的分类标签</li>
+</ul>
+</li>
+<li><p>调用optuna自动搜索超参，非常方便</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">objective</span>(<span class="params">trial</span>):</span><br><span class="line">    <span class="comment"># 超参数搜索空间</span></span><br><span class="line">    batch_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;batch_size&#x27;</span>, [<span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>]))</span><br><span class="line">    learning_rate = trial.suggest_loguniform(<span class="string">&#x27;learning_rate&#x27;</span>, <span class="number">1e-6</span>, <span class="number">1e-2</span>)</span><br><span class="line">    hidden_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;hidden_size&#x27;</span>, [<span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">512</span>, <span class="number">1024</span>]))</span><br><span class="line">    num_layers = trial.suggest_int(<span class="string">&#x27;num_layers&#x27;</span>, <span class="number">1</span>, <span class="number">7</span>)</span><br><span class="line">    num_epochs = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;num_epochs&#x27;</span>, [<span class="number">10</span>, <span class="number">15</span>,<span class="number">20</span>, <span class="number">25</span>,<span class="number">30</span>,<span class="number">40</span>]))  <span class="comment"># 固定为一个较小的数值以加快实验</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数据加载</span></span><br><span class="line">    train_loader = DataLoader(TensorDataset(train_data_tensor, train_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">True</span>)</span><br><span class="line">    test_loader = DataLoader(TensorDataset(test_data_tensor, test_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 模型初始化</span></span><br><span class="line">    model = RNNClassifier(input_size, hidden_size, output_size, num_layers).to(device)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 损失函数和优化器</span></span><br><span class="line">    criterion = nn.CrossEntropyLoss()</span><br><span class="line">    optimizer = optim.Adam(model.parameters(), lr=learning_rate)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 训练和评估</span></span><br><span class="line">    accuracy = train_and_evaluate(model, train_loader, test_loader, optimizer, criterion, num_epochs)</span><br><span class="line">    <span class="keyword">return</span> accuracy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个 Optuna study 对象并开始优化</span></span><br><span class="line">study = optuna.create_study(direction=<span class="string">&#x27;maximize&#x27;</span>)</span><br><span class="line">study.optimize(objective, n_trials=<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></div></li>
+</ul>
 
         </div>
 
@@ -610,7 +619,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-12-13 20:28:15
+                    :</strong> 2023-12-16 16:17:11
             </li>
         
         <li>
@@ -733,7 +742,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">日常工作日志</div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#12-13"><span class="nav-text">12-13</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#12-13"><span class="nav-text">12-13</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-16"><span class="nav-text">12-16</span></a></li></ol>
 
     </div>
 </div>

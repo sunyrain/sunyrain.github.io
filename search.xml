@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Ai For Materials 论文研读</title>
-    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
-    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cheat Engine 告别风灵月影</title>
     <url>/2023/06/10/cheatengine/</url>
     <content><![CDATA[<span id="more"></span>
@@ -22,6 +11,17 @@
       </categories>
       <tags>
         <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ai For Materials 论文研读</title>
+    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
+    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -59,32 +59,72 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown实用语法</title>
-    <url>/2023/06/13/markdown-yu-fa/</url>
-    <content><![CDATA[<ul>
-<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
-<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
-<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
-<li>\rho $\rho$ ，\pm $\pm$</li>
-<li>\geq $\geq$  \leq $\leq$</li>
-<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
-</ul>
+    <title>Music Generation 工作日志</title>
+    <url>/2023/12/04/music-generation-gong-zuo-ri-zhi/</url>
+    <content><![CDATA[<h3 id="12-04"><a href="#12-04" class="headerlink" title="12-04"></a>12-04</h3><p>复现了代码</p>
+<ul>
+<li>一些知识<ul>
+<li><p>导入了os库以后，os.listdir(xx_dir)会列出指定目录下所有的文件和文件夹</p>
 </li>
-<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
-<li>补充一个上面加点$\dot{x}$ dot<blockquote>
-<p>如何引用呢？使用&gt;即可</p>
-</blockquote>
+<li><p>tdqm库，只需作用于可迭代对象，下方就会显示进度条，类似于</p>
 </li>
-</ul>
+<li><pre><code class="python">from tqdm import tqdm
+for i in tqdm(range(10000)):
+</code></pre>
+</li>
+<li><p>注意：使用的是 <code>tqdm</code> 模块的 <code>tqdm</code> 函数</p>
 </li>
 </ul>
-<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>工具</category>
+        <category>工作日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>MatterGen: a generative model for inorganicmaterials design</title>
+    <url>/2023/12/10/mattergen-a-generative-model-for-inorganic-materials-design/</url>
+    <content><![CDATA[<h3 id="摘要部分"><a href="#摘要部分" class="headerlink" title="摘要部分"></a>摘要部分</h3><p>生成式模型为材料设计提供了新范式，但是此前的研究存在着成功率低、只能满足非常有限的性质约束等缺陷<br>MatterGen是一种基于扩散的新型模型，，他通过逐步细化原子类型、坐标和周期晶格来产生晶体结构</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>传统而言，新材料的发现基于实验和科学家直觉</p>
+<ul>
+<li>一些进展<ul>
+<li>high throughout screening 高通量筛选</li>
+<li>open material datebases 开放材料数据库</li>
+<li>machine-learning-based property predictors 基于机器学习的性质预测器</li>
+<li>machine learning force fields (MLFFs) 机器学习力场</li>
+</ul>
+</li>
+<li>局限性<ul>
+<li>受限于已知材料的数量</li>
+<li>传统筛选方法无法有效针对目标属性的材料进行发现</li>
+</ul>
+</li>
+<li>关注<ul>
+<li>论文提到了此前的[[Scaling deep learning for materials discovery]]，指出了相比于潜在的稳定无机化合物（$10^{10}$）目前最大的探索($10^{6}到10^{7}$)，也仅仅是很小的一部分<br>在这些限制下，人们对逆向生成产生了兴趣</li>
+</ul>
+</li>
+<li>目前的一些其他缺陷<ul>
+<li>目前方法基于DFT计算，但是DFT给出的稳定结果实际上未必稳定</li>
+<li>目前方法可以处理的元素周期表中的元素有限</li>
+<li>目前方法只能优化少数几种材料性质，主要是形成能<ul>
+<li>虽然形成能是材料稳定性的一个关键指标，但是要设计特定功能的材料的话，还需要电子、磁性质等等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>之前的SOTA<ul>
+<li>Crystal diffusion variational autoencoder for periodic material generation</li>
+</ul>
+</li>
+<li>介绍MatterGen</li>
+</ul>
+]]></content>
+      <categories>
+        <category>论文研读</category>
       </categories>
       <tags>
-        <tag>奇遇</tag>
+        <tag>AI4M</tag>
       </tags>
   </entry>
   <entry>
@@ -297,6 +337,26 @@
 </ul>
 </li>
 </ul>
+<h3 id="12-16"><a href="#12-16" class="headerlink" title="12-16"></a>12-16</h3><h4 id="code-review"><a href="#code-review" class="headerlink" title="code_review"></a>code_review</h4><ul>
+<li>prompt</li>
+<li>标签+解释+列与用药的相关性+列之间的联系+列与疾病的关系<ul>
+<li>col与col之间的关系<br>问chatgpt了解相关性</li>
+</ul>
+</li>
+<li>讲述46个特征</li>
+<li>以下是病人按照时间顺序的排列<ul>
+<li>每一行 格式 分隔方式</li>
+<li></li>
+</ul>
+</li>
+<li>GPT挑选特征</li>
+</ul>
+<h3 id="12-17"><a href="#12-17" class="headerlink" title="12-17"></a>12-17</h3><ul>
+<li>Pandas相关问题<ul>
+<li>在处理不同类型的数据时会自动推断数据类型。如果一个列中包含混合类型的数据（比如数字和字符串），Pandas可能会将整个列的数据类型推断为Object，所以合并数据之前务必检查格式。</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>科研</category>
@@ -306,48 +366,32 @@
       </tags>
   </entry>
   <entry>
-    <title>MatterGen: a generative model for inorganicmaterials design</title>
-    <url>/2023/12/10/mattergen-a-generative-model-for-inorganic-materials-design/</url>
-    <content><![CDATA[<h3 id="摘要部分"><a href="#摘要部分" class="headerlink" title="摘要部分"></a>摘要部分</h3><p>生成式模型为材料设计提供了新范式，但是此前的研究存在着成功率低、只能满足非常有限的性质约束等缺陷<br>MatterGen是一种基于扩散的新型模型，，他通过逐步细化原子类型、坐标和周期晶格来产生晶体结构</p>
-<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>传统而言，新材料的发现基于实验和科学家直觉</p>
-<ul>
-<li>一些进展<ul>
-<li>high throughout screening 高通量筛选</li>
-<li>open material datebases 开放材料数据库</li>
-<li>machine-learning-based property predictors 基于机器学习的性质预测器</li>
-<li>machine learning force fields (MLFFs) 机器学习力场</li>
+    <title>Markdown实用语法</title>
+    <url>/2023/06/13/markdown-yu-fa/</url>
+    <content><![CDATA[<ul>
+<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
+<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
+<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
+<li>\rho $\rho$ ，\pm $\pm$</li>
+<li>\geq $\geq$  \leq $\leq$</li>
+<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
 </ul>
 </li>
-<li>局限性<ul>
-<li>受限于已知材料的数量</li>
-<li>传统筛选方法无法有效针对目标属性的材料进行发现</li>
-</ul>
-</li>
-<li>关注<ul>
-<li>论文提到了此前的[[Scaling deep learning for materials discovery]]，指出了相比于潜在的稳定无机化合物（$10^{10}$）目前最大的探索($10^{6}到10^{7}$)，也仅仅是很小的一部分<br>在这些限制下，人们对逆向生成产生了兴趣</li>
-</ul>
-</li>
-<li>目前的一些其他缺陷<ul>
-<li>目前方法基于DFT计算，但是DFT给出的稳定结果实际上未必稳定</li>
-<li>目前方法可以处理的元素周期表中的元素有限</li>
-<li>目前方法只能优化少数几种材料性质，主要是形成能<ul>
-<li>虽然形成能是材料稳定性的一个关键指标，但是要设计特定功能的材料的话，还需要电子、磁性质等等</li>
-</ul>
+<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
+<li>补充一个上面加点$\dot{x}$ dot<blockquote>
+<p>如何引用呢？使用&gt;即可</p>
+</blockquote>
 </li>
 </ul>
 </li>
-<li>之前的SOTA<ul>
-<li>Crystal diffusion variational autoencoder for periodic material generation</li>
 </ul>
-</li>
-<li>介绍MatterGen</li>
-</ul>
+<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
 ]]></content>
       <categories>
-        <category>论文研读</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>AI4M</tag>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -419,93 +463,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Scaling deep learning for materials discovery</title>
-    <url>/2023/11/30/scaling-deep-learning-for-materials-discovery/</url>
-    <content><![CDATA[<blockquote>
-<p>Author：Amil Merchant1,3 , Simon Batzner1,3, Samuel S. Schoenholz1,3, Muratahan Aykol1 ,Gowoon Cheon2 &amp; Ekin Dogus Cubuk1,3 </p>
-</blockquote>
-<h3 id="Abtract"><a href="#Abtract" class="headerlink" title="Abtract"></a>Abtract</h3><ul>
-<li><p>Discovery of inorganic crystals has been bottenecked by expensive trial-and-error approaches.</p>
-<h4 id="Definitions"><a href="#Definitions" class="headerlink" title="Definitions"></a>Definitions</h4></li>
-<li><p>Convex Hall 计算化学和计算材料学领域，凸包边缘往往代表最稳定的化合物</p>
-</li>
-<li><p>zero-shot-learning 模型需要在完全未见过的数据类别上做出预测</p>
-</li>
-<li><p>ad initio 第一性原理计算</p>
-</li>
-<li><p>estimate stability 也即对比凸包边缘化合物与其竞争项的分解能，分解能低的一般被认为是不稳定的</p>
-</li>
-<li><p>SAPS（Symmetry-Aware Partial Substitutions，对称性感知部分替换，利用已知材料的结构信息，通过部分替换原子来创造新的化合物或材料</p>
-</li>
-</ul>
-<h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><ul>
-<li><p>data flywheel 利用图神经网络筛选后的被认为“稳定”的候选分子，再利用DFT进行能量计算验证，利用计算后的结果迭代更新模型</p>
-</li>
-<li><p>GNoME enables accurate predictions of structures with 5+ unique elements(despite omission from training)</p>
-</li>
-<li><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130104356265.png"
-                      alt="image-20231130104356265"
-                ></p>
-<ul>
-<li><p>两条pipeline 并行工作</p>
-</li>
-<li><p>结构管线</p>
-<ul>
-<li>假设有一种已知的材料结构A，我们想要探索A的变体或相关结构是否稳定</li>
-<li>利用SAPS等生成新的材料结构，并构建图表示</li>
-<li>利用GNN评估材料稳定性，并对稳定结果计算DFT</li>
-</ul>
-</li>
-<li><p>成分管线中</p>
-<ul>
-<li>从一种特定的化学式出发，比如Li₂S₂O₇</li>
-<li>为表达式构建图表示，并利用GNN评估稳定性</li>
-<li>在判断为稳定的成分中，利用AIRSS为其随机选择结构，并计算DFT</li>
-</ul>
-</li>
-<li><p>注意，GNN的用途是多样的</p>
-</li>
-<li><p><strong>对结构的评估</strong>：在结构管线中，GNoME接收的是候选材料的图表示，这些图是基于材料的原子结构和它们之间的连接关系构建的。在这种情况下，GNoME评估的是这些特定结构的稳定性。</p>
-</li>
-<li><p><strong>对成分的评估</strong>：而在成分管线中，GNoME接收的是化学成分的图表示，可能不包括具体的原子排列信息，而是反映了化学式中不同元素的种类和它们的计量比。这里的挑战是在没有明确的结构信息的情况下预测稳定性。</p>
-</li>
-</ul>
-<h4 id="Definitions-1"><a href="#Definitions-1" class="headerlink" title="Definitions"></a>Definitions</h4></li>
-<li><p>AIRSS (Automated Random Structure  Searching)随机生成大量的结构配置，然后使用DFT等评估它们的稳定性</p>
-</li>
-<li><p>$r^2$SCAN &amp; PBE 这是两种DFT方法，PBE被一般认为精度不如$r^2$SCAN，但速度较快，一般实验人员会对PBE初步计算后认为较有可能性的材料进行进一步$r^2$SCAN计算</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>AI4M</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python绘图</title>
-    <url>/2023/11/21/python-hui-tu/</url>
-    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>Figure 是Axes的容器，画布</li>
-<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
-<li>Axis 坐标轴，上面有ticks和labels</li>
-<li>Artist 各种图形元素的统称</li>
-<li>legend 图例</li>
-</ul>
-<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</title>
     <url>/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/</url>
     <content><![CDATA[<h3 id="Abstract-部分"><a href="#Abstract-部分" class="headerlink" title="Abstract 部分"></a>Abstract 部分</h3><ul>
@@ -546,28 +503,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Music Generation 工作日志</title>
-    <url>/2023/12/04/music-generation-gong-zuo-ri-zhi/</url>
-    <content><![CDATA[<h3 id="12-04"><a href="#12-04" class="headerlink" title="12-04"></a>12-04</h3><p>复现了代码</p>
-<ul>
-<li>一些知识<ul>
-<li><p>导入了os库以后，os.listdir(xx_dir)会列出指定目录下所有的文件和文件夹</p>
-</li>
-<li><p>tdqm库，只需作用于可迭代对象，下方就会显示进度条，类似于</p>
-</li>
-<li><pre><code class="python">from tqdm import tqdm
-for i in tqdm(range(10000)):
-</code></pre>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
     <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
     <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
@@ -580,20 +515,6 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
-<span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -657,6 +578,38 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python绘图</title>
+    <url>/2023/11/21/python-hui-tu/</url>
+    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>Figure 是Axes的容器，画布</li>
+<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
+<li>Axis 坐标轴，上面有ticks和labels</li>
+<li>Artist 各种图形元素的统称</li>
+<li>legend 图例</li>
+</ul>
+<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -747,6 +700,143 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
+    <title>数理方程特殊函数部分以及其他</title>
+    <url>/2023/06/14/shu-li-fang-cheng/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>级数解</p>
+<ul>
+<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
+<li>回到原式中带入级数解进行计算</li>
+</ul>
+<p>坐标系</p>
+<ul>
+<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
+<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
+<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
+</ul>
+<p>Bessel方程</p>
+<ul>
+<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
+<li>解记作$J_{\pm v(x)}$</li>
+<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
+<li><del>第三类柱函数</del></li>
+<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
+<li>基本递推关系</li>
+</ul>
+<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
+<ul>
+<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
+</ul>
+<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
+<ul>
+<li><p>特征为$l(l+1)$</p>
+</li>
+<li><p>解为$ j_l, n_l$</p>
+</li>
+</ul>
+<p>渐进行为</p>
+<ul>
+<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
+<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
+<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
+<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
+<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
+<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
+<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
+</ul>
+<p>Legendre方程和连带Legendre方程的形式</p>
+<ul>
+<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
+</li>
+<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
+</ul>
+</li>
+<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
+<ul>
+<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
+<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
+</ul>
+</li>
+<li><p>Legendre多项式的生成函数</p>
+<ul>
+<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
+<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
+</ul>
+</li>
+<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
+<ul>
+<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
+</li>
+<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
+</li>
+</ul>
+</li>
+<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
+<ul>
+<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
+<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
+<li>球谐函数的模长<ul>
+<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><del>递推公式、连带Legendre函数模方</del></p>
+</li>
+</ul>
+<p>傅里叶变换和逆变换形式</p>
+<p> Laplace变换和逆变换形式</p>
+<p>傅里叶变换的卷积公式</p>
+<p>Laplace变换的卷积公式</p>
+<p>方程标准型特征方程</p>
+<ul>
+<li><p>特征方程法</p>
+<ul>
+<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
+</li>
+<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
+</li>
+<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
+</li>
+<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
+</li>
+<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
+</li>
+<li><p>利用变换系数公式求解方程各项系数</p>
+</li>
+</ul>
+</li>
+<li><p>配方法</p>
+<ul>
+<li><del>变系数配方法</del></li>
+<li>常系数配方法，将二次项配方后，换元即可</li>
+</ul>
+</li>
+</ul>
+<p>格林函数</p>
+<ul>
+<li>电像法</li>
+<li>本征函数展开法<ul>
+<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
+<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
+</ul>
+</li>
+<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>时光</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日常工作日志</title>
     <url>/2023/12/13/ri-chang-gong-zuo-ri-zhi/</url>
     <content><![CDATA[<h3 id="12-13"><a href="#12-13" class="headerlink" title="12-13"></a>12-13</h3><ul>
@@ -754,12 +844,117 @@ for i in tqdm(range(10000)):
 </ul>
 <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">plt.imshow(convolved_avg.astype(np.uint8))</span><br></pre></td></tr></table></figure></div>
 
+<h3 id="12-16"><a href="#12-16" class="headerlink" title="12-16"></a>12-16</h3><ul>
+<li><p>有关ensemble的进一步提升，stack思想</p>
+<ul>
+<li>即，训练多个基模型，然后以基模型的输出，作为元模型的输入，拟合最终的分类标签</li>
+</ul>
+</li>
+<li><p>调用optuna自动搜索超参，非常方便</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">objective</span>(<span class="params">trial</span>):</span><br><span class="line">    <span class="comment"># 超参数搜索空间</span></span><br><span class="line">    batch_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;batch_size&#x27;</span>, [<span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>]))</span><br><span class="line">    learning_rate = trial.suggest_loguniform(<span class="string">&#x27;learning_rate&#x27;</span>, <span class="number">1e-6</span>, <span class="number">1e-2</span>)</span><br><span class="line">    hidden_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;hidden_size&#x27;</span>, [<span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">512</span>, <span class="number">1024</span>]))</span><br><span class="line">    num_layers = trial.suggest_int(<span class="string">&#x27;num_layers&#x27;</span>, <span class="number">1</span>, <span class="number">7</span>)</span><br><span class="line">    num_epochs = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;num_epochs&#x27;</span>, [<span class="number">10</span>, <span class="number">15</span>,<span class="number">20</span>, <span class="number">25</span>,<span class="number">30</span>,<span class="number">40</span>]))  <span class="comment"># 固定为一个较小的数值以加快实验</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数据加载</span></span><br><span class="line">    train_loader = DataLoader(TensorDataset(train_data_tensor, train_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">True</span>)</span><br><span class="line">    test_loader = DataLoader(TensorDataset(test_data_tensor, test_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 模型初始化</span></span><br><span class="line">    model = RNNClassifier(input_size, hidden_size, output_size, num_layers).to(device)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 损失函数和优化器</span></span><br><span class="line">    criterion = nn.CrossEntropyLoss()</span><br><span class="line">    optimizer = optim.Adam(model.parameters(), lr=learning_rate)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 训练和评估</span></span><br><span class="line">    accuracy = train_and_evaluate(model, train_loader, test_loader, optimizer, criterion, num_epochs)</span><br><span class="line">    <span class="keyword">return</span> accuracy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个 Optuna study 对象并开始优化</span></span><br><span class="line">study = optuna.create_study(direction=<span class="string">&#x27;maximize&#x27;</span>)</span><br><span class="line">study.optimize(objective, n_trials=<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></div></li>
+</ul>
 ]]></content>
       <categories>
         <category>工作日志</category>
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的$f$和$g$进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
+</ul>
+</li>
+<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Scaling deep learning for materials discovery</title>
+    <url>/2023/11/30/scaling-deep-learning-for-materials-discovery/</url>
+    <content><![CDATA[<blockquote>
+<p>Author：Amil Merchant1,3 , Simon Batzner1,3, Samuel S. Schoenholz1,3, Muratahan Aykol1 ,Gowoon Cheon2 &amp; Ekin Dogus Cubuk1,3 </p>
+</blockquote>
+<h3 id="Abtract"><a href="#Abtract" class="headerlink" title="Abtract"></a>Abtract</h3><ul>
+<li><p>Discovery of inorganic crystals has been bottenecked by expensive trial-and-error approaches.</p>
+<h4 id="Definitions"><a href="#Definitions" class="headerlink" title="Definitions"></a>Definitions</h4></li>
+<li><p>Convex Hall 计算化学和计算材料学领域，凸包边缘往往代表最稳定的化合物</p>
+</li>
+<li><p>zero-shot-learning 模型需要在完全未见过的数据类别上做出预测</p>
+</li>
+<li><p>ad initio 第一性原理计算</p>
+</li>
+<li><p>estimate stability 也即对比凸包边缘化合物与其竞争项的分解能，分解能低的一般被认为是不稳定的</p>
+</li>
+<li><p>SAPS（Symmetry-Aware Partial Substitutions，对称性感知部分替换，利用已知材料的结构信息，通过部分替换原子来创造新的化合物或材料</p>
+</li>
+</ul>
+<h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><ul>
+<li><p>data flywheel 利用图神经网络筛选后的被认为“稳定”的候选分子，再利用DFT进行能量计算验证，利用计算后的结果迭代更新模型</p>
+</li>
+<li><p>GNoME enables accurate predictions of structures with 5+ unique elements(despite omission from training)</p>
+</li>
+<li><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231130104356265.png"
+                      alt="image-20231130104356265"
+                ></p>
+<ul>
+<li><p>两条pipeline 并行工作</p>
+</li>
+<li><p>结构管线</p>
+<ul>
+<li>假设有一种已知的材料结构A，我们想要探索A的变体或相关结构是否稳定</li>
+<li>利用SAPS等生成新的材料结构，并构建图表示</li>
+<li>利用GNN评估材料稳定性，并对稳定结果计算DFT</li>
+</ul>
+</li>
+<li><p>成分管线中</p>
+<ul>
+<li>从一种特定的化学式出发，比如Li₂S₂O₇</li>
+<li>为表达式构建图表示，并利用GNN评估稳定性</li>
+<li>在判断为稳定的成分中，利用AIRSS为其随机选择结构，并计算DFT</li>
+</ul>
+</li>
+<li><p>注意，GNN的用途是多样的</p>
+</li>
+<li><p><strong>对结构的评估</strong>：在结构管线中，GNoME接收的是候选材料的图表示，这些图是基于材料的原子结构和它们之间的连接关系构建的。在这种情况下，GNoME评估的是这些特定结构的稳定性。</p>
+</li>
+<li><p><strong>对成分的评估</strong>：而在成分管线中，GNoME接收的是化学成分的图表示，可能不包括具体的原子排列信息，而是反映了化学式中不同元素的种类和它们的计量比。这里的挑战是在没有明确的结构信息的情况下预测稳定性。</p>
+</li>
+</ul>
+<h4 id="Definitions-1"><a href="#Definitions-1" class="headerlink" title="Definitions"></a>Definitions</h4></li>
+<li><p>AIRSS (Automated Random Structure  Searching)随机生成大量的结构配置，然后使用DFT等评估它们的稳定性</p>
+</li>
+<li><p>$r^2$SCAN &amp; PBE 这是两种DFT方法，PBE被一般认为精度不如$r^2$SCAN，但速度较快，一般实验人员会对PBE初步计算后认为较有可能性的材料进行进一步$r^2$SCAN计算</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>AI4M</tag>
       </tags>
   </entry>
   <entry>
@@ -1120,170 +1315,6 @@ for i in tqdm(range(10000)):
 </li>
 </ul>
 <h4 id="选区电子衍射"><a href="#选区电子衍射" class="headerlink" title="选区电子衍射"></a>选区电子衍射</h4><h4 id="多晶电子衍射花样和相机长度标定"><a href="#多晶电子衍射花样和相机长度标定" class="headerlink" title="多晶电子衍射花样和相机长度标定"></a>多晶电子衍射花样和相机长度标定</h4><h4 id="单晶电子衍射花样的分布"><a href="#单晶电子衍射花样的分布" class="headerlink" title="单晶电子衍射花样的分布"></a>单晶电子衍射花样的分布</h4><h4 id="其他电子衍射谱"><a href="#其他电子衍射谱" class="headerlink" title="其他电子衍射谱"></a>其他电子衍射谱</h4><h3 id="第五章-复杂电子衍射谱"><a href="#第五章-复杂电子衍射谱" class="headerlink" title="第五章 复杂电子衍射谱"></a>第五章 复杂电子衍射谱</h3><h4 id="孪晶电子衍射谱"><a href="#孪晶电子衍射谱" class="headerlink" title="孪晶电子衍射谱"></a>孪晶电子衍射谱</h4><h4 id="高阶劳厄带电子衍射谱"><a href="#高阶劳厄带电子衍射谱" class="headerlink" title="高阶劳厄带电子衍射谱"></a>高阶劳厄带电子衍射谱</h4><h4 id="菊池线分析"><a href="#菊池线分析" class="headerlink" title="菊池线分析"></a>菊池线分析</h4>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数理方程特殊函数部分以及其他</title>
-    <url>/2023/06/14/shu-li-fang-cheng/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>级数解</p>
-<ul>
-<li>高次项系数化为1，判断展开点类型，为常点还是奇点</li>
-<li>回到原式中带入级数解进行计算</li>
-</ul>
-<p>坐标系</p>
-<ul>
-<li>极坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}$</li>
-<li>柱坐标下拉普拉斯：$\frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial}{\partial r})+\frac{1}{r^2}\frac{\partial^2}{\partial \phi^2}+\frac{\partial^2}{\partial z ^2}$</li>
-<li>球坐标系拉普拉斯：$\frac{1}{r^2}\frac{\partial}{\partial r}(r^2\frac{\partial}{\partial r})+\frac{1}{r^2sin^2\theta}\frac{\partial^2}{\partial \phi^2}+\frac{1}{r^2sin\theta}\frac{\partial}{\partial \theta}(sin\theta\frac{\partial}{\partial \theta})$</li>
-</ul>
-<p>Bessel方程</p>
-<ul>
-<li>$v$阶Bessel方程：$x^{2}y’’+xy’+(x^{2}-v^{2})y&#x3D;0$</li>
-<li>解记作$J_{\pm v(x)}$</li>
-<li>构造$N_{v}(x)&#x3D;\frac{cosv\pi J_{v}(x)-J_{-v}(x)}{sinv\pi}，J_{v}$与$N_{v}$线性无关</li>
-<li><del>第三类柱函数</del></li>
-<li>对于$\Gamma$函数的补充，对正整数，$\Gamma (k+1)&#x3D;k!，\Gamma(\frac{1}{2})&#x3D;\sqrt{\frac{\pi}{2}}$</li>
-<li>基本递推关系</li>
-</ul>
-<p>虚宗量Bessel方程：$x^{2}y’’+xy’+(-x^{2}-v^{2})y&#x3D;0$</p>
-<ul>
-<li>第一类$I_{v}(x)$，第二类 $K_{v}(x)$</li>
-</ul>
-<p>球Bessel方程：$\frac{d}{dx}(x^2\frac{dR}{dx})+[x^2-l(l+1)]R$</p>
-<ul>
-<li><p>特征为$l(l+1)$</p>
-</li>
-<li><p>解为$ j_l, n_l$</p>
-</li>
-</ul>
-<p>渐进行为</p>
-<ul>
-<li>讨论渐进行为的意义在于，求解本征值问题时，需要去除不符合边界条件的函数</li>
-<li>x趋向于0时，若$v&#x3D;0$，$J_0(x)$趋向于1，若$v&gt;0$，$J_v(x)$趋向于0</li>
-<li>x趋向于0时，$N_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$J_{v}(x)与N_{v}(x)$均趋向于0</li>
-<li>$ j_l, n_l$与上述$ J_v, N_v$类似</li>
-<li>x趋向于0时，若$v&#x3D;0$，$I_0(x)$趋向于1，若$v&gt;0$，$I_v(x)$趋向于0</li>
-<li>x趋向于0时，$K_v(x)$趋向于$\infin$</li>
-<li>x趋向于$\infin$时，$I_{v}(x)$趋向于0，$K_{v}(x)$趋向于$\infin$</li>
-</ul>
-<p>Legendre方程和连带Legendre方程的形式</p>
-<ul>
-<li><p>$\frac{1}{sin\theta}\frac{d}{d\theta}(sin\theta\frac{d\Theta}{d\theta})+(\lambda-\frac{\mu}{sin^{2}\theta})\Theta&#x3D;0$</p>
-</li>
-<li><p>$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li>$m&#x3D;0$时，为勒让德方程，$m&#x3D;1、2、3…$时，为连带勒让德方程</li>
-</ul>
-</li>
-<li><p>Legendre方程$(1-x^2)y’’-2xy’+\lambda y$ ，若补充边界约束$y(\pm1)&lt;\infin$则退化为级数解</p>
-<ul>
-<li>由级数解，$\lambda_{l}&#x3D;l(l+1),l&#x3D;0、1、2…$，本征函数为$P_{l}(x)$</li>
-<li>Legendre多项式的微分表示：$\frac{1}{2^{l}l!}[(x^{2}-1)^{l}]^{(l)}$</li>
-</ul>
-</li>
-<li><p>Legendre多项式的生成函数</p>
-<ul>
-<li>$\sum_{l&#x3D;0}^{\infty} P_l(x) t^l&#x3D;\frac{1}{\sqrt{1-2 x t+t^2}}$</li>
-<li>$||P_{l}||^{2}&#x3D;\frac{2}{2l+1}$ (拿生成函数直接平方积分比较系数)</li>
-</ul>
-</li>
-<li><p>连带Legendre方程$(1-x^2)y’’-2xy’+(\lambda-\frac{m^2}{1-x^2})y$</p>
-<ul>
-<li><p>微分表示 $\frac{1}{2^{l}l!}(-1)^{m}(1-x^2)^{\frac{m}{2}}[(x^{2}-1)^{l}]^{(l+m)}$ 其中 $l&gt;m$</p>
-</li>
-<li><p>$||P_{l}^{m}||^{2}&#x3D;\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}$</p>
-</li>
-</ul>
-</li>
-<li><p>球谐函数（拉普拉斯方程角向方程的本征函数）</p>
-<ul>
-<li>函数来源：半径为a的球内拉普拉斯方程，利用$\lambda$分离$R(r)S(\theta,\phi)$，得到角向和径向方程。再利用$\mu$分离$S(\theta,\phi)&#x3D;\Theta(\theta)\Phi(\phi)$</li>
-<li>把$\theta和\phi$组合起来得$S$，这就是球谐函数</li>
-<li>球谐函数的模长<ul>
-<li>补充说明：径向函数为欧拉方程，设$r&#x3D;e^{t}$求解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><del>递推公式、连带Legendre函数模方</del></p>
-</li>
-</ul>
-<p>傅里叶变换和逆变换形式</p>
-<p> Laplace变换和逆变换形式</p>
-<p>傅里叶变换的卷积公式</p>
-<p>Laplace变换的卷积公式</p>
-<p>方程标准型特征方程</p>
-<ul>
-<li><p>特征方程法</p>
-<ul>
-<li><p>二阶方程经过标准化变换后新的系数公式会给</p>
-</li>
-<li><p>解题时，首先准确写出各项系数，特别注意 $ b $ 在原式中为$2b$</p>
-</li>
-<li><p>之后判断方程类型，$\Delta&lt;0$ 时为椭圆型（方程形式为$U_{\rho\rho}+U_{\sigma \sigma}&#x3D;\Phi$） </p>
-</li>
-<li><p>求解特征方程$a(\frac{dy}{dx})^2-2b(\frac{dy}{dx})+c&#x3D;0$ 方法与解二次函数类似，得到由常数控制的一组（抛物型）或者两组方程。</p>
-</li>
-<li><p>分别令 $\xi$ 和 $\eta$ 等于这两组方程（抛物型 $\eta$ 任取与 $\xi$ 独立即可） </p>
-</li>
-<li><p>利用变换系数公式求解方程各项系数</p>
-</li>
-</ul>
-</li>
-<li><p>配方法</p>
-<ul>
-<li><del>变系数配方法</del></li>
-<li>常系数配方法，将二次项配方后，换元即可</li>
-</ul>
-</li>
-</ul>
-<p>格林函数</p>
-<ul>
-<li>电像法</li>
-<li>本征函数展开法<ul>
-<li>首先将式子列成$L(u)&#x3D;-\rho$ 求解本征函数问题$(L+\lambda_{n})u_{n}&#x3D;0$<ul>
-<li>注：$\rho$也可能为0，例如导体球内部无电荷</li>
-</ul>
-</li>
-<li>将$G$ 展开并带入$\Delta G$，与$-\rho$联立求展开系数即可</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>时光</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的$f$和$g$进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧$f$补零，使得卷积结果和$f$一样长</li>
-</ul>
-</li>
-<li>卷积即$f$与$\tilde{g}$ 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -2106,28 +2137,6 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
-    <title>one-hot编码向量化及还原</title>
-    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
-    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
-<span id="more"></span>
-
-<ul>
-<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
-  <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
-<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
-<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></div></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>现代生物学导论</title>
     <url>/2023/09/19/xian-dai-sheng-wu-xue-dao-lun/</url>
     <content><![CDATA[<h2 id="DNA与蛋白质的结构与功能"><a href="#DNA与蛋白质的结构与功能" class="headerlink" title="DNA与蛋白质的结构与功能"></a>DNA与蛋白质的结构与功能</h2><span id="more"></span>
@@ -2312,6 +2321,28 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
+    <title>one-hot编码向量化及还原</title>
+    <url>/2023/09/12/du-re-bian-ma-xiang-liang-hua-ji-biao-qian-huan-yuan/</url>
+    <content><![CDATA[<p>打kaggle遇到的一些细节</p>
+<span id="more"></span>
+
+<ul>
+<li><p>有时候需要将特征中的文本等进行独热编码处理，但是pd.get_dummies函数有时会默认为bool，不便转为torch.tensor。这时候可以选择指定为uint8，这样独热编码就是0、1之类的了。</p>
+  <div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">all_features = pd.get_dummies(all_features,dummy_na=<span class="literal">True</span>, dtype=<span class="string">&#x27;uint8&#x27;</span>)</span><br><span class="line">trainset = torch.tensor(all_features[:<span class="number">1235</span>].values,dtype=torch.float32).cuda()</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>分类问题最后的标签独热编码之后可能需要还原以便提交。</p>
+<p>此时就可以采用以下做法，提取出每行值为1的列（经过了softmax），之后再通过预先定义的map映射回分类指标。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">pred=model(testset)</span><br><span class="line">prediction = []</span><br><span class="line">class_indices = torch.argmax(pred, dim=<span class="number">1</span>)</span><br><span class="line">class_mapping = &#123;<span class="number">0</span>: <span class="string">&#x27;died&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;euthanized&#x27;</span>, <span class="number">2</span>: <span class="string">&#x27;lived&#x27;</span>&#125;</span><br><span class="line">prediction = [class_mapping[i.item()] <span class="keyword">for</span> i <span class="keyword">in</span> class_indices]</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo git问题</title>
     <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
     <content><![CDATA[<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure></div>
@@ -2323,179 +2354,6 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>量子与统计习题课</title>
-    <url>/2023/11/21/liang-zi-yu-tong-ji-xi-ti-ke/</url>
-    <content><![CDATA[<p>课程内容[[量子与统计]]</p>
-<span id="more"></span>
-<h1 id="第一次习题课"><a href="#第一次习题课" class="headerlink" title="第一次习题课"></a>第一次习题课</h1><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h4><ul>
-<li><p>量子态</p>
-</li>
-<li><p>定态</p>
-</li>
-<li><p>束缚态</p>
-</li>
-<li><p>散射态</p>
-</li>
-<li><p>宇称</p>
-</li>
-<li><p>德布罗意假设</p>
-</li>
-<li><p>隧穿（隧道效应）</p>
-</li>
-</ul>
-<h4 id="原理与假设（书后）"><a href="#原理与假设（书后）" class="headerlink" title="原理与假设（书后）"></a>原理与假设（书后）</h4><ul>
-<li><p>波粒二象性</p>
-</li>
-<li><p>量子力学基本假定*</p>
-</li>
-<li><p>量子态叠加</p>
-</li>
-<li><p>不确定度*</p>
-</li>
-<li><p>互补</p>
-</li>
-<li><p>对应</p>
-</li>
-</ul>
-<h4 id="重点模型"><a href="#重点模型" class="headerlink" title="重点模型"></a>重点模型</h4><ul>
-<li><p>自由粒子模型</p>
-</li>
-<li><p>无限深势阱&#x2F;有限深</p>
-</li>
-<li><p>\delta势模型</p>
-</li>
-<li><p>定点、定轴转动</p>
-</li>
-<li><p>一维二维三维线性谐振子</p>
-</li>
-<li><p>氢原子（能级公式、波函数特征、电流密度及磁矩）</p>
-</li>
-</ul>
-<h4 id="两类问题"><a href="#两类问题" class="headerlink" title="两类问题"></a>两类问题</h4><ul>
-<li><p>束缚态问题</p>
-</li>
-<li><p>散射问题</p>
-</li>
-</ul>
-<h4 id="讨论题"><a href="#讨论题" class="headerlink" title="讨论题"></a>讨论题</h4><h5 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h5><ul>
-<li><p>束缚态与坐标关系的问题</p>
-</li>
-<li><p>力学量完全集、守恒量完全集（是力学量完全集的子集）</p>
-</li>
-</ul>
-<h5 id="本征方程的建立与求解"><a href="#本征方程的建立与求解" class="headerlink" title="本征方程的建立与求解"></a>本征方程的建立与求解</h5><ul>
-<li><p>定轴转动模型</p>
-<ul>
-<li>$\mu$在平面上沿R绕z轴转动，初始时刻粒子波函数为$\Psi(\psi,0)&#x3D;Acos^2\psi$，求解下列问题<ul>
-<li>写出这个系统的哈密顿量算符</li>
-<li>求出粒子的能级和对应的归一化能量本征函数，给出各能级的简并度</li>
-<li>粒子在任意$_{t\geq0}$时刻的波函数以及处于第二能量激发态的概率</li>
-<li>角动量的可能值、相应的概率及平均值，并回答这些值是否受时间影响</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>线性谐振子模型</p>
-<ul>
-<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}的作用 V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x$</li>
-</ul>
-</li>
-<li><p>求束缚态能量本征值和本征函数</p>
-</li>
-<li><p>散射问题</p>
-<ul>
-<li><p>考虑双 \delta 函数势，其中\alpha 和\alpha 都是正的常数</p>
-</li>
-<li><p>$$<br>  V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>  $$</p>
-<ul>
-<li><p>画出这个势</p>
-</li>
-<li><p>若考虑具有能量为E&gt;0的粒子入射该势垒，求透射率</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="算符理论、测量、不确定度关系"><a href="#算符理论、测量、不确定度关系" class="headerlink" title="算符理论、测量、不确定度关系"></a>算符理论、测量、不确定度关系</h5><ul>
-<li><p>一些概念</p>
-<ul>
-<li><p>厄米算符定义、性质、判定及构造</p>
-</li>
-<li><p>算符对易关系的计算</p>
-</li>
-<li><p>平均值的计算</p>
-</li>
-<li><p>对测量的理解和应用</p>
-</li>
-<li><p>对不确定关系的理解及应用</p>
-</li>
-</ul>
-</li>
-<li><p>参考例题</p>
-<ul>
-<li><p>连续测量问题</p>
-<ul>
-<li><p>已知某微观体系的力学量 A有两个归一化本征态 \psi_{1}和 \psi_{2}, 相应的本征值为a_1和a_2.力学量B有两个归一化本征态\phi_{1}和\phi_{2}, 相应的本征值为b_1和b_2.两组本征态有如下关系</p>
-</li>
-<li><p>$\psi_1&#x3D;\frac15(3\phi_1+4\phi_2),\quad\psi_2&#x3D;\frac15(4\phi_1-3\phi_2)$</p>
-</li>
-<li><p>测量可观测量 A, 所得结果为 \alpha_{1} ,那么在测量之后(瞬时)体系处于什么态？</p>
-</li>
-<li><p>如果现在再测量 B,可能的结果是什么？ 它们出现的概率是多少？</p>
-</li>
-<li><p>在恰好测出 B 后，再次测量 A ,那么结果为\alpha_{1}的概率为多少？</p>
-</li>
-</ul>
-</li>
-<li><p>守恒量判定</p>
-<ul>
-<li><p>设某一量子体系的Hamilton量为$\widehat{H}&#x3D;\frac{1}{2m}\widehat{P}+\omega\widehat{ L}_{z}$,其中 m 为质量，\omega 为频率. 分析并给出下列这些力学量中哪些是守恒量？</p>
-</li>
-<li><p>$H,p_x,p_y,p_z,p^2,\hat{L}_x,\hat{L}_y,\hat{L}_z,\hat{L}^2$</p>
-</li>
-</ul>
-</li>
-<li><p>测量假设、不确定性关系</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="矩阵力学及表象理论"><a href="#矩阵力学及表象理论" class="headerlink" title="矩阵力学及表象理论"></a>矩阵力学及表象理论</h5><ul>
-<li><p>重点内容</p>
-<ul>
-<li><p>量子态的矩阵表示</p>
-</li>
-<li><p>力学量的矩阵表示</p>
-</li>
-<li><p>本征方程（矩阵形式）的求解、平均值的计算</p>
-</li>
-</ul>
-</li>
-<li><p>参考例题</p>
-<ul>
-<li><p>表象与矩阵元的求解</p>
-<ul>
-<li><p>设一维粒子Hamilton量为H&#x3D;\frac{p_x^2}{2m}+V(x)</p>
-</li>
-<li><p>分别写出在\hat{x} 和p_x表象中，\hat{x},\hat{P}_x,\hat{H} 的矩阵元.</p>
-</li>
-</ul>
-</li>
-<li><p>设粒子处于下列势阱$V\left(x\right)&#x3D;\begin{cases}\infty,&amp;x&lt;0;\Fx,&amp;x&gt;0,\end{cases}$其中^{F}为常数，求粒子的能量本征函数。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="自旋与角动量理论"><a href="#自旋与角动量理论" class="headerlink" title="自旋与角动量理论"></a>自旋与角动量理论</h5><h3 id="综合练习"><a href="#综合练习" class="headerlink" title="综合练习"></a>综合练习</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -3035,7 +2893,203 @@ for i in tqdm(range(10000)):
 </ul>
 </li>
 </ul>
-<h3 id="粒子状态的半经典描述"><a href="#粒子状态的半经典描述" class="headerlink" title="粒子状态的半经典描述"></a>粒子状态的半经典描述</h3>]]></content>
+<h3 id="粒子状态的半经典描述"><a href="#粒子状态的半经典描述" class="headerlink" title="粒子状态的半经典描述"></a>粒子状态的半经典描述</h3><h4 id="双原子分子理想气体"><a href="#双原子分子理想气体" class="headerlink" title="双原子分子理想气体"></a>双原子分子理想气体</h4><ul>
+<li><p>双原子分子组成的理想气体也服从半经典分布</p>
+</li>
+<li><p>从平动+内部运动的角度考虑问题</p>
+<ul>
+<li>$\varepsilon_i&#x3D;\varepsilon_j^t+\varepsilon_k^I$</li>
+<li>而简并度是平动能量简并度与分子内部能量简并度之积</li>
+<li>配分函数$z(\boldsymbol{\beta},V)&#x3D;\sum_ie^{-\beta\cdot\varepsilon_i}g_i&#x3D;\sum_j\sum_ke^{-\beta\left(\varepsilon_j^l+\varepsilon_k^l\right)}g_j^tg_k^I&#x3D;z^t(\beta,V)z^I(\beta)$</li>
+<li>分别为平动配分函数和内部运动配分函数</li>
+</ul>
+</li>
+<li><p>双原子分子理想气体热容量</p>
+<ul>
+<li>双原子分子能量$\varepsilon_i&#x3D;\varepsilon_i^t+\varepsilon_l^r+\varepsilon_n^u+\varepsilon_m^e$<ul>
+<li>分别为质心的平动能量、分子的转动能量、振动能量和原子内电子绕原子核运动的能量</li>
+</ul>
+</li>
+<li>分别计算平动、转动、振动、电子运动的热容量</li>
+<li>平动热容量</li>
+<li></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>量子与统计习题课</title>
+    <url>/2023/11/21/liang-zi-yu-tong-ji-xi-ti-ke/</url>
+    <content><![CDATA[<p>课程内容[[量子与统计]]</p>
+<span id="more"></span>
+<h1 id="第一次习题课"><a href="#第一次习题课" class="headerlink" title="第一次习题课"></a>第一次习题课</h1><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="重要概念"><a href="#重要概念" class="headerlink" title="重要概念"></a>重要概念</h4><ul>
+<li><p>量子态</p>
+</li>
+<li><p>定态</p>
+</li>
+<li><p>束缚态</p>
+</li>
+<li><p>散射态</p>
+</li>
+<li><p>宇称</p>
+</li>
+<li><p>德布罗意假设</p>
+</li>
+<li><p>隧穿（隧道效应）</p>
+</li>
+</ul>
+<h4 id="原理与假设（书后）"><a href="#原理与假设（书后）" class="headerlink" title="原理与假设（书后）"></a>原理与假设（书后）</h4><ul>
+<li><p>波粒二象性</p>
+</li>
+<li><p>量子力学基本假定*</p>
+</li>
+<li><p>量子态叠加</p>
+</li>
+<li><p>不确定度*</p>
+</li>
+<li><p>互补</p>
+</li>
+<li><p>对应</p>
+</li>
+</ul>
+<h4 id="重点模型"><a href="#重点模型" class="headerlink" title="重点模型"></a>重点模型</h4><ul>
+<li><p>自由粒子模型</p>
+</li>
+<li><p>无限深势阱&#x2F;有限深</p>
+</li>
+<li><p>\delta势模型</p>
+</li>
+<li><p>定点、定轴转动</p>
+</li>
+<li><p>一维二维三维线性谐振子</p>
+</li>
+<li><p>氢原子（能级公式、波函数特征、电流密度及磁矩）</p>
+</li>
+</ul>
+<h4 id="两类问题"><a href="#两类问题" class="headerlink" title="两类问题"></a>两类问题</h4><ul>
+<li><p>束缚态问题</p>
+</li>
+<li><p>散射问题</p>
+</li>
+</ul>
+<h4 id="讨论题"><a href="#讨论题" class="headerlink" title="讨论题"></a>讨论题</h4><h5 id="随想"><a href="#随想" class="headerlink" title="随想"></a>随想</h5><ul>
+<li><p>束缚态与坐标关系的问题</p>
+</li>
+<li><p>力学量完全集、守恒量完全集（是力学量完全集的子集）</p>
+</li>
+</ul>
+<h5 id="本征方程的建立与求解"><a href="#本征方程的建立与求解" class="headerlink" title="本征方程的建立与求解"></a>本征方程的建立与求解</h5><ul>
+<li><p>定轴转动模型</p>
+<ul>
+<li>$\mu$在平面上沿R绕z轴转动，初始时刻粒子波函数为$\Psi(\psi,0)&#x3D;Acos^2\psi$，求解下列问题<ul>
+<li>写出这个系统的哈密顿量算符</li>
+<li>求出粒子的能级和对应的归一化能量本征函数，给出各能级的简并度</li>
+<li>粒子在任意$_{t\geq0}$时刻的波函数以及处于第二能量激发态的概率</li>
+<li>角动量的可能值、相应的概率及平均值，并回答这些值是否受时间影响</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>线性谐振子模型</p>
+<ul>
+<li>荷电$\mathscr{q}$的谐振子,受到外电场$\mathscr{\varepsilon}的作用 V\left(x\right)&#x3D;\frac12m\omega^2x^2-q\varepsilon x$</li>
+</ul>
+</li>
+<li><p>求束缚态能量本征值和本征函数</p>
+</li>
+<li><p>散射问题</p>
+<ul>
+<li><p>考虑双 \delta 函数势，其中\alpha 和\alpha 都是正的常数</p>
+</li>
+<li><p>$$<br>  V\left(x\right)&#x3D;-\alpha{\left[\delta\left(x+a\right)+\delta\left(x-a\right)\right]}<br>  $$</p>
+<ul>
+<li><p>画出这个势</p>
+</li>
+<li><p>若考虑具有能量为E&gt;0的粒子入射该势垒，求透射率</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="算符理论、测量、不确定度关系"><a href="#算符理论、测量、不确定度关系" class="headerlink" title="算符理论、测量、不确定度关系"></a>算符理论、测量、不确定度关系</h5><ul>
+<li><p>一些概念</p>
+<ul>
+<li><p>厄米算符定义、性质、判定及构造</p>
+</li>
+<li><p>算符对易关系的计算</p>
+</li>
+<li><p>平均值的计算</p>
+</li>
+<li><p>对测量的理解和应用</p>
+</li>
+<li><p>对不确定关系的理解及应用</p>
+</li>
+</ul>
+</li>
+<li><p>参考例题</p>
+<ul>
+<li><p>连续测量问题</p>
+<ul>
+<li><p>已知某微观体系的力学量 A有两个归一化本征态 \psi_{1}和 \psi_{2}, 相应的本征值为a_1和a_2.力学量B有两个归一化本征态\phi_{1}和\phi_{2}, 相应的本征值为b_1和b_2.两组本征态有如下关系</p>
+</li>
+<li><p>$\psi_1&#x3D;\frac15(3\phi_1+4\phi_2),\quad\psi_2&#x3D;\frac15(4\phi_1-3\phi_2)$</p>
+</li>
+<li><p>测量可观测量 A, 所得结果为 \alpha_{1} ,那么在测量之后(瞬时)体系处于什么态？</p>
+</li>
+<li><p>如果现在再测量 B,可能的结果是什么？ 它们出现的概率是多少？</p>
+</li>
+<li><p>在恰好测出 B 后，再次测量 A ,那么结果为\alpha_{1}的概率为多少？</p>
+</li>
+</ul>
+</li>
+<li><p>守恒量判定</p>
+<ul>
+<li><p>设某一量子体系的Hamilton量为$\widehat{H}&#x3D;\frac{1}{2m}\widehat{P}+\omega\widehat{ L}_{z}$,其中 m 为质量，\omega 为频率. 分析并给出下列这些力学量中哪些是守恒量？</p>
+</li>
+<li><p>$H,p_x,p_y,p_z,p^2,\hat{L}_x,\hat{L}_y,\hat{L}_z,\hat{L}^2$</p>
+</li>
+</ul>
+</li>
+<li><p>测量假设、不确定性关系</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="矩阵力学及表象理论"><a href="#矩阵力学及表象理论" class="headerlink" title="矩阵力学及表象理论"></a>矩阵力学及表象理论</h5><ul>
+<li><p>重点内容</p>
+<ul>
+<li><p>量子态的矩阵表示</p>
+</li>
+<li><p>力学量的矩阵表示</p>
+</li>
+<li><p>本征方程（矩阵形式）的求解、平均值的计算</p>
+</li>
+</ul>
+</li>
+<li><p>参考例题</p>
+<ul>
+<li><p>表象与矩阵元的求解</p>
+<ul>
+<li><p>设一维粒子Hamilton量为H&#x3D;\frac{p_x^2}{2m}+V(x)</p>
+</li>
+<li><p>分别写出在\hat{x} 和p_x表象中，\hat{x},\hat{P}_x,\hat{H} 的矩阵元.</p>
+</li>
+</ul>
+</li>
+<li><p>设粒子处于下列势阱$V\left(x\right)&#x3D;\begin{cases}\infty,&amp;x&lt;0;\Fx,&amp;x&gt;0,\end{cases}$其中^{F}为常数，求粒子的能量本征函数。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="自旋与角动量理论"><a href="#自旋与角动量理论" class="headerlink" title="自旋与角动量理论"></a>自旋与角动量理论</h5><h3 id="综合练习"><a href="#综合练习" class="headerlink" title="综合练习"></a>综合练习</h3>]]></content>
       <categories>
         <category>课程</category>
       </categories>
