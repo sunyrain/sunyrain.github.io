@@ -251,7 +251,119 @@
     
     
     
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 6.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -690,7 +802,7 @@
 </ul>
 </li>
 <li>代码相关细节<ul>
-<li>Toy_Buffer构建<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">buffer = load_buffer(<span class="string">&quot;path&quot;</span>)</span><br><span class="line">n = <span class="number">10</span>  <span class="comment"># 患者数量</span></span><br><span class="line">end_indices = np.where(buffer.done == <span class="number">1</span>)[<span class="number">0</span>][:n]</span><br><span class="line">buffer_save_path = <span class="string">&quot;path&quot;</span></span><br><span class="line">all_batch = []</span><br><span class="line">start_index = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> end_index <span class="keyword">in</span> end_indices:</span><br><span class="line">    trajectory = buffer[start_index:end_index + <span class="number">1</span>]</span><br><span class="line">    trajectory = Batch.stack(trajectory)</span><br><span class="line">    all_batch.append(Batch.stack(trajectory))</span><br><span class="line">    start_index = end_index + <span class="number">1</span></span><br><span class="line">all_batch = Batch.cat(all_batch)</span><br><span class="line">replay_buffer = ReplayBuffer(size=<span class="built_in">len</span>(all_batch))</span><br><span class="line">replay_buffer.set_batch(all_batch)</span><br><span class="line">replay_buffer.save_hdf5(buffer_save_path)</span><br></pre></td></tr></table></figure></div></li>
+<li>Toy_Buffer构建<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">buffer = load_buffer(<span class="string">"path"</span>)</span><br><span class="line">n = <span class="number">10</span>  <span class="comment"># 患者数量</span></span><br><span class="line">end_indices = np.where(buffer.done == <span class="number">1</span>)[<span class="number">0</span>][:n]</span><br><span class="line">buffer_save_path = <span class="string">"path"</span></span><br><span class="line">all_batch = []</span><br><span class="line">start_index = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> end_index <span class="keyword">in</span> end_indices:</span><br><span class="line">    trajectory = buffer[start_index:end_index + <span class="number">1</span>]</span><br><span class="line">    trajectory = Batch.stack(trajectory)</span><br><span class="line">    all_batch.append(Batch.stack(trajectory))</span><br><span class="line">    start_index = end_index + <span class="number">1</span></span><br><span class="line">all_batch = Batch.cat(all_batch)</span><br><span class="line">replay_buffer = ReplayBuffer(size=<span class="built_in">len</span>(all_batch))</span><br><span class="line">replay_buffer.set_batch(all_batch)</span><br><span class="line">replay_buffer.save_hdf5(buffer_save_path)</span><br></pre></td></tr></table></figure></div></li>
 </ul>
 </li>
 </ul>
@@ -704,13 +816,13 @@
 <li><p>参考代码（config管理）</p>
 </li>
 </ul>
-<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;HealthcareLLM\SimMedEnv\config.json&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> config_file:</span><br><span class="line">    config = json.load(config_file)</span><br><span class="line">buffer = load_buffer(config[<span class="string">&quot;buffer_path&quot;</span>])</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">'HealthcareLLM\SimMedEnv\config.json'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> config_file:</span><br><span class="line">    config = json.load(config_file)</span><br><span class="line">buffer = load_buffer(config[<span class="string">"buffer_path"</span>])</span><br></pre></td></tr></table></figure></div>
 
 <ul>
 <li><p>一般来说，对于.json文件，可以以key-value的形式保存数据</p>
 </li>
 <li><p>例如</p>
-<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;log_folder&quot;</span>: <span class="string">&quot;GPT_Conversation_log&quot;</span></span><br></pre></td></tr></table></figure></div></li>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"log_folder"</span>: <span class="string">"GPT_Conversation_log"</span></span><br></pre></td></tr></table></figure></div></li>
 </ul>
 <h3 id="12-06"><a href="#12-06" class="headerlink" title="12-06"></a>12-06</h3><ul>
 <li>Code Review<ul>
@@ -738,7 +850,7 @@
 <li><strong><code>git add .</code></strong><br>这个命令是用来将当前目录下的所有更改（新文件、修改过的文件）加入到暂存区（staging area）</li>
 </ul>
 </li>
-<li><strong><code>git commit -m &quot;text&quot;</code></strong><br>  这个命令用于将暂存区中的更改提交到本地的代码库中。<code>-m</code> 后面跟随的 <code>&quot;text&quot;</code> 是提交信息，用于描述这次提交的内容或目的</li>
+<li><strong><code>git commit -m "text"</code></strong><br>  这个命令用于将暂存区中的更改提交到本地的代码库中。<code>-m</code> 后面跟随的 <code>"text"</code> 是提交信息，用于描述这次提交的内容或目的</li>
 <li><strong><code>git push</code></strong><br>  这个命令用于将本地仓库的更改推送到远程仓库</li>
 </ul>
 </li>
@@ -754,15 +866,15 @@
 </ul>
 </li>
 <li>Python知识<ul>
-<li>&#96;&#96;&#96;*args参数<ul>
+<li>```*args参数<ul>
 <li>用来处理在函数定义时未被命名的位置函数</li>
 </ul>
 </li>
-<li>&#96;&#96;&#96;**kargs参数<ul>
+<li>```**kargs参数<ul>
 <li>用来处理函数定义时，未被命名的多余关键字参数</li>
 </ul>
 </li>
-<li>&#96;&#96;&#96;enumerate<ul>
+<li>```enumerate<ul>
 <li>其返回包括index在内的tuple</li>
 </ul>
 </li>
@@ -790,12 +902,7 @@
 <li>vscode使用<ul>
 <li><p>有关同一路径下的源码，使用git bash可以正常commit，但是使用vscode提交commit就会一直卡住</p>
 </li>
-<li><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/0dda4e0ef6374c49adcfdf843e37f5fe.png"
-                      alt="img"
-                ></p>
+<li><p><img lazyload="" src="/images/loading.svg" data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/0dda4e0ef6374c49adcfdf843e37f5fe.png" alt="img"></p>
 </li>
 <li><p>此处，应该是git不接受自动生成的消息，取消勾选后手动填写message即可</p>
 </li>
