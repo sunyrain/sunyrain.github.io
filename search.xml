@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Ai For Materials 论文研读</title>
-    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
-    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
-      <categories>
-        <category>论文研读</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cheat Engine 告别风灵月影</title>
     <url>/2023/06/10/cheatengine/</url>
     <content><![CDATA[<span id="more"></span>
@@ -22,6 +11,51 @@
       </categories>
       <tags>
         <tag>奇遇</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HealthCare RL 论文研读</title>
+    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
+    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
+<li>精读链接</li>
+<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
+</ul>
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
+<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
+<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
+<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
+</ul>
+</li>
+<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
+<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
+</ul>
+</li>
+<li><strong>模型的临床应用和效果</strong>：<ul>
+<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
+</ul>
+</li>
+<li><strong>研究的局限性和未来展望</strong>：<ul>
+<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>HealthCare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ai For Materials 论文研读</title>
+    <url>/2023/11/30/ai-for-materials-lun-wen-yan-du/</url>
+    <content><![CDATA[<h3 id="Scaling-deep-learning-for-materials-discovery"><a href="#Scaling-deep-learning-for-materials-discovery" class="headerlink" title="Scaling deep learning for materials discovery"></a>Scaling deep learning for materials discovery</h3>]]></content>
+      <categories>
+        <category>论文研读</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -300,6 +334,10 @@
 </ol>
 </li>
 </ul>
+<h3 id="12-21"><a href="#12-21" class="headerlink" title="12-21"></a>12-21</h3><ul>
+<li>prompt用df(pd)</li>
+<li></li>
+</ul>
 ]]></content>
       <categories>
         <category>科研</category>
@@ -309,37 +347,32 @@
       </tags>
   </entry>
   <entry>
-    <title>HealthCare RL 论文研读</title>
-    <url>/2023/11/22/healthcare-rl-lun-wen-yan-du/</url>
-    <content><![CDATA[<h2 id="The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care"><a href="#The-Artificial-Intelligence-Clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care" class="headerlink" title="The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care"></a>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</h2><ul>
-<li>精读链接</li>
-<li>[[The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care]]</li>
-</ul>
-<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><ol>
-<li><strong>脓毒症的严重性和治疗挑战</strong>：<ul>
-<li>脓毒症是全球第三大致死原因，是医院中的主要死亡原因。然而，其最佳治疗策略仍不确定。目前的静脉输液和血管紧张素管理实践被认为是次优的，可能对一部分患者造成伤害。</li>
-<li>脓毒症定义为严重感染导致的危及生命的急性器官功能障碍。目前没有工具能够个性化治疗脓毒症，辅助临床医生实时和针对患者层面做出决策。因此，脓毒症治疗的临床变异性极大，且有证据表明次优的决策会导致较差的结果。</li>
-</ul>
-</li>
-<li><strong>人工智能医生模型的开发和验证</strong>：<ul>
-<li>研究团队开发了一种名为“人工智能医生”的计算模型，使用强化学习动态地为重症监护病房中的成人脓毒症患者提出最佳治疗建议。该模型在美国两个大型、不重叠的重症监护数据库上进行了构建和验证，涵盖了广泛的患者数据和临床特征。</li>
+    <title>Markdown实用语法</title>
+    <url>/2023/06/13/markdown-yu-fa/</url>
+    <content><![CDATA[<ul>
+<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
+<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
+<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
+<li>\rho $\rho$ ，\pm $\pm$</li>
+<li>\geq $\geq$  \leq $\leq$</li>
+<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
 </ul>
 </li>
-<li><strong>模型的临床应用和效果</strong>：<ul>
-<li>在独立的验证队列中，接受人工智能医生建议治疗的患者死亡率最低。当临床医生的实际治疗与人工智能医生的建议策略相符时，常见的做法是使用过低剂量的血管紧张素。该系统可以实时使用，将不同数据流源的患者数据输入到配备该算法的电子健康记录软件中，以提出行动建议。</li>
+<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
+<li>补充一个上面加点$\dot{x}$ dot<blockquote>
+<p>如何引用呢？使用&gt;即可</p>
+</blockquote>
+</li>
 </ul>
 </li>
-<li><strong>研究的局限性和未来展望</strong>：<ul>
-<li>尽管使用了大型数据集，但由于数据质量问题，部分地点和患者被排除在外。两个数据集之间的差异导致使用了略有不同的脓毒症标准。此外，一些实验室值在决策时可能未立即提供给临床医生。该研究强调了未来需要在临床试验中使用实时数据和决策进行前瞻性评估，并在不同的医疗环境中进行测试。该研究还表明，仅通过微小比例降低脓毒症死亡率，就能在全球范围内每年挽救成千上万的生命。</li>
 </ul>
-</li>
-</ol>
+<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
 ]]></content>
       <categories>
-        <category>论文研读</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>HealthCare</tag>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -412,35 +445,6 @@ for i in tqdm(range(10000)):
       </categories>
   </entry>
   <entry>
-    <title>Markdown实用语法</title>
-    <url>/2023/06/13/markdown-yu-fa/</url>
-    <content><![CDATA[<ul>
-<li>最常用的是无序列表，对于强迫症来说很有用。语法是” - “(减号加空格)，加在每行开头即可。</li>
-<li>还有一个比较有趣的是删除线符号，在想要删除的地方前后加双波浪线（~~ xxx ~~ ）即可，如<del>我想删除这些字</del> 当然，加了空格就可以不受影响。</li>
-<li>有几个希腊字母和特殊符号还挺容易忘的，mark一下。<ul>
-<li>\rho $\rho$ ，\pm $\pm$</li>
-<li>\geq $\geq$  \leq $\leq$</li>
-<li>\qquad \quad \ ; , !分别对应6种不同的字符间距</li>
-</ul>
-</li>
-<li>字符顶上的特殊符号$\tilde{A}$  \tilde<ul>
-<li>补充一个上面加点$\dot{x}$ dot<blockquote>
-<p>如何引用呢？使用&gt;即可</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<p>学到量子力学以后，需要打狄拉克符号$\langle,\rangle$ langle 和rangle<br>新学了一个 $\vec{r}$  vec<br>约等于 \approx $\approx$</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Prompt Engineering</title>
     <url>/2023/11/26/prompt-engineering-lun-wen-yan-du/</url>
     <content><![CDATA[<h2 id="提示工程整体框架"><a href="#提示工程整体框架" class="headerlink" title="提示工程整体框架"></a>提示工程整体框架</h2><span id="more"></span>
@@ -509,6 +513,39 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
+    <title>Python绘图</title>
+    <url>/2023/11/21/python-hui-tu/</url>
+    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
+<li>Figure 是Axes的容器，画布</li>
+<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
+<li>Axis 坐标轴，上面有ticks和labels</li>
+<li>Artist 各种图形元素的统称</li>
+<li>legend 图例</li>
+</ul>
+<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
+    <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
+    <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
+<span id="more"></span>
+<p>System.Collections.Generic.RandomizedStringEqualityComparer 不是 GenericTypeDefinition。只能对 Type.IsGenericTypeDefinition 为 True。</p>
+<p>解决方法：到<a class="link"   href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82" >http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Scaling deep learning for materials discovery</title>
     <url>/2023/11/30/scaling-deep-learning-for-materials-discovery/</url>
     <content><![CDATA[<blockquote>
@@ -573,53 +610,6 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
-    <title>Python绘图</title>
-    <url>/2023/11/21/python-hui-tu/</url>
-    <content><![CDATA[<h1 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li>Figure 是Axes的容器，画布</li>
-<li>Axes （带坐标轴的）子图，具体的图形元素放置在Axes上</li>
-<li>Axis 坐标轴，上面有ticks和labels</li>
-<li>Artist 各种图形元素的统称</li>
-<li>legend 图例</li>
-</ul>
-<h3 id="Figure对象"><a href="#Figure对象" class="headerlink" title="Figure对象"></a>Figure对象</h3>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VS2012只能对 Type.IsGenericTypeDefinition 为 True</title>
-    <url>/2023/09/21/vs2012-zhi-neng-dui-type.isgenerictypedefinition-wei-true-wen-ti/</url>
-    <content><![CDATA[<p>这是个VS2012解决方案的问题。</p>
-<span id="more"></span>
-<p>System.Collections.Generic.RandomizedStringEqualityComparer 不是 GenericTypeDefinition。只能对 Type.IsGenericTypeDefinition 为 True。</p>
-<p>解决方法：到<a class="link"   href="http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020%E4%B8%8A%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E5%8C%85%EF%BC%8C%E5%AE%89%E8%A3%85%E5%8D%B3%E5%8F%AF%E3%80%82" >http://www.microsoft.com/zh-cn/download/confirmation.aspx?id=36020上下载工具包，安装即可。 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows系统时间同步</title>
-    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
-    <content><![CDATA[<p>实在是太可恶了……</p>
-<span id="more"></span>
-<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>奇遇</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care</title>
     <url>/2023/11/22/the-artificial-intelligence-clinician-learns-optimal-treatment-strategies-for-sepsis-in-intensive-care/</url>
     <content><![CDATA[<h3 id="Abstract-部分"><a href="#Abstract-部分" class="headerlink" title="Abstract 部分"></a>Abstract 部分</h3><ul>
@@ -657,6 +647,20 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>HealthCare</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows系统时间同步</title>
+    <url>/2023/06/17/windows-xi-tong-shi-jian-tong-bu/</url>
+    <content><![CDATA[<p>实在是太可恶了……</p>
+<span id="more"></span>
+<p>从三月份开始电脑的时间总是和时间服务器同步不上，导致梯子有很多节点不能连，火狐干脆网站都不让上。<br>在设置里试了好几次同步时间服务器都无果，于是乎到处搜该咋办。跟着热心网友的经验贴这边修修那边改改发现都不行（期末周特有的没事找事）。<br>最后又是一位老哥一语惊醒梦中人。<br>你这是校园网……连手机热点就行了。<br>于是连上手机热点。<br>解决。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>奇遇</tag>
       </tags>
   </entry>
   <entry>
@@ -720,94 +724,6 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工程图学</title>
-    <url>/2023/11/01/gong-cheng-tu-xue/</url>
-    <content><![CDATA[<span id="more"></span>
-<ul>
-<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
-<li>类似性指导作图，面和它的封闭线框具有相似性</li>
-<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
-<li>找点的方法之辅助直线<ul>
-<li><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png"
-                      alt="image-20231108104948928" style="zoom: 33%;" 
-                ></li>
-<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
-<li>点划线露出4mm</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>听报告的记录</title>
-    <url>/2023/12/15/bao-gao-ji-lu/</url>
-    <content><![CDATA[<h2 id="自驱动实验平台下有机激光材料的非同步分布式闭环研发"><a href="#自驱动实验平台下有机激光材料的非同步分布式闭环研发" class="headerlink" title="自驱动实验平台下有机激光材料的非同步分布式闭环研发"></a>自驱动实验平台下有机激光材料的非同步分布式闭环研发</h2><p>报告人：郝翰</p>
-<ul>
-<li>引入<ul>
-<li>OLED的研发与市场化</li>
-</ul>
-</li>
-<li>Self-Driving Lab<ul>
-<li>Current paradigm ——&gt; Closing the loop</li>
-<li>单个lab，可能无法满足研发需要</li>
-<li>Worldwide Delocalized SDLs</li>
-</ul>
-</li>
-<li>Function Oriented Molecule Design to Brightest Molecule</li>
-<li>Ai-Informed Suzuki<ul>
-<li>Good reactions are rare</li>
-<li><strong>Literature mining failed</strong></li>
-<li>General condition optimization</li>
-<li>Four rounds of automated reactions<ul>
-<li>21-46% improvement</li>
-</ul>
-</li>
-<li>Deeper insight into Reaction Progress</li>
-<li>End-to-End Automation WorkFlow</li>
-<li>From Calculation to Experiment to Device</li>
-</ul>
-</li>
-<li>Cross-Platform Knowledge Transfer<ul>
-<li>XDL universal language for chemistry</li>
-<li>Seamless knowledge Transfer</li>
-</ul>
-</li>
-<li>500 New Laser in 3 month</li>
-<li>Finding Good Lasers is Hard</li>
-<li>仅依靠高通量合成无法找到理想分子</li>
-<li>SDL驱动快速合成</li>
-</ul>
-<h4 id="如何表示激光分子？"><a href="#如何表示激光分子？" class="headerlink" title="如何表示激光分子？"></a>如何表示激光分子？</h4><p>初阶的表示法效果不佳<br>GNN Embedding</p>
-<ul>
-<li>for six DFT properties</li>
-<li>激光分子聚类现象<br>Asynchronous Bayesian Optimization<br>之后，Scale up</li>
-</ul>
-<h3 id="Acceleration-Consortium"><a href="#Acceleration-Consortium" class="headerlink" title="Acceleration Consortium"></a>Acceleration Consortium</h3><h3 id="Deliverable-Framework-of-Self-Driving-Labs"><a href="#Deliverable-Framework-of-Self-Driving-Labs" class="headerlink" title="Deliverable Framework of Self-Driving Labs"></a>Deliverable Framework of Self-Driving Labs</h3><p>一些自动化平台</p>
-<ul>
-<li>Chemspeed</li>
-<li>Chemputer Cronin Group</li>
-<li>Junior unchained</li>
-<li>The Machine Burke Group<br>The ATLAS python library</li>
-</ul>
-<h2 id="基于优化的决策模型的数据驱动发现"><a href="#基于优化的决策模型的数据驱动发现" class="headerlink" title="基于优化的决策模型的数据驱动发现"></a>基于优化的决策模型的数据驱动发现</h2><p><strong>报告人：</strong> 张琦教授，化学工程与材料科学系，明尼苏达大学</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>报告</tag>
       </tags>
   </entry>
   <entry>
@@ -948,6 +864,131 @@ for i in tqdm(range(10000)):
       </tags>
   </entry>
   <entry>
+    <title>听报告的记录</title>
+    <url>/2023/12/15/bao-gao-ji-lu/</url>
+    <content><![CDATA[<h2 id="自驱动实验平台下有机激光材料的非同步分布式闭环研发"><a href="#自驱动实验平台下有机激光材料的非同步分布式闭环研发" class="headerlink" title="自驱动实验平台下有机激光材料的非同步分布式闭环研发"></a>自驱动实验平台下有机激光材料的非同步分布式闭环研发</h2><p>报告人：郝翰</p>
+<ul>
+<li>引入<ul>
+<li>OLED的研发与市场化</li>
+</ul>
+</li>
+<li>Self-Driving Lab<ul>
+<li>Current paradigm ——&gt; Closing the loop</li>
+<li>单个lab，可能无法满足研发需要</li>
+<li>Worldwide Delocalized SDLs</li>
+</ul>
+</li>
+<li>Function Oriented Molecule Design to Brightest Molecule</li>
+<li>Ai-Informed Suzuki<ul>
+<li>Good reactions are rare</li>
+<li><strong>Literature mining failed</strong></li>
+<li>General condition optimization</li>
+<li>Four rounds of automated reactions<ul>
+<li>21-46% improvement</li>
+</ul>
+</li>
+<li>Deeper insight into Reaction Progress</li>
+<li>End-to-End Automation WorkFlow</li>
+<li>From Calculation to Experiment to Device</li>
+</ul>
+</li>
+<li>Cross-Platform Knowledge Transfer<ul>
+<li>XDL universal language for chemistry</li>
+<li>Seamless knowledge Transfer</li>
+</ul>
+</li>
+<li>500 New Laser in 3 month</li>
+<li>Finding Good Lasers is Hard</li>
+<li>仅依靠高通量合成无法找到理想分子</li>
+<li>SDL驱动快速合成</li>
+</ul>
+<h4 id="如何表示激光分子？"><a href="#如何表示激光分子？" class="headerlink" title="如何表示激光分子？"></a>如何表示激光分子？</h4><p>初阶的表示法效果不佳<br>GNN Embedding</p>
+<ul>
+<li>for six DFT properties</li>
+<li>激光分子聚类现象<br>Asynchronous Bayesian Optimization<br>之后，Scale up</li>
+</ul>
+<h3 id="Acceleration-Consortium"><a href="#Acceleration-Consortium" class="headerlink" title="Acceleration Consortium"></a>Acceleration Consortium</h3><h3 id="Deliverable-Framework-of-Self-Driving-Labs"><a href="#Deliverable-Framework-of-Self-Driving-Labs" class="headerlink" title="Deliverable Framework of Self-Driving Labs"></a>Deliverable Framework of Self-Driving Labs</h3><p>一些自动化平台</p>
+<ul>
+<li>Chemspeed</li>
+<li>Chemputer Cronin Group</li>
+<li>Junior unchained</li>
+<li>The Machine Burke Group<br>The ATLAS python library</li>
+</ul>
+<h2 id="基于优化的决策模型的数据驱动发现"><a href="#基于优化的决策模型的数据驱动发现" class="headerlink" title="基于优化的决策模型的数据驱动发现"></a>基于优化的决策模型的数据驱动发现</h2><p><strong>报告人：</strong> 张琦教授，化学工程与材料科学系，明尼苏达大学<br>项目整体似乎还不够完整，略微简单了一点</p>
+<h3 id="Motivating-Problem"><a href="#Motivating-Problem" class="headerlink" title="Motivating Problem"></a>Motivating Problem</h3><ul>
+<li>模型决策与目前的工作人员实际决策存在距离</li>
+</ul>
+<h3 id="需要怎样的优化模型"><a href="#需要怎样的优化模型" class="headerlink" title="需要怎样的优化模型"></a>需要怎样的优化模型</h3><p>最小化目标函数，在一定的限制下</p>
+<h3 id="进行决策——-gt-前向优化"><a href="#进行决策——-gt-前向优化" class="headerlink" title="进行决策——&gt;前向优化"></a>进行决策——&gt;前向优化</h3><h3 id="推断——-gt-反向优化"><a href="#推断——-gt-反向优化" class="headerlink" title="推断——&gt;反向优化"></a>推断——&gt;反向优化</h3><ul>
+<li>通过观测（x，u）对，inverse optimization</li>
+<li>推理正确决策的模型是什么样子的</li>
+<li>大模型劣势<ul>
+<li>可解释性</li>
+</ul>
+</li>
+</ul>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><p>FOP<br>IOP</p>
+<ul>
+<li>minimize $c^Tx$ subject to $Ax\le b$<br>前向可以理解为线性规划<br>但是给定可行域以后，我们想要倒推决策的依据<br>也就是线性规划中的类似于 <strong>费用</strong>&#x3D;2x+y之类的</li>
+</ul>
+<h3 id="Phase1"><a href="#Phase1" class="headerlink" title="Phase1"></a>Phase1</h3><ul>
+<li>denoising</li>
+</ul>
+<h3 id="Phase2"><a href="#Phase2" class="headerlink" title="Phase2"></a>Phase2</h3><ul>
+<li>obtaining cost estimate</li>
+</ul>
+<h3 id="Solve-Sequentially"><a href="#Solve-Sequentially" class="headerlink" title="Solve Sequentially"></a>Solve Sequentially</h3><ul>
+<li>随机进行实验低效</li>
+<li>构建算法选择实验，减少实验数量需求<br>考虑实验原料采购</li>
+</ul>
+<p>举例：决策者可从官方或黑市购电，官方均价较高但是明码标价，黑市不知道价格</p>
+<ul>
+<li>Measure of risk ，方差区外的均值</li>
+<li>尝试推理决策者的风险系数，（最小化期望价格+$\lambda$风险）</li>
+</ul>
+<p>我们假设人作出的决策，是基础决策+人自身作出的限制，人会有别的偏好和别的决策规律。除了问题必须遵循的物理原则，基本优化目标之外，人类操作员的经验转化为限制和新的优化目标</p>
+<p>举例 员工工作问题，需要达到总工时，最小化工资，同时考虑所有员工不加夜班的需求，以及个别员工特定日子休息的需求</p>
+<ul>
+<li>尝试倒推决策者在批准假期时，作出的决策在基本的工资支出之外的，经验的参数</li>
+</ul>
+<h3 id="长时间的准确大模型的简化"><a href="#长时间的准确大模型的简化" class="headerlink" title="长时间的准确大模型的简化"></a>长时间的准确大模型的简化</h3><p>输入1——&gt;大模型（线下）——&gt;输出1<br>（输入1，输出1）——&gt;简单小模型——&gt;学习到接近准确大模型的预测结果</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>报告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工程图学</title>
+    <url>/2023/11/01/gong-cheng-tu-xue/</url>
+    <content><![CDATA[<span id="more"></span>
+<ul>
+<li>面对应封闭线框，只要是单独的面，就要有封闭线框与它对应。</li>
+<li>类似性指导作图，面和它的封闭线框具有相似性</li>
+<li>粗实线&gt;不可见轮廓线（虚线）&gt;对称线（点画线）&gt;辅助线</li>
+<li>找点的方法之辅助直线<ul>
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/image-20231108104948928.png"
+                      alt="image-20231108104948928" style="zoom: 33%;" 
+                ></li>
+<li>要在$c,b$上找点，在主视图上将$c’,b’$分点的比例移到俯视图（即在俯视图构建辅助直线，辅助线与$c’,b’$及分点等长）</li>
+<li>点划线露出4mm</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>课程</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>日常工作日志</title>
     <url>/2023/12/13/ri-chang-gong-zuo-ri-zhi/</url>
     <content><![CDATA[<h3 id="12-13"><a href="#12-13" class="headerlink" title="12-13"></a>12-13</h3><ul>
@@ -962,11 +1003,52 @@ for i in tqdm(range(10000)):
 </ul>
 </li>
 <li><p>调用optuna自动搜索超参，非常方便</p>
-<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">objective</span>(<span class="params">trial</span>):</span><br><span class="line">    <span class="comment"># 超参数搜索空间</span></span><br><span class="line">    batch_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;batch_size&#x27;</span>, [<span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>]))</span><br><span class="line">    learning_rate = trial.suggest_loguniform(<span class="string">&#x27;learning_rate&#x27;</span>, <span class="number">1e-6</span>, <span class="number">1e-2</span>)</span><br><span class="line">    hidden_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;hidden_size&#x27;</span>, [<span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">512</span>, <span class="number">1024</span>]))</span><br><span class="line">    num_layers = trial.suggest_int(<span class="string">&#x27;num_layers&#x27;</span>, <span class="number">1</span>, <span class="number">7</span>)</span><br><span class="line">    num_epochs = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;num_epochs&#x27;</span>, [<span class="number">10</span>, <span class="number">15</span>,<span class="number">20</span>, <span class="number">25</span>,<span class="number">30</span>,<span class="number">40</span>]))  <span class="comment"># 固定为一个较小的数值以加快实验</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数据加载</span></span><br><span class="line">    train_loader = DataLoader(TensorDataset(train_data_tensor, train_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">True</span>)</span><br><span class="line">    test_loader = DataLoader(TensorDataset(test_data_tensor, test_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 模型初始化</span></span><br><span class="line">    model = RNNClassifier(input_size, hidden_size, output_size, num_layers).to(device)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 损失函数和优化器</span></span><br><span class="line">    criterion = nn.CrossEntropyLoss()</span><br><span class="line">    optimizer = optim.Adam(model.parameters(), lr=learning_rate)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 训练和评估</span></span><br><span class="line">    accuracy = train_and_evaluate(model, train_loader, test_loader, optimizer, criterion, num_epochs)</span><br><span class="line">    <span class="keyword">return</span> accuracy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个 Optuna study 对象并开始优化</span></span><br><span class="line">study = optuna.create_study(direction=<span class="string">&#x27;maximize&#x27;</span>)</span><br><span class="line">study.optimize(objective, n_trials=<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></div></li>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">objective</span>(<span class="params">trial</span>):</span><br><span class="line">    <span class="comment"># 超参数搜索空间</span></span><br><span class="line">    batch_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;batch_size&#x27;</span>, [<span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>]))</span><br><span class="line">    learning_rate = trial.suggest_loguniform(<span class="string">&#x27;learning_rate&#x27;</span>, <span class="number">1e-6</span>, <span class="number">1e-2</span>)</span><br><span class="line">    hidden_size = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;hidden_size&#x27;</span>, [<span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">512</span>, <span class="number">1024</span>]))</span><br><span class="line">    num_layers = trial.suggest_int(<span class="string">&#x27;num_layers&#x27;</span>, <span class="number">1</span>, <span class="number">7</span>)</span><br><span class="line">    num_epochs = <span class="built_in">int</span>(trial.suggest_categorical(<span class="string">&#x27;num_epochs&#x27;</span>, [<span class="number">10</span>, <span class="number">15</span>,<span class="number">20</span>, <span class="number">25</span>,<span class="number">30</span>,<span class="number">40</span>]))  <span class="comment"># 固定为一个较小的数值以加快实验</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 数据加载</span></span><br><span class="line">    train_loader = DataLoader(TensorDataset(train_data_tensor, train_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">True</span>)</span><br><span class="line">    test_loader = DataLoader(TensorDataset(test_data_tensor, test_labels_tensor), batch_size=batch_size, shuffle=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 模型初始化</span></span><br><span class="line">    model = RNNClassifier(input_size, hidden_size, output_size, num_layers).to(device)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 损失函数和优化器</span></span><br><span class="line">    criterion = nn.CrossEntropyLoss()</span><br><span class="line">    optimizer = optim.Adam(model.parameters(), lr=learning_rate)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 训练和评估</span></span><br><span class="line">    accuracy = train_and_evaluate(model, train_loader, test_loader, optimizer, criterion, num_epochs)</span><br><span class="line">    <span class="keyword">return</span> accuracy</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个 Optuna study 对象并开始优化</span></span><br><span class="line">study = optuna.create_study(direction=<span class="string">&#x27;maximize&#x27;</span>)</span><br><span class="line">study.optimize(objective, n_trials=<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="12-19"><a href="#12-19" class="headerlink" title="12-19"></a>12-19</h3><p>不确定，先mark一下</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="code"><pre><span class="line">ERROR: Could <span class="keyword">not</span> build wheels <span class="keyword">for</span> pytorch_fast_transformers, which <span class="keyword">is</span> required to install pyproject.toml-based </span><br><span class="line">projects</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>问题是很多包需要C++编译，所以需要用到Microsoft Visual C++工具链</p>
+</li>
+<li><p>一些权益之计，比方说搬到云上去跑什么之类的，太过于愚蠢了，决定彻底解决这个事情</p>
+</li>
+<li><p>解决了，下载Visual Studio Tools，安装“使用C++的桌面开发”其余缺省即可</p>
+</li>
+</ul>
+<h3 id="12-20"><a href="#12-20" class="headerlink" title="12-20"></a>12-20</h3><ul>
+<li>目标，把tensorflow架构改为pytorch架构</li>
+<li>结果，失败了，这b TF我是这辈子也不想看到了</li>
 </ul>
 ]]></content>
       <categories>
         <category>工作日志</category>
+      </categories>
+      <tags>
+        <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深度学习</title>
+    <url>/2023/09/19/shen-du-xue-xi/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
+<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
+<li>Three shapes of convolution<ul>
+<li>valid即全程完整的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.079ex" height="1.464ex" role="img" focusable="false" viewBox="0 -442 477 647"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></g></g></g></svg></mjx-container>进行卷积</li>
+<li>full即从一格开始进行卷积</li>
+<li>same即通过两侧<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>补零，使得卷积结果和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>一样长</li>
+</ul>
+</li>
+<li>卷积即<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>与<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.079ex" height="2.161ex" role="img" focusable="false" viewBox="0 -750 477 955"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></g><g data-mml-node="mo" transform="translate(266.3,332) translate(-250 0)"><path data-c="7E" d="M179 251Q164 251 151 245T131 234T111 215L97 227L83 238Q83 239 95 253T121 283T142 304Q165 318 187 318T253 300T320 282Q335 282 348 288T368 299T388 318L402 306L416 295Q375 236 344 222Q330 215 313 215Q292 215 248 233T179 251Z"></path></g></g></g></g></g></svg></mjx-container> 的相似度（标准长度）</li>
+<li>1-D和2-D都是旋转180°再计算相似度即可</li>
+<li>局部链接、权值共享<ul>
+<li>举例来说，32*32的</li>
+</ul>
+</li>
+</ul>
+<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
+      <categories>
+        <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
@@ -2139,7 +2221,7 @@ for i in tqdm(range(10000)):
 </ul>
 </li>
 </ul>
-<h3 id="Shallow-Neural-Networks"><a href="#Shallow-Neural-Networks" class="headerlink" title="Shallow Neural Networks"></a>Shallow Neural Networks</h3><h3 id="Training-Neural-Networks"><a href="#Training-Neural-Networks" class="headerlink" title="Training Neural Networks"></a>Training Neural Networks</h3><h3 id="CNN-in-Action"><a href="#CNN-in-Action" class="headerlink" title="CNN in Action"></a>CNN in Action</h3><h3 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h3>]]></content>
+<h3 id="Shallow-Neural-Networks"><a href="#Shallow-Neural-Networks" class="headerlink" title="Shallow Neural Networks"></a>Shallow Neural Networks</h3><h3 id="Training-Neural-Networks"><a href="#Training-Neural-Networks" class="headerlink" title="Training Neural Networks"></a>Training Neural Networks</h3><h3 id="CNN-in-Action"><a href="#CNN-in-Action" class="headerlink" title="CNN in Action"></a>CNN in Action</h3><h3 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h3><h2 id="GNN"><a href="#GNN" class="headerlink" title="GNN"></a>GNN</h2>]]></content>
       <categories>
         <category>课程</category>
       </categories>
@@ -2167,33 +2249,6 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>Tricks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深度学习</title>
-    <url>/2023/09/19/shen-du-xue-xi/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>正则项目的是减小参数以进一步减少噪声的放大，其并不作用于b上，因为b不与x相乘，不会放大噪声。</p>
-<h2 id="Convolutional-Neural-Networks"><a href="#Convolutional-Neural-Networks" class="headerlink" title="Convolutional Neural Networks"></a>Convolutional Neural Networks</h2><h3 id="Convolutional-Layer"><a href="#Convolutional-Layer" class="headerlink" title="Convolutional Layer"></a>Convolutional Layer</h3><ul>
-<li>Three shapes of convolution<ul>
-<li>valid即全程完整的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.079ex" height="1.464ex" role="img" focusable="false" viewBox="0 -442 477 647"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></g></g></g></svg></mjx-container>进行卷积</li>
-<li>full即从一格开始进行卷积</li>
-<li>same即通过两侧<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>补零，使得卷积结果和<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>一样长</li>
-</ul>
-</li>
-<li>卷积即<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.244ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 550 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g></g></g></svg></mjx-container>与<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.079ex" height="2.161ex" role="img" focusable="false" viewBox="0 -750 477 955"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></g><g data-mml-node="mo" transform="translate(266.3,332) translate(-250 0)"><path data-c="7E" d="M179 251Q164 251 151 245T131 234T111 215L97 227L83 238Q83 239 95 253T121 283T142 304Q165 318 187 318T253 300T320 282Q335 282 348 288T368 299T388 318L402 306L416 295Q375 236 344 222Q330 215 313 215Q292 215 248 233T179 251Z"></path></g></g></g></g></g></svg></mjx-container> 的相似度（标准长度）</li>
-<li>1-D和2-D都是旋转180°再计算相似度即可</li>
-<li>局部链接、权值共享<ul>
-<li>举例来说，32*32的</li>
-</ul>
-</li>
-</ul>
-<h3 id="Pooling-Layer"><a href="#Pooling-Layer" class="headerlink" title="Pooling Layer"></a>Pooling Layer</h3>]]></content>
-      <categories>
-        <category>课程</category>
-      </categories>
-      <tags>
-        <tag>课程</tag>
       </tags>
   </entry>
   <entry>
@@ -2394,6 +2449,20 @@ for i in tqdm(range(10000)):
       </categories>
       <tags>
         <tag>课程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo git问题</title>
+    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
+    <content><![CDATA[<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <categories>
+        <category>Tricks</category>
+      </categories>
+      <tags>
+        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
@@ -2956,26 +3025,25 @@ for i in tqdm(range(10000)):
 </ul>
 </li>
 </ul>
+<h3 id="晶格振动的Einstein理论"><a href="#晶格振动的Einstein理论" class="headerlink" title="晶格振动的Einstein理论"></a>晶格振动的Einstein理论</h3><ul>
+<li>晶格振动<ul>
+<li>原子（或离子）在他们的平衡位置附近做微小的振动</li>
+<li>设固体中有$N$个原子，每个原子自由度为$3$，所以整个固体的自由度为$3N$，固体整体平动、转动自由度为3，所以振动自由度为$3N-6$，近似处理为$3N$</li>
+</ul>
+</li>
+<li>Einstein假设<ul>
+<li>所有振子的振动频率都相等（这个假设过于简单），振子的能量是量子化的</li>
+<li>能级为$\color{red}{\varepsilon_n&#x3D;}\color{red}{\left(n+\frac12\right)}\color{red}{h}\color{red}{\nu},\quad\color{red}{n&#x3D;0}\color{red}{,}\color{red}{1,2,\cdots}$</li>
+<li></li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>课程</category>
       </categories>
       <tags>
         <tag>课程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo git问题</title>
-    <url>/2023/11/01/jie-jue-git-wen-ti-failed-to-connect-to-127.0.0.1-port-7890-after-2070-ms-connection-refused/</url>
-    <content><![CDATA[<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global http.proxy</span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure></div>
-]]></content>
-      <categories>
-        <category>Tricks</category>
-      </categories>
-      <tags>
-        <tag>Tricks</tag>
       </tags>
   </entry>
   <entry>
