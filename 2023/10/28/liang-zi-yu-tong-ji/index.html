@@ -26,7 +26,7 @@
 <meta property="og:description" content="习题课相关内容[[量子与统计习题课]]">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-28T03:40:32.024Z">
-<meta property="article:modified_time" content="2023-12-20T01:31:13.398Z">
+<meta property="article:modified_time" content="2023-12-22T09:31:22.351Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="课程">
 <meta name="twitter:card" content="summary">
@@ -528,7 +528,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">26</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">27</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -582,8 +582,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-12-20 09:31:13</span>
-            <span class="mobile">2023-12-20 09:31:13</span>
+            <span class="desktop">2023-12-22 17:31:22</span>
+            <span class="mobile">2023-12-22 17:31:22</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -621,12 +621,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>5.5k 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>6.7k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>23 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>28 分钟</span>
         </span>
     
     
@@ -1127,17 +1127,119 @@
 </ul>
 </li>
 </ul>
-<h3 id="玻尔兹曼分布"><a href="#玻尔兹曼分布" class="headerlink" title="玻尔兹曼分布"></a>玻尔兹曼分布</h3><p>粒子在量子本性上是全同的，但是为可以区分的，单粒子态上可容纳的粒子数是不受限制的</p>
-<h3 id="Bose-分布"><a href="#Bose-分布" class="headerlink" title="Bose 分布"></a>Bose 分布</h3><p>由全同的Bose子构成，与玻尔兹曼分布的区别在于，认为粒子不可区分，单粒子态上可容纳的粒子数也是不受限制的</p>
-<h3 id="Fermi-分布"><a href="#Fermi-分布" class="headerlink" title="Fermi 分布"></a>Fermi 分布</h3><p>由全同的Fermi子构成，单粒子态只能容纳一个粒子</p>
-<h3 id="半经典分布和玻尔兹曼分布"><a href="#半经典分布和玻尔兹曼分布" class="headerlink" title="半经典分布和玻尔兹曼分布"></a>半经典分布和玻尔兹曼分布</h3><ul>
+<h3 id="Bose-分布与Fermi-分布"><a href="#Bose-分布与Fermi-分布" class="headerlink" title="Bose 分布与Fermi 分布"></a>Bose 分布与Fermi 分布</h3><h4 id="微观态等几率假设"><a href="#微观态等几率假设" class="headerlink" title="微观态等几率假设"></a>微观态等几率假设</h4><ul>
+<li>对于处于平衡态的微观系统，各个微观态出现的几率相等</li>
+</ul>
+<h4 id="最可几方法"><a href="#最可几方法" class="headerlink" title="最可几方法"></a>最可几方法</h4><ul>
+<li>一般来说，我们应该这样计算均值<ul>
+<li>$\overline{u}&#x3D;\frac{\Sigma u\left{n_i\right}\cdot W\left{n_i\right}}{\Sigma W\left{n_i\right}}$</li>
+<li>${n_i}$代表一组分布，上式对所有分布求和。$W\left{n_i\right}$代表这组分布的状态数</li>
+</ul>
+</li>
+<li>但是如果几率分布有很高的峰，则$u$经上式计算得到的均值，就几乎为他的最可几值</li>
+<li>也就是说，我们假定孤立系统处于平衡态的分布是其微观状态数最多的分布</li>
+<li>说明<ul>
+<li>$N&#x3D;\sum_i n_i$，总粒子数等于各能级粒子数之和</li>
+<li>$E&#x3D;\sum_in_i\varepsilon_i$，由于是近独立粒子体系，所以能量为各个粒子之和</li>
+<li>接下来的主要工作，就是求到我们所假设的<strong>孤立系统处于平衡态的分布</strong>，也就是找出$W\left{n_i\right}$在何时取极大值</li>
+</ul>
+</li>
+</ul>
+<h4 id="补充说明：Lagrange待定乘子法"><a href="#补充说明：Lagrange待定乘子法" class="headerlink" title="补充说明：Lagrange待定乘子法"></a>补充说明：Lagrange待定乘子法</h4><h4 id="Bose-分布"><a href="#Bose-分布" class="headerlink" title="Bose 分布"></a>Bose 分布</h4><p>由全同的Bose子构成，与玻尔兹曼分布的区别在于，认为粒子不可区分，相同点是单粒子态上可容纳的粒子数也是不受限制的</p>
+<ul>
+<li>Bose分布的微观状态数为$W_B{n_i}&#x3D;\prod_i\frac{(n_i+g_i-1)!}{n_i!(g_i-1)!}$<ul>
+<li>$n_i$粒子数，$g_i$简并态数量，利用插板法解决，对每个能级分别计算之后求积即可</li>
+</ul>
+</li>
+<li>目标，对$W_B{n_i}$求一个使其取极值的${n_i}$，作为其孤立系统平衡态下，我们所假设的粒子所处的分布状态<ul>
+<li>第一步，取$ln$化简式子<ul>
+<li>$\ln W_B(n_i)&#x3D;\sum_i[\ln(n_i+g_i-1)!-\ln n!-\ln(g_i-1)!]$</li>
+</ul>
+</li>
+<li>第二步，斯特林公式近似<ul>
+<li>$\ln N!\thickapprox N(\ln N{-}1)$</li>
+</ul>
+</li>
+<li>第三步，拉格朗日待定乘子<ul>
+<li>F&#x3D;原方程+限制条件* 乘子</li>
+<li>F对每个能级粒子数求导均为0，取得极值，每个$n_i$都可以用已知量和乘子表示</li>
+<li>将$n_i$带回与乘子数量相等的约束式子中，即可解出乘子</li>
+</ul>
+</li>
+<li>最终结果$\begin{aligned}n_i&amp;&#x3D;\frac{g_i}{e^{\alpha+\beta\varepsilon_i}-1}\end{aligned}$</li>
+</ul>
+</li>
+</ul>
+<h4 id="Fermi-分布"><a href="#Fermi-分布" class="headerlink" title="Fermi 分布"></a>Fermi 分布</h4><p>由全同的Fermi子构成，单粒子态只能容纳一个粒子</p>
+<ul>
+<li>解法同上，只是表达式略有区别</li>
+<li>最终结果为<ul>
+<li>$\begin{aligned}n_i&amp;&#x3D;\frac{g_i}{e^{\alpha+\beta\varepsilon_i}+1}\end{aligned}$</li>
+</ul>
+</li>
+</ul>
+<h3 id="半经典分布和玻尔兹曼分布"><a href="#半经典分布和玻尔兹曼分布" class="headerlink" title="半经典分布和玻尔兹曼分布"></a>半经典分布和玻尔兹曼分布</h3><h4 id="半经典分布"><a href="#半经典分布" class="headerlink" title="半经典分布"></a>半经典分布</h4><ul>
+<li>Bose分布和Fermi分布可以合在一起写为$\begin{aligned}n_i&#x3D;g_ie^{-\alpha-\beta\varepsilon_i}\end{aligned}$<ul>
+<li>这种形式忽略了1，在$e^\alpha$远大于1的时候成立</li>
+<li>其实也就是$\frac{n_i}{g_i}$远小于1，即对于和这个能级的简并态数量相比，处于该能级的粒子数极少<ul>
+<li>此时泡利原理的限制不起作用，两种分布趋同</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>半经典分布与玻尔兹曼分布一致，但是在半经典统计中，粒子被认为是不可区分的</li>
+<li>微观状态数$W_\text{S}\left{n_i\right}&#x3D;\prod_i\frac{g_i^{n_i}}{\color{red}{n_i}!}$</li>
 </ul>
-<h3 id="乘子的物理意义"><a href="#乘子的物理意义" class="headerlink" title="乘子的物理意义"></a>乘子的物理意义</h3><ul>
-<li>$\beta$的物理意义</li>
-<li>$\alpha$的物理意义</li>
+<h4 id="定域粒子"><a href="#定域粒子" class="headerlink" title="定域粒子"></a>定域粒子</h4><blockquote>
+<p>严格量子力学意义上，全同粒子不可区分，但有时粒子局限在有限范围内运动，波函数不重叠，则可用位置区分粒子</p>
+</blockquote>
+<ul>
+<li>例如<ul>
+<li>晶体格点粒子（定域粒子）</li>
+<li>顺磁性固体</li>
+<li>核自旋系统</li>
 </ul>
-<h2 id="玻尔兹曼统计理论"><a href="#玻尔兹曼统计理论" class="headerlink" title="玻尔兹曼统计理论"></a>玻尔兹曼统计理论</h2><h3 id="配分函数与宏观量"><a href="#配分函数与宏观量" class="headerlink" title="配分函数与宏观量"></a>配分函数与宏观量</h3><ul>
+</li>
+</ul>
+<h4 id="玻尔兹曼分布"><a href="#玻尔兹曼分布" class="headerlink" title="玻尔兹曼分布"></a>玻尔兹曼分布</h4><p>粒子在量子本性上是全同的，但是是可以分辨的，单粒子态上可容纳的粒子数是不受限制的</p>
+<ul>
+<li>分布${n_i}$的微观状态数<ul>
+<li>$W_1{n_i}&#x3D;N!\prod_i\frac{g_i^{n_i}}{n_i!}$<ul>
+<li>下标”1”代表定域粒子</li>
+</ul>
+</li>
+<li>之后利用Lagrange待定乘子法求$lnW_1{n_i}$的条件极值即可 </li>
+<li>结果：$n_{i}&#x3D;g_{i}e^{-\alpha-\beta\varepsilon_{i}}$</li>
+</ul>
+</li>
+<li>说明：因为玻尔兹曼分布和半经典分布只差一个常数$N!$，所以求导下来极值点没什么区别</li>
+</ul>
+<h4 id="几种统计的比较"><a href="#几种统计的比较" class="headerlink" title="几种统计的比较"></a>几种统计的比较</h4><ul>
+<li>半经典分布和玻尔兹曼分布结果一样，但是这两种统计并不相同</li>
+</ul>
+<h4 id="乘子的物理意义"><a href="#乘子的物理意义" class="headerlink" title="乘子的物理意义"></a>乘子的物理意义</h4><blockquote>
+<p>讨论背景：半经典分布</p>
+</blockquote>
+<ul>
+<li>$\beta$的物理意义<ul>
+<li>构建模型，两个近独立粒子系统，各自粒子总数为$N^{‘}$和$N^{‘’}$，系统能量为$E^{‘}$和$E^{‘’}$</li>
+<li>系统分别平衡时$n_i^{\prime}&#x3D;g_i^{\prime}e^{-\alpha^{\prime}-\beta^{\prime}\varepsilon_i^{\prime}}$，$n_j^{^{\prime\prime}}&#x3D;g_j^{^{\prime\prime}}e^{-\alpha^{^{\prime\prime}}-\beta^{^{\prime\prime}}\varepsilon_j^{^{\prime\prime}}}$</li>
+<li>令两个系统通过透热壁交换能量，达成新的平衡态<ul>
+<li>$W\left{\overline{n}_i^{\prime},\overline{n}_j^{\prime\prime}\right}&#x3D;\prod_i\frac{g_i^{\prime\overline{n}_i^{\prime}}}{\overline{n}_i^{\prime}!}\prod_j\frac{g_j^{\prime\overline{n}_j^{\prime}}}{\overline{n}_j^{\prime}!}$</li>
+</ul>
+</li>
+<li>同样采用上述方法，最终解得$n_i^{\prime}&#x3D;g_i^{\prime}e^{-\alpha^{\prime}-\beta\varepsilon_i^{\prime}}$，$n_j^{^{\prime\prime}}&#x3D;g_j^{^{\prime\prime}}e^{-\alpha^{^{\prime\prime}}-\beta\varepsilon_j^{^{\prime\prime}}}$</li>
+<li>可以推断，$\beta$是温度$T$的函数</li>
+</ul>
+</li>
+<li>$\alpha$的物理意义<ul>
+<li>进一步构建模型，假设系统中分子相同但是处于不同的相</li>
+<li>最终解得$n_i^{\prime}&#x3D;g_i^{\prime}e^{-\alpha-\beta\varepsilon_i^{\prime}}$，$n_j^{^{\prime\prime}}&#x3D;g_j^{^{\prime\prime}}e^{-\alpha-\beta\varepsilon_j^{^{\prime\prime}}}$</li>
+<li>可以推断，$\alpha$为温度和化学势的函数</li>
+</ul>
+</li>
+</ul>
+<h2 id="第二章-玻尔兹曼统计理论"><a href="#第二章-玻尔兹曼统计理论" class="headerlink" title="第二章 玻尔兹曼统计理论"></a>第二章 玻尔兹曼统计理论</h2><h3 id="配分函数与宏观量"><a href="#配分函数与宏观量" class="headerlink" title="配分函数与宏观量"></a>配分函数与宏观量</h3><ul>
 <li>Boltzmann分布<ul>
 <li>$n_l&#x3D;e^{-\alpha-\beta\epsilon_l}\omega_l$</li>
 <li>提取公共因子部分，并考虑到粒子数之和为定值$N$$e^{-\alpha}\sum_le^{-\beta\epsilon_l}\omega_l&#x3D;N$</li>
@@ -1146,7 +1248,8 @@
 <li>配分函数<ul>
 <li>定义$z&#x3D;\sum_le^{-\beta\epsilon_l}\omega_l$<ul>
 <li>也即$z&#x3D;z(\beta,y)$</li>
-<li>其中，$y$为外参量，而$\beta&#x3D;\beta(T)$</li>
+<li>其中，$y$为外参量，而$\beta&#x3D;\beta(T)$，配分函数是温度和外参量的函数</li>
+<li>如果难以计算，采用半经典半连续的方法，积分计算</li>
 </ul>
 </li>
 <li>$N&#x3D;e^{-a}z$</li>
@@ -1215,6 +1318,12 @@
 </ul>
 </li>
 </ul>
+<h2 id="Bose统计和Fermi统计"><a href="#Bose统计和Fermi统计" class="headerlink" title="Bose统计和Fermi统计"></a>Bose统计和Fermi统计</h2><ul>
+<li>半经典近似<ul>
+<li>非简并条件被满足时的统计规律</li>
+</ul>
+</li>
+</ul>
 
         </div>
 
@@ -1229,7 +1338,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-12-20 09:31:13
+                    :</strong> 2023-12-22 17:31:22
             </li>
         
         <li>
@@ -1352,7 +1461,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">量子与统计</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="nav-text">第二章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%96%9B%E5%AE%9A%E8%B0%94%E6%96%B9%E7%A8%8B"><span class="nav-text">薛定谔方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%BB%B4%E8%BF%90%E5%8A%A8%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E8%88%AC%E5%88%86%E6%9E%90"><span class="nav-text">一维运动问题的一般分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="nav-text">第三章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%B9%A0%E9%A2%98"><span class="nav-text">第三章习题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pasted-image-20231031184458-png"><span class="nav-text">![[Pasted image 20231031184458.png]]</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%9A%84%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F%E4%B8%8E%E8%A1%A8%E8%B1%A1%E7%90%86%E8%AE%BA"><span class="nav-text">量子力学的矩阵形式与表象理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q%E8%A1%A8%E8%B1%A1"><span class="nav-text">Q表象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E7%AC%A6%E7%9A%84%E7%9F%A9%E9%98%B5%E8%A1%A8%E7%A4%BA"><span class="nav-text">算符的矩阵表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%9A%84%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F"><span class="nav-text">量子力学的矩阵形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dirac-%E7%AC%A6%E5%8F%B7"><span class="nav-text">Dirac 符号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E4%B9%A0%E9%A2%98"><span class="nav-text">第四章习题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E5%A0%82%E4%B9%A0%E9%A2%98"><span class="nav-text">课堂习题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98"><span class="nav-text">课后习题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E6%97%8B%E4%B8%8E%E5%85%A8%E5%90%8C%E7%B2%92%E5%AD%90%E4%BD%93%E7%B3%BB"><span class="nav-text">自旋与全同粒子体系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Stern-Gerlach%E5%AE%9E%E9%AA%8C"><span class="nav-text">Stern-Gerlach实验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E8%87%AA%E6%97%8B%E5%81%87%E8%AE%BE"><span class="nav-text">电子自旋假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E8%87%AA%E6%97%8B%E6%80%81"><span class="nav-text">电子自旋态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%92%E5%8A%A8%E9%87%8F%E7%9A%84%E5%90%88%E6%88%90"><span class="nav-text">角动量的合成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%90%8C%E7%B2%92%E5%AD%90%E4%BD%93%E7%B3%BB"><span class="nav-text">全同粒子体系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8C%E7%94%B5%E5%AD%90%E7%9A%84%E8%87%AA%E6%97%8B%E5%87%BD%E6%95%B0"><span class="nav-text">双电子的自旋函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AE%E6%89%B0%E8%AE%BA"><span class="nav-text">微扰论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%80%81%E5%BE%AE%E6%89%B0%E8%AE%BA%E2%85%A0%EF%BC%9A%E9%9D%9E%E7%AE%80%E5%B9%B6%E6%83%85%E5%BD%A2"><span class="nav-text">定态微扰论Ⅰ：非简并情形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%80%81%E5%BE%AE%E6%89%B0%E8%AE%BA%E2%85%A1%EF%BC%9A%E7%AE%80%E5%B9%B6%E6%83%85%E5%BD%A2"><span class="nav-text">定态微扰论Ⅱ：简并情形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stark%E6%95%88%E5%BA%94"><span class="nav-text">Stark效应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E6%80%81%E9%9A%8F%E6%97%B6%E9%97%B4%E7%9A%84%E6%BC%94%E5%8C%96"><span class="nav-text">量子态随时间的演化</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E9%83%A8%E5%88%86"><span class="nav-text">统计部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%91%E7%8B%AC%E7%AB%8B%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%88%86%E5%B8%83"><span class="nav-text">近独立粒子系统的统计分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%92%E5%AD%90%E5%92%8C%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E6%8F%8F%E8%BF%B0"><span class="nav-text">粒子和系统状态的量子力学描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E4%B8%8E%E5%BE%AE%E8%A7%82%E7%8A%B6%E6%80%81%E6%95%B0"><span class="nav-text">分布与微观状态数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%88%86%E5%B8%83"><span class="nav-text">玻尔兹曼分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bose-%E5%88%86%E5%B8%83"><span class="nav-text">Bose 分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fermi-%E5%88%86%E5%B8%83"><span class="nav-text">Fermi 分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%8A%E7%BB%8F%E5%85%B8%E5%88%86%E5%B8%83%E5%92%8C%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%88%86%E5%B8%83"><span class="nav-text">半经典分布和玻尔兹曼分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%98%E5%AD%90%E7%9A%84%E7%89%A9%E7%90%86%E6%84%8F%E4%B9%89"><span class="nav-text">乘子的物理意义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E7%BB%9F%E8%AE%A1%E7%90%86%E8%AE%BA"><span class="nav-text">玻尔兹曼统计理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0%E4%B8%8E%E5%AE%8F%E8%A7%82%E9%87%8F"><span class="nav-text">配分函数与宏观量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%92%E5%AD%90%E7%8A%B6%E6%80%81%E7%9A%84%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%8F%8F%E8%BF%B0"><span class="nav-text">粒子状态的半经典描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%B6%E6%A0%BC%E6%8C%AF%E5%8A%A8%E7%9A%84Einstein%E7%90%86%E8%AE%BA"><span class="nav-text">晶格振动的Einstein理论</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="nav-text">第二章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%96%9B%E5%AE%9A%E8%B0%94%E6%96%B9%E7%A8%8B"><span class="nav-text">薛定谔方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E7%BB%B4%E8%BF%90%E5%8A%A8%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E8%88%AC%E5%88%86%E6%9E%90"><span class="nav-text">一维运动问题的一般分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="nav-text">第三章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%B9%A0%E9%A2%98"><span class="nav-text">第三章习题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pasted-image-20231031184458-png"><span class="nav-text">![[Pasted image 20231031184458.png]]</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%9A%84%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F%E4%B8%8E%E8%A1%A8%E8%B1%A1%E7%90%86%E8%AE%BA"><span class="nav-text">量子力学的矩阵形式与表象理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q%E8%A1%A8%E8%B1%A1"><span class="nav-text">Q表象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E7%AC%A6%E7%9A%84%E7%9F%A9%E9%98%B5%E8%A1%A8%E7%A4%BA"><span class="nav-text">算符的矩阵表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E7%9A%84%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F"><span class="nav-text">量子力学的矩阵形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dirac-%E7%AC%A6%E5%8F%B7"><span class="nav-text">Dirac 符号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E4%B9%A0%E9%A2%98"><span class="nav-text">第四章习题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E5%A0%82%E4%B9%A0%E9%A2%98"><span class="nav-text">课堂习题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98"><span class="nav-text">课后习题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%87%AA%E6%97%8B%E4%B8%8E%E5%85%A8%E5%90%8C%E7%B2%92%E5%AD%90%E4%BD%93%E7%B3%BB"><span class="nav-text">自旋与全同粒子体系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Stern-Gerlach%E5%AE%9E%E9%AA%8C"><span class="nav-text">Stern-Gerlach实验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E8%87%AA%E6%97%8B%E5%81%87%E8%AE%BE"><span class="nav-text">电子自旋假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E8%87%AA%E6%97%8B%E6%80%81"><span class="nav-text">电子自旋态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%92%E5%8A%A8%E9%87%8F%E7%9A%84%E5%90%88%E6%88%90"><span class="nav-text">角动量的合成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E5%90%8C%E7%B2%92%E5%AD%90%E4%BD%93%E7%B3%BB"><span class="nav-text">全同粒子体系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8C%E7%94%B5%E5%AD%90%E7%9A%84%E8%87%AA%E6%97%8B%E5%87%BD%E6%95%B0"><span class="nav-text">双电子的自旋函数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AE%E6%89%B0%E8%AE%BA"><span class="nav-text">微扰论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%80%81%E5%BE%AE%E6%89%B0%E8%AE%BA%E2%85%A0%EF%BC%9A%E9%9D%9E%E7%AE%80%E5%B9%B6%E6%83%85%E5%BD%A2"><span class="nav-text">定态微扰论Ⅰ：非简并情形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%80%81%E5%BE%AE%E6%89%B0%E8%AE%BA%E2%85%A1%EF%BC%9A%E7%AE%80%E5%B9%B6%E6%83%85%E5%BD%A2"><span class="nav-text">定态微扰论Ⅱ：简并情形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stark%E6%95%88%E5%BA%94"><span class="nav-text">Stark效应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8F%E5%AD%90%E6%80%81%E9%9A%8F%E6%97%B6%E9%97%B4%E7%9A%84%E6%BC%94%E5%8C%96"><span class="nav-text">量子态随时间的演化</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E9%83%A8%E5%88%86"><span class="nav-text">统计部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%91%E7%8B%AC%E7%AB%8B%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%9F%E8%AE%A1%E5%88%86%E5%B8%83"><span class="nav-text">近独立粒子系统的统计分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%92%E5%AD%90%E5%92%8C%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E6%8F%8F%E8%BF%B0"><span class="nav-text">粒子和系统状态的量子力学描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E4%B8%8E%E5%BE%AE%E8%A7%82%E7%8A%B6%E6%80%81%E6%95%B0"><span class="nav-text">分布与微观状态数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bose-%E5%88%86%E5%B8%83%E4%B8%8EFermi-%E5%88%86%E5%B8%83"><span class="nav-text">Bose 分布与Fermi 分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%8A%E7%BB%8F%E5%85%B8%E5%88%86%E5%B8%83%E5%92%8C%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E5%88%86%E5%B8%83"><span class="nav-text">半经典分布和玻尔兹曼分布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%8E%BB%E5%B0%94%E5%85%B9%E6%9B%BC%E7%BB%9F%E8%AE%A1%E7%90%86%E8%AE%BA"><span class="nav-text">第二章 玻尔兹曼统计理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E5%88%86%E5%87%BD%E6%95%B0%E4%B8%8E%E5%AE%8F%E8%A7%82%E9%87%8F"><span class="nav-text">配分函数与宏观量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%92%E5%AD%90%E7%8A%B6%E6%80%81%E7%9A%84%E5%8D%8A%E7%BB%8F%E5%85%B8%E6%8F%8F%E8%BF%B0"><span class="nav-text">粒子状态的半经典描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%B6%E6%A0%BC%E6%8C%AF%E5%8A%A8%E7%9A%84Einstein%E7%90%86%E8%AE%BA"><span class="nav-text">晶格振动的Einstein理论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bose%E7%BB%9F%E8%AE%A1%E5%92%8CFermi%E7%BB%9F%E8%AE%A1"><span class="nav-text">Bose统计和Fermi统计</span></a></li></ol></li></ol>
 
     </div>
 </div>
