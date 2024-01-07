@@ -18,13 +18,15 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
+        <meta name="description" content="Some of your InformationSome info about you:IP Address:  Country Name:  State name:  City Name:  Latitude:  Longitude:        $(document).ready(function() {         $.getJSON(&quot;https:&#x2F;&#x2F;ipapi.co&#x2F;json&#x2F;&quot;,">
+<meta property="og:type" content="website">
 <meta property="og:title" content="friends">
 <meta property="og:url" content="https://sunyrain.github.io/friends/index.html">
 <meta property="og:site_name" content="whilesunny">
+<meta property="og:description" content="Some of your InformationSome info about you:IP Address:  Country Name:  State name:  City Name:  Latitude:  Longitude:        $(document).ready(function() {         $.getJSON(&quot;https:&#x2F;&#x2F;ipapi.co&#x2F;json&#x2F;&quot;,">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2018-09-30T09:25:30.000Z">
-<meta property="article:modified_time" content="2022-07-12T09:14:42.000Z">
+<meta property="article:modified_time" content="2024-01-07T02:39:21.102Z">
 <meta property="article:author" content="whilesunny">
 <meta name="twitter:card" content="summary">
     
@@ -551,7 +553,26 @@
     
     <div class="page-template-content markdown-body">
         
-            <h1>friends</h1>
+            <h1 id="Some-of-your-Information"><a href="#Some-of-your-Information" class="headerlink" title="Some of your Information"></a>Some of your Information</h1><h2 id="Some-info-about-you"><a href="#Some-info-about-you" class="headerlink" title="Some info about you:"></a>Some info about you:</h2><p><strong>IP Address:</strong> <span id="ip_address"></span></p>
+<p><strong>Country Name:</strong> <span id="country_name"></span></p>
+<p><strong>State name:</strong> <span id="region_name"></span></p>
+<p><strong>City Name:</strong> <span id="city_name"></span></p>
+<p><strong>Latitude:</strong> <span id="latitude"></span></p>
+<p><strong>Longitude:</strong> <span id="longitude"></span></p>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.getJSON("https://ipapi.co/json/", function(data) {
+            $("#ip_address").text(data.ip);
+            $("#country_name").text(data.country_name);
+            $("#region_name").text(data.region);
+            $("#city_name").text(data.city);
+            $("#latitude").text(data.latitude);
+            $("#longitude").text(data.longitude);
+        });
+    });
+</script>
+
         
     </div>
     <div class="page-template-comments">
