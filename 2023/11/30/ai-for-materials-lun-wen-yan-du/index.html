@@ -26,8 +26,9 @@
 <meta property="og:description" content="Scaling deep learning for materials discoveryChemLLM:AChemical Large Language Model The challenge arises from the fact that most chemical data and scientific knowledge are primarily stored in structur">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/20240314165617.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/20240427111135.png">
 <meta property="article:published_time" content="2023-11-30T01:26:54.416Z">
-<meta property="article:modified_time" content="2024-03-14T09:18:21.049Z">
+<meta property="article:modified_time" content="2024-05-07T08:25:57.351Z">
 <meta property="article:author" content="whilesunny">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
@@ -662,7 +663,7 @@ mjx-container[display="true"] + br {
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">10</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -670,7 +671,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">43</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">48</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -724,8 +725,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-03-14 17:18:21</span>
-            <span class="mobile">2024-03-14 17:18:21</span>
+            <span class="desktop">2024-05-07 16:25:57</span>
+            <span class="mobile">2024-05-07 16:25:57</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -763,7 +764,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>75 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>415 字</span>
         </span>
     
     
@@ -798,7 +799,27 @@ mjx-container[display="true"] + br {
 </ul>
 </li>
 </ul>
-
+<h2 id="TransPolymer-a-Transformer-based-language-model-for-polymer-property-predictions"><a href="#TransPolymer-a-Transformer-based-language-model-for-polymer-property-predictions" class="headerlink" title="TransPolymer: a Transformer-based language model for polymer property predictions"></a>TransPolymer: a Transformer-based language model for polymer property predictions</h2><h2 id="A-graph-representation-of-molecular-ensembles-for-polymer-property-prediction"><a href="#A-graph-representation-of-molecular-ensembles-for-polymer-property-prediction" class="headerlink" title="A graph representation of molecular ensembles for polymer property prediction"></a>A graph representation of molecular ensembles for polymer property prediction</h2><ul>
+<li>背景是聚合物缺乏有效的表示方式，当下很多预测基于其单体或者加一点辅助信息</li>
+<li>解决方式是其提出的基于图的聚合物表示</li>
+<li>创新点是Stochastic Edge，如图所示：<br><img lazyload="" src="/images/loading.svg" data-src="https://raw.githubusercontent.com/sunyrain/ForPicGo/main/img/20240427111135.png" alt="image.png"></li>
+<li>通过虚拟边权重，展示了聚合后单体之间相邻的概率。</li>
+</ul>
+<h2 id="PRE-TRAINING-MOLECULAR-GRAPH-REPRESENTATION-WITH-3D-GEOMETRY"><a href="#PRE-TRAINING-MOLECULAR-GRAPH-REPRESENTATION-WITH-3D-GEOMETRY" class="headerlink" title="PRE-TRAINING MOLECULAR GRAPH REPRESENTATION WITH 3D GEOMETRY"></a>PRE-TRAINING MOLECULAR GRAPH REPRESENTATION WITH 3D GEOMETRY</h2><ul>
+<li>提出了Graph Multi-View Pre-training 框架</li>
+<li>背景的关键问题是How to design discriminatively represent a molecule with a vectorized embedding</li>
+<li>训练一个embedding的关键问题是如何设计一个通用的潜在空间，以及设计一个怎样的目标用来监督学习</li>
+<li>对比学习，通过编码器将输入数据映射为向量表示，通过比较器比较样本距离，最大（最小）化负（正）样本之间的距离</li>
+</ul>
+<h2 id="3D-Infomax-improves-GNNs-for-Molecular-Property-Prediction"><a href="#3D-Infomax-improves-GNNs-for-Molecular-Property-Prediction" class="headerlink" title="3D Infomax improves GNNs for Molecular Property Prediction"></a>3D Infomax improves GNNs for Molecular Property Prediction</h2><ul>
+<li>最大化二维GNN和三维之间的互信息，经过训练后相当与在嵌入中包含了3D的隐含信息</li>
+<li>注意fine-tune会打乱embedding，相当于有了一个好的初始化</li>
+</ul>
+<h2 id="GeomGCL-Geometric-Graph-Contrastive-Learning-for-Molecular-Property-Predictio"><a href="#GeomGCL-Geometric-Graph-Contrastive-Learning-for-Molecular-Property-Predictio" class="headerlink" title="GeomGCL:Geometric Graph Contrastive Learning for Molecular Property Predictio"></a>GeomGCL:Geometric Graph Contrastive Learning for Molecular Property Predictio</h2><ul>
+<li>GCL Graph Contrastive Learning</li>
+<li>之前的数据增强方法如随机放弃和扰动原子会改变分子的化学语义</li>
+</ul>
+<h2 id="SPHERICAL-MESSAGE-PASSING-FOR-3D-MOLECULAR-GRAPHS"><a href="#SPHERICAL-MESSAGE-PASSING-FOR-3D-MOLECULAR-GRAPHS" class="headerlink" title="SPHERICAL MESSAGE PASSING FOR 3D MOLECULAR GRAPHS"></a>SPHERICAL MESSAGE PASSING FOR 3D MOLECULAR GRAPHS</h2>
         </div>
 
         
@@ -812,7 +833,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-03-14 17:18:21
+                    :</strong> 2024-05-07 16:25:57
             </li>
         
         <li>
@@ -935,7 +956,7 @@ mjx-container[display="true"] + br {
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">Ai For Materials 论文研读</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scaling-deep-learning-for-materials-discovery"><span class="nav-text">Scaling deep learning for materials discovery</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ChemLLM-AChemical-Large-Language-Model"><span class="nav-text">ChemLLM:AChemical Large Language Model</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Scaling-deep-learning-for-materials-discovery"><span class="nav-text">Scaling deep learning for materials discovery</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ChemLLM-AChemical-Large-Language-Model"><span class="nav-text">ChemLLM:AChemical Large Language Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TransPolymer-a-Transformer-based-language-model-for-polymer-property-predictions"><span class="nav-text">TransPolymer: a Transformer-based language model for polymer property predictions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-graph-representation-of-molecular-ensembles-for-polymer-property-prediction"><span class="nav-text">A graph representation of molecular ensembles for polymer property prediction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PRE-TRAINING-MOLECULAR-GRAPH-REPRESENTATION-WITH-3D-GEOMETRY"><span class="nav-text">PRE-TRAINING MOLECULAR GRAPH REPRESENTATION WITH 3D GEOMETRY</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3D-Infomax-improves-GNNs-for-Molecular-Property-Prediction"><span class="nav-text">3D Infomax improves GNNs for Molecular Property Prediction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GeomGCL-Geometric-Graph-Contrastive-Learning-for-Molecular-Property-Predictio"><span class="nav-text">GeomGCL:Geometric Graph Contrastive Learning for Molecular Property Predictio</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SPHERICAL-MESSAGE-PASSING-FOR-3D-MOLECULAR-GRAPHS"><span class="nav-text">SPHERICAL MESSAGE PASSING FOR 3D MOLECULAR GRAPHS</span></a></li></ol>
 
     </div>
 </div>
@@ -968,11 +989,11 @@ mjx-container[display="true"] + br {
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共 43 篇文章
+                        共 48 篇文章
                     </span>
                     
                         <span>
-                            共 40.5k 字
+                            共 46.1k 字
                         </span>
                     
                 </p>
